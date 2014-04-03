@@ -1,0 +1,194 @@
+!! Создание собственных карт с использованием API Google Maps
+
+В этой заметке я рассмотрю вопрос о том, как добавить собственную карту на Google Maps.
+
+Это можно сделать несколькими способами.
+
+Первый способ, размещение дополнительного изображения в виде наложения на карту Google Maps.
+
+Для этого в API карт Google существует объект GGroundOverlay.
+
+В котором в качестве парамтров конструктора используются URL-адрес и объект GLatLngBounds изображения.
+
+Объект GLatLngBounds представляет прямоугольник заданный географическими координатами.
+
+Посмотрим реализацию данного способа на примере.
+
+Добавим на карту Google фотографию церкви Рождества Христова в городе Балахне Нижегородской области, так, чтобы левый нижний угол совпадал по координатам с центром изображения на спутниковым снимке.
+
+Вы можете  посмотреть работающий пример и исходный код здесь.
+
+В коде нужно обратить Ваше внимание на две строчки:
+
+[@
+var boundaries = new GLatLngBounds(new GLatLng(56.489907,43.606367), new GLatLng(59.962385,48.418379));
+var oldmap = new GGroundOverlay(«http://webmap-blog.ru/files/439px-Bal_Cerkov_Rojdestva_Hristova.jpg», boundaries);
+@]
+
+В первой мы задаем координаты левого нижнего и правого верхнего угла изображения, а во второй его URL-адрес.
+
+Мы можем накладывать на карту фрагменты изображений.
+
+Для этого используется класс GTileLayerOverlay.
+
+GTileLayerOverlay дополняет карту с помощью GTileLayer. Он использует интерфейс GOverlay и таким образом добавляется в карту с помощью метода GMap2.addOverlay().
+
+GTileLayer располагается поверх существующей карты.
+
+Но прежде необходимо создать объект GCopyrightCollection и прикрепить  его к слою карты; так объект получает право на использование изображения (или изображений).
+
+С процессом наложения фрагментов изображения я подробно опишу как-нибудь в следущий раз.
+
+А сейчас мы приступим к созданию собственной карты с использованием пользовательского типа карты.
+
+И для начала нам необходимо подготовить исходное растровое изображение нашей карты.
+
+Разберем  с Вами как устроены карты Google , это нам поможет предварительно подготовить нашу карту.
+
+В Google Maps Земля представлена в проекции Меркатора .
+
+Она представляет собой развёрнутый на плоскость цилиндр, что даёт нам прямоугольник, который разбивается на маленькие квадратики (tiles) с размерами 256×256 пикселей.
+
+Пример одного из элементов карты Google: http://mt3.google.com/mt/v=ap.95&hl=ru&x=20389&s=&y=10149&z=15&s=Gali
+
+Из адреса рисунка можно видеть следующие три значения:
+x=20389, y=10149 и z=15
+
+Здесь
+
+* х – номер элемента карты по горизонтали, числа растут слева направо (с запада на восток),
+* Y – номер элемента карты по вертикали, числа увеличиваются с верху вниз (с севера на юг),
+* Z – уровень масштаба.
+
+Из этого следует, что нам необходимо разбить изображение нашей карты на кусочки вида ties_20389_10149_15.jpg, каждый размером 256×256 пикселей. А чтобы можно было изменять масштаб изображения, подготовить изображения нескольких масштабных уровней.
+
+Каждый масштабный уровень содержит в 4 раза большее количество элементов, чем предыдущий.
+
+Например, нулевой уровень – 1 элемент, следующий – 4, второй уровень – 16 и т.д.
+
+Еще нам нужно узнать три тех самых числа, которые дают нам местоположение нужного фрагмента карты.
+
+Самый простой вариант загрузить нужный нам участок карты и посмотреть информацию о полученных изображениях (в FireFox: Инструменты->Информация о странице — > Мультимедиа).
+
+Теперь нам необходимо разрезать наше изображение.
+
+Сделать это можно разными способами:
+
+Использовать онлайн-сервис Gmap Uploader http://gmapuploader.com/
+
+На главной странице сервиса нужно ввести Ваш адрес электронной почты, выбрать файл для загрузки в формате jpg, png или gif и нажать на кнопку Send для начала загрузки файла.
+
+Через некоторое время (продолжительность зависит от размера загружаемого изображения) появиться страница с загруженным изображением в интерфейсе Google Maps.
+
+И три ссылки внизу изображения.
+
+Для моего примера они имеют следующий вид:
+
+Link: http://gmapuploader.com/view/HG6r3eySJq
+Full Screen: http://gmapuploader.com/iframe/HG6r3eySJq
+Deep Zoom URL: http://dz.gmapuploader.com/HG6r3eySJq.xml
+
+Первая ссылка – адрес данной страницы, вторая на изображение карты во весь экран и третья на xml-файл с описание максимального уровня масштабирования.
+
+В моем случае содержимое данного файла:
+
+[@
+<Image TileSize=»256″ Overlap=»0″ Format=»jpg»><Size Width=»4096″ Height=»4096″ />
+</Image>
+@]
+
+Своя карта на Google Maps с использованием сервиса Gmap Uploader
+
+Это конечно хорошо, но хотелась бы, чтобы изображение элементов карты лежали на нашем сервере.
+
+Для этого их необходимо загрузить на Ваш компьютер.
+
+Сделать это можно по разному.
+
+Приведу два способа.
+
+Первый используя браузер FireFox выбрав последовательно Инструменты-&gt;Информация о странице-&gt;Мультимедиа  выделить файлы с изображением и сохранить их.
+
+Проделать тоже самое для всех масштабных уровней.
+
+Используя менеджер закачки файлов, например ReGet, создать очередь загрузки файлов  в текстовом файле и импортировав его загрузить все элементы.
+
+Текстовый файл для нашего примера:
+[@
+http://mt0.gmapuploader.com/tiles/HG6r3eySJq/tile-1-0.jpg
+http://mt0.gmapuploader.com/tiles/HG6r3eySJq/tile-1-1.jpg
+http://mt0.gmapuploader.com/tiles/HG6r3eySJq/tile-1-2.jpg
+http://mt0.gmapuploader.com/tiles/HG6r3eySJq/tile-1-3.jpg
+http://mt0.gmapuploader.com/tiles/HG6r3eySJq/tile-2-0.jpg
+http://mt0.gmapuploader.com/tiles/HG6r3eySJq/tile-2-1.jpg
+http://mt0.gmapuploader.com/tiles/HG6r3eySJq/tile-2-2.jpg
+http://mt0.gmapuploader.com/tiles/HG6r3eySJq/tile-2-3.jpg
+http://mt0.gmapuploader.com/tiles/HG6r3eySJq/tile-2-4.jpg
+http://mt0.gmapuploader.com/tiles/HG6r3eySJq/tile-2-5.jpg
+http://mt0.gmapuploader.com/tiles/HG6r3eySJq/tile-2-6.jpg
+http://mt0.gmapuploader.com/tiles/HG6r3eySJq/tile-2-7.jpg
+http://mt0.gmapuploader.com/tiles/HG6r3eySJq/tile-2-8.jpg
+http://mt0.gmapuploader.com/tiles/HG6r3eySJq/tile-2-9.jpg
+http://mt0.gmapuploader.com/tiles/HG6r3eySJq/tile-2-10.jpg
+http://mt0.gmapuploader.com/tiles/HG6r3eySJq/tile-2-11.jpg
+http://mt0.gmapuploader.com/tiles/HG6r3eySJq/tile-2-12.jpg
+http://mt0.gmapuploader.com/tiles/HG6r3eySJq/tile-2-13.jpg
+http://mt0.gmapuploader.com/tiles/HG6r3eySJq/tile-2-14.jpg
+http://mt0.gmapuploader.com/tiles/HG6r3eySJq/tile-2-15.jpg
+…
+http://mt2.gmapuploader.com/tiles/HG6r3eySJq/tile-4-220.jpg
+http://mt2.gmapuploader.com/tiles/HG6r3eySJq/tile-4-221.jpg
+http://mt2.gmapuploader.com/tiles/HG6r3eySJq/tile-4-222.jpg
+http://mt2.gmapuploader.com/tiles/HG6r3eySJq/tile-4-223.jpg
+http://mt2.gmapuploader.com/tiles/HG6r3eySJq/tile-4-224.jpg
+@]
+
+После этого все закаченные файлы мы помещаем в какую-нибудь папку на сервере (например, files/bal_map/) и пишем следующий код для вывода карты:
+
+[@
+<!DOCTYPE html PUBLIC «-//W3C//DTD XHTML 1.0 Strict//EN» «http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd»><html xmlns=»http://www.w3.org/1999/xhtml»>
+<head>
+<title>Своя карта на Google Maps c использованием Gmap Uploader</title>
+<style type=»text/css» media=»screen»>
+<!--
+html,body{
+height: 100%;
+margin: 0;
+}
+div#map{
+height: 100%;
+margin: 0;
+}
+-->
+</style>
+<script src=»http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAACHCJdlgAEGcD_flKUFEmVhT2yXp_ZAY8_ufC3CFXhHIE1NvwkxTeukKcKHF3ezmjTB0q6gzSBmoIUQ»
+type=»text/javascript»></script>
+<script src=»http://gmapuploader.com/js/gmapuploader.8.js» type=»text/javascript»></script>
+</head>
+<body onunload=»GUnload()»>
+<div id=»map»></div>
+<script type=»text/javascript»>
+//<![CDATA[
+var map = new GMap2(document.getElementById("map"));
+document.getElementById('map').style.backgroundColor = 'white';
+var mapType = new GmapUploaderMapType(map, "http://webmap-blog.ru/examples/files/bal_map/", "jpg", 5);
+map.setCenter(new GLatLng(0,0), 1, mapType);
+map.addControl(new GLargeMapControl());
+map.enableContinuousZoom();
+//]]>
+</script>
+</body>
+</html>
+@]
+
+Загружаем его в браузере и наблюдаем резльтат.
+
+Здесь необходимо обратить внимание на следующие строчки:
+
+[@
+<script src=»http://gmapuploader.com/js/gmapuploader.8.js» type=»text/javascript»></script> — для вывода карты используется специальный скрипт сервиса Gmap Uploader.
+@]
+
+Строка var mapType = new GmapUploaderMapType(map, «http://webmap-blog.ru/examples/files/bal_map/», «jpg», 5); - в ней указывается источник файлов с изображением, расширение файла и максимальный уровень масштаба 5.
+
+Другие способы добавления собственной карты на Google Maps я рассмотрю последовательно в нескольких заметках.

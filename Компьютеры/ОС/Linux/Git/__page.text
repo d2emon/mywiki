@@ -1,0 +1,301 @@
+!! Git
+
+Система контроля версий
+
+(:childlist:)
+
+Год назад мы с командой решили перейти с SVN на Git. Зачем это было надо — писать не буду, т.к. на эту тему уже и так много написано. А хочу я описать типичные алгоритмы работы, понятные человеку, который долгое время пользовался SVN. Ниже — памятка, написанная для команды год назад, чтобы легче было мигрировать. Надеюсь, кому-нибудь пригодится. 
+
+!!! Немного об устройстве Git (упрощённо).
+
+Git — распределённая VCS. Это значит, что мы работаем не с одним репозитарием на сервере, а каждый имеет у себя локальную копию репозитария. Соответственно, такие операции, как checkout и commit производятся с локальным репозитарием. Друг с другом же (или с тем, что на сервере) репозитарии синхронизируются специально предназначенными командами pull (fetch) и push.
+
+Это удобно. Это позволяет коммитить столь часто, сколь угодно, даже если в данный момент отсутствует соединение с сервером.
+
+Важное преимущество Git'а — внятная работа с ветками и удобный механизм слияний (merge). В SVN мы, как правило, работали с одной веткой trunk (в git ветка, с которой мы работаем по умолчанию, называется master). Эта же ветка заливалась на продакшн. Главное неудобство здесь — то, что если мы производим какие-то изменения, или разрабатываем новый функционал, мы вынуждены либо сидеть и не коммитить до тех пор, пока задача не будет доделана до конца, либо (если нам нужна помощь коллеги), закоммитить недоделанный функционал, как есть, сделав таким образом trunk непригодным к заливке на продакшн. Особенно это неприятно, если новый функционал делается не один день, а в это время возникает необходимость что-нибудь срочно починить в рабочей системе.
+
+Надо отметить, что в SVN, конечно, есть ветки, но сделаны они, видимо, для другого, и поэтому плохо приспособлены для того, чтобы их сливать в trunk. В git операция merge сделана изящно и удобно, что позволяет нам существенно изменить workflow на более оптимальный.
+
+Ещё одно отличие git в том, что он хранит не изменения, а текущее состояние проекта в каждый момент времени.
+
+!!! О главном.
+
+* master — это та ветка, которая всегда, в любой (!) момент должна быть готова к деплою на продакшн.
+* Поэтому мы никогда не делаем новые фичи и багфиксы сразу в master, используем для этого ветки.
+* Полезно будет изучить статьи 1 2 3 4 и, возможно, даже Git book. В статье №2 oleganza  сформулировал очень важный принцип: одна фича — одна ветка. Один багфикс (если предполагается длиннее двух коммитов) — одна ветка. Один эксперимент — одна ветка. Одна фича внутри эксперимента — ветка от ветки.
+* Всегда пишем вразумительные комментарии к коммитам.
+* После того, как фича (багфикс) написаны, оттестированы и готовы к продакшну, мержим ветку в master.
+
+Когда мы можем коммитить прямо в master? Только тогда, когда мы точно уверены в том, что наше мелкое изменение однозначно решит проблему и не создаст новых. Когда уверены, что не понадобится потом делать bugfix для bugfix'а. При этом, изменения должны быть минимальными.
+
+Поэтому, хорошим правилом будет, всё же, создание отдельной ветки (за исключением совсем уж простых случаев).
+
+!!! Настройка.
+
+@@
+$ git config --global user.name «First Last»
+$ git config --global user.email «email@example.com»
+$ git config --global color.diff «auto»
+$ git config --global color.status «auto»
+$ git config --global color.branch «auto»
+@@
+
+Дополнительно можно настроить shell-alias'ы, как описано в статье №2.
+
+!!! Cтандартный workflow.
+
+!!!! Шаг 1. Начало работы — клонирование репозитария.
+
+Предполагается, что у вас уже есть и настроен gitosis, на котором лежит проект.
+
+@@  git clone gitosis@git.yourserver.com:yourproject.git @@ — этот шаг делается один раз.
+
+Результатом будет папка yourproject с проектом у вас на жёстком диске. Команда clone делает следующие вещи: клонирует удалённый репозитарий в новую папку (yourproject в данном случае), создаёт в локальном репозитарии remote-tracking ветки для всех веток удалённого репозитария, создаёт локальную копию активной в данный момент удалённой ветки и делает из неё checkout.
+
+!!!! Шаг 2а. Написание нового кода или багфикс.
+
+1. git branch — смотрим, какие ветки у нас есть в данный момент в репозитарии. Сразу после клонирования у вас будет видна только одна, активная в данный момент в удалённом репозитарии, ветка (в нашем случае это по умолчанию master, т.к. удалённый репозитарий находится на сервере и в нём ветки никто не переключает). Если в репозитарии есть другие ветки, их можно увидеть, добавив ключ -a (активная ветка обозначена звёздочкой):
+
+@@
+$ git branch -a
+* master
+origin/HEAD
+origin/master
+origin/feature
+@@
+
+2. Допустим, мы хотим заимплементить фичу feature. Создаём локально новую ветку с помощью команды branch. Командой checkout можно переключаться между ветками: 
+
+@@
+$ git branch feature
+$ git checkout feature
+Switched to branch "feature"
+@@
+
+Или, что тоже самое, только короче:
+
+@@
+$ git checkout -b feature
+Switched to a new branch "feature"
+@@
+
+3. В git есть такое понятие как индекс. Например, команда commit добавляет в репозитарий только те файлы, которые есть в данный момент в индексе. Поэтому, во время работы не забываем добавлять (git add ) или удалять (git rm ) файлы в/из индекса репозитария. Обратите внимание, что, в отличие от SVN, если вы изменили файл, его заново нужно добавить в индекс командой git add.
+
+Например:
+
+@@
+$ git add file1 file2
+$ $ git commit -m "adding file1 & file2"
+Created initial commit 8985f44: adding file1 & file2
+2 files changed, 2 insertions(+), 0 deletions(-)
+create mode 100644 file1
+create mode 100644 file2
+@@
+
+Здесь есть полезности: команда git add . добавляет все untracked файлы в индекс (рекурсивно), а ключ -a у команды commit позволяет автоматически добавить все модифицированные (но не новые!) файлы.
+
+Текущее состояние индекса можно посмотреть командой git status:
+
+@@
+$ git status
+# On branch feature
+# Changes to be committed:
+# (use "git reset HEAD <file>..." to unstage)
+#
+# new file: file1
+# new file: file2
+#
+@@
+
+Коммиты в репозитарии смотрятся командой git log.
+
+4. Если мы хотим разрабатывать новый функционал совместно, нам нужно опубликовать нашу ветку на сервере, чтобы другие могли с ней работать. Вот как это делается (перед этим необходимо закоммитить все изменения в данной ветке):
+
+@@
+$ git push origin feature:refs/heads/feature
+Counting objects: 4, done.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 273 bytes, done.
+Total 3 (delta 0), reused 0 (delta 0)
+Unpacking objects: 100% (3/3), done.
+To gitosis@git.yourserver.com:yourproject.git
+* [new branch] feature -> feature
+@@
+
+(в новых версиях git можно просто git push origin feature:feature)
+
+Команда push отправляет изменения в удалённый репозитарий (origin) из локальной ветки feature в удалённую ветку featurе, предварительно создав её там (refs/heads/feature нужно как раз для создания ветки). В дальнейшем можно будет использовать git push origin feature (по умолчанию git push публикует изменения из всех веток).
+
+Но при таком способе публикации, не устанавливается связь между локальной версией ветки и опубликованной. Т.е. если кто-то закоммитит изменения в эту удаленную ветку и вы сделаете git pull, то будет ошибка:
+
+@@
+$ git pull
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 2 (delta 1), reused 0 (delta 0)
+Unpacking objects: 100% (2/2), done.
+From gitosis@git.yourproject.com:yourproject
+d23a39c..b0a86e0 feature -> origin/feature
+You asked me to pull without telling me which branch you
+want to merge with, and 'branch.feature.merge' in
+your configuration file does not tell me either. Please
+name which branch you want to merge on the command line and
+try again (e.g. 'git pull <repository> <refspec>').
+See git-pull(1) for details on the refspec.
+
+If you often merge with the same branch, you may want to
+configure the following variables in your configuration
+file:
+
+branch.feature.remote = <nickname>
+branch.feature.merge = <remote-ref>
+remote.<nickname>.url = <url>
+remote.<nickname>.fetch = <refspec>
+
+See git-config(1) for details.
+@@
+
+Т.е. гит не знает с какой ветки ему мерджить. Поэтому можно либо каждый раз указывать это руками:
+
+@@
+git pull origin feature
+@@
+
+Либо прописать в конфиге:
+
+@@
+git config branch.feature.remote origin
+git config branch.feature.merge refs/heads/feature
+@@
+
+Кроме того можно воспользоваться скриптиком от William Morgan и делать git publish-branch feature вместо всего остального.
+
+!!!! Шаг 2б. Как присоединиться к работе над веткой.
+
+Предполагается, что вы уже склонировали себе репозитарий.
+
+Главное здесь — правильно подключить удалённую ветку. Сделать это можно с помощью ключа --track команды git checkout. Команда, приведённая ниже, создаёт локальную ветку feature и подключает её к удалённой ветке origin/feature, после чего переключается в эту ветку.
+
+@@
+$ git checkout --track -b feature origin/feature
+Branch feature set up to track remote branch refs/remotes/origin/feature.
+Switched to a new branch "feature"
+@@
+
+Это важно на данном этапе, поскольку просто команда pull смержит удалённую ветку к нам в master, а это не то, что нам нужно.
+
+Далее можно работать аналогично описанному в шаге 2а, синхронизируя репозитарий в каждой из веток командами git pull и git push.
+
+!!!! Шаг 2в. Как переключиться в другую ветку, когда в текущей есть изменения и коммитить их рано.
+
+Иногда возникает необходимость срочно переключиться в другую ветку, например для багфикса. Но на полноценный коммит в этой ветке еще не хватает. Для этого существует команда git stash:
+
+@@
+$ git status
+# On branch feature
+# Changes to be committed:
+# (use "git reset HEAD <file>..." to unstage)
+#
+# new file: somefile
+#
+$ git stash
+Saved working directory and index state "WIP on feature: b0a86e0... blabla"
+HEAD is now at b0a86e0 blabla
+(To restore them type "git stash apply")
+$ git status
+# On branch feature
+nothing to commit (working directory clean)
+@@
+
+Теперь можно смело переключаться в другую ветку и работать там.
+
+По возвращению в эту ветку, необходимо сделать git stash apply:
+
+@@
+$ git stash apply
+# On branch feature
+# Changes to be committed:
+# (use "git reset HEAD <file>..." to unstage)
+#
+# new file: somefile
+#
+@@
+
+!!!! Шаг 3. merge и rebase.
+
+Использовать какую-либо из этих команд вам понадобится в 2-х случаях:
+
+# Вы хотите подлить свежие изменения из master к себе в ветку;
+# Вы хотите слить свою ветку в master.
+
+Общее правило такое: если мы работаем с веткой самостоятельно и не планируем публиковать её на сервере — то выгоднее использовать rebase. Если же мы публикуем ветку командой push, то использовать rebase НЕЛЬЗЯ, иначе мы автоматически инвалидируем работу коллег. Разница между merge и rebase хорошо показана на иллюстрациях в Git book: merge и rebase. Вкратце: rebase запоминает коммиты из ветки в виде патчей, «перематывает» текущую ветку (как будто и не было никакого branch) и применяет патчи, оформляя их в виде коммитов. В отличие от rebase, merge делает слияние двух веток в одну.
+
+Примеры:
+
+Подливаем изменения из master в рабочую ветку feature, ветку feature нигде не публикуем, работаем с ней только локально:
+
+@@
+$ git checkout feature
+Switched to branch "feature"
+$ git rebase master
+First, rewinding head to replay your work on top of it...
+HEAD is now at 89f6a20 file2
+Applying feature1
+@@
+
+Сливаем изменения из рабочей ветки feature в master, ветка feature нигде не публиковалась, никто из коллег с ней не работал:
+
+@@
+$ git checkout master
+Switched to branch "master"
+$ git rebase feature
+First, rewinding head to replay your work on top of it...
+HEAD is now at 9bfac0a feature1
+Applying file2
+@@
+
+Подливаем изменения из master в рабочую ветку feature, ветка feature опубликована на удалённом репозитарии, с ней также работают коллеги:
+
+@@
+$ git checkout feature
+Switched to branch "feature"
+$ git merge master
+Merge made by recursive.
+file2 | 1 +
+1 files changed, 1 insertions(+), 0 deletions(-)
+create mode 100644 file2
+@@
+
+Сливаем изменения из рабочей ветки feature в master, ветка feature публиковалась на удалённом репозитарии для совместной работы:
+
+@@
+$ git checkout master
+Switched to branch "master"
+$ git merge feature
+Merge made by recursive.
+feature1 | 1 +
+1 files changed, 1 insertions(+), 0 deletions(-)
+create mode 100644 feature1
+@@
+
+!!!! Шаг 4. Удаление ветки.
+
+После того, как мы закончили работать с веткой и слили изменения в master (или в другую ветку), можно удалить ветку.
+
+Для удаления локальной ветки:
+
+@@
+$ git branch -d feature
+Deleted branch feature.
+@@
+
+Для удаления remote tracking ветки:
+
+@@
+$ git push origin :feature
+- [deleted] feature
+@@
+
+Вот, вроде, и всё. Этого должно быть достаточно в первое время при миграции с SVN на Git.
+
+Отдельное спасибо хабраюзеру mironov_anton  за всяческие дополнения и улучшения данного текста.

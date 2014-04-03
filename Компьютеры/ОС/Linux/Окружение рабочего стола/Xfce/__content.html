@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV='CONTENT-TYPE' CONTENT='TEXT/HTML; CHARSET=UTF-8'/>
+
+	<STYLE type="text/css">
+		body, div, p, table {
+			font-size:10pt;
+			font-family:Verdana;
+		}
+
+		img{border:none}
+		
+	</STYLE>
+	
+</HEAD>
+
+<BODY>
+<P>
+<H1>Xfce</H1></P>
+
+<P>The latest XFCE 4.10 is not included in Xubuntu 12.04 LTS Precise Pangolin.</P>
+
+<P>This is because XFCE 4.10 is released on 28th April just after Ubuntu 12.04 is released. But now you can install XFCE 4.10 on your Ubuntu desktop or upgrade XFCE to 4.10 on Xubuntu 12.04.</P>
+
+<P>
+<H2>Major Changes in XFCE 4.10</H2></P>
+
+<P>The major changes in XFCE 4.10 are following:</P>
+
+<P>
+<UL>
+<LI>Online Documentation: User manuals in system are removed, they are now available at <A HREF="http://docs.xfce.org/">http://docs.xfce.org/</A></LI>
+<LI>Application Finder is completely rewritten.</LI>
+<LI>Panel have Multiple rows, Deskbar mode, Actions plugin and Windows buttons.</LI>
+<LI>Few visual changes in Thunar.</LI>
+<LI>Mouse and Touchpads can now handle basic Synaptics and Wacom properties in the GUI.</LI>
+<LI>Desktop manager can now do single-click operation, automated background image cycling and thumbnail rendering.</LI>
+<LI>Window Manager can now tile a window when you drag it to the edge of the screen.</LI>
+</UL>
+<H2>Upgrade to XFCE 4.10 in Xubuntu 12.04</H2></P>
+
+<P>To upgrade your existing installation of Xubuntu 12.04 use following commands in Terminal</P>
+
+<P><CODE>
+<BR>sudo add-apt-repository ppa:xubuntu-dev/xfce-4.10
+<BR>sudo apt-get update
+<BR>sudo apt-get dist-upgrade
+<BR></CODE></P>
+
+<P>Now due to a bug, 3 packages will not be upgraded. To resolve this issue go to synaptic package manager and click “Mark all upgrades” and apply, you will then get a pop-up asking to remove a package, just click yes and wait it to complete than you are good to go.</P>
+
+<P>
+<H2>Install XFCE 4.10 in Ubuntu/Kubuntu/Lubuntu 12.04</H2></P>
+
+<P>In Ubuntu/Kubuntu/Lubuntu 12.04 which are using different (other than XFCE) desktop environment, just use following commands to install XFCE 4.10 on those Ubuntu Distributions.</P>
+
+<P><CODE>
+<BR>sudo add-apt-repository ppa:xubuntu-dev/xfce-4.10
+<BR>sudo apt-get update
+<BR>sudo apt-get install xubuntu-desktop
+<BR></CODE></P>
+
+<P>After you install/upgraded XFCE you might want to get Compiz/Emerald working on it, see Install Compiz Emerald in Xubuntu.</P>
+
+<P><HR>
+<BR>      
+<BR>XFCE 4.10 вышел в начале мая 2012 года. Устанавливается легко, подключается PPA-репозиторий и обновляется система. Так и сделаем:</P>
+
+<P><CODE>
+<BR>sudo add-apt-repository ppa:xubuntu-dev/xfce-4.10
+<BR>sudo apt-get update && sudo apt-get dist-upgrade -y
+<BR></CODE></P>
+
+<P>При обновлении может появиться сообщение о невозможности обновить файлы. Лечится просто, запускается Synaptic, Обновить, Отметить всё, Применить. Решено :)</P>
+
+<P>Второе. Долго не мог перейти на 4.10 из-за того, что после обновления все кнопки запуска приложений съехались в одну кучу с левой стороны и никаким очевидным решениям не поддавались. Лечилось, как и всё гениальное, просто. ПКМ на Разделитель на панели, Свойства, редактировать элемент, ставим галочку "Расширить". Всё вернулось как и было задумано изначально!</P>
+
+<P>Чтобы установить XFCE 4.10 в Xubuntu 12.04 (если вы используете другую графическую оболочку, например, GNOME), вместо последней команды выше используйте:</P>
+
+<P><CODE>
+<BR>sudo apt-get install xubuntu-desktop
+<BR></CODE></P>
+
+<P>Отличия на первый взгляд незаметны. Онлайн тур изменений в Xfce 4,10 можно посмотреть здесь: <A HREF="http://xfce.org/about/tour">http://xfce.org/about/tour</A>. Подробный обзор изменений в Xfce 4,10 по сравнению с Xfce 4.8 можно найти на следующей странице: <A HREF="http://xfce.org/download/changelogs">http://xfce.org/download/changelogs</A></P>
+
+<P><HR></P>
+
+<P>Недавно вышедшый XFCE 4,10 может стать достойной альтернативой Gnome. </P>
+
+<P>Установим его в Ubuntu 12.04</P>
+
+<P>Добавим репозиторий:</P>
+
+<P><CODE>
+<BR>sudo add-apt-repository ppa:mrpouit/ppa
+<BR>sudo apt-get update
+<BR>sudo apt-get dist-upgrade
+<BR></CODE></P>
+
+<P>После чего установите xfce:</P>
+
+<P><CODE>
+<BR>sudo apt-get install xubuntu-desktop
+<BR></CODE></P>
+
+<P>Всё готово. Теперь при следующем логине вы увидите возможность загрузить рабочий стол XFCE 4.10</P>
+
+<P><HR></P>
+
+<P>
+<H2>Полная установка Xfce в Ubuntu (пакет Xubuntu-desktop)</H2></P>
+
+<P>Установить Xfce в Ubuntu довольно просто. Все пакеты есть в официальных репозиториях. Для установки Xfce в Ubuntu нужно выполнить всего одну команду:</P>
+
+<P><CODE>
+<BR>sudo apt-get install xubuntu-desktop
+<BR></CODE></P>
+
+<P>Данная команда устанавливает полностью всю среду рабочего стола Xfce, включая программное обеспечение, темы, панели, апплеты и так далее. Фактически, после этой команды вы получите Xubuntu, то есть Ubuntu с рабочим окружением Xfce и дополнительными доработками, которые есть в дистрибутиве Xubuntu. Будут установлены программы Аbiword, файловый менеджер Thunar и другие.</P>
+
+<P>Примечание: возможно, на этапе установки вас спросят, какой менеджер входа в систему вы хотите установить gdm или lightdm. Советую оставить LightDM.</P>
+
+<P>
+<H2>Установка только Xfce в Ubuntu (без пакетов Xubuntu)</H2></P>
+
+<P>Если вы не хотите устанавливать полный комплект среды Xfce, а хотите установить только минимальный набор (без Xfce программ и других Xubuntu компонентов), выполните в терминале команду:</P>
+
+<P><CODE>
+<BR>sudo apt-get install xfce4
+<BR></CODE></P>
+
+<P>Дополнительные компоненты (полезные апплеты для Xfce панелей, системные утилиты) можно установить командой:</P>
+
+<P><CODE>
+<BR>sudo apt-get install xfce4-goodies
+<BR></CODE></P>
+
+<P>
+<H2>Вход в систему</H2></P>
+
+<P>Теперь выйдите из системы, а лучше перезагрузите компьютер. После перезагрузки в окне входа в систему нажмите на иконку выбора сессии рядом с вашем именем. В список должно добавиться два пункта: Сеанс Xfce (Xfce Session) и Сеанс Xubuntu (Xubuntu Session). Выбираем Сеанс Xubuntu, вводим пароль и нажимаем Enter. Если выбрать пункт Сеанс Xfce, то загрузится среда Xfce, но без поддержки доработок, которые есть в Xubuntu.</P>
+
+<P>
+<H2>Кратко о впечатлениях (небольшое сравнение Xfce и Unity)</H2></P>
+
+<P>Если сравнивать производительность Unity и Xfce, то Xfce работает однозначно быстрее. У меня оперативной памяти в режиме спокойствия Xfce «отъедает» примерно на 150 мегабайт меньше (с включенным Compiz), чем Unity (хотя, я надеялся на большее). И в процессе работы, за счет использования легковесных приложений, оперативной памяти потребляется меньше. Также после входа в систему Xfce загружается раза в полтора быстрее, чем Unity.</P>
+
+<P>В Xfce немного быстрее открываются приложения, тут скорее всего окна просто быстрее отрисовываются (я имею ввиду приложения не среды Xfce, а, например, Chromium). Файловый менеджер Thunar также работает в разы быстрее Nautilus. Правда приходится платить меньшей функциональностью. Казалось бы, вроде бы все функции файлового менеджера присутствуют, но в процессе работы постоянно натыкаешься то на одно, то на другое ограничение. Аналогично и с другими программами.</P>
+</BODY>
+</HTML>

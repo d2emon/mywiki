@@ -1,0 +1,15 @@
+[General]
+type = wiki
+tags = абсурд
+order = 1
+datetime = 2013-01-09 09:27:14.352000
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+
+[wiki]
+md5_hash = 8834962a9bb50045bbd8dd4eeb7aed1e
+

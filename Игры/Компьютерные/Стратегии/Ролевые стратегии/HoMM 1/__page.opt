@@ -1,0 +1,15 @@
+[General]
+type = wiki
+tags = дописать
+order = 1
+datetime = 2013-04-02 16:33:48.776000
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+
+[wiki]
+md5_hash = 3c5c82995c2231f94c4228cd48f53870
+

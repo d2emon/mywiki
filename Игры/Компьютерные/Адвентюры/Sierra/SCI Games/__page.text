@@ -1,0 +1,312 @@
+!! SCI Games
+
+This article lists all the known versions of SCI (Sierra's Creative Interpreter) games.
+
+(:childlist:)
+
+!!! Supported Platforms
+
+SCI games were originally available on:
+
+||
+||Platform||SCI0||SCI1||SCI2 & SCI3||
+||IBM PC||Yes||286+||386+||
+||Apple Macintosh||Yes||Yes||Yes||
+||Atari ST||Yes||No||No||
+||Commodore AMIGA||Yes||Yes||No||
+||Fujitsu FM Towns||No||Yes||No||
+
+!!! International Translations
+
+This table will show information about translations/international versions:
+
+||
+||Engine||Foreign v.||Languages known||Suspected||Notes||
+||SCI0||Bi-lingual||FR/GER||JAP||Converted SCI0 games||
+||SCI1||Bi-lingual||FR/GER/IT/SP||None||&nbsp;||
+||SCI1.1||Standalone||FR/GER/IT/SP/PT||JAP||Only RESOURCE.MSG differs||
+||SCI2||Standalone||FR/GER/IT/SP/PT||JAP||Sometimes subtitles only||
+
+The early SCI0 interpreter did not include special characters such as the accent grave, accent aigu, and the umlaut. A later SCI0 fork named S.old enabled the foreign language support.
+
+!!! Media
+
+All the SCI0/1 games were released on both 3.5" & 5.25" disks, except XMAS Card 1988, Astro Chicken & Fun Seeker's Guide, which were public domain. Later, SCI11 were released solely on 3.5" or CD-ROM.
+
+All the games listed are disk versions unless noted else.
+
+!!! Graphics
+
+SCI0 games were mostly made for the 16 color EGA graphics adapter. Only the last SCI0 game (Jones in the fast lane) used a newer graphics engine and supported the 256 color VGA.
+SCI1 games were released as two versions: 16 color EGA and 256 color VGA versions. The 16 color versions are much more "ugly" and also smaller in size, compared to their 256 color counterparts. This was done for people with CGA/EGA/TANDY videocards and a low-memory setup.
+SCI11 ended this tradition by adding an EGA 640x200 graphics driver that dithered the pictures dynamically from their 256-color source.
+SCI2 games supported high-resolution 640x480 SVGA graphics.
+
+!!! List of Games
+
+!!!! SCI0
+
+||
+||Interpreter version||Game||Version||
+||0.000.274||King's Quest 4||1.000.106||
+||&nbsp;||King's Quest 4||1.000.111||
+||0.000.294||XMAS Card||&nbsp;||
+||0.000.343||Leisure Suit Larry 2||1.000.011||
+||0.000.395||Police Quest 2||1.001.000||
+||0.000.409||Leisure Suit Larry 2||1.002.000||
+||&nbsp;||Police Quest 2||1.001.006||
+||0.000.453||Astro Chicken||&nbsp;||
+||&nbsp;||Space Quest 3||1.0P||
+||&nbsp;||Space Quest 3||1.0U||
+||0.000.490||Police Quest 2||1.002.011||
+||0.000.502||King's Quest 4||1.006.003||
+||&nbsp;||King's Quest 4||1.006.004||
+||0.000.506||Fun Seeker's Guide||1.02||
+||0.000.530||Hoyle's Book of Games 1||1.000.113(?)||
+||&nbsp;||Leisure Suit Larry 3||DEMO 0.249||
+||0.000.566||Hero's Quest||1.000||
+||0.000.572||Hoyle's Book of Games 2||1.000.011||
+||&nbsp;||Leisure Suit Larry 3||1.003||
+||&nbsp;||Leisure Suit Larry 3||1.021||
+||0.000.629||Hero's Quest||1.102||
+||&nbsp;||Quest for Glory 1||1.200||
+||0.000.631||Colonel's Bequest||1.000.046||
+||0.000.668||Codename: ICEMAN||1.023||
+||0.000.685||Conquests of Camelot||1.001.000||
+||&nbsp;||Codename: ICEMAN||1.033||
+||&nbsp;||Mixed-Up Mother Goose||1.011||
+||&nbsp;||Space Quest 3||1.018||
+||S.old.010||King's Quest (SCI remake)||1.000.051||
+||&nbsp;||King's Quest (SCI remake)||DEMO||
+||S.old.114||Space Quest 3||[German/English] 1.052||
+||S.old.123||Leisure Suit Larry 3||[French/English] 1.050||	
+||x.yyy.yyy||Jones in the Fast Lane||EGA 1.000.060||
+||&nbsp;||Jones in the Fast Lane||VGA 1.000.060||	
+
+!!!! SCI1
+
+||
+||Interpreter version||Game||Version||
+||0.001.026||Quest for Glory 2||0.101||	
+||1.000.041||Quest for Glory 2||1.000||
+||1.000.072||Quest for Glory 2||1.102||
+||&nbsp;||Quest for Glory 2||1.105||
+||1.000.087||Quest for Glory 2||1.105||
+||1.000.172||XMAS Card 1990||EGA||
+||1.000.174||XMAS Card 1990||VGA||
+||1.000.005||Castle of Dr. Brain||DEMO||	
+||1.000.044||Castle of Dr. Brain||VGA 1.000||
+||1.000.058||King's Quest 5||EGA 0.000.055||
+||1.000.060||King's Quest 5||VGA 0.000.051||
+||&nbsp;||King's Quest 5||VGA 0.000.062||
+||1.000.068||Castle of Dr. Brain||VGA [Spanish/English] 1.004||
+||1.000.073||King's Quest 5||EGA 0.000.062||
+||1.000.084||Leisure Suit Larry 1 (SCI remake)||DEMO||
+||1.000.145||Mixed-Up Fairy Tales||VGA 1.000||
+||1.000.168||Conquests of the Longbow||VGA 1.000||
+||&nbsp;||Conquests of the Longbow||VGA 1.1||
+||1.000.169||Conquests of the Longbow||VGA [German/English] 1.000||
+||1.000.181||Conquests of the Longbow||DEMO 0.004||
+||&nbsp;||Leisure Suit Larry 5||DEMO||
+||&nbsp;||Space Quest 1 (SCI remake)||DEMO||
+||1.000.510||Leisure Suit Larry 1 (SCI remake)||VGA 2.0||
+||1.000.575||Leisure Suit Larry 1 (SCI remake)||EGA 2.0||
+||1.000.577||Leisure Suit Larry 1 (SCI remake)||VGA 2.1||	
+||1.000.679||Astro Chicken 2||(x.yyy)||
+||1.000.744||Space Quest 4||EGA 1.060||
+||1.000.753||Space Quest 4||VGA 1.052||
+||&nbsp;||Space Quest 4||VGA 1.1||
+||1.000.784||King's Quest 5||VGA [French/English] 1.000||
+||King's Quest 5||VGA [German/English] 1.000||
+||King's Quest 5||VGA [Spanish/English] 1.000||
+||1.ECO.013||EcoQuest||VGA 1.000||
+||&nbsp;||EcoQuest||VGA [French/English] 1.000||
+||&nbsp;||EcoQuest||VGA [Spanish/English] 1.000||
+||1.SQ1.004||Space Quest 1 (SCI remake)||EGA 2.000||
+||&nbsp;||Space Quest 1 (SCI remake)||VGA 2.000||
+||1.SQ4.030||Space Quest 4||VGA [German/English] 1.000||
+||1.SQ4.057||Leisure Suit Larry 1 (SCI remake)||VGA [Spanish/English] 1.0||
+||&nbsp;||Space Quest 4||VGA [Italian/English] 1.3||
+||&nbsp;||Space Quest 4||VGA [French/English] 1.000||
+||&nbsp;||Space Quest 4||VGA [Spanish/English] 1.000||
+||1.LS5.006||Leisure Suit Larry 5||VGA [Spanish/English] 1.0||
+||1.ls5.019||Leisure Suit Larry 5||VGA [French/English] 1.0||
+||1.pq3.018||Police Quest 3||EGA 1.000||
+||1.pq3.021||Police Quest 3||VGA [Spanish/English] 1.0||
+||FAIRY.003||Mixed-Up Fairy Tales||DEMO||
+||T.A00.052||Police Quest 3||DEMO||
+||T.A00.081||Space Quest 1 (SCI remake)||VGA 2.000||
+||&nbsp;||Space Quest 1 (SCI remake)||VGA [Spanish/English] 2.000||
+||T.A00.159||Leisure Suit Larry 5||EGA 1.0||
+||T.A00.169||Leisure Suit Larry 5||VGA 1.0||
+||&nbsp;||Leisure Suit Larry 5||VGA [German/English] 1.0||
+||T.A00.178||Police Quest 3||VGA 1.0||
+||&nbsp;||Police Quest 3||VGA [German/English] 1.000||
+||x.yyy.yyy||Hoyle's Card Games 3||EGA 1.000||
+||&nbsp;||Hoyle's Card Games 3||VGA 1.000||
+||&nbsp;||Hoyle's Card Games 3||DEMO||
+||x.yyy.yyy||Jones in the Fast Lane||VGA 1.0 (CD version)	(no debugger)||
+||&nbsp;||Jones in the Fast Lane||VGA 1.0 (CD version)	(with debugger)||
+||&nbsp;||Jones in the Fast Lane||VGA 1.0 (Windows CD version)||
+||x.yyy.yyy||King's Quest 5	1.000.052||(CD version)||
+||&nbsp;||Mixed-Up Mother Goose||(CD version)	(with debugger)||
+||x.yyy.yyy||EcoQuest||DEMO||
+
+!!!! SCI1.1
+
+||
+||Interpreter version||Game||Version||
+||1.001.021||Quest for Glory 3||DEMO 1.000||
+||1.001.029||Police Quest 1 (SCI remake)||2.00||
+||&nbsp;||Crazy Nick's (All 5 of them)||1.00||
+||&nbsp;||Quest for Glory 1 (SCI remake)||DEMO||
+||1.001.031||Mixed-Up Mother Goose (SCI11 remake)||2.000||
+||1.001.050||Quest for Glory 3||1.0||
+||&nbsp;||Quest for Glory 3||1.1||
+||1.001.053||Island of Dr. Brain||1.0||
+||&nbsp;||Island of Dr. Brain||DEMO||
+||1.001.054||King's Quest 6||1.000||	
+||&nbsp;||King's Quest 6||[French] 1.000||
+||&nbsp;||King's Quest 6||[German] 1.000||
+||1.001.055||XMAS Card 1992||&nbsp;||	
+||&nbsp;||EcoQuest 2||DEMO? 1.000||
+||&nbsp;||King's Quest 6||DEMO 1.000.000||	
+||1.001.060||Pepper's Adventures in Time||NON-PLAYABLE DEMO||	
+||1.001.064||Space Quest 4||1.0 (CD version)||
+||&nbsp;||Space Quest 4||1.0 (Windows CD version)||
+||&nbsp;||EcoQuest 1||1.1 (CD version)||
+||1.001.065||EcoQuest 2||1.000.000||
+||1.001.067||Space Quest 5||0.028||
+||&nbsp;||Space Quest 5||0.028 (Windows version)||	
+||1.001.068||Space Quest 5||1.03||
+||&nbsp;||Space Quest 5||1.04||
+||&nbsp;||Space Quest 5||[German] 1.04||
+||&nbsp;||Space Quest 5||[Italian] 1.000||
+||&nbsp;||Space Quest 5||[French] 1.04||
+||&nbsp;||Space Quest 5||[Spanish] 1.000||
+||1.001.069||Hoyle Classic||(Windows release) 2.000||
+||&nbsp;||EcoQuest 2||(Windows release) 1.000.000||
+||&nbsp;||Freddy Pharkas||DEMO 1.000||
+||&nbsp;||King's Quest 6||(Windows CD version) 1.034||
+||&nbsp;||Laura Bow: The Dagger of Amon Ra||1.1 (Windows CD version)||	
+||&nbsp;||Pepper's Adventures in Time||(Windows release) 1.000||
+||1.001.072||Pepper's Adventures in Time||1.000||
+||&nbsp;||Pepper's Adventures in Time||PLAYABLE DEMO||
+||&nbsp;||Laura Bow: The Dagger of Amon Ra||1.1 (CD version)||	
+||1.001.081||EcoQuest 2||[French] 1.000.000||
+||&nbsp;||EcoQuest 2||[Spanish] 9.999.999 (Test version)||
+||1.001.092||Gabriel Knight||DEMO 000.000.001||
+||1.001.095||Freddy Pharkas Frontier Pharmacist||1.000 (Windows CD version)||	
+||&nbsp;||Freddy Pharkas Frontier Pharmacist||DEMO 1.000 (Windows CD version)||	
+||1.001.096||Police Quest 4||DEMO||
+||1.001.113||Leisure Suit Larry 6||1.000||
+||&nbsp;||Leisure Suit Larry 6||[French] 1.000||
+||&nbsp;||Leisure Suit Larry 6||[German] 1.000||
+||&nbsp;||Leisure Suit Larry 6||[Spanish] 1.000||
+||1.001.115||Leisure Suit Larry 6||1.000.000 (Low-res CD version)||
+||1.001.132||Freddy Pharkas Frontier Pharmacist||1.000 (CD version)||
+||2.000.274||Dagger of Amon Ra||1.000||
+||&nbsp;||Dagger of Amon Ra||[French] 1.1||
+||&nbsp;||Dagger of Amon Ra||[Spanish] 1.1||
+||2.000.286||EcoQuest 1||1.10||
+||2.000.411||Quest for Glory 1 (SCI remake)||2.000||
+||L.rry.021||Quest for Glory 1 (SCI remake)||2.000||	
+||L.rry.083||Quest for Glory 3||1.1 [Italian]||
+||&nbsp;||Quest for Glory 3||1.1 [German]||
+||&nbsp;||Quest for Glory 3||1.1 [French]||
+||&nbsp;||Quest for Glory 3||1.000.000 [Spanish]||
+||1.cfs.081||Freddy Pharkas Frontier Pharmacist||1.000||	
+||&nbsp;||Freddy Pharkas Frontier Pharmacist||1.000 [Spanish]||
+||&nbsp;||Freddy Pharkas Frontier Pharmacist||1.000 [French]||
+||&nbsp;||Freddy Pharkas Frontier Pharmacist||1.000 [German]||
+||&nbsp;||Slater & Charlie||1.000||
+||&nbsp;||Slater & Charlie||DEMO||
+||1.cfs.158||King's Quest 6||(CD version)||
+||&nbsp;||King's Quest 6||[Spanish] 1.000||
+||x.yyy.yyy||Dagger of Amon Ra||DEMO||
+
+!!!! SCI2
+
+||
+||Interpreter version||Game||Version||
+||2.000.000||Gabriel Knight 1||1.0||
+||&nbsp;||Gabriel Knight 1||01.100.000 (CD version)||
+||&nbsp;||Gabriel Knight 1||01.100.000 (Windows CD version)||
+||&nbsp;||Gabriel Knight 1||1.000 [French]||
+||&nbsp;||Gabriel Knight 1||1.000 [Spanish]||
+||&nbsp;||Gabriel Knight 1||1.000 [German]||
+||&nbsp;||Police Quest 4||1.000||
+||&nbsp;||Police Quest 4||1.000 [French]||
+||&nbsp;||Police Quest 4||1.002 [German]||
+||&nbsp;||Quest for Glory 4||1.000.000||
+||&nbsp;||Quest for Glory 4||1.1||
+||2.100.002||Gabriel Knight 2||1.1||	
+||&nbsp;||Gabriel Knight 2||1.1 (Windows release)||	
+||&nbsp;||Gabriel Knight 2||DEMO (Windows release)||
+||&nbsp;||Inside The Chest/Behind The Developer's Shield||&nbsp;||
+||&nbsp;||Inside The Chest/Behind The Developer's Shield||(Windows release)||	
+||&nbsp;||King's Quest 7||1.51 (Windows only release)||
+||&nbsp;||King's Quest 7||2.00b||
+||&nbsp;||King's Quest 7||2.00b (Windows release)||
+||&nbsp;||King's Questions||&nbsp;||
+||&nbsp;||King's Questions||(Windows release)||	
+||&nbsp;||Leisure Suit Larry 6||1.000.000 (Hi-res CD version)||
+||&nbsp;||Leisure Suit Larry 6||1.000.000 (Hi-res Windows CD version)||
+||&nbsp;||Mixed-Up Mother Goose Deluxe||(Windows release) [English/Spanish]||	
+||&nbsp;||Phantasmagoria 1||1.000.000||
+||&nbsp;||Police Quest 4||1.100.000 (CD version)||
+||&nbsp;||Police Quest 4||1.100.000 (Windows CD version)||
+||&nbsp;||Police Quest SWAT||DEMO 0.001.200 (Windows release)||
+||&nbsp;||Quest for Glory 4||1.0 (CD version)||
+||&nbsp;||Quest for Glory 4||1.0 (Windows CD version)||
+||&nbsp;||Shivers||1.02 (Windows only release)||
+||&nbsp;||Shivers||DEMO (Windows release)||
+||&nbsp;||Space Quest 6||1.0||
+||&nbsp;||Space Quest 6||DEMO 1.0||
+||&nbsp;||Torin's Passage||1.0||
+||&nbsp;||Torin's Passage||1.0 (Windows release)||
+||&nbsp;||Torin's Passage||[Eng./Fr./Ger./It.] 1.0||
+||&nbsp;||Torin's Passage||[Eng./Fr./Ger./It.] 1.0 (Windows release)||
+||"No version number"||Hoyle Classic	2.000||
+||&nbsp;||Quest for Glory 4||DEMO 1.000.001||
+
+!!!! SCI3
+
+||
+||Interpreter version||Game&nbsp;||Version	Notes||
+||3.000.000||Leisure Suit Larry 7||1.01||
+||&nbsp;||Leisure Suit Larry 7||1.20||
+||&nbsp;||Lighthouse||&nbsp;||
+||&nbsp;||Phantasmagoria 2||001.0.000||	
+||&nbsp;||RAMA||&nbsp;||
+||&nbsp;||Shivers 2||&nbsp;||
+
+!!!! Possible entries
+
+The following SCI games are LIKELY/KNOWN to exist:
+
+||
+||Interpreter||Game||
+||SCI0||Conquests of Camelot DEMO||
+||&nbsp;||Hero's Quest 1.001?||
+||&nbsp;||Hoyle's Book of Games (alt. version, 1.000.104 (1989-08-07))?||
+||&nbsp;||YET ANOTHER KING'S QUEST 4 (INT 0.000.253??)||
+||&nbsp;||??? interpreter ver. 0.000.396 (LSL2??)||
+||SCI1||Castle of Dr. Brain EGA||
+||&nbsp;||Castle of Dr. Brain VGA (alt. version (1.1?), with SCI 1.000.068)||
+||&nbsp;||Conquests of the Longbow EGA||
+||&nbsp;||EcoQuest 1 EGA||
+||&nbsp;||EcoQuest 1 VGA 1.000 (German)||
+||&nbsp;||King's Quest 5 (bunch of versions?)||
+||&nbsp;||Mixed-Up Fairy Tales EGA||
+||&nbsp;||Space Quest 4 (Beta version released by THG)||
+||&nbsp;||(A couple of bi-lingual versions)||
+||SCI1.1||Space Quest 5 beta #2? (NFO file from the final release mentions it)||
+||&nbsp;||The Island of Dr. Brain (CD version? Probably the same as disk)||
+||&nbsp;||(Foreign games)||
+||SCI2||Police Quest SWAT||
+||SCI3||(Whole bunch of foreign games)||
+||&nbsp;||(etc...)||
+||???||Castle of Dr. Brain (CD version (if it actually differs))||
+||&nbsp;||Leisure Suit Larry 1 (CD version (if it actually differs))||
+||&nbsp;||Quest for Glory (Japanese) (A PC9801 game, don't think it's compatible)||

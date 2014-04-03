@@ -1,0 +1,12 @@
+[General]
+type = wiki
+tags = юмор, мир фантастики, фентези
+order = 3
+datetime = 2014-02-11 11:35:43.696000
+
+[wiki]
+md5_hash = b5d4e4852e39d71baf45df3f438d2896
+
+[Misc]
+pageindex = 1
+

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV='CONTENT-TYPE' CONTENT='TEXT/HTML; CHARSET=UTF-8'/>
+
+	<STYLE type="text/css">
+		body, div, p, table {
+			font-size:10pt;
+			font-family:Verdana;
+		}
+
+		img{border:none}
+		
+	</STYLE>
+	
+</HEAD>
+
+<BODY>
+<P>
+<H1>Website to Windows Store app</H1></P>
+
+<P>Designing websites has been a common practice for decades. With Windows 8, designers and developers can use the web technologies they are familiar with, including HTML5, Cascading Style Sheets, Level 3 (CSS3), and JavaScript, to build Windows Store apps. Here we explore how to expose the capabilities of a website to make it a great Windows Store app and show ways to provide additional value, personalization, and richer experiences using features of the Windows 8 platform.</P>
+
+<P>Our aim is to help designers and developers reimagine their websites as Windows Store apps.</P>
+
+<P>
+<H2>The food truck website and app</H2></P>
+
+<P>The basis for this article is a food truck website that lets users browse food trucks in their area, stay up to date with the latest news, and provide user reviews of food trucks. In the design oriented case study that follows, we explore ways to reimagine the core functionality of the site and extend it as a Windows Store app.</P>
+
+<P><A HREF="__attach/IC576288.png"><IMG SRC="__attach/__thumb/th_maxsize_250_IC576288.png"/></A></P>
+
+<P>Our goal in migrating to a Windows Store app was to highlight the best features of the website while maintaining parity with core functionality of the site. We determined that the Windows Store app is best at letting users browse and find nearby trucks. The next figure shows the anatomy of the food truck website UI. Here we show how to translate each of these UI components to Microsoft design style.</P>
+
+<P><A HREF="__attach/IC571340.png"><IMG SRC="__attach/__thumb/th_maxsize_250_IC571340.png"/></A></P>
+
+<P>
+<OL>
+<LI>Layout and navigation</LI>
+<LI>Commands and actions</LI>
+<LI>Contracts: search, share, and settings</LI>
+<LI>Touch</LI>
+<LI>Scaling and views</LI>
+<LI>Notifications</LI>
+</OL>
+<H2>Layout and navigation</H2></P>
+
+<P>
+<H3>Focus on content, not chrome</H3></P>
+
+<P>Most websites use well established layout patterns. The homepage design has UI to support navigation (both header and footer), utility components (sign-in, search), and access to other content (blog and news). These are common elements for websites, but they distract users from focusing on the most important task: finding a food truck that's nearby. In designing the Windows Store app, we removed much of this UI and content because it wasn't directly related to the main feature of the app.</P>
+
+<P><TABLE ><TR><TD><A HREF="__attach/IC571341.png"><IMG SRC="__attach/__thumb/th_maxsize_250_IC571341.png"/></A></TD><TD><A HREF="__attach/IC576289.png"><IMG SRC="__attach/__thumb/th_maxsize_250_IC576289.png"/></A></TD></TR><TR><TD>Website:
+<BR>* The website has a common two-column layout pattern: main content on left and other content on right.
+<BR>* The focal point of the site, food trucks, occupies only about a third of the screen.</TD><TD>Windows Store app:
+<BR>All space on the landing page is dedicated to what this app is great at: finding a nearby food truck.</TD></TR></TABLE>
+<BR><B>Example: highlighting content on the website home page and Windows Store app home screen.</B></P>
+
+<P>Both the website and the Windows Store app show featured food trucks and categories on their main pages. Because of the limited space on the website, each food truck category is represented by a single picture. When designing the Windows Store app home screen, we chose to bring more food truck info to the top level to provide users more context and create a more engaging interface.</P>
+
+<P><TABLE ><TR><TD><A HREF="__attach/IC571346.png"><IMG SRC="__attach/__thumb/th_maxsize_250_IC571346.png"/></A></TD><TD><A HREF="__attach/IC576290.png"><IMG SRC="__attach/__thumb/th_maxsize_250_IC576290.png"/></A></TD></TR><TR><TD>Website:
+<BR>Each food truck category is represented by a single picture. A user must go to another page to see more trucks in that category and then select a truck to see details.</TD><TD>Windows Store app:
+<BR>Each category is represented by a group of pictures, so users can quickly determine what trucks in a given category are nearby. Users can go directly to a truck from the home screen.</TD></TR></TABLE> 
+<H3>Follow Windows Store app silhouette and align with the grid</H3></P>
+
+<P>The most recognizable characteristic of a typical Windows Store app silhouette is the region of the screen dedicated to content, with heavy margins on the top, bottom, and right edges. The left margins and the items peeking in from the right serve as a visual indication that the content pans from right to left. The top and bottom margins provide a visual rail to anchor the content. Components on the page are aligned to the grid to convey hierarchy.</P>
+
+<P><B>Example: food truck app designed on the Windows Store app silhouette and grid.</B></P>
+
+<P><A HREF="__attach/IC576291.png"><IMG SRC="__attach/__thumb/th_maxsize_250_IC576291.png"/></A></P>
+
+<P>Red guidelines show how each element on the page is aligned to the grid (note that a unit is 20px).</P>
+
+<P>A.	Top and left margins are consistent throughout the app.
+<BR>B. We use a consistent margin to separate different food truck categories like "Featured Trucks", "Near me", and "Asian".
+<BR>C. We use a consistent margin to separate pictures within a truck category. This margin is smaller than the food truck category margin to convey page layout hierarchy.
+<BR>D. The group title of each food truck category is also aligned to the grid.</P>
+
+<P>
+<H3>Use direct manipulation to navigate</H3></P>
+
+<P>On the website, navigation elements are repeated on both the top navigation bar and in the footer. The navigation elements are permanent and always in view. We designed the navigation elements in the Windows Store app to be both integrated directly with the content and tucked away until a user needs them.</P>
+
+<P><B>Example: Navigating to a particular truck on the website and the Windows Store app.</B></P>
+
+<P><TABLE ><TR><TD><A HREF="__attach/IC576292.png"><IMG SRC="__attach/__thumb/th_maxsize_250_IC576292.png"/></A></TD><TD><A HREF="__attach/IC571354.png"><IMG SRC="__attach/__thumb/th_maxsize_250_IC571354.png"/></A></TD></TR><TR><TD>Website:
+<BR>A.	A user navigates to a separate category page on the website to see all truck categories.
+<BR>B.	The user then picks a category (e.g. "Barbecue food trucks") and enters the category.
+<BR>C.	The user finally can choose a truck from the selected category.</TD><TD>Windows Store app:
+<BR>A.	The home screen includes a hub page that consists of groups of content: featured trucks, trucks near me, and category view.
+<BR>B.	Users can use touch to pan in either direction to see different categories of food trucks right on the home screen.
+<BR>C.	Because each hub highlights several trucks in the category, users can tap on a truck to go directly to that truck's page, or they can tap on the category group header text (e.g. "Asian") to go to a category page.</TD></TR></TABLE> 
+<H2>Commands and actions</H2></P>
+
+<P>
+<H3>Keep app commands and actions in the app bar</H3></P>
+
+<P>Websites frequently use ad-hoc commands that appear as user actions in line with content. For example, on our website, every food truck page has a link for users to upload photos of a given truck. These in-context actions are repeated on each individual truck page.</P>
+
+<P>Following the "content before chrome" approach of Windows Store app design, we put all the contextual actions in the app bar, a common control in the system. In addition, frequently used commands are near the edges so that they are more comfortable to reach. By employing these design principles, the app design surface doesn't get cluttered with controls, and no matter where a user is, they can swipe up the app bar from the bottom or top of the screen to see relevant actions. All Windows Store apps can use the app bar for their commands. Because users will become familiar with app bar interactions, it also increases the usability of the app and makes the whole system feel more cohesive.</P>
+
+<P><B>Example: uploading a food truck photo on the website and the Windows Store app.</B></P>
+
+<P><TABLE ><TR><TD><A HREF="__attach/IC576293.png"><IMG SRC="__attach/__thumb/th_maxsize_250_IC576293.png"/></A></TD><TD><A HREF="__attach/IC576294.png"><IMG SRC="__attach/__thumb/th_maxsize_250_IC576294.png"/></A></TD></TR><TR><TD>Website:
+<BR>Ad-hoc commands. User actions are in line with content.</TD><TD>Windows Store app:
+<BR>App bar is hidden by default to provide an immersive experience for users.
+<BR>A user can swipe up from the bottom or top of the screen to access contextual actions. The actions change depending on where the user is in the app or what content is selected.</TD></TR></TABLE> 
+<H2>Contracts</H2></P>
+
+<P>The food truck website follows common website conventions for global actions like search and sign-in. These actions are affixed permanently to the top right corner of the site. When designing the Windows Store app, we didn’t include our own UI for these global actions. Instead, we used built-in capabilities of the system, including the Search, Share, and Settings contracts. Because these UI components are not always on screen, the app canvas is cleaner, providing more space for content.</P>
+
+<P>
+<H3>Use Search contract to centralize the search experience</H3></P>
+
+<P>Like most websites, the food truck site has a search box on every page and the search is scoped to the site only. This means a user has to go to the food truck website first before searching.</P>
+
+<P>When designing the search experience in the Windows Store app, we employed the Search contract. As a result, there is no permanent chrome on screen for search. The Search charm provides access to search functionality and a user can invoke it anywhere in the app or from anywhere in the system.</P>
+
+<P><B>Example: searching for a food truck using the website and the Windows Store app.</B></P>
+
+<P><TABLE ><TR><TD><A HREF="__attach/IC576295.png"><IMG SRC="__attach/__thumb/th_maxsize_250_IC576295.png"/></A></TD><TD><A HREF="__attach/IC576296.png"><IMG SRC="__attach/__thumb/th_maxsize_250_IC576296.png"/></A> <A HREF="__attach/IC576297.png"><IMG SRC="__attach/__thumb/th_maxsize_250_IC576297.png"/></A> <A HREF="__attach/IC571362.png"><IMG SRC="__attach/__thumb/th_maxsize_250_IC571362.png"/></A></TD></TR><TR><TD>Website:
+<BR>* Search box is always visible on the site.
+<BR>* When search results are displayed, all website chrome is still present.
+<BR>* Users always need to go to the website first before performing a search for a food truck.</TD><TD>Windows Store app:
+<BR>* Users can perform a search anywhere in the app by swiping the edge to bring up the charms and choosing search.
+<BR>* The food truck app is selected by default because the user is currently inside the app. When the user starts typing, the app supplies search suggestions in the search pane. This way users can quickly see which terms generate results. After the user submits their query (e.g. "barbecue truck"), the app shows a search results view.
+<BR>* The search results view is clean and dedicated only to search results, without unnecessary chrome.</TD></TR></TABLE>
+<BR><B>Example: searching for a food truck outside of the app ( available only in the Windows Store app).</B></P>
+
+<P>In addition to in-app searching, users can perform a search from outside of the app by selecting the food trucks app as a search target. In the example here, a user is searching for "barbecue truck" from the Start screen. The user taps the food trucks app in the app list within the search pane, which launches the app and completes the search query. Because the food truck is optimized for finding nearby food trucks, with one tap a user can complete a search and find barbecue trucks in their area.</P>
+
+<P><A HREF="__attach/IC571364.png"><IMG SRC="__attach/__thumb/th_maxsize_250_IC571364.png"/></A> <A HREF="__attach/IC571362.png"><IMG SRC="__attach/__thumb/th_maxsize_250_IC571362.png"/></A></P>
+
+<P>
+<H3>Use the Share contract to reach more destinations and people you care about</H3></P>
+
+<P>On the food truck website, users can share info about a particular food truck via email, Facebook, or Twitter. Sharing options are frequently made available in many places on a website, near the content that can be shared.</P>
+
+<P>Sharing scenarios really light up with in our Windows Store app thanks to the Share contract. Using the system's built-in share charm eliminates the need for share buttons to appear throughout the app. Users can always find share options in a consistent location, regardless of which app they're using. The change simplifies both design and development because there's no need to connect with every service that a user might want to use. After integrating our app with Share, it is connected with every Windows app that has implemented the share contract. There's no need to deal with API changes to external web services.</P>
+
+<P><B>Example: sharing a food truck photo.</B></P>
+
+<P><TABLE ><TR><TD><A HREF="__attach/IC571369.png"><IMG SRC="__attach/__thumb/th_maxsize_250_IC571369.png"/></A></TD><TD><A HREF="__attach/IC571371.png"><IMG SRC="__attach/__thumb/th_maxsize_250_IC571371.png"/></A></TD></TR><TR><TD>Website:
+<BR>* Each sharing service has its own button.
+<BR>* Sharing buttons are spread throughout the website.</TD><TD>Windows Store app:
+<BR>* A consistent location in all Windows Store apps for all sharing options. Users can invoke Share anywhere inside the app.
+<BR>* When a user chooses a sharing service, the target app can customize the UI pane and branding.</TD></TR></TABLE> 
+<BR><B>Example: a close look at the Share pane.</B></P>
+
+<P><A HREF="__attach/IC571372.png"><IMG SRC="__attach/__thumb/th_maxsize_250_IC571372.png"/></A></P>
+
+<P><B>Windows Store app:</B></P>
+
+<P>
+<UL>
+<LI>Any app that’s implemented as a share target appears in the app list in the Share pane. For example, Socialite, Tweet@Rama, or Mail.</LI>
+<LI>Users can share a variety of content types that an app supports. For example, users can share links, photos, or save the info to a note-taking app if they like.</LI>
+<LI>Frequent share targets are displayed on the top to help users complete the sharing work flow quickly.</LI>
+</UL>
+<H3>Use the Settings pane</H3></P>
+
+<P>The food truck website has a set of utility functions, like About us, Sign-in, Contact info, and Newsletters. These functions inhabit specific areas of the screen according to common web design patterns, so users can find them easily. But they are spread across different areas of the site. Configuration and management tasks are not the focal points of the Windows Store app. By using the Settings contract with its consistent entry point, users do not have to memorize where these app management functions are and can reliably invoke them when needed.</P>
+
+<P><B>Example: setting options on the website and the Windows Store app.</B></P>
+
+<P><TABLE ><TR><TD><A HREF="__attach/IC571376.png"><IMG SRC="__attach/__thumb/th_maxsize_250_IC571376.png"/></A></TD><TD><A HREF="__attach/IC576298.png"><IMG SRC="__attach/__thumb/th_maxsize_250_IC576298.png"/></A> <A HREF="__attach/IC576299.png"><IMG SRC="__attach/__thumb/th_maxsize_250_IC576299.png"/></A> <A HREF="__attach/IC576300.png"><IMG SRC="__attach/__thumb/th_maxsize_250_IC576300.png"/></A> <A HREF="__attach/IC576301.png"><IMG SRC="__attach/__thumb/th_maxsize_250_IC576301.png"/></A></TD></TR><TR><TD>Website:
+<BR>* Utility functions like sign-in, About Us, Contact, and Newsletter reside in different areas of the site.</TD><TD>Windows Store app:
+<BR>A.	Setting options are all in one place in the Settings pane.
+<BR>B.	Users can sign in anywhere within the app without leaving their current context.
+<BR>C.	The notification setting allows users to specify what types of notifications they want to receive. This replaces the site newsletter and provides users with just-in-time info from the app.</TD></TR></TABLE>
+<H3>Use file picker to access files from various locations</H3></P>
+
+<P>The foot truck site encourages users to upload photos of trucks in their area. This functionality can be easily replicated in a Windows Store app using a file picker. The file picker is a full screen dialog, which lets users access files and folders located on the local PC, connected storage devices, or other computers connected via a HomeGroup. Users can also access items from apps that participate in the File Picker contract.</P>
+
+<P><B>Example: uploading a food truck photo from the local file system.</B></P>
+
+<P><A HREF="__attach/IC576302.png"><IMG SRC="__attach/__thumb/th_maxsize_250_IC576302.png"/></A></P>
+
+<P>Windows Store app:</P>
+
+<P>
+<UL>
+<LI>User taps the Upload button in the app bar and the file picker UI opens. This is a consistent UI surface that the user sees whenever they want to access files.</LI>
+<LI>Tapping on the Files header, the user sees a flyout of all available file locations and navigates to a file folder.</LI>
+<LI>User selects multiple photos from the folder and a list of thumbnails at the bottom left showing the selected photos appears.</LI>
+</UL>
+<H2>Touch</H2></P>
+
+<P>
+<H3>Use horizontal panning for horizontal layout</H3></P>
+
+<P>Both the food truck website and Windows Store app are designed with the user's interaction method and ergonomics in mind. The website is designed primarily for mouse interaction, so content on every page is laid out vertically and users can use their mouse to quickly and easily scroll to the content they want. The Windows Store app is designed to be touch first and uses landscape orientation, like most desktop and laptop PCs. Horizontal layout optimizes screen space usage. It's also more comfortable and natural for users to pan horizontally with touch on a landscape device than it is to scroll vertically.</P>
+
+<P><B>Example: navigating content on the website versus the Windows Store app home screen.</B></P>
+
+<P><A HREF="__attach/IC576303.png"><IMG SRC="__attach/__thumb/th_maxsize_250_IC576303.png"/></A></P>
+
+<P>
+<H3>Cross-slide to select objects</H3></P>
+
+<P>A common convention on websites is to use check boxes beside multiple objects to indicate the multiple selections. With Windows 8, a user can do a quick swipe on an object, perpendicular to the panning direction, to select an object in a list or grid. When objects are selected, the app bar can be revealed automatically to show commands relevant to the item.</P>
+
+<P><B>Example: selecting multiple food trucks on the home screen to pin to the Start screen.</B></P>
+
+<P>On the app landing page, when users swipe to pick a truck, an app bar is revealed with an Add to favorites command that can bookmark the selected truck(s). This gesture is reversible, which makes selection a lot more efficient in Windows Store apps, giving users the confidence to explore the app.</P>
+
+<P><A HREF="__attach/IC576305.png"><IMG SRC="__attach/__thumb/th_maxsize_250_IC576305.png"/></A></P>
+
+<P>
+<H3>Pinch and stretch to semantic zoom</H3></P>
+
+<P>The pinch and stretch gestures let users quickly step through a long list of content. The landing page of the Windows Store app shows a number groups, including Featured, Near me, Asian, Barbeque, and Breakfast. Users can pan across to view more content, or, using semantic zoom, they can quickly jump to a specific section. Using the semantic zoom control, pinching zooms out to show all of the sections in the current view at a glance. Users can then quickly tap to jump over to the beginning, the end, or a specific section within the list. The zoomed out view can be further designed to show interesting content within each section, or meta info about a section (such as the number of trucks in each category). It can be used for navigation instead of persistent navigation elements on the app canvas.</P>
+
+<P><B>Example: jumping to a particular truck category using semantic zoom.</B></P>
+
+<P><TABLE ><TR><TD><A HREF="__attach/IC571385.png"><IMG SRC="__attach/__thumb/th_maxsize_250_IC571385.png"/></A></TD><TD><A HREF="__attach/IC576306.png"><IMG SRC="__attach/__thumb/th_maxsize_250_IC576306.png"/></A></TD></TR><TR><TD>Website:
+<BR>* User must navigate to a separate page to see all categories.</TD><TD>Windows Store app:
+<BR>* User can use semantic zoom on the home screen to see all categories easily, without leaving the screen.
+<BR>* In semantic zoom view, each category is represented by a single picture. All categories are available via the home screen without the need to pan to see a complete list.</TD></TR></TABLE> 
+<H2>Scaling and views</H2></P>
+
+<P>
+<H3>Design adaptive layout for orientation and screen sizes</H3></P>
+
+<P>We designed the food truck website layout to be flexible enough to scale to different devices, screen sizes, resolutions, and orientation. Similar to a fluid website design, a Windows 8 PCs range from small, touch-only tablets to larger laptops and desktops. Designing our app so it looks great on the wide range of devices that support Windows Store apps is crucial if we want our app to reach more customers.</P>
+
+<P>You can apply many principles of website design to Windows Store app development. Built-in templates and controls make changing from landscape view to portrait view and back easy. When orientation changes to portrait, more trucks are shown in each category. Similarly, the app also shows more trucks in each category to take advantage of the additional screen space of high resolution monitors.</P>
+
+<P><B>Example: food truck website and the Windows Store app on different devices.</B></P>
+
+<P>The food truck website on different devices and screen resolutions.</P>
+
+<P><TABLE ><TR><TD><A HREF="__attach/IC571387.png"><IMG SRC="__attach/__thumb/th_maxsize_250_IC571387.png"/></A></TD><TD><A HREF="__attach/IC576307.png"><IMG SRC="__attach/__thumb/th_maxsize_250_IC576307.png"/></A></TD></TR><TR><TD>Website:
+<BR>* The food truck website adjusts layout and reflows for different screen sizes and form factors.</TD><TD>Windows Store app:
+<BR>* The Windows Store app in portrait mode, landscape mode, and on a high resolution screen. We use the extra space to show more content.</TD></TR></TABLE>
+<H3>Use snap view to engage your users</H3></P>
+
+<P>Windows 8 lets users multitask by snapping an app next to another app. Snapped view is a great way to increase the app's time on screen and engage users for longer periods. It's easy for a user to switch the main app and the snapped app by manipulating the splitter between the two, so it is important to maintain context across resizes. Users should not lose app state as a result of resizing their app.</P>
+
+<P><B>Example: Windows Store app home screen in both filled and snap views.</B></P>
+
+<P><A HREF="__attach/IC576308.png"><IMG SRC="__attach/__thumb/th_maxsize_250_IC576308.png"/></A></P>
+
+<P>
+<UL>
+<LI>Left: The food truck app in filled view. The user can use a weather app and the food truck app side-by-side.</LI>
+<LI>Right: In snapped view, a user pans vertically to get to more content because it’s more comfortable to pan along the long edge. This is different than the horizontal panning in full view, which is also optimized to pan along the long edge.</LI>
+</UL>
+<H2>Notifications</H2></P>
+
+<P>
+<H3>Use tiles for persistent and dynamic updates</H3></P>
+
+<P>Users of the food truck website can go to the site to check out news and blogs about new food trucks in their area or food trucks that have changed locations. The website also allows users to follow food truck announcements on Facebook and Twitter. But to do this, users either must go to the website to see what's new or sign up for updates. Users might not see some updates until they've already lost relevancy.</P>
+
+<P>When translating this capability into a Windows Store app, we used tiles and toast notifications to provide users with more up to date info that's tailored to their needs. Tiles shown on the Start screen are front doors to the Windows Store app. They're designed to feel alive with activity and deliver fresh, personalized content that is tailored to the user so they're more likely to use the app and derive value from it. The app continues to show this content even when it's not running.</P>
+
+<P><A HREF="__attach/IC571390.png"><IMG SRC="__attach/__thumb/th_maxsize_250_IC571390.png"/></A></P>
+
+<P>Website:</P>
+
+<P>
+<UL>
+<LI>Latest news section on the website shows a truck's latest location.</LI>
+<LI>The blog on the website lists new trucks and provides hints about when food trucks will be in a given neighborhood.</LI>
+</UL>
+<BR><A HREF="__attach/IC576309.png"><IMG SRC="__attach/__thumb/th_maxsize_250_IC576309.png"/></A></P>
+
+<P>Windows Store app:</P>
+
+<P>
+<UL>
+<LI>The main tile of the food truck app shows what food trucks are near a user and how long the truck is going to stay at that location. Tiles can be updated even when the food truck app is not running so users can receive updates via the Start screen.</LI>
+<LI>A user can pin their favorite trucks (e.g. Cheeseburger Truck) as a tile on the Start screen to receive the latest news about that truck. This gives users a high-degree of customization, tailored to their needs. Many tile templates are available for app designers to choose from to make implementation easy.</LI>
+</UL>
+<H3>Use toasts for transient and important notifications</H3></P>
+
+<P>In addition to Tile notifications, Toast notifications can also be used to notify users of real time events. Unlike tile updates that are passive, toast notifications in Windows Store apps are important updates that will interrupt users. They show up on the top right of the screen and can appear anywhere in the system. Generally it's best to let users opt-in to notifications during their first run of the app. If applicable, show recent toast notifications on tiles while they are still relevant.</P>
+
+<P><B>Example: a user’s favorite food truck has changed locations.</B></P>
+
+<P>User has opted to receive toast notification via the Settings pane to let them know when a favorite food truck has changed its location.</P>
+
+<P><A HREF="__attach/IC576310.png"><IMG SRC="__attach/__thumb/th_maxsize_250_IC576310.png"/></A></P>
+
+<P>
+<H2>Conclusion</H2></P>
+
+<P>When building a Windows Store app based on an existing website, always ask yourself what your app is best at. When you have an answer, optimize your Windows Store app for that scenario. Always remember to emphasize content over chrome: use built-in commands in the system like Share, Search, Settings to provide access to common functionality through a familiar and intuitive mechanism. Hide commands off-screen when not needed using the app bar and semantic zoom controls. And take advantage of live tiles and notifications so users continue to derive value from your app, even when its not running. If you do these things, you'll end up with a compelling Windows Store app that your users will love, and that can help you grow your business.</P>
+
+<P>
+<H2>About the authors</H2></P>
+
+<P>Nicholas Huttema is a Visual and Interaction Designer at Plain Concepts. He enjoys working with fresh ideas and clean user interfaces. Nick's education and career began in Michigan as a Print Designer. Since then he added UX Design to his skill set working at various companies in the Los Angeles and Seattle areas. He has done design work for Microsoft, Myspace, Amazon.com, and Herman Miller, among others. Outside of work he enjoys spending time outdoors hiking, camping, and snowboarding.</P>
+
+<P>Qixing Zheng is a User Experience Program Manager at Microsoft. She is part of the team that created the Windows 8 user interface and has been helping designers to learn about Microsoft design style. Her passion is deeply rooted in helping people improve their user experience with the technology they rely on every day. Before joining the Windows team, Qixing worked as the first UX advisor at Microsoft Canada where she spoke at universities, design communities, and companies about Microsoft’s investment in UX. She also worked at identifying design heroes and collecting design stories from the community.</P>
+</BODY>
+</HTML>

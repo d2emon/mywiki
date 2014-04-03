@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV='CONTENT-TYPE' CONTENT='TEXT/HTML; CHARSET=UTF-8'/>
+
+	<STYLE type="text/css">
+		body, div, p, table {
+			font-size:10pt;
+			font-family:Verdana;
+		}
+
+		img{border:none}
+		
+	</STYLE>
+	
+</HEAD>
+
+<BODY>
+<P>
+<H1>Настройка виртуальных хостов</H1></P>
+
+<P>Привет всем!</P>
+
+<P>Сегодня посмотрим как настроить виртуальные хосты (virtualhost) в ubuntu. Это позволит держать  несколько сайтов на одном компьютере. Для настройки потребуется виртуальная машина с установленной ubuntu server, а также установленный apache. Запускаем putty, авторизуемся и начинаем.</P>
+
+<P>Для удобства переходим в дирректорию apache
+<BR><CODE>
+<BR>cd /etc/apache2/sites-available/
+<BR></CODE>
+<BR>создаем файл для первого виртуального хоста.К примеру будем использовать site1.local, второй сайт будет site2.local, но о нем чуть позже
+<BR><CODE>
+<BR>sudo touch sites1.local
+<BR></CODE></P>
+
+<P>Теперь открываем первый virtualhost для сайта  sites1.local
+<BR><CODE>
+<BR>sudo nano sites1.local
+<BR></CODE>
+<BR>В нем прописываем следующий текст
+<BR><CODE>
+<BR>&lt;VirtualHost *:80&gt;
+<BR>ServerName site1.local
+<BR>ServerAlias site1.local <A HREF="http://www.site1.local">www.site1.local</A>
+<BR>DocumentRoot /var/site1.local/www/
+<BR>&lt;Directory var/site1.local/www/&gt;
+<BR>AllowOverride All
+<BR>&lt;/Directory&gt;
+<BR>&lt;/VirtualHost&gt;
+<BR></CODE></P>
+
+<P>Нажимаем CTRL+O, чтобы сохранить изменения и CTRL+X, чтобы закрыть текстовый редактор nano, консольный текстовый редактор в Ubuntu. Теперь скопируем файл и отредактируем его, чтобы создать виртуальный хост для второго сайта  site2.local
+<BR><CODE>
+<BR>sudo cp sites1.local sites2.local
+<BR>sudo nano sites2.local
+<BR></CODE></P>
+
+<P><CODE>
+<BR>&lt;VirtualHost *:80&gt;
+<BR>ServerName site2.local
+<BR>ServerAlias site2.local <A HREF="http://www.site2.local">www.site2.local</A>
+<BR>DocumentRoot /var/site2.local/www/
+<BR>&lt;Directory var/site2.local/www/&gt;
+<BR>AllowOverride All
+<BR>&lt;/Directory&gt;
+<BR>&lt;/VirtualHost&gt;
+<BR></CODE> 
+<BR>где
+<BR><B>servername</B> - навание сайта
+<BR><B>ServerAlias</B> — синонимы сайта, то есть можно обращаться как с www так и без www
+<BR><B>DocumentRoot</B> — расположение файлов сайта
+<BR><B>&lt;Directory var/site2.local/www/&gt;</B>  - описание разрешений для файлов и каталогов сайта</P>
+
+<P>Теперь идем в каталог /var и создаем дирректории для сайтов
+<BR><CODE>
+<BR>sudo mkdir -p ./site1.local/www
+<BR>sudo mkdir -p ./site2.local/www
+<BR></CODE>
+<BR>Ключ -p для mkdir нужен для рекурсивного создания каталогов, то есть сначала будет создан каталог site1.local, потом сразу каталог www.</P>
+
+<P>Теперь создаем 2 тестовые странички в каждом из каталогов www для каждого сайта. Для первого сайта
+<BR><CODE>
+<BR>sudo touch /var/site1.local/www/index.php
+<BR>sudo nano /var/site1.local/www/index.php
+<BR></CODE>
+<BR>в index.php пишем
+<BR><CODE>
+<BR>&lt;?php
+<BR>echo "&lt;h1&gt;Первый virtualhost для site1.local&lt;/h1&gt;"
+<BR>?&gt;
+<BR></CODE>
+<BR>теперь копируем файл для site2.local
+<BR><CODE>
+<BR>sudo cp /var/site1.local/www/index.php /var/site2.local/www/index.php
+<BR>sudo nano /var/site2.local/www/index.php
+<BR></CODE>
+<BR>в файл запихиваем немного другой текст, чтобы видно было различия
+<BR><CODE>
+<BR>&lt;?php
+<BR>echo "&lt;h1"&gt;Второй virtualhost для site2.local&lt;/h1&gt;"
+<BR>?&gt;
+<BR></CODE></P>
+
+<P>Теперь делаем сайты доступными, выполнив  команды
+<BR><CODE>
+<BR>sudo a2ensite site1.local
+<BR>sudo a2ensite site2.local
+<BR></CODE>
+<BR>и перезапускаем apache
+<BR><CODE>
+<BR>sudo service apache2 restart
+<BR></CODE>
+<BR>или
+<BR><CODE>
+<BR>sudo /etc/init.d/apache2 restart
+<BR></CODE>
+<BR>кому как нравится )))</P>
+
+<P>Теперь можно проверять. Я запускаю виртуальную машину с windows xp. Так как у нас не установлен dns-сервер, то необходимо прописать ip адреса сайтов в файле C:\WINDOWS\system32\drivers\etc\hosts</P>
+
+<P>Открываем его в текстовом редакторе и в конец дописываем строки</P>
+
+<P><CODE>
+<BR><A HREF="http://192.168.3.1">192.168.3.1</A>   site1.local
+<BR><A HREF="http://192.168.3.1">192.168.3.1</A>   site2.local
+<BR><A HREF="http://192.168.3.1">192.168.3.1</A> — адрес вашего веб-сервера, если у вас другой, то указываете его.
+<BR></CODE></P>
+</BODY>
+</HTML>

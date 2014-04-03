@@ -1,0 +1,15 @@
+[General]
+type = wiki
+tags = мистика, ню-готика, зомби
+order = 0
+datetime = 2013-11-16 21:20:23.327558
+
+[Misc]
+pageindex = 1
+
+[wiki]
+md5_hash = c69366a3683cd03e270f9a92bd68753e
+
+[Tree]
+expand = False
+

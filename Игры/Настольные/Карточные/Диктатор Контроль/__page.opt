@@ -1,0 +1,15 @@
+[General]
+type = wiki
+tags = киберпанк
+order = 6
+datetime = 2014-02-11 11:36:30.361000
+
+[Tree]
+expand = False
+
+[Misc]
+pageindex = 1
+
+[wiki]
+md5_hash = 64b5b0dd90cb9b7cf0f0549f309b1c9c
+

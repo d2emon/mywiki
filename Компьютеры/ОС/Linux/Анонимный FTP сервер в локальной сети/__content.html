@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV='CONTENT-TYPE' CONTENT='TEXT/HTML; CHARSET=UTF-8'/>
+
+	<STYLE type="text/css">
+		body, div, p, table {
+			font-size:10pt;
+			font-family:Verdana;
+		}
+
+		img{border:none}
+		
+	</STYLE>
+	
+</HEAD>
+
+<BODY>
+<P>
+<H1>Анонимный FTP сервер в локальной сети</H1></P>
+
+<P>Установил pure-ftpd - работает, прочитал ман по нему - думаю с настройкой разберусь.</P>
+
+<P>Однако, прежде чем нырять в глубь кастомайза хочется решить несколько оргвопросов, описываю ситуацию:</P>
+
+<P>
+<OL>
+<LI>есть жёсткий диск (160 Гб, Maxtor) со S.M.A.R.T. статусом bad. Windows на нём умирает с нехорошей периодичностью, в то же время swap и /home патиции в дальних секторах чувствуют себя не плохо.</LI>
+<LI>есть два контент-дающих раздела (на разных дисках, итого в системе - 3 шт.) /mnt/data с подразделами video, music, books и т.д. - всё более-менее отсортированно, названия поправлены и осмысленны, музыка тэгированна и utf'нута - и /mnt/torrents: периодически расчищаемая файлопомойка.</LI>
+</OL>В голову идут следующие варианты организации фтп-сервера:</P>
+
+<P>
+<OL>
+<LI>загрузиться с диска Victoria, посмотреть что скажет Вика, попробовать сделать ремапинг Макстора, разбить его на два-три ext3 раздела и примонтировать в /home/ftp
+<BR>Тогда можно особо не парясь накидать туда файлов на раздачу и задать всем нужные параметры доступа.
+<BR>Из минусов - не факт, что получится диск реанимировать, да и потом всё время ожидать его падения.</LI>
+<LI>создать папку /home/ftp и сделать сим-линки на /mnt/torrents/downloaded и нужные разделы /mnt/data</LI>
+</OL>Здесь есть пока несколько непонятностей:</P>
+
+<P>
+<OL>
+<LI>будет ли торрент клиент блокировать раздачу фтп-клиента и наоборот?</LI>
+<LI>смогут ли анонимусы по сим-линкам директорий войти в эти директории и увидеть все доступные файлы?</LI>
+<LI>если поставить на сим-линки атрибут "только для чтения", будут ли файлы в директориях доступны анонимусам только для чтения?</LI>
+<LI>стоит ли заводить нового пользователя upload и не выпускать его за границы ~upload или сделать anonimous-only фтп-сервер?</LI>
+<LI>как быть с новыми файлами, добавляемыми в /mnt/torrents/downloaded (автоматически) и /mnt/data (вручную), будут ли они read-only, если работают пункты б.) и в.) ?</LI>
+</OL>Очень не хотелось бы оставить дыр в системе и в один прекрасный момент потерять все файлы.</P>
+
+<P>/mnt/torrents не так жалко, большая часть в /mnt/data скопирована, а вот информацию из второй директории дорожу, хотя ею и удобнее всего делиться.</P>
+
+<P><HR></P>
+
+<P>Сервер настроил, работает. Правда, перешёл на proftpd.</P>
+
+<P>Но есть проблема, кусок конфига в качестве иллюстрации:</P>
+
+<P>Код:
+<BR><CODE>
+<BR>&lt;Anonymous /mnt/data/ftp&gt;
+<BR>User anonymous
+<BR>Group anonymous
+<BR>AnonRequirePassword off
+<BR>MaxClients 5 "The server is full, hosting %m users"
+<BR>DisplayLogin welcome.msg
+<BR>&lt;Limit LOGIN&gt;
+<BR>Allow from all
+<BR>Deny from all
+<BR>&lt;/Limit&gt;
+<BR>&lt;Limit LIST NLST  RETR  PWD XPWD  SIZE  STAT  CWD XCWD  CDUP XCUP &gt;
+<BR>AllowAll
+<BR>&lt;/Limit&gt;
+<BR>&lt;Limit STOR STOU  APPE  RNFR RNTO  DELE  MKD XMKD SITE_MKDIR  RMD XRMD SITE_RMDIR  SITE  SITE_CHMOD  SITE_CHGRP  MTDM &gt;
+<BR>DenyAll
+<BR>&lt;/Limit&gt;
+<BR>&lt;Directory /mnt/data/video/anime&gt;
+<BR>&lt;Limit LIST NLST  RETR  PWD XPWD  SIZE  STAT  CWD XCWD  CDUP XCUP &gt;
+<BR>AllowAll
+<BR>&lt;/Limit&gt;
+<BR>&lt;Limit STOR STOU  APPE  RNFR RNTO  DELE  MKD XMKD SITE_MKDIR  RMD XRMD SITE_RMDIR  SITE  SITE_CHMOD  SITE_CHGRP  MTDM &gt;
+<BR>DenyAll
+<BR>&lt;/Limit&gt;
+<BR>&lt;/Directory&gt;
+<BR>&lt;/Anonymous&gt;
+<BR></CODE></P>
+
+<P>
+<UL>
+<LI>/mnt/data/ftp - основная папка, анонимус её видит и может качать.</LI>
+<LI>/mnt/data/video - дополнительная, её анонимус не видит- а очень хотелось бы.</LI>
+</UL>Тупо дублировать в /mnt/data/ftp то что в соседней директории лежит совсем неохота.</P>
+
+<P><HR></P>
+
+<P>
+<UL>
+<LI>создаёшь новую папку xxx где угодно</LI>
+<LI>вместо "&lt;Anonymous /mnt/data/ftp&gt;" путь к ней &ltAnonymous /xxx&gt;</LI>
+<LI>в ней делаешь пустые ftp и video</LI>
+<LI>монтируешь настоящие ftp и video в эти пустые</LI>
+<LI>* mount --bind /mnt/data/ftp /xxx/ftp</LI>
+<LI>* mount --bind /mnt/data/video /xxx/video</LI>
+<LI>чтоб монтирование сохранялось после ребута - правишь /etc/fstab</LI>
+<LI>дописываешь строки в виде</LI>
+</UL>
+<PRE>
+/mnt/data/ftp    /xxx/ftp      vfat     bind     0     0   
+</PRE></P>
+
+<P><HR></P>
+
+<P>И в догонку свой вопрос... по теме вроде =) </P>
+
+<P>долго я бился с proftpd и gProftpd ... настраивал и кодировки utf8-cp1215, и монтирование то самое, и код конфига, и автозапуск в системе... </P>
+
+<P>вообщем чувствую что совсем не много осталось до победного конца :) </P>
+
+<P> :coolsmiley: к делу:</P>
+
+<P>7.10 desktop + proftpd + gProftpd + ssh = используется чисто как ftp сервак в локалке</P>
+
+<P>в системе 4 пользователя: </P>
+
+<P>
+<UL>
+<LI>root</LI>
+<LI>dimana - основной пользователь, что при установке прописывается</LI>
+<LI>admin - хочу что бы администрировал файлы на ftp сервере удалённо через фтп-клиенты</LI>
+<LI>anonymous - доступ к серверу без пароля</LI>
+</UL>честно говоря, запутался совершенно в итоге с правами и группами. </P>
+
+<P>задача - что бы admin мог удалять, править, перетаскивать  файлы , закачанные на сервер под анонимусом (по умолчанию ставятся 644)</P>
+
+<P>в каких группах должен состоять admin, root ? от чьего имени работать proftpd ? может я что ещё упускаю?</P>
+
+<P><HR></P>
+
+<P>
+<BR>Думаю, всё решается группами.</P>
+
+<P>ведь права 644 ... с 4кой на группе</P>
+</BODY>
+</HTML>

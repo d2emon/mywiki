@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV='CONTENT-TYPE' CONTENT='TEXT/HTML; CHARSET=UTF-8'/>
+
+	<STYLE type="text/css">
+		body, div, p, table {
+			font-size:10pt;
+			font-family:Verdana;
+		}
+
+		img{border:none}
+		
+	</STYLE>
+	
+</HEAD>
+
+<BODY>
+<P>
+<H1>Загрузить gif из ресурса</H1></P>
+
+<P>Помогите пожалуйста загрузить GIF картинку из файла ресурсов и нарисовать ее на форме средствами WinAPI или может есть способы отобразить картинку на WinAPI форме без использования файла ресурсов?</P>
+
+<P>
+<PRE>
+Mwindow := CreateWindowEx(0,'win','window', WS_OVERLAPPEDWINDOW,100,100,300,300,0,0,Hinstance,nil); // создаю окно
+Com2 := CreateWindow('Button', 'Click me', WS_CHILD or BS_TEXT or WS_VISIBLE, 126, 3, 120, 20, Mwindow, btnClickme, Hinstance, nil); //создаю кнопку
+SHOWWINDOW (Mwindow,SW_SHOW); // показываю
+</PRE></P>
+
+<P>надо показать на этой форме картинку...</P>
+
+<P><HR></P>
+
+<P>
+<PRE>
+unit GIFJPG;
+
+interface
+uses Windows;
+
+type
+ ISeqStream = interface(IUnknown)
+   ['{0C733A30-2A1C-11CE-ADE5-00AA0044773D}']
+ end;
+
+ IStream = interface(ISeqStream)
+   ['{0000000C-0000-0000-C000-000000000046}']
+ end;
+ 
+ IPicture = interface
+   ['{7BF80980-BF32-101A-8BBB-00AA00300CAB}']
+   function get_Handle(out handle: LongWord): HRESULT; stdcall;
+ end;
+
+function getBitmapSize(B: HBITMAP):SIZE;
+function LoadGIFJPGFile(FileName: string): HBITMAP;
+function LoadGIFJPGRes(I: HINST; N, T: PChar): HBITMAP;
+
+implementation
+
+const IID_IPICTURE : TGUID = '{7BF80980-BF32-101A-8BBB-00AA00300CAB}';
+
+function BuildStream(H: HGLOBAL; DelOnRls: BOOL; out S: IStream): HRESULT; stdcall; external 'ole32.dll' name 'CreateStreamOnHGlobal';
+function LoadJPG(S: IStream; Sz: LongInt; fMode: BOOL; const iid: TGUID; out vObj): HRESULT; stdcall; external 'olepro32.dll' name 'OleLoadPicture';
+
+function getBitmapSize(B: HBITMAP):SIZE;
+var buf : BITMAP;
+begin
+ FillChar(buf, SizeOf(BITMAP), 0);
+ GetObject(B, SizeOf(BITMAP), @buf);
+ result.cx:=buf.bmWidth;
+ result.cy:=buf.bmHeight;
+end;
+
+function LoadGIFJPGMem(G: HGLOBAL; Sz: DWORD): HBITMAP;
+var
+ S : IStream;
+ P : IPicture;
+ H : Cardinal;
+
+ bs : SIZE;
+ S_DC, D_DC : HDC;
+begin
+ BuildStream(G, true, S);
+ LoadJPG(S, Sz, false, IID_IPICTURE, P);
+ P.get_Handle(H);
+ P._AddRef;
+
+ bs:=GetBitmapSize(H);
+
+ S_DC:=CreateCompatibleDC(0);
+ SelectObject(S_DC, H);
+ Result:=CreateCompatibleBitmap(S_DC, bs.cx, bs.cy);
+
+ D_DC:=CreateCompatibleDC(0);
+ SelectObject(D_DC, Result);
+
+ BitBlt(D_DC, 0, 0, bs.cx, bs.cy, S_DC, 0, 0, SRCCOPY);
+
+ ReleaseDC(Result, D_DC);
+ DeleteDC(D_DC);
+
+ ReleaseDC(H, S_DC);
+ DeleteDC(S_DC);
+
+ P._Release;
+end;
+
+function LoadGIFJPGFile(FileName: string): HBITMAP;
+var
+ F : HFILE;
+ P : Pointer;
+ S : LongInt;
+ T : Cardinal;
+ wfd : WIN32_FIND_DATA;
+begin
+ Result:=0;
+ F:=CreateFile(PChar(FileName), GENERIC_READ, FILE_SHARE_READ, nil, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, 0);
+ if F=INVALID_HANDLE_VALUE then exit;
+ FindFirstFile(PChar(FileName), wfd);
+ S:=wfd.nFileSizeLow;
+ LongInt(P):=LocalAlloc(GMEM_FIXED, S);
+ ReadFile(F, P^, S, T, nil);
+ Result:=LoadJPGMem(LongInt(P), S);
+ LocalFree(LongInt(P));
+ CloseHandle(F);
+end;
+
+function LoadGIFJPGRes(I: HINST; N, T: PChar): HBITMAP;
+var
+ G, P : Pointer;
+ R : HGLOBAL;
+ S : LongInt;
+begin
+ Result:=0;
+ R:=FindResource(I, N, T);
+ if R=0 then exit;
+ S:=SizeofResource(I, R);
+ LongInt(G):=LoadResource(I, R);
+ LongInt(P):=LocalAlloc(GMEM_FIXED, S);
+ move(G^, P^, S);
+ Result:=LoadJPGMem(LongInt(P), S);
+ LocalFree(LongInt(P));
+end;
+
+end.
+</PRE></P>
+
+<P><HR></P>
+
+<P>
+<PRE>
+function LoadGIFJPGFile(FileName: string): HBITMAP;
+var
+ F : HFILE;
+ P : Pointer;
+ S : LongInt;
+ T : Cardinal;
+ wfd : WIN32_FIND_DATA;
+begin
+ Result:=0;
+ F:=FindFirstFile(PChar(FileName), wfd);
+ if F=INVALID_HANDLE_VALUE then exit;
+ FindClose(F);
+ F:=CreateFile(PChar(FileName), GENERIC_READ, FILE_SHARE_READ, nil, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, 0);
+ S:=wfd.nFileSizeLow;
+ LongInt(P):=LocalAlloc(GMEM_FIXED, S);
+ ReadFile(F, P^, S, T, nil);
+ Result:=LoadJPGMem(LongInt(P), S);
+ LocalFree(LongInt(P));
+ CloseHandle(F);
+end;
+</PRE></P>
+
+<P><HR></P>
+
+<P>если можно, еще 1 вопрос рисовать пытаюсь вот так:</P>
+
+<P>
+<PRE>
+hbmp:= LoadGIFJPGRes(hInstance, 'picture', 'GIF');
+ hdc1:=GetDC(Mwindow);
+ hdc2:=CreateCompatibleDC(hdc1);
+ SelectObject(hdc2,hbmp);
+ BitBlt(hdc1,100,100,545,493,hdc2,0,0,SRCCOPY);
+</PRE></P>
+
+<P>не рисуется :( что я делаю неправильно?</P>
+
+<P><HR></P>
+
+<P>Вызов BitBlt должен быть сделан непосредственно в обработчике сообщения WM_PAINT. Учти, что DC с каринкой обязан "дожить" до этого момента нетронутым. А оконный передаётся в параметрах WM_PAINT.</P>
+</BODY>
+</HTML>

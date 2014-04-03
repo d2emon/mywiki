@@ -1,0 +1,9 @@
+[General]
+type = wiki
+tags = wikipedia, сказки, фентези
+order = 7
+datetime = 2013-04-02 17:50:14.370000
+
+[wiki]
+md5_hash = 5a73d0f45dfbeb9685bbb795666479ee
+

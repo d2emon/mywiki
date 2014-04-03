@@ -1,0 +1,15 @@
+[General]
+type = wiki
+tags = wikipedia
+order = 4
+datetime = 2013-01-11 12:37:27.500000
+
+[wiki]
+md5_hash = 3a2be4f21f90bdb99741b31a15917442
+
+[Tree]
+expand = False
+
+[Misc]
+pageindex = 1
+

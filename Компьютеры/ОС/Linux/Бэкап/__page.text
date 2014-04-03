@@ -1,0 +1,20 @@
+!! Бэкап
+
+Резервное копирование
+
+(:childlist:)
+
+@@ 
+#!/bin/bash 
+mkdir /home/USER/bash-scripts/backup #создаём папку для предварительного бэкапа 
+cp /home/USER/samba/1C /home/user/bash-scripts/backup/1C-backup #копируем в неё файло которое будем бэкапить 
+tar cvvzf ″/home/user/bash-scripts/backup-`date +%F-%X`.tar.gz″ /home/user/bash-scripts/backup/ #создаём из неё архив 
+rm -r /home/user/bash-scripts/backup #очищаем папку с предварительным бэкапом
+@@
+
+Дальше в crontab 
+
+@@
+0 0 * * * /home/user/backup-script 
+#Каждый день в 0:00 запускать резервное копирование
+@@
