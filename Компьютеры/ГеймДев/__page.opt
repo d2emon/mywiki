@@ -8,5 +8,5 @@ datetime = 2013-10-27 11:57:38.501367
 pageindex = 1
 
 [Tree]
-expand = False
+expand = True
 
