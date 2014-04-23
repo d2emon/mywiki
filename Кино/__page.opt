@@ -8,7 +8,7 @@ datetime = 2013-01-11 12:33:13.828000
 md5_hash = 4ef0c9c718b303c26b235650ac857086
 
 [Tree]
-expand = True
+expand = False
 
 [Misc]
 pageindex = 1
