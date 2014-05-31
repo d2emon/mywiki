@@ -5,7 +5,7 @@ order = 8
 datetime = 2013-01-11 12:32:52.640000
 
 [Tree]
-expand = False
+expand = True
 
 [wiki]
 md5_hash = 89ae00121563b933cd1451be5e359d2a

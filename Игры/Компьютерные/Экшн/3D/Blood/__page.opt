@@ -1,0 +1,12 @@
+[General]
+type = wiki
+tags = дописать, лавкрафт, мистика, зомби, викторианская эпоха
+order = 0
+datetime = 2014-05-31 19:22:08.979980
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+
