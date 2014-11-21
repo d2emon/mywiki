@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV='CONTENT-TYPE' CONTENT='TEXT/HTML; CHARSET=UTF-8'/>
+
+	<STYLE type="text/css">
+		body, div, p, table {
+			font-size:10pt;
+			font-family:Verdana;
+		}
+
+		img{border:none}
+		
+	</STYLE>
+	
+</HEAD>
+
+<BODY>
+<P>
+<H1>Как Настроить Сеть В Linux</H1></P>
+
+<P>Для настройки сети в Linux нужно отредактировать следующие файлы:</P>
+
+<P>
+<UL>
+<LI>/etc/HOSTNAME</LI>
+<LI>/etc/hosts</LI>
+<LI>/etc/sysconfig/network</LI>
+<LI>/etc/sysconfig/network-scripts/ifcfg-eth0</LI>
+<LI>/etc/resolv.conf</LI>
+</UL>
+<BR>номер школы должен быть вида scNNN, где NNN – номер школы. Например для школы номер 123 надо писать sc123</P>
+
+<P>В /etc/HOSTNAME
+<BR>
+<PRE>
+teacher.номершколы.testdomain.ru
+</PRE></P>
+
+<P>В /etc/hosts
+<BR>
+<PRE>
+127.0.0.1 localhost.localdomain localhost
+ip-адрес teacher.номершколы.testdomain.ru
+</PRE></P>
+
+<P>В /etc/sysconfig/network
+<BR>
+<PRE>
+NETWORKING=yes
+FORWARD_IPV4=false
+HOSTNAME=teacher
+DOMAINNAME=номершколы.testdomain.ru
+GATEWAY=ip-адрес-шлюза
+GATEWAYDEV=eth0
+</PRE></P>
+
+<P>В /etc/sysconfig/network-scripts/ifcfg-eth0
+<BR>
+<PRE>
+DEVICE=eth0
+BOOTPROTO=static
+IPADDR=ip-адрес 
+NETMASK=маска-подсети
+NETWORK=адрес-сети
+BROADCAST=широковещательный-адрес
+ONBOOT=yes
+</PRE></P>
+
+<P>В /etc/resolv.conf
+<BR>
+<PRE>
+search testdomain.ru
+nameserver ip-dns-сервера
+</PRE></P>
+</BODY>
+</HTML>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV='CONTENT-TYPE' CONTENT='TEXT/HTML; CHARSET=UTF-8'/>
+
+	<STYLE type="text/css">
+		body, div, p, table {
+			font-size:10pt;
+			font-family:Verdana;
+		}
+
+		img{border:none}
+		
+	</STYLE>
+	
+</HEAD>
+
+<BODY>
+<P>
+<H1>Форматирование ячеек в Excel</H1></P>
+
+<P>Как програмно произвести форматирование ячеек в excel (например сделать ячейку в текстовом формате, изменить ширину столбца и т.д.)</P>
+
+<P>Когда-то давно занималась этой проблемой, вот кусочек кода, наверное можно делать и как-то по-другому, это просто как вариант ответа на твой вопрос. </P>
+
+<P>
+<PRE>
+procedure TFMenu21.RadioButton5Click(Sender: TObject); 
+const 
+xlCenter=-4108; 
+XLWBatWorksheet=-4167;// для создания книги с одной страницей 
+Var 
+xl : OleVariant; 
+x,i,first : integer; // first для переименования страницы с именем &quot;Лист1&quot; 
+x1,y1 : integer; // для выделения диапазона в Excel 
+begin 
+try 
+// Excel уже запущен? 
+xl:=GetActiveOleObject(&quot;Excel.Application&quot;); 
+ShowMessage(&quot;У Вас уже загружен Excel.Завершите его работу, а затем повторите вывод&quot;); 
+xl.Application.WindowState:=-4137; 
+//xl.Visible:=True; 
+xl.Quit; 
+xl:=Unassigned; 
+Exit; 
+except 
+// Hет, еще нет... 
+xl:=CreateOleObject(&quot;Excel.Application&quot;); 
+end; 
+xl.Workbooks.Add[XLWBatWorksheet]; 
+// xl.Visible:=True; 
+first:=1; 
+x1:=0; 
+Y1:=0; 
+For i:=3 downto 1 do begin 
+x:=2; 
+if first=0 then xl.Workbooks[1].Worksheets.Add else first:=0; 
+If i=1 then 
+begin 
+xl.Range[xl.Cells[x,2],xl.Cells[x+1,14]].MergeCells:=True; // объединение ячеек 
+xl.Range[xl.Cells[x,2],xl.Cells[x+1,14]].WrapText:=True; // перенос текста 
+xl.Workbooks[1].Worksheets[1].Name:=&quot;имя страницы&quot;; 
+
+// Вывожу какую-то шапку таблицы 
+x:=x+1; 
+xl.Range[xl.Cells[x,2],xl.Cells[x+2,2]].MergeCells:=True; // объединение ячеек 
+xl.Cells[x,2]:=&quot;столбик 1&quot;; 
+xl.Range[xl.Cells[x,3],xl.Cells[x+1,4]].MergeCells:=True; // объединение ячеек 
+xl.Cells[x,3]:=&quot;столбик 2&quot;; 
+// Вывожу данные из Ttable (DM.TsvodD1) в Excel 
+DM.TSvodD1.Open; 
+DM.TSvodD1.First; 
+x1:=x; // запоминаю начальную строку 
+While not DM.TSvodD1.Eof do 
+begin 
+xl.Workbooks[1].WorkSheets[1].Activate; 
+xl.ActiveWindow.DisplayZeros:=False; // не показывать нули 
+xl.ActiveWindow.DisplayGridlines:=False; // не показывать сетку 
+// жирный шрифт xl.Range[xl.Cells[x,2],xl.Cells[x,2]].Font.Bold:=True; 
+xl.Cells[x,2]:=DM.TSvodD1F.Value; 
+
+if DM.TSvodD1T.Value=1 then xl.Cells[x,3]:=&quot;&lt; 0.2&quot;; 
+if DM.TSvodD1T.Value=2 then xl.Cells[x,3]:=&quot;0.2-0.3&quot;; 
+// if DM.TSvodD1T.Value=3 then xl.Cells[x,3]:=&quot;&gt; 0.3&quot;; 
+if DM.TSvodD1T.Value=3 then xl.Cells[x,3]:=&quot; 0.5 &quot;; 
+
+xl.Cells[x,4]:=DM.TSvodD1M.Value; 
+
+xl.Range[xl.Cells[x,7],xl.Cells[x,7]].NumberFormat:=&quot;@&quot;; // установка текстового формата для ячейки 
+xl.Cells[x,14]:=DM.TSvodD1Proc.Value; 
+x:=x+1; 
+DM.TSvodD1.Next; 
+end; // while not TSvodD1.Eof 
+y1:=x-1; // запоминаю конечную строку 
+
+// вывожу итоги 
+xl.Workbooks[1].WorkSheets[1].Rows.Rows[x].RowHeight:=44.25; // высота строки 
+xl.Range[xl.Cells[x,2],xl.Cells[x,14]].WrapText:=True; 
+
+// Форматирую 
+xl.Workbooks[1].worksheets[1].Range[xl.Cells[1,2],xl.Cells[x,14]].VerticalAlignment:=2; 
+xl.Workbooks[1].worksheets[1].Range[xl.Cells[x-3,2],xl.Cells[x,14]].HorizontalAlignment:=xlCenter; // выводить в центре ячейки 
+xl.Workbooks[1].worksheets[1].Range[xl.Cells[x-3,2],xl.Cells[x,14]].Font.Bold:=True; 
+xl.Workbooks[1].worksheets[1].Range[xl.Cells[x-3,3],xl.Cells[x-3,14]].Borders.Weight := 2; 
+// устанавливаю ширину колонок 
+xl.Workbooks[1].worksheets[1].Columns.Columns[1].ColumnWidth:=2.43; 
+// границы ячейки 
+xl.Workbooks[1].worksheets[1].Range[xl.Cells[x1,2],xl.Cells[y1,2]].NumberFormat:=&quot;0,0&quot;; 
+xl.Range[xl.Cells[x1,4],xl.Cells[y1,4]].NumberFormat:=&quot;0,0&quot;; 
+
+xl.Visible:=True; 
+</PRE></P>
+
+<P><HR></P>
+
+<P>Можно сделать проще, запусти Excel, запусти запись макроса и делай что тебе нужно, то как ворматирование текста, установка ширины ячейки, да всё что угодно, а потом смотри что он там на генерировал в Visual Basice .....</P>
+
+<P><HR></P>
+
+<P>Всем доброго времени суток! Поиск по форуму ни кчему не привел-вот и решил написать.</P>
+
+<P>Delphi 7. Проблема следующая я сделал выгрузку в Exel из бд. все вроде устраивает, но в двух полях отображается некорректная информация! Это из-за формата данных ячейки, т.е. например поле штрихкод содержит только цифры и мне надо чтобы в Excel попадали как текст, а не цифра со степенью (1.23423Е12). Как можно программно задать формат ячейки! Я написал макрос в Excel и попытался перенести его на Delphi не помогло XlApplication.Selection.NumberFormat:='@';. Подскажите, пожалуйста! И еще вопрос у меня по ходу приложения создается несколько раз Excel и мне надо его программно свернуть! Я правда еще не искал и не пробовал как можно это реализовать. Просто заодно с первым вопросом решил на писать))</P>
+
+<P><HR></P>
+
+<P>
+<PRE>
+XlApplication.ActiveWorkbook.WorkSheets[1].Cells[1, 1].NumberFormat := '@';
+XlApplication.ActiveWorkbook.WorkSheets[1].Cells[1, 1] := '123456789012';
+</PRE></P>
+
+<P>хотя Selection.NumberFormat тоже можно если сначала ячейку нужную отселектить</P>
+
+<P><HR></P>
+
+<P>я перед выгрузкой делаю так выделяю(такие цифры из-за смещения на шапку и прочую служебную фигню в верху Excelя)</P>
+
+<P>
+<PRE>
+XlApplication.Range['J3:J'+inttostr(DM.Q_Source.RecordCount+2)].Select;
+</PRE></P>
+
+<P>текстовый формат из макроса Exelя</P>
+
+<P>
+<PRE>
+XlApplication.Selection.NumberFormat:='@';
+</PRE></P>
+
+<P>горизонтальное выравнивание
+<BR>
+<PRE>
+XlApplication.Selection.HorizontalAlignment:=4;
+</PRE></P>
+
+<P><HR></P>
+
+<P><B>Вопрос:</B></P>
+
+<P>Как в экспорте данных в Excel установить формат ячейки? Нащупал, что это делается через NumberFormat.
+<BR>  
+<BR>
+<PRE>
+  WorkSheet.Range['A' + IntToStr(1),'A' + IntToStr(i_costs)].NumberFormat:=
+</PRE></P>
+
+<P>Но какое значение туда подставлять?</P>
+
+<P><B>Ответ:</B></P>
+
+<P>
+<PRE>
+.NumberFormat := 'General'; // обычный (по умолчанию)
+.NumberFormat := 'hh:mm:ss'; // догадайся какой :)
+.NumberFormat := '$#,##0.00_);[Red]($#,##0.00)'; // числовой формата &quot;0.00&quot; с разделителем разрядов
+</PRE></P>
+
+<P>А вообще, посмотри справку по VBA в Excel по NumberFormat. Там все доходчиво написано русским языком.</P>
+</BODY>
+</HTML>

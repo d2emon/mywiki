@@ -1,0 +1,15 @@
+[General]
+type = wiki
+tags = сай-фай
+order = 5
+datetime = 2013-11-10 20:24:05.917632
+
+[Misc]
+pageindex = 1
+
+[wiki]
+md5_hash = 738df85fa89075f9848b98ef9aa22e8a
+
+[Tree]
+expand = False
+

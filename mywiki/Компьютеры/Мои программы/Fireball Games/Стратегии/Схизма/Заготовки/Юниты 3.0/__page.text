@@ -1,0 +1,163 @@
+Юниты
+1. Light Infantry
+Дом: Все
+Требуется: Barracks
+Скорость: 10 км/ч
+Броня: легкая
+2. Thumper Infantry
+Дом: Все
+Требуется: Barracks
+Скорость: 15 км/ч
+Броня: легкая
+3. Trooper Infantry
+Дом: Все
+Требуется: Barracks
+Скорость: 6 км/ч
+Броня: легкая
+4. Engineer
+Дом: Все
+Требуется: Barracks
+Скорость: 10 км/ч
+Броня: легкая
+5. Trike
+Дом: Атрейдес, Харконен
+Требуется: Light Factory
+Скорость: 72 км/ч
+Броня: легкая
+6. Quad
+Дом: Все
+Требуется: Upgraded Light Factory
+Скорость: 59 км/ч
+Броня: легкая
+7. Combat Tank
+Дом: Все
+Требуется: Heavy Factory
+Скорость: 40 км/ч
+Броня: средняя
+8. Siege Tank
+Дом: Все
+Требуется: Upgraded Heavy Factory
+Скорость: 32 км/ч
+Броня: тяжелая
+9. Missile Tank
+Дом: Все
+Требуется: Upgraded Heavy Factory и IX Research Center
+Скорость: 40 км/ч
+Броня: средняя
+10. MCV
+Дом: Все
+Требуется: Upgraded Heavy Factory и Repair Pad
+Скорость: 15 км/ч
+Броня: средняя
+11. Carryall
+Дом: Все
+Требуется: High Tech Factory
+Скорость: 160 км/ч
+Броня: тяжелая
+12. Harvester
+Дом: Все
+Требуется: Refinery
+Скорость: 45 км/ч
+Броня: средняя
+Постройки
+1. Construction Yard
+Требуется: MCV
+Броня: средняя
+2. Concrete Slabs
+Требуется: Construction Yard
+Броня: средняя
+3. Spice Refinery
+Требуется: Wind Trap
+Броня: средняя
+4. Wind Trap
+Требуется: Construction Yard
+Броня: легкая
+5. Spice Silo
+Требуется: Refinery
+Броня: легкая
+6. Infantry Barracks
+Требуется: Wind Trap
+Броня: средняя
+7. Radar Outpost
+Требуется: Barracks
+Броня: средняя
+8. Light Factory
+Требуется: Refinery
+Броня: средняя
+9. Heavy Factory
+Требуется: Refinery
+Броня: тяжелая
+10. Gun Turret
+Требуется: Radar Outpost
+Броня: средняя
+11. Rocket Turret
+Требуется: Radar Outpost
+Броня: тяжелая
+12. Repair Pad
+Требуется: Heavy Factory
+Броня: средняя
+13. Starport
+Требуется: Radar Outpost
+Броня: тяжелая
+14. High Tech Factory
+Требуется: Radar Outpost
+Броня: легкая
+15. IX Research Center
+Требуется: Radar Outpost
+Броня: легкая
+16. Palace
+Требуется: IX Research Center
+Броня: тяжелая
+Остальные юниты
+1. Raider Trike
+Дом: Ордос
+Требуется: Light Factory
+Скорость: 90 км/ч
+Броня: легкая
+2. Deviator
+Дом: Ордос
+Требуется: IX Research Center и Heavy Factory
+Скорость: 30 км/ч
+Броня: средняя
+3. Saboteur
+Дом: Ордос
+Требуется: Palace
+Скорость: 15 км/ч
+Броня: легкая
+4. Ornithopter
+Дом: Атрейдес
+Требуется: Upgraded High Tech Factory
+Скорость: 340 км/ч
+5. Sonic Tank
+Дом: Атрейдес
+Требуется: Heavy Factory и IX Research Center
+Скорость : 44 км/ч
+Броня: средняя
+6. Fremen
+Дом: Атрейдес
+Требуется: Palace
+Скорость: 17 км/ч
+Броня: средняя
+7. Devastator
+Дом: Харконен
+Требуется: Heavy Factory и IX Research Center
+Скорость: 30 км/ч
+Броня: тяжелая
+8. Death Hand
+Дом: Харконен
+Требуется: Palace
+Скорость: 700 км/ч
+Броня: легкая
+9. Sardaukar
+Дом: Император
+Требуется: Barracks
+Скорость: 15 км/ч
+Броня: средняя
+10. Frigate
+Дом: Все
+Требуется: Starport
+Скорость: 250 км/ч
+11. Sand Worm
+Дом: против всех
+Скорость: 30 км/ч
+Броня: тяжелая

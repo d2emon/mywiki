@@ -1,0 +1,12 @@
+[General]
+type = wiki
+tags = wikipedia
+order = 9
+datetime = 2013-01-02 11:24:36.829000
+
+[Misc]
+pageindex = 1
+
+[wiki]
+md5_hash = b9e0be9d2dd7c2906e0ce578b6688eb9
+

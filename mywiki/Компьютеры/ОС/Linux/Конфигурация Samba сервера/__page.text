@@ -1,0 +1,418 @@
+!! Конфигурация Samba сервера
+
+Здесь я попробую рассказать вам о том, что надо сделать, для того чтобы, использовать linux-samba сервер в качестве контролера домена для Windows сети. Также будет рассмотрено управление пользователями и профилями. Этот документ относиться к Debian CNU/Linux 2.2 так что ваш smb.conf может отличаться в зависимости от дистрибутива. Для написания статьи использовалась samba 2.0.7
+
+----
+
+!!! Инсталяция Samba
+
+Будем считать что вы немного знакомы с samba и он установлен на вашем сервере. Если это не так, то для быстрой установки попробуйте:
+
+Debian: apt-get install samba
+RedHat(Mandrake): rpm -vih /mnt/cdrom/RedHat(Mandrake)/RPMS/samba*
+ 
+!!! Файл конфигурации: основные параметры
+
+Samba использует свой собственный файл конфигурации который состоит из секций, таких как приведенная ниже [global] и [tmp].
+
+''Файл настройки только для samba!''
+
+[@
+&lt;минимальный smb.conf file&gt;
+[global]
+   printing = bsd
+   printcap name = /etc/printcap
+   load printers = yes
+   guest account = pcguest
+
+   log file = /usr/local/samba/log.%m
+
+[tmp]
+  comment = Temporary file space
+  path = /tmp
+  read only = yes
+  public = yes
+</file>
+@]
+
+Если вы запустите samba с этим конфигом, то все windows машины в вашей локальной сети смогут увидеть в своем сетевом окружении машину, которая называется так же как ваш linux сервер и которая имеет разделяемый ресурс tmp, в который для всех разрешена запись.
+
+Внимание: когда вы изменяете ваш конфигурационный файл, вы должны перезапустить samba командой/etc/init.d/samba restart script (для debian)
+ 
+!!! Файл конфигурации, идем дальше
+
+Давайте рассмотрим следующие параметры:
+
+!!!! Секция [global]
+
+* netbios name:[[<<]]Netbios имя вашего сервера (то имя, которое вы увидите в сетевом окружении вашей windows машины), если не сделаете этого, то будет использовано имя сервера (hostname).
+* invalid users:[[<<]]Список пользователей которым запрещен доступ, например "root" рекомендуется включить в этот список.
+* interfaces:[[<<]]Если машина имеет несколько сетевых интерфейсов, то нужно указать какой необходимо использовать samba серверу.
+* security:[[<<]]Выбор режима безопасности, при security=user каждый пользователь должен иметь учетную запись (account) на GNU/Linux сервере, если вы хотите что бы samba сервер управлял доступом и пользователями, то используйте security=share.
+* workgroup:[[<<]]Рабочая группа.
+* server string:[[<<]]Описание вашего компьютера.
+* socket options:[[<<]]Опции сокета, с их помощью можно (и нужно) оптимизировать работу samba.
+* encrypt passwords:[[<<]]Должны ли вы использовать зашифрованные пароли? Это важно знать, потому, что каждая версия windows (почти) использует различные схемы авторизации.
+* wins support:[[<<]]Должен ли ваш сервер быть wins сервером?
+* os level:[[<<]]Определяет шансы samba сервера стать local mastero`ом для своей рабочей группы (чем выше значение тем меньше у конкурирующего сервера шансов).
+* domain master:[[<<]]Работать как domain master.
+* local master:[[<<]]Как local master.
+* preferred master:[[<<]]Это опция вместе с domain master = yes практически гарантирует, что ваш samba сервер станет domain master`ом
+* domain logons:[[<<]]Тrue если хотите чтобы samba выполняла функции ПЕРВИЧНОГО КОНТРОЛЕРА ДОМЕНА (PDC), для дополнительной информации по этому вопросу прочтите Samba-PDC-HOWTO.
+* logon script:[[<<]]Скрипт, который выполняется, когда пользователь успешно логиниться.
+* logon path:[[<<]]Путь для скриптов.
+* logon home:[[<<]]Тут храним профили юзеров.
+* name resolve order:[[<<]]Порядок разрешения имен.
+* dns proxy:[[<<]]Будем ли работать как DNS прокси?
+* preserve case:
+* short preserve case:[[<<]]Эти два параметра решают вопросы связанные со строчными и заглавными буквами (как известно в Unix ситемах это разные буквы а в Windows - одинаковые) .
+* unix password sync:[[<<]]Будет ли samba синхронизировать Unix и Samba пароли ?
+* passwd program:[[<<]]Программа для синхронизации паролей.
+* passwd chat:[[<<]]"Чат" протокол для смены пароля.
+* max log size:[[<<]]Максимальный размер для лог файла.
+
+!!!! Section [netlogon]
+
+Описываем ресурс netlogon.
+
+!!!! Section [profiles]
+
+Ресурс profiles.
+
+!!!! Section [homes]
+
+Здесь home директории для каждого пользователя.
+ 
+!!! Переменные
+
+Переменные клиента
+||
+||Переменная||Описание||
+||%a||Архитектура клиента[[<<]]Например: Win95, WinNT, Samba ...||
+||%I||IP адрес клиента||
+||%m||NETBIOS имя клиента||
+||%M||DNS имя клиента||
+
+Переменные пользователя
+||
+||Переменная||Описание||
+||%g||первичная группа||
+||%H||домашняя директория||
+||%u||имя юзера||
+
+Переменные расшаренных ресурсов
+||
+||Переменная||Описание||
+||%P||Корневая папка ресурса||
+||%S||Имя ресурса||
+
+Переменные сервера
+||
+||Переменная||Описание||
+||%h||DNS имя||
+||%L||NETBIOS имя||
+||%v||версия Samba||
+
+Другое
+||
+||Переменная||Описание||
+||%T||Текущая дата и время||
+
+Пример использования переменных: в сети где есть windows 3.11 и windows 98 вы можете создать 2 конфигурационных файла, по 1 для каждой системы используя переменную %a.
+
+!!! Итак: наш конфиг файл
+
+&lt;smb.conf file&gt;
+
+[@
+[global]
+printing = bsd
+printcap name = /etc/printcap
+load printers = yes
+guest account = nobody
+invalid users = root
+
+; указываем netbios имя
+netbios name = pantoufle
+; и подсеть в которой работаем
+interfaces = 192.168.0.1/255.255.255.0
+
+; режим user подразумевает что каждый пользователь имеет учетную запись на unix сервере
+security = user
+
+; рабочая группа
+workgroup = rycks
+; описание компьютера
+; %h - DNS имя сервера, %v версия samba
+server string = %h server (Samba %v)
+
+; samba ведет свои собственные логи 
+syslog only = no
+syslog = 0;
+
+; оптимизация соединений
+socket options = IPTOS_LOWDELAY TCP_NODELAY \
+SO_SNDBUF=4096 SO_RCVBUF=4096
+
+; используем зашифрованные пароли !!!! для этого нужно пропатчить w95 и NT4
+encrypt passwords = yes
+
+; Wins сервер позволяет использовать разделяемые ресуры нескольких подсетей 
+wins support = yes
+
+; OS level. См. выше 
+os level = 34
+
+; управление доменом
+local master = yes
+preferred master = yes
+
+; уравление входом в домен
+domain logons = yes
+
+; скрипт выполняемый при коннекте клиента (на машине клиента)
+logon script = %g.bat
+; директория для скриптов
+logon path=\\%L\netlogon
+; здесь храним профили
+logon home=\\%L\%U\winprofile
+
+; в этом порядке идет поиск имен 
+; ВНИМАНИЕ: bcast в конце в отличии от windows
+name resolve order = lmhosts host wins bcast
+
+; работа DNS proxy
+dns proxy = no
+
+; регистр букв !!!!
+preserve case = yes
+short preserve case = yes
+
+; синхронизация samba и unix паролей
+unix password sync = yes
+
+; способ синхронизации
+passwd program = /usr/bin/passwd %u
+passwd chat = *Enter\snew\sUNIX\spassword:* \
+%n\n *Retype\snew\sUNIX\spassword:* %n\n .
+
+; максимальный размер логфайла (строк)
+max log size = 1000
+
+; tine сервер
+; сихронизировать будем с помощью .bat файла
+time server = yes
+
+; ресурс netlogon используется только во время установки соединения 
+; поэтому нет необходимости делать его публичным
+[netlogon]
+path = /home/netlogon/%g
+public = no
+writeable = no
+browseable = no
+
+; каждому клиенту по собственной директории 
+[homes]
+path = /home/%user
+comment = Home Directories
+browseable = no
+read only = no
+create mask = 0700
+directory mask = 0700
+
+; для удобства можно расшарить и FTP 
+; чтобы доступ осуществлялся не только с помощью FTP клиента 
+[ftp]
+path = /home/ftp/pub
+public = yes
+printable = no
+guest ok = yes
+
+; tmp 
+[tmp]
+path = /tmp
+public = yes
+printable = no
+guest ok = yes
+writable = yes
+
+; tmp для отдельных юзеров 
+[bigtemp]
+path = /home/bigtemp
+public = yes
+printable = no
+guest ok = yes
+valid users = erics
+writable = yes
+
+&lt;/smb.conf file&gt;
+
+@]
+ 
+!!! Что же должно быть на сервере ?
+
+На сервере мы должны иметь:
+* учетные записи для каждого клиента (account)
+* smb.conf файл
+* директорию /home/netlogon (в моем примере)
+* .bat файл для каждого пользователя и группы (примеры см. ниже)
+* файл CONFIG.POL для осуществления вашей политики безопасности (в директории /home/netlogon).
+* для создания файла config.pol понадобится poledit.exe.
+
+[@
+&lt;file /home/netlogon/admin.bat&gt;
+net use P: \\pantoufle\homes
+net use T: \\pantoufle\tmp
+net time \\pantoufle /SET /YES
+&lt;/file admin.bat&gt;
+
+&lt;file /home/netlogon/teachers/teachers.bat&gt;
+net use P: \\pantoufle\homes
+net use T: \\pantoufle\tmp
+net time \\pantoufle /SET /YES
+regedit /s \\pantoufle\netlogon\teachers.reg
+&lt;/file teachers.bat&gt;
+
+&lt;file /home/netlogon/pupils/pupils.bat&gt;
+net use P: \\pantoufle\homes
+net use T: \\pantoufle\tmp
+net time \\pantoufle /SET /YES
+regedit /s \\pantoufle\netlogon\pupils.reg
+&lt;/file pupils.bat&gt;
+
+&lt;file /home/netlogon/teachers/teachers.reg&gt;
+[HKEY_CURRENT_USER\Software\Microsoft\Windows
+\CurrentVersion\Explorer\User Shell Folders]
+"Personal"="P:\\"
+&lt;/file teachers.reg&gt;
+
+&lt;file /home/netlogon/pupils/pupils.reg&gt;
+[HKEY_CURRENT_USER\Software\Microsoft\Windows
+\CurrentVersion\Explorer\User Shell Folders]
+"Personal"="P:\\"
+&lt;/file pupils.reg&gt;
+@]
+
+Эти файлы позволяют при загрузке автоматически подключать персональный ресурс как диск P:\ и tmp ресурс как диск T:\ . Так же происходит синхронизация времени.
+
+ВНИМАНИЕ: .bat файл должен быть в так называемом "DOS mode" (т.е. иметь все символы из DOS кодировки), для этого лучше всего создавайте его в блокноте (notepad) .
+
+!!! Defining the system security policy (C) (TM) (R)
+
+Этот заголовок взят из документации MS :o).
+
+''Безопасночть в Windows почти возможна используя контролеры доменов.''
+
+Итак для воплощения в жизнь вашей политики безопасности (еще я думаю подойдет термин настройки системы), например для запрета запуска утилиты regedit, DOS программ и т.д., вам необходимо использовать программу POLEDIT из дистрибутива поставки Windows 98 .
+
+Запускайте poledit, читайте документацию, пробуйте: но эта статья не об этом.
+
+Итак, когда ваш .POL файл создан, скопируйте его в директорию ресурса [netlogon].
+
+ВНИМАНИЕ: Для Win9X клиентов настройки должны быть в файле CONFIG.POL ... для WindowsNT он должен иметь другое имя, но я не знаю какое так как ей не полюзуюсь:( И пожалуйста не присылайте мне NT даже для теста. Хотя все равно спасибо за такие предложения :o)
+
+ЗАМЕЧАНИЕ: PolEdit разрешает создавать пользователей и группы. Работает, правда, это только с пользователем установленным по умолчанию.
+
+Например, если я создаю группу "admin" в PolEdit, которой можно запускать regedit, когда я подсоединяюсь под именем "erics" ("admin" является его личной группой), regedit у меня не запускается :(.
+
+Хотя, если создать пользователя "erics" в poledit ... все работает.
+
+Учитывая то, что нам не очень хочется создавать 1056 пользователей poledit и управлять всеми пользоателями сразу намного интереснее, мы предлагаем следующую хитрость:
+
+Для осуществления плана мы обошли проблему: мы создали 3 config.pol файла только пользователями по умолчанию, итак, на linux сервере получилось:
+
+/home/netlogon/teachers/CONFIG.POL
+/home/netlogon/teachers/teachers.bat
+/home/netlogon/pupils/CONFIG.POL
+/home/netlogon/pupils/pupils.bat
+/home/netlogon/admin/CONFIG.POL
+/home/netlogon/admin/admin.bat
+
+И немного изменили файл smb.conf чтобы она учитывала это:
+
+[@
+&lt;smb.conf file&gt;
+[netlogon]
+; мы добавили %g чтобы переместить netlogon в другую дирректорию в зависимости от
+; группы пользователей, к которой файл config.pol обращается в зависимости от группы
+; пользователей
+path = /home/netlogon/%g
+public = no
+writeable = no
+browseable = no
+&lt;/smb.conf file&gt;
+@] 
+
+!!!! Настройки компьютеров под Windows
+
+''Немного удачи, 20 кликов мыши и перезагрузок наверно хватит для настройки windows!''
+
+Для клиента под Win98
+
+Нажмите на Start/Parameters/Configpanel (Пуск/Панель управленя/Сеть) и дважды кликните на Network
+
+Необходимы::
+
+* Клиент для сетей Майкрософт
+* Драйвер сетевой карты
+* Поддержка TCP/IP и ТОЛЬКО TCP/IP (не ipx или netbios)
+* Доступные принтеры и папки
+
+Потом нажмите на закладку "Identification" (Идентификация) и дайте компьютеру имя и название группы.
+
+Нажмите на "Access control" и выберите права доступа пользователя
+
+Вернитесь к закладке настроек и нажмите на "Client for MS network" (Клиент для сетей Майкрософт)
+
+Не забудьте настроить поддержку TCP/IP:
+
+дважды нажмите на TCP/IP
+
+IP address:
+
+* IP address для этой машены (пример: 192.168.0.2)
+* Маска подсети (пример: 255.255.255.0)
+
+Настройка WINS:
+
+* Активизировать WINS разрешение
+* Добавить WINS сервер, IP 192.168.0.1 (если это IP address samba сервера)
+* Gateway: если есть здесь можно настроить
+* Настройки DNS: настроить доступ к DNS
+ 
+!!! Замечания "скорость/быстродействие?"
+
+Во время работы, обращения проходят довольно быстро потому что используются профили windows.
+
+Но, profile полон вещей которые MS считает необходимыми, такие как IE cache, OutLook cache, и т.д.
+
+Это значт что около 10 MB будет грузиться при подключении к машине и 10 MB будет передаватья серверу при отключении.
+
+10 MB для каждого пользователя, для 15 компьютеров ("нормальный" размер лаборатории, например), получается 150 MB, а если в здании 10 комнат... можно подсчитать время отключения от сети в конце рабочего дня.
+
+Поэтому лучше домашней директорией сделать P: (например, P как Personal) для каждого и приучить пользователей: "сохраняйте докумнты в P а не в "My documents", иначе обратно вы их не получите ".
+
+Надо найти софт чтобы настроить закладки в P:\bookmarks.html и т.п.
+
+Я не знаю существует ли это в мире windows!
+
+!!! Вопросы и предложения
+
+Возможно ли создавать различные группы на домене, как этим управлять?
+
+Как использовать NT и Samba серверы?
+
+Настройка клиентов NT аналогична CONFIG.POL но под NT имеет другое название.
+
+ !!! Благодарности
+
+Bruno <bcarrere(at)asp-france.fr> за помощь:o)
+
+JohnPerr за помощь в написании и перевод на English.
+Michel Billaud aka MiB за найденые им решения нашим проблемам :o)
+Etienne, Éric, спасибо за то что поделились знаниями по NT серверам.
+Jean Peyratout слишком долго рассказывать за что :)  
+
+!!! Ссылки
+
+Onlin O'Reilly book: http://www.oreilly.com/catalog/samba/chapter/book/index.html

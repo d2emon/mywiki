@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV='CONTENT-TYPE' CONTENT='TEXT/HTML; CHARSET=UTF-8'/>
+
+	<STYLE type="text/css">
+		body, div, p, table {
+			font-size:10pt;
+			font-family:Verdana;
+		}
+
+		img{border:none}
+		
+	</STYLE>
+	
+</HEAD>
+
+<BODY>
+<P>
+<H1>Бэкап</H1></P>
+
+<P>Резервное копирование</P>
+
+<P><A HREF="Бэкап системы в Ubuntu">Бэкап системы в Ubuntu</A>
+<BR><A HREF="Домашний бэкап в Ubuntu">Домашний бэкап в Ubuntu</A></P>
+
+<P><CODE> 
+<BR>
+<OL>
+<LI>!/bin/bash</LI>
+</OL>mkdir /home/USER/bash-scripts/backup #создаём папку для предварительного бэкапа 
+<BR>cp /home/USER/samba/1C /home/user/bash-scripts/backup/1C-backup #копируем в неё файло которое будем бэкапить 
+<BR>tar cvvzf ″/home/user/bash-scripts/backup-`date +%F-%X`.tar.gz″ /home/user/bash-scripts/backup/ #создаём из неё архив 
+<BR>rm -r /home/user/bash-scripts/backup #очищаем папку с предварительным бэкапом
+<BR></CODE></P>
+
+<P>Дальше в crontab </P>
+
+<P><CODE>
+<BR>0 0 * * * /home/user/backup-script 
+<BR>
+<OL>
+<LI>Каждый день в 0:00 запускать резервное копирование</LI>
+</OL></CODE></P>
+</BODY>
+</HTML>

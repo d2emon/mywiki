@@ -1,0 +1,49 @@
+!! Как Настроить Сеть В Linux
+
+Для настройки сети в Linux нужно отредактировать следующие файлы:
+
+* /etc/HOSTNAME
+* /etc/hosts
+* /etc/sysconfig/network
+* /etc/sysconfig/network-scripts/ifcfg-eth0
+* /etc/resolv.conf
+
+номер школы должен быть вида scNNN, где NNN – номер школы. Например для школы номер 123 надо писать sc123
+
+В /etc/HOSTNAME
+[@
+teacher.номершколы.testdomain.ru
+@]
+
+В /etc/hosts
+[@
+127.0.0.1 localhost.localdomain localhost
+ip-адрес teacher.номершколы.testdomain.ru
+@]
+
+В /etc/sysconfig/network
+[@
+NETWORKING=yes
+FORWARD_IPV4=false
+HOSTNAME=teacher
+DOMAINNAME=номершколы.testdomain.ru
+GATEWAY=ip-адрес-шлюза
+GATEWAYDEV=eth0
+@]
+
+В /etc/sysconfig/network-scripts/ifcfg-eth0
+[@
+DEVICE=eth0
+BOOTPROTO=static
+IPADDR=ip-адрес 
+NETMASK=маска-подсети
+NETWORK=адрес-сети
+BROADCAST=широковещательный-адрес
+ONBOOT=yes
+@]
+
+В /etc/resolv.conf
+[@
+search testdomain.ru
+nameserver ip-dns-сервера
+@]
