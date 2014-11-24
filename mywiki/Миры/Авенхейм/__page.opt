@@ -3,9 +3,10 @@ type = wiki
 tags = dnd, фентези
 order = 3
 datetime = 2013-11-10 12:41:33.408289
+cursorposition = 0
 
 [wiki]
-md5_hash = 23ceb321092a133593a6d49ef1b99012
+md5_hash = aa820614093bf91ccd675f6b6fc42671
 
 [Misc]
 pageindex = 1
