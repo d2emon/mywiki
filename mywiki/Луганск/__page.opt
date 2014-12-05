@@ -3,9 +3,10 @@ type = wiki
 tags = город
 order = 7
 datetime = 2013-01-11 12:32:05.656000
+cursorposition = 0
 
 [wiki]
-md5_hash = 8c53960e0b78178e82e9656fde655820
+md5_hash = fed0e020a503d33651870a6774a47bce
 
 [Tree]
 expand = False

@@ -3,6 +3,7 @@ type = wiki
 tags = транспорт
 order = 15
 datetime = 2013-04-02 17:57:55.270000
+cursorposition = 0
 
 [Misc]
 pageindex = 1
@@ -11,5 +12,5 @@ pageindex = 1
 expand = False
 
 [wiki]
-md5_hash = 199d3ecfe5e5d0ec211234d5128753da
+md5_hash = 1870797a356e9d63819a36f98a80c1a2
 
