@@ -1,2 +1,3 @@
-mywiki/__page.opt
+*.opt
+*.html
 wikify
