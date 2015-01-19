@@ -1,0 +1,16 @@
+[General]
+type = wiki
+tags = история
+order = 16
+datetime = 2013-01-11 12:30:22.765000
+cursorposition = 0
+
+[wiki]
+md5_hash = be009e6ba7d8e58f7d81752549598985
+
+[Tree]
+expand = False
+
+[Misc]
+pageindex = 1
+
