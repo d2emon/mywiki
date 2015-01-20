@@ -4,6 +4,7 @@ tags =
 order = 1
 datetime = 2013-01-11 12:30:04.546000
 cursorposition = 0
+selectedtab = 0
 
 [Tree]
 expand = True
@@ -12,5 +13,8 @@ expand = True
 pageindex = 1
 
 [wiki]
-md5_hash = 79c330ba387d26bfb5e6007ef6b73481
+md5_hash = b0020456fa2b235a2a759136a469d190
+
+[Tabs]
+tab_0 = Ихтиология
 
