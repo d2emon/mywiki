@@ -8,7 +8,7 @@ datetime = 2012-12-12 21:44:12.279000
 pageindex = 1
 
 [Tree]
-expand = False
+expand = True
 
 [wiki]
 md5_hash = 40e38842f1687c05bca2b9a01bfb2aa4
