@@ -7,6 +7,9 @@ expand = True
 [General]
 selectedtab = 0
 
+[Bookmarks]
+bookmark_0 = Миры/Город Новер/Утопия/Транспорт
+
 [Tabs]
-tab_0 = Биология/Рыбы
+tab_0 = Миры
 
