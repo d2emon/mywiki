@@ -3,10 +3,11 @@ type = wiki
 tags = дописать
 order = 0
 datetime = 2013-04-02 16:04:59.816000
+cursorposition = 0
 
 [Misc]
 pageindex = 1
 
 [wiki]
-md5_hash = 84ad02a968a3836abae4d9f1797fbefa
+md5_hash = b285076197a46884fdd676df45885651
 

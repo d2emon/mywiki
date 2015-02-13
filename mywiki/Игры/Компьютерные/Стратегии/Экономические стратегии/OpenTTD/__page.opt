@@ -1,12 +1,16 @@
 [General]
 type = wiki
-tags = дописать
+tags = 
 order = 0
-datetime = 2013-04-02 16:36:40.663000
+datetime = 2015-02-13 19:17:58.908237
+cursorposition = 0
 
 [Misc]
 pageindex = 1
 
 [Tree]
-expand = True
+expand = False
+
+[wiki]
+md5_hash = d765f33c19f26f760ccc51e29ca8d243
 
