@@ -1,8 +1,9 @@
 [General]
 type = wiki
-tags = дописать
+tags = 
 order = 0
-datetime = 2013-04-02 16:38:05.748000
+datetime = 2015-02-13 18:07:11.065298
+cursorposition = 0
 
 [Misc]
 pageindex = 1
@@ -11,5 +12,5 @@ pageindex = 1
 expand = False
 
 [wiki]
-md5_hash = 8a05cb14c8e8f3b2d31c20755673f8b9
+md5_hash = 8cda2bdcf759ae4e57bcd834a31ccc3c
 

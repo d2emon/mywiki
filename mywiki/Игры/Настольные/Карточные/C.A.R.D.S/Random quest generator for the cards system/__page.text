@@ -1,0 +1,214 @@
+!! Random quest generator for the cards system V 1.1
+
+%right%Created by Leonard Tai 29Sep98  vtky@pc.jaring.my
+
+This is a supplement for the CARDS role-playing system. It's useful for generating random adventures and quests. I also find it useful for designing
+maps for other RPG systems.
+
+You can also play a game of rampaging warbands with it.
+
+Again, please send feedback to me if you can, so that I may further improve the game. Happy gaming!
+
+'''Requirements:''' At least 1 additional pack of cards.
+
+!!!  Map preparation
+
+* '''(Optional)''' Take out the Jokers if you don't the treasure and/or goals to be random.
+* '''(Optional)''' Take out the following cards for use as player counters, or NPC counters. If you don't want the NPCs to appear randomly, take them    out. The player counters are used to mark where a player currently is.
+
+King/Queen/Jack Of Spades = Male/Female/Youngster Fighter
+King/Queen/Jack Of Hearts = Male/Female/Youngster Cleric
+King/Queen/Jack Of Clubs  = Male/Female/Youngster Thief
+King/Queen/Jack Of Diamonds = Male/Female/Youngster Mage
+
+!!!! Turn seniority
+
+Discuss which order the turns should take. (Who does thing first, followed by someone else....) Normally from the youngest to the eldest, then the GM.
+
+!!!! Area
+
+Depending on your current whereabouts, you can do an elaborate or simple map. For example, if you're playing in a car's backseat, you can treat the seat as a cliff and the leg-room as a river.
+
+ Lay down 2 cards, 
+* one vertical and one horizontal,
+* one stacked on top of the other,
+* and both facing downwards.
+
+ This crude cross is termed one 'tile'.
+
+Now lay down as many additional tile as you want, each clearly connected to another in paths. You don't have to lay them out in long straight roads, if you're playing in a spacious area or table-top, you can build:
+* small houses (4 tiles in a square) with a path leading to them,
+* beacheads (tile arranged in a semi-circular fashion), 
+* slopes (lay tiles on irregular surfaces such as on stairways, on cushions, even hills)
+* towers (lay tiles on stools, cups, boxes. Don't forget to include an entrance!)
+*towns  (lay tiles on stacks of cassettes.)
+
+Lego blocks, miniatures and building blocks could come in handy too, but most important of all is a lively imagination!
+
+ Areas can be:
+
+* Indoors hostile/docile/habitated[[<<]]i.e.:  
+** Dungeons, dragon caverns, castles.
+** Manors, libraries, elven groves.
+** Underground cities, large tents, tree-top towns.
+* Outdoors hostile/docile/habitated[[<<]]i.e.:  
+** Haunted forest, rapids.
+** Praries, calm lakes.
+** Cities, encampments.
+
+'''(Optional Tile-Laying Style):'''
+
+Depending on you mood and time available, you can even start the game with just 1 tile laid, and lay more tiles as the game progresses. This way there is more freedom of movement for the players.
+
+It also makes entrances into special structures harder to find. (How do I get into that castle? Ah! Maybe I'll go climb that cliff...)
+
+Apart from that, it shortens preparation time.
+
+!!!! Special features
+
+If you removed the Jokers and/or NPC counters, you can now decide on where to place them. Remember:
+
+* Use NPCs (Non-Player Characters)
+** to advance and spice up a given story-line. A sage who knows the solution...
+** They don't all have to be hostile. They can react according to how the players treat them. Indifferent, friendly, blind, sacarstic, sneaky...
+
+(NPCs may be similar to the Players in every aspect, but are controlled by the GM only.)
+
+* Use jokers (treasure/goals)
+** to advance and spice up a given story-line. A key to unlock the castle door, an unknown and unidentifiable item...
+** They don't all have to be valuable. An old boot? Maybe it will come in handy when you need to distract a manticore guarding a treasure chest...
+
+!!!! Starting location
+
+A starting location has to be decided. Place the player markers there.
+
+* You don't need to have a players start in one spot, they can be devided at the begining, and have to reach one another to win, or they might not even need to meet one another. (They can compete and see who gets the treasure first...)
+* They don't need to start at the crossroads, at their home, wherever! You can even let them decide.
+
+'''The map is now ready.'''
+
+ If you haven't set up the players in accordance to the CARDS core rules yet, set them up and it's off to adventure they go!
+
+!!! Landscape features
+
+* Treasure (Jokers) can be treated as experience or magical weapons/armour. Each Joker gains all players in the same tile a level! This means that magical treasure and experience gets scarcer and scarcer  as the game progresses.
+* Taverns can heal a player completely for the cost of turns equal to the  amount of cards he needs restored.
+
+!!! Modes of play
+
+# Head-to-head: There can be only one![[<<]]Players start in opposite corners of the map and try to gain as many advantages as possible before facing of against one another!
+# Head-to-head: I want that treasure / Show me the money![[<<]]Players start anywhere and whoever gets a fixed quota of treasure first wins! So if you still need one more Joker and John the fighter is beside you, kill him and get his!
+# Head-to-head: Rat race[[<<]]Players have to reach and enter a particular location first to win, or gain a significant advantage over the others.
+# Individual: Every man for himself[[<<]]Players are free to do whatever they like. They may band up, or they can stab each other in the back, sneak off in the night, use one another, and the like.
+# Team: Time & tide waits for no one![[<<]]All players start off poisoned. In a fixed number of turns, they must find cures for themselves and each other. One potion cures only one person, or it may take two potions: the first delays the effects, the second cures the player.
+# Team: Dragon strike[[<<]]All players start off minimal in levels. They may be separated. After a fixed number of turns a dragon (very powerful NPC monster) comes in from the side of the map and homes in on the players.[[<<]]The players must raise their levels, band up, set traps and do all these to stand a chance against the dragon![[<<]]It can also be an Orcish horde of many low level creatures instead of a single powerful dragon.[[<<]]They can also choose to find an alternate way to get rid of the dragon, such as appeasing it with treasure, finding a magic item to repel it...
+# Head-to-head / Team: Conquest[[<<]]All players are generals and war-masters leading their armies to battle.
+
+Special rules as follows:
+
+!!!! Spades
+
+Babarian horde - Captures (Jokers) gains more troops ('Ace & 2-10' cards) up to a maximum of 10. 
+'Jack/Queen/King' cards can trigger a charge during combat. Declare a charge, then if the babarian horde wins the next combat round, the opposing army automatically loses all of it's 'Jack/Queen/King' cards and 'Ace & 2-10' cards except for one 'Ace & 2-10' card (random card). This gives the opponent one last chance at attack or fleeing.
+
+!!!! Hearts
+
+Holy army -  Glory (Jokers) recruits more troops ('Ace & 2-10' cards) up to a maximum of 10. 
+'Jack/Queen/King' cards can heal troops during combat. 
+Same rules as Cleric's skill.
+
+!!!! Clubs
+
+Mercenary army - Treasure (Jokers) buys more troops ('Ace & 2-10' cards) up to a maximum of 10. 
+'Jack/Queen/King' cards can bribe troops away from an opposing army. 
+Same rules as Thief's skill.
+
+!!!!!!! Diamonds
+
+Undead army - All of a defeated opponent's 'Ace & 2-10' cards become property of the leader if he uses a 'Jack/Queen/King card' up to a maximum of 10 'Ace & 2-10' cards.
+This can only be done after combat ends, when the dead bodies are raised and used as new troops.
+This can only be done on an opponent's dead, as dead troops can only be raised once.
+No special skill during combat.
+
+* Time comes into play. See section on Day & Night below.
+* Players can start from scratch (level 1 - a small warband), or a large army with a mission (level 10 - huge army).
+* If you want, the game can be of 2 large armies composed of several regiments (a player controls several armies) squaring off at each other. This then becomes a strategy game. Muslims versus the Golden horde, the Rebellion versus the Empire, Europe versus Germany, and etc.
+
+!!! Turn system (Movement)
+
+1 'Turn' refers to:
+
+* -1 feat/test/reveal tile/combat round (time for one attack) followed by movement to an adjacent tile.
+
+or
+
+* -1 movement to an adjacent tile followed by 1 feat/test/reveal tile/combat round (time for one attack).
+
+or
+
+* -2 movement (see the section on Running below), a move to another tile  a tile away from the player's current tile.
+
+or
+
+* -1 feat/test/reveal tile/combat round (time for one attack) followed by nothing.
+
+Note: Players may not accumulate unused movement and/or actions. They can move and not do anything, or do a feat/test/combat round and still stay within their current tile, but once that's done, his turn ends.
+
+!!! Tile contents
+
+Whenever a player enters a new tile, he doesn't get to see what's in it unless he spends an action (see Turn System above).
+
+He can end his turn without knowing what's in his new tile, but it may put him at risk. The tile reveals itself automatically in his next turn, and if there is a monster/trap there, it automatically succeeds in wounding him.
+
+When a tile is revealed, both cards are turned face up. If both cards:
+
+* share the same colour = trap/special feature/humourous encounter.
+* share the same number = monster! Difficulty of the monster may be determined by the number. (Example: both cards 4 means there's 4 one card monsters or one 4 card monster.)
+* do not share the same colour or number = nothing special. Turn the bottom card in the tile face down.
+
+If the card on top is:
+
+* a Joker = special treasure / goal.
+* a King/Queen/Jack = NPC
+
+Whenever a player has been on a tile, the bottom card is always left face up to mark his passage.
+
+After an encounter that leaves the monster dead/ trap diffused/ door opened, take away the top card in the tile. This makes it easy to see that a player has passed through the tile and had taken care of it's contents.
+
+If the NPC/Special feature is still there, leave the top card face up so that players can return to it later. 
+
+It takes only one player to reveal a tile once. So having a party is safer and makes travel quicker.
+
+!!! Runnning
+
+A player may move 2 tiles instead of one per turn by running. Running uses up an action, and if he ran into a yet unpassed tile, puts him at risk to whatever's there.
+
+This is useful for escaping a tight combat situation, as monsters and NPCs, like players can only move 1 tile per turn.
+
+If a player wishes to run through 1 unpassed tile to reach another unpassed tile beyond it, he must make a feat check. Success means that he reaches his designated tile.
+        
+The tile which was 'skipped over' need not have any of its cards  turned face up.
+
+If he fails the check, He succeeds in only reaching the 1st unknown tile, and whatever's there will automatically reveal itself and surprise him in his next turn.
+
+!!! Day & Night
+
+This is an optional rule made for more realistic campaigns.
+
+The first complete turn (every player & the GM has had his action performed) is a morning, followed by an afternoon, then a night.
+
+ If you're outdoors:
+
+!!!! Day
+
+Tiles automatically reveal themselves without need for an action when a player lands on top of one.
+
+!!!! Afternoon
+
+The player's tile and all its adjacent tiles automatically reveal their contents.
+
+!!!! Night
+
+The player must rest of lose one 'Ace & 2-10' card from lack of sleep. If he chooses not to sleep, lose a 'Ace & 2-10' card, and the normal tile reveal rule is observed. (No automatic revealing of a tile's contents)
+
+In quests involving day and night, random combat encounters should be limited to monsters with 1 'Ace & 2-10' card, otherwise combat will take days as a result. If you must have tougher monsters, than treat them as an army. Fighting an army for a day makes more sense than fighting a single beast for a day.

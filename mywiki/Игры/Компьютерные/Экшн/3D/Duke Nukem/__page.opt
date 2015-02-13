@@ -1,8 +1,9 @@
 [General]
 type = wiki
-tags = дописать
+tags = космоопера, сай-фай
 order = 2
-datetime = 2013-04-02 16:37:03.544000
+datetime = 2015-02-13 18:08:50.673998
+cursorposition = 0
 
 [Misc]
 pageindex = 1
@@ -11,5 +12,5 @@ pageindex = 1
 expand = False
 
 [wiki]
-md5_hash = 3a3f72367623f1116cb8d843bc668eca
+md5_hash = 87c5877da8db13895602843c3e8ea366
 
