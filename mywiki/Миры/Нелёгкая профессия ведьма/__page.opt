@@ -3,7 +3,11 @@ type = wiki
 tags = мир фантастики, сказки, фентези, юмор
 order = 9
 datetime = 2013-11-16 21:37:42.542791
+cursorposition = 0
 
 [Misc]
 pageindex = 1
+
+[wiki]
+md5_hash = e1b3a356d431e9cbbfbfdd538d1d9f55
 
