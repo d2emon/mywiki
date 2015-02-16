@@ -3,10 +3,11 @@ type = wiki
 tags = музыка
 order = 0
 datetime = 2013-04-02 17:12:11.674000
+cursorposition = 0
 
 [Misc]
 pageindex = 1
 
 [wiki]
-md5_hash = 70e6ef8b97387d2c5888a7892ef6e763
+md5_hash = a06fbb813d488114bf111b4bb8aa718f
 

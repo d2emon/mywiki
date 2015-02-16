@@ -1,12 +1,13 @@
 [General]
 type = wiki
-tags = дописать, lurkmore
+tags = lurkmore
 order = 28
-datetime = 2013-07-14 23:32:08.224232
+datetime = 2015-02-15 18:36:36.451343
+cursorposition = 325
 
 [Misc]
 pageindex = 0
 
 [wiki]
-md5_hash = 83416d8ce6a3c30c3c4d2826e706e2d8
+md5_hash = 389883abe9c0355ad659838d9f787de0
 

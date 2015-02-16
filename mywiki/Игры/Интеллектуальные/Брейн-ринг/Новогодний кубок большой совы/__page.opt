@@ -5,5 +5,5 @@ order = 0
 datetime = 2012-12-12 21:42:48.789000
 
 [Tree]
-expand = True
+expand = False
 
