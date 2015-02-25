@@ -3,12 +3,13 @@ type = wiki
 tags = юмор
 order = 18
 datetime = 2013-01-11 12:33:48.250000
+cursorposition = 0
 
 [Tree]
-expand = True
+expand = False
 
 [wiki]
-md5_hash = d10f826215a14770c63506ac567541aa
+md5_hash = e0fd87dbb0c2ecbfa088b7db916a408a
 
 [Misc]
 pageindex = 1

@@ -5,7 +5,7 @@ order = 0
 datetime = 2013-03-09 11:20:33.562000
 
 [Tree]
-expand = True
+expand = False
 
 [Misc]
 pageindex = 1

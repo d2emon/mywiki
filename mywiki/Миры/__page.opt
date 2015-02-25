@@ -6,7 +6,7 @@ datetime = 2013-01-11 12:32:52.640000
 cursorposition = 0
 
 [Tree]
-expand = True
+expand = False
 
 [wiki]
 md5_hash = 1622221057c84386edd1244d4089af99
