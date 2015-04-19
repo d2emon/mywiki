@@ -3,3 +3,151 @@
 Игры, требующие стратегического мышления
 
 (:childlist:)
+
+* Стратегии
+** Стратегии по схеме игрового процесса
+*** Стратегии в реальном времени
+*** Пошаговые стратегии
+*** Карточные стратегии
+** Стратегии по масштабу игрового процесса
+*** Варгеймы
+*** Глобальные стратегии
+*** Симуляторы бога
+** 4X game
+** Artillery game
+** Real-time strategy (RTS)
+** MMORTS
+** Real-time tactics
+** Tower defense
+** Turn-based strategy
+** Turn-based tactics
+** Wargame
+
+!!! Strategy
+
+Main article: Strategy video game
+
+Strategy video games focus on gameplay requiring careful and skillful thinking and planning in order to achieve victory and the action scales from world domination to squad-based tactics. In most strategy video games, says Andrew Rollings, "the player is given a godlike view of the game world, indirectly controlling the units under his command."[26] Rollings also notes that "The origin of strategy games is rooted in their close cousins, board games."[26] Strategy video games generally take one of four archetypal forms, depending on whether the game is turn-based or real-time and whether the game's focus is upon strategy or military tactics. Real time strategy games are often a multiple unit selection game (multiple game characters can be selected at once to perform different tasks, as opposed to only selecting one character at a time) with a sky view (view looking down from above) but some recent games such as Tom Clancy's EndWar, are single unit selection and third person view. Like many RPG games, many strategy games are gradually moving away from turn based systems to more real-time systems.
+
+!!!! 4X game
+
+4X refers to a genre of strategy video game with four primary goals: eXplore, eXpand, eXploit and eXterminate. A 4X game can be turn-based or real-time. Perhaps the best known example of this genre is Sid Meier's Civilization series. 4X games often cover a very large period of time, giving the player the control of an entire civilization or species. Typically these games have a historical setting, encompassing a large amount of human history (Empire Earth, Civilization) or a science fiction setting where the player controls a species set to dominate the galaxy (Master of Orion, Galactic Civilizations).
+
+!!!! Artillery game
+
+Artillery is the generic name for early two or three-player (usually turn-based) computer games involving tanks fighting each other in combat or similar derivative games. Artillery games were among the earliest computer games developed and can be considered an extension of the original use of computers, which were once used for military-based calculations such as plotting the trajectories of rockets. Artillery games are a type of strategy game, though they have also been described as a "shooting game."
+
+!!!! Real-time strategy (RTS)
+
+The moniker "real-time strategy" (RTS), usually applied only to certain computer strategy games, (however, this genre is probably the most well known of strategy games and is what most websites mean when they say "strategy games") indicates that the action in the game is continuous, and players will have to make their decisions and actions within the backdrop of a constantly changing game state. Real-time strategy gameplay is characterised by obtaining resources, building bases, researching technologies and producing units. Blizzard's Starcraft is a popular RTS played competitively in South Korea and televised to large audiences. Other notable games include the Warcraft series, Age of Empires series, Dawn of War, Command and Conquer and Dune II (essentially the first RTS game). Very few non-computer strategy games are real-time; A few examples are Icehouse, Battle for Middle-earth II, Pikmin and Halo Wars.
+
+!!!! MMORTS
+
+Massively multiplayer online real-time strategy games, also known as "MMORTS", combine real-time strategy (RTS) with a persistent world. Players often assume the role of a general, king, or other type of figurehead leading an army into battle while maintaining the resources needed for such warfare. The titles are often based in a sci-fi or fantasy universe and are distinguished from single or small-scale multiplayer RTSes by the number of players and common use of a persistent world, generally hosted by the game's publisher, which continues to evolve even when the player is offline.
+
+!!!! Real-time tactics
+
+A real-time tactics game shares features of the simulation and wargame genres, for example the battle system (though not the entire game) in the Total War series. These titles focus on operational aspects and control of warfare. Unlike in real-time strategy games, resource and economical management and building plays no part of the gameplay. These games often feature an overarching "campaign map" with different regions the player must vie for control of -not dissimilar to the board game Risk. Base building in the traditional sense is usually relegated to building up the infrastructure of regions you own.
+
+!!!! Tower defense
+
+Tower defense games have a very simple layout. Usually, computer-controlled monsters called creeps move along a set path, and the player must place, or "build" towers along this path to kill the creeps. In some games, towers are placed along a set path for creeps, while in others towers can interrupt creep movement and change their path. In most tower defense games different towers have different abilities such as poisoning enemies or slowing them down. The player is awarded money for killing creeps, and this money can be used to buy more towers, or buy upgrades for a tower such as increased power or range.
+
+!!!! Turn-based strategy
+
+The term "Turn-based strategy game" (TBS) is usually reserved for certain computer strategy games, to distinguish them from real-time strategy games. A player of a turn-based game is allowed a period of analysis before committing to a game action, and some games allow a certain number of moves or actions to take place in a turn. Like real time strategy games, this genre can include many strategy games which are not solely turn based games, and games which may contain other features not related to whether the game is turn based or not.
+
+Some recent turn-based strategy games feature a different gameplay mechanic, with a simultaneous resolution of the turns, every player preparing their future actions in the planning phase, then letting the game follow the orders given at the same time, causing orders to be interrupted by the opponent(s) actions, changing the gameplay from reacting to the opponent's action into guessing them. No definite name has been decided for this new genre, but STBS - Simultaneous Turn-based Strategy - seems to be the unofficial name. The first game of the genre was Combat Mission.
+
+!!!! Turn-based tactics
+
+The gameplay of turn-based tactics games is characterized by the expectation of players to complete their tasks using the combat forces provided to them, and usually by the provision of a realistic (or at least believable) representation of military tactics and operations.
+
+!!!! Wargame
+
+Wargames are a subgenre of strategy video games that emphasize strategic or tactical warfare on a map. Wargames generally take one of four archetypal forms, depending on whether the game is turn-based or real-time and whether the game's focus is upon military strategy or tactics.
+
+Стратегии[править | править вики-текст]
+Основная статья: Компьютерная стратегическая игра
+Стратегии (англ. Strategy) — игры, требующие планирования и выработки определенной стратегии для достижения некой конкретной цели, например, победы в военной операции. Игрок управляет не одним персонажем, а целым подразделением, предприятием или даже вселенной. Различают походовые или пошаговые стратегические игры (Turn-Based Strategy, TBS), где игроки поочерёдно делают ходы, и каждому игроку отводится неограниченное или ограниченное(в зависимости от типа и сложности игры) время на свой ход, и стратегические игры в реальном времени (Real Time Strategy, RTS), в которых все игроки выполняют свои действия одновременно, и ход времени не прерывается.
+
+Стратегии по схеме игрового процесса[править | править вики-текст]
+Стратегии в реальном времени[править | править вики-текст]
+Основная статья: Стратегия в реальном времени
+Стратегии в реальном времени (англ. Real-time strategy, RTS) — в этих стратегиях игроки производят свои действия одновременно. Они появились несколько позже пошаговых, первой получившей известность игрой этого жанра была Dune II (1992), сюжет которой основан на одноимённом произведении Фрэнка Герберта. Уже тогда сформировались общие принципы стратегий в реальном времени.
+
+Большинство «классических» стратегий в реальном времени предполагают следующий игровой процесс: сбор неких ресурсов; строительство и укрепление базы или лагеря; создание на этой базе боевых единиц (наём солдат, строительство техники); объединение их в группы, штурм и уничтожение этими группами вражеской базы.
+
+Примеры:
+
+серия Command & Conquer
+серия Warcraft
+серия Age of Empires
+серия Supreme Commander
+серия Starcraft
+серия dawn of war
+Пошаговые стратегии[править | править вики-текст]
+Основная статья: Пошаговая стратегия
+Пошаговые стратегии (англ. Turn-based strategy, TBS) — игры, в которых игроки производят свои действия по очереди. Пошаговые стратегии появились раньше RTS и отличаются значительно большим разнообразием. Разделение игрового процесса на ходы отрывает его от реальной жизни и лишает игру динамизма, в результате чего эти игры не так популярны, как стратегии в реальном времени. С другой стороны, в TBS у игрока гораздо больше времени на размышление, во время совершения хода его ничто не торопит, что даёт возможность намного более глубокого и обстоятельного планирования.
+
+Примеры:
+
+X-COM
+Civilization
+Galactic Civilizations
+Heroes of Might and Magic
+Disciples
+Worms
+Карточные стратегии[править | править вики-текст]
+Карточные стратегии — это компьютерные версии настольных коллекционных карточных игр.
+
+Примеры:
+
+Magic The Gathering.
+Спектромансер.
+Hearthstone: Heroes of Warcraft .
+Стратегии по масштабу игрового процесса[править | править вики-текст]
+Варгеймы[править | править вики-текст]
+Основная статья: Варгейм
+В варгейме (англ. Wargame), в отличие от других видов стратегий, игрок должен не создавать армию, его цель — победить противника в бою, используя те силы, которые у него есть в распоряжении в начале боя.
+
+В варгеймах, как правило, делается упор на аутентичность, реалистичность и историчность.
+
+Примеры:
+
+серия Steel Panthers;
+серия Panzer General;
+серия Sudden Strike (Противостояние);
+ранние компьютерные игры из серии Warhammer;
+серия Squad Battles;
+серия MechCommander.
+Глобальные стратегии[править | править вики-текст]
+Основная статья: Глобальная стратегия
+Глобальные стратегии (англ. Government simulation game) — стратегии, в которых игрок управляет государством. В его руках не только война и экономика, но и научный прогресс, освоение новых земель и дипломатия. В некоторых из них наряду с глобальной картой существуют местные, на которых проходят тактические сражения.
+
+Примеры:
+
+серия Master of Orion
+серия Civilization
+игры от Paradox Interactive
+Crusader Kings II
+Europa Universalis
+Victoria II
+Hearts of Iron
+серия «Total War»
+Shogun: Total War
+Medieval: Total War
+Rome: Total War
+Medieval II: Total War
+Empire: Total War
+Napoleon: Total War
+Shogun 2: Total War
+Симуляторы бога[править | править вики-текст]
+Симуляторы бога (англ. God game) — стратегические игры, в которых игроку предстоит выступать в роли «бога» — некоей сверхъестественной сущности, заботящейся о целом небольшом народе. Подобные игры характеризует, как правило, непрямой контроль над отдельными игровыми персонажами — ими управляет компьютер, а роль игрока определяется «сверхъестественным» вмешательством в их жизнь, постройке зданий, поддержанию оптимального состояния подопечного общества и тому подобному. Многие симуляторы бога не ставят перед игроком никаких конкретных задач, предоставляя ему возможность свободно и неограниченно развивать подопечное общество.
+
+Примеры:
+
+серия Black & White;
+серия Dungeon Keeper;
+Spore;
+From Dust.
