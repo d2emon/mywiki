@@ -1,9 +1,9 @@
 [General]
 type = wiki
-tags = транспорт
+tags = транспорт, lurkmore
 order = 16
-datetime = 2013-04-02 17:57:55.270000
-cursorposition = 0
+datetime = 2015-10-10 07:11:08.818000
+cursorposition = 19159
 
 [Misc]
 pageindex = 1
@@ -12,5 +12,5 @@ pageindex = 1
 expand = False
 
 [wiki]
-md5_hash = 1870797a356e9d63819a36f98a80c1a2
+md5_hash = 68c1fa30a8a9646f90973534e415a69b
 
