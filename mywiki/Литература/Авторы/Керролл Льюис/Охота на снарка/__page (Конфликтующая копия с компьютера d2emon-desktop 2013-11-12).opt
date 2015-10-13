@@ -1,0 +1,12 @@
+[General]
+type = wiki
+tags = абсурд
+order = 4
+datetime = 2012-12-09 09:44:24.744000
+
+[wiki]
+md5_hash = 02f3b225453099b8a6c65cc2f4a178fb
+
+[Misc]
+pageindex = 1
+
