@@ -9,5 +9,9 @@ cursorposition = 0
 pageindex = 1
 
 [wiki]
+<<<<<<< HEAD
 md5_hash = 945aab770a9e08ed90cfee821ff5fdcf
+=======
+md5_hash = ceaf796e90b4f79f41a6f78e56843400
+>>>>>>> opt
 

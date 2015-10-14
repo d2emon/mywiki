@@ -1,6 +1,7 @@
 [General]
 type = wiki
 tags = 
+<<<<<<< HEAD
 order = 7
 creationdatetime = 2015-10-01 14:10:06.999000
 datetime = 2015-10-01 14:11:19.184000
@@ -8,6 +9,15 @@ cursorposition = 51
 
 [wiki]
 md5_hash = 310fded99d7af5d6c7b197a980158da3
+=======
+order = 5
+creationdatetime = 2015-10-01 14:10:06.999000
+datetime = 2015-10-01 14:11:19.184000
+cursorposition = 55
+
+[wiki]
+md5_hash = 5476a83e7cdde04054e085972c198491
+>>>>>>> opt
 
 [Misc]
 pageindex = 1

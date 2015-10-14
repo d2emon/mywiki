@@ -1,13 +1,22 @@
 [General]
 type = wiki
 tags = wikipedia
+<<<<<<< HEAD
 order = 9
 datetime = 2013-01-03 13:16:02.968000
 cursorposition = 0
+=======
+order = 6
+datetime = 2013-01-03 13:16:02.968000
+>>>>>>> opt
 
 [Misc]
 pageindex = 1
 
 [wiki]
+<<<<<<< HEAD
 md5_hash = bfd86750de00401615506513ef875319
+=======
+md5_hash = 6714b3dbc2155deeaecb4a06784fe1f9
+>>>>>>> opt
 

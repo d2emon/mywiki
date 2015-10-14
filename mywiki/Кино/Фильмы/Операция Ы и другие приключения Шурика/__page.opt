@@ -1,7 +1,11 @@
 [General]
 type = wiki
 tags = 
+<<<<<<< HEAD
 order = 10
+=======
+order = 9
+>>>>>>> opt
 datetime = 2013-05-27 20:57:43.665000
 cursorposition = 0
 
@@ -9,5 +13,9 @@ cursorposition = 0
 pageindex = 1
 
 [wiki]
+<<<<<<< HEAD
 md5_hash = 753ebdccc261e70fc18e6db455e4b843
+=======
+md5_hash = 7a6fb8be42c6a71a59a034cba9c3a33c
+>>>>>>> opt
 
