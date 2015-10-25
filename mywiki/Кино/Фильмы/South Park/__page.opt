@@ -1,14 +1,8 @@
 [General]
 type = wiki
 tags = 
-<<<<<<< HEAD
-order = 2
 datetime = 2013-05-12 10:19:50.827810
 cursorposition = 0
-=======
-order = 1
-datetime = 2013-05-12 10:19:50.827810
->>>>>>> opt
 
 [Misc]
 pageindex = 1
@@ -16,9 +10,6 @@ pageindex = 1
 [Tree]
 expand = False
 
-<<<<<<< HEAD
 [wiki]
 md5_hash = 07ff520facf6028600fa1bf040483b9e
 
-=======
->>>>>>> opt

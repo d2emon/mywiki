@@ -1,11 +1,7 @@
 [General]
 type = wiki
 tags = 
-<<<<<<< HEAD
-order = 7
-=======
 order = 5
->>>>>>> opt
 creationdatetime = 2015-03-31 14:43:38.019647
 datetime = 2015-03-31 14:47:04.343723
 cursorposition = 6676

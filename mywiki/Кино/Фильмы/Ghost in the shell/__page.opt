@@ -3,10 +3,6 @@ type = wiki
 tags = 
 order = 0
 datetime = 2013-11-23 11:38:11.892243
-<<<<<<< HEAD
-cursorposition = 0
-=======
->>>>>>> opt
 
 [Misc]
 pageindex = 1
@@ -14,9 +10,5 @@ pageindex = 1
 [Tree]
 expand = False
 
-<<<<<<< HEAD
 [wiki]
 md5_hash = 6d51f5973a5ac0e0012e05e00e529e14
-
-=======
->>>>>>> opt

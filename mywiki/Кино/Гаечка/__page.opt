@@ -1,21 +1,13 @@
 [General]
 type = wiki
 tags = lurkmore
-<<<<<<< HEAD
-order = 2
-=======
 order = 1
->>>>>>> opt
 creationdatetime = 2015-10-01 15:49:00.530000
 datetime = 2015-10-02 00:09:29.862255
 cursorposition = 14633
 
 [wiki]
-<<<<<<< HEAD
-md5_hash = 63d1c29169dc56ffce4a963363f39c39
-=======
-md5_hash = b0232ff553d0dd67e31b1795b5af1ab0
->>>>>>> opt
+md5_hash = 98aef80c492f8e1a34ff4db0bf3c2ed3
 
 [Misc]
 pageindex = 1

@@ -3,17 +3,9 @@ type = wiki
 tags = wikipedia
 order = 3
 datetime = 2013-11-23 11:51:30.255030
-<<<<<<< HEAD
-cursorposition = 0
-=======
->>>>>>> opt
 
 [Misc]
 pageindex = 1
 
-<<<<<<< HEAD
 [wiki]
 md5_hash = 5ff83e60dd35ada2b69cd3e422946ca3
-
-=======
->>>>>>> opt

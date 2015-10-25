@@ -3,7 +3,11 @@ type = wiki
 tags = юмор
 order = 1
 datetime = 2013-11-15 11:26:39.647000
+cursorposition = 0
 
 [Misc]
 pageindex = 1
+
+[wiki]
+md5_hash = 8914b43ce90d7736075be7e422bf919f
 

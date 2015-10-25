@@ -4,13 +4,17 @@ tags =
 order = 4
 datetime = 2013-01-11 12:33:13.828000
 cursorposition = 0
+selectedtab = 0
 
 [wiki]
-md5_hash = 820f5825fdc00197ca043aa50b202734
+md5_hash = f716f79ebd9dbb978791ca5882804f9e
 
 [Tree]
 expand = True
 
 [Misc]
 pageindex = 1
+
+[Tabs]
+tab_0 = Актеры
 
