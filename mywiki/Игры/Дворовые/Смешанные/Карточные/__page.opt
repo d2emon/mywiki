@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = lurkmore, дописать
+order = 1
+creationdatetime = 2015-11-19 18:05:08.189636
+datetime = 2015-11-19 20:27:08.625321
+cursorposition = 54091
+
+[wiki]
+md5_hash = 355598e43f596c1e51396234f77404fd
+
+[Tree]
+expand = True
+
+[Misc]
+pageindex = 1
+
