@@ -3,10 +3,14 @@ type = wiki
 tags = мир фантастики
 order = 0
 datetime = 2013-04-06 10:25:48.379000
+cursorposition = 0
 
 [Misc]
 pageindex = 1
 
 [Tree]
 expand = True
+
+[wiki]
+md5_hash = 6959ba7bd2bff87340bf98b982b6277a
 
