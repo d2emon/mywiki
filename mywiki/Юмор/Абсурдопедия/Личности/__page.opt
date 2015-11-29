@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = абсурд
+order = 8
+creationdatetime = 2015-11-29 13:49:44.742000
+datetime = 2015-11-29 13:50:16.161000
+cursorposition = 73
+
+[wiki]
+md5_hash = 0106e3882219842b27287cccc81f089b
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+
