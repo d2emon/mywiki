@@ -2,7 +2,7 @@
 type = wiki
 tags = 
 order = 3
-datetime = 2013-04-02 15:54:58.258000
+datetime = 2015-11-29 14:03:41.898000
 selectedtab = 0
 cursorposition = 0
 
@@ -16,5 +16,5 @@ pageindex = 1
 tab_0 = Fighting Fantasy 1/Колдун огненной горы/p000
 
 [wiki]
-md5_hash = afe81cdc8573fea63e8ca49b981d00b0
+md5_hash = 62e6c09e747cf43401d0764a53fbb1f2
 
