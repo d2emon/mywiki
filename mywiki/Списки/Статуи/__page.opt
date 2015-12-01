@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = достопримечательности
+order = 9
+creationdatetime = 2015-12-01 11:26:01.242000
+datetime = 2015-12-01 11:27:06.137000
+cursorposition = 61
+
+[wiki]
+md5_hash = fe780f6e222588fbe27e11f23f25bc44
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+
