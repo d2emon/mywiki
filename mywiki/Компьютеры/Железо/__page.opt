@@ -1,12 +1,16 @@
 [General]
 type = wiki
-tags = 
-order = 12
-datetime = 2013-11-23 00:53:36.102532
+tags = техника, комп
+order = 11
+datetime = 2015-12-02 21:44:28.248000
+cursorposition = 0
 
 [Misc]
 pageindex = 1
 
 [Tree]
 expand = False
+
+[wiki]
+md5_hash = e6e9600d75fac3821d0803b672c2925f
 

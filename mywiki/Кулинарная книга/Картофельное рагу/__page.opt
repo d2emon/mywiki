@@ -1,13 +1,13 @@
 [General]
 type = wiki
-tags = 
+tags = вторые блюда
 order = 2
 creationdatetime = 2015-02-26 14:34:06.703000
-datetime = 2015-02-26 14:35:06.005000
+datetime = 2015-12-02 21:47:43.031000
 cursorposition = 883
 
 [wiki]
-md5_hash = b6fcdc31f61fe23ed2c0dd0a0d02eccb
+md5_hash = 1f3882a4b1dde706d65f84fa95b9cdd2
 
 [Misc]
 pageindex = 1

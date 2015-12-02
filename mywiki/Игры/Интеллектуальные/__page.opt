@@ -1,15 +1,15 @@
 [General]
 type = wiki
-tags = 
+tags = чгк, игры
 order = 2
-datetime = 2015-11-19 19:58:48.703898
+datetime = 2015-12-02 21:33:37.831000
 cursorposition = 0
 
 [Tree]
 expand = False
 
 [wiki]
-md5_hash = 673a99f572879490c47dc4e6c300d333
+md5_hash = fa64a2eb4c4343451c999dcd28ea2abd
 
 [Misc]
 pageindex = 1

@@ -1,12 +1,12 @@
 [General]
 type = wiki
-tags = дописать, временное
-order = 1
-datetime = 2013-04-02 15:50:49.071000
+tags = дописать, экология, временное
+order = 2
+datetime = 2015-12-02 21:29:42.297000
 cursorposition = 0
 
 [wiki]
-md5_hash = 16947f2447cc8c35dabec4688c1725f7
+md5_hash = 94dce7d063cdb3331a8194f9567838cd
 
 [Misc]
 pageindex = 1

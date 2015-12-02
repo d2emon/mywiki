@@ -1,8 +1,9 @@
 [General]
 type = wiki
-tags = 
+tags = мое, книги
 order = 1
-datetime = 2013-01-11 12:30:45.859000
+datetime = 2015-12-02 21:49:08.297000
+cursorposition = 0
 
 [Misc]
 pageindex = 1
@@ -11,5 +12,5 @@ pageindex = 1
 expand = False
 
 [wiki]
-md5_hash = 79b9fc3796201e5676c46525e1e8bdc1
+md5_hash = af23359921099b4600c2aa265527332e
 

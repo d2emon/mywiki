@@ -1,13 +1,13 @@
 [General]
 type = wiki
-tags = lurkmore
+tags = lurkmore, ретро, кино
 order = 5
 creationdatetime = 2015-10-24 15:21:27.893238
-datetime = 2015-10-25 17:12:11.763279
+datetime = 2015-12-02 21:38:04.869000
 cursorposition = 62553
 
 [wiki]
-md5_hash = cffb42fc49a522d0c9b7f5c961cc3807
+md5_hash = 14305c2e1c63917d3a34571030dce6f2
 
 [Misc]
 pageindex = 1

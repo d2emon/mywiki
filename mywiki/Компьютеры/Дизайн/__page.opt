@@ -1,8 +1,8 @@
 [General]
 type = wiki
-tags = 
-order = 11
-datetime = 2013-09-02 11:42:35.874000
+tags = дизайн, комп
+order = 10
+datetime = 2015-12-02 21:44:00.610000
 cursorposition = 0
 
 [Misc]
@@ -12,5 +12,5 @@ pageindex = 1
 expand = False
 
 [wiki]
-md5_hash = 3c1a581051831e82394de2fe30ae8817
+md5_hash = b1ca9a1cac46ead0105439cad5ba8378
 

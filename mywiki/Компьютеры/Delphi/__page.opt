@@ -1,8 +1,9 @@
 [General]
 type = wiki
-tags = 
+tags = delphi, комп
 order = 0
-datetime = 2013-01-11 12:26:12.500000
+datetime = 2015-12-02 21:39:49.027000
+cursorposition = 0
 
 [Misc]
 pageindex = 1
@@ -11,5 +12,5 @@ pageindex = 1
 expand = False
 
 [wiki]
-md5_hash = 81f8de7ea613b7184a756cca8dc9069d
+md5_hash = 76cf11ab1374d223b49f974685a2b7e3
 

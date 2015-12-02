@@ -1,13 +1,13 @@
 [General]
 type = wiki
-tags = lurkmore
+tags = lurkmore, инди, кино
 order = 0
 creationdatetime = 2015-10-13 20:48:11.160000
-datetime = 2015-10-25 17:13:51.583606
+datetime = 2015-12-02 21:36:34.200000
 cursorposition = 44219
 
 [wiki]
-md5_hash = 9827e3c2b7e98d274f4ab40aa36b9d62
+md5_hash = 56477a8eabf6e0030c0336dde50ab755
 
 [Misc]
 pageindex = 1
