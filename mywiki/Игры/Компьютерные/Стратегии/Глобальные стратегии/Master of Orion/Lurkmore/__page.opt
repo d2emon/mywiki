@@ -1,11 +1,12 @@
 [General]
 type = wiki
-tags = lurkmore
-order = 1
-datetime = 2012-12-08 22:04:46.573000
+tags = космоопера, lurkmore, игры
+order = 0
+datetime = 2015-12-02 22:56:47.977000
+cursorposition = 0
 
 [wiki]
-md5_hash = 1e220fd1b5ac50e02fe2d4c19ad4ed44
+md5_hash = eb6d91442ce598efe677256d6e59bf67
 
 [Misc]
 pageindex = 1
