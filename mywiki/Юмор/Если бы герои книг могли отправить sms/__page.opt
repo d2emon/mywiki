@@ -1,9 +1,13 @@
 [General]
 type = wiki
-tags = 
+tags = юмор
 order = 9
-datetime = 2013-10-19 16:14:33.714039
+datetime = 2015-12-03 23:45:44.559000
+cursorposition = 0
 
 [Misc]
 pageindex = 1
+
+[wiki]
+md5_hash = b1b4e670af248a4a91c66e5d1b7e269f
 
