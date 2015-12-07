@@ -7,13 +7,13 @@ cursorposition = 0
 selectedtab = 0
 
 [Tree]
-expand = False
+expand = True
 
 [Misc]
 pageindex = 1
 
 [wiki]
-md5_hash = 678a770aaaebaa9ed641e9ce8702269e
+md5_hash = 66ffdaac834bbdb0c6a259ebcc3f9fb4
 
 [Tabs]
 tab_0 = Ихтиология

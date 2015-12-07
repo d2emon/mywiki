@@ -2,65 +2,9 @@
 
 (:childlist:)
 
-* 			Бесклеточные (Acellularia)
-** 		Вирусы (Vira)
-*** 		I. dsDNA viruses
-***		II. ssDNA viruses
-***		III. dsRNA viruses
-***		IV. (+)ssRNA viruses
-***		V. (-)ssRNA viruses
-***		VI. ssRNA-RT viruses
-***		VII. dsDNA-RT viruses
+* 			[[Бесклеточные]] (Acellularia)
 * 			Клеточные (Cellularia)
-** 		Прокариоты, безъядерные (Procaryota), доядерные (Archicaryota)
-***		Археи (Archaea)
-**** 	Crenarchaeota
-***** 	Termoprotei
-**** 	Euryarchaeota
-***** 	Methanobacteria
-***** 	Methanococci
-***** 	Halobacteria
-***** 	Thermoplasmata
-***** 	Thermococci
-***** 	Archaeoglobi
-***** 	Methanopyri
-**** 	Nanoarchaeota
-**** 	Korarchaeota
-***		Бактерии (Bacteria)
-**** 	Aquificae
-**** 	Thermotogae
-**** 	Thermodesulfobacteria
-**** 	Deinococcus-Thermus
-**** 	Chrysiogenetes
-**** 	Chloroflexi
-**** 	Thermomicrobia
-**** 	Nitrospirae
-**** 	Deferribacteres
-****		Сине-зелёные водоросли (Cyanobacteria)
-**** 	Chlorobi
-**** 	Proteobacteria
-***** 	Alphaproteobacteria
-***** 	Betaproteobacteria
-***** 	Deltaproteobacteria
-***** 	Epsilionproteobacteria
-**** 	Firmicutes
-***** 	Clostridia
-***** 	Mollicutes
-***** 	Bacilli
-**** 	Actinobacteria
-**** 	Planctomycetes
-**** 	Chlamydiae
-**** 	Spirochaetes
-**** 	Fibrobacteres
-**** 	Acidobacteria
-**** 	Bacteroidetes
-***** 	Bacteroides
-***** 	Flavobacteria
-***** 	Sphingobacteria
-**** 	Fusobacteria
-**** 	Verrucomicrobia
-**** 	Dictyoglomi
-**** 	Gemmatimonadetes
+** 		[[Прокариоты]], безъядерные (Procaryota), доядерные (Archicaryota)
 ** 		Эукариоты (Eucaryota), ядерные (Nuclearia)
 ***		Амёбоподобные Amoebozoa Luhe, 1913, emend. Cavalier-Smith, 1998
 **** 	Tubulinea Smirnov et al., 2005
