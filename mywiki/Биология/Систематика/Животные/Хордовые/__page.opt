@@ -3,11 +3,11 @@ type = wiki
 tags = wikipedia, экология, классификация
 order = 1
 creationdatetime = 2015-12-07 16:25:34.320000
-datetime = 2015-12-07 16:42:54.444000
-cursorposition = 2932
+datetime = 2015-12-07 19:27:42.212000
+cursorposition = 955
 
 [wiki]
-md5_hash = c2cd97f3d04594d6744b4373b659bc68
+md5_hash = 171d327681c76d41282cf2b8355622c7
 
 [Misc]
 pageindex = 1
