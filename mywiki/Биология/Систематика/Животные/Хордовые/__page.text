@@ -1,328 +1,73 @@
 !! Хордовые (Chordates)
 
-*		Chordates
-**	Cephalochordates
-**	...
-***	Tunicates (Urochordates)
-***	Craniates
+Классы:
 
-!!! Taxonomy
-
-* Phylum Chordata
-** Subphylum Tunicata (Urochordata) – (tunicates; 3,000 species)
-***** Class Ascidiacea (sea squirts)
-***** Class Thaliacea (salps)
-***** Class Appendicularia (larvaceans)
-***** Class Sorberacea
-** Subphylum Cephalochordata (Acraniata) – (lancelets; 30 species)
-***** Class Leptocardii (lancelets)
-** Subphylum Vertebrata (Craniata) (vertebrates – animals with backbones; 57,674 species)
-*** Infraphylum incertae sedis (Cyclostomata)
-**** Superclass 'Agnatha' paraphyletic (jawless vertebrates; 100+ species)
-***** Class Myxini (hagfish; 65 species)
-***** Class Petromyzontida or Hyperoartia (lampreys)
-***** Class †Conodonta
-***** Class †Pteraspidomorphi
-***** Class †Thelodonti
-***** Class †Anaspida
-***** Class †Cephalaspidomorphi
-*** Infraphylum Gnathostomata (jawed vertebrates)
-**** Superclass incertae sedis
-***** Class †Placodermi (Paleozoic armoured forms)
-***** Class Chondrichthyes (cartilaginous fish; 900+ species)
-***** Class †Acanthodii (Paleozoic "spiny sharks")
-**** Superclass Osteichthyes (bony fish; 30,000+ species)
-***** Class Actinopterygii (ray-finned fish; about 30,000 species)
-***** Class Sarcopterygii (lobe-finned fish: 8 species)
-**** Superclass Tetrapoda (four-limbed vertebrates; 28,000+ species) (The classification below follows Benton 2004, and uses a synthesis of rank-based Linnaean taxonomy and also reflects evolutionary relationships. Benton included the Superclass Tetrapoda in the Subclass Sarcopterygii in order to reflect the direct descent of tetrapods from lobe-finned fish, despite the former being assigned a higher taxonomic rank.)[39]
-***** Class Amphibia (amphibians; 7,000 species)
-***** Class Sauropsida (reptiles (including birds); 9,000+ species)
-***** Class synapsida (mammals; 5,700+ species)
+* ''Подтип'' Tunicata (Urochordata) – (tunicates; 3,000 species)
+** '''[[Ascidiacea]]''' (sea squirts)
+** '''[[Thaliacea]]''' (salps)
+** '''Appendicularia''' (larvaceans)
+** '''Sorberacea'''
+* ''Подтип'' Бесчерепные Cephalochordata (Acraniata) ланцетники
+** '''[[Leptocardii]]''' ланцетники
+* ''Подтип'' Черепные Vertebrata (Craniata) - 57 674
+** ''Инфратип'' incertae sedis (Cyclostomata)
+*** '''[[Миксины]]''' (Myxini) - 15
+*** {-'''[[Pteraspidomorphi]]'''-}  ''Древние бесчелюстные''
+*** {-'''[[Thelodonti]]'''-}
+*** {-'''[[Anaspida]]'''-}
+*** '''[[Миноги]]''' (Petromyzontida or Hyperoartia) - 38
+*** {-'''[[Conodonta]]'''-} ''Конодонты''
+*** {-'''[[Cephalaspidomorphi]]'''-}  ''Древние бесчелюстные''
+** ''Инфратип'' Челюстноротые (Gnathostomata)
+*** ''Надкласс'' incertae sedis
+**** {-'''[[Placodermi]]'''-} ''Пластинчатые рыбы''
+**** '''[[Хрящевые рыбы]]''' (Chondrichthyes)
+**** {-'''[[Acanthodii]]'''-} ''spiny sharks''
+*** ''Надкласс'' Костные рыбы
+**** '''[[Лучеперые рыбы]]''' (Actinopterygii)
+**** '''[[Кистеперые рыбы]]''' (Sarcopterygii)
+**** ''Надкласс'' Tetrapoda (four-limbed vertebrates; 28,000+ species) (The classification below follows Benton 2004, and uses a synthesis of rank-based Linnaean taxonomy and also reflects evolutionary relationships. Benton included the Superclass Tetrapoda in the Subclass Sarcopterygii in order to reflect the direct descent of tetrapods from lobe-finned fish, despite the former being assigned a higher taxonomic rank.)[39]
+***** '''[[Amphibia]]''' (7 302) 
+***** '''[[Sauropsida]]'''
+****** [[Рептилии]] (10 038)
+******	[[Птицы]]  (10 425)
+***** '''synapsida''' (mammals; 5,700+ species)
+******	[[Млекопитающие]] (5 513)
 
 !! Phylogeny
 
-* 	Chordata
-**	Cephalochordata	Amphioxus
-**	Olfactores
-***	†Haikouella
-***	Tunicata
-****	Appendicularia (formerly Larvacea)
-****	Thaliacea
-****	Ascidiacea
-***	Craniata
-****	Myxini
-****	Vertebrata
-*****	†Myllokunmingia fengjiaoa
-*****	†Zhongjianichthys rostratus
-*****	Conodonta†
-*****	Cephalaspidomorphi†
-*****	Hyperoartia (Petromyzontida)(Lampreys)
-*****	Pteraspidomorphi†
-*****	osteostracan†
-*****	Gnathostomata	
-******	Placodermi† (?paraphyletic)
-******	Chondrichthyes
-******	Teleostomi	
-*******	Acanthodii† (?paraphyletic)
-*******	Osteichthyes	
-********	Actinopterygii
-********	Sarcopterygii	
-*********	Tetrapoda 	
-**********	Amphibia
-**********	Amniota 	
-***********	Mammalia
-***********	Sauropsida 	
-************	Lepidosauromorpha (lizards, snakes, tuatara, and their extinct relatives)
-************	Archosauromorpha (crocodiles, birds, and their extinct relatives
+*	Cephalochordata	Amphioxus
+*	Olfactores
+**	†Haikouella
+**	Tunicata
+**	Appendicularia (formerly Larvacea)
+***	Thaliacea
+***	Ascidiacea
+**	Craniata
+***	Myxini
 
-----
-
-*	Subphylum Tunicate
-**	Class Ascidiacea
-***	Order Enterogona
-***	Order Pleurogona
-***	Order Aspiraculata
-**	Class Thaliacea	(Pelagic tunicates)
-***	Order Doliolida
-***	Order Pyrosomida
-***	Order Salpida, salps
-**	Class Larvacea	(solitary, free-swimming tunicates)
-*	Subphylum Cephalochordate
-**	Class Leptocardii (lancelets)
-***	Order Amphioxiformes
-**	Family Pikaiidae †
-***	Genus Pikaia †
-*	Subphylum Vertebrates
-**	Infraphylum Cyclostomata, Superclass Agnatha	(Paraphyletic jawless vertebrates; 100+ species)
-***	Class Myxini (hagfish)
-****	Order Myxiniformes
-*****	Family Myxinidae
-***	Class Hyperoartia (lampreys and their † kin)
-****	Order Petromyzontiformes
-**	Infraphylum Gnathostomata (jawed vertebrates)[edit]
-***	Class Placodermi - †
-****	Order Acanthothoraci
-****	Order Arthrodira
-****	Order Antiarchi
-****	Order Brindabellaspida
-****	Order Petalichthyida
-****	Order Phyllolepida
-****	Order Ptyctodontida
-****	Order Rhenanida
-****	Order Pseudopetalichthyida (The placement of this order is debated.)
-****	Order Stensioellida (The placement of this monotypic order is debated.)
-***	Class Chondrichthyes (cartilaginous fish)
-****	Subclass Elasmobranchii
-*****	Superorder Batoidea
-******	Order Rajiformes: rays and skates
-******	Order Pristiformes: sawfishes
-******	Order Torpediniformes: electric rays
-*****	Superorder Selachimorpha (sharks)
-******	Order Heterodontiformes: bullhead sharks
-******	Order Orectolobiformes: carpet sharks
-******	Order Carcharhiniformes: ground sharks
-******	Order Lamniformes: mackerel sharks
-******	Order Hexanchiformes: frilled and cow sharks
-******	Order Squaliformes: dogfish sharks
-******	Order Squatiniformes: angel sharks
-******	Order Pristiophoriformes: saw sharks
-****	Subclass Holocephali
-*****	Order Chimaeriformes: chimaeras
-***	Class Acanthodii †
-****	Superclass Osteichthyes
-***	Class Actinopterygii (ray-finned fish)
-****	Subclass Cladistia
-*****	Acipenseriformes
-******	Acipenseridae — sturgeons
-******	Polyodontidae — paddlefishes
-******	Chondrosteidae(†)
-******	Errolichthyidae(†)
-*****	Cheirolepidiformes(†)
-*****	Guildayichthyiformes(†)
-*****	Luganoiiformes(†)
-*****	Palaeonisciformes(†)
-******	Acrolepidae(†)
-******	Birgeriidae(†)
-******	Palaeoniscidae(†)
-******	Perleidiformes(†)
-*****	Phanerorhynchiformes(†)
-*****	Pholidopleuriformes(†)
-*****	Polypteriformes
-******	Polypteridae
-*****	Ptycholepiformes(†)
-*****	Saurichthyiformes(†)
-*****	Tarrasiiformes(†)
-****	Subclass Chondrostei
-*****	Order Acipenseriformes, including the sturgeons and paddlefishes
-****	Subclass Neopterygii
-*****	Infraclass Holostei
-******	Order Lepisosteiformes, the gars
-******	Order Amiiformes, the bowfins
-*****	Infraclass Teleostei
-******	Superorder Osteoglossomorpha
-*******	Order Osteoglossiformes, the bony-tongued fishes
-*******	Order Hiodontiformes, including the mooneye and goldeye
-******	Superorder Elopomorpha
-*******	Order Elopiformes, including the ladyfishes and tarpon
-*******	Order Albuliformes, the bonefishes
-*******	Order Notacanthiformes, including the halosaurs and spiny eels
-*******	Order Anguilliformes, the true eels and gulpers
-*******	Order Saccopharyngiformes, including the gulper eel
-******	Superorder Clupeomorpha
-*******	Order Clupeiformes, including herrings and anchovies
-******	Superorder Ostariophysi
-*******	Order Gonorynchiformes, including the milkfishes
-*******	Order Cypriniformes, including barbs, carp, danios, goldfishes, loaches, minnows, rasboras
-*******	Order Characiformes, including characins, pencilfishes, hatchetfishes, piranhas, tetras.
-*******	Order Gymnotiformes, including electric eels and knifefishes
-*******	Order Siluriformes, the catfishes
-******	Superorder Protacanthopterygii
-*******	Order Salmoniformes, including salmon and trout
-*******	Order Esociformes the pike
-*******	Order Osmeriformes, including the smelts and galaxiids
-******	Superorder Stenopterygii
-*******	Order Ateleopodiformes, the jellynose fish
-*******	Order Stomiiformes, including the bristlemouths and marine hatchetfishes
-******	Superorder Cyclosquamata
-*******	Order Aulopiformes, including the Bombay duck and lancetfishes
-******	Superorder Scopelomorpha
-*******	Order Myctophiformes, including the lanternfishes
-******	Superorder Lampridiomorpha
-*******	Order Lampriformes, including the oarfish, opah and ribbonfishes
-******	Superorder Polymyxiomorpha
-*******	Order Polymixiiformes, the beardfishes
-******	Superorder Paracanthopterygii
-*******	Order Percopsiformes, including the cavefishes and trout-perches
-*******	Order Batrachoidiformes, the toadfishes
-*******	Order Lophiiformes, including the anglerfishes
-*******	Order Gadiformes, including cods
-*******	Order Ophidiiformes, including the pearlfishes
-******	Superorder Acanthopterygii
-*******	Order Mugiliformes, the mullets
-*******	Order Atheriniformes, including silversides and rainbowfishes
-*******	Order Beloniformes, including the flyingfishes
-*******	Order Cetomimiformes, the whalefishes
-*******	Order Cyprinodontiformes, including livebearers, killifishes
-*******	Order Stephanoberyciformes, including the ridgeheads
-*******	Order Beryciformes, including the fangtooths and pineconefishes
-*******	Order Zeiformes, including the dories
-*******	Order Gobiesociformes, the clingfishes[1]
-*******	Order Gasterosteiformes including sticklebacks, pipefishes, seahorses
-*******	Order Syngnathiformes, including the seahorses and pipefishes[2]
-*******	Order Synbranchiformes, including the swamp eels
-*******	Order Tetraodontiformes, including the filefishes and pufferfish
-*******	Order Pleuronectiformes, the flatfishes
-*******	Order Scorpaeniformes, including scorpionfishes and the sculpins
-*******	Order Perciformes 40% of all fish including anabantids, centrarchids (incl. bass and sunfish), cichlids, gobies, gouramis, mackerel, perches, scats, whiting, wrasses
-***	Class Sarcopterygii (fleshy-finned fishes)
-****	Subclass Actinistia (coelacanths)
-*****	Order Coelacanthiformes, the coelacanth
-****	Subclass Dipnoi (lungfish)
-*****	Order Ceratodontiformes
-*****	Order Lepidosireniformes
-**	Superclass Tetrapoda
-***	Class Amphibia (amphibians)
-****	Order Urodela or Caudata (salamanders)
-****	Order Anura (frogs and toads)
-****	Order Gymnophiona or Apoda (caecilians)
-***	Class Reptilia (reptiles)
-****	Subclass Diapsida
-*****	Infraclass Archosauromorpha
-******	Division Archosauria
-*******	Subdivision Crurotarsi
-********	Infradivision Pseudosuchia
-*********	Magnorder Suchia
-**********	Superorder Crocodylomorpha
-***********	Order Crocodilia (Crocodilians)
-*****	Infraclass Lepidosauromorpha
-******	Superorder Lepidosauria
-*******	Order Rhynchocephalia (tuataras)
-*******	Order Squamata (lizards, snakes)
-****	Subclass Anapsida
-*****	Order Testudines (turtles and their kin)
-***	Class Aves (birds)
-****	Subclass Neornithes
-******	Superorder Palaeognathae
-*******	Order Struthioniformes, ostrich, emus, kiwis, and allies
-*******	Order Tinamiformes, tinamous
-*****	Infraclass Neognathae
-******	Superorder Galloanserae (fowl)
-*******	Order Anseriformes, waterfowl
-*******	Order Galliformes, fowl
-******	Superorder Neoaves
-*******	Order Sphenisciformes, penguins
-*******	Order Gaviiformes, loons
-*******	Order Podicipediformes, grebes
-*******	Order Procellariiformes, albatrosses, petrels, and allies
-*******	Order Pelecaniformes, pelicans and allies
-*******	Order Ciconiiformes, storks and allies
-*******	Order Phoenicopteriformes, flamingos
-*******	Order Accipitriformes, eagles, hawks and allies (taxonomists have traditionally placed these groups in the Falconiformes)
-*******	Order Falconiformes, falcons
-*******	Order Turniciformes, button-quail
-*******	Order Opisthocomiformes, hoatzin (this enigmatic bird was traditionally treated as a family within either the Galliformes or Cuculiformes)
-*******	Order Gruiformes, cranes and allies
-*******	Order Charadriiformes, plovers and allies
-*******	Order Pterocliformes, sandgrouse (this enigmatic group was traditionally treated as a family in any of three different orders: Charadriiformes, Ciconiiformes, and Columbiformes)
-*******	Order Columbiformes, doves and pigeons
-*******	Order Psittaciformes, parrots and allies
-*******	Order Cuculiformes, cuckoos
-*******	Order Strigiformes, owls
-*******	Order Caprimulgiformes, nightjars and allies
-*******	Order Apodiformes, swifts
-*******	Order Coliiformes, mousebirds
-*******	Order Trogoniformes, trogons
-*******	Order Coraciiformes, kingfishers
-*******	Order Galbuliformes, jacamars and puffbirds (these groups were traditionally treated as families in the order Piciformes)
-*******	Order Piciformes, woodpeckers and allies
-*******	Order Passeriformes, passerines
-***	Class Mammalia (mammals)
-****	Subclass Prototheria
-*****	Order Monotremata, monotremes
-****	Subclass Theria
-*****	Infraclass Marsupialia
-******	Order Didelphimorphia, opossums
-******	Order Paucituberculata, rat opossums
-******	Order Microbiotheria, monito del monte
-******	Order Dasyuromorphia, marsupial carnivores
-******	Order Peramelemorphia, marsupial omnivores
-******	Order Notoryctemorphia, marsupial moles
-******	Order Diprotodontia, marsupial herbivores; kangaroos, wallabies, possums and allies
-*****	Infraclass Eutheria
-******	Magnorder Atlantogenata
-*******	Superorder Afrotheria
-********	Grandorder Afrosoricida
-*********	Order Afrosoricida, tenrecs and golden moles
-*********	Order Macroscelidea, elephant shrews
-*********	Order Tubulidentata, aardvark
-********	Grandorder Paenungulata
-**********	Order Hyracoidea, hyraxes
-*********	Mirorder Tethytheria
-**********	Order Proboscidea, elephants
-**********	Order Sirenia, manatees and dugongs
-********	Superorder Xenarthra
-*********	Order Cingulata, armadillos
-*********	Order Pilosa, sloths and anteaters
-******	Magnorder Boreoeutheria
-*******	Superorder Laurasiatheria
-**********	Order Eulipotyphla, hedgehogs, shrews, moles
-********	Grandorder Ferungulata
-***********	Order Cetartiodactyla, cetaceans and even-toed ungulates
-**********	Clade Pegasoferae
-***********	Order Chiroptera, bats
-*********	Mirorder Zooamata
-**********	Clade Ferae
-***********	Order Pholidota, pangolins
-***********	Order Carnivora, carnivores; cats, dogs, bears, seals, sea lions and others
-***********	Order Perissodactyla, odd-toed ungulates; horses, rhinos, tapirs
-***********	Order Creodonta hyaenodontidae hyeanodon, dissopsalis, sarkastostodon, and megistotherium.
-*******	Superorder Euarchontoglires
-********	Grandorder Euarchonta
-*********	Mirorder Sundatheria
-**********	Order Dermoptera, colugos
-**********	Order Scandentia, treeshrews
-*********	Mirorder Primatomorpha
-**********	Order Primates, lemurs, monkeys, apes and allies
-********	Grandorder Glires
-*********	Order Rodentia, rodents
-*********	Order Lagomorpha, rabbits, hares and pikas
+***	Vertebrata
+**** ...
+****	[[Миноги]] (Hyperoartia)
+**** {-[[Euconodonta]]-}
+**** ...
+***** ...
+******	{-[[Pteraspidomorphi]]-}
+******	{-[[Thelodonti]]-}
+***** ...
+****** {-[[Anaspida]]-}
+****** ...
+******* {-[[Galeaspida]]-}
+******* ...
+******** Ostracodermi
+********* {-[[Pituriaspida]]-}
+********* {-[[Osteostraci]]-}
+******** Gnathostomata
+*********	{-[[Placodermi]]-}
+********* 	...
+**********	[[Хрящевые рыбы]]
+**********	Teleostomi	
+***********	{-[[Acanthodii]]-}
+***********  Euteleostomi
+************	[[Лучеперые рыбы]]
+************	[[Кистеперые рыбы]]

@@ -1,115 +1,30 @@
 !! Систематика
 
-(:childlist:)
+Систематика эукариот
 
-* 			[[Бесклеточные]] (Acellularia)
-* 			Клеточные (Cellularia)
-** 		[[Прокариоты]], безъядерные (Procaryota), доядерные (Archicaryota)
-** 		Эукариоты (Eucaryota), ядерные (Nuclearia)
-***		Амёбоподобные Amoebozoa Luhe, 1913, emend. Cavalier-Smith, 1998
-**** 	Tubulinea Smirnov et al., 2005
-**** 	Flabellinea Smirnov et al., 2005
-**** 	Stereomyxida Grell, 1966
-**** 	Acanthamoebidae Sawyer and Griffin, 1975
-**** 	Entamoebida Cavalier-Smith, 1993
-**** 	Mastigamoebidae Goldschmidt, 1907
-**** 	Pelomyxa Goldschmidt, 1907
-**** 	Eumycetozoa Zopf, 1884, emend. Olive, 1975 [Mycetozoa de Bary, 1873]
-***		Opisthokonta Cavalier-Smith, 1987, emend. Adl et al., 2005
-**** 	Грибы — Fungi Linnaeus 1753, emend. Cavalier-Smith, 1981, 1987
-***** 	Базидиомицеты — Basidiomycota de Barry 1866, emend. Schaffer, 1975
-***** 	Urediniomycetes Swann and Taylor, 1995
-***** 	Ustilaginomycetes Bower, Oberw, and Vanky, 1997
-***** 	Аскомицеты — Ascomycota Berkeley, 1857
-***** 	Микроспоридии — Microsporidia Balbiani, 1882
-***** 	Glomeromycota Schussler et al., 2001 [Glomales Morton and Benny, 1990; Glomomycetes Cavalier-Smith, 1998]
-***** 	Зигомицеты — Zygomycota Fischer, 1892, emend. Benny et al., 2001
-***** 	Хитридиомицеты — Chytridiomycetes de Barry, 1863, emend. Cavalier-Smith, 1981
-**** 	Mesomycetozoa Mendoza et al., 2002, emend. Adl et al., 2005 [Choanozoa Cavalier-Smith, 1981]
-**** 	Choanomonada Kent, 1880
-***** 	Monosigidae Zhukov and Karpov, 1985 [Codonosigidae Kent, 1880]
-***** 	Salpingoecidae Kent, 1880
-***** 	Acanthoecidae Norris, 1965
-**** 	Животные Metazoa Haeckel, 1874
-***** 	Губки — Porifera Grant, 1836 [Parazoa Sollas, 1884]
-***** 	Пластинчатые — Placozoa Grell, 1971
-***** 	Mesozoa van Beneden, 1877
-***** 	Эуметазои Animalia Linnaeus, 1758, emend. Adl et al., 2005 [Eumetazoa Butschli, 1910]
-***		Ризария (Rhizaria Cavalier-Smith, 2002)
-**** 	Церкозоа (Cercozoa Cavalier-Smith, 1998, emend. Adl et al., 2005)
-***** 	Cercomonadida Poche, 1913, emend. Mylnikov, 1986
-***** 	Silicofilosea Adl et al., 2005 [Imbricatea Cavalier-Smith and Chao, 2003]
-***** 	Хлорарахниофитовые водоросли (Chlorarachniophyta Hibberd and Norris, 1984)
-***** 	Phytomyxea Engler and Prantl, 1897, emend. Cavalier-Smith, 1993
-***** 	Phaeodarea Haeckel, 1879 [Tripylea Hertwig, 1879]
-***** 	Nucleohelea Cavalier-Smith, 1993
-**** 	Haplosporidia Caullery and Mesnil, 1899
-**** 	Foraminifera d’Orbigny, 1826
-**** 	Gromia Dujardin, 1835
-**** 	Радиолярии — Radiolaria Muller, 1858, emend. Adl et al., 2005
-***** 	Polycystinea Ehrenberg, 1838, emend. Haeckel, 1887
-***** 	Sticholonche Hertwig, 1877 [Taxopodida Fol, 1883]
-***** 	Acantharia Haeckel, 1881, emend. Mikrjukov, 2000
-***	Archaeplastida Adl et al., 2005
-**** 	Glaucophyta Skuja, 1954 [Glaucocystophyta Kies and Kremer, 1986]
-**** 	Красные водоросли — Rhodophyceae Thuret, 1855, emend. Adl et al., 2005 [Rhodophyta Wettstein, 1901; Rhodoplantae Saunders and Hommersand, 2004]
-**** 	Chloroplastida Adl et al., 2005 [Viridiplantae Cavalier-Smith, 1981; Chlorobionta Jeffrey, 1982, emend. Lewis and McCourt, 2004; Chlorobiota Kendrick and Crane, 1997]
-***** 	Зелёные водоросли — Chlorophyta Pascher, 1914, emend. Lewis and Mc Court, 2004
-***** 	Chlorodendrales Fritsch, 1917
-***** 	Prasinophytae Cavalier-Smith, 1998, emend. Lewis and McCourt, 2004
-***** 	Mesostigma Lauterborn, 1894, emend. McCourt in Adl et al., 2005 [Mesostigmata Turmel, Otis, and Lemieux, 2002]
-***** 	Charophyta Karol et al., 2001, emend. Lewis and McCourt, 2004 [Charophyceae Smith, 1938, emend. Mattox and Stewart, 1984]
-****** 	Streptophytina Lewis and McCourt, 2004
-******* 	Харовые водоросли — Charales Lindley, 1836 [Charophytae Engler, 1887]
-******* 	Растения — Plantae Haeckel, 1866 [Cormophyta Endlicher, 1836; Embryophyta Endlicher, 1836, emend. Lewis and McCourt, 2004]
-***	Chromalveolata Adl et al., 2005
-**** 	Криптофитовые водоросли — Cryptophyceae Pascher 1913, emend. Schoenichen, 1925 [Cryptophyta Cavalier-Smith, 1986]
-***** 	Cryptomonadales Pascher, 1913
-***** 	Goniomonadales Novarino and Lucas, 1993
-**** 	Гаптофитовые водоросли — Haptophyta Hibberd, 1976, emend. Edvardsen and Eikrem, 2000
-***** 	Pavlovophyceae Cavalier-Smith, 1986, emend. Green and Medlin, 2000
-***** 	Prymnesiophyceae Hibberd, 1976
-**** 	Stramenopiles Patterson, 1989, emend. Adl et al., 2005
-***** 	Opalinata Wenyon, 1926, emend. Adl et al., 2005 [Slopalinata Patterson, 1986]
-***** 	Labyrinthulomycetes Dick, 2001
-***** 	Hyphochytriales Sparrow 1960
-***** 	Оомицеты — Peronosporomycetes Dick, 2001 [Oomycetes Winter, 1897, emend. Dick, 1976]
-***** 	Actinophryidae Claus, 1874, emend. Hartmann, 1926
-***** 	Bolidomonas Guillou and Chretiennot-Dinet, 1999 [Bolidophyceae Guillou et al., 1999]
-***** 	Золотистые водоросли — Chrysophyceae Pascher, 1914
-***** 	Dictyochophyceae Silva, 1980
-***** 	Eustigmatales Hibberd, 1981
-***** 	Pelagophyceae Andersen and Saunders, 1993
-***** 	Phaeothamniophyceae Andersen and Bailey in Bailey et al., 1998
-***** 	Pinguiochrysidales Kawachi, Inouye, Honda, O’Kelly, Bailey, Bidigare, and Andersen, 2003
-***** 	Raphidophyceae Chadefaud, 1950, emend. Silva, 1980
-***** 	Schizocladia Kawai, Maeba, Sasaki, Okuda, and Henry, 2003
-***** 	Synurales Andersen, 1987
-***** 	Жёлто-зелёные водоросли — Xanthophyceae Allorge, 1930, emend. Fritsch, 1935 [Heterokontae Luther 1899; Heteromonadea Leedale, 1983; Xanthophyta Hibberd, 1990]
-***** 	Бурые водоросли — Phaeophyceae Hansgirg, 1886
-***** 	Диатомовые водоросли — Bacillariophyta Haeckel, 1878 [Diatomea Dumortier, 1821]
-**** 	Альвеоляты Alveolata Cavalier-Smith, 1991
-***** 	Динофлагелляты — Dinozoa Cavalier-Smith, 1981, emend. Adl et al., 2005
-***** 	Споровики — Apicomplexa Levine, 1980, emend. Adl et al., 2005
-***** 	Инфузории — Ciliophora Doflein, 1901 [Ciliata Perty, 1852; Infusoria Butschli, 1887]
-***		Excavata Cavalier-Smith, 2002, emend. Simpson, 2003
-**** 	Fornicata Simpson, 2003
-***** 	Eopharyngia Cavalier-Smith, 1993
-****** Дипломонады — Diplomonadida Wenyon, 1926, emend. Brugerolle et al., 1975
-****** Ретортомонады — Retortamonadida Grasse, 1952
-***** 	Carpediemonas Ekebom, Patterson, and Vors, 1996
-**** 	Malawimonas O’Kelly and Nerad, 1999
-**** 	Parabasalia Honigberg, 1973
-***** 	Trichomonadida Kirby, 1947, emend. Brugerolle and Patterson, 2001
-***** 	Cristamonadida Brugerolle and Patterson, 2001
-***** 	Spirotrichonymphida Light, 1927
-***** 	Trichonymphida Poche, 1913
-**** 	Preaxostyla Simpson, 2003
-***** 	Оксимонады — Oxymonadida Grasse, 1952
-***** 	Trimastix Kent 1880
-**** 	Якобиды — Jakobida Cavalier-Smith, 1993, emend. Adl et al., 2005
-**** 	Гетеролобозовые — Heterolobosea Page and Blanton, 1985
-**** 	Euglenozoa Cavalier-Smith, 1981, emend. Simpson, 1997
-***** 	Euglenida Butschli, 1884, emend. Simpson 1997
-***** 	Diplonemea Cavalier-Smith, 1993, emend. Simpson, 1997
-***** 	Кинетопластиды — Kinetoplastea Honigberg, 1963
+%thumb%Attach:800px-Eukaryota_tree.svg.png%%
+
+*		'''[[Амёбоподобные]]''' Amoebozoa Luhe, 1913, emend. Cavalier-Smith, 1998
+*		'''Заднежгутиковые''' Opisthokonta Cavalier-Smith, 1987, emend. Adl et al., 2005
+** 	[[Грибы]] — Fungi Linnaeus 1753, emend. Cavalier-Smith, 1981, 1987
+** 	Мезомицетозои Mesomycetozoa Mendoza et al., 2002, emend. Adl et al., 2005 [Choanozoa Cavalier-Smith, 1981]
+** 	Choanomonada Kent, 1880
+*** 	Monosigidae Zhukov and Karpov, 1985 [Codonosigidae Kent, 1880]
+*** 	Salpingoecidae Kent, 1880
+*** 	Acanthoecidae Norris, 1965
+** 	[[Животные]] Metazoa Haeckel, 1874
+*		'''[[Ризария]]''' (Rhizaria Cavalier-Smith, 2002)
+*		'''Архепластиды''' Archaeplastida Adl et al., 2005
+** 	Glaucophyta Skuja, 1954 [Glaucocystophyta Kies and Kremer, 1986]
+** 	Красные водоросли — Rhodophyceae Thuret, 1855, emend. Adl et al., 2005 [Rhodophyta Wettstein, 1901; Rhodoplantae Saunders and Hommersand, 2004]
+** 	Chloroplastida Adl et al., 2005 [Viridiplantae Cavalier-Smith, 1981; Chlorobionta Jeffrey, 1982, emend. Lewis and McCourt, 2004; Chlorobiota Kendrick and Crane, 1997]
+*** 	Зелёные водоросли — Chlorophyta Pascher, 1914, emend. Lewis and Mc Court, 2004
+*** 	Chlorodendrales Fritsch, 1917
+*** 	Prasinophytae Cavalier-Smith, 1998, emend. Lewis and McCourt, 2004
+*** 	Mesostigma Lauterborn, 1894, emend. McCourt in Adl et al., 2005 [Mesostigmata Turmel, Otis, and Lemieux, 2002]
+*** 	Charophyta Karol et al., 2001, emend. Lewis and McCourt, 2004 [Charophyceae Smith, 1938, emend. Mattox and Stewart, 1984]
+**** 	Streptophytina Lewis and McCourt, 2004
+***** 	Харовые водоросли — Charales Lindley, 1836 [Charophytae Engler, 1887]
+***** 	[[Растения]] — Plantae Haeckel, 1866 [Cormophyta Endlicher, 1836; Embryophyta Endlicher, 1836, emend. Lewis and McCourt, 2004]
+*	'''[[Chromalveolata]]''' Adl et al., 2005
+*	'''Экскаваты''' [[Excavata]] Cavalier-Smith, 2002, emend. Simpson, 2003

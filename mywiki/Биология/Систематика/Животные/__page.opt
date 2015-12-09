@@ -1,13 +1,13 @@
 [General]
 type = wiki
 tags = классификация, экология
-order = 1
+order = 4
 creationdatetime = 2015-12-07 16:08:37.343000
-datetime = 2015-12-07 19:26:23.929000
-cursorposition = 2625
+datetime = 2015-12-08 11:56:46.579229
+cursorposition = 2793
 
 [wiki]
-md5_hash = db01e8d68a8715a37df0e25f25bde906
+md5_hash = 01fc58e992cfe6039603580ddb5e6eed
 
 [Misc]
 pageindex = 1
