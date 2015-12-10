@@ -1,9 +1,9 @@
 [General]
 type = wiki
-tags = классификация, экология
-order = 5
+tags = wikipedia, экология, классификация
+order = 3
 creationdatetime = 2015-12-08 11:57:43.472937
-datetime = 2015-12-08 11:58:08.083677
+datetime = 2015-12-10 15:29:55.197000
 cursorposition = 833
 
 [wiki]

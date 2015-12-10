@@ -1,10 +1,10 @@
 [General]
 type = wiki
-tags = экология
-order = 1
+tags = экология, классификация
+order = 0
 creationdatetime = 2015-01-11 00:33:59.038101
-datetime = 2015-12-07 15:30:15.462000
-cursorposition = 723
+datetime = 2015-12-10 15:06:49.819000
+cursorposition = 710
 
 [wiki]
 md5_hash = cde559ffec0e2478bbb9482fcfb77f51

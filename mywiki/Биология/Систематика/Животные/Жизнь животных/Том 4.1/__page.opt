@@ -1,14 +1,14 @@
 [General]
 type = wiki
-tags = классификация, экология
+tags = книги, экология, классификация
 order = 0
 creationdatetime = 2015-12-08 00:11:36.893000
-datetime = 2015-12-08 11:23:22.291669
+datetime = 2015-12-10 15:27:32.562000
 cursorposition = 0
 
 [wiki]
 md5_hash = a6818906e2194e7b2277432cf760937e
 
 [Misc]
-pageindex = 0
+pageindex = 1
 
