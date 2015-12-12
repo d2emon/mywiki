@@ -1,0 +1,14 @@
+[General]
+type = wiki
+tags = wikipedia, сай-фай, книги
+order = 1
+creationdatetime = 2015-12-11 10:58:37.261000
+datetime = 2015-12-11 11:55:57.974000
+cursorposition = 3478
+
+[wiki]
+md5_hash = 39e784439db23c01358f6ca89200d4c2
+
+[Misc]
+pageindex = 1
+
