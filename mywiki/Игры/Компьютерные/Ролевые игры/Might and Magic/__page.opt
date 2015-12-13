@@ -3,12 +3,15 @@ type = wiki
 tags = игры, ролевки, lurkmore, фентези
 order = 3
 creationdatetime = 2015-12-03 12:44:56.626699
-datetime = 2015-12-03 13:54:37.174320
-cursorposition = 57390
+datetime = 2015-12-13 17:59:05.824000
+cursorposition = 487
 
 [wiki]
-md5_hash = b83343a30d78ab35c71cf20f20216abe
+md5_hash = cfb3a0b2b04caaa1eefc89f6f4b2a7c6
 
 [Misc]
 pageindex = 1
+
+[Tree]
+expand = False
 
