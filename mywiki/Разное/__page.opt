@@ -11,3 +11,6 @@ expand = False
 [Misc]
 pageindex = 1
 
+[wiki]
+md5_hash = a884648c704c16c86327bace105708cd
+
