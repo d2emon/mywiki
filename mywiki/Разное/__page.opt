@@ -8,9 +8,6 @@ cursorposition = 0
 [Tree]
 expand = False
 
-[wiki]
-md5_hash = 8b006d2800f1e7f7e655b533502bb166
-
 [Misc]
 pageindex = 1
 
