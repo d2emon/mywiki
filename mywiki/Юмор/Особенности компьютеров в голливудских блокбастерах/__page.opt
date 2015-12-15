@@ -1,7 +1,7 @@
 [General]
 type = wiki
 tags = мир фантастики
-order = 30
+order = 29
 datetime = 2013-01-03 12:12:38.795000
 cursorposition = 0
 
@@ -9,5 +9,5 @@ cursorposition = 0
 pageindex = 1
 
 [wiki]
-md5_hash = 87badbced270859b7a8fd93396453e4c
+md5_hash = b24d335f1a865190252d115380439427
 

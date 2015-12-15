@@ -1,9 +1,13 @@
 [General]
 type = wiki
 tags = 
-order = 44
+order = 42
 datetime = 2013-11-13 12:31:11.837000
+cursorposition = 0
 
 [Misc]
 pageindex = 1
+
+[wiki]
+md5_hash = 39cd60279ef6b706405640851bd843b0
 

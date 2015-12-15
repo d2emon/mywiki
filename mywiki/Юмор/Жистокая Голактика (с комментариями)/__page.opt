@@ -3,10 +3,11 @@ type = wiki
 tags = сай-фай
 order = 13
 datetime = 2014-01-11 02:07:36.947000
+cursorposition = 0
 
 [Misc]
 pageindex = 1
 
 [wiki]
-md5_hash = d12bfa860d97f6f67e15c36da0ca4e43
+md5_hash = 31b31108e266ea70a753f7a4caaac960
 

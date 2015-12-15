@@ -1,7 +1,7 @@
 [General]
 type = wiki
 tags = юмор
-order = 21
+order = 20
 datetime = 2015-12-03 23:46:50.491000
 cursorposition = 0
 
@@ -9,5 +9,5 @@ cursorposition = 0
 pageindex = 1
 
 [wiki]
-md5_hash = 11ea961efcf95e2152a117eb7d2588b7
+md5_hash = 1c4cb6aa1ace1fd9b48f40ee5e273c0f
 

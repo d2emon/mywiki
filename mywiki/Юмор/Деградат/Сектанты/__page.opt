@@ -1,12 +1,12 @@
 [General]
 type = wiki
 tags = lurkmore
-order = 42
+order = 5
 datetime = 2015-02-15 18:36:36.451343
 cursorposition = 325
 
 [Misc]
-pageindex = 0
+pageindex = 1
 
 [wiki]
 md5_hash = 389883abe9c0355ad659838d9f787de0
