@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = юмор, adme, классификация
+order = 13
+creationdatetime = 2015-12-16 14:12:06.691000
+datetime = 2015-12-16 14:30:59.010000
+cursorposition = 62
+
+[wiki]
+md5_hash = 15905c80b48477909acec72dc43b5b33
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+
