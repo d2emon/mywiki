@@ -1,9 +1,13 @@
 [General]
 type = wiki
 tags = 
-order = 60
+order = 61
 datetime = 2013-10-19 11:46:06.766392
+cursorposition = 0
 
 [Misc]
 pageindex = 1
+
+[wiki]
+md5_hash = 6be19cebd0d908ddcf2984fb3fc1c691
 
