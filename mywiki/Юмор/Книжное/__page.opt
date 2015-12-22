@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = юмор, книги
+order = 22
+creationdatetime = 2015-12-22 11:22:37.480000
+datetime = 2015-12-22 11:23:00.505000
+cursorposition = 44
+
+[wiki]
+md5_hash = 11f2ecd1a74e39ca31905c4815eb5fcc
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+

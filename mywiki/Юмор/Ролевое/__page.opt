@@ -1,8 +1,8 @@
 [General]
 type = wiki
-tags = dnd
-order = 49
-datetime = 2013-11-23 17:40:49.729420
+tags = юмор, dnd
+order = 39
+datetime = 2015-12-22 11:14:07.105000
 cursorposition = 0
 
 [Misc]
@@ -12,5 +12,5 @@ pageindex = 1
 expand = False
 
 [wiki]
-md5_hash = e5fd7c66d60eb41f7bd3750c536a4844
+md5_hash = 175a7c2655188a70f2275a279a4d0f2a
 
