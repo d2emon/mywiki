@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = юмор, кино
+order = 24
+creationdatetime = 2015-12-22 11:02:28.210000
+datetime = 2015-12-22 11:02:45.274000
+cursorposition = 35
+
+[wiki]
+md5_hash = 1fb1905ff9018d016c1547c74a72f670
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+
