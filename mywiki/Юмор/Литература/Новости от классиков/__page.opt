@@ -1,15 +1,15 @@
 [General]
 type = wiki
-tags = 
-order = 32
-datetime = 2015-02-15 18:38:08.427836
+tags = юмор, книги
+order = 5
+datetime = 2015-12-24 10:01:03.107000
 cursorposition = 0
 
 [Misc]
 pageindex = 1
 
 [wiki]
-md5_hash = c34d5ea962eee033e0c4c8411f5cc49e
+md5_hash = 25217aacd021456d370b7282e88c93ee
 
 [Tree]
 expand = True

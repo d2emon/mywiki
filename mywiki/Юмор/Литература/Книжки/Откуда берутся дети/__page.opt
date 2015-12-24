@@ -1,13 +1,13 @@
 [General]
 type = wiki
-tags = книги, юмор
+tags = юмор, перчинка, книги
 order = 0
 creationdatetime = 2015-12-18 13:06:13.496000
-datetime = 2015-12-18 13:53:50.523000
+datetime = 2015-12-24 09:58:04.322000
 cursorposition = 35947
 
 [wiki]
-md5_hash = 5ac36aad0df0475dca65673f3ed69f4f
+md5_hash = fb2aa7e0c72e43d7d2c6e98442c18258
 
 [Misc]
 pageindex = 1

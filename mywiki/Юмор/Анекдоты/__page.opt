@@ -3,11 +3,11 @@ type = wiki
 tags = юмор
 order = 3
 creationdatetime = 2015-12-24 09:09:58.131000
-datetime = 2015-12-24 09:10:17.046000
-cursorposition = 26
+datetime = 2015-12-24 09:40:12.540000
+cursorposition = 9109
 
 [wiki]
-md5_hash = 5be9a6ff9bc0131f8e27919261374251
+md5_hash = fc4317254fd0e637a0b8433e77a1063e
 
 [Misc]
 pageindex = 1

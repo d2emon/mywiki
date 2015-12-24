@@ -1,9 +1,9 @@
 [General]
 type = wiki
-tags = юмор
-order = 44
+tags = юмор, олбанский
+order = 0
 creationdatetime = 2015-12-22 11:34:11.786000
-datetime = 2015-12-22 11:34:26.968000
+datetime = 2015-12-24 09:53:14.855000
 cursorposition = 1791
 
 [wiki]

@@ -1,13 +1,13 @@
 [General]
 type = wiki
-tags = абсурд
-order = 2
+tags = юмор, ссср, религия, абсурд
+order = 1
 creationdatetime = 2015-11-27 15:17:50.691000
-datetime = 2015-11-27 15:25:13.764000
+datetime = 2015-12-24 09:28:19.876000
 cursorposition = 3196
 
 [wiki]
-md5_hash = 3b9cc76b1d1d8b39ec7ff7637eb1f274
+md5_hash = 598f2fc4578530887542d8d6cc68caa6
 
 [Misc]
 pageindex = 1
