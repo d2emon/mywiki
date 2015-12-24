@@ -1,13 +1,13 @@
 [General]
 type = wiki
 tags = юмор, кино
-order = 22
+order = 19
 creationdatetime = 2015-12-22 11:02:28.210000
 datetime = 2015-12-22 11:02:45.274000
 cursorposition = 35
 
 [wiki]
-md5_hash = c40d93c71fbef4b565abb82f56a8a83c
+md5_hash = e882649330225f58f79c9bea9a79904c
 
 [Misc]
 pageindex = 1

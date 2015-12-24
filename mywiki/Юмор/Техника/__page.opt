@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = юмор, техника
+order = 42
+creationdatetime = 2015-12-24 09:08:40.763000
+datetime = 2015-12-24 09:09:01.337000
+cursorposition = 34
+
+[wiki]
+md5_hash = b01a8a2125bb630aab7d4e9c035de9ef
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+
