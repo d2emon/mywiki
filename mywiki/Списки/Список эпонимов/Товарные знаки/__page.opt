@@ -1,0 +1,14 @@
+[General]
+type = wiki
+tags = wikipedia
+order = 0
+creationdatetime = 2015-12-15 15:59:36.813000
+datetime = 2015-12-15 16:12:27.711000
+cursorposition = 12087
+
+[wiki]
+md5_hash = 0c9cf604f4858c0c0ff08db62a1f4bee
+
+[Misc]
+pageindex = 1
+

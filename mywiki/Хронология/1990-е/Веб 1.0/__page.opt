@@ -1,13 +1,13 @@
 [General]
 type = wiki
-tags = lurkmore
+tags = lurkmore, комп
 order = 0
 creationdatetime = 2015-11-03 15:28:10.434928
-datetime = 2015-11-03 15:56:39.064630
-cursorposition = 28888
+datetime = 2015-12-16 22:26:30.521976
+cursorposition = 28914
 
 [wiki]
-md5_hash = f2c0410d01eab18dbbf22757fd591a5b
+md5_hash = 60e0c02a036bc4772b24f7b447d7e5c5
 
 [Misc]
 pageindex = 1

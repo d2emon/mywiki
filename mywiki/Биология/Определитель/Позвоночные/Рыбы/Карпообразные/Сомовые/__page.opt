@@ -1,13 +1,13 @@
 [General]
 type = wiki
-tags = 
+tags = wikipedia, экология, луганск, классификация
 order = 3
 creationdatetime = 2015-01-15 02:28:25.857214
-datetime = 2015-01-19 05:52:10.707619
+datetime = 2015-12-10 15:26:20.117000
 cursorposition = 2603
 
 [wiki]
-md5_hash = 20f14e8342bfb2bc8dc8267f7cbbae6c
+md5_hash = d6a08584854ef81938ef6ae94e1d15e0
 
 [Misc]
 pageindex = 1

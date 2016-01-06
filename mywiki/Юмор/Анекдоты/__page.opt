@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = юмор
+order = 3
+creationdatetime = 2015-12-24 09:09:58.131000
+datetime = 2015-12-24 13:20:02.646000
+cursorposition = 43781
+
+[wiki]
+md5_hash = bc31c1558ffb2dc5a472df5751d84e10
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+

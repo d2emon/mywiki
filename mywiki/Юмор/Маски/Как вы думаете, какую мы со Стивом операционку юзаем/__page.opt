@@ -1,12 +1,13 @@
 [General]
 type = wiki
-tags = дописать
+tags = юмор, дописать, комп
 order = 0
-datetime = 2013-04-02 18:09:10.202000
+datetime = 2015-12-24 09:47:54.761000
+cursorposition = 0
 
 [Misc]
 pageindex = 1
 
 [wiki]
-md5_hash = 8d1a6ba7b04e9ef1ccf71a66f8762945
+md5_hash = c0b1f024ed4b857d8166f6d61e7c69fd
 

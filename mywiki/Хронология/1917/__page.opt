@@ -1,13 +1,13 @@
 [General]
 type = wiki
-tags = lurkmore
+tags = ссср, lurkmore, история
 order = 4
 creationdatetime = 2015-09-30 16:42:07.029939
-datetime = 2015-11-03 14:48:33.249587
+datetime = 2015-12-16 21:56:34.008625
 cursorposition = 21227
 
 [wiki]
-md5_hash = 776234922fcf175b2d9efdb4d0baf2e3
+md5_hash = ac603b0501e45338f3ccb6649675fe32
 
 [Misc]
 pageindex = 1

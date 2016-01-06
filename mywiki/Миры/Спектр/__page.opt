@@ -1,11 +1,12 @@
 [General]
 type = wiki
 tags = космоопера, wikipedia
-order = 11
+order = 13
 datetime = 2013-01-11 12:36:48.859000
+cursorposition = 0
 
 [wiki]
-md5_hash = 3696ea0835a7398f32d5cc0580673414
+md5_hash = cd43fbe4bbf406f5995d69a9ac1e6c45
 
 [Misc]
 pageindex = 1

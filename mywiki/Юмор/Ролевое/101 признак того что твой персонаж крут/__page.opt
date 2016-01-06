@@ -1,9 +1,13 @@
 [General]
 type = wiki
-tags = 
+tags = юмор, ролевки, dnd
 order = 0
-datetime = 2013-01-10 10:50:13.875000
+datetime = 2015-12-24 10:07:39.954000
+cursorposition = 0
 
 [Misc]
 pageindex = 0
+
+[wiki]
+md5_hash = 31cee63d8a78408a5ea4fd552424a72d
 

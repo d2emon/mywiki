@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = киберпанк, lurkmore, книги
+order = 1
+creationdatetime = 2015-11-17 20:12:49.905425
+datetime = 2015-12-11 10:33:29.152000
+cursorposition = 1526
+
+[wiki]
+md5_hash = 9cdac63239dba77bb58330d816b96726
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+

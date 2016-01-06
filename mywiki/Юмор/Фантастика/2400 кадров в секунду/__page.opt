@@ -1,12 +1,13 @@
 [General]
 type = wiki
-tags = мир фантастики
+tags = юмор, мир фантастики, кино
 order = 0
-datetime = 2013-01-02 12:26:03.829000
+datetime = 2015-12-24 10:31:47.079000
+cursorposition = 0
 
 [Misc]
 pageindex = 1
 
 [wiki]
-md5_hash = f141b2b11c26d1b2af11fd520284b410
+md5_hash = cc9b6c65cf11aab23e206986bb004ccc
 

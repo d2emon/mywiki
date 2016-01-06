@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = сай-фай, космоопера, киберпанк
+order = 10
+creationdatetime = 2015-12-14 21:59:11.028000
+datetime = 2015-12-14 21:59:31.132000
+cursorposition = 33
+
+[wiki]
+md5_hash = ada3c6f3e0b10e91c2e95cc8e58cac73
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+
