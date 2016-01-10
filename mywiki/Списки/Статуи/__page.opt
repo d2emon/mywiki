@@ -1,13 +1,13 @@
 [General]
 type = wiki
 tags = достопримечательности
-order = 18
+order = 10
 creationdatetime = 2015-12-01 11:26:01.242000
 datetime = 2015-12-01 11:27:06.137000
 cursorposition = 61
 
 [wiki]
-md5_hash = fe780f6e222588fbe27e11f23f25bc44
+md5_hash = c020e84e5383b78ba4738a0a63da2143
 
 [Misc]
 pageindex = 1
