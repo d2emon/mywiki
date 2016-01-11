@@ -1,0 +1,14 @@
+[General]
+type = wiki
+tags = wikipedia, кино, мультфильм
+order = 0
+creationdatetime = 2016-01-11 22:58:43.844000
+datetime = 2016-01-11 23:03:08.191000
+cursorposition = 1028
+
+[wiki]
+md5_hash = 5a1470329aa5ea3cbd894b87b57d0cfb
+
+[Misc]
+pageindex = 1
+

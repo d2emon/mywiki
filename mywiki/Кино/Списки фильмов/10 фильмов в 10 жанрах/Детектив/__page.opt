@@ -1,0 +1,14 @@
+[General]
+type = wiki
+tags = wikipedia, кино, детектив
+order = 3
+creationdatetime = 2016-01-11 23:46:14.403000
+datetime = 2016-01-11 23:46:17.347000
+cursorposition = 1051
+
+[wiki]
+md5_hash = 78db0eed7267f682aabd289d325ff127
+
+[Misc]
+pageindex = 1
+
