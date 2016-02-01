@@ -3,12 +3,12 @@ type = wiki
 tags = история
 order = 9
 creationdatetime = 2016-01-26 20:52:22.598645
-datetime = 2016-01-27 15:28:46.600027
-cursorposition = 27
+datetime = 2016-02-01 18:56:23.705795
+cursorposition = 3432
 
 [wiki]
-md5_hash = 42e0c1afde6e91a22858835c32b73208
+md5_hash = 6f3d11221737a4186c35d93fb3a7e498
 
 [Misc]
-pageindex = 1
+pageindex = 0
 
