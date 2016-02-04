@@ -1,13 +1,13 @@
 [General]
 type = wiki
 tags = религия, lurkmore, античность, история
-order = 0
+order = 1
 creationdatetime = 2015-10-30 09:37:14.671842
 datetime = 2015-12-16 21:55:20.580341
 cursorposition = 51180
 
 [wiki]
-md5_hash = 3f682f333110382a027585567eaaee6f
+md5_hash = 20d0bc4faeabca42b37846e8605d0ecc
 
 [Misc]
 pageindex = 1
