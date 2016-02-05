@@ -9,7 +9,7 @@ cursorposition = 0
 md5_hash = 338a07b88d6a798e9eb5754e8971f255
 
 [Tree]
-expand = True
+expand = False
 
 [Misc]
 pageindex = 1
