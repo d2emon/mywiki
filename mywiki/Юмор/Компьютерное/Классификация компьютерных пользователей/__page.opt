@@ -1,13 +1,13 @@
 [General]
 type = wiki
 tags = комп
-order = 18
+order = 19
 creationdatetime = 2016-02-03 02:28:22.384000
 datetime = 2016-02-03 02:32:59.757000
 cursorposition = 3819
 
 [wiki]
-md5_hash = 687c218c8d9b38a8734119e3cc96ab8c
+md5_hash = ffe24f90b0ffec93a78495c62449d137
 
 [Misc]
 pageindex = 1
