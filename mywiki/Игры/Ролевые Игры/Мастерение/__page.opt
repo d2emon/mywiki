@@ -1,8 +1,8 @@
 [General]
 type = wiki
-tags = 
-order = 2
-datetime = 2013-04-02 16:52:44.213000
+tags = ролевки
+order = 3
+datetime = 2016-02-12 14:25:28.276467
 cursorposition = 0
 
 [Tree]
@@ -12,5 +12,5 @@ expand = False
 pageindex = 1
 
 [wiki]
-md5_hash = 4c1a53dfaed76e0d1670442fbb6b4e05
+md5_hash = 59e4d74c458c2145382db40533e14974
 
