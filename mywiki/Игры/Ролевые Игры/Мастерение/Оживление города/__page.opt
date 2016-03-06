@@ -1,9 +1,10 @@
 [General]
 type = wiki
-tags = 
+tags = ролевки, город, игры
 order = 4
-datetime = 2013-04-02 16:53:11.292000
+datetime = 2016-03-06 21:59:56.135000
+cursorposition = 0
 
 [wiki]
-md5_hash = 429c46e0d16eae7c7d013ad8d7d50658
+md5_hash = bbf6889d23c8dddde3a87be330f9cca2
 
