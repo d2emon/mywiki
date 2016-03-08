@@ -1,12 +1,13 @@
 [General]
 type = wiki
-tags = 
-order = 45
-datetime = 2013-01-03 05:56:24.169000
+tags = юмор, религия
+order = 26
+datetime = 2015-12-24 09:19:55.815000
+cursorposition = 0
 
 [Misc]
 pageindex = 1
 
 [wiki]
-md5_hash = fa368e6cc57fcf1e7e8b7b1c87171832
+md5_hash = 3cef6d3ee5c92ed73b5adab0a2de024c
 

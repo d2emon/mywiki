@@ -1,9 +1,10 @@
 [General]
 type = wiki
-tags = 
-order = 50
-datetime = 2012-12-18 13:54:55.250000
+tags = юмор
+order = 28
+datetime = 2015-12-24 09:21:27.884000
+cursorposition = 0
 
 [wiki]
-md5_hash = 702b0e4fe34f940ffe986aad15d74ea6
+md5_hash = 4ac8d3a256371070674d97a13613d497
 

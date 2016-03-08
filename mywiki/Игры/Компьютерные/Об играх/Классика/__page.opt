@@ -1,7 +1,7 @@
 [General]
 type = wiki
 tags = 
-order = 7
+order = 8
 creationdatetime = 2015-11-24 14:51:03.810300
 datetime = 2015-11-24 14:51:48.585301
 cursorposition = 66
@@ -13,5 +13,5 @@ md5_hash = e7957138f888bfba70e672339329a500
 pageindex = 1
 
 [Tree]
-expand = True
+expand = False
 

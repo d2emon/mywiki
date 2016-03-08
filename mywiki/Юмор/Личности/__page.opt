@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = юмор, абсурд
+order = 5
+creationdatetime = 2015-11-29 13:49:44.742000
+datetime = 2015-12-24 09:29:07.522000
+cursorposition = 73
+
+[wiki]
+md5_hash = 3d0bba63200d7842cf728029daf0f973
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+

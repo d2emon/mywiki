@@ -1,12 +1,13 @@
 [General]
 type = wiki
-tags = 
-order = 9
-datetime = 2012-12-09 09:43:30.246000
+tags = мистика, конспирология, wikipedia, религия
+order = 10
+datetime = 2016-01-10 23:41:55.756000
+cursorposition = 0
 
 [Misc]
 pageindex = 1
 
 [wiki]
-md5_hash = 28616f0c17c7cb669dfff4717810d5a0
+md5_hash = a14c50516742bd0508f7b51c259df8c8
 

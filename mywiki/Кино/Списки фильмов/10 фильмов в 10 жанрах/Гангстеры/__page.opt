@@ -1,0 +1,14 @@
+[General]
+type = wiki
+tags = wikipedia, кино, нуар
+order = 2
+creationdatetime = 2016-01-11 23:42:17.782000
+datetime = 2016-01-11 23:42:20.992000
+cursorposition = 921
+
+[wiki]
+md5_hash = 651dcf8fdda2e97662251f9734430d34
+
+[Misc]
+pageindex = 1
+

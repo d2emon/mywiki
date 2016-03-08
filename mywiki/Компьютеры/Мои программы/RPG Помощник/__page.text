@@ -1,0 +1,274 @@
+!! RPG Помощник
+
+!!! Fantasy Grounds
+
+* Чат
+* Дайсы
+* Настройки
+** Враги
+*** Общее
+**** =Выбран
+**** Основное
+***** Имя
+***** ''Init''
+***** ''HP''
+***** ''Wounds''
+***** '' # ''
+***** ''Обнаружение''
+***** Группа
+**** Защита 
+***** AC
+***** ''Ref''
+***** ''Fort''
+***** ''Will''
+**** Атака
+***** ''Spd''
+***** Atk
+***** ''Init''
+***** Full Atk.
+**** Эффекты...
+***** Название
+***** ''Величина'' 
+*** Инит
+*** Группы
+*** Раунд
+** Бои
+*** Actor...
+** Модули
+** Персонажи
+*** Main 
+**** Name
+**** Race
+**** Gender
+**** Age
+**** Alignment
+**** Height
+**** Weight
+**** Size
+**** Attributes
+***** STR
+****** ''Value''
+****** ''Bonus''
+****** ''Damage''
+***** DEX
+****** ''Value''
+****** ''Bonus''
+****** ''Damage''
+***** CON
+****** ''Value''
+****** ''Bonus''
+****** ''Damage''
+***** INT
+****** ''Value''
+****** ''Bonus''
+****** ''Damage''
+***** WIS
+****** ''Value''
+****** ''Bonus''
+****** ''Damage''
+***** CHA
+****** ''Value''
+****** ''Bonus''
+****** ''Damage''
+**** Class
+***** Classes...
+****** Class
+****** ''Level''
+***** ''Character Level''
+***** XP
+****** ''Experience''
+****** ''Needed for Next''
+**** HP
+***** ''Hit points''
+***** ''Wounds''
+***** ''Nonlethal''
+**** AC
+***** ''AC''
+***** ''Flat Footed''
+***** ''Touch''
+**** Save
+***** ''Fort''
+***** ''Ref''
+***** ''Will''
+**** Languages...
+**** Appearance
+*** Combat
+**** AC
+***** ''AC''
+***** ''Flat Footed''
+***** ''Touch''
+***** ''Armor bonus''
+***** ''Shield bonus''
+***** ''Dex bonus''
+***** ''Size bonus''
+***** ''Natural bonus''
+***** ''Deflection bonus''
+***** ''Temp bonus''
+***** ''___ bonus''
+**** Initiative
+***** ''Initiative''
+***** ''DEX''
+***** ''Misc''
+**** Attack
+***** ''BAB''
+***** Melee
+****** ''Value''
+****** ''Stat''
+****** ''Total''
+***** Ranged
+****** ''Value''
+****** ''Stat''
+****** ''Total''
+***** Grapple
+****** ''Value''
+****** ''Stat''
+****** ''Total''
+****** ''Size''
+****** ''Misc''
+**** Save
+***** Fort
+****** ''Total''
+****** ''Base''
+****** ''Stat''
+****** ''Misc''
+****** ''Temp''
+***** Refl
+****** ''Total''
+****** ''Base''
+****** ''Stat''
+****** ''Misc''
+****** ''Temp''
+***** Will
+****** ''Total''
+****** ''Base''
+****** ''Stat''
+****** ''Misc''
+****** ''Temp''
+**** Other
+***** ''Speed''
+***** ''Spell failure''
+***** ''Damage reduction''
+***** ''Spell resistance''
+**** Weapons
+***** Name
+***** M/R
+***** Bonus
+***** Rng incr
+***** Ammo
+***** #atk
+***** Attacks...
+***** Damage
+***** Modifier
+***** Crit roll
+***** Critical
+*** Skills
+**** Skills...
+***** Class
+***** Name
+***** Trained
+***** Ability
+***** ''Ranks''
+***** ''Stat''
+***** ''Misc''
+***** Total
+**** Ranks
+***** Available
+***** Planned
+*** Abilities
+**** Feats...
+**** Special abilities...
+*** Inventory
+**** Items...
+*****''Count''
+***** Name 
+***** Location
+***** ''Weight''
+***** () Weighted
+***** () Mini Inv
+**** Armor
+***** Use max Dex
+***** ''Max Dex''
+***** ''Check Penalty''
+**** Encumbrance
+***** ''Total''
+***** ''Light''
+***** ''Medium''
+***** ''Heavy''
+***** ''Lift over''
+***** ''Lift off''
+***** ''Push''
+**** Coins
+***** Coins...
+****** ''Count''
+****** Name
+***** Other
+*** Spells...
+**** Spontanous/Prepared
+**** Class
+**** Levels...
+***** ''Count''
+***** Cast
+***** Save DC
+*** Notes
+* Материалы
+** Общее
+*** Создать
+*** Поиск
+** Истории (Вики-страницы)
+*** Заголовок
+*** Текст
+** Карты и рисунки
+*** Название
+*** Рисунок
+** Персонажи
+*** Главное
+**** Имя
+**** Описание
+*** Бой
+**** HD
+**** ''HP''
+**** ''Initiative bonus''
+**** Speed
+**** AC
+**** BAB / Grp
+**** Attack
+**** Full attack
+**** Space / Reach
+**** SA
+**** SQ
+**** Способности
+***** ''STR''
+***** ''DEX''
+***** ''CON''
+***** ''INT''
+***** ''WIS''
+***** ''CHA''
+**** Спецброски
+***** ''Ref''
+***** ''Fort''
+***** ''Will''
+*** Прочее
+**** Type
+**** Skills
+**** Feats
+**** Environment
+**** Organization
+**** ''CR''
+**** Treasure
+**** Alignment
+**** Adv.
+**** Level Adj.
+** Предметы
+*** Название
+*** Общее
+**** Аура
+**** ''Уровень''
+**** Предпосылки
+**** Цена
+**** Стоимость
+*** Доступное
+**** До определения
+**** () Определено
+**** После определения
+** Токены
+** Библиотеки

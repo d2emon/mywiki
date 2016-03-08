@@ -1,12 +1,16 @@
 [General]
 type = wiki
-tags = wikipedia
-order = 1
-datetime = 2013-11-14 20:48:28.654434
+tags = перчинка, wikipedia
+order = 5
+datetime = 2015-12-16 10:03:01.461000
+cursorposition = 1123
 
 [Misc]
 pageindex = 1
 
 [Tree]
-expand = True
+expand = False
+
+[wiki]
+md5_hash = 81979f394bb6e93b11a5f96291a328b9
 

@@ -1,9 +1,10 @@
 [General]
 type = wiki
-tags = 
+tags = вов, антиблог, ссср, луганск, история
 order = 12
-datetime = 2013-04-02 18:04:31.548000
+datetime = 2015-12-16 22:03:52.739048
+cursorposition = 0
 
 [wiki]
-md5_hash = 9f0e29506f0272c18cb4bf6550a06a49
+md5_hash = ac212407b6e23410089d39f46b68d3ae
 

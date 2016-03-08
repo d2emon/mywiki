@@ -1,0 +1,14 @@
+[General]
+type = wiki
+tags = wikipedia, кино, спорт
+order = 6
+creationdatetime = 2016-01-11 23:44:31.058000
+datetime = 2016-01-11 23:44:35.118000
+cursorposition = 937
+
+[wiki]
+md5_hash = b14c3af3a0b613c535561e80ccf80aa8
+
+[Misc]
+pageindex = 1
+

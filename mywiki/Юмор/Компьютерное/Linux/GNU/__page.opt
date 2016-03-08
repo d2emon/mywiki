@@ -1,13 +1,13 @@
 [General]
 type = wiki
-tags = 
+tags = юмор, линукс, абсурд
 order = 2
 creationdatetime = 2015-11-29 09:17:43.090000
-datetime = 2015-11-29 09:24:37.610000
+datetime = 2015-12-24 10:36:53.992000
 cursorposition = 748
 
 [wiki]
-md5_hash = 2bce05217a30a8d0a7f503133f606b56
+md5_hash = b5a68383ee0cee44994acb99c9d01100
 
 [Misc]
 pageindex = 1

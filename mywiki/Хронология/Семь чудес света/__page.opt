@@ -1,13 +1,13 @@
 [General]
 type = wiki
-tags = lurkmore
-order = 1
+tags = достопримечательности, lurkmore, античность, история
+order = 2
 creationdatetime = 2015-09-30 13:59:00.706806
-datetime = 2015-11-03 14:51:07.263724
+datetime = 2015-12-16 21:55:29.309316
 cursorposition = 385
 
 [wiki]
-md5_hash = 83117635f71bdcc5c34c25b857aa56f0
+md5_hash = e946cef94ccae430965747d112fc8fb6
 
 [Misc]
 pageindex = 1

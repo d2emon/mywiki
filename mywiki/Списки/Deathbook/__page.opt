@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = хоррор, чернуха
+order = 9
+creationdatetime = 2015-12-15 12:56:55.179000
+datetime = 2015-12-16 08:41:37.679000
+cursorposition = 51
+
+[wiki]
+md5_hash = 9b0618396eefb8e4bdab4b07cefda311
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+
