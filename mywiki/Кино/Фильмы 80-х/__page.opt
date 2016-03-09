@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = lurkmore, ретро, кино
+order = 7
+creationdatetime = 2015-10-24 15:21:27.893238
+datetime = 2015-12-02 21:38:04.869000
+cursorposition = 62553
+
+[wiki]
+md5_hash = a4234608efddd1b4ad79a4d71cb2527e
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+

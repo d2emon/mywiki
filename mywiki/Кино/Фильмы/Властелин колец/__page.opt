@@ -1,17 +1,16 @@
 [General]
 type = wiki
-tags = 
-<<<<<<< HEAD
-order = 5
-=======
-order = 4
->>>>>>> opt
-datetime = 2013-11-23 11:26:28.496407
-cursorposition = 0
+tags = фентези
+order = 2
+datetime = 2016-03-02 02:12:15.550000
+cursorposition = 34
 
 [Misc]
 pageindex = 1
 
 [wiki]
-md5_hash = 96ccd0303d2a839b7b64755e8ab82100
+md5_hash = 9fb9b024a9cef851a0a5598a7d2155be
+
+[Tree]
+expand = False
 

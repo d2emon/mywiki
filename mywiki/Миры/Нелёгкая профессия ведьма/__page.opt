@@ -1,9 +1,5 @@
-[General]
+﻿[General]
+
 type = wiki
+
 tags = мир фантастики, сказки, фентези, юмор
-order = 11
-datetime = 2013-11-16 21:37:42.542791
-
-[Misc]
-pageindex = 1
-

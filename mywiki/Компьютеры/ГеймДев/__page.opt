@@ -1,8 +1,8 @@
 [General]
 type = wiki
-tags = 
+tags = геймдев, комп
 order = 9
-datetime = 2013-10-27 11:57:38.501367
+datetime = 2015-12-01 13:16:13.559000
 cursorposition = 0
 
 [Misc]
@@ -12,5 +12,5 @@ pageindex = 1
 expand = False
 
 [wiki]
-md5_hash = f48ce7b0bee1cbae960955799a0aafd7
+md5_hash = b7c657f62234ca24d3e5ff7160a67e33
 

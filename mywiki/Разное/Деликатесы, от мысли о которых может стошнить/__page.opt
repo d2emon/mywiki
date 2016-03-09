@@ -1,0 +1,14 @@
+[General]
+type = wiki
+tags = еда
+order = 5
+creationdatetime = 2015-12-13 22:27:34.581000
+datetime = 2015-12-13 22:53:26.231000
+cursorposition = 89
+
+[wiki]
+md5_hash = 03c703687022f5b3a403aab80a69914c
+
+[Misc]
+pageindex = 1
+

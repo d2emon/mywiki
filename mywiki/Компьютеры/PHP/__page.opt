@@ -1,8 +1,8 @@
 [General]
 type = wiki
-tags = 
+tags = php, комп
 order = 5
-datetime = 2013-04-02 16:59:21.065000
+datetime = 2015-12-02 21:41:38.136000
 cursorposition = 0
 
 [Misc]
@@ -12,5 +12,5 @@ pageindex = 1
 expand = False
 
 [wiki]
-md5_hash = bfa9cc3d1a07e414731126c10fcb99b1
+md5_hash = 3a34f09f33c707e7c23d6a2c2dcac5e8
 

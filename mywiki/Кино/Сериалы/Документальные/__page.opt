@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = 
+order = 8
+creationdatetime = 2015-10-28 09:45:13.515068
+datetime = 2015-10-28 09:45:44.381404
+cursorposition = 80
+
+[wiki]
+md5_hash = 70db15154371c1c5bc6af19505084002
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+

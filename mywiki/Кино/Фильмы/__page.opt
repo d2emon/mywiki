@@ -1,23 +1,13 @@
 [General]
 type = wiki
-tags = 
-<<<<<<< HEAD
-order = 7
+tags = кино
+order = 8
 creationdatetime = 2015-10-01 14:10:06.999000
-datetime = 2015-10-01 14:11:19.184000
+datetime = 2015-12-02 21:38:24.363000
 cursorposition = 51
 
 [wiki]
-md5_hash = 310fded99d7af5d6c7b197a980158da3
-=======
-order = 5
-creationdatetime = 2015-10-01 14:10:06.999000
-datetime = 2015-10-01 14:11:19.184000
-cursorposition = 55
-
-[wiki]
-md5_hash = 5476a83e7cdde04054e085972c198491
->>>>>>> opt
+md5_hash = 74b528cd6232662c761d388cfd61e1c7
 
 [Misc]
 pageindex = 1

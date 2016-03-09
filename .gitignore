@@ -1,4 +1,5 @@
 *.html
-# .picasa.ini
+.picasa.ini
 wikify
 temp
+__thumb

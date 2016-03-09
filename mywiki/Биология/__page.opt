@@ -1,8 +1,8 @@
 [General]
 type = wiki
-tags = 
-order = 2
-datetime = 2013-01-11 12:30:04.546000
+tags = экология
+order = 1
+datetime = 2015-12-02 21:30:38.473000
 cursorposition = 0
 selectedtab = 0
 
@@ -13,7 +13,7 @@ expand = False
 pageindex = 1
 
 [wiki]
-md5_hash = b0020456fa2b235a2a759136a469d190
+md5_hash = f7a628c4a6049f036a90f7409481b1aa
 
 [Tabs]
 tab_0 = Ихтиология

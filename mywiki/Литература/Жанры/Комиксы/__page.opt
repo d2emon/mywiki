@@ -1,8 +1,9 @@
 [General]
 type = wiki
-tags = 
-order = 1
-datetime = 2013-05-11 20:15:05.844665
+tags = комиксы
+order = 0
+datetime = 2015-12-11 10:40:19.397000
+cursorposition = 0
 
 [Misc]
 pageindex = 1
@@ -11,5 +12,5 @@ pageindex = 1
 expand = False
 
 [wiki]
-md5_hash = 3cc2c1b9585c54e2c09a1b501fa28856
+md5_hash = 0b672b069397bec2d61a2cf61e8b2a33
 

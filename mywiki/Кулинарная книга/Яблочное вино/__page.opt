@@ -1,8 +1,9 @@
 [General]
 type = wiki
-tags = 
-order = 3
-datetime = 2012-12-12 19:07:31.892000
+tags = напитки
+order = 4
+datetime = 2015-12-02 21:48:07.373000
+cursorposition = 0
 
 [Misc]
 pageindex = 1
@@ -11,5 +12,5 @@ pageindex = 1
 expand = True
 
 [wiki]
-md5_hash = 7ad7573af0502a97d19626d394298d13
+md5_hash = 1baedd1008c6e357d8a4bc6e454d6db3
 

@@ -1,12 +1,13 @@
 [General]
 type = wiki
-tags = lurkmore
+tags = lurkmore, игры, история
 order = 0
-datetime = 2013-03-21 18:21:08.733000
+datetime = 2015-12-02 22:54:22.421000
+cursorposition = 0
 
 [Misc]
 pageindex = 1
 
 [wiki]
-md5_hash = f289e95a577363f9b5dd14ac2f5ed3c5
+md5_hash = 8b44522c120bf5d07dea2d9783ae323b
 

@@ -1,9 +1,13 @@
 [General]
 type = wiki
-tags = 
-order = 0
-datetime = 2013-11-07 10:32:09.076895
+tags = антиутопия, книги
+order = 2
+datetime = 2016-03-06 20:34:36.078000
+cursorposition = 0
 
 [Misc]
 pageindex = 1
+
+[wiki]
+md5_hash = c626311f256836f50266e3becfc186ed
 

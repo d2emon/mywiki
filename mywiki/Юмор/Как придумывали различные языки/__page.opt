@@ -1,12 +1,13 @@
 [General]
 type = wiki
-tags = 
-order = 11
-datetime = 2013-01-03 05:49:44.524000
+tags = юмор, языки
+order = 8
+datetime = 2015-12-24 09:14:19.964000
+cursorposition = 0
 
 [Misc]
 pageindex = 1
 
 [wiki]
-md5_hash = ec8448ac48fddd2d246829a4ec2a238d
+md5_hash = ed87543717185ab03fc223a9a44c8049
 

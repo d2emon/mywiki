@@ -1,9 +1,13 @@
 [General]
 type = wiki
-tags = 
-order = 1
-datetime = 2013-01-18 10:41:13.625000
+tags = терминал, игры, ролевки
+order = 4
+datetime = 2015-12-02 22:51:34.971000
+cursorposition = 0
 
 [Tree]
 expand = False
+
+[wiki]
+md5_hash = c08fbf80c7605fc94725740c4cf44ffd
 

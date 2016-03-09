@@ -1,8 +1,9 @@
 [General]
 type = wiki
-tags = 
+tags = картография, комп
 order = 1
-datetime = 2013-11-23 16:28:10.694882
+datetime = 2016-03-06 20:56:59.907000
+cursorposition = 0
 
 [Misc]
 pageindex = 1
@@ -11,5 +12,5 @@ pageindex = 1
 expand = False
 
 [wiki]
-md5_hash = 93bf47dcc759e1e2294d1f7cd201aa17
+md5_hash = 6c9a9669e908accf0e30dbeecdd8d8b0
 

@@ -1,9 +1,13 @@
 [General]
 type = wiki
-tags = 
+tags = ролевки, игры, фентези
 order = 0
-datetime = 2013-03-21 16:30:43.981000
+datetime = 2015-12-02 22:50:30.110000
+cursorposition = 0
 
 [Tree]
 expand = False
+
+[wiki]
+md5_hash = 802e7a986376a16dfa77b68bd9fc85e6
 

@@ -1,0 +1,14 @@
+[General]
+type = wiki
+tags = wikipedia, кино, вестерн
+order = 1
+creationdatetime = 2016-01-11 23:41:39.901000
+datetime = 2016-01-11 23:41:43.541000
+cursorposition = 926
+
+[wiki]
+md5_hash = 0ea3e738216f67beccf449b9e702c40f
+
+[Misc]
+pageindex = 1
+

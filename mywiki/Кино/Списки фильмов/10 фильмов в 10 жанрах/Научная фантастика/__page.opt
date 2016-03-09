@@ -1,0 +1,14 @@
+[General]
+type = wiki
+tags = wikipedia, кино, сай-фай
+order = 4
+creationdatetime = 2016-01-11 23:45:02.086000
+datetime = 2016-01-11 23:45:05.380000
+cursorposition = 1116
+
+[wiki]
+md5_hash = 8e63f13d4fcd8b6786714a9a8439c77e
+
+[Misc]
+pageindex = 1
+

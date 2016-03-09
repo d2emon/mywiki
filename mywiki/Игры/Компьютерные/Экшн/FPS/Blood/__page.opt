@@ -1,0 +1,16 @@
+[General]
+type = wiki
+tags = мистика, лавкрафт, викторианская эпоха, зомби
+order = 0
+datetime = 2015-11-30 21:02:20.504146
+cursorposition = 27691
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+
+[wiki]
+md5_hash = 561c9f8be941a56db25593743bd6efbf
+
