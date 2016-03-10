@@ -1,12 +1,13 @@
 [General]
 type = wiki
-tags = 
-order = 2
-datetime = 2013-11-10 18:40:12.615632
+tags = wikipedia, фентези
+order = 3
+datetime = 2016-03-10 20:11:12.326000
+cursorposition = 0
 
 [Misc]
 pageindex = 1
 
 [wiki]
-md5_hash = b7b4cac277888080c39d6154b48fcdb3
+md5_hash = 0788a826a4e26f36776039269a919784
 
