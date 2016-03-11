@@ -1,11 +1,12 @@
 [General]
 type = wiki
 tags = мир фантастики
-order = 12
-datetime = 2012-12-09 09:44:04.214000
+order = 10
+datetime = 2016-03-11 13:36:49.990000
+cursorposition = 0
 
 [wiki]
-md5_hash = 3cb12c1b98c12fd139a00d9289131db5
+md5_hash = 0590b850bb78f438eaf1276b677d1730
 
 [Misc]
 pageindex = 1
