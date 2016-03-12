@@ -1,7 +1,7 @@
 [General]
 type = wiki
 tags = игры
-order = 2
+order = 1
 datetime = 2015-12-02 21:55:45.050000
 cursorposition = 0
 
@@ -12,5 +12,5 @@ expand = False
 pageindex = 1
 
 [wiki]
-md5_hash = cb34111062f85c0b3d88546b4477299f
+md5_hash = 48983858a457b328e07aa19739afdc95
 

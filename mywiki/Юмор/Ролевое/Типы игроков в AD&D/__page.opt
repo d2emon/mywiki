@@ -1,9 +1,7 @@
 [General]
 type = wiki
-tags = 
+tags = юмор, ролевки, классификация, dnd
 order = 10
-datetime = 2013-01-10 10:52:10.875000
-
-[wiki]
-md5_hash = c05c3a3c1771591f33905b272ae62f3b
+datetime = 2015-12-24 10:24:22.746000
+cursorposition = 0
 

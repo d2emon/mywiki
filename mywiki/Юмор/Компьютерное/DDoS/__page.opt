@@ -1,9 +1,13 @@
 [General]
 type = wiki
-tags = 
-order = 1
-datetime = 2013-11-17 16:39:46.682671
+tags = юмор, перчинка, комп
+order = 3
+datetime = 2015-12-24 10:36:14.757000
+cursorposition = 0
 
 [Misc]
 pageindex = 1
+
+[wiki]
+md5_hash = 1d4c53100325fa82e919aa542a64830d
 

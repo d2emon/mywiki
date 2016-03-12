@@ -1,13 +1,13 @@
 [General]
 type = wiki
-tags = 
-order = 6
-datetime = 2012-12-12 22:43:45.708000
+tags = ролевки, игры, инди
+order = 8
+datetime = 2016-03-06 22:03:04.170000
 cursorposition = 0
 
 [Misc]
 pageindex = 1
 
 [wiki]
-md5_hash = 0b4b58c8c34efc9dd1ac24bebb9043d4
+md5_hash = a9eb7719108981d8ba898b2a2cf53394
 

@@ -1,9 +1,13 @@
 [General]
 type = wiki
-tags = мир фантастики
+tags = юмор, dnd, мир фантастики
 order = 10
-datetime = 2013-01-03 12:28:44.484000
+datetime = 2015-12-24 10:30:42.864000
+cursorposition = 0
 
 [Misc]
 pageindex = 1
+
+[wiki]
+md5_hash = 1da16f0abb7d84fe5164774da535b248
 

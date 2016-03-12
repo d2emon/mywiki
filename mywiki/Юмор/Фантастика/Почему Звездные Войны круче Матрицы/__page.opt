@@ -1,9 +1,13 @@
 [General]
 type = wiki
-tags = мир фантастики
+tags = юмор, киберпанк, мир фантастики, космоопера, фентези
 order = 13
-datetime = 2013-01-03 12:29:29.559000
+datetime = 2015-12-24 10:29:59.813000
+cursorposition = 0
 
 [Misc]
 pageindex = 1
+
+[wiki]
+md5_hash = ffb56bf0262e2a7c3cfbc34e2f5d98a1
 

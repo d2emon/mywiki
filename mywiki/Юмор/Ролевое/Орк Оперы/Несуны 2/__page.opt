@@ -1,12 +1,13 @@
 [General]
 type = wiki
-tags = 
+tags = юмор, музыка, фентези
 order = 1
-datetime = 2013-01-04 04:05:04.842000
+datetime = 2015-12-24 10:22:27.853000
+cursorposition = 0
 
 [Misc]
 pageindex = 1
 
 [wiki]
-md5_hash = b3cff4e1fbc0faf49053fd5901acce2e
+md5_hash = 0bf76fc42ac768dbd5f139373152329d
 
