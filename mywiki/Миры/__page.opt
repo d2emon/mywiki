@@ -5,12 +5,3 @@ order = 9
 datetime = 2015-10-28 14:58:30.861248
 cursorposition = 0
 
-[Tree]
-expand = False
-
-[wiki]
-md5_hash = 9896e001cf6330bb5bfb7fad4f108f4a
-
-[Misc]
-pageindex = 1
-
