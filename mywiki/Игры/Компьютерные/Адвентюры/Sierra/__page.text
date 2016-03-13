@@ -3,3 +3,122 @@
 От создателей первого графического квеста...
 
 (:childlist:)
+
+Творческий интерпретатор Sierra (англ. Sierra's Creative Interpreter, SCI) — игровой движок, разработанный в Sierra On-Line. Под SCI подразумевают:
+
+* Скриптовый язык, созданный Джеффом Стефенсоном (англ. Jeff Stephenson) для разработки приключенческих игр. SCI пришёл на смену устаревшему языку AGI. SCI создавался как полностью объектно‐ориентированный скриптовый язык, тогда как AGI был процедурным языком.
+* Среду реального времени для запуска и выполнения написанных на этом языке игр, первоначально разработанную для IBM PC, и позже портированную на некоторые другие платформы (Amiga, Atari ST и Macintosh). В этой статье рассматривается версия для IBM PC.
+
+!!! SCI0 (0.000.xxx)
+
+Впервые был использован для создания King's Quest IV: The Perils of Rosella в 1988 году. Игры, созданные на SCI0, имели разрешение экрана 320x200 пикселей, могли использовать 16 цветов, а также звуковую дорожку для различных звуковых адаптеров. При необходимости в качестве интерфейса в играх применялся клавиатурный текстовый ввод с синтаксическим анализатором — как в текстовых квестах (использовался только в приключенческих играх).
+
+Игры, сделанные на SCI0 (в порядке выхода):
+
+* King's Quest IV: The Perils of Rosella
+* Leisure Suit Larry Goes Looking for Love (in Several Wrong Places) (Larry 2)
+* Police Quest II: The Vengeance
+* 1988 Christmas Card
+* Space Quest 3: The Pirates of Pestulon
+* Hoyle's Official Book of Games: Volume 1
+* Hero's Quest: So You Want to Be a Hero
+* Leisure Suit Larry 3: Passionate Patti in Pursuit of the Pulsating Pectorals
+* The Colonel's Bequest
+* Codename: Iceman
+* Conquests of Camelot: King Arthur, Quest for the Grail
+* Hoyle's Official Book of Games: Volume 2
+* Mixed-Up Mother Goose (Version 1.011)
+
+Для создания игр на других языках поздние версии SCI0 поддерживали возможность разработки двуязычных вариантов игр. Версии таких игр выглядели как «S.OLD.xxx»:
+
+* King's Quest I: Quest for the Crown (переработанная версия 1990 года)
+* Space Quest 3: The Pirates of Pestulon (международные версии на нескольких языках)
+* Leisure Suit Larry 3: Passionate Patti in Pursuit of the Pulsating Pectorals (международные версии)
+* Jones in the Fast Lane (дисковая версия)
+
+Последняя игра на SCI0, «Jones in the Fast Lane», использовала графический движок следующей версии интерпретатора — SCI1, и поэтому могла работать в режиме с 256 цветами.
+
+!!! SCI1 (1.000.xxx/T.A00.xxx)
+
+SCI1 вышел в 1990 году. Наиболее значительным улучшением было появление 256 цветной палитры, тогда как разрешение по‐прежнему осталось 320×200. Была оставлена возможность использования 16 цветов EGA (обычно игры продавались в двух версиях — 16 и 256 цветных). Некоторые называют 16 цветные версии игр «SCI01».
+
+Большинство игр на SCI1 используют ориентированный на мышь интерфейс «укажи и щёлкни» (англ. point‐and‐click). В случае SCI1 пользовательский интерфейс определялся скриптом игры, а не версией игрового движка. Например, хотя «Quest for Glory 2» использует текстовый ввод с синтаксическим анализатором, а King's Quest V — мышь, их интерпретаторы совместимы: движок QFG2 можно использовать для запуска 16 цветной версии KQV.
+
+Существует проблема с нумерацией версий движка. Дело в том, что третья цифра версии (номер сборки) имеет только три разряда, тогда как нужно минимум четыре. Например, игра «Space Quest 4» версии 1.052 имела интерпретатор версии «1.000.753», а игра «Conquests of the Longbow» версии 1.0 — «1.000.168», хотя последняя использовала более новую версию интерпретатора, так как в действительности его номер сборки — 1168, а не 168. В некоторых случаях строка «1.000» заменялась «T.A00», что, однако, не означает параллельную ветку разработки движка.
+
+На SCI1 были сделаны следующие игры:
+
+* 1990 Christmas Card - The Seasoned Professional
+* Quest for Glory II: Trial by Fire
+* Hoyle's Official Book of Games: Volume 3
+* King's Quest V: Absence Makes the Heart Go Yonder! (дисковая версия)
+* Leisure Suit Larry in the Land of the Lounge Lizards (улучшенная версия)
+* Space Quest 4: Roger Wilco and the Time Rippers (дисковая версия)
+* Mixed-Up Mother Goose (версия на компакт‐диске)
+
+У интерпретаторов с номером сборки больше 1000 несколько изменён формат файлов и улучшена поддержка других языков (результат частичного использования кода из «S.OLD.xxx» версии SCI0). Такой интерпретатор был использован в следующих играх:
+
+* Leisure Suit Larry 5: Passionate Patti Does a Little Undercover Work
+* EcoQuest: The Search for Cetus (дисковая версия 1.0)
+* Jones in the Fast Lane (версия на компакт‐диске)
+* King's Quest V: Absence Makes the Heart Go Yonder! (версия на компакт‐диске и международные дисковые версии)
+* Mixed-up Fairy Tales
+* Police Quest III: The Kindred
+* Space Quest 1: The Sarien Encounter (улучшенная версия)
+* Space Quest 4: Roger Wilco and the Time Rippers (международные версии)
+* Conquests of the Longbow: The Adventures of Robin Hood
+* Castle of Dr. Brain
+
+!!! SCI1.1 (1.001.xxx)
+
+Кроме значительных внутренних изменений, в SCI1.1 была реализована поддержка анимированных видео вставок (впервые использованных в «King's Quest VI»), а также масштабируемых спрайтов: персонаж становится меньше, перемещаясь вглубь экрана, что создаёт эффект псевдо‐трёхмерности. В нумерации ранних версий SCI1.1 можно встретить метку версии «2.000.000», что вероятно, является следствием несогласованности. Отдельные 16 цветные версии больше не выпускались; владельцам EGA видеокарт предлагалось запускать игру в режиме 640x480 с симуляцией 256 цветов посредством сглаживание цветовых переходов. Интерпретатор был использован в следующих играх:
+
+* 1992 Christmas Card
+* EcoQuest: The Search for Cetus (дисковая версия 1.1, версия на компакт‐диске)
+* EcoQuest II: Lost Secret of the Rainforest
+* Freddy Pharkas: Frontier Pharmacist
+* The Island of Dr. Brain
+* King's Quest VI: Heir Today, Gone Tomorrow
+* Laura Bow: The Dagger of Amon Ra
+* Leisure Suit Larry 6: Shape Up or Slip Out! (дисковая версия и версия на компакт‐диске с низким разрешением)
+* Mixed-Up Mother Goose (версия 2.000)
+* Pepper's Adventures in Time
+* Police Quest: In Pursuit of the Death Angel (улучшенная версия)
+* Quest for Glory I: So You Want to Be a Hero (256‐цветная версия)
+* Quest for Glory III: Wages of War
+* Space Quest 4: Roger Wilco and the Time Rippers (версия на компакт‐диске)
+* Space Quest 5: The Next Mutation
+
+!!! SCI2 (2.xxx.xxx)
+
+SCI2 часто называют «SCI32» (так же, как и SCI3), поскольку он работал в 32‐битной среде, используя расширение DOS4G или расширенный режим Windows 3.1. Наиболее заметными усовершенствованиями были поддержка разрешения 640x480, а также улучшенная поддержка видео вставок. Известно две модификации движка — 2.000.000 и 2.100.002. Интерпретатор был использован в следующих играх:
+
+* Gabriel Knight: Sins of the Fathers
+* The Beast Within: A Gabriel Knight Mystery
+* King's Quest VII: The Princeless Bride
+* Leisure Suit Larry 6: Shape Up or Slip Out! (версия на компакт‐диске с высоким разрешеним)
+* Mixed-up Mother Goose Deluxe
+* Phantasmagoria
+* Police Quest IV: Open Season
+* Quest for Glory IV: Shadows of Darkness
+* Shivers
+* Space Quest 6: The Spinal Frontier
+* Torin's Passage
+
+!!! SCI3 (3.000.000)
+
+Последняя версия движка кроме DOS или Windows 3.1 включала поддержку версий под Windows 95.
+
+Последними играми Сьерра на SCI были:
+
+* Leisure Suit Larry 7: Love for Sail!
+* Lighthouse: The Dark Being
+* Phantasmagoria II: A Puzzle of Flesh
+* RAMA
+* Shivers Two: Harvest of Souls
+
+!!! Родственные программные продукты
+
+FreeSCI — это движок с открытым исходным кодом, который работает с играми на SCI0. FreeSCI запускается на GNU/Linux, UNIX, Microsoft Windows, Sega Dreamcast и GP32.
+
+Существует SCI Studio — программа с открытым исходным кодом, позволяющая создавать игры для SCI0. SCI Studio разработана под Microsoft Windows, но её можно запускать под GNU/Linux, используя Wine, а игры запускать с помощью FreeSCI.
