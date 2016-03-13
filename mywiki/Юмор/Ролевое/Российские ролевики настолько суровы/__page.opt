@@ -1,11 +1,13 @@
 [General]
 type = wiki
 tags = юмор, ролевки
-order = 8
+order = 16
 datetime = 2015-12-24 10:23:48.468000
 cursorposition = 0
 
 [Misc]
 pageindex = 1
 
+[wiki]
+md5_hash = 0657ba18ec0a9c88208f737fe0935d2f
 

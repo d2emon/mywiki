@@ -1,7 +1,7 @@
 [General]
 type = wiki
 tags = юмор, музыка
-order = 6
+order = 11
 datetime = 2015-12-24 10:21:51.585000
 cursorposition = 0
 
@@ -10,4 +10,7 @@ pageindex = 1
 
 [Tree]
 expand = False
+
+[wiki]
+md5_hash = aede48d843a931254e8fd65d2f0e51b9
 
