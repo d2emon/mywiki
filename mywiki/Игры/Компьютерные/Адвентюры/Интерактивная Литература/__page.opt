@@ -2,11 +2,11 @@
 type = wiki
 tags = терминал, игры
 order = 3
-datetime = 2015-12-02 21:59:42.095000
-cursorposition = 0
+datetime = 2016-03-15 00:48:14.387457
+cursorposition = 22108
 
 [wiki]
-md5_hash = 995549108cdf16fd08754923d819e7d7
+md5_hash = 9f53b99034963b2941d9316ecc3d9fc4
 
 [Misc]
 pageindex = 1
