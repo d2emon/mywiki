@@ -5,3 +5,6 @@ order = 9
 datetime = 2015-10-28 14:58:30.861248
 cursorposition = 0
 
+[Tree]
+expand = False
+
