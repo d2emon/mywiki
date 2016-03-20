@@ -1,13 +1,6 @@
 [General]
 type = wiki
 tags = конспирология
-order = 17
 datetime = 2013-03-09 11:09:42.093000
 cursorposition = 0
-
-[Misc]
-pageindex = 1
-
-[wiki]
-md5_hash = ffe0f114e2424815876cc1ad4770b07c
 

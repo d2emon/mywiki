@@ -1,17 +1,17 @@
 [General]
 type = wiki
-tags = 
+tags = город, игры
 order = 0
 creationdatetime = 2015-05-14 13:05:31.523035
-datetime = 2015-05-14 13:05:45.541950
+datetime = 2016-03-09 04:08:53.127000
 cursorposition = 22
 
 [wiki]
-md5_hash = 05329e652ceca00a4e9ecb3b0d1d09ff
+md5_hash = 46c8c4630af06d0f5d632f7f8c1b8cc2
 
 [Misc]
 pageindex = 1
 
 [Tree]
-expand = True
+expand = False
 
