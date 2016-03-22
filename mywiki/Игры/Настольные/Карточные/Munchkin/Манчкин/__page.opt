@@ -3,10 +3,11 @@ type = wiki
 tags = dreamworlds.ru
 order = 11
 datetime = 2012-12-10 10:22:48.046000
+cursorposition = 0
 
 [Misc]
 pageindex = 1
 
 [wiki]
-md5_hash = 4d01dc38c77e293c2db305f31e2dff52
+md5_hash = 32994f392b231df0de615dd106b64009
 
