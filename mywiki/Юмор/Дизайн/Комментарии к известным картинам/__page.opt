@@ -1,13 +1,13 @@
 [General]
 type = wiki
-tags = юмор, дизайн
+tags = юмор, adme, дизайн
 order = 1
-datetime = 2015-12-24 09:45:55.876000
+datetime = 2016-03-22 13:43:55.694661
 cursorposition = 0
 
 [Misc]
 pageindex = 1
 
 [wiki]
-md5_hash = 72a47d5206c62ba3279b43e9b35209ed
+md5_hash = 06981f7e8d15535bdc5187086b0c13fc
 
