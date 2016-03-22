@@ -1,7 +1,7 @@
 [General]
 type = wiki
 tags = юмор, dreamworlds.ru, фентези
-order = 1
+order = 3
 datetime = 2015-12-24 10:32:16.845000
 cursorposition = 0
 
@@ -9,5 +9,5 @@ cursorposition = 0
 pageindex = 1
 
 [wiki]
-md5_hash = c3b535113f2891e4ac986f9703f25767
+md5_hash = fbdb47c0c17968dbe1718e88d02d491e
 

@@ -1,7 +1,7 @@
 [General]
 type = wiki
 tags = юмор, мир фантастики
-order = 12
+order = 10
 datetime = 2015-12-24 10:30:10.112000
 cursorposition = 0
 
@@ -9,5 +9,5 @@ cursorposition = 0
 pageindex = 1
 
 [wiki]
-md5_hash = dae1ecfc6a687371787ab42ae4a3c1ed
+md5_hash = 7b622c5c6ee5e87758589b07d8a3dbe0
 
