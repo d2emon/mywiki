@@ -1,7 +1,7 @@
 [General]
 type = wiki
 tags = ролевки, модули, игры
-order = 6
+order = 7
 datetime = 2016-03-06 22:01:09.925000
 cursorposition = 0
 
@@ -12,5 +12,5 @@ pageindex = 1
 expand = False
 
 [wiki]
-md5_hash = 8d30b1402f7930d5d6e3a08815f318bd
+md5_hash = e873cdfd8c80b34ea4d7bff5c850163f
 
