@@ -3,13 +3,13 @@ type = wiki
 tags = город, игры
 order = 0
 datetime = 2016-03-16 16:45:29.421000
-cursorposition = 28408
+cursorposition = 28121
 
 [Tree]
 expand = False
 
 [wiki]
-md5_hash = c8fcbb97b71d20a066cb4a0399ba9a6a
+md5_hash = edc069d44bfc959c065556f57d363bf0
 
 [Misc]
 pageindex = 1
