@@ -5,3 +5,6 @@ order = 15
 datetime = 2015-10-28 15:03:35.451351
 cursorposition = 0
 
+[Tree]
+expand = False
+
