@@ -5,3 +5,16 @@ order = 3
 datetime = 2015-12-02 21:36:21.943000
 cursorposition = 0
 selectedtab = 0
+
+[wiki]
+md5_hash = bf7844a5b9935dfe82d3272ad6cd1ada
+
+[Tree]
+expand = False
+
+[Misc]
+pageindex = 1
+
+[Tabs]
+tab_0 = Актеры
+
