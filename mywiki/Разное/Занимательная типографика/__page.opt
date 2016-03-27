@@ -1,6 +1,7 @@
 [General]
 type = wiki
 tags = adme, дизайн
+order = 10
 creationdatetime = 2015-12-03 22:39:02.787000
 datetime = 2015-12-03 22:47:28.643000
 cursorposition = 7404
