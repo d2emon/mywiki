@@ -1,9 +1,13 @@
 [General]
 type = wiki
 tags = wikipedia
-order = 28
-datetime = 2013-11-14 20:21:35.113759
+order = 29
+datetime = 2016-03-28 03:39:18.735000
+cursorposition = 0
 
 [Misc]
 pageindex = 1
+
+[wiki]
+md5_hash = 6d566e3bcf50ee7fe5ab445a233f7555
 
