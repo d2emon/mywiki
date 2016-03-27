@@ -5,13 +5,3 @@ order = 13
 creationdatetime = 2015-12-22 11:02:28.210000
 datetime = 2015-12-22 11:02:45.274000
 cursorposition = 35
-
-[wiki]
-md5_hash = cbb9e8a2092e417c110f9a51543edcea
-
-[Misc]
-pageindex = 1
-
-[Tree]
-expand = False
-
