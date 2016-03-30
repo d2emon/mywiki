@@ -1,0 +1,13 @@
+[General]
+type = wiki
+tags = wikipedia
+order = 20
+datetime = 2013-11-14 20:07:07.075877
+cursorposition = 0
+
+[Misc]
+pageindex = 1
+
+[wiki]
+md5_hash = ad8468a2540451e136f77a0acd0e3bb2
+

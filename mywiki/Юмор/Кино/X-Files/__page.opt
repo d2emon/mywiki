@@ -1,13 +1,13 @@
 [General]
 type = wiki
 tags = юмор, мистика
-order = 2
+order = 6
 creationdatetime = 2015-12-22 01:22:50.235000
 datetime = 2015-12-22 01:42:45.470000
 cursorposition = 20401
 
 [wiki]
-md5_hash = 5411677ef91ac81fd4828732d3d75d5d
+md5_hash = 94d1871763bc5b47d438a03fb9b15e43
 
 [Misc]
 pageindex = 1

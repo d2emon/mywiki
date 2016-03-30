@@ -1,7 +1,7 @@
 [General]
 type = wiki
 tags = юмор, dnd, ролевки
-order = 27
+order = 26
 datetime = 2015-12-24 09:18:46.316000
 cursorposition = 0
 
@@ -12,5 +12,5 @@ pageindex = 1
 expand = False
 
 [wiki]
-md5_hash = e3af80a55914b38d6202bc80d15d5fd6
+md5_hash = 7813b6ec07e0d1f5fdde370da95e7cb9
 
