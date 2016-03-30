@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = фентези, юмор
+order = 2
+creationdatetime = 2016-03-30 19:30:53.930956
+datetime = 2016-03-30 19:38:01.716679
+cursorposition = 12555
+
+[wiki]
+md5_hash = 447cf66c6c45f6473859a08d8f1f94c0
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+
