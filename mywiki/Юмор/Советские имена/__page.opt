@@ -1,13 +1,13 @@
 [General]
 type = wiki
 tags = юмор
-order = 30
+order = 28
 creationdatetime = 2015-12-15 14:35:25.982000
 datetime = 2015-12-15 14:35:48.853000
 cursorposition = 1285
 
 [wiki]
-md5_hash = 03da6a14df2fcbf6f0dece800f427409
+md5_hash = ba2c510c9c773d141367edfbfef57b94
 
 [Misc]
 pageindex = 1

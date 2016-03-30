@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = киберпанк, wikipedia, игры, ролевки
+order = 0
+creationdatetime = 2016-03-06 21:23:39.438000
+datetime = 2016-03-06 21:44:47.411000
+cursorposition = 16990
+
+[wiki]
+md5_hash = fed6e95af9347421d0221381ad69448c
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+

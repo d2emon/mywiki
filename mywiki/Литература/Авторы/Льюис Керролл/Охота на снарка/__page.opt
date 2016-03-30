@@ -1,0 +1,13 @@
+[General]
+type = wiki
+tags = wikipedia, абсурд
+order = 0
+datetime = 2016-03-18 12:03:24.177060
+cursorposition = 5280
+
+[wiki]
+md5_hash = e8095e5081a5aa9c3835d11300d1e87a
+
+[Misc]
+pageindex = 1
+
