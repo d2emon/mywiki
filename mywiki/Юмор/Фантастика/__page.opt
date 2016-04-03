@@ -1,7 +1,7 @@
 [General]
 type = wiki
 tags = киберпанк, фентези, юмор, сай-фай, космоопера, хоррор
-order = 34
+order = 35
 datetime = 2015-12-24 09:21:10.910000
 cursorposition = 0
 
@@ -10,7 +10,4 @@ pageindex = 1
 
 [Tree]
 expand = False
-
-[wiki]
-md5_hash = ca9ba82933c1451edb5310cfe33b1382
 

@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = юмор, мир фантастики, книги
+order = 16
+creationdatetime = 2016-03-22 17:12:51.259128
+datetime = 2016-03-22 18:50:28.031939
+cursorposition = 391
+
+[wiki]
+md5_hash = d86dee8d27f6e0b5e28bbe6d8813bcec
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = True
+

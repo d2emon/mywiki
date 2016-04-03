@@ -5,9 +5,4 @@ order = 6
 datetime = 2015-12-02 21:49:01.690000
 cursorposition = 0
 
-[Tree]
-expand = False
-
-[Misc]
-pageindex = 1
 

@@ -1,7 +1,7 @@
 [General]
 type = wiki
 tags = сай-фай
-order = 1
+order = 2
 datetime = 2015-12-02 20:45:09.254000
 cursorposition = 0
 
@@ -12,5 +12,5 @@ pageindex = 1
 expand = False
 
 [wiki]
-md5_hash = 20ffb101474b47717714d5e9a1a647cb
+md5_hash = b04f35dd27d0913067dc8eb7811647d6
 

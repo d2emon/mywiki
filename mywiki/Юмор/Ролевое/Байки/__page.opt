@@ -5,9 +5,6 @@ order = 3
 datetime = 2015-12-24 10:08:57.954000
 cursorposition = 0
 
-[wiki]
-md5_hash = 60bfdb85674bac0614561212e66647f6
-
 [Tree]
 expand = False
 

@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = музыка, юмор
+order = 16
+creationdatetime = 2016-03-25 01:19:26.277000
+datetime = 2016-03-25 01:19:57.921000
+cursorposition = 52
+
+[wiki]
+md5_hash = 88aa8bb9add55d03bd54833cbb6a84e7
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+

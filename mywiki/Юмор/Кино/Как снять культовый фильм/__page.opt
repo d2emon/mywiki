@@ -1,0 +1,14 @@
+[General]
+type = wiki
+tags = кино, юмор, мир фантастики
+order = 9
+creationdatetime = 2016-03-22 18:45:59.732814
+datetime = 2016-03-22 18:49:03.965219
+cursorposition = 0
+
+[wiki]
+md5_hash = 799503a70ce83207263f163c3c23d27f
+
+[Misc]
+pageindex = 1
+
