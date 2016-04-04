@@ -3,7 +3,11 @@ type = wiki
 tags = ню-готика
 order = 0
 datetime = 2014-02-11 13:34:02.230000
+cursorposition = 0
 
 [Misc]
 pageindex = 1
+
+[wiki]
+md5_hash = ab9ca3cf3245232d778f77e70d474ac0
 
