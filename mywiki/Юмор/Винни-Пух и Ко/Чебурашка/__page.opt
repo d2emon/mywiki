@@ -1,7 +1,7 @@
 [General]
 type = wiki
 tags = юмор, мультфильм
-order = 14
+order = 3
 creationdatetime = 2015-04-27 15:06:24.152133
 datetime = 2015-12-24 10:28:06.410000
 cursorposition = 60924
@@ -11,4 +11,7 @@ md5_hash = b36069a1022b2614d16f136cdc0b0c39
 
 [Misc]
 pageindex = 1
+
+[Tree]
+expand = True
 
