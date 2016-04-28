@@ -3,12 +3,15 @@ type = wiki
 tags = dnd, ролевки, юмор
 order = 3
 creationdatetime = 2016-04-03 20:21:53.290000
-datetime = 2016-04-03 20:23:19.997000
-cursorposition = 5116
+datetime = 2016-04-28 15:49:20.593140
+cursorposition = 35
 
 [wiki]
-md5_hash = bbef8f70e87ef7fe0d4687a47ae72d0a
+md5_hash = 6694a5a25d4fbdc5db01ad8cdac06e56
 
 [Misc]
 pageindex = 1
+
+[Tree]
+expand = True
 
