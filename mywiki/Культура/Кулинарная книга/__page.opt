@@ -1,0 +1,16 @@
+[General]
+type = wiki
+tags = 
+order = 5
+datetime = 2015-10-28 14:57:35.857564
+cursorposition = 0
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+
+[wiki]
+md5_hash = f57f8dfad3aa1e4369660fcab91d14d8
+

@@ -1,10 +1,10 @@
 [General]
 type = wiki
-tags = wikipedia, юмор, мультфильм
+tags = юмор, wikipedia, мультфильм, цитаты
 order = 2
 creationdatetime = 2015-12-21 10:39:47.318000
-datetime = 2015-12-21 10:47:28.160000
-cursorposition = 7139
+datetime = 2016-05-15 23:32:23.324000
+cursorposition = 7065
 
 [wiki]
 md5_hash = b8bbe43b08f0c0792381248e35422ade

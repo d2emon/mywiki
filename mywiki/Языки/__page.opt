@@ -1,12 +1,12 @@
 [General]
 type = wiki
-tags = 
-order = 20
-datetime = 2015-10-28 15:05:35.019297
+tags = языки
+order = 14
+datetime = 2016-05-15 23:03:52.604000
 cursorposition = 0
 
 [wiki]
-md5_hash = 4eba6cb36f9e1111af7e6860ebe745ef
+md5_hash = 0c7a16cf7b5c30a2ab660a02521482d4
 
 [Tree]
 expand = False
