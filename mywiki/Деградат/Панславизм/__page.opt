@@ -1,0 +1,16 @@
+[General]
+type = wiki
+tags = веды
+order = 12
+datetime = 2015-12-02 21:27:47.927000
+cursorposition = 10
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+
+[wiki]
+md5_hash = 55ae24a7725cbaa109cb67b72ef686f8
+
