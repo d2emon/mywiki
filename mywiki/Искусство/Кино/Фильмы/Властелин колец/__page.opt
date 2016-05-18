@@ -1,0 +1,16 @@
+[General]
+type = wiki
+tags = фентези
+order = 2
+datetime = 2016-03-02 02:12:15.550000
+cursorposition = 34
+
+[Misc]
+pageindex = 1
+
+[wiki]
+md5_hash = 1237e66b0501a283fa3190f5213eba35
+
+[Tree]
+expand = False
+

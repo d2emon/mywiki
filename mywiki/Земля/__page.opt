@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = дописать
+order = 1
+creationdatetime = 2016-05-15 16:52:18.158000
+datetime = 2016-05-15 23:05:25.182000
+cursorposition = 0
+
+[wiki]
+md5_hash = f5b6600508eb81a3554a92f199f761e6
+
+[Misc]
+pageindex = 0
+
+[Tree]
+expand = False
+

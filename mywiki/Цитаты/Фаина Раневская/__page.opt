@@ -1,13 +1,13 @@
 [General]
 type = wiki
-tags = wikipedia
-order = 5
+tags = юмор, wikipedia, цитаты
+order = 6
 creationdatetime = 2015-10-01 12:19:21.244000
-datetime = 2016-01-20 22:42:44.958067
+datetime = 2016-05-15 23:33:36.992000
 cursorposition = 8963
 
 [wiki]
-md5_hash = 90b5bcf52c13f89838609f7923186ff0
+md5_hash = 6bc4c2534032c02c822e43f08ae8df02
 
 [Misc]
 pageindex = 1

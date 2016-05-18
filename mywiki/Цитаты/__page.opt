@@ -1,8 +1,8 @@
 [General]
 type = wiki
-tags = 
-order = 18
-datetime = 2015-10-28 15:04:51.598811
+tags = цитаты
+order = 12
+datetime = 2016-05-15 23:03:24.472000
 cursorposition = 0
 
 [Misc]
@@ -12,5 +12,5 @@ pageindex = 1
 expand = False
 
 [wiki]
-md5_hash = 11476571b74c993bc348a847eb521e02
+md5_hash = 4d9c5bceeea9444b42fd1e383053206f
 

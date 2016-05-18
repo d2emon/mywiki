@@ -1,9 +1,9 @@
 [General]
 type = wiki
-tags = wikipedia
-order = 2
+tags = wikipedia, книги, цитаты
+order = 3
 creationdatetime = 2015-12-18 12:43:58.877000
-datetime = 2015-12-18 12:45:11.687000
+datetime = 2016-05-15 23:32:46.421000
 cursorposition = 3
 
 [wiki]

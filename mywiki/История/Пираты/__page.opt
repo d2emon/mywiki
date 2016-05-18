@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = wikipedia
+order = 27
+creationdatetime = 2016-03-28 03:30:18.997000
+datetime = 2016-03-28 03:37:52.197000
+cursorposition = 17970
+
+[wiki]
+md5_hash = fa0ef6909709091043fdff20eb5d61fd
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+
