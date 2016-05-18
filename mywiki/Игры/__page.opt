@@ -9,8 +9,8 @@ cursorposition = 0
 pageindex = 1
 
 [Tree]
-expand = True
+expand = False
 
 [wiki]
-md5_hash = 57369b55b90c69b7191f10ec717721a7
+md5_hash = 28987430da248d577d64b03addf5147d
 
