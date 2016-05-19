@@ -1,7 +1,7 @@
 [General]
 type = wiki
 tags = dnd, игры, ролевки
-order = 3
+order = 4
 creationdatetime = 2016-05-18 15:41:40.666000
 datetime = 2016-05-18 15:42:07.786000
 cursorposition = 25
@@ -13,5 +13,5 @@ md5_hash = 68aa92500a94c35a7f939a4f0517d143
 pageindex = 1
 
 [Tree]
-expand = True
+expand = False
 
