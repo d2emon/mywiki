@@ -1,0 +1,443 @@
+!! Словарь D&D-шной терминологии
+
+* Ability - (основные/базовые) характеристики:
+** Strength (STR) – Сила
+** Dexterity (DEX) – Ловкость
+** Constitution (CON) – Телосложение
+** Intelligence (INT) – Интеллект (у персонажей); разумность (у монстров)
+** Wisdom (WIS) – Мудрость
+** Charisma (CHA) – Харизма
+* Ability scores - значения характеристик
+* Ability score points – пункты/единицы характеристик
+* Ability modifier - модификаторы по характеристикам
+* Ability damage - временное повреждение характеристики
+* Ability drain – постоянное повреждение характеристики
+* Alignment - мировоззрение:
+** Law – закон
+** Chaos - хаос
+** Good – добрый
+** Evil - злой
+** Lawful – законопослушный, законный
+** Neutral – нейтральный
+** Chaotic – хаотичный
+* Area of effect - область воздействия (заклинания)
+* Armor - защита
+* Armor bonus – бонус доспеха
+* Armor class – класс защиты (АС)
+** Leather - кожаный доспех, кожанка
+** Studded leather - клепаный кожаный доспех
+** Padded - стеганый доспех
+** Scale mail - чешуйчатый доспех
+** Chain mail - кольчуга (кольчужная рубашка)
+** Plate mail - пластинчатый доспех
+** Field plate - легкий панцирь
+** Full plate - тяжелый (полный) латный доспех
+* Attack – атака
+* Attack roll – результат броска на атаку
+* Attack of opportunity - атака при возможности
+* Barehanded attack – атака без оружия
+* Base save bonus - базовый бонус к спасброску
+* Basic physical condition – нормальное физическое состояние; основное физическое состояние
+* Bonus - бонус
+* Bonus spells - дополнительные заклинания
+* Breath weapon - атака дыханием
+* Caster - творящий заклинание, заклинатель, колдун (маг, жрец...)
+* Casting - сотворение или наложение заклинания, (процесс) произнесения заклинания
+* Casting time - время сотоворения, произнесения заклинания
+* Chance to know spell - шанс выучить заклинание
+* Character level – уровень персонажа
+* Character's sizes - Размеры персонажей:
+** Fine - мизерный
+** Diminutive - крошечный
+** Tiny - миниатюрный
+** Small - маленький
+** Medium - средний (нормальный)
+** Large – большой
+** Huge - огромный
+** Gargantuan - гигантский
+** Colossal - колоссальный
+* Сheck - проверка
+* Circumstance bonus – ситуационный бонус
+* Class - класс персонажа:
+** Adept - адепт
+** Arcane Archer - мистический лучник
+** Aristocrat - аристократ
+** Assassin - убийца
+** Blackguard - черный страж
+** Barbarian - варвар
+** Bard - бард
+** Cleric - клерик
+** Commoner - обыватель
+** Druid - друид
+** Dwarwen defender - дварф-защитник
+** Expert - эксперт
+** Fighter - боец
+** Loremaster – ведун, мастер знаний
+** Monk - монах
+** Multiclass characters - мультиклассовые персонажи
+** Paladin - паладин
+** Ranger - рейнджер, следопыт
+** Rogue – жулик, бродяга
+** Shadowdancer - теневой танцор
+** Sorcerer - колдун
+** Spellcasting classes - классы заклинателей / классы магических персонажей
+** Warrior - воин
+** Wizard – маг
+* Combat – бой
+* Components - компоненты (для наложения заклинаний)
+** Verbal - вербальные (словесные)
+** Somatic - соматические (жестовые)
+** Material - материальные
+** Focus - фокус (материальный компонент, который не расходуется)
+* Conditions - Состояние:
+** Blinded – ослеплен
+** Bound – связан
+** Blown away – сдуло, унесен ветром
+** Checked – остановлен
+** Confused – сбит с толку, в замешательстве
+** Cowering – съежился
+** Dazed – ошеломлен
+** Dazzled – плохо видит, затуманенный взор
+** Dead – мертв
+** Deafened – оглох
+** Disabled – нейтрализован
+** Dying – умирает
+** Entangled – опутан
+** Exhausted – истощен
+** Fatigued – утомлен, устал
+** Flat-footed – застигнут врасплох
+** Frightened – испуган
+** Grappled - схвачен
+** Held – задержан, удержан
+** Normal – в нормальном состоянии, в порядке
+** Helpless - беспомощен
+** Incapacitated – выведен из строя
+** Incorporeal – бесплотный (Incorporeal creature – бесплотное существо)
+** Invisible - невидимый
+** Knocked Down – сбит с ног
+** Knocked Out – нокаутирован
+** Nauseated – испытывает тошноту (персонажа тошнит)
+** Panicked – паникует
+** Paralyzed - парализован
+** Petrified – окаменел
+** Pinned – зажат (в схватке); в других случаях – зацепился за что-либо, пригвожден
+** Prone – лежит ничком
+** Prone target – лежащая мишень
+** Roughed up – избит
+** Shaken – шокирован
+** Stable – стабилизировался
+** Staggered – поражен
+** Stunned - контужен
+** Turned (относится к нежити) – изгнан, обращен в бегство
+** Unconсscious – без сознания
+** Weakened - ослаб
+* Creature - существо
+* Current hit points – текущие хиты, уровень здоровья
+* Die - кубик
+* D% - процентник, процентный кубик
+* D(x) - х-гранный кубик (сокращать - d(х))
+* Die roll - результат броска
+* Difficulty class (DC) – уровень сложности
+* Dodge bonus – бонус уклонения
+* Dungeon Master - ведущий, мастер
+* Duration of a spell – продолжительность заклинания
+* Effective ability loss – временная потеря характеристики (происходит под воздействием какого-либо эффекта)
+* Effective level – фактический уровень
+* Encumbrance - нагрузка
+* Energy drain - высасывание жизненной силы
+* Environment - окружающая среда
+** Abysmal heat - адская жара
+** Acid - кислота
+** Altitude Sickness - высотная болезнь
+** Blizzard - метель
+** Catching on Fire - возгорание
+** Corrosive acid - едкая кислота
+** Duststorm - пыльная буря
+** Environment - окружающая среда
+** Falling Distance - высота падения
+** Falling Objects - падающие объекты
+** Fine dust - мелкая пыль
+** Flash Flood - ливневый паводок
+** Heavy smoke - густой дым
+** High Altitude - высокогорье
+** Hurricane - ураган
+** Hurricane-Force Wind - ураганный ветер
+** Lack of Air - недостаток воздуха
+** Light Wind - легкий ветер
+** Moderate Wind - умеренный ветер
+** Resistance - устойчивость
+** Severe Wind - шквальный ветер
+** Slow Suffocation - нехватка воздуха
+** Smoke - дым
+** Snowstorm - буран
+** Starvation - голод
+** Strong Wind - сильный ветер
+** Suffocation - асфикция, удушье
+** Thirst - жажда
+** Thunderstorm - гроза
+** Tornado - торнадо
+** Weather Hazards - стихийные бедствия
+** Windstorm - штормовой ветер
+* Feats - навыки, фичи:
+** Alertness - Бдительность
+** Ambidexterity – Расторопность, одинаковое владение обеими руками
+** Armor Proficiency (heavy) - Навык ношения тяжелой брони
+** Armor Proficiency (light) - Навык ношения легкой брони
+** Armor Proficiency (medium) - Навык ношения средней брони
+** Blind-Fight - Бой вслепую
+** Brew Potion - Изготовление зелий
+** Cleave – Рассечение, раскол
+** Combat Casting - Колдовство в бою
+** Combat Reflexes - Боевые рефлексы
+** Craft Magic Arms/Armor - Изготовление волшебного оружия/доспехов
+** Craft Rod - Изготовление жезлов
+** Craft Staff - Изготовление посохов
+** Craft Wand - Изготовление волшебных палочек
+** Craft Wondrous Item - Изготовление чудесных предметов
+** Deflect Arrows – Отражение стрел
+** Dodge – Уклонение
+** Empower Spell - Усилить заклинание
+** Endurance – Выносливость
+** Enlarge Spell - Увеличить дальность заклинания
+** Extend Spell - Продлить заклинание
+** Extra Turning - Дополнительное изгнание (нежити)
+** Exotic Weapon Proficiency - Владение экзотическим оружием
+** Expertise - Боевой опыт
+** Far Shot – Дальняя стрельба (Навык дальней стрельбы)
+** Flyby Attack - Атака с лету
+** Forge Ring - Ковка колец
+** Great Cleave - Исключительное рассечение
+** Great Fortitude - Исключительная стойкость
+** Heighten Spell - Повысить уровень заклинания
+** Improved Bull Rush - Улучшенный натиск
+** Improved Critical - Улучшенный критический удар
+** Improved Disarm - Улучшенное обезвреживание
+** Improved Initiative - Улучшенная инициатива
+** Improved Trip - Улучшенная подсечка
+** Improved Two-Weapon Fighting - Улучшенный бой с оружием в обеих руках
+** Improved Unarmed Strike - Улучшенный невооруженный удар
+** Iron Will - Железная воля
+** Leadership - Лидерство
+** Lightning Reflexes - Молниеносная реакция
+** Martial Weapon Proficiency - Владение воинским оружием
+** Maximize Spell - Максимизировать эффект заклинания
+** Mobility - Подвижность
+** Mounted Archery - Верховая стрельба
+** Mounted Combat - Верховой бой
+** Multiattack - Мультиатака
+** Multidexterity - Мультидекстрия, мультиловкость
+** Multiweapon Fighting - Бой с оружием в каждой руке
+** Point Blank Shot – Выстрел в упор
+** Precise Shot - Точный выстрел
+** Power Attack - Могучий удар
+** Quick Draw - Выхватить оружие
+** Quicken Spell - Ускоренное заклинание
+** Rapid Shot - Повторный выстрел
+** Ride-By Attack - Верховой прорыв
+** Run – Бег
+** Scribe Scroll - Написать свиток
+** Shield Proficiency - Владение щитом
+** Shot on the Run – Стрельба на бегу
+** Silent Spell - Безмолвное заклинание
+** Simple Weapon Proficiency - Владение простым оружием
+** Skill Focus – Концентрация на умении
+** Spell Penetration - Проникающее заклинание
+** Spell Focus – Концентрация на заклинании
+** Spell Mastery - Мастерство в заклинаниях
+** Spirited Charge – Верховая атака
+** Spring Attack - Атака с ходу
+** Still Spell - Неподвижное заклинание
+** Stunning Fist - Оглушающий кулак
+** Sunder – Разоружение
+** Toughness - Крепость
+** Track - Выслеживание
+** Trample – Атака растаптыванием (верховым животным) - нужное вписать :)
+** Two-Weapon Fighting - Бой с оружием в обеих руках
+** Weapon Finesse – Фехтование легким оружием
+** Weapon Focus – Концентрация на оружии
+** Weapon Specialization - Специализация в оружии
+** Whirlwind Attack - Ураганная атака
+* Follower - последователь
+* Gaze attack - атака взглядом
+* Healing – лечение
+* Health – здоровье
+* Henchmen - приверженец
+* Hireling - наемник
+* Hit point – хиты, очки жизни
+* Hit point damage – потеря хитов
+* Initiative - инициатива
+* Level - уровень персонажа или заклинания
+* Light activity - незначительная деятельность; небольшая активность (деятельность)
+* Luck – удача
+* Magic resistance - невосприимчивость к магии
+* Magical defense adjustment - сопротивляемость (враждебной) магии
+* Magical healing – лечение магией
+* Magical power – магическая сила
+* Massive damage – сильные повреждения
+* Maximum press - максимальный вес
+* Melee attack - атака вплотную
+* Mind-influencing effects - эффекты, воздействующие на разум:
+** Charm – очарование
+** Compulsion – принуждение
+** Morale effect – воздействие на мораль
+** Phantasm – фантазм, иллюзия
+** Pattern – гипнотический узор
+* Monster - монстр, чудовище
+* Morale penalty – штраф к морали
+* Move-equivalent action – действие, эквивалентное перемещению
+* Mythos - вера, верования
+* Natural healing – естественное лечение, самовосстановление
+* Negative hit points – отрицательные хиты
+* Negative level – отрицательный уровень
+* Nonmagical attack – немагическая атака
+* Normal damage – средние повреждения
+* NPC - персонажи мастера
+* NPC classes - классы персонажей мастера
+* Opposition school - противоположная школа магии
+* Partial action – незначительное действие; несложное действие; неполное действие
+* Penalty – штраф
+* Percentile dice-процентная кость, процентник, стогранник
+* Planes of existance - планы (слои существования)
+** Astral plane - астральный слой
+** Etheral plane - эфирный слой
+** Inner planes - внутренние слои
+** Outher Planes - внешние слои
+** Prime Material plane - Первичный материальный слой
+* Player - игрок
+* Poison save - сопротивляемость к ядам
+* Power of a spell (spellpower) – сила заклинания
+* Ranged attack - дистанционная атака
+* Races - расы
+** Dwarf - дварф
+** Elf - эльф
+** Gnome - гном (карлик)
+** Half-elf - полуэльф, эльфинит
+** Halfling - полурослик
+* Recovery – восстановление
+* Regeneration - регенерация
+* Resurrection survival - успешность воскрешения
+* Reversible - обратимое заклинание
+* Round - раунд
+* Saivng throw - спас.бросок
+** Fortitude saving throw (Fortitude save) – спас.бросок на стойкость
+** Reflex saving throw (Reflex save) – спас.бросок на реакцию
+** Will saving throw (Will save) – спас.бросок на силу воли
+* Saving throw difficulty class – уровень сложности спас.броска
+* Saving throw roll – результат спас.броска
+* Schools of magic - школы магии
+** Abjuration - Ограждение, отречение (Защита)
+** Conjuration - Вызов
+** Divination - Прорицание
+** Enchantment – Чары, зачарование
+** Evocation – Созидание, воплощение
+** Illusion - Иллюзия
+** Necromancy - Некромантия
+** Transmutation – Превращение
+* Skill check – проверка умения
+* Spell - заклинание
+* Spell immunity - невосприимчивость к определенному заклинанию
+* Spell slot - слот заклинания
+* Special bonus – специальный бонус
+* Spell-like efffects – псевдомагические эффекты
+* Spellcasting – чтение заклинаний
+* Spesialist - маг-специалист
+* Sphere of influence - сфера влияния (божества)
+* Standard action – стандартное действие
+* Strenuous activity – активная деятельность
+* Subdual damage - стрессовый урон
+* Temporary hit points – временные хиты
+* Turn - ход
+* Turn undead - изгнание нежити
+* Unaided character – не леченый персонаж
+* Undead - нежить, мертвяк
+* Weapon - оружие
+** Tiny weapon – миниатюрное оружие
+** Small weapon – маленькое оружие
+** Medium-size weapon – среднее оружие
+** Large weapon – большое оружие
+** Light weapon – легкое оружие
+** Оne-handed weapon – одноручное оружие
+** Two-handed weapon – двуручное оружие
+** Too large to use weapon – громоздкое оружие
+** Melee weapon – оружие ближнего боя
+** Ranged weapon – метательное оружие:
+*** Projectile weapon – стрелковое оружие
+*** Thrown weapon – метательное оружие
+*** Improvised thrown weapon – импровизированное метательное оружие
+** Unarmed strike - невооруженный удар
+** Magical weapon – магическое оружие; зачарованное оружие
+** Simple weapon – простое оружие
+** Martial weapon – воинское оружие
+** Exotic weapon – экзотическое оружие
+*** Renaissance weapon – оружие Ренессанса
+*** Asian weapon – азиатское оружие
+*** Modern weapon – современное оружие
+*** Futuristic weapon - футуристическое оружие
+** Siege weapon – осадное орудие
+** Exotic weapon proficiency - владение экзотическим оружием
+** Martial weapon proficiency – владение воинским оружием
+** Weapon damage – повреждения оружием
+** Weapon damage roll – результат броска на повреждения оружием
+** Weapon proficiency – владение оружием
+** Weapon specialization – специализация в оружии
+* Weapon - виды оружия
+** Arrows - стрелы
+** Axe, Throwing – метательный топорик
+** Axe, Orc Double – двойной орочий топор
+** Blowgun – духовое ружье
+** Needles, Blowgun – иглы для духового ружья
+** Bolts – арбалетные заряды
+** Bullets, Sling – снаряды для пращи
+** Chain, Spiked – цепь с шипами
+** Club - дубина
+** Crossbow, Hand – одноручный арбалет
+** Crossbow, Heavy - тяжелый арбалет
+** Crossbow, Light – легкий арбалет
+** Crossbow, Repeating – многозарядный арбалет
+** Dagger - кинжал
+** Dagger, Punching – катар, ударный кинжал (кинжал-кастет)
+** Dart - дротик
+** Energy Pack – энергетический блок
+** Falchion – фальшион
+** Flail, Dire – двухсторонний кистень
+** Flail, Heavy – тяжелый кистень
+** Flail, Light – легкий кистень
+** Gauntlet – латная рукавица
+** Gauntlet, Spiked – шипованная латная рукавица
+** Glaive - глефа
+** Greatclub - палица
+** Guisarme - гизарма
+** Gunpowder - порох
+** Halberd - алебарда
+** Halfspear – полукопье
+** Hammer, Light – молот
+** Hammer, Gnome Hooked – гномий клевец
+** Javelin – сулица
+** Kama - кама
+** Katana - катана
+** Kukri - кукри
+** Kusari-Gama – кусари-гама
+** Lance, Heavy – тяжелое рыцарское копье
+** Lance, Light – легкое рыцарское копье
+** Longspear - рогатина
+** Sap - гирька
+** Scimitar - сабля
+** Scythe - боевая коса
+** Shortbow - короткий лук
+** Shortbow, Composite - короткий составной лук
+** Shortspear - короткое копье
+** Shuriken - сюрикен
+** Siangham - сиангам
+** Siangham, halfling - сиангам полуросликов
+** Sickle - боевой серп
+** Sling - праща
+** Sword, Bastard - полуторный меч
+** Sword, Short - короткий меч
+** Sword, Two-Bladed - двухлезвийный меч
+** Trident - трезубец
+** Urgrosh - ургрош
+** Urgrosh, Dwarven - дварфийский ургош
+** Wakizashi - вакизаши
+** Waraxe, Dwarven - дварфийская секира
+** Warhammer - боевой молот
+** Whip - хлыст
