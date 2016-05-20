@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = dnd, игры, ролевки
+order = 2
+creationdatetime = 2016-05-19 13:28:29.301000
+datetime = 2016-05-19 13:28:51.025000
+cursorposition = 42
+
+[wiki]
+md5_hash = db09de98347a789b16b41989c948a3a3
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+
