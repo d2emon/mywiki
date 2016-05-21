@@ -1,11 +1,6 @@
 [General]
 type = wiki
 tags = юмор, dnd, ролевки
-<<<<<<< HEAD
-order = 30
-=======
-order = 31
->>>>>>> master
 datetime = 2015-12-24 09:18:46.316000
 cursorposition = 0
 
@@ -14,11 +9,4 @@ pageindex = 1
 
 [Tree]
 expand = False
-
-[wiki]
-<<<<<<< HEAD
-md5_hash = dca74e335067539730f8b8825d7ecc61
-=======
-md5_hash = 9478c70b99490b4c62337fd6b4e7e000
->>>>>>> master
 
