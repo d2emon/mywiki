@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = кино, фентези, хоррор, стимпанк, постапокал, космоопера, киберпанк
+order = 7
+creationdatetime = 2016-05-23 13:03:35.525000
+datetime = 2016-05-23 13:04:02.244000
+cursorposition = 46
+
+[wiki]
+md5_hash = e3deda4b5d1a2e742ad44f186c4e3f0d
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+
