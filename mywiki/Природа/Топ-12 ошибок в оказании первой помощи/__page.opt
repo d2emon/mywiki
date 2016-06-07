@@ -1,12 +1,16 @@
 [General]
 type = wiki
 tags = 
-order = 42
+order = 12
 datetime = 2012-12-20 13:22:36.125000
+cursorposition = 0
 
 [Misc]
 pageindex = 1
 
 [wiki]
-md5_hash = 55f182543e3f1c31b9867b4f0f5277dd
+md5_hash = b0e7b11dc68fb2f4c55b8962b3de2d3b
+
+[Tree]
+expand = False
 

@@ -3,10 +3,14 @@ type = wiki
 tags = lurkmore
 order = 34
 datetime = 2013-04-02 17:55:34.914000
+cursorposition = 0
 
 [Misc]
 pageindex = 1
 
 [Tree]
-expand = True
+expand = False
+
+[wiki]
+md5_hash = c2b502f5ef6e6259dd7d8358af3cf605
 
