@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = экология
+order = 5
+creationdatetime = 2016-06-07 15:26:09.193186
+datetime = 2016-06-07 15:30:40.218978
+cursorposition = 31
+
+[wiki]
+md5_hash = 1173618f7ef60d45df1a2f574cb9c235
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+
