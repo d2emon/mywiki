@@ -1,7 +1,7 @@
 [General]
 type = wiki
 tags = книги
-order = 0
+order = 1
 datetime = 2015-12-02 21:48:53.969000
 cursorposition = 0
 
@@ -12,5 +12,5 @@ pageindex = 1
 expand = False
 
 [wiki]
-md5_hash = 97ef1616237d327e57d5356b0794c8ff
+md5_hash = 388f8f474e8b878e9090fa22fed11eb0
 
