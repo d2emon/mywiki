@@ -1,0 +1,30 @@
+!! Systema Naturae
+
+!!! Растения
+
+||
+||Класс	||Название 		||Русский перевод названия								||Особенности цветков, дополнительная информация	||Примеры растений	||
+||I			||Monandriae		||Однотычинковые 				Одномужие							||Цветки с одной тычинкой				Три порядка (по числу пестиков): Monogynia, Digynia, Trigynia						||Канна, Куркума						||
+||II		||Diandriae			||Двутычинковые 					Двумужие								||Цветки с двумя тычинками			Три порядка (по числу пестиков): Monogynia, Digynia, Trigynia						||Сирень, Маслина						||
+||III		||Triandriae			||Трёхтычинковые 				Тримужие								||Цветки с тремя тычинками			Три порядка (по числу пестиков): Monogynia, Digynia, Trigynia						||Камыш, Пшеница					||
+||IV		||Tetrandriae		||Четырёхтычинковые 			Четыремужие					||Цветки с четырьмя тычинками	Четыре порядка (по числу пестиков): Monogynia, Digynia, Trigynia, Tetragynia	||Подорожник, Падуб				||
+||V		||Pentandriae		||Пятитычинковые 				Пятимужие							||Цветки с пятью тычинками			Семь порядков (по числу пестиков): Monogynia, Digynia, Trigynia, Tetragynia, Pentagynia, Decagynia, Polygynia	||Крушина, Свёкла, Зонтичные	||
+||VI		||Hexandriae		||Шеститычинковые				Шестимужие						||Цветки с шестью тычинками		Шесть порядков (по числу пестиков): Monogynia, Digynia, Trigynia, Tetragynia, Hexagynia, Polygynia					||Нарцисс, Рис	||
+||VII		||Heptandriae		||Семитычинковые 				Седмимужие						||Цветки с семью тычинками			Четыре порядка (по числу пестиков): Monogynia, Digynia, Tetragynia, Heptagynia	||Седмичник								||
+||VIII		||Octandriae		||Восьмитычинковые 			Осьмимужие						||Цветки с восьмью тычинками		Четыре порядка (по числу пестиков): Monogynia, Digynia, Trigynia, Tetragynia		||Вакциниум, Гречиха	||
+||IX		||Enneandriae		||Девятитычинковые 			Девятимужие					||Цветки с девятью тычинками		Три порядка (по числу пестиков): Monogynia, Digynia, Hexagynia						||Лавр, Ревень				||
+||X		||Decandriae		||Десятитычинковые 			Десятимужие																	||Цветки с десятью тычинками		Шесть порядков (по числу пестиков): Monogynia, Digynia, Trigynia, Tetragynia, , Pentagynia, Decagynia							||Камнеломка, Мальпигия	||
+||XI		||Dodecandriae	||Двенадцатитычинковые	Двенадцатимужие	||Цветки с числом тычинок от 12 до 19	Семь порядков (по числу пестиков): Monogynia, Digynia, Trigynia, Tetragynia, Pentagynia, Hexagynia, Dodecagynia	||Копытень, Молочай	||
+||XII		||Icosandriae		||Двадцатитычинковые 	Двадцатимужие																	||Число тычинок — 20 и более, при этом они прикреплены к чашечке	Пять порядков (по числу пестиков): Monogynia, Digynia, Trigynia, Pentagynia, Polygynia	||Слива, Шиповник	||
+||XIII		||Poliandriae		||Многотычинковые 			Многомужие																			||Тычинки многочисленные, прикреплены к цветоложу	Семь порядков (по числу пестиков): Monogynia, Digynia, Trigynia, Tetragynia, Pentagynia, Hexagynia, Polygynia	||Лютик, Мак	||
+||XIV	||Didynamiae		||Двусильные 					Двоесилие																				||Две тычинки длиннее остальных				Три порядка: Gymnospermia, Angiospermia, Polypetala											||Норичниковые, Яснотковые	||
+||XV		||Tetradynamiae	||Четырёхсильные 			Четыресилие																			||Четыре тычинки длиннее остальных			Два порядка: Siliculosa, Siliquosa																				||Капустные								||
+||XVI	||Monodelphiae	||Однобратственные 		Однобратство																		||Тычинки срослись в один пучок (трубку)	Три порядка: Pentandria, Decandria, Polyandria															||Камелия, Страстоцвет			||
+||XVII	||Diadelphiae		||Двубратственные 			Двоебратство	 																	||Тычинки срослись в два пучка						Три порядка: Hexandria, Octandria, Decandria															||Дымянка, Фасоль					||
+||XVIII	||Polyadelphiae	||Многобратственные 		Многобратство																		||Тычинки срослись в несколько пучков		Три порядка: Pentandria, Icosandria, Polyandria															||Зверобой, Цитрус					||
+||XIX	||Syngenesiae		||Сростнопыльниковые	Сродство																				||Пыльники срослись, а нити тычинок остались свободными	Пять порядков: Polygamia aequalis, Polygamia superflua, Polygamia frustranea, Polygamia necessaria, Monogamia	||Астровые	||
+||XX		||Gynandriae		||Сростнопыльникопестичные	Сростнопестичнотычинковые	Женомужие		||Нити тычинок срослись со столбиком пестика	Семь порядков: Diandria, Triandria, Tetrandia, Pentandria, Hexandria, Decandria, Polyandria	||Кирказон, Ятрышник	||
+||XXI	||Monoeciae		||Однодомные 								Однодомство															||Цветки однополые, при этом мужские и женские цветки находятся на одном и том же растении	Девять порядков: Monandria, Triandria, Tetrandia, Pentandria, Hexandria, Polyandria, Monadelphia, Polyadelphia, Syngenesia																		||Берёза, Дуб	||
+||XXII	||Dioeciae			||Двудомные									Двоедомство																||Цветки однополые, при этом мужские и женские цветки находятся на разных растениях 13 порядков: Didandria, Triandria, Tetrandia, Pentandria, Hexandria, Octandria, Enneandria, Decandria, Icosandria, Polyandria, Monadelphia, Syngenesia, Gynandria										||Ива, Тополь	||
+||XXIII	||Polygamiae		||Многобрачные							Многобрачие																||У растения имеются как обоеполые, так и однополые цветки	Три порядка: Monoecia, Dioecia, Trioecia							||Хурма, Ясень	||
+||XXIV	||Cryptogamae	||Тайнобрачные								Тайнобрачие																||Отсутствие цветков	Шесть порядков: Plantae, Filices, Musci, Algae, Fungi, Lithophyta									||Водоросли, Высшие споровые растения, Грибы	||
