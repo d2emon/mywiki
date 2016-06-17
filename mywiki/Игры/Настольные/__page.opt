@@ -2,11 +2,8 @@
 type = wiki
 tags = игры
 order = 7
-datetime = 2015-12-02 21:34:26.599000
-cursorposition = 0
-
-[wiki]
-md5_hash = 54ae24696d52c339acf494a25d882e7a
+datetime = 2016-06-12 17:15:33.817000
+cursorposition = 28590
 
 [Tree]
 expand = False
