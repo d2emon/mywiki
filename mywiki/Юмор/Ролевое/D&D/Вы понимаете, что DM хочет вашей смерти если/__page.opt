@@ -1,10 +1,10 @@
 [General]
 type = wiki
 tags = dnd, ролевки, юмор
-order = 6
+order = 5
 creationdatetime = 2016-04-03 21:19:12.436000
 datetime = 2016-04-03 21:19:42.552000
-cursorposition = 5001
+cursorposition = 4999
 
 [wiki]
 md5_hash = b7be07c5b9fbf004bd95cc12be32a229

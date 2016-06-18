@@ -10,5 +10,8 @@ cursorposition = 35
 pageindex = 1
 
 [Tree]
-expand = False
+expand = True
+
+[wiki]
+md5_hash = 29fe94f22417d82a54d8f0f30e27da14
 
