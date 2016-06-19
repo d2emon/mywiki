@@ -1,11 +1,14 @@
 [General]
 type = wiki
-tags = игры, ролевки
+tags = ролевки, игры, фентези
 order = 13
 creationdatetime = 2016-05-19 10:03:06.496977
-datetime = 2016-05-19 10:03:06.850411
-cursorposition = 0
+datetime = 2016-06-19 23:53:15.771000
+cursorposition = 5262
 
 [wiki]
-md5_hash = acbeef71a37d4a117743f0b565a2e5ca
+md5_hash = ba1aeff9c0c6db81e841655dfeda8b36
+
+[Misc]
+pageindex = 1
 
