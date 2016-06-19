@@ -1,11 +1,14 @@
 [General]
 type = wiki
-tags = игры, ролевки
-order = 20
+tags = ролевки, мистика, игры, онеме
+order = 19
 creationdatetime = 2016-05-19 10:05:05.361348
-datetime = 2016-05-19 10:05:05.768387
-cursorposition = 0
+datetime = 2016-06-20 00:15:59.256000
+cursorposition = 4168
 
 [wiki]
-md5_hash = 533679b3a5f2609e6fa2036ec59f067d
+md5_hash = 0973ea922c4313156a63a575d0faeb84
+
+[Misc]
+pageindex = 1
 
