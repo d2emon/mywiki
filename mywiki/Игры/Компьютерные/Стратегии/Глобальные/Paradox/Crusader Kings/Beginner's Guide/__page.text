@@ -1,0 +1,107 @@
+!! Beginner's Guide
+
+Crusader Kings is a strategy game set in the medieval times of feudal Europe. The game covers an area stretching from Iceland in the west to the Urals and Persia in the east; from the northern wilderness of Scandinavia in the north to Northern Africa and Arabia in the south.
+
+Its focus is on feudal Europe, and the dynasties that ruled it. Playable factions are therefore limited to Christian feudal lords. This means that you cannot play Muslim or Pagan rulers, nor is it possible to play merchant republics or military orders or ecclesiastical rulers.
+
+The goal is to build a thriving, powerful dynasty that would dominate the European world. This can be achieved through strategic marriages, assassinations, or war.
+
+!!! The Dynasty
+
+As a ruler, you are the head of a dynasty, and your fate as a player stands and falls with your kin. If your dynasty loses power or dies out, you lose the game. One of your most important tasks as a ruler is to secure your inheritance for your kin, and ensure that you have family to pass the inheritance to.
+In CK, the dynasty is known by the last name of the characters. An example: the character Robert de Hauteville, Duke of Apulia, can be read as Robert of the de Hauteville dynasty.
+
+Any action you take, especially those involving the raising of children, will result in your characters acquiring certain character traits. Be careful, many traits have positive AND negative effects - and many stick with your characters for life.
+
+!!! Inheritance
+
+When a ruler dies, his titles pass to a new character. If this character is of a different dynasty from your ruler, you might lose the game. It is therefore quite important to think ahead and secure an heir from within your own dynasty. Due to the different types of succession law, there are different things to look out for, as well as different ways of getting a new heir.
+
+Note that player control stays with the dynasty, not the titles. If your heir has a different family name, you will lose control of those titles, and either be transferred to another ruler of your family or, if there is none, get a "game over" message.
+
+!!! Prestige and piety
+
+Every ruler has, in addition to his gold coffers, a ranking of prestige and piety. These are very important for your ruler. When a ruler dies, his heir inherits the gold of his predecessor, but none of the prestige or piety. He does however inherit a certain amount of his predecessor's bad reputation.
+
+!!! Reputation
+
+Most of the things you do in life have consequences, so also in CK. Some actions are more frowned upon than others, and will taint your reputation. Reputation is important, because this is one of the ways that other characters judge your ruler. If your reputation becomes too bad your vassals might not deem you worthy of their loyalty. Piety improves reputation.
+
+!!! Titles
+
+You can create titles provided that you control 2/3 of the provinces that form the region to be controlled by the title you wish to create. For instance, if you wish to become the Duke of Brittany, you or your vassals have to control 4 of 6 provinces. The option of creating a title opens up when you control at least one province associated to that title.
+
+When you manage to get enough land to create the title you will have to pay 100 gold in order to have it created. In return, you will gain 100 prestige.
+
+Should your new title be of higher rank than the previous (for example a Count becoming a Duke or a Duke becoming King) your main character will move to his new capital.
+
+It is easier to gain land and therefore create titles by conquering lands that are under Muslim control. Next you have Christian lands that are ruled by vassals of a different king than yours. Though difficult, it is still possible to do so militarily. Though technically possible, it is not advised to take lands from vassals of your king by force. For those cases, marrying into their line and moving your family member up on the succession tree is the best choice.
+
+!!! Warfare
+
+There are two types of warfare in CK; wars against Christians and wars against non-Christians (sometimes called Crusades).
+
+!!!! The cost of war
+
+Whenever you mobilize your forces, be expected to pay for that. Your income will drop proportionally to the number of troops you have mobilized. This is true even if you do so on behalf of your liege and thus have no control of where your troops go and how long they will stay active. You can thus become very poor very quickly. If you bring your army maintenance down to zero, no one pays for the army; it suffers faster from the effects of attrition.
+
+Requests to mobilize your forces tend to be more common for Dukes than for Counts, and you are given the choice to obey your liege or not. Rejecting a call to arms, however, will lower your loyalty. Most of all, your liege gets a claim against your primary title. You might suffer the consequences later for refusing to obey your feudal duty.
+
+!!!! Wars among Christians
+
+In wars against other Christian rulers, you must have claims upon one or more of their titles in order to declare war (see grabbing and usurping titles). You may also join the wars of your vassals and allies. Warfare includes maneuvering armies into their provinces, sieging their castles, and eventually taking control of their provinces. You will then negotiate a peace treaty, at which time titles can be transferred and tribute paid. Note two things here: vassals will transfer allegiance when the relevant title is transferred, and to actually take ownership of provinces you have to take their Count titles. A liege gets a claim on all titles held by a vassal who had declared independence or war against him. However, he does not get a claim on titles held by a vassal who had transferred allegiance to a new liege.
+
+!!!! Wars against Non-Christians
+
+In wars against non-Christians, things are a bit simpler. Claims upon their titles are not required. Successfully capturing a non-Christian province through siege will give you a claim on the Count title of the captured province. It is not possible to grab or usurp titles held by non-Christians.
+
+!!!! Wars against Mongols
+
+Mongol is the master culture of Crusader Kings. Mongols have the bonus of unlimited demesne, and tens of thousands of invading troop reinforcements unaffected by attrition. They consider everyone as a religious enemy, wage wars without claims, annex and lose land without peace negotiations. When annexing land, captured provinces are incorporated into the demesne of the Mongol ruler. When losing land, captured provinces become the personal property of the enemy commander. If he is a ruler already, this province is added to his demesne; if not, he will become Count of that province. It is important to realize that your demesne armies may be commanded by your court officials (marshal, etcetera) and this may cause you to lose them, as they prefer to become feudal lords instead of court officials. To end such a war, you may either completely destroy the enemy or negotiate peace.
+
+The titles King of Golden Horde and Il-Khanat bestows Mongol bonuses to any non-Mongolian Ruler.
+
+!!! Technology: Research and spread
+
+In CK, technology is tied to the individual provinces. This means that some provinces can be more developed than others. The technology tree in CK is divided in three main branches of advances, with a number of sub-categories. Each of the sub-categories is divided into five levels.
+
+Advances in a province are made through either research or spread. In the advances screen, you can choose which of the types to focus on. This decides the research done in your capital. Demesne provinces other than your capital will only get advances through spread. This is when a province gains an advance from a neighboring province.
+
+!!! Things to look out for in the beginning
+
+There are a few things that you, as a beginner, would be well advised to keep an eye on from the start of your game:
+
+# Do you have an heir, and is he from your dynasty?
+# Keep an eye on your reputation
+# Keep an eye on your vassals' loyalty
+
+!!! The heir
+
+When you start a game, the first thing you should do is to check out the status of your ruler. Is he married? Any children? Any heirs? This is the key point to survival: when your ruler dies, and that can happen when you least expect, his titles will go to the heir. If he is from a different dynasty you will lose the game!
+
+Check your realm's law of succession. This will give you an idea about how the heirs are ranked. If the current heir is not from your dynasty you should do anything to fix that before your ruler dies. The possible actions depends on your situation:
+
+!!!! I have Elective Law, and the heir is not from my dynasty
+
+Under Elective Law the heir is whoever happens to be the strongest vassal in the realm at the point of death. If you have no vassals, the heir is the strongest courtier. The only way to secure the inheritance for, e.g., your son is to prop him up so he becomes second in power only to your ruler. You do this by granting him land and titles. Check the list of heirs from time to time to make sure you get no surprises...
+
+!!!!! The king is married but childless
+
+The outcome here depends on the age of the ruler, but mostly on his wife. Fertility decreases with age, and an older spouse (35+) is unlikely to provide any heir at all. One alternative is to have her killed. It might be considered "gamey", but you can also look on it as the in-game equivalent of a dissolved marriage. There are many examples of rulers abandoning infertile wives... If you have other possible heirs, like a capable nephew, you can also consider maneuvering them into position, if need be, by changing the law of succession.
+
+!!!!! The king is unmarried and childless
+
+The answer is simple: get a wife, preferably someone young. Look out for the prospective bride's character traits though. A lustful wench is good for producing heirs, while a chaste woman is less likely to be very fertile. You should also look out for illness and deformations as genetic traits can be passed along to children.
+
+!!! Reputation
+
+Your reputation is listed in the court sidebar. This is very important for many reasons:
+
+* If your reputation is too bad your vassals will revolt
+* It affects the chance of success of your diplomatic attempts
+
+!!! Loyalty
+
+If your ruler has vassals, you can check their loyalty by accessing their character screen. This is important, as a vassal with low loyalty is likely to rebel against your ruler or change his allegiance to a different ruler. When you hover your mouse pointer over the loyalty value you will get a pop-up window giving details of how the loyalty changes, and why. If the loyalty is dropping you can pin-point why and attempt to fix it. It can be something as easy as disbanding a vassal regiment, or an impossible case of ruined reputation.
+
+In most cases you should be able to rectify the situation, or, if not, buy the troublesome vassal's loyalty with grants of land or money. If you are not taking proper notice at an early point, you might end up in a quagmire though. If you come to a point where all your vassals rebel against you, it might seem like a good idea to crush them and take all their land... Don't do it! Annexing land decreases your reputation that again reduces your other vassals loyalty. If too many vassals take up arms against you it is most likely to be because of bad reputation, and annexing them is a sure way to get the rest of the vassals involved too. Once they are all annexed, any vassal you release will drop in loyalty because of your bad reputation, and you're on a new civil war. The proper way of dealing with this is to humble yourself, drop the claims you have against your vassals, and beg them to become your vassal once more.
