@@ -7,11 +7,11 @@ datetime = 2016-07-11 17:38:18.552688
 cursorposition = 45
 
 [wiki]
-md5_hash = b98fec5d4360641762226d32da5ac881
+md5_hash = a06865be7275abbc23a0cf93c08f63cf
 
 [Misc]
 pageindex = 1
 
 [Tree]
-expand = True
+expand = False
 
