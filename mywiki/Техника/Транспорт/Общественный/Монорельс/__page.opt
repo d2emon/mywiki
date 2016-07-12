@@ -1,0 +1,16 @@
+[General]
+type = wiki
+tags = wikipedia
+order = 7
+datetime = 2013-04-02 17:58:59.242000
+cursorposition = 0
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+
+[wiki]
+md5_hash = 3dd44ae65d031db70ded6692fb5a43a9
+
