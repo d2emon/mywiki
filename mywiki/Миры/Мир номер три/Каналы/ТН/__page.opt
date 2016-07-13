@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = 
+order = 0
+creationdatetime = 2016-07-11 17:37:55.080567
+datetime = 2016-07-11 17:38:18.552688
+cursorposition = 45
+
+[wiki]
+md5_hash = a06865be7275abbc23a0cf93c08f63cf
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+
