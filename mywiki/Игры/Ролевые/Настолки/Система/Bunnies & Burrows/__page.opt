@@ -1,0 +1,14 @@
+[General]
+type = wiki
+tags = wikipedia, игры, ролевки, сказки
+order = 2
+creationdatetime = 2016-06-19 21:25:08.445000
+datetime = 2016-06-19 21:29:10.831000
+cursorposition = 2936
+
+[wiki]
+md5_hash = b4cfaa248766dc4459066cd1f85104cf
+
+[Misc]
+pageindex = 1
+

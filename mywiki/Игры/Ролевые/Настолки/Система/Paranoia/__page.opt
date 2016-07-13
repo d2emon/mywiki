@@ -1,13 +1,13 @@
 [General]
 type = wiki
 tags = антиутопия, киберпанк, wikipedia, игры, ролевки
-order = 6
+order = 12
 creationdatetime = 2016-03-06 21:54:03.657000
 datetime = 2016-03-06 22:22:16.563000
 cursorposition = 30083
 
 [wiki]
-md5_hash = f21d31a5523b8641cfb5246c9ac515d5
+md5_hash = 49d275bf895f54b2299fdf0f53f23747
 
 [Misc]
 pageindex = 1

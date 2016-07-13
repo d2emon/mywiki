@@ -1,7 +1,7 @@
 [General]
 type = wiki
 tags = ролевки, пираты, игры
-order = 10
+order = 16
 datetime = 2016-03-06 22:02:25.700000
 cursorposition = 0
 
@@ -9,5 +9,5 @@ cursorposition = 0
 pageindex = 1
 
 [wiki]
-md5_hash = 6c81f9108b5889475307dd44abeccd49
+md5_hash = 3f3013bb702575c250ac09f57c1c8e06
 

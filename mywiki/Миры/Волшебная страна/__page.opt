@@ -1,5 +1,14 @@
-﻿[General]
-
+[General]
 type = wiki
-
 tags = wikipedia, сказки, фентези
+order = 14
+creationdatetime = 2016-07-12 08:53:58.299240
+datetime = 2016-07-12 08:54:38.724280
+cursorposition = 0
+
+[wiki]
+md5_hash = 5fa6dc39cc691a6f76897c6fa116ed2c
+
+[Misc]
+pageindex = 1
+
