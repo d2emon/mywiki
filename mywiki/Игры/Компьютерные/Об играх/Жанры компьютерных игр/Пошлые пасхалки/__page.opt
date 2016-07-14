@@ -1,0 +1,14 @@
+[General]
+type = wiki
+tags = wikipedia, игры, юмор
+order = 7
+creationdatetime = 2016-07-13 12:18:05.948000
+datetime = 2016-07-13 12:29:57.258000
+cursorposition = 203
+
+[wiki]
+md5_hash = 31d852859645e53edfbd6a639c2e04ac
+
+[Misc]
+pageindex = 1
+
