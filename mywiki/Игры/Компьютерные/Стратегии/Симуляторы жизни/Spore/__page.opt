@@ -1,13 +1,13 @@
 [General]
 type = wiki
 tags = игры, экология, история
-order = 0
+order = 2
 creationdatetime = 2016-03-31 17:31:17.329425
 datetime = 2016-03-31 18:25:20.138854
 cursorposition = 39606
 
 [wiki]
-md5_hash = 79af5d4c1c15c8219a9c560d57216d4f
+md5_hash = 6e22461eb1f3ad38d6e16e2b3fe1039e
 
 [Misc]
 pageindex = 1
