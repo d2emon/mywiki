@@ -1,11 +1,12 @@
 [General]
 type = wiki
-tags = карманные, зомби
-order = 6
-datetime = 2013-04-02 16:47:44.509000
+tags = игры, карманные, зомби
+order = 9
+datetime = 2016-07-24 15:58:11.520000
+cursorposition = 0
 
 [wiki]
-md5_hash = 14dec666ea927e2146b6b49c20dbef55
+md5_hash = 48d8fcef6126a73b076c1f7e49dcfb84
 
 [Misc]
 pageindex = 1
