@@ -2,8 +2,8 @@
 type = wiki
 tags = цитаты
 order = 12
-datetime = 2016-05-15 23:03:24.472000
-cursorposition = 0
+datetime = 2016-07-24 04:21:23.478000
+cursorposition = 2772
 
 [Misc]
 pageindex = 1
@@ -12,5 +12,5 @@ pageindex = 1
 expand = False
 
 [wiki]
-md5_hash = 4d9c5bceeea9444b42fd1e383053206f
+md5_hash = 16ac0ec20d903b6308260646e3867121
 
