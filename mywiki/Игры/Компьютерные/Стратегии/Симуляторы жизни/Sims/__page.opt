@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = игры
+order = 1
+creationdatetime = 2016-07-25 23:13:43.000000
+datetime = 2016-07-25 23:38:48.833000
+cursorposition = 40
+
+[wiki]
+md5_hash = 4fd15c908a0471f91a46d6a0115c8423
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+
