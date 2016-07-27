@@ -1,11 +1,12 @@
 [General]
 type = wiki
-tags = космоопера, dwarf star
-order = 5
-datetime = 2014-02-11 11:34:34.586000
+tags = космоопера, dwarf star, игры
+order = 7
+datetime = 2016-07-24 15:57:36.045000
+cursorposition = 0
 
 [wiki]
-md5_hash = 7b6dcb040ed3ecde72d864c0485c284e
+md5_hash = 0508e5e25fc8d04e9c18f07f99b19f8c
 
 [Misc]
 pageindex = 1

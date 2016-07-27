@@ -1,12 +1,13 @@
 [General]
 type = wiki
-tags = детектив, викторианская эпоха
-order = 4
-datetime = 2014-02-11 11:34:22.868000
+tags = детектив, игры, викторианская эпоха
+order = 6
+datetime = 2016-07-24 15:57:28.390000
+cursorposition = 0
 
 [Misc]
 pageindex = 1
 
 [wiki]
-md5_hash = 9753420f995d9232ccb933aced739490
+md5_hash = 4841f84a01c328e49ccb338dd84fd378
 
