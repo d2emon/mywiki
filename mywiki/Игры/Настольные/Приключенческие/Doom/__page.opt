@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = игры, космоопера
+order = 2
+creationdatetime = 2016-07-24 15:04:31.498000
+datetime = 2016-07-24 15:09:46.481000
+cursorposition = 742
+
+[wiki]
+md5_hash = dfd8087f7a4bc7f7faecb1d22e7ebf6e
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+

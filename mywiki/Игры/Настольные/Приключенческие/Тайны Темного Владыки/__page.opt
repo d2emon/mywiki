@@ -1,12 +1,13 @@
 [General]
 type = wiki
-tags = 
-order = 10
-datetime = 2013-03-10 13:36:46.896000
+tags = игры, фентези
+order = 14
+datetime = 2016-07-24 15:59:02.421000
+cursorposition = 0
 
 [Misc]
 pageindex = 1
 
 [wiki]
-md5_hash = 39a51885d9a7b3187ca0a914aeec93f2
+md5_hash = 46b47097ec7c1b5824b09941c8d261fc
 
