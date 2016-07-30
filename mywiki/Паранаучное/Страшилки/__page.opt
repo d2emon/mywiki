@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = мистика, хоррор
+order = 9
+creationdatetime = 2015-12-16 08:57:34.940000
+datetime = 2015-12-16 08:58:21.890000
+cursorposition = 274
+
+[wiki]
+md5_hash = b43b83f21e45f0a1c090f85e4bbb56e7
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+
