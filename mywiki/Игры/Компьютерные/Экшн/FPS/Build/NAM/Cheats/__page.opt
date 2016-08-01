@@ -3,11 +3,11 @@ type = wiki
 tags = 60-е, wikipedia, игры, читы
 order = 0
 creationdatetime = 2016-03-30 16:18:14.607152
-datetime = 2016-03-30 16:20:06.362280
-cursorposition = 223
+datetime = 2016-08-01 22:42:29.192000
+cursorposition = 10
 
 [wiki]
-md5_hash = 2280c9bae5dd7cc3858673f6030e33ad
+md5_hash = 7b131e1f754e689473eb99543a394bc4
 
 [Misc]
 pageindex = 1
