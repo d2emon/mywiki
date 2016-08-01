@@ -1,0 +1,133 @@
+!! RPG Toolkit Development System, 2.0
+
+Tileset (TST) File Format Specification
+Copyright 2000 By Christopher B. Matthews
+The TST file format is owned and was devised by Christopher B. Matthews
+If you create a TST interpreter/writer, please include with your software a notice stating that the TST file format was created by Christopher B. Matthews
+
+!!! Introduction
+
+The TST file format is simple and straightforward.  It contains a short header, after which is a stream of data which represents each tile in the set. I reserve the right to change this file format, but for the time being, this is what it looks like...
+
+!!!! Types I use in this document:
+
+[@
+WORD = 2 byte integer
+BYTE = 1 byte (char)
+@]
+
+!!!! Structures:
+
+[@
+RGB:
+     BYTE red
+     BYTE green
+     BYTE blue
+@]
+
+!!!! Header (6 bytes):
+
+[@
+WORD version
+WORD NumberOfTiles
+WORD detail
+@]
+
+'''Comments:'''
+The version is a number that specifies what version the file is (ie 20 is 2.0, 21 is 2.1). Currently, the Toolkit only produces version 20 files.
+
+NumberOfTiles is the total number of tiles in the tileset.  The maximum number of tiles possible in one tileset is 65536.
+
+Detail is the detail level of the tiles.  This flag determines how you will read the rest of the file...
+[@
+     Detail == 1 means all tiles are 32x32 pixels x 16.7 million colors
+     Detail == 2 means all tiles are 16x16 pixels x 16.7 million colors
+     Detail == 3 means all tiles are 32x32 pixels x 256 colors
+     Detail == 4 means all tiles are 16x16 pixels x 256 million colors
+     Detail == 5 means all tiles are 32x32 pixels x 16 colors
+     Detail == 6 means all tiles are 16x16 pixels x 16 colors
+@]
+
+Directly following the header is the tile data.  Tiles are saved one by one with no break
+in between.  How you read this data depends upon the detail level of the tileset.
+
+!!!! Tile Data (beginning after byte 6):
+
+'''Detail == 1''' (32x32x24 bit color)  Each tile is 3072 BYTEs
+     Each pixel is made up of an RGB structure.  The tile is read like this:
+[@
+     for (x=0; x<32; x++)
+     {
+          for(y = 0; y<32; y++)
+          {
+               Read one RGB
+          }
+     }
+@]
+     The color defined by (red == 0 && green == 1 && blue == 2) is considered to be transparent.  All other colors are drawn as defined.
+
+'''Detail == 2''' (16x16x24 bit color)  Each tile is 768 BYTEs
+     Each pixel is made up of an RGB structure.  The tile is read like this:
+[@
+     for (x=0; x<16; x++)
+     {
+          for(y = 0; y<16; y++)
+          {
+               Read one RGB
+          }
+     }
+@]
+     The color defined by (red == 0 && green == 1 && blue == 2) is considered to be transparent.  All other colors are drawn as defined.
+
+'''Detail == 3''' (32x32x8 bit color)  Each tiles is 1024 BYTEs
+     Each pixel is made up of one BYTE.  The tile is read like this:
+[@
+     for (x=0; x<32; x++)
+     {
+          for(y = 0; y<32; y++)
+          {
+               Read one BYTE
+          }
+     }
+@]
+     The color defined by 255 is considered to be transparent.  All other colors are drawn based upon the default DOS 13h VGA palette.
+
+'''Detail == 4''' (16x16x8 bit color)  Each tile is 256 BYTEs
+     Each pixel is made up of one BYTE.  The tile is read like this:
+[@
+     for (x=0; x<16; x++)
+     {
+          for(y = 0; y<16; y++)
+          {
+               Read one BYTE
+          }
+     }
+@]
+     The color defined by 255 is considered to be transparent.  All other colors are drawn based upon the default DOS 13h VGA palette.
+
+'''Detail == 5''' (32x32x4 bit color)  Each tile is 1024 BYTEs
+     Each pixel is made up of one BYTE.  The tile is read like this:
+[@
+     for (x=0; x<32; x++)
+     {
+          for(y = 0; y<32; y++)
+          {
+               Read one BYTE
+          }
+     }
+@]
+     The color defined by 255 is considered to be transparent.  All other colors are drawn based upon the 16 colors of the default DOS EGA palette (or, the first 16 colors of the DOS 13h VGA palette).
+
+'''Detail == 6''' (16x16x4 bit color)  Each tile is 256 BYTEs
+     Each pixel is made up of one BYTE.  The tile is read like this:
+[@
+     for (x=0; x<16; x++)
+     {
+          for(y = 0; y<16; y++)
+          {
+               Read one BYTE
+          }
+     }
+@]
+
+     The color defined by 255 is considered to be transparent.  All other colors are drawn based upon the 16 colors of the default DOS EGA palette (or, the first 16 colors of the DOS 13h VGA palette).

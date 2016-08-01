@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = мистика
+order = 0
+creationdatetime = 2016-07-30 22:36:15.955000
+datetime = 2016-07-30 22:36:29.589000
+cursorposition = 25
+
+[wiki]
+md5_hash = 713b63e1e66d5553554b441a9a1363bc
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+
