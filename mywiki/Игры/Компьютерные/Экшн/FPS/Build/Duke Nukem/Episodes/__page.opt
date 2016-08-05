@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = космоопера, сай-фай
+order = 2
+creationdatetime = 2016-08-05 10:13:52.959000
+datetime = 2016-08-05 10:14:09.545000
+cursorposition = 26
+
+[wiki]
+md5_hash = 1f34da9bf698cde8119c5fb118a24ae4
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+
