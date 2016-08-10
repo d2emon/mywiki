@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = юмор, игры, фентези
+order = 0
+creationdatetime = 2016-08-10 15:07:14.749000
+datetime = 2016-08-10 15:07:27.527000
+cursorposition = 30
+
+[wiki]
+md5_hash = 5c6ed6fc13fcb5db9dc96b9b2bb6c6d8
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+
