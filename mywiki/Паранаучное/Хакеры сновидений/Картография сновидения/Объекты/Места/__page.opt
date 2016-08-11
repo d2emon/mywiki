@@ -1,13 +1,13 @@
 [General]
 type = wiki
 tags = мистика
-order = 0
+order = 10
 creationdatetime = 2016-07-30 21:36:59.493000
 datetime = 2016-07-30 21:46:36.818000
 cursorposition = 2212
 
 [wiki]
-md5_hash = c8dd8b598d3d941f9323d8a5d990b174
+md5_hash = 452229608e0f2336a3940fa54933aa16
 
 [Misc]
 pageindex = 1
