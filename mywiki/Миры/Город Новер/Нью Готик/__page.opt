@@ -3,12 +3,13 @@ type = wiki
 tags = мистика, ню-готика, зомби
 order = 0
 datetime = 2013-11-16 21:20:23.327558
+cursorposition = 0
 
 [Misc]
 pageindex = 1
 
 [wiki]
-md5_hash = c69366a3683cd03e270f9a92bd68753e
+md5_hash = 31b1a4d774e05a052b30f476020daddb
 
 [Tree]
 expand = False

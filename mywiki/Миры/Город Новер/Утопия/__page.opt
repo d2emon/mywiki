@@ -1,7 +1,7 @@
 [General]
 type = wiki
 tags = сай-фай
-order = 5
+order = 6
 datetime = 2013-11-10 20:24:05.917632
 cursorposition = 0
 
@@ -12,5 +12,5 @@ pageindex = 1
 md5_hash = b2a3478872f147de4022c39fc393018a
 
 [Tree]
-expand = True
+expand = False
 
