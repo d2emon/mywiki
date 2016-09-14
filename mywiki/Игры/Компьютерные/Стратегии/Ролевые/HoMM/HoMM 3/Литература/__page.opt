@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = игры, книги, фентези
+order = 2
+creationdatetime = 2016-09-14 05:37:22.249000
+datetime = 2016-09-14 05:37:51.234000
+cursorposition = 61
+
+[wiki]
+md5_hash = 18191b97f278ee344b4995be9bdfc89b
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+
