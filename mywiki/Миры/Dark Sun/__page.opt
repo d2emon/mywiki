@@ -1,13 +1,13 @@
 [General]
 type = wiki
 tags = постапокал, фентези
-order = 1
+order = 6
 creationdatetime = 2016-09-17 19:28:07.716093
-datetime = 2016-09-17 19:28:39.688009
-cursorposition = 2053
+datetime = 2016-09-18 00:46:45.517603
+cursorposition = 3468
 
 [wiki]
-md5_hash = 98c580153510d6900cd57ebcef2360be
+md5_hash = 5fb86c34b6cf683f18b5c604dc692648
 
 [Misc]
 pageindex = 1
