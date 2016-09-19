@@ -5,8 +5,9 @@ lastviewedpage = /
 expand = True
 
 [General]
-selectedtab = 0
+selectedtab = 1
 
 [Tabs]
-tab_0 = Миры
+tab_0 = Миры/Вечный Воитель
+tab_1 = Миры
 
