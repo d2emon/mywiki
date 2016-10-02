@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = мое, книги
+order = 16
+creationdatetime = 2016-10-02 22:55:55.987012
+datetime = 2016-10-02 22:56:11.860111
+cursorposition = 26
+
+[wiki]
+md5_hash = f2b8fa3bea8a7f120f6d2088943dad9f
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+
