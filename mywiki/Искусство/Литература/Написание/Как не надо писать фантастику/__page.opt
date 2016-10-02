@@ -1,7 +1,7 @@
 [General]
 type = wiki
 tags = dreamworlds.ru
-order = 6
+order = 3
 datetime = 2012-12-10 10:18:54.046000
 cursorposition = 0
 
@@ -9,5 +9,5 @@ cursorposition = 0
 pageindex = 1
 
 [wiki]
-md5_hash = fca20e0b0edfbb99254ba5a9a9641b8e
+md5_hash = 32bd86e9f250cfe974622f88e1dc5706
 
