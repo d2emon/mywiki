@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = 
+order = 0
+creationdatetime = 2016-10-04 10:12:33.186680
+datetime = 2016-10-04 10:35:27.149722
+cursorposition = 40
+
+[wiki]
+md5_hash = 4e4b13edafb3dbf1c79a7aa63fe8d31e
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+
