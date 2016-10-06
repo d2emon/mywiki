@@ -1,7 +1,7 @@
 [General]
 type = wiki
 tags = wikipedia
-order = 1
+order = 0
 datetime = 2013-03-09 10:21:32.984000
 cursorposition = 0
 
@@ -9,5 +9,5 @@ cursorposition = 0
 pageindex = 1
 
 [wiki]
-md5_hash = 3ba4f3cc68c311b3b1191249feef3e09
+md5_hash = e59734312865f388217833418261538e
 
