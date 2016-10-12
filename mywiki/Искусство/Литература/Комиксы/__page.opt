@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = книги
+order = 3
+creationdatetime = 2016-10-12 11:06:05.217000
+datetime = 2016-10-12 11:06:20.095000
+cursorposition = 25
+
+[wiki]
+md5_hash = b7d08d7d7af8f6bce5909faa9765111a
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+
