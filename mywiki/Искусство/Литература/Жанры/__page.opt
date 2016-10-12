@@ -1,13 +1,16 @@
 [General]
 type = wiki
 tags = книги, классификация
-order = 3
-datetime = 2016-10-06 02:30:01.863038
-cursorposition = 5928
+order = 2
+datetime = 2015-12-11 10:31:14.727000
+cursorposition = 41
 
 [Tree]
 expand = False
 
 [Misc]
 pageindex = 1
+
+[wiki]
+md5_hash = bf4cc73933cd73d7557a5f455fcc3ed4
 
