@@ -1,11 +1,12 @@
 [General]
 type = wiki
-tags = dwarf star, фентези
-order = 2
-datetime = 2014-02-11 11:33:44.603000
+tags = dwarf star, игры, фентези
+order = 4
+datetime = 2016-07-24 15:57:16.038000
+cursorposition = 0
 
 [wiki]
-md5_hash = 7e7fbcdd4b7530e6f5202ccb7e951142
+md5_hash = 4a00782931ae1cf3f1a460c154b2ec8e
 
 [Misc]
 pageindex = 1

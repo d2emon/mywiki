@@ -1,0 +1,14 @@
+[General]
+type = wiki
+tags = wikipedia, кино, фентези
+order = 8
+creationdatetime = 2016-01-11 23:45:40.958000
+datetime = 2016-01-11 23:45:43.670000
+cursorposition = 986
+
+[wiki]
+md5_hash = da15bd957478f4153d8203793729deb8
+
+[Misc]
+pageindex = 1
+

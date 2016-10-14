@@ -1,0 +1,99 @@
+!! Cheats
+
+The following codes are entered from the Player Select screen by renaming your character to the code you want to use.  After entering the code you want to use you can then rename your character to another code, which will enable multiple cheat codes, or you can rename your character back to whatever you want.
+
+!!! Playstation:
+
+||
+||Cheat Code	||Effect																							||
+||GROOVY		||All weapons																				||
+||WEYHEY		||9999990 Points																			||
+||SATANLIVES	||99 Lives																					||
+||EXCREMENT	||5x Multiplier																				||
+||BLOWME		||Coordinates																				||
+||CHUFF			||No Cops																					||
+||EATTHIS		||Wanted level set to max															||
+||PECKINPAH	||Armor - All Weapons - Get Out Of Jail Free Card						||
+||FECK				||Liberty City Parts 1 and 2															||
+||TVTAN			||San Andreas and Lib City Parts 1 and 2									||
+||URGE				||All Cities Parts 1 and 2 except Vice City only part 1				||
+||CAPRICE		||All Cities Parts 1 and 2																||		
+||TURF				||All Cities																					||
+||INGLOROUS	||All Cities																					||
+||MADEMAN		||All Cities - All Weapons															||
+||THESHIT		||All Cities - All Weapons Infinite - 99 Lives								||
+||BSTARD			||All Cities - Lots of money - All weapons									||
+||HANGTHEDJ	||Same as "BSTARD" + a funny picture at character selection	||
+||SKYBABIES	||Small Level Select (up to "Mandarin Mayhem")						||
+
+!!! Game Shark:
+
+||
+||Cheat Code			||Effect													||
+||D002C440 ????		||Reverse Joker Command					||
+||8002C446 0009		||Infinite Lives										||
+||8002C450 6300		||Infinite Pistol Ammo							||
+||8002C452 6363		||Infinite Machinegun/Rocket Ammo	||
+||8002C454 0063		||Infinite Flamethrower Ammo			||
+||8002C438 0063		||Infinite Armor									||
+||80026D84 2000	||No Cops											||
+||8002c45e0001		||"Get Out Of Jail Free" Card				||
+||8002C442 0063		||Extra Bonus Points							||
+||D002C2F0 0000[[<<]]8002C2F0 FFFF		||65535 Points Score	||
+||D002C2F0 0000[[<<]]8002C2F0 4FFF[[<<]]D002C2F2 0000[[<<]]8002C2F2 004C	||5 Million Points Score	||
+||8002C3A4 05BD	||Less Traffic										||
+||80026D20 0001	||Unlock Liberty City Part 2					||
+||80026D24 0001	||Unlock San Andreas Part 1				||
+||80026D28 0001	||Unlock San Andreas Part 2				||
+||80026D2C 0001	||Unlock Vice City Part 1						||
+||80026D30 0001	||Unlock Vice City Part 2						||
+||8002C932 6401[[<<]]8002C954 0002[[<<]]8002C976 00FF[[<<]]D002C440 0100[[<<]]8002C932 0000	||Super Human Whacked & Crazy Mode||
+
+Gameshark Codes From Cheat Code Central
+  
+!!! PC Cheats	
+
+The following codes are entered from the Player Select screen by renaming your character to the code you want to use.  After entering the code you want to use you can then rename your character to another code, which will enable multiple cheat codes, or you can rename your character back to whatever you want.
+  
+||
+||Cheat Code			||Effect																							||
+||itsgallus				||All Levels - All Cities																||
+||nineinarow			||All Levels - All Cities																||
+||super well				||All Levels - All Cities																||
+||iamthelaw				||No Cops																					||
+||stevesmates			||No Cops																					||
+||itcouldbeyou			||Gives You 999999999 Points													||
+||suckmyrocket		||All Weapons & Powerups															||
+||itstantrum				||Unlimited Lives																		||
+||6031769				||Unlimited Lives																		||
+||hate machine		||10x Multiplier																			||
+||buckfast				||Press the * on the NUMPAD and get all the weapons				||
+||callmenigel			||Press the * on the NUMPAD and get all the weapons				||
+||'''porkcharsui'''	||Debug Mode (More Info Below)												||
+||iamgarypenn		||Enable Extra Offensive Language Mode									||
+||iamnotgarypenn	||Disable Extra Offensive Language Mode									||
+||Heart of Gold		||View All Cutscenes																	||
+||Cheats in italics 	||have other special properties. Check the below for details.	||
+
+!!!! Special Cheat Details
+
+The porkcharsui cheat is not really a cheat code but more of a debug mode.  The following keys can be used to do a variety of things.
+ 
+||
+||Key	||Effect	||
+||K	||Zoom Out[[<<]]There are two sets of 'zoom in' and 'zoom out' keys on the list.  The K and L keys will zoom above the buildings however the buildings are shorter in this zoom, whereas the ] and [ keys zoom and stretch the buildings making them taller, although if you zoom too far out with the ] and [ keys your screen will begin to clip on the sides sometimes.  A trick I found is that if you zoom out first with the K and L keys and then with the ] and [ keys you can keep the buildings short and still zoom out even further.  But be careful because if you go out too far your machine will crash.  It might be possible to zoom out even further with more memory but the machine these were originally tested on only had 32 MB or RAM with a 4 MB video card.  I'm guessing that these are used for different camera shots in the game, sometimes you might want tall buildings and sometimes you might want short buildings.	||
+||L	||Zoom In	||
+||]		||Zoom Out	||
+||[		||Zoom In	||
+||NUMPAD 8	||Pan Up		||
+||NUMPAD 2	||Pan Down	||
+||NUMPAD 6	||Pan Right	||
+||NUMPAD 4	||Pan Left		||
+||HOME	       	||Center The View	||
+||NUMPAD +	||Advance Frame By Frame ||
+||ALT	||Quick Frame Advance	||
+||R		||Refresh The Screen		||
+||D		||Take Screenshot[[<<]]Dumps the contents of your video buffer into a targa file.  e.g. It takes a screenshot in tga format, but it only works in the DOS version.  Each one you take is incremented so if you take 3 shots you will find the files dump0.tga, dump1.tga, and dump2.tga in your gtados sub-directory.  This did not work in the 3Dfx mode but in the Hi Res Mode it worked fine.||
+||NUMPAD *	||NAll Weapons With 99 Ammo[[<<]]Additionally if you hit the * key again it will give you 99 ammo again, so you essentially have infinite ammo.||
+||C	||Current Status[[<<]]If you are walking it will give you a message like:[[<<]]PED ID AT (X, Y, Z)[[<<]If you are driving it will give you a message like:[[<<]]SPEED 0[[<<]]DAMAGE 0[[<<]]CAR ID 0[[<<]AT (X, Y, Z)[[<<]]where X, Y and Z are your current coordinates.||
+||F12	||Restart The Level||

@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = юмор, женщины, перчинка
+order = 7
+creationdatetime = 2015-12-22 10:58:44.886000
+datetime = 2015-12-24 09:19:38.223000
+cursorposition = 33
+
+[wiki]
+md5_hash = e59d1ffd7e6d221f29b6afdd3c2c9ee2
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+

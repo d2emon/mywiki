@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = dnd, ролевки, юмор
+order = 24
+creationdatetime = 2016-03-13 12:33:38.004978
+datetime = 2016-03-13 12:33:53.515481
+cursorposition = 32
+
+[wiki]
+md5_hash = 02ae39f60dcac6b90ee8e6c7f7fa238d
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+

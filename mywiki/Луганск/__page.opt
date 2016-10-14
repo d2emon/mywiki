@@ -1,12 +1,12 @@
 [General]
 type = wiki
-tags = город
-order = 8
-datetime = 2013-01-11 12:32:05.656000
+tags = город, луганск
+order = 6
+datetime = 2015-12-02 21:49:56.736000
 cursorposition = 0
 
 [wiki]
-md5_hash = fed0e020a503d33651870a6774a47bce
+md5_hash = 0af7f3bfad4118ecdc220eb16b5cfee6
 
 [Tree]
 expand = False

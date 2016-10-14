@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = лабиринт, юмор
+order = 1
+creationdatetime = 2016-06-12 14:02:12.648000
+datetime = 2016-06-12 14:04:06.883000
+cursorposition = 58
+
+[wiki]
+md5_hash = 0eaf269c979417c19d97c5c6a99f1dc5
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+

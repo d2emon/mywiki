@@ -1,0 +1,16 @@
+[General]
+type = wiki
+tags = комп
+order = 5
+datetime = 2015-12-02 21:42:02.592000
+cursorposition = 0
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+
+[wiki]
+md5_hash = a6bad75760e0baa8774a0794404e0ebf
+

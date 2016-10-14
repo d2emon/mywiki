@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = lurkmore, игры
+order = 1
+creationdatetime = 2015-11-19 15:39:41.980061
+datetime = 2015-12-02 21:33:23.345000
+cursorposition = 529
+
+[wiki]
+md5_hash = 4e1bfa7d236fb7b40867d695c8d4c928
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+

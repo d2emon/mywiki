@@ -1,8 +1,8 @@
 [General]
 type = wiki
-tags = 
+tags = космоопера, игры
 order = 1
-datetime = 2015-02-13 19:13:02.428532
+datetime = 2015-12-03 20:54:33.041000
 cursorposition = 0
 
 [Misc]
@@ -12,5 +12,5 @@ pageindex = 1
 expand = False
 
 [wiki]
-md5_hash = 3e51cb19fb3dc8210fa17abadc145ec5
+md5_hash = 1236f40197bd8f1f1211308d69d581f6
 

@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = история
+order = 8
+creationdatetime = 2016-07-18 13:17:01.545572
+datetime = 2016-07-18 18:41:21.906909
+cursorposition = 34
+
+[wiki]
+md5_hash = 3bc97d2301c1bf80b443de26f14326eb
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+

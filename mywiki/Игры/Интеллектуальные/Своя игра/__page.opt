@@ -1,8 +1,8 @@
 [General]
 type = wiki
-tags = 
+tags = чгк
 order = 6
-datetime = 2015-02-15 18:37:03.176112
+datetime = 2016-03-20 21:12:33.071000
 cursorposition = 12
 
 [Misc]
@@ -12,5 +12,5 @@ pageindex = 1
 expand = False
 
 [wiki]
-md5_hash = e3fc5633b65548b01ad944ff44885a7a
+md5_hash = b134abc7b7024a214da190a0a34776d4
 

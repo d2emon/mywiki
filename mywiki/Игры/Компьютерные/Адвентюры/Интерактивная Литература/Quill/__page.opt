@@ -1,12 +1,16 @@
 [General]
 type = wiki
-tags = 
-order = 1
-datetime = 2013-01-02 09:32:58.041000
+tags = терминал, wikipedia
+order = 3
+datetime = 2016-03-30 18:16:05.926807
+cursorposition = 52
 
 [Misc]
 pageindex = 1
 
 [wiki]
-md5_hash = 59ad0225ed78b6817723555d9f245797
+md5_hash = 2f48fd28e172250df6df3baba5a1ec02
+
+[Tree]
+expand = False
 

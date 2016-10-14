@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = игры, конспирология, ссср
+order = 0
+creationdatetime = 2016-07-22 19:25:16.169000
+datetime = 2016-07-23 07:45:21.502000
+cursorposition = 38
+
+[wiki]
+md5_hash = 410fe7676cd2ebcff725f4075b47fa66
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+

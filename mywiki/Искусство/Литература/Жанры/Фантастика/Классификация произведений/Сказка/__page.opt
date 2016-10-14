@@ -1,0 +1,14 @@
+[General]
+type = wiki
+tags = книги, сказки
+order = 5
+creationdatetime = 2015-12-11 10:25:44.975000
+datetime = 2015-12-11 10:26:17.885000
+cursorposition = 662
+
+[wiki]
+md5_hash = 47ca7d4517aa030ced98163cc37b5194
+
+[Misc]
+pageindex = 1
+

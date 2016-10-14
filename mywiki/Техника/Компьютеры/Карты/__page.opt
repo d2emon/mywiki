@@ -1,0 +1,16 @@
+[General]
+type = wiki
+tags = картография, комп
+order = 1
+datetime = 2016-03-06 20:56:59.907000
+cursorposition = 0
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+
+[wiki]
+md5_hash = 6c9a9669e908accf0e30dbeecdd8d8b0
+

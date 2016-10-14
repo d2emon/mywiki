@@ -1,11 +1,12 @@
 [General]
 type = wiki
-tags = lurkmore
-order = 22
-datetime = 2013-01-11 12:34:11.656000
+tags = юмор, lurkmore
+order = 24
+datetime = 2015-12-24 09:17:31.590000
+cursorposition = 0
 
 [wiki]
-md5_hash = 8a3c6e430139ee07e3ec8ef163b51519
+md5_hash = 923713418e9b0d4aab8b365b9120d36e
 
 [Misc]
 pageindex = 1

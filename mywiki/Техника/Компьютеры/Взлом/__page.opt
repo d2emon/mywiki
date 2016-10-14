@@ -1,0 +1,16 @@
+[General]
+type = wiki
+tags = хак, комп
+order = 6
+datetime = 2015-12-02 21:42:38.332000
+cursorposition = 0
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+
+[wiki]
+md5_hash = 5981c3be9f391b82ba90869bd6f1de78
+

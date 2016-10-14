@@ -1,0 +1,13 @@
+!! Сотворение мира
+
+@@
+$ sudo mount none /world -t worldfs -o light,darkness,umask=066
+$ sudo mount none /world/terrain -t earthfs -o watersupport
+$ sudo mount none /world/terrain/reservoirs -t waterfs
+$ sudo mount /world/organic /world/terrain/flora -o umask=133,plants
+$ sudo mount /world/organic /world/terrain/fauna -o umask=022,animals
+$ sudo mount /world/organic /world/human -o umask=022,human
+$ sudo chown -R god:human /world
+$ sudo /world/bin/startx
+$ exit
+@@

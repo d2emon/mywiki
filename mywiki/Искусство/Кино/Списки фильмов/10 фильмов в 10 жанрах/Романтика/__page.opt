@@ -1,0 +1,14 @@
+[General]
+type = wiki
+tags = wikipedia, кино, романтика
+order = 5
+creationdatetime = 2016-01-11 23:43:50.955000
+datetime = 2016-01-11 23:43:53.007000
+cursorposition = 927
+
+[wiki]
+md5_hash = faea8ce5c80dd5f6d3497eb8b037225c
+
+[Misc]
+pageindex = 1
+

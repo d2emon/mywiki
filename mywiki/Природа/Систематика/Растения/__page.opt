@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = wikipedia, экология, классификация
+order = 4
+creationdatetime = 2015-12-08 11:59:54.753514
+datetime = 2016-06-15 00:35:05.598259
+cursorposition = 26
+
+[wiki]
+md5_hash = bcfe26e69cf7fd40308253a15e092aa2
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+

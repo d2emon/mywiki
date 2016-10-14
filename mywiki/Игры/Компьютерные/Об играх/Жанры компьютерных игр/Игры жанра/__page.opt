@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = игры, классификация
+order = 4
+creationdatetime = 2016-07-13 07:18:10.677000
+datetime = 2016-07-13 07:18:26.513000
+cursorposition = 0
+
+[wiki]
+md5_hash = f4622cf096ee3e5d0fe84cb16ce182fe
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+

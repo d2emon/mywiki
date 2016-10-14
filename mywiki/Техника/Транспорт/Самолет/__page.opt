@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = транспорт, техника
+order = 10
+creationdatetime = 2016-07-12 08:58:38.789409
+datetime = 2016-07-12 08:59:05.602764
+cursorposition = 54
+
+[wiki]
+md5_hash = e4bd9e639dbe2fe56b5aa28a1eb8f54a
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+

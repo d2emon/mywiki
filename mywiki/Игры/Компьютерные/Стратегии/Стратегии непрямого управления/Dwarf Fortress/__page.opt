@@ -1,8 +1,8 @@
 [General]
 type = wiki
-tags = 
-order = 0
-datetime = 2015-02-13 19:13:28.331364
+tags = песочница, терминал, игры, инди, свобода
+order = 1
+datetime = 2015-12-02 22:59:43.685000
 cursorposition = 0
 
 [Misc]
@@ -12,5 +12,5 @@ pageindex = 1
 expand = False
 
 [wiki]
-md5_hash = 2b9492f8c01efebd5f214d5fa8315652
+md5_hash = d63505cec7acc471cd5027e67c458fe2
 

@@ -3,7 +3,11 @@ type = wiki
 tags = фентези
 order = 1
 datetime = 2014-02-11 12:36:43.674000
+cursorposition = 0
 
 [Misc]
 pageindex = 1
+
+[wiki]
+md5_hash = 838b222d6e2c15c93e2eaf33ac7b5430
 

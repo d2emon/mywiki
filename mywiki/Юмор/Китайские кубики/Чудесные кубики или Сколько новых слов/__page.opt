@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = юмор, дописать, абсурд
+order = 1
+creationdatetime = 2016-09-14 06:41:42.862000
+datetime = 2016-09-14 09:38:52.324000
+cursorposition = 2423
+
+[wiki]
+md5_hash = bcdafa21f99bc5f552079dc3578a71ac
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+

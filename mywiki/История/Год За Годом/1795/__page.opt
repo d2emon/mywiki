@@ -1,0 +1,13 @@
+[General]
+type = wiki
+tags = антиблог, вго, история
+order = 0
+datetime = 2015-12-16 21:58:27.987403
+cursorposition = 0
+
+[wiki]
+md5_hash = 6a1356dc0d00cce56dbce809b7ff1dac
+
+[Misc]
+pageindex = 1
+

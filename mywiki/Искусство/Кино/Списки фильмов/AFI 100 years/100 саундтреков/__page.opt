@@ -1,0 +1,14 @@
+[General]
+type = wiki
+tags = wikipedia, кино
+order = 1
+creationdatetime = 2016-01-17 18:27:35.693000
+datetime = 2016-01-17 18:39:13.230000
+cursorposition = 1569
+
+[wiki]
+md5_hash = a4d17a7b571b9a87d1f8f8f132ff1378
+
+[Misc]
+pageindex = 1
+

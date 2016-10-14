@@ -3,7 +3,11 @@ type = wiki
 tags = космоопера
 order = 0
 datetime = 2014-02-11 12:37:35.051000
+cursorposition = 0
 
 [Misc]
 pageindex = 1
+
+[wiki]
+md5_hash = 495c9b1eb9c1c46445b58b35fdbf2f1b
 

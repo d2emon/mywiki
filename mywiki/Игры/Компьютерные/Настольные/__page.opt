@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = игры, комп
+order = 6
+creationdatetime = 2016-03-03 16:26:53.072583
+datetime = 2016-03-03 16:27:23.451063
+cursorposition = 59
+
+[wiki]
+md5_hash = 6b542c21bc291033d9ac00080ced47a1
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+

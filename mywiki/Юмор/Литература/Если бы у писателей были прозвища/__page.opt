@@ -1,0 +1,16 @@
+[General]
+type = wiki
+tags = юмор, adme, книги
+order = 2
+datetime = 2016-03-22 17:10:22.121709
+cursorposition = 5693
+
+[Misc]
+pageindex = 1
+
+[wiki]
+md5_hash = 9950ea5947707df137386d096e733fef
+
+[Tree]
+expand = True
+

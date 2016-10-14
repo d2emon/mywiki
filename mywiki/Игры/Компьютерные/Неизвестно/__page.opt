@@ -1,7 +1,7 @@
 [General]
 type = wiki
 tags = дописать, временное
-order = 5
+order = 8
 datetime = 2013-04-02 16:07:27.084000
 cursorposition = 0
 
@@ -12,5 +12,5 @@ pageindex = 1
 expand = False
 
 [wiki]
-md5_hash = 1e4f87765f1a8e0e6bf65b3c61ea87f4
+md5_hash = 92c66f5a54fa229d4bdd32a354418fa6
 

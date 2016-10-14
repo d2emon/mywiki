@@ -101,3 +101,51 @@ The interactive movie genre came about with the invention of laserdiscs. An inte
 Текстовые[править | править вики-текст]
 Основная статья: Interactive fiction
 Interactive fiction (IF, буквальный перевод — интерактивная литература; текстовые квесты; adventure — приключенческая игра) — жанр компьютерных игр, в котором общение с игроком осуществляется посредством текстовой информации. Развитие этого жанра, в связи с низким требованием к ресурсам, началось весьма давно, и не прекратилось даже с появлением графических игр. Существуют два вида интерфейса — интерфейс, в котором текст вводится с клавиатуры или интерфейс в виде меню, где игрок выбирает действие из нескольких предложенных (англ. CYOA, Choose Your Own Adventure).
+
+----
+
+!!! Adventure Game Types
+
+I'm trying to categorize the games a little. So far the system is as follows:
+
+!!!! Text only (TO)
+No pictures (of course).
+
+!!!! Graphics (G)
+Some kind of graphics. This category is used when I know that a game had graphics but I don't know what type. Please let me know if you can help me categorize games from this category better.
+
+!!!! Character graphics (CG)
+Pictures made up of characters. Generally horrible, but not uncommon for a while.
+
+!!!! Drawn graphics (DG)
+Pictures drawn for each room as you enter it.
+
+!!!! Bitmap graphics (BG)
+Static high-resolution pictures.
+
+!!!! Interactive graphics (IG)
+This category is a bit difficult to define. Uninvited (ICOM) goes here, anyway. I'd like to get rid of this category, so if you can tell which other category games in this category fit in I'd appreciate it.
+
+!!!! Moving character graphics (MCG)
+These games have a graphical representation of yourself that you move around the screen. Examples are later Sierra games and LucasArts games.
+
+!!!! Point-n-Click (PNC)
+This means that you control the game by pointing at things with the mouse, choosing alternatives from menus or something similar.
+
+!!!! 3D (3D)
+These are games with a first-person 3D view of the world (like Doom, Quake, and similar action games).
+
+!!!! Text input (TEXT)
+This means that you control the game by entering text. This is the standard way, and is only mentioned if it can be used alongside PNC input.
+
+!!!! Multiple choice (CHOICE)
+This means that the game is controlled by choosing actions from a list or menu instead of entering text freely.
+
+!!!! Sound (SOUND)
+This means that the game features some kind of sound that isn't music.
+
+!!!! Music (MUSIC)
+This means, of course, that the game contains some kind of music score.
+
+!!!! Video clips (VIDEO)
+This means that the game features full-motion video.

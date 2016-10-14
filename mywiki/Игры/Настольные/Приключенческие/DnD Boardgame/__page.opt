@@ -1,11 +1,12 @@
 [General]
 type = wiki
-tags = dnd, фентези
-order = 0
-datetime = 2014-02-11 11:33:23.951000
+tags = dnd, игры, фентези
+order = 1
+datetime = 2016-07-24 15:56:57.653000
+cursorposition = 0
 
 [wiki]
-md5_hash = 9862817a61cb5b36c3bd05fc1b72fdbc
+md5_hash = 82d6daee41b89c18d9df949576e28a49
 
 [Misc]
 pageindex = 1

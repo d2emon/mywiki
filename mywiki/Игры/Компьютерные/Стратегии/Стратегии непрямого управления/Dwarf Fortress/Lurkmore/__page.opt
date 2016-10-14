@@ -1,12 +1,13 @@
 [General]
 type = wiki
-tags = lurkmore
+tags = песочница, lurkmore, свобода, терминал, игры, инди
 order = 0
-datetime = 2013-03-21 20:19:20.959000
+datetime = 2015-12-02 22:58:39.235000
+cursorposition = 0
 
 [Misc]
 pageindex = 1
 
 [wiki]
-md5_hash = d58b3e351845fd432900fad6a3994ad9
+md5_hash = 2d86d111ca1f15b53f8730bfce547eb4
 

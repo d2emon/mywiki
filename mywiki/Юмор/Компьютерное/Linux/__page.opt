@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = юмор, линукс, абсурд
+order = 4
+creationdatetime = 2015-11-29 09:16:20.987000
+datetime = 2016-04-06 21:47:37.837993
+cursorposition = 665
+
+[wiki]
+md5_hash = 42d42f28b957b1c2cb088df183db6dd8
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+

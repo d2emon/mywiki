@@ -1,7 +1,7 @@
 [General]
 type = wiki
 tags = временное
-order = 12
+order = 17
 datetime = 2013-04-04 19:07:42.215000
 cursorposition = 0
 
@@ -9,5 +9,5 @@ cursorposition = 0
 pageindex = 1
 
 [wiki]
-md5_hash = bc8d167496e391a44e1f081f69978c8e
+md5_hash = 934d68e339991194abcf49c0adf1d7cd
 

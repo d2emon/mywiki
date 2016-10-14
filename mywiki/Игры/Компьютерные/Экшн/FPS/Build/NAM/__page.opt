@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = 60-е, игры, wikipedia
+order = 2
+creationdatetime = 2016-03-30 16:07:58.165297
+datetime = 2016-08-01 22:50:09.848000
+cursorposition = 6790
+
+[wiki]
+md5_hash = 8ff673b40ca9ea8bc724f2cda9c94285
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+

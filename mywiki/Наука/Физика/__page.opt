@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = наука
+order = 2
+creationdatetime = 2015-11-10 13:39:41.094339
+datetime = 2016-05-15 23:39:40.206000
+cursorposition = 42
+
+[wiki]
+md5_hash = 62ab6b8a37275de721a1a136afa89d9b
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+

@@ -1,0 +1,13 @@
+[General]
+type = wiki
+tags = антиблог, книгры, фентези
+order = 0
+datetime = 2016-03-15 22:29:00.339000
+cursorposition = 0
+
+[wiki]
+md5_hash = 78f74da67bfa3665ccb6751fc3e10be9
+
+[Misc]
+pageindex = 1
+

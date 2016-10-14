@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = кино, хоррор, чернуха
+order = 2
+creationdatetime = 2016-05-20 09:28:39.828701
+datetime = 2016-05-20 09:29:31.533569
+cursorposition = 61
+
+[wiki]
+md5_hash = fbd8128b02dcb77d6ce133998235f693
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+

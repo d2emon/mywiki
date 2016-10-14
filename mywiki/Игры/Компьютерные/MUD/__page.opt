@@ -1,8 +1,9 @@
 [General]
 type = wiki
-tags = 
-order = 4
-datetime = 2012-12-08 21:56:23.379000
+tags = ролевки, lurkmore, игры, инди, терминал
+order = 5
+datetime = 2015-12-03 12:04:00.791745
+cursorposition = 47375
 
 [Misc]
 pageindex = 1
@@ -11,5 +12,5 @@ pageindex = 1
 expand = False
 
 [wiki]
-md5_hash = 086579d9d6c943aa60f4c8a5df23faaf
+md5_hash = 3ebca1cd6cf8568b47e52f0181ced5e0
 

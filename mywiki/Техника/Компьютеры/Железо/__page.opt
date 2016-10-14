@@ -1,0 +1,16 @@
+[General]
+type = wiki
+tags = техника, комп
+order = 10
+datetime = 2015-12-02 21:44:28.248000
+cursorposition = 0
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+
+[wiki]
+md5_hash = 3697bb44834577ccbc1951a898f1d32a
+

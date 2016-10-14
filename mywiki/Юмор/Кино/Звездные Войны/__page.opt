@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = кино, юмор, космоопера
+order = 4
+creationdatetime = 2016-03-23 00:35:54.420675
+datetime = 2016-03-23 00:36:14.598841
+cursorposition = 32
+
+[wiki]
+md5_hash = 83c3d28792050e91053ddf2c4298b58b
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+

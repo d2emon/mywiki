@@ -1,12 +1,13 @@
 [General]
 type = wiki
-tags = зомби
-order = 7
-datetime = 2013-04-02 16:47:58.290000
+tags = игры, зомби
+order = 10
+datetime = 2016-07-24 15:58:19.052000
+cursorposition = 0
 
 [Misc]
 pageindex = 1
 
 [wiki]
-md5_hash = f0eed761f5ef7dbb8d11b991c9ba757c
+md5_hash = d4c5fb01c7990b308edc4edeb5899bab
 

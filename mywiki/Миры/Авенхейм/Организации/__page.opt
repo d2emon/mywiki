@@ -1,12 +1,16 @@
 [General]
 type = wiki
 tags = 
-order = 4
+order = 7
 datetime = 2014-05-31 22:32:03.863925
+cursorposition = 0
 
 [Misc]
 pageindex = 1
 
 [Tree]
 expand = False
+
+[wiki]
+md5_hash = 5305d92bf38d983b672db0377b115a26
 

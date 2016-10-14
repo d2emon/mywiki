@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = юмор
+order = 4
+creationdatetime = 2016-04-11 13:25:33.922831
+datetime = 2016-04-11 13:26:09.799119
+cursorposition = 69
+
+[wiki]
+md5_hash = 5d9c16d7b66c7a3cd1cceea7aeffa730
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+

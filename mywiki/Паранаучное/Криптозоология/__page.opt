@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = мистика, экология, конспирология
+order = 6
+creationdatetime = 2016-03-10 11:14:11.781000
+datetime = 2016-03-10 11:14:42.278000
+cursorposition = 61
+
+[wiki]
+md5_hash = 13dd8613574578c684fed71ceca9fe35
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+

@@ -1,0 +1,16 @@
+[General]
+type = wiki
+tags = книги
+order = 0
+datetime = 2015-12-02 21:48:53.969000
+cursorposition = 0
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+
+[wiki]
+md5_hash = 9128bfb71bf56cf6750bdc045fdf8b4d
+

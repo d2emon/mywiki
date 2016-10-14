@@ -1,0 +1,183 @@
+!! Text-based
+
+
+The following list of text-based games is not to be considered an authoritative, comprehensive listing of all such games; rather, it is intended to represent a wide range of game styles and genres presented using the text mode display and their evolution across a long period.
+
+!!! On mainframe computers
+
+Years listed are those in which the game is believed to have originally appeared. Often these games were continually modified and played as a succession of versions for years after their initial posting. (For purposes of this list, minicomputers are considered mainframes, in contrast to microcomputers, which are not.)
+
+M denotes the game is a MUD.
+
+||
+||Title										||Year Created	||Creator																			||Notes									||
+||BBC										||1961	||John Burgeson																			||Baseball simulator				||
+||HAMURABI							||1969	||Richard Merrill																			||&nbsp;									||
+||Highnoon								||1970	||Christopher Gaylo																		||&nbsp;									||
+||Baseball								||1971	||Don Daglow																				||&nbsp;									||
+||Oregon Trail							||1971	||Don Rawitsch																			||&nbsp;									||
+||Star Trek (text game)			||1971	||Mike Mayfield																			||&nbsp;									||	
+||Hunt the Wumpus					||1972	||Gregory Yob																				||&nbsp;									||
+||Star Trek								||1972	||Don Daglow																				||Script game							||
+||TREK73									||1973	||William K. Char, Perry Lee, and Dan Gee								||&nbsp;									||
+||dnd										||1975	||Gary Whisenhunt and Ray Wood												||&nbsp;									||
+||Dungeon								||1975	||Don Daglow																				||&nbsp;									||
+||Colossal Cave Adventure		||1976	||Will Crowther																			||&nbsp;									||
+||Empire									||1977	||Walter Bright																				||&nbsp;									||
+||Mystery Mansion					||1977	||&nbsp;																						||&nbsp;									||
+||Oubliette								||1977	||Jim Schwaiger																			||M											||
+||Zork										||1977	||Tim Anderson, Marc Blank, Bruce Daniels and Dave Lebling	||&nbsp;									||
+||Acheton									||1978	||Jon Thackray, David Seal and Jonathan Partington					||&nbsp;									||
+||Decwar									||1978	||&nbsp;																						||&nbsp;									||
+||Avatar									||1979	||Bruce Maggs and Andrew Shapira											||M											||
+||Battlestar								||1979	||David Riggle																				||&nbsp;									||
+||Brand X									||1979	||Peter Killworth and Jonathan Mestel										||aka Philosopher's Quest		||
+||FisK										||1979	||John Sobotik and Richard Beigel												||Text based adventure game	||
+||HAUNT									||1979	||John Laird																					||&nbsp;									||
+||Martian Adventure				||1979	||Brad Templeton and Kieran Carroll											||&nbsp;									||
+||New Adventure						||1979	||Mark Niemiec																			||&nbsp;									||
+||Hezarin									||1980	||Steve Tinney, Alex Shipp and Jon Thackray							||&nbsp;									||
+||Kingdom of Hamil				||1980	||Jonathan Partington																	||&nbsp;									||
+||Monsters of Murdac				||1980	||Jonathan Partington																	||&nbsp;									||
+||Quondam								||1980	||Rod Underwood																		||&nbsp;									||
+||Rogue									||1980	||Michael Toy, Glenn Wichman, and Ken Arnold							||&nbsp;									||
+||Legend of the Red Dragon	||1981	||Olli J. Paavola																			||&nbsp;									||
+||Avon										||1983	||Jonathan Partington																	||Shakespearean game			||
+||Castle									||1983	||Barry Wilks																				||&nbsp;									||
+||Dunnet									||1983	||Ron Schnell																				||&nbsp;									||
+||Fyleet									||1986	||Jonathan Partington																	||&nbsp;									||
+||Crobe									||1987	||Jonathan Partington																	||&nbsp;									||
+||MIST										||1987	||&nbsp;																						||M											||
+||Nidus										||1987	||Adam Atkinson																			||&nbsp;									||
+||Quest of the Sangraal			||1987	||Jonathan Partington																	||&nbsp;									||
+||Spy Snatcher							||1989	||Jonathan Partington and Jon Thackray										||&nbsp;									||
+
+!!! On personal computers
+
+!!!! Commercial text adventure games
+
+These are commercial interactive fiction games played offline.
+
+||
+||Title																		||Year Created	||Creator	||
+||Adventureland														||1978	||Scott Adams of Adventure International	series||
+||Zork I: The Great Underground Empire				||1980	||Tim Anderson, Marc Blank, Bruce Daniels and Dave Lebling	series||
+||C.I.A Adventure														||1980	||Hugh Lampert of CLOAD||
+||Madness and the Minotaur									||1981	||for Spectral Associates||
+||The Hobbit															||1982	||Philip Mitchell and Veronika Megler of Beam Software||
+||Valhalla																	||1983	||Legend||
+||Time and Magik													||1983	||Level 9||
+||Forbidden Quest													||1983	||Pryority Software||
+||Valley of the Minotaur											||1983	||Nicolas van Dyk of Softalk||
+||The Wizard of Akyrz												||1983	||Brian Howarth of Mysterious Adventures and Cliff J. Ogden for Adventure International||
+||The Biz																	||1984	||Chris Sievey of Virgin Games	Music band simulator for the ZX Spectrum||
+||High Stakes															||1984	||Angelsoft||
+||The Hitchhikers Guide to the Galaxy					||1984	||Douglas Adams and Steve Meretzky of Infocom||
+||Mindwheel															||1984	||Robert Pinsky for Synapse Software||
+||Zyll																		||1984	||Marshal W. Linder and Scott B. Edwards for IBM||
+||The Pawn																||1985	||Magnetic Scrolls||
+||A Mind Forever Voyaging										||1985	||Steve Meretzky of Infocom||
+||Brimstone																||1985	||James Paul for Synapse||
+||Essex																	||1985	||Bill Darrah for Synapse||
+||Hampstead															||1985	||Peter Jones and Trevor Lever for Melbourne House||
+||Bored of the Rings												||1985	||Delta 4||
+||Heavy on the Magick											||1986	||Gargoyle Games||
+||Breakers																||1986	||Rodney R. Smith for Synapse||
+||Terrormolinos														||1986	||Peter Jones and Trevor Lever for Melbourne House||
+||Amnesia																||1987	||Thomas M. Disch The only entirely non-graphical text adventure ever published by Electronic Arts||
+||Braminar																||1987	||&nbsp;||
+||Dodgy Geezers														||1987	||Peter Jones and Trevor Lever for Melbourne House||
+||Gnome Ranger														||1987	||Level 9||
+||Jacaranda Jim														||1987	||Graham Cluley||
+||Nord and Bert Couldn't Make Head or Tail of It	||1987	||Jeff O'Neill for Infocom||
+||Sherlock: The Riddle of the Crown Jewels			||1987	||Bob Bates for Infocom||
+||Shadows of Mordor												||1987	||Melbourne House||
+||Knight Orc																||1987	||Level 9||
+||The Guild of Thieves											||1987	||Magnetic Scrolls||
+||Fish!																		||1988	||Magnetic Scrolls||
+||Ingrid's Back															||1988	||Level 9||
+||Corruption																||1988	||Magnetic Scrolls||
+||Dr. Dumont's Wild P.A.R.T.I.									||1988	||Michael and Muffy Berlyn||
+||The Hound of Shadow											||1989	||for Eldritch Games||
+||Humbug																||1990	||Graham Cluley||
+||Danger! Adventurer at Work!								||1991	||Simon Avery||
+||Spy Snatcher															||1992	||Jonathan Partington and Jonathan Thackray for Topologika||
+||dead rage																||2005	||Tate Productions||
+
+!!!! Miscellaneous games
+
+||
+||Title							||Year Created	||Creator	||
+||Wizard's Castle			||1978?	||Joseph R. Power	||
+||Snipes						||1983		||SuperSet	||
+||Beast							||1984		||Dan Baker, Alan Brown, Mark Hamilton and Derrick Shadel	||
+||Kingdom of Kroz		||1987		||Scott Miller of Apogee Software	||
+||ZZT							||1991		||Tim Sweeney of Epic MegaGames	||
+||Sleuth						||1993		||Eric N. Miller	||
+||MegaZeux					||1994		||Gregory Janson of Software Visions	||
+||Chibot Ultra Battle	||1999		||&nbsp;	||
+||PAEE							||1999		||Enrique D. Bosch	||
+||combatgrounds			||2008		||war games	||
+||Pork							||2011		||Andy Brennan, Corben Eastman, TJ Guernsey, Catherine Oborski	http://porkadventures.wordpress.com/	||
+||In Ruins						||2012		||Story by Jack Davis and Jake Laurienti, Programming by Jack Davis	http://jackscode.99k.org/in_ruins.html	||
+||Sleepless Night			||2012		||Marcel Weyers	||
+
+!!! Online games
+
+!!!! Play-by-email games
+
+These are play-by-email games played online.
+
+||
+||Title						||Year Created	||
+||Lords of the Earth				||1983	||
+||Quantum Space				||1989	||
+||Atlantis PbeM					||1993	||
+||Eressea PbeM					||1996	||
+||WW2 The Big One PbeM	||2010	||
+
+!!!! Flash-based Games
+
+These are games that emulate text based games in Flash. Most are online games.
+
+||
+||Title								||Year Created	||Creator	||
+||Thy Dungeonman			||January 2004	||The Brothers Chaps	||
+||Thy Dungeonman II		||April 2004	||The Brothers Chaps	||
+||Thy Dungeonman III		||April 2006	||The Brothers Chaps	||
+||Don't Shit Your Pants	||2009			||&nbsp;	||
+
+!!!! BBS door games
+
+These are BBS door games played online.
+
+||
+||Title							||Year Created	||Creator	||
+||TradeWars 2002					||1987	||Gary Martin for Martech Software	||
+||Legend of the Red Dragon	||1989	||Seth Able Robinson	||
+
+!!!! MUDs
+
+||
+||Title									||Year Created	||
+||MUD1											||1978	||
+||Island of Kesmai							||1980	||
+||Scepter of Goth								||1983	||
+||MUD2											||1985	||
+||Federation										||1988	||
+||Avalon											||1989	||
+||BatMUD											||1990	||
+||JediMUD										||1992	||
+||LegendMUD									||1994	||
+||The Carrion Fields							||1994	||
+||Materia Magica								||1996	||
+||ifMUD											||1997	||
+||Achaea, Dreams of Divine Lands	||1997	||
+||OtherSpace									||1998	||
+||Aetolia, The Midnight Age			||2001	||
+||Federation II									||2003	||
+||Myths & Mortals							||2012	||
+
+!!!! Other
+
+* Rise to Glory (1997) by Jason Granum

@@ -1,12 +1,12 @@
 [General]
 type = wiki
-tags = wikipedia
+tags = чгк, wikipedia
 order = 4
-datetime = 2013-01-11 12:37:27.500000
-cursorposition = 0
+datetime = 2016-03-20 21:11:47.408000
+cursorposition = 20704
 
 [wiki]
-md5_hash = 4a6997f426c24e42efbfee5776a083aa
+md5_hash = db501ac20b25289332a9dcc59e842656
 
 [Tree]
 expand = False

@@ -1,9 +1,13 @@
 [General]
 type = wiki
-tags = 
+tags = лки
 order = 0
-datetime = 2013-11-23 19:28:46.402700
+datetime = 2016-07-25 23:10:24.875000
+cursorposition = 0
 
 [Misc]
 pageindex = 1
+
+[wiki]
+md5_hash = b3377d609424d6fec83aa3513ca994de
 

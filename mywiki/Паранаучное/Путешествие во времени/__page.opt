@@ -1,0 +1,13 @@
+[General]
+type = wiki
+tags = wikipedia
+order = 10
+datetime = 2016-03-28 03:39:18.735000
+cursorposition = 0
+
+[Misc]
+pageindex = 1
+
+[wiki]
+md5_hash = 97fd11c19a744440bb5351f1b9fc596e
+

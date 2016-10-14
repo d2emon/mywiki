@@ -1,0 +1,14 @@
+[General]
+type = wiki
+tags = wikipedia, аквариум, экология
+order = 0
+creationdatetime = 2015-12-10 15:19:53.244000
+datetime = 2015-12-10 15:20:26.385000
+cursorposition = 25137
+
+[wiki]
+md5_hash = aa64d2a04d3ff492be25ae20de92ea73
+
+[Misc]
+pageindex = 1
+

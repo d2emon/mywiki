@@ -1,0 +1,16 @@
+[General]
+type = wiki
+tags = ролевки, wikipedia, игры
+order = 11
+datetime = 2016-06-19 23:47:22.747000
+cursorposition = 10
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+
+[wiki]
+md5_hash = fb38d00ef9f6e2ccd28d8e7d1b352cdc
+

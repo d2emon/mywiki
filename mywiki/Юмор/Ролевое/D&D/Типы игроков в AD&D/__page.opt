@@ -1,0 +1,16 @@
+[General]
+type = wiki
+tags = юмор, ролевки, классификация, dnd
+datetime = 2016-06-13 00:12:01.713000
+cursorposition = 497
+order = 15
+
+[wiki]
+md5_hash = 665b15f17188bb6817efd5e612896b2b
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+

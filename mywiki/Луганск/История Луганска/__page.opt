@@ -1,14 +1,15 @@
 [General]
 type = wiki
-tags = история
+tags = город, луганск, история
 order = 1
-datetime = 2013-04-02 17:29:48.280000
+datetime = 2016-05-06 10:14:43.996390
+cursorposition = 36479
 
 [Tree]
-expand = True
+expand = False
 
 [wiki]
-md5_hash = 9567038080f6522b156c168bc6445388
+md5_hash = 87eee762a08a4ea15462ffbc37ce2fa4
 
 [Misc]
 pageindex = 1

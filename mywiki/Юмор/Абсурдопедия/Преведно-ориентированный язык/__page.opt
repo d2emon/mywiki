@@ -1,12 +1,13 @@
 [General]
 type = wiki
-tags = 
-order = 1
-datetime = 2013-01-09 10:31:20.533000
+tags = юмор, комп, олбанский, абсурд
+order = 7
+datetime = 2015-12-24 09:30:57.795000
+cursorposition = 0
 
 [Misc]
 pageindex = 1
 
 [wiki]
-md5_hash = 2acf5a823e6c9e72df84dec9f0a393ad
+md5_hash = edf4565c6155060fc3d1c178517eb4fc
 

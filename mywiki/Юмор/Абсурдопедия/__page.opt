@@ -1,8 +1,9 @@
 [General]
 type = wiki
-tags = абсурд
+tags = юмор, абсурд
 order = 1
-datetime = 2013-01-09 09:27:14.352000
+datetime = 2015-12-24 09:13:31.416000
+cursorposition = 0
 
 [Misc]
 pageindex = 1
@@ -11,5 +12,5 @@ pageindex = 1
 expand = False
 
 [wiki]
-md5_hash = 8834962a9bb50045bbd8dd4eeb7aed1e
+md5_hash = 1b8420974b234ef3717128bf18ed87f5
 

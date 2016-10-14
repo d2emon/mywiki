@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = викинги, юмор
+order = 4
+creationdatetime = 2015-01-07 04:07:48.569064
+datetime = 2015-11-30 22:01:32.042521
+cursorposition = 364
+
+[wiki]
+md5_hash = 137b1596c85678f255844d00bc61b48d
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+

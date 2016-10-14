@@ -1,0 +1,16 @@
+[General]
+type = wiki
+tags = delphi, комп
+order = 0
+datetime = 2015-12-02 21:39:49.027000
+cursorposition = 0
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+
+[wiki]
+md5_hash = 76cf11ab1374d223b49f974685a2b7e3
+

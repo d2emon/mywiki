@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = юмор, языки, lurkmore
+order = 5
+creationdatetime = 2015-11-17 11:02:54.103724
+datetime = 2015-12-24 09:58:33.062000
+cursorposition = 1270
+
+[wiki]
+md5_hash = f1c58b6c804aa9af2107d3f7623fbcea
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+

@@ -1,16 +1,16 @@
 [General]
 type = wiki
-tags = 
-order = 1
-datetime = 2013-04-02 15:56:08.588000
-cursorposition = 0
-
-[Misc]
-pageindex = 1
+tags = дописать, игры, комп
+order = 4
+datetime = 2016-07-11 16:06:13.704000
+cursorposition = 12592
 
 [Tree]
 expand = False
 
 [wiki]
-md5_hash = 5b4e45eb2b03dbdaa31ff31843a927af
+md5_hash = 69d27933b97d23067f70ba65d4e374ae
+
+[Misc]
+pageindex = 1
 

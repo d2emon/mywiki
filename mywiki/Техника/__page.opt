@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = дописать, техника
+order = 13
+creationdatetime = 2016-05-15 16:54:21.646000
+datetime = 2016-05-15 23:31:29.183000
+cursorposition = 13
+
+[wiki]
+md5_hash = d33acfd05b38a5066f5b4022c48d7dbb
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+

@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = книги, фентези, сай-фай
+order = 3
+creationdatetime = 2015-12-11 10:22:56.260000
+datetime = 2016-03-02 01:14:33.531000
+cursorposition = 44
+
+[wiki]
+md5_hash = b8ca772a6c2e85633d588f3922ff5d92
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+

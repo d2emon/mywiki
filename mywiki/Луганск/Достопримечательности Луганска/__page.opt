@@ -1,8 +1,9 @@
 [General]
 type = wiki
-tags = достопримечательности
+tags = достопримечательности, город, луганск
 order = 0
-datetime = 2013-04-02 17:30:11.999000
+datetime = 2015-12-02 21:50:10.482000
+cursorposition = 0
 
 [Tree]
 expand = False
@@ -11,5 +12,5 @@ expand = False
 pageindex = 1
 
 [wiki]
-md5_hash = 28dac0d3686c7aa9de517f02c2444d16
+md5_hash = dd80fed46bb3c9214c08fbdf665302cb
 

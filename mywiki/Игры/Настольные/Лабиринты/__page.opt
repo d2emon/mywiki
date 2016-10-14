@@ -1,12 +1,16 @@
 [General]
 type = wiki
-tags = 
+tags = лабиринт
 order = 5
-datetime = 2013-04-02 16:45:54.757000
+datetime = 2016-03-29 11:36:19.090453
+cursorposition = 0
 
 [wiki]
-md5_hash = a95337ad61c05255906f7096fbd2c218
+md5_hash = 610e5196e36f65b444b4f8e382982070
 
 [Misc]
 pageindex = 1
+
+[Tree]
+expand = False
 

@@ -1,0 +1,10 @@
+[General]
+type = wiki
+tags = антиблог, луганск, история
+order = 5
+datetime = 2015-12-16 22:01:08.016819
+cursorposition = 0
+
+[wiki]
+md5_hash = 14e4b841208e3667592270d12b6a4ffa
+
