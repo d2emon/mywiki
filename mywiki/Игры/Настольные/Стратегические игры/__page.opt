@@ -6,10 +6,10 @@ datetime = 2015-12-15 14:44:58.850000
 cursorposition = 0
 
 [wiki]
-md5_hash = c94f30ecfd5c97b4ac62d722a34ee5f0
+md5_hash = 264ec3a874899a7409d8563476f2bb1d
 
 [Tree]
-expand = False
+expand = True
 
 [Misc]
 pageindex = 1
