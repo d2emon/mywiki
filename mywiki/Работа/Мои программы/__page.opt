@@ -1,7 +1,7 @@
 [General]
 type = wiki
 tags = мое, комп
-order = 11
+order = 0
 datetime = 2015-12-02 21:44:53.410000
 cursorposition = 0
 
@@ -12,5 +12,5 @@ pageindex = 1
 expand = False
 
 [wiki]
-md5_hash = 77391aed8e6d644ad49fa6610e220ec7
+md5_hash = 313457aa24ffd0af787199205fb11a55
 
