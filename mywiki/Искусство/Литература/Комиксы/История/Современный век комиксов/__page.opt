@@ -1,13 +1,13 @@
 [General]
 type = wiki
 tags = книги
-order = 4
+order = 3
 creationdatetime = 2016-10-12 11:56:12.466000
 datetime = 2016-10-12 11:58:27.337000
 cursorposition = 63
 
 [wiki]
-md5_hash = df516e6dc51569093f5c4f72be451b0c
+md5_hash = 616676872c116d4f53dcbcf0544ee2ff
 
 [Misc]
 pageindex = 1
