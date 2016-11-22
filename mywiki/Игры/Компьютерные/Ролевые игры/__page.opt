@@ -1,7 +1,7 @@
 [General]
 type = wiki
 tags = ролевки, игры
-order = 7
+order = 8
 datetime = 2015-12-02 22:49:38.805000
 cursorposition = 0
 
@@ -12,5 +12,5 @@ pageindex = 1
 expand = False
 
 [wiki]
-md5_hash = 37a1c486ecf3ff2ff2e65126cbce125b
+md5_hash = 990b3b168866a0992b14ca8e9df45671
 
