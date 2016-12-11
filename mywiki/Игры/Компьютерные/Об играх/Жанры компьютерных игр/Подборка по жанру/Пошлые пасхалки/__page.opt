@@ -1,13 +1,13 @@
 [General]
 type = wiki
 tags = wikipedia, игры, юмор
-order = 8
+order = 11
 creationdatetime = 2016-07-13 12:18:05.948000
 datetime = 2016-07-13 12:29:57.258000
 cursorposition = 197
 
 [wiki]
-md5_hash = 07787d4f3170310551acc07cabdb1bde
+md5_hash = 1a6c0ec107b6eb983fa524af5881e6c7
 
 [Misc]
 pageindex = 1

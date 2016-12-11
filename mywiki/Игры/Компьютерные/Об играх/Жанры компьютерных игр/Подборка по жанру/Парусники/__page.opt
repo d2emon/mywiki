@@ -1,13 +1,13 @@
 [General]
 type = wiki
 tags = wikipedia, игры
-order = 5
+order = 7
 creationdatetime = 2016-07-13 11:47:17.960000
 datetime = 2016-07-13 12:05:02.415000
 cursorposition = 174
 
 [wiki]
-md5_hash = 81b4efaac5f174cbe8e8e6d4e8c34fd2
+md5_hash = 35571d49d795497d4cae78aabba79942
 
 [Misc]
 pageindex = 1
