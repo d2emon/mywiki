@@ -7,3 +7,6 @@ expand = True
 [General]
 selectedtab = 0
 
+[Tabs]
+tab_0 = Работа/Fireball Games/По жанрам/Боевики/Одиссея
+
