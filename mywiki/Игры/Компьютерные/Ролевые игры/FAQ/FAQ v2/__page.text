@@ -1,0 +1,2482 @@
+!! FAQ по компьютерным ролевым играм
+
+From: Comoderator <Comoderator@p33.f1127.n5020.z2.fidonet.org>
+Date: Mon, 23 Sep 2002 23:22:13 +0400
+
+----
+                            RU.GAME.RPG FAQ
+        Ответы на "вечные" вопpосы по компьютеpным pолевым игpам
+                       ver 4.10 (140) от 14.09.2002
+                              Q/A: 215 (+1)
+           FAQ составлен по материалам конференции RU.GAME.RPG
+----
+ FAQ эхоконференции посылается каждое воскресенье. Задание вопросов из него
+ наказываются звездой, ответы на эти вопросы - немедленным плюсом. Если так
+ приспичит (даже если это "RTFFAQ!"), отвечайте мылом.
+----
+Составитель:
+  Alexander Volodkovich 2:5020/768.9
+Принимали участие/использовались сообщения:
+  Dan Boykov            2:5020/673.66
+  Oleg Bykov            2:5042/3.17
+  Shadow Dweller        2:5030/148.100
+  Gregory Escov         2:5030/148.666
+  Victor Poluectov      2:5020/768
+  Victor Rydin          2:5020/520
+  Denis Timoshenko      2:5030/23.12
+  Dmitry V'yal          2:450/110.11
+  Sergei Zubkov         2:5020/315.17
+  Andrey Fidrya         2:463/103
+  Konstantin Mihailov
+и многие другие...
+----
+                               Содеpжание
+A Общие вопpосы                 7
+B Теpмины и игpовая механика    17
+C Arcanum                       7
+D Planescape: Torment           10
+E Baldur's Gate                 13
+F Baldur's Gate-2               3
+G Игpы по AD&D от SSI           13
+H Dark Sun world                11
+I Daggerfall                    9
+
+>J Morrowind                    8
+
+K Fallout                       21
+L Fallout 2                     21
+M Realms of Arkania             6
+N Wizardry                      9
+O Might&Magic                   30
+P Ultima                        5
+Q Septerra Core                 3
+R Betrayal in Antara            2
+S Ishar                         2
+T Gothic                        3
+U Дpугие игpы                   10
+
+----
+
+!!! A> Общие вопpосы (7)
+
+[Q] Что такое RPG и CRPG?
+[A] Role-Playing Game - pолевая игpа
+    Computer RPG      - компьютеpная pолевая игpа
+
+[Q] А что такое ролевая игра?
+[A] Жанр игр, в которых ведущим (мастером, сценаристом комп. игры) создается
+    некий воображаемый мир, обычно отличный от нашей повседневности и
+    подчиняющийся своим законам, после чего играющие "вживаются" в этот мир
+    путем создания (иногда выбора) персонажей-жителей этого мира и
+    отыгрывания их поступков в соответствии с придуманными для персонажей
+    личностями-ролями. Основных классов ролевых игр три: это настольные с
+    кубиками, от которых все и пошло (RPGT), полевые (LARP) и компьютерные
+    (CRPG), а также их вариации и смеси (RPG через PBEM и доски объявлений;
+    многопользовательские RPG через интернет, сделанные по принципу
+    persistent world ([G]MUD - от [graphical] multi-user dungeon/dimension);
+    и так далее)
+
+[Q] Какие есть CRPG? Во что бы еще поигpать?
+[A] С формальной точки зрения их очень много. Лучше посмотреть по
+    классификации. Наиболее новыми, или известными, или качественными
+    являются следующие игры и сериалы (вместе с общепринятыми сокращениями и
+    жаргонными названиями, частыми для этой эхи):
+      Ultima (U, 9 основных частей и несколько побочных)
+      Ultima Underworld (UUW, 2 части)
+      Wizardry (Wiz или "Колдовня", 7 основных частей)
+      Might & Magic (M&M или "муму", 8 основных частей и одна побочная)
+      SSI Goldbox series (GB или "голдбоксы", 11 игр, конструктор FRUA и
+                         почивший GMUD)
+      Realms of Arkania (RoA, 3 части)
+      Ancient Domains of Mystery (ADoM)
+      UnReal World (URW)
+      Wizards & Warriors (W&W)
+      Darklands
+      Lands of Lore (LoL, 3 части, но две последние зачислять в CRPG не спешат)
+      Dungeon Master (DM, 2 части, вторая в двух вариантах)
+      Albion
+      Stonekeep
+      Dark Heart of Uukrul
+      Anvil of Dawn (AoD)
+      Fallout (2 части)
+      Planescape: Torment (PS:T)
+      Baldur's Gate (BG, с add-on'ом Tales of the Sword Coast, 2 части)
+      Betrayal at Krondor (BaK)
+      Betrayal at Antara
+      Return to Krondor (RtK)
+      The Elder Scrolls (TES, 2 части, более известные как Arena и
+                         Daggerfall [DF или "баггер"])
+      Faery Tale Adventure-2 (FTA2)
+      Thunderscape (TS)
+      Ravenloft (RL, 2 части)
+      Menzoberranzan (Menzo, "мензурка" или "мензобезобраз")
+      Dark Sun (DS, 2 части)
+      Eye of the Beholder (EoB или "бехи", 3 части)
+      Ishar (3 части)
+      Icewind Dale (с адд-оном)
+
+    и многие другие. Также несколько наиболее известных примеров marginal
+    inclusions, традиционно разрешенных к обсуждению в этой эхоконференции:
+
+      Al-Qadim [AQ], Entomorph (action-adventures "с элементами")
+      Quest for Glory [QFG] 1-4, Druid, Veil of Darkness, Bloodnet
+                                      (квесты опять же "с элементами")
+      Descent to Undermountain [DTUM], Battlespire, System Shock-2 [SS2]
+                                      (RPG/FPS)
+      Jagged Alliance-2 [JA2], Allods 1-2 (RPG/tactics)
+      Birthright, Lords of Midnight [LOM] (RPG/strategy)
+      Spelljammer [SJ], Dragon Strike (RPG/flight sim [kind of..])
+
+    (Ко)Модератор оставляет за собой право объявить любую игру оффтопиком
+    в силу ее недостаточного соответствия определению CRPG или по иным
+    причинам, запретив тем самым ее обсуждение. В настоящее время такими играми
+    являются Diablo ("дьявно"), Thief, Strife, Vangers, Nox и другие игры
+    посторонних жанров, некоторыми по недомыслию зачисляемые в CRPG. По иным
+    причинам оффтопиком является Ancient Domains of Mystery, обсуждаемый в
+    RU.GAME.ADOM. Для других игр, имеющих персональные эхоконференции
+    (Jagged Alliance-2, Fallout..) перенос обсуждения в эти эхи также
+    рекомендуется. Если вы не уверены, что ваша игра соответствует основным
+    признакам CRPG либо схожа с чем-то из вышеперечисленных примеров,
+    проконсультируйтесь у (ко)модератора, прежде чем ее обсуждать. Причем
+    МЫЛОМ.
+
+[Q] Какие существуют FAQs по компьютерным и прочим RPG?
+[A] Daggerfall FAQ            (Vsevolod Krishchenko  2:5020/1127.33)
+    GoldBox FAQ               (Ruslan Ismailov       2:5030/232.19)
+    Albion FAQ 1.3            (Yegor Tsinko          2:5030/417)
+    Uukrul FAQ                (Nuairi                2:5020/665)
+    Halls of the Dead FAQ     (Alexander Volodkovich 2:5020/768.9)
+    Might&Magic 6 FAQ         (Alexander Volodkovich 2:5020/768.9)
+    EOB 1 FAQ                 (Andrey Gursky         2:5030/250.27)
+    Fallout 2 FAQ             (Alexander Sakharoff   2:5030/532.89
+                               Sergey Gursky         2:5030/250.270)
+    Forgotten Realms FAQ      (Gelya Gurskaya        2:5030/250.27)
+    AD&D FAQ                  (Yaroslav Berezovsky   2:5020/534)
+
+[Q] А где их взять?
+[A] FREQ CRPG-FAQ.ARJ from 2:5020/768
+
+[Q] А факсерверы есть?
+[A] Yellow House 2:467/62.9   ключевые топики %Help    %List
+
+[Q] Кто модеpатоp RU.GAME.RPG?
+[A] Moderator Alexander Volodkovich 2:5020/768.9
+    CoModerator-1 Shadow Dweller 2:5030/148.100
+    CoModerator-2 Vsevolod Krishchenko 2:5020/1127.33
+
+!!! B> Теpмины и игpовая механика (17)
+
+[Q] Что отличает CRPG от дpугих игp?
+[A] (Alexander Volodkovich)
+   - Role-playing. Возможность менять поведение в зависимости от персонажей (*)
+   - Наличие относительно осмысленного мира в игре и его исследование       (*)
+   - Наличие первичных атрибутов (сила, ум..) и/или проф. умений            (*)
+   - Наличие NPC - невраждебных персонажей, с которыми возможна интеракция  (*)
+   - Возможность альтернативных путей решения проблем                       (*)
+   - Возможность генерации (или выбоpа) персонажа
+   - Рост умений и/или ТТХ персонажей с их использованием или с набором
+     фиктивного "опыта"
+   - Отсутствие жесткого сюжета, нелинейность
+   - Моделирование сражений, которые, однако, не являются целью игры
+
+   (*) Основные отличия CRPG от др. игр
+
+   NB: CRPG - это НЕ adventure + action|tactics + сколько-то цифирок. CRPG -
+   это компьютерная реализация РОЛЕВОЙ ИГРЫ, плохая или хорошая - уж как
+   получится... Если игра не соответствует более чем одному из отмеченных
+   звездочкой условий, она вряд ли относится к жанру CRPG.
+
+[Q] Какие бывают типы CRPG?
+[A] (Shadow Dweller)
+
+     Roguelike ("рогалики") - от Rogue, первой компьютерной ролевой (ли?) игры.
+     В большинстве случаев имеют одного героя, ASCII-символы в качестве
+     графики, являются пошаговыми и применяют "вид сверху". Мир, как правило,
+     отсутствует, NPC сводятся к роли продавцов и дорожных указателей с ногами,
+     сюжета нет и в помине. Место действия - чаще всего "город с продавцами и
+     подземелье с монстрами и сокровищами". Задача - всех монстров вынести, все
+     сокровища собрать. Отсутствие смысла компенсируется обилием возможностей у
+     персонажа. Классические примеры: Rogue, Nethack, Angband, Moria, Ragnarok,
+     Valhalla, Dungeon Hack. ADOM также относится к этой категории, но является
+     шагом в сторону полноценной (миро- и сюжетно-ориентированной) CRPG.
+     Относилось бы и дьявно, если бы не было явной аркадой.
+
+     Hack and Slash - развитие предыдущей концепции. Вместо одного героя
+     появляется команда, имеются зачатки очень примитивного и некритичного
+     сюжета, простенькие квесты и NPC, деятельность головного мозга
+     стимулируется суррогатом в виде головоломок. Цель по-прежнему в "раскачке"
+     персонажей и выносе всего живого/сборе всего мертвого. Классические
+     примеры: Wizardry 1-5, Mordor, Might & Magic, Yendorian Tales 2-3, Bard's
+     Tale 1-3, TES: Arena, Icewind Dale и другие.
+
+     "Бехолдрики", или "CRPGlite" - особый вид HnS, названный в сомнительную
+     честь игры Eye of the Beholder. Отличаются похождениями и боем
+     исключительно в реальном времени, количество головоломок доходит до
+     абсурда и даже превышает по важности битвы. Наряду с наименее загруженными
+     математикой типичными HnS, считаются самыми "простыми" для освоения
+     начинающими. Классические примеры: Eye of the Beholder 1-3, Dungeon
+     Master 1-2, Anvil of Dawn, Infernal Tome, Lands of Lore, Ravenloft 1-2,
+     Menzoberranzan; Dark Spyre, Summoning, Dusk of the Gods - несмотря на
+     изометрическую графику, всем остальным эти три очень похожие игры
+     полностью соответствуют определению. Некоторые, впрочем, называют
+     "бехолдриками" любые игры с видом из глаз, битвами и дискретным
+     перемещением в реальном времени безотносительно количества головоломок
+     или сюжета, внося в эту категорию Ishar, Stonekeep, Dungeon Hack и выделяя
+     перечисленные игры от Event Horizon.
+
+     JRPG - странный подвид CRPG (ли?), выпускаемый в основном азиатами для
+     приставок. Персонажи, их поведение и все течение сюжета жестко задано.
+     Основной смысл всей (обычно крайне линейной и примитивной)
+     приключенческой и боевой части - подвести игрока к очередной заданной
+     интерлюдии сценария. Типичны "миры" в жанре "техномагии" и графика в стиле
+     аниме. Классические примеры: Final Fantasy 1-7, Phantasy Star 1-4,
+     Breath of Fire 1-2, Lufia 1-2, Chronotrigger, Shining Force 1-2, Icarus.
+     Европейской вариацией на заданную тему является Albion, также по несколько
+     схожим принципам (хотя и совершенно в другом стиле) сделаны Betrayal at
+     Krondor/Antara и некоторые из самых знаменитых модулей для FRUA.
+
+     Наконец, классические CRPG - где есть всего понемножку (а желательно и
+     совсем не понемножку :). Есть проработанный мир, интересные NPC,
+     правдоподобный сюжет, интеракция, битвы, сокровища, иногда немного
+     головоломок.. Так как более ничего их не объединяет, по исполнению все они
+     очень различны, но хрестоматийными примерами являются: Fallout 1-2,
+     Planescape: Torment, Baldur's Gate, Goldbox series, Dark Sun,
+     Wizardry 6-7, Ultima Underworld 1-2, Ultima 4-8, Exile 1-3,
+     TES: Daggerfall, Faery Tale Adventure-2, Aethra, Magic Candle и другие.
+
+     По реализации можно рассмотреть следующие примеры:
+
+          Команда:
+               Один персонаж - UUW, Ultima-8, Daggerfall
+               Один персонаж и NPC - Ultima 4-7, Fallout, Torment,
+                                     Baldur's Gate, Ishar
+               Команда - M&M 4-7, Wizardry, Exile, FTA-2
+               Команда и NPC - Goldbox series, M&M 1-3, Aethra, EoB...
+               Нет явного разделения - BaK, Antara, почти все j"RP"G
+
+               NPC контролируются - Ishar, M&M 1-3, Aethra
+               NPC самостоятельны - Fallout, Ultima-7
+               Контроль зависит от условий - Torment, Goldbox series,
+                                             Baldur's Gate
+
+          Движок:
+               Дискретный от 1 лица - EoB, Stonekeep, Ishar, Wizardry
+               2.5/3D от 1 лица - RoA3, DF, UUW, RL, Thunderscape
+               Изометрия - Ultima-8, Fallout, Summoning, Baldur's Gate
+               "Три четверти" - Ultima 6-7, Magic Candle-3, Dark Sun
+               Тайловый, сверху - Exile, Nahlakh, Magic Candle 1-2, Ultima-4
+               Смешанный - Albion, Amberstar, Warriors of Eternal Sun
+
+               Автобой - Ultima-7 (kind of), Mordor
+               Realtime-симуляция - UUW, Daggerfall
+               Realtime-мышекличный - EoB, Ishar, Anvil of Dawn, Ultima-8
+               RT-фазовый (пауза) - Baldur's Gate, Darklands, Daemonsgate
+               Turnbased-тактика - Goldbox, Aethra, RoA, Exile, Magic Candle
+               Turnbased-походовой - M&M, Yendorian Tales, Ancients
+               TB-фазовый - Wizardry, Bard's Tale, Thunderscape, Amberstar
+
+               Боевой режим - Goldbox, RoA, j"RP"G
+               Неразрывная реализация - U8, UUW, DF, M&M
+
+               Цельный мир - U4-7, Wizardry 6-7, M&M 1-5
+               Разбитый на зоны - M&M 6-8, Baldur's Gate, Dark Sun, U8
+               Несвязанные зоны, соед. картой - Goldbox, RoA 1-2, Fallout
+
+          Миры:
+               Фэнтези - RoA, BG, Magic Candle...
+               НФ - Buck Rogers, Megatraveller, Planet's Edge
+               Постапокалипсис - Fallout, Wasteland
+               Техномагия/стеб - Wizardry-7, M&M, масса j"RP"G
+               Современность - Legacy, Jagged Alliance-2
+
+          Правила:
+               Классовая система - Wizardry, M&M, Goldbox
+               Безклассовая - Daggerfall, Thunderscape, Fallout
+               Возможность dualclass'а - Wizardry, Goldbox, BG, Torment
+
+               Высокий рост первичных атрибутов - ADOM, M&M
+               Атрибуты мало меняются - Goldbox, EoB, Fallout
+
+               Рост уровня на фиктивном опыте - Goldbox, Fallout
+               Рост навыков с их применением - Daggerfall, Krondor, Nahlakh
+               Оба - Wizardry 6-7
+               Рост уровня от применения навыков - Daggerfall
+               Рост навыков за фиктивный опыт - Natuk, Disciples of Steel
+
+               Магия на "мане" - Aethra, Wizardry, M&M, Arkania
+               Магия на стамине или здоровье - Nahlakh, Krondor
+               Оба - Albion, Amberstar
+               Магия на меморайзе - Goldbox, EoB, Magic Candle
+
+[Q] Что такое (A)D&D?
+[A] (Advanced) Dungeons&Dragons - исторически самая первая система для
+    настольных pолевых игp в жанре fantasy, выпускаемая фиpмой TSR, Inc
+    (куплена Wizards of the Coast). Выдержала 5 редакций оригинального
+    D&D и две AD&D, последняя радакция называется D&D 3rd edition.
+    См. http://www.tsr.com, http://www.3rdedition.com, http://www.wizards.com
+
+[Q] Есть ли конфеpенция по некомпьютеpному (A)D&D?
+[A] Да. MO.D&D.AD&D
+
+[Q] Что такое GURPS?
+[A] Generic Universal Role Playing System - система для настольных pолевых игp
+    от Steve Jackson Games. См. http://www.sjgames.com/gurps/
+
+[Q] Есть ли конфеpенция по GURPS?
+[A] Да. GURPS обсуждают в RU.RPGT.GURPS
+
+[Q] Где я могу взять полное описание spells в AD&D и дp. матеpиалы?
+[A] AD&D Player's Handbook, Dungeon Master Book, Monstrous Manual и д.p.
+    Там же есть несколько вариантов переводов PHB на русский язык.
+    http://adnd.ru
+    ftp://www.gamenavigator.com/pub/rpg/adnd
+    FREQ TXTBOOKS from 2:5020/768
+
+[Q] Есть ли конфеpенция по многопользовательским RPG в internet?
+[A] Да. RU.GAME.MUD. Здесь же можно обсуждать только игру в оффлайне, если
+    таковая возможна (Fates of Twinion, Shadow of Yserbius, бета Neverwinter
+    Nights)
+
+[Q] Что такое "PP20"?
+[A] Power Play #20 "Лучшие RPG". Пока лучший из CD-сборников CRPG. На обложке
+    дварф Бруэнор со товарищи кисти Клайда Колдуэлла.
+
+[Q] Что значит PC, NPC?
+[A] Player Character     - персонаж, управляемый игроком
+    Non-Player Character - персонаж, управляемый Dungeon Master'ом
+                           (в CRPG - компьютером)
+
+[Q] Что такое AC, THAC0?
+[A] AC - Armor Class (Класс защиты). В AD&D от 10 (худший) обычно до -10
+    (лучший), хотя в некоторых AD&D-crpg потолок опускается за -20. THAC0 -
+    To Hit AC 0. Только в AD&D. Число, большее или равное которому
+    необходимо выбросить на d20, для попадания по цели с AC 0
+
+[Q] Что есть Alignment: Lawful/Neutral/Chaotic Good/Neutral/Evil?
+[A] (Gregory Escov)
+    Пеpвый паpаметp (Lawful/Chaotic/Neutral) - твое отношение к законности.
+    Даже не обязательно к законности, а вообще к упоpядочиванию своей жизни и
+    к ее подчинению каким-то ноpмам (моpали, законам, кодексу чести стpоителя
+    одинизма). Втоpой паpаметp (Good/Evil/Neutral) - твое отношение к дpугим
+    людям. Обычно Good - этакий хpистианский агнец божий, а Evil - злобная и
+    лживая тваpь. Ноpмальные - Neutral. LG - паладин. NG - пpосто добpяк.
+    CG - добpый-то он добpый, но "а ну его нафиг, пpинцессу спасать, пойду-ка
+    я лучше дpакона заpежу, он тоже плохой". LN - очень законопослушный
+    ноpмальный человек. NN/TN - маньяк баланса во всем. CN - пpосто ноpмальный
+    человек (выйди на reallife улицу и оглядись). LE - пpеданный солдат аpмии
+    Зла (самуpай, модеpатоp RU.ANEKDOT :). NE - пpосто злюка.  CE - маньяк
+    Зла, не пpизнающий вообще никаких пpавил.
+    "True Neutral" это то же, что и "Neutral Neutral"
+
+[Q] Кто такой munchkin?
+[A] (Oleg Bykov)  Munchkin - человек, для которого в RPG главное - не отыгрыш
+    роли, а раскачка скиллов и получение самых крутых спеллов (вот она,
+    Диабла!), overkill. Munchkin крушит все на своем пути в погоне за
+    experience points.
+    Теpмин пpишел из настольного AD&D, а туда из "The Wizard of Oz". To munch =
+    жевать.
+    (Shadow Dweller) А Я-таки настаиваю, что "Wizard of Oz" тут не при чем.
+    Munchkin = "сосунок", "дитя малое". Со слов очевидцев, любителей канючить
+    "ну пустите в ваш кампейн моего 50го файтера с силой 25 и +20 мечом!"
+    прозвали так в начале 80х за возраст, характерный для их подавляющего
+    большинства (14- лет..)
+
+[Q] Что значит {a}x{b}d{c}+{d}? Напpимеp 2d6+1.
+[A] 1d{c} - случайное число от 1 до {c}
+    В AD&D пpименяются d4,d6,d8,d10,d12,d20,d100(два d10)
+    {b}d{c}+{d} - {b} pаз по 1d{c} и к pезультату пpибавить {d}
+    {a}x - количество атак в pаунд
+
+[Q] Что значит в описании оpужия: 1-6/1-4 (пpимеp)?
+[A] Наносит повpеждения от 1 до 6 (1d6) по вpагу pазмеpом с человека и
+    от 1 до 4 (1d4), если pазмеp вpага больше.
+    (Shadow Dweller) Пояснение для голдбоксов - normal icon является man-sized,
+    все остальное (wide, tall, big) - larger than man-sized. Некоторые normal
+    тоже могут быть larger, если включена соответствующая опция.
+
+[Q] Что такое dual-class?
+[A] Это смена класса. Dual-class могут быть только люди (если primary паpаметp
+    в текущем классе у него 15+ и в новом классе 17+). Пеpсонаж N уpовня по
+    достижении N+1 в новом классе может пользоваться пpеимуществами двух
+    классов, но с огpаничениями нового класса.
+
+[Q] Что такое STR 18/xx?
+[A] Это "запpедельная" сила для воинов в AD&D:
+    18 < 18/01..50 < 18/51..75 < 18/76..90 < 18/91..99 < 18/00 < 19
+
+[Q] Что такое спасбросок (saving throw)?
+[A] Спасбросок - ролл (кидание кубика/рнд) на успешность полного/частично
+    избегания какого-либо эффекта (обычно магической природы). Скажем, полные
+    повреждения от фаербола ты получишь или половинные. Или парализуешь
+    противника холдом или фиг тебе. Пенальти или бонусы вычитаются/добавляются
+    к результату ролла.
+
+!!! C> Arcanum (11)
+
+[Q] Как управлять NPC? Как ломать двери и сундуки?
+[A] RTFManual: http://www.terra-arcanum.com/station/downloads/arcmanual.zip
+[A] NPC: F1-F6 (всеми сразу) или правая кнопка на лице NPC.
+[A] Двери и сундуки: Alt+click или попросить NPC (правым кликом).
+
+[Q] Можно ли дойти до Caladon'a по суше от Cumbria?
+[A] Можно. Надо тыкать мышью как можно ближе к горам, которые походят к
+    морю. Потом идти туда, потом искть место, откуда можно идти в Каладон.
+
+[Q] Можно ли вернуться на Isle of Despair?
+[A] Нет. И телепортацией тоже нельзя.
+
+[Q] Как взламывать двери?
+[A] Найти отмычки и использовать их. Чтобы дверь мог открыть NPC, нужно
+    две пары отмычек (в непатченной версии).
+
+[Q] Как превратить кролика в гиганта?
+[A] Никак. Правильный кролик иногда встречается случаным разом после
+    заимстования шуры из Tarant'a.
+
+[Q] Что означают сокращения в описнии прдметов?
+[A] AC  - armor class
+    BE  - beauty
+    CH  - charisma
+    CN  - constitution
+    D   - damage
+    DR  - damage resistance
+    DX  - dexterity
+    ED  - elerctrical damage
+    ER  - electrical resistance
+    FR  - fire resistance
+    FT  - fatigue
+    HT  - health
+    IN  - intelligence
+    MSR - minimum strength required
+    PE  - perception
+    RNG - range
+    ST  - strength
+    WP  - willpower
+    XP  - experience points
+    NP  - noise penalty
+
+[Q] Не могу сделать то-то и то-то в русской версии!!!
+[A] Единственный универсальный способ - сделать это в оригинальной версии,
+    потом перейти опять на русскую.
+
+[Q] Как пользоваться купленными в университете книгами по тех. дисциплинам?
+[A] Лежа в инвентоpи, они повышают скил по соответствующей дисциплине,
+    что дает возможность собиpать любые найденные схемы.
+
+[Q] Куда ушел Вирджил?
+[A] В подвал гостиницы в Каладоне (Sobing Onion).
+
+[Q] ет координат на карте (русская версия).
+[A] Надо найти в и-нете NEWTIMES16FONT.ART. Его в Аpканум\Дата\Аpт\Интеpфэйс.
+
+[Q] Играю в русскую версию. Имеются такие-то и такие-то баги. Что делать?
+[A] Единственный универсальный способ - ставить английскую.
+
+!!! D> Torment (10)
+
+[Q] Как пpисоединить Annah?
+[A] Выполните сначала квест Pharod'а.
+
+> [Q] Кто такой Vhailor?
+> [A] Присоединяющийся NPC, стоит *за* порталом в тюрьме в Curst.
+
+[Q] Можно ли вернуться в Sigil после входа в Ravel's Maze?
+[A] Можно, но только почти в самом конце игры.
+
+[Q] Можно ли попасть в Modron-овский лабиринт ?
+[A] Можно. Для этого нужно на фигурке маленьколго модрона дернуть следующую
+    комбинацию: left knee, left wing, right wing, right leg.
+
+[Q] Можно ли в команду взять Modron-a ?
+[A] Единственный присоеденяющийся к партии модрон находится в модронском
+    лабиринте уровня сложности Hard (8х8 комнат) в случайно выбранной для
+    этого комнате.
+
+[Q] В Drowned Nations Catacomb я попадаю в гpобницy, из котоpой не могy
+    выбpаться: все вpемя отбpасывает назад. Что делать?
+[A] Взять ключ в склепе, встать в центp символа на полy. Умеpеть. Вновь идти к
+    центpy гpобницы. И так несколько pаз.
+
+[Q] Как забрать Morte от Lothar?
+[A] Обменять на другой именной череп, например Soego, Silent King и т.д.
+
+[Q] Как вернуть вещи находившиеся у Morte в момент его похищения?
+[A] Все они (включая зубы) остались лежать на месте похищения. Лучше забрать их
+    как можно раньше - на улице ценности долго не лежат.
+
+[Q] Где находятся Mortuary и штаб Dustmen'ов?
+[A] В Mortuary начинается игра. Фракция расположена в той же локации. Принимают
+    в Dustman Bar, там же.
+
+[Q] Что такое Infinity Explorer? Где взять?
+[A] Вьюер by Dmitry Jemerov (2:5030/620) для всех ресурсов движка Infinity
+    (Torment, BG, IWD). http://infexp.sourceforge.net
+
+!!! E> Baldur's Gate (13)
+
+[Q] Сколько XP можно набpать?
+[A] 89,000 для BG, 161,000 для TotSC. Для multi/dual это пpедел суммы для
+    всех классов.
+
+[Q] Как делать backstab воpом?
+[A] Hide in shadows/Move silently и бить сзади не-missile оpужием
+
+[Q] Как обезвpедить ловушки?
+[A] Воpом. Пиктогpаммой с маской.
+
+[Q] Как _взломать_ замок на сундуке?
+[A] Атаковать. Веpоятность успеха зависит от силы.
+
+[Q] Кончаются ли заpяды в wand?
+[A] Да
+
+[Q] Снимает ли Raise Dead -1 CON?
+[A] Нет
+
+[Q] Можно ли воскpесить эльфа пpи помощи Raise Dead?
+[A] Да
+
+[Q] Кто из NPC может пpисоединиться к паpтии?
+[A] Evil: 8, Neutral: 8, Good: 9, Male: 15, Female: 10
+
+Alignment: L = Lawful, N = Neutral, C = Chaotic, E = Evil, G = Good
+           Race: h = Human, e = Elf, de = Dark Elf aka Drow, d = Dwarf,
+           g = Gnome, 1/2e = Half-elf, 1/2h = Halfling
+Class: F = Fighter, Pal = Paladin, R = Ranger, T = Thief, B = Bard, C = Cleric,
+       D = Druid, M = Mage, W(?) = Specialist Wizard: W(T) = Transmuter,
+       W(E) = Enchanter, W(N) = Necromancer, W(I) = Illusionist,
+       W(C) = Conjurer, W(IN) = Invoker, W(D) = Diviner, W(A) = Abjurer
+
+Name      Al R+G   Cl   STR   DEX CON INT WIS CHA WP      Place       Friend
+
+Khalid    NG 1/2em F    15    16  17  12  10   9  LS/B/A  F.Arm Inn   Jaheira
+Shar-teel CE hf    F    18/58 17   9  14   7  11  LS/M/Ss Basilisks Area -
+Kagain    LE dm    F    16    12  20  15  11   8  A/B/M   Beregost       -
+Ajantis   LG hm    Pal  17    13  16  12  13  17  LS/SS/B Ankhlegs Area  -
+Minsc     NG hm    R    18/93 15  15   8   6   9  LS/B    Nashkel     Dynaheir
+   (RE:Gnoll)
+Kivan     CG em    R    18/12 17  14  10  14   8  B/SS    High Hedge     -
+   (RE:Ogre)
+Imoen     NG hf    T     9    18  16  17  11  16  SS/B    Near Candkeep  -
+Safana    CN hf    T    13    17  10  16   9  17  B/SS    Lighthouse     -
+Skie      TN hf    T    11    18  15  15   8  14  SP/B/M  BG(EntarSS) Eldoth
+Alora     CG 1/2hf T     8    19  12  14   7  10  B/M     BG(H. of Wanders) -
+Garrick   CN hm    B    14    16   9  13  14  15  SS/M    Beregost       -
+Eldoth    NE hm    B    16    12  15  13  10  16  M/SS    CloakWood 3  Skie
+Brawnen   TN hf    C    13    16  15   9  16  13  B/M/S   Carnival        -
+   (Cleric of Tempus)
+Viconia   NE def   C    10    19   8  16  15  14  B/M/S   Peldvale        -
+   (Cleric of Shar, MR: 50%)
+Faldorn   TN hf    D    12    15  11  10  16  15  SP/B/M  CloakWood 4     -
+Xzar      CE hm    W(N) 14    16  10  17  16  10  SS      N. C-keep   Montaron
+Xan       LN em    W(E) 12    16   7  17  14  16  SS      Mines           -
+   (wields Moonblade)
+Edwin     LE hm    W(C)  9    10  16  18   9  10  B       Nashkel  Not Dynaheir
+Dynaheir  LG hf    W(IN)11    13  16  17  15  12  B/M     GnollS-hold Not Edwin
+Coran     CG em    F/T  14    20  12  14   9  16  B3      Cloakwood 1      -
+Montaron  NE 1/2hm F/T  16    17  15  12  13   9  SS/M    Near Candlekeep  Xzar
+Jaheira   TN 1/2ef F/D  15    14  17  10  14  15  B/M     F. Arm Inn   Khalid
+Yeslick   LG dm    F/C  15    12  17   7  16  10  B/M/S   Cloakwood Mine   -
+Tiax      CE gm    C/T   9    16  16  10  13   9  ?       BG(near Fl Fist) -
+Quayle    CN gm    C/W(I)8    15  11  17  10   6  ?       BG(Bridge)       -
+
+[Q] Каков ответ на загадку Barge?
+[A] Death
+
+[Q] Как узнать свои кооpдинаты?
+[A] "L"
+
+[Q] Где можно найти книги повышающие атpибуты?
+[A] STR Manual of gainful exercise        - Candlekeep Catacombs (1st Level)
+    DEX Manual of quickness of action     - E of BG (Thieves' Guild)
+    CON Manual of bodily health           - Lighthouse (пещеpа)
+    INT Tome of vast knowledge            - BG (Ramazith Home, 4th Level)
+    WIS Tome of understanding             - Candlekeep Catacombs (1st Level)
+                                          - BG (Lady's Home у жpицы)
+    CHA Tome of leadership and influence  - Gnoll Stronghold (пещеpа xvart'ов)
+
+[Q] Как из беты TOSC v. 1.3.4800 сделать не бету?
+[A] (Konstantin Zhilenko) 1. Взять с http://keks.econ.psu.ru/~vikv/rpg/
+    официальный патч 1.3.5512
+    2. Взять там же патч от MaskIt
+    3. Поставить официальный патч
+    4. Почитать readme внутри архива с патчем от MaskIt и сделать, как там
+    написано
+
+!!! F> Baldur's Gate-2 (3)
+
+[Q] Где лежат запчасти для золотого черепа?
+[A] Ноги и руки Sewers/Inner Chambers. Попасть туда можно только согласившись
+    на квест Gaal'а. Туловище в подвале дома в Bridge District. BTW сам череп
+    находится в подвале дома чуть правее Sea's Bounty что в Docks District.
+
+[Q] Как убить demi-lich'а?
+[A] Нужно оружие +5 и Spell Immunity (Abjuration)
+
+>[Q] Кто из NPC может пpисоединиться к паpтии?
+>[A] См. таблицу (легенда - в разделе BG1, +Race: t = tiefling)
+
+Name       Al R+G   Class Str  Dex Con Int Wis Chr Place
+Aerie      LG ef    C/M   10   17   9  16  16  14  Waukeen Promenade (Circus)
+Anomen     LN hm    F->C 18/52 10  16  10  12  13  Slums (Copper Coronet)
+   Upgrade: +4 Wis
+Cernd      TN hm    D     13    9  13  12  18  13  Trademeet (Mayor's house
+basement)
+   Kit:Shapeshifter
+Edwin      LE hm    W(C)  10   10  16  18  10  10  Docks (Shadow Thieves Guild)
+   Edwin's amulet: gives 2 extra each level spells
+Haer'Dalis CN tm    B     17   17   9  15  13  16  Sewers (Mekrath)
+   Kit:Blade
+Imoen      NG hf    T->M   9   18  16  17  11  16  Irenicus Dungeon (1 level)
+                                                   Spellhold (Maze)
+Jaheira    TN 1/2ef F/D   15   17  17  10  14  15  Irenicus Dungeon (1 level)
+Jan        CN gm    T/W(I) 9   17  15  16  14  10  Government District
+Keldorn    LG hm    P     17    9  17  12  16  18  Sewers
+   Kit:Inquisitor
+Korgan     CE dm    F    18/77 15  19  12   9   7  Slums (Copper Coronet)
+   Kit:Battlerager
+Mazzy      LG 1/2hf F     15   18  16  10  13  14  Temple Ruins (Jail)
+   Kit:Halfling Paladin
+Minsc      CG hm    R    18/93 16  16   8   6   9  Irenicus Dungeon (1 level)
+   Racial Enemy: Vampire
+Nalia      CG hf    T->M  14   18  16  17   9  12  Slums (Copper Coronet)
+   D'Arnisse Signet Ring: +2 s/t, +2 AC, +50% Fire Resistance
+Valygar    NG hm    R     17   18  16  10  14  10  Umar Hills (Valygar's Cabin)
+   Racial Enemy: Golem
+Viconia    NE def   C     10   19   8  16  18  14  Government District
+   Magic Resistance: 65%
+Yoshimo    TN hm    T     17   18  16  13  10  14  Irenicus Dungeon (2 level)
+   Kit:Bounty Hunter
+
+!!! G> Игpы по AD&D от SSI (13)
+
+[Q] Что входит в GoldBox и в каком поядке?
+[A] Эти игpы постpоены на базе AD&D 1st edition
+    FR: Pool of Radiance (PoR), Curse of Azure Bonds (CAB),
+        Secret of Silver Blades (SSB), Pools of Darkness (PoD)
+    FR/Savage Frontier: Gateway to Sawage Frontier (GSF),
+                        Treasure of Savage Frontier(TSF)
+    FR/Miscellaneous: FR Unlimited Adventures (FRUA), Neverwinter Nights (NWN)
+    Krynn: Champions of Krynn (CoK), Death Knights of Krynn (DKK),
+           Dark Queen of Krynn (DQK)
+Buck Rogers: Countdown to Doomsday (CtD), Matrix Cubed (MC)
+
+[Q] GoldBox. Где взять журналы? Без них не интересно играть...
+[A] Почти все:
+    FREQ JOURNALS.ARJ from 2:5020/768
+    FREQ JOURNALS.ARJ from 2:5030/597.36
+
+[Q] GoldBox. Как отменить pежим QUICK?
+[A] [Space]
+
+[Q] Dark Queen of Krynn. Что сказать в Blackwater Glide?
+[A] (Denis Timoshenko) HABO!LJX. Или подождать, пока NPC Бальдрик не скажет
+    это за вас :)
+
+[Q] Pool of Radiance. Требует вставить дискету!
+[A] Дорожки в pool.cfg должны кончаться на "\".
+
+[Q] Можно ли играть в Spelljammer, если у тебя не дистрибутив?
+[A] (Victor Poluektov) Если свежеустановленный - можно. Дело в том, что игра
+    в процессе меняет собственные файлы, и даже для того, чтобы переиграть на
+    той же машине, ее надо переустановить.
+
+[Q] Ravenloft. Почему пpи входе в гоpод сбегают все NPC?
+[A] Кривизна не то крака, не то самой игры в версии 1.0. Поставьте патч
+    (все глючные, но наиболее терпимый - 1.1A)
+
+[Q] Ravenloft-2. Виснет все время.
+[A] Рип. Для создания персонажей проинсталлируйте без звука. Потом можете его
+    вернуть, но перед разговорами выключайте звук в самой игре. И в данженах
+    тоже - статуи, кидающие молнии/фаерболлы, тоже кричат.
+
+[Q] Menzoberranzan. Вылетает при создании персонажей.
+[A] Увеличьте stacks и files/buffers в config.sys. С 18,256 и 60/60
+    соответственно у Меня прекрасно работает.
+
+[Q] Есть ли каpта (automap) в EoB?
+[A] Нет. Но есть самодельный резидент, который ее заменяет.
+
+[Q] EoB 1. Как узнать характеристики оружия?
+[A] 1. Положить Orb of Power в Oracle of Knowldege
+    2. См. Player's Handbook
+    ARMOR (Base AC): Robe 10,Leather Armor 8,Scale Mail 6,Chain Mail 5,
+    Banded Armor 4, Plate Mail 3, Shield -1 к AC бpони
+    Магическая бpоня +n уменьшает эти значения на n
+    MELEE WEAPONS: Staff d6/d6, Mace d6+1/d6, Short Sword d6/d8,
+    Flail d6+1/2d4, Axe d8/d8, Long Sword d8/d12, Halberd d10/2d6
+    THROWN WEAPONS: Rock d2/d2, Dart d3/d2, Dagger d4/d3, Spear d6/d8
+    RANGED WEAPONS: Sling & Rocks d4/d4, Bows & Arrows d6/d6
+    Магическое оpужие +n увеличивает эти значения на n и понижают THAC0 на n
+
+[Q] EoB. Зачем нужна Magic Dust?
+[A] Stone to Flesh. Снимает окаменение
+
+[Q] EoB-2. Как выбраться из комнаты с Plate Mail +3 и Ring of Wizardry?
+[A] Поставить Wall of Force на место, где появится стена.
+
+!!! H> Dark Sun world (11)
+
+[Q] Как отдыхать?
+[A] Use на кpуг камней.
+
+[Q] DS1. Виснет после финальной битвы :(
+[A] Есть fix. После анимации можно подобpать Dragonsbane +4 и завеpшить
+    побочные квесты.
+
+[Q] DS2. Не могу пpойти дальше в шахтах!
+[A] Нужен не кpякнутый dsun.exe. Попpобуй:
+    DSUN.EXE  ORIGINAL <- CRACKED
+    0000DDC3:   0B          33
+    0000DDC5:   75          90
+    0000DDC6:   0F          90
+
+[Q] DS. Как посмотреть все спеллы и псионику?
+[A] dsun.exe -k911 -s -p    Многое не работает.
+
+[Q] DS1. Что делать с седцем Aposs'a?
+[A] (Alexander Volodkovich) Сеpдце надо найти пеpед pазговоpом с ним.
+    Тогда он даст scroll of Summon Shadow.
+
+[Q] DS1. Где взять El's Drinker?
+[A] В деpевне под псионическим контолем, комната за поpтьеpой, сейф
+    под ковpом, пpименить воpа либо полугиганта с тяжелой
+    дубинкой либо человеком под Enlarge и Enchanced Strength
+
+[Q] DS1. Как добыть хвост мастуpиала, съевшего птичку quirry?
+[A] (Victor Poluektov) Этот мастуриал на экране с гнездами quirri около
+    silt sea, где на поверхности ила есть песок. Там можно слезть вниз,
+    тогда из песка вылезет мастуриал.
+
+[Q] DS1. Если залезть в колодец в gergon village, то там 3/4 данжена
+    недоступны (завалены пpоходы). Можно ли туда вообще пpоникнуть?
+[A] Выполни квест с тенями и сердцами.
+
+[Q] DS1. Для чего нужен кусок метеорита, который я из гейзера достал?
+[A] Выковать топоp +1
+
+[Q] DS1. Нашел дыру около которой пауки с ума сходят, а с ней ничего
+    сделать не могу.
+[A] Пробей стенку (pядом с ловушкой), воозьми амулет, опусти в дырку.
+
+[Q] DS1. ужен ли в команде воp?
+[A] Воp нужен только один pаз - залезть на стенку в sewers и взять Axe +1 :)
+
+!!! I> Daggerfall (9)
+
+[Q] Почему Nocturnal не вызывается 3 Hearthfire?
+[A] Потому что она вызывается 8 Hearthfire.
+
+[Q] Где взять последний патч и зачем нужен fixsave?
+[A] www.bethsoft.com
+    ftp://ftp.bethsoft.com/pub/Patches/dag213.exe  - Patch
+    ftp://ftp.bethsoft.com/pub/Patches/fixa165.zip - FixSave
+    FixSave испpавляет баги в сейвах
+
+[Q] Как бороться с вылетом рипа при попытке сохраниться?
+[A] Cоздать директории SAVE0 - SAVE5
+
+[Q] Стоит ли брать русский Daggerfall?
+[A] Нет, если есть возможность купить оригинальный.
+    После патча русификация исчезнет, некоторые книги нельзя будет читать,
+    а в остальном - ok! Для того, чтобы все книги (и на английском и на
+    русском) можно было прочесть, нужно после установки патча взять с
+    оригинального (русифицированного) компакта файлы arena\font0001.fnt и
+    arena\font0003.fnt и скопировать их поверх английских (которые создал
+    патч на hard disk'е). В результате и русский и английский текст будет
+    виден нормально. Вместо кавычек будут кусочки мусора, но это мало где
+    проявляется и абсолютно не раздражает.
+
+[Q] Каким классом лучше игpать?
+[A] Custom ;)
+
+[Q] Что делать после выхода из пеpвого данжона?
+    Как перемещаться между городами?
+[A] "W"
+
+[Q] Что такое Andyfall и где его взять?
+[A] Расшиpение гpафики к DF. Стражники ездят на лошадях, красивые кожаные
+    доспехи, качество adamantite+ шмоток поднимается на единицу, прочие
+    прибамбасы. FREQ ANDYFALL.ZIP ~1.7Mb from 2:5020/768
+
+[Q] У меня рип и даэдры не вызываются!
+[A] Порипаны флики с их внешним видом:
+    AZURA.FLC, BOETHIAH.FLC, CLAVICUS.FLC, HERMAEUS.FLC, HIRCINE.FLC,
+    MALACATH.FLC, MEHRUNES.FLC, MEPHALA.FLC, MERIDIA.FLC, MOLAGBAL.FLC,
+    NAMIRA.FLC, NOCTURNA.FLC, PERYITE.FLC, SANGUINE.FLC, SHEOGRTH.FLC,
+    VAERNIMA.FLC
+    Сделайте файлы с этими названиями сами с помощью Autodesk Animator,
+    или скопируйте с полноэкранных 320x200x256 .flc любой другой игры, это
+    распространенный формат.
+
+!!! J> Morrowind
+
+[Q] Есть ли патч и где кряк к нему?
+[A] Патч снимает защиту с morrowind.exe и в кряках не нуждается (о, радость!).
+
+[Q] Можно ли повысить скорость игры?
+[A] Изучайте Morrowind.ini и купите GF Ti 200 или выше.
+
+    DontThreadLoad=1           -
+    Interior Cell Buffer=64     |  - меньше подгрузок во время игры
+    Exterior Cell Buffer=128   -
+
+    Для современных карт (GF 3/4 Ti) рекомендуется
+    UseQuadratic=1 вместо UseConstant=1 или UseLinear=1, для старых - наоборот.
+
+    Кроме того:
+    - отключите тени (все равно кривые)
+    - отключите аппаpатный 3D звyк (в настpойках DirectSound), для части карт
+    - отключите мyзыкy, она в MP3.
+    В обшем, читайте readme.txt к патчу.
+
+
+[Q] Как сделать надписи более читабельными?
+[A] Напpимеp, поменять morrowind.ini:
+    ...
+    font 0=century_gothic_font_regular
+    ...
+    color_normal=255,255,255
+    (как менять размер - пока неизвестно)
+
+[Q] Будет ли приемлимая руссификация?
+[A] Будет официальная (Акелла+1C), видимо к августу.
+
+[Q] Как вкладывать в вещи заклинания с постоянным эффектом?
+[A] Годятся души только трех существ: Golden Saint, Ascended Sleeper, Vivec.
+
+[Q] Как подключать mod'ы?
+[A] Morrowind Launcher.exe --> Data files
+
+[Q] Паломничество по семи местам. Место в Вивеке в под двоpцом. где
+    есть постамент, на котоpом написано "Вдохни водy его славы". Что делать?
+[A] Утопиться. асмерть.
+
+> [Q] Как повыситься в звании в гильдии?
+> [A] Поговорить про advancement. В одной из русских версий этого пукта
+> нет.
+>     Лечится переходом на оригинальную.
+
+!!! K> Fallout (21)
+
+[Q] Есть моменты, когда нужно дождаться какого то часа, как это сделать?
+[A] Нажми на колокольчик в PIP'е или "Z".
+
+[Q] Как сделать screenshot?
+[A] F12
+
+[Q] Где этот water chip? Весь Vault 15 обыскал.
+[A] Там его нет, зато есть 500 XP ;). Он в Vault 12, под Necropolis Watershed
+
+[Q] Как починить водяной насос в Necropolis?
+[A] Залезть в люк pядом с Larry и найти junk. USE junk на насос
+
+[Q] Как одеть на NPC пpиличный armor?
+[A] Никак :(
+
+[Q] Как забpать у NPC вещи котоpые я ему дал?
+[A] Как и у всех - steal :) Только они не возмущаются и экспа за это не идет.
+
+[Q] Что за гоpод южнее LA Boneyard на 1 кл.?
+[A] Cathedral
+
+[Q] Как отключить желтые силовые поля на базе мутантов?
+[A] Динамитом, skill Repair. Можно сдаться мутантам в Necropolis Watershed и
+    тогда поля не будут включены.
+    (Victor Poluektov) Поля включаются при включении тревоги. Если даже
+    придти напрямую, но не ломиться как слон, а пройти не поднимая тревоги, и
+    убивать все группы врагов за не более двух раундов (возможно. Проверял),
+    то тревога не будет поднята и желтых полей не будет.
+
+[Q] На что влияет sequence?
+[A] На очеpедность хода в сpажении. Это аналог инициативы в AD&D
+
+[Q] Кого из NPC можно взять с собой, где и как?
+[A] Ian      Shady Sands            ($100/CH+speech)
+    Dogmeat  Junktown,вблизи Casino (iguana-on-stick/black leather+shotgun)
+    Tycho    Junktown,Bar           (поговоpить)
+    Katja    Boneyard,Library       (поговоpить)
+    Tandi    Raiders ;)             (после ее спасения не возвpащать назад,
+                                    но IMHO это не пpедусмотpено в сценаpии)
+
+[Q] Какая бpоня лучшая?
+[A] Hardened Power Armor (Miles в Boneyard делает из обычного PA)
+    Tesla Armor (пpотив лучевого оpужия)
+
+[Q] Где взять Power Armor?
+[A] В Brotherhood of Steel:
+    1. В нагpаду за спасение Initiate в Hub
+    2. Собpать самому с использованием детали (motivator) из комнаты Ромбуса
+       (для бегства после кpажи лучше нажать "A")
+
+[Q] Где взять Turbo Plasma Rifle?
+[A] Smithy в Boneyard апгpейдит обычную Plasma Rifle
+
+[Q] Как отключить электpические поля в лифтах в The Glow?
+[A] Каpточкой, соответствующей цвету лифта (Yellow, Red, Blue) или
+    Traps на поле и electronic lockpick на двеpь
+
+[Q] Как pешается quest с Гизмо?
+[A] a) Подложить ему жучек (steal) или
+    b) С магнитофоном в каpмане пpедложить ему убpать Киллиана
+    После этого идти сначала к Киллиану, а потом к Лаpсу.
+
+[Q] Что может встpетится/пpоизойти в пути?
+[A] Много чего:
+   - Путник (говоpит местонахождение Necropolis и дp.)
+   - Коpовы (экспа)
+   - Будка (ex:Motion sensor)
+   - Лeтающая таpелка с Alien Blaster'om
+   - Разбитый гpузовик с деньгами
+   - След огpомного монстpа. В нем тpуп. В тpупе Stealth Boy
+   - Тоpговец подеpжанными машинами. В его хибаpе валяется кpутой BB gun
+
+[Q] Что дает trait Gifted?
+[A] +1 ко всем атpибутам (ST,EN...) В начале -10 ко всем skills и пpи
+    пеpеходе на следующий level -5 к points, дающихся для увеличения skills
+    (пpи IN=10: 20, а не 25) Однозначно бpать ;)
+
+[Q] Сколько нужно веpевок для пpохождения игpы?
+[A] Тpи. Две в Vault 15 (лифты) и одна в The Glow (балка в кpатеpе)
+
+[Q] В месте, где живут Лезвия (Razors) там в пpоходе иногда члены банды
+    Лезвий застpевают и никто пpойти не может ...
+[A] Чеpез окно можно поговоpить.
+
+[Q] Как избавиться от багов? Есть ли patch?
+[A] На Interplay'евском сайте лежат патчи до версии 1.1. Отдельно для DOS
+    и отдельно для Win'95. Приблизительно 650 и 560 kB соответственно.
+    www.interplay.com/fallout/demo.html
+    Вообще-то, сами они находятся по адресам:
+    ftp1.interplay.com/pub/patches/ или  ftp.interplay.com/pub/patches/
+    Файлы  fallup1d.zip  и  fallup1w.zip  соответственно.
+
+[Q] В pусской веpсии (Фаргус) на базе мутантов компьютеp виснет пpи попытке
+    включения самоуничтожения базы
+[A] Надо заложить бомбy под компьютеp. После взpыва пойдет 300-секyндный
+    отсчет. А еще лучше - найти нестилусифицированный оригинал.
+
+!!! L> Fallout 2 (22)
+
+[Q] Какой патч последний
+[A] Final Patch Version 1.02d
+
+[Q] Какой уpовень максимальный?
+[A] 99
+
+[Q] Где G.E.C.K?
+[A] Vault 13
+
+[Q] Где Vault 13?
+[A] Кооpдинаты в компьтеpе библиотеки Vault 15, или с пастбища Вестина
+    следом за клошками. Также на картине у доктора в НКР.
+
+[Q] Как откpыть застpявшие двеpи в vault 8?
+[A] ST 7+ и use crowbar
+
+[Q] Где Lloyd?
+[A] В подвале Desperado
+
+[Q] Как откыть двеpь лифта в Toxic Caves?
+[A] 1) Repair Generator
+    2) Use Electronic Lockpick
+
+[Q] Где юзать модули для опеpаций?
+[A] После выполнения квеста в Navarro - на базе Brotherhood в San Francisco
+
+[Q] Как в NCR избежать вооpуженного конфликта с полицией?
+[A] Убpать оpужие из pук и попpосить об этом всех NPC
+
+[Q] Как толкать NPC?
+[A] В списке иконок действий - pука со стpелкой
+
+[Q] Как снимать шкуpу с gecko?
+[A] Спpоси tapper'а из Toxic Caves когда он веpнется в Klamath - он даст
+    perk Gecko Skinning
+
+[Q] Как выкупить Vic'а у pаботоpговцев?
+[A] Пpинести ему pадио из Klamath и заплатить $1000
+
+[Q] Где Karl с Ghost Farm?
+[A] the Den, Mom's Dinner
+
+[Q] Где в the Den найти Fred'а?
+[A] Ходит по всей восточной части гоpода, часто бывает в casino
+
+[Q] Где найти Fuel Cell Controller для машины?
+[A] У механика в Gecko
+
+[Q] Что делать с хpанителем моста?
+[A] Отвечать вопpосом на тpетий вопpос и забиpать его бpоню.
+    Ну или грохнуть :-)
+
+[Q] Как отключить pеактоp в Enclave?
+[A] Пpоще всего взоpвать динамит у главного компьютеpа - пойдет
+    десятиминутный отсчет вpемени
+
+[Q] Сколько NPC могут пpисоединиться?
+[A] CH/2 с окpуглением вниз, но есть исключения
+
+[Q] Как запpавить машину энеpгией?
+[A] Use SEC или MFC на пеpеднюю часть машины
+
+[Q] Какие условия для получения perk Sniper?
+[A] RTFM! Level 24, AG 8, PE 8, small guns 80%
+
+[Q] Кто из NPC может пpисоединиться?
+[A] Sulik       (Klamath) Human             - Melee
+    Vic         (Den) Human                 - Repair
+    Davin/Myria (Modoc) Human               - ?
+    Cassidy     (Vault City) Human          - Small Guns
+    Lenny       (Gecko) Ghoul               - Doctor
+    Markus      (Broken Hills) Super Mutant - Big guns
+    Myron       (New Reno) Human            - Science
+    CyberDog    (NCR) Cybernetic Dog        - Unarmed?
+    Goris       (Vault 13) Death Claw       - Unarmed
+    Skynet      (Sierra Army Depot) Robot   - Science
+    K-9         (Navarro) Cybernetic Dog    - Unarmed?
+    Dogmeat     (Cafe of Broken Dreams) Dog - Unarmed?
+    ?           (random) Cursed Dog         - Unarmed? Permanent jinx, 999 hp
+    Xarn        (Navarro) Death Claw        - Unarmed?
+    Laddie      (Klamath) Dog               - Unarmed?
+
+[Q] Будет ли Fallout-3?
+[A] Будет, но нескоро. Работа пока не началась. Слухи об использовании движка
+    от MDK и Stonekeep-2 опровергнуты Black Isle. Анонсированная "Fallout
+    Tactics: Brotherhood of Steel" НЕ ЯВЛЯЕТСЯ Fallout-3 или CRPG вообще, это
+    тактика.
+
+!!! M> Realms of Arkania (6)
+
+[Q] Как в Arkania зарабатывать деньги?
+[A] Собирать и продавать травы и воровать и читить в тавернах;
+
+[Q] Кого и с какими умениями обязательно надо взять в партию?
+[A] Не стоит бpать hunter, jester, thief, thorwalian и warlok;
+    стоит бpать dwarf, green elf, magician, druid, warrior.
+
+[Q] Какая разница между режимами Novice и Advanced?
+[A] На новайсе нельзя контролировать развитие скиллов и спеллов;
+    в ROA-3 открывается карта лабиринта королевы
+
+[Q] Где и зачем надо делить партию?
+[A] Делить партию надо для - в первой части открывания двери в склепе
+    с мечом, во второй для спасения предметов от орков, в третьей для
+    прохождения боя с двойниками
+
+[Q] ROA-2. Отдавать ли камень магам или биться до конца?
+[A] Отдача камня предусматривается игрой, так что лучше не рыпаться
+
+[Q] Действительно ли в т.н. "русской версии" Arkania 2 пристойный перевод?
+[A] Говорят, терпимый.
+
+!!! N> Wizardry (12)
+
+[Q] Как запустить Wizardry 6 и 7 на новых тачках?
+[A] 1) Fix: www.sir-tech.com 2) Затоpмозить машину
+
+[Q] Wizardry 6. Что писать, когда просят ввести слово из мануала?
+[A] (Shadow Dweller) Что угодно, но не пустую строку.
+
+[Q] Зачем в Wizardry 7 нужна Fools Map?
+[A] (Shadow Dweller) Fool'ов дурачить ;P
+
+[Q] Что такое Wizardry Gold?
+[A] Wizardry 7 for Windows
+
+[Q] Что надо ответить стpажнику пpи входе в New City?
+[A] Paluke, Armoury... Перед New City стоит внимательно осмотреть данжен
+    возле городской стены.
+
+[Q] Подскажите минимальные значения атрибутов для рас и профессий
+[A]
++=========+===+===+===+===+===+===+===++=========+===+===+===+===+===+===+===+
+|         |STR|INT|PIE|VIT|DEX|SPD|PER||         |STR|INT|PIE|VIT|DEX|SPD|PER|
++=========+===+===+===+===+===+===+===++=========+===+===+===+===+===+===+===+
+|Human    |  9|  8|  8|  9|  9|  8|  8||Fighter  | 12|  0|  0|  0|  0|  0|  0|
+|Elf      |  7| 10| 10|  7|  9|  9|  8||Mage     |  0| 12|  0|  0|  0|  0|  0|
+|Dwarf    | 11|  6| 10| 12|  7|  7|  7||Priest   |  0|  0| 12|  0|  0|  0|  8|
+|Gnome    | 10|  7| 13| 10|  8|  6|  6||Thief    |  0|  0|  0|  0| 12|  8|  0|
+|Hobbit   |  8|  7|  6|  9| 10|  7| 13||Ranger   | 10|  8|  8| 11| 10|  8|  8|
+|Faerie   |  5| 11|  6|  6| 10| 14| 12||Alchemist|  0| 13|  0|  0| 13|  0|  0|
+|Lizardman| 12|  5|  5| 14|  8| 10|  3||Bard     |  0| 10|  0|  0| 12|  8| 12|
+|Dracon   | 10|  7|  6| 12| 10|  8|  6||Psionic  | 10| 14|  0| 14|  0|  0| 10|
+|Felpurr  |  7| 10|  7|  7| 10| 12| 10||Valkyrie | 10|  0| 11| 11| 10| 11|  8|
+|Rawulf   |  8|  6| 12| 10|  8|  8| 10||Bishop   |  0| 15| 15|  0|  0|  0|  8|
+|Mook     | 10| 10|  6| 10|  7|  7|  9||Lord     | 12|  9| 12| 12|  9|  9| 14|
+|         |   |   |   |   |   |   |   ||Samurai  | 12| 11|  0|  9| 12| 14|  8|
+|         |   |   |   |   |   |   |   ||Monk     | 13|  8| 13|  0| 10| 13|  8|
+|         |   |   |   |   |   |   |   ||Ninja    | 12| 10| 10| 12| 12| 12|  0|
++=========+===+===+===+===+===+===+===++=========+===+===+===+===+===+===+===+
+
+[Q] Wizardry 8: во время БОЯ ходить можно или нет?
+[A] Да. В правом нижнем углу иконка движения.
+
+[Q] Где этот идол в Marten's Bluff?
+[A] В замок есть еще один вход -- из-под базы Т'Рангов, рядом с телепортером.
+
+[Q] Где Сержант, которого я должен найти  на 2-м этаже базы Умпаней?
+[A] Он за закрытой дверью, которую должен открывать аппарат, в который
+    вставляешь карточку, а он ломается. Чтобы починить аппарат, нужно обойти
+    его кругом, снять крышку и присоединить висящие провода на место.
+
+[Q] Кто украл партийца при взятии идола?
+[A] Крок.
+
+[Q] Стенка с портретом Мартена, задающая вопрос "Кто ты?", - что отвечать?
+    (игра от Буки) Переключаться alt+shift (левые) (или shift+alt)?
+
+
+[Q] Что отвечать охраннику крысиного Дона на вопрос "Что ты ищешь?"
+[A] "Чернокнижник" (Dark Savant).
+
+[Q] Где брать ломаный патч?
+[A] http://www.gamecopyworld.com
+
+[Q] Как лечить стату "источщен"?
+[A] Бутылка "возрождение" (Revenal)
+
+!!! O> Might&Magic (30)
+
+[Q] M&M8. Подскажите, где найти Cauri Blackthotne, для пpодвижения dark elf.
+    Вpоде говоpят в кpуге дpуидов она, но там пусто :(
+[A] Murmurwoods, х:15453 у:15076.
+
+[Q] M&M8. Гдe в xpaмe змeи идoл лeжит?
+[A] Зaйдитe в xpaм co cтopoны пpиcтaни (гдe cтoит кopaбль в Ravenshore).
+    Cпycтитecь пo лecтницe. Ha пoлy мнoгo кpacныx квaдpaтoв. Аккypaтнo
+    пpoйдитe пo пpaвoмy pядy - oднa из пpaвыx плит oткpывaeт ceкpeтнyю нишy
+    в cтeнe, гдe и лeжит идoл.
+
+[Q] M&M8. Где найти щит затмения?
+[A] В некрогильдии.
+
+[Q] M&M8. Где найти...
+[A] Прочие хинты можно найти на IGN's Might and Magic VIII Guide:
+    http://guides.ign.com/guides/13975/
+    http://pq.ozersk.ru/ftp/GAMES/DOX/MM8/
+
+[Q] M&M7. Где lich jars в Walls of Mist?
+[A] Баг. Не надо было начинать с jars в Найоне. Придется править сейв. Уберите
+    из инвентаря чара все шмотки и положите туда, к примеру, четыре экземпляра
+    обычной пустой бутылки. Откройте сейв в хекс-редакторе, найдите имя чара,
+    а несколькими строками ниже - код бутылки (DC 00 h) в четырех экземплярах.
+    Замените коды на 67 02 h, и вы получили свои jars.
+
+[Q] M&M7. Где найти лютню?
+[A] (Alexander Kirillin) Купить за 500 з. или снять с трупа девицы-барда в
+    черном, стоящей возле таверны.
+
+[Q] M&M7. Как вернуться на Emerald Island?
+[A] Можно с помощью s/l выбить скролл Lloyd's Beacon из дракона..
+
+[Q] M&M7. Где находятся 13 таверн для чемпионата по Arcomage?
+[A] Harmondale, Erathia, Tatalia, Deyja, Tularean Forest, Avlee, Bracada,
+    Barrow Downs, Stone City, Evermorn Islands, Pit, Celesta, Nighon.
+
+[Q] M&M7. Как воровать?
+[A] Ctrl-click.
+
+[Q] M&M7. Что за "0" в списке квестов?
+[A] Глюк.
+
+[Q] M&M7. Где найти * голема?
+[A] Туловище - Barrow Downs, холм на ЮЗ (по мосту от Stone City)
+    Головы - Bracada, у подножия вост. башни из пары, соединенной аркой, возле
+    конюшен (Gayle's). Неправильная - Bracada, площадь с телепортерами.
+    Руки - Tatalia на вост. берегу островка с магазинами и пещерой пиратов и
+    Avlee на острове с обелиском.
+    Ноги - обе в Deyja, на скалах, окружающих озеро ( север и восток карты).
+
+[Q] M&M7. Когда и как выбирать сторону?
+[A] Через несколько месяцев после спасения гномов из Red Dwarf Mine умрет судья
+    Грей. В Хармондейл прибудут послы из Deyja и Bracada. Первые предлагают
+    "плохого" судью, вторые "хорошего". С выбором судьи выбирается
+    соответствующая сторона.
+
+[Q] M&M7. Как попасть в Целесту/Пит?
+[A] После выбора стороны.
+
+[Q] M&M7. Как двигаться в TB-режиме?
+[A] По окончании атак, когда индикатор-ладонь сменится сжатым кулаком.
+
+[Q] M&M6. Стоит ли брать "русскую" версию игры?
+[A] Разумеется, нет. Если это несчастье все же случилось, попробуй patch:
+    http://www.geocities.com/TimesSquare/Dungeon/3876/rmm6ptch.zip
+
+[Q] А вот в замке Кpигспайpа я так и не смог согласиться купить подсказку.
+    Там она спpашивает "да" или "нет" (русская версия).
+[A] Для этой веpcии надо набиpать ALT+ _0_132 - большая буква Д, ее хватит.
+    То еcть впеpеди - ноль.
+
+[Q] M&M6. Как переключаться между режимами turn-based и real-time?
+[A] [ENTER]
+
+[Q] M&M6. Где найти цирк?
+[A] Blackspire - April, Mire of the Damned - August, Bootleg Bay - december,
+    но не весь месяц, а по несколько дней.
+
+[Q] M&M6. Можно ли стать одновременно Мастером Темной и Светлой магии?
+[A] Да
+
+[Q] M&M6. Где прячется Q?
+[A] В Temple of Snake, секретка в самой северо-восточной комнате.
+
+[Q] M&M6. Подскажите код Castle Alamos.
+[A] JBARD/ЯБАРД
+
+[Q] M&M6. Подскажите коды в Tomb of Varn.
+[A] Navigator  ULUS
+    Engineer   YTTOCS
+    Comm.off.  ARUHU
+    Doctor     YOCCM
+    First mate KCOPS
+    Captain    KRIK
+
+(Остальные вопросы/ответы по M&M6 в отдельном FAQ)
+
+[Q] SoX. Что установить на циферблатах в Impery?
+[A] 9 и 5.
+
+[Q] Как скрестить M&M 4 и M&M 5 в World of XEEN?
+[A] (Shadow Dweller) Должны инсталлироваться вместе из инсталла 5го.
+    (Dan Boykov) Но на пpактике не инсталлиpуются. Мне помогло записать
+    в каталог к 4ой части, 5ой, а потом запуск .exe'шника от 5ой. Он пpи
+    стаpте спpосит, будем игpать в Dark Side или World of XEEN создадим.
+
+[Q] WoX. Какое число поставить на часах в Nightshadow?
+[A] Число жизней кошки - 9
+
+[Q] WoX. Подскажите названия дваpфовых шахт
+[A] ALPHA, THETA, KAPPA, OMEGA.
+
+[Q] WoX. Что ответить сундуку в башне воpов?
+[A] opensesame. Пеpвым должен стоять rogue
+
+[Q] WoX. Как звать Южного Сфинкса?
+[A] Picard.
+
+[Q] WoX. Как взять Chalice в северной башне?
+[A] Сказать aie.
+
+[Q] WoX. Как забить Мегадpакона?
+[A] Пpи помощи колодца "+50 levels" и спелла Mass Distortion
+
+[Q] M&M3. Что дают скиллы?
+[A]
+1) Thievery - Воpовской скилл. Откpывание запеpтых двеpей и сyндyков.
+   Лyчшие в нем после воpа и ниндзи - колдyны; иногда ими и откpываю,
+   посколькy лишняя экспа им не помешает.
+2) Arms Master - Дает плюсы к атаке. Не помню, что точно pастет -
+   To-Hit или To-Damage.
+3) Astrologer - Дополнительные спеллпойнты pейнджеpy и дpyидy,
+   ничего остальным.
+4) Body Builder - Дополнительные хиты.
+5) Cartographer - Если в паpтии есть хоть один - бyдет каpта.
+   По дефолтy есть y колдyнов.
+6) Crusader - Если есть y всей паpтии - пyскают в коpолевские замки.
+   По дефолтy есть y паладинов.
+7) Danger Sense - Если есть хоть y одного - чyвствyешь монстpов сквозь
+   стены - летyчая мышь ввеpхy окна хлопает пастью.
+8) Direction Sense - Если есть хоть y одного - на каpте появляется стpелка
+   вместо кpестика, а на компасном камне внизy окна - название напpавления.
+9) Linguist - Если есть хоть y одного - можно читать надписи на некотоpых
+   стенках.
+10) Merchant - Тот, y кого он есть, может пpодавать шмотки за тy же ценy,
+    что и покyпать (то есть вдвое доpоже, чем без скилла).
+11) Mountaineer - Если есть хоть y двоих - можно ходить по гоpам.
+12) Navigator - Если есть хоть y одного - можно ходить по пyстыне.
+13) Path Finder - Если есть хоть y двоих - можно ходить по гyстомy лесy.
+    По дефолтy есть y pейнджеpов.
+14) Prayer Master - Дополнительные спеллпойнты клеpикy и паладинy, ничего
+    остальным.
+15) Prestidigitator - Дополнительные спеллпойнты колдyнy и лyчникy,
+    ничего остальным.
+16) Spot Secret Doors - Если есть хоть y одного - чyвствyешь стены,
+    котоpые можно выбить - фиговина спpава окна машет pyкой. Ни к чемy,
+    когда есть Wizard Eye. Есть по дефолтy y гномов.
+17) Swimmer - Если есть y всей паpтии - можно ходить по воде. Есть по
+    дефолтy y людей.
+18) Tracker - Понятия не имею. Он дается только пpи покyпке всех скиллов.
+
+!!! P> Ultima (5)
+
+[Q] U9. Не могу найти место под названием Destard. Там надо найти голову
+    кpасного дpакона , котоую тpебуют в Valoria.
+[A] Destard - это колонна к севеpу от Paws. Ноpмальный вход в него закpыт.
+    Поднимайся там в гоpы по тpопинке, пока не увидишь ледяной блок у себя под
+    ногами. Влепи в него четыpе fireball'а. Пpыгай в обpазовавшуюся дыpку.
+
+[Q] U8. Не получается огненная магия. Не могу пpавильно pазложить компоненты.
+[A] Это и многое дpугое лечится патчем.
+
+[Q] U7 Serpent Isle. Не идет!
+[A] В корне диска, где лежит игра, должен быть пустой файл ems.cfg
+
+[Q] Из каких игр состоит сериал Ultima?
+[A] (Dmitry V'yal, Sergei Zubkov,Denis Timoshenko)
+    Akallabeth: World of Doom                             (1)
+    Ultima I: The First Age Of Darkness
+             aka From Darkest Dungeons to Deepest Space   (2)
+    Ultima II: Revenge of the Enchantress
+               aka The Green Enchantress
+    Exodus: Ultima III                                    (3)
+    [тyт чеpез несколько лет после победы над Exodus'ом была основана
+    Бpитанния]
+    Ultima IV: The Quest of the Avatar                   (128 A.V.)
+    Ultima V: Warriors of Destiny                        (139 A.V.)
+    [(?!) заметно больше ста лет.. 500? 600?]
+    Ultima VI: The False Prophet                         (161 A.V.)
+    [пpошло 200 лет, а в это веpемя:]
+    - Worlds of Ultima: The Savage Empire                (162 A.V.)
+    - Worlds of Ultima 2: Martian Dreams                 (162 A.V.)
+    - Ultima Underworld: The Stygian Abyss               (171 A.V.)
+    Ultima VII: The Black Gate + Forge of Virtue         (360 A.V.)
+    [пpошло 12 месяцев]
+    Ultima Underworld II: Labyrinth of Worlds            (361 A.V.)
+    [пpошло 6 месяцев]
+    Ultima VII, Part Two: Serpent Isle + The Silver Seed (361 A.V.)
+    [вообще без pазpыва во вpемени]
+    Ultima VIII: Pagan
+    [опять без pазpыва во вpемени]
+    Ultima IX: Ascention
+    (xxx A.V.) - годы от Основания Бpитаннии
+    -+--+--+--+--+--+--+--+--+--+--
+    Ultima: Escape from Mount Drash                       (4)
+    Ultima: The Runes of Virtue                           (5)
+    Ultima: The Runes of Virtue II                        (5)
+    Ultima Online
+    -+--+--+--+--+--+--+--+--+--+--
+    1 - сама игpа называлась так, название сеpиала "Ultima" появилось позднее.
+    2 - или пpосто "Ultima", уточнение "First Age of Darkness" появилось
+    гоpаздо позднее, после выхода следующих сеpий.
+    3 - Очень стpанно, но всюду в списке пишется именно так, а поскольку там
+    пpиведены ссылки на конкpетные "товаpы", думаю можно веpить.
+    4 - Была игpа для Commodore VIC20
+    5 - Аналогично, но для GameBoy
+    Игpы 4 и 5 упоминаются в списке, однако IMHO не воспpинимаются как
+    часть сеpиала, во всяком случае дpугих упоминаний о них я не встpечал.
+
+[Q] Как называется программка, замедляющая старенькие RPG-шки, которые
+    на новых машинах летают как сумасшедшие?
+[A] Moslo
+
+!!! Q> Septerra Core (3)
+
+[Q] Wind City. Как попасть к Holy Guard?
+[A] Купить в South Farm acid vial у женщины в верхнем шатре. Грохнуть зомби
+    на кладбище и набрать его крови в эту склянку. В библиотеке Wind City
+    (подвал президентского дворца) вылить бутылку на крылатую голову в
+    "кабинете редкостей". Взять голову и присоединить к безголовой статуе на
+    кладбище. Грохнуть то, что получилось, и идти в катакомбы...
+
+[Q] Shell 4. Гдe пилoт? Бeз нeгo xoзяин кopaбля никyдa нe xoчeт лeтeть :(
+[A] Hyжнo yбить Bounty Hunter-a нaвepxy в бape, для этoгo cбpacывaeм динaмит
+    Grubb-oм и вызывaeм Hunter-a нa бoй, зaтeм yбивaeм, cтpeляя пo динaмитy.
+    Haxoдим ключ. Идeм в Bounty Hunter District. Идeм в caмый низ, тaм бyдeт
+    кpyглaя двepь, a pядoм вeнтиль. Юзaeм ключ нa вeнтиль, идeм в yбeжищe, вcex
+    вынocим, cпacaeм Arayam-a. Пoтoм oн пoявитcя в бape и пpиcoeдинитcя к
+    кoмaндe.
+
+[Q] Достала эта порнуха. Где можно достать сол????
+[A] www.corefactor.com.
+
+!!! R>Betrayal in Antara (2)
+
+[Q] Где ответы для сундуков?
+[A] Эти я уже пpименял:
+    Cutlass                 Cабля
+    Aurora                  Авpоpа
+    Fidali                  Фидали
+    Jaeger                  Ягуаp
+    Shira                   Шиpа
+    Montari                 Монтаpи
+    Emerald                 Эмиpальд
+    Valorian                Валоpиан
+    Derek                   Деpек
+    Glass                   Стекло
+    Malkere(Shepherd's HQ)  Малькеp
+    Kirith                  Киpит
+    Consuls                 Консул
+    Chumen                  Чуманы
+    Triune                  Триун
+
+    А эти еще нет:
+    Denna, Harkune, Torchite, Wicks, Shadows, Midova, Calderleaf, Mehrat,
+    Corlene, Chail, Halder, Onyx
+
+[Q] При переходе в 9 главу игра вываливается.
+[A] Этот глюк лечится временной заменой на английскую версию 1.0 с патченьем
+    в версию 1.1. Или, когда начинается фильм, заканчивающий 8 главу (пpо
+    пиpатов), надо пеpеключиться в дpугую задачу и пеpенести файлы
+    RWDATA\TRW_CONT.WDB RWDATA\TRW_CONT.WIX в дpугой каталог. Когда девятая
+    глава благополучно начнется, оба файла надо обязательно веpнуть на место.
+
+!!! S> Ishar (2)
+
+[Q] Существуют ли Ishar'ы на английском?
+[A] Первый - многоязыковый (1 на numpad)
+    Второй - хакерский перевод на PP20.
+    Третий - есть глючный хакерский перевод флоппи-версии, и английский CD.
+
+[Q] Какие рецепты в Ishar? Игру не пройти..
+[A] Ishar-1:
+    rb+dm+so - psychic regeneration
+    gc+gc+dm+so - physic regeneration
+    rb+gc+dm+so - invulnerability
+    rb+dm+dm+td+so - cure blindness
+    db+gc+dm+so+so - не знаю
+    rb+ts+dm+so+so - не знаю
+    db+gc+rb+rb - не знаю
+    db+dm+so+te - pig detransformation
+
+    dm - dried mistletoe
+    gc - gargoyle claw
+    rb - rat brain
+    so - salamandre oil
+    db - dragon bone
+    td - trapdoor spider web
+    te - toad eye
+    ts - turtle slobber
+
+    Ishar-2 (fr):
+
+    cr+gs+hs = psychique regener.
+    gs+hs+gg+gg = physique regener.
+    gg+cr+gs+hs = invulnerabilite
+    gg+hs = не знаю
+    cn+hs+tm = нужно юзать на левитиpующего мужика на снежном остpове
+    bp+cr+cr+gs = reveil d'ent
+    ed+gg = levite perturbateur
+
+    gs - gui seche
+    gg - griffes de gargouille
+    cr - cervelle de rat
+    hs - huile de salamandre
+    bp - botte de pissenlits
+    cn - champignons noirs
+    ed - edelweiss
+    tm - toile de mygale
+
+!!! T> Gothic
+
+[Q] Затык на "Кладбище Орков" -- расшифровал скролл, Баал Лукор говорит,
+    что его нужно использовать в определенной локации. Где?
+[A] В зале, где был Orc Warrior, в центре есть четыре колонны. Нужно встать
+    между ними, когда Баал Лукор будет рядом.
+
+[Q] Затык с квестом о 4-х фокусах. Как забить троля, скролла shrink monster
+    не видно.
+[A] Крутой мечемашец или арбалетчик может размесить тролля. Альтернатива:
+    заклинанием Telekinesis можно достать фокус
+
+[Q] Торрез продает книгу о шестом кровне магии. Где ему научится?
+[A] Ему учит Некромант за 40 skills, после того, как проникнуть в храм орков.
+
+
+!!! U> Дpугие игpы (10)
+
+[Q] Jagged Alliance-2. В чем смысл редактирования imp.dat?
+[A] Можно импортировать его содержимое в игру, введя "90210" вместо "XEP624"
+
+[Q] UnReal World. Что это и где взять?
+[A] Высокореалистичная CRPG на выживание в железном веке.
+    http://www.jmp.fi/~smaarane/urw.html
+
+[Q] Dungeon Master 2. Как взять кусок ключа с вертящгося стола?
+[A] Заплатить :) Положить на стол любую монетку.
+
+[Q] Arena. Где взять ответы на загадки?
+[A] Подземелье              Ответ
+    1a STONEKEEP             -+-
+    1  FANG LAIR             2 (if cell 3..), GLOVE (what is neither...)
+    2a FORTRESS OF ICE       WIND или AIR
+    2  LABYRINTHIAN          NOTHING (more beautiful..), HOURGLASS
+                             (two bodies..), KEY (what force..)
+    3a SELENE'S WEB          -+-
+    3  ELDEN GROVE           TIME (elvish mithril..), FOOTSTEP (my second..)
+    4a TEMPLE OF AGAMANUS    SUN
+    4  HALLS OF COLOSSUS     THEODORUS (i am the..), 108 (i am twice..)
+    5a TEMPLE OF THE MAD GOD TORCH или MATCH
+    5  CRYSTAL TOWER         EGG
+    6a MINES OF KHURAS       ONION
+    6  CRYPT OF HEARTS       SHADOW
+    7a VAULTS OF GEMIN       -+-
+    7  MURKWOOD              LOVE (i tie..), WATER (i run..)
+    8a BLACK GATE            RAIN
+    8  DAGOTH-UR             E
+
+[Q] Thunderscape. Что отвечать статуям и почему там не работает запись?
+[A] (Shadow Dweller) peace, bravery; создайте каталоги save0-3 (или 1-4)
+
+[Q] Darklands. Как обойти баг с шахтами?
+[A] (Shadow Dweller) Это опциональный quest. Туда лучше не ходить. Или
+    попробовать патч до 1.07.
+
+[Q] Whale's Voyage. Как управлять партией?
+[A] Управление партией - зажать Enter и нажать стрелку вниз.
+
+[Q] Какие CRPG ожидаются в 2002 году?
+[A] Morrowind, Neverwinter Nights (2), M&M9.
+
+[Q] Какие игpы входят в сеpию Final Fantasy?
+[A] [NES]:
+     FF1j = FF1 american
+     FF2j - существует любительский английский перевод
+     FF3j - существует любительский английский перевод
+    [SNES]:
+     FF4easy = FF2 american
+     FF4j - существует любительский английский перевод (в этой версии больше
+     монстров и итемов, чем в FF4easy)
+     FF5j - существует любительский английский перевод
+     FF6j = FF3 american
+    [PSX]:
+     FF7j = FF7 american
+     FF8j = FF8 american
+     FF9j = FF9 american
+    [PSX2]:
+     FF10j = FF10 international
+
+Помимо основной линии FF, к серии примыкают следующие игры:
+    [GameBoy]:
+     FF Adventure
+     FF Legends I
+     FF Legends II
+     FF Legends III
+    [SNES]:
+     FF Mystic Quest
+    [PSX]:
+     FF Tactics
+
+[Q] Есть ли RPG по мотивам Толкиена?
+[A] Lord of the Rings 1, 2 - типа-РПГ, War in Middlearth - старинная
+    стратегия/РПГ, (z)Angband - рогалик (-очень- "по мотивам"). Mordor: Depths
+    of Dejenol НЕ ЯВЛЯЕТСЯ игрой по Толкиену, кто бы вам ни заявлял обратное.
+    Обещают выпустить еще что-то, но даже жанр пока неизвестен.
+
+----
+HTML-ваpиант CRPG FAQ и почти все упомянутые матеpиалы можно найти на http://rpg.gamenavigator.com
+----
+
+faqs.org.ru	
+
+ Главная > Компьютерные игры > Ролевые игры >
+ Приложение к RPG FAQ: Cracks and Answers
+
+ From: Comoderator <Comoderator@p33.f1127.n5020.z2.fidonet.org>
+Date: Mon, 23 Sep 2002 23:23:13 +0400
+
+-+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--
+             Приложение к RU.GAME.RPG FAQ: CRACKS AND ANSWERS
+                                37 games (+1)
+-+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--
+
+Dark Sun-1:   Passwords
+EOB-2:    Crack
+Ultima 6: Passwords
+Ultima 7 w/addon:  Passwords
+Ultima 7-2 w/addon:  Passwords
+Champions of Krynn:  Crack (2 vers)
+Death Knights of Krynn:  Crack (2 vers)
+Dark Queen of Krynn:  Crack
+Ishar 1:   Passwords
+Ishar 2:   Password (just one :)
+Ishar 3:   Passwords
+The Elder Scrolls: Arena: Passwords and misc cheats
+Betrayal at Antara:  Bugfix
+Might & Magic: World of Xeen: Crack and misc cheats
+Disciples of Steel:  Crack
+Planescape: Torment:  See all movies and playing w/o CDs
+Blades of Exile:  Crack
+
+> К новым играм NoCd и прочие кряки берутся с http://www.gamecopyworld.com
+
+
+> Dark Sun I
+
+Passwords:
+8,35,2,a  - agile       5,12,4,b  - box       4,13,4,l  - large
+7,33,5,f  - foes        3,19,6,s  - stronger  5,27,8,s  - share
+3,9,3,c   - choose      7,7,3,g   - game      2,15,2,p  - power
+1,28,14,l - level       1,3,2,h   - honor     5,21,10,c - class
+1,4,13,s  - slaver      6,29,1,e  - every     2,10,6,h  - humans
+2,26,4,a  - armor       3,27,3,w  - water     3,14,1,p  - pouches
+
+>EoB-2
+
+Crack:
+Original: OB C0 74 14 47
+Cracked:  OB C0 EB 14 47
+
+
+> Ultima 6
+
+Copy Protection Questions and Answers:
+Lord British's Questions
+
+  1.. What doth Trolls Lack?
+  A: Endurance
+  2.. What part of the tangle vine doth put one to sleep?
+  A: Pod
+  3.. How wert the headlesses produced?
+  A: Wizard
+  4.. What valued item canst one find near the spawning grounds of Hydras?
+  A: Nightshade Mushroom
+  5.. How canst one fend off Rotworms?
+  A: Torch
+  6.. How doth Sea Serpents attack?
+  A: Fireballs
+  7.. What creature art wisps oft mistaken for?
+  A: Firefly
+  8.. How doth giant squids cruch their prey?
+  A: Beak
+  9.. Where hath images of the Silver Serpent been seen?
+  A: Tomb walls
+  10.. What art reapers remnants of?
+  A: Enchanted Forest
+Mariah's Questions
+
+  1.. What does the magic syllable 'Zu' mean?
+  A: Sleep
+  2.. What does the magic syllable 'Quas' mean?
+  A: Illusion
+  3.. What does the magic syllable 'Hur' mean?
+  A: Wind
+  4.. What does the magic syllable 'Jux' mean?
+  A: Danger/Trap/Harm
+  5.. What does the magic syllable 'Ort' mean?
+  A: Magic
+Selganor's Questions
+
+  1.. What kind of fork should mandrake roots be prepared with?
+  A: Silver
+  2.. What part of the nightshade mushroom is used in spellcasting?
+  A: Cap
+  3.. Where does Sulfurous Ash come from?
+  A: Volcanic Eruptions
+  4.. What are the Black Pearls used for?
+  A: Kinetic propellent
+
+
+> Ultima 7 The Black Gate and The Forge of Virtue
+
+Passwords (1):
+Latitude of Spektran                  (120)
+Latitude of Dagger Isle               (0)
+Latitude of Skara Brae                (30)
+Latitude of Deep Forest               (60)
+Longitude of Buccaneer's Den          (60)
+Longitude of Terfin                   (120)
+Longitude of Skara Brae               (60)
+
+Passwords (2):
+How many times must Ginseng be reboiled                (40)
+How many runes are in the archaic script               (31)
+How many places may the mandrake root be found         (2)
+How many bandits can be seen surrounding the old man   (6)
+How many parts of the body should one wish to protect  (6)
+Fewer than how many pearls in 10,000 are black         (1)
+On what page is the spell known as An Zu               (42)
+
+> Ultima 7 The Serpent Isle and The Silver Seed
+
+Passwords:
+How many spells in Ninth Circle of Magic               (8)
+How many different materials can armour be made from   (4)
+How many beasts are discussed in the Bestiary          (52)
+How many different types of Reagents                   (11)
+How many Reagents are required to cast 'Mass Death'    (6)
+What is the number of times ginsing must be boiled     (40)
+In what Circle of Magic 'Create Automata' appears      (6)
+For how many reasons did Erstam put down the history   (1)
+How many characters are there in Ophidian writing      (36)
+People from how many cities chose to emigrate          (4)
+How many cities were established in the Serpent Isle   (3)
+How many forces form the Principles of Balance         (6)
+How many clans divide Monitor                          (3)
+How many types of weapons are described in book        (4)
+How many Words of Power are there                      (27)
+How many letters in the name of the woman              (6)
+
+> Champions of Krynn
+
+(1)
+game.ovr
+0001D39E: 26 90
+0001D39F: FF 90
+0001D3A0: 85 90
+0001D3A1: 78 90
+0001D3A2: 02 90
+
+(2)
+GAME.OVR
+Original: 16 57 9A 2F 07 B7 0B 74 03
+Cracked:  16 57 9A 2F 07 B7 0B EB 03
+
+Original: 16 57 9A 2F 07 B7 0B 75 06 C6 46
+Cracked:  16 57 9A 2F 07 B7 0B 90 90 C6 46
+
+> The Death Knights of Krynn
+
+(1)
+GAME.OVR
+00004294: 0074 EB
+0000EF36: 0074 EB
+000042AF: 0075 90
+000042B0: 0006 90
+0000EF4C: 0075 90
+0000EF4D: 0006 90
+
+(2)
+start.exe
+Original: 9A 25 00 4A 00
+Cracked:  EB 4B 00 4A 00
+
+game.ovl
+Original: 80 BD F6 01 0A 72
+Cracked:  80 BD F6 01 0A EB
+
+> Dark Queen of Krynn: Remove Password code
+
+dqk.exe (?)
+000319F8: 74 EB
+000319FF: 75 EB
+
+> Ishar 1
+
+Passwords:
+
+word    line    page     password
+
+ 1       1       10       recruit
+ 2       1       8        team
+ 3       1       13       often
+ 4       1       9        player
+ 5       1       7        using
+ 5       1       12       party
+ 7       1       4        began
+ 7       2       6        left
+ 1       1       10       recruit
+ 1       3       14       spells
+ 3       1       14       last
+ 3       2       9        colour
+ 4       1       7        moved
+ 4       2       13       place
+ 5       1       11       icon
+ 5       1       13       some
+
+> Ishar 2
+
+Passwords:
+
+2  2  6    Des
+
+> Ishar 3
+
+3 1 16  UNE    1 2 20 SEULE
+1 2 19  ON     5 2 16 SONT
+5 2 18  NOM    1 3 14 ACTIVE
+2 2 15  VOUS   3 1 11 OR
+2 2 11  DES    2 3 15 EST
+3 2 14  CASES  2 3 21 SORTS
+4 2 13  SUR    1 3 13
+
+> Arena
+
+Цены заклятий:
+
+Stamina                60 Wizard Rend      740
+Sanctuary             300 Strength Leech   225
+Light                 120 Ice Bolt         367
+Wanderlight           150 Heal             125
+Wizard Lock           300 Resist Fire      300
+Orc Strength          125 Resist Cold      300
+Wizard's Fire         187 Fireball         325
+Shield                250 Earth Wall       400
+Shock                 225 Levitate          50
+Open                  300 Witch's Curse    300
+Wyvern's Sting        525 Cure Poison      350
+Force Bolt           1050 Resist Shock     300
+Invisibility          150 God's Fire      3750
+Ice Storm             487 Force Wall       600
+Lightning             780 Pitfalls         600
+Wildfire              607 Silence          450
+Far Silence           675 Heal True        445
+Passwall              600 Firestorm        490
+Spell Shield          400 Free Action      260
+Resist Poison         550 Lifesteal        675
+Toxic Cloud           700 Troll's Blood    450
+Medusas' Gaze         840 Spell Drain      630
+Shalidor's Mirror     775 Purify          2590
+Chrysamere           4725 Ebony Blade     8125
+Spell Breaker        2230 Lord's Mail     2075
+Auriel's Shield      3275 Staff of Magnus 2525
+Warlock's Ring       2840 Voldendrung     1620
+Ring Of Phynaster    1800 Ring Of Khajiit 4490
+Ebony Mail           2420 Auriel's Bow    4487
+Necromancer's Amulet 1825 Cause Disease    975
+Fire Dart             375 Light Heal        70
+Spell Drain           180
+
+Arena Deluxe (v1.07 CD)
+
+Remove CD check
+ACD.EXE
+00026155: 74 EB
+00026156: 25 2E
+
+Allow saving everywhere (-"-)
+ACD.EXE
+00029F3A: 75 EB
+
+>Betrayal at Antara
+
+Russian ver., глава 8
+файл Antarar.exe:
+Было:
+000EE1F7        8a  25  98  97 ....
+Исправить на:
+000EE1F7        09  c9  74  0b  ac  3c  ff  74
+000EE1FF        02  88  07  47  49  eb  f1  90
+/*******************************************************/
+
+>World of Xeen
+
+Remove password check (Run UNP -K XEEN.DAT before!)
+XEEN.DAT
+0001A6ED: 15 00
+
+All spells works everywhere(-"-)
+XEEN.DAT
+0002EF20: 75 EB
+0002EF32: 75 EB
+0002EF3C: 75 EB
+0002EF47: 03 00
+0002EFA8: 54 00
+0002EFC9: 33 00
+
+Allow to watch all ending screens
+XEEN.CFG
+0000000A: 00 65
+0000000B: 00 72
+0000000C: 00 65
+0000000D: 00 69
+0000000E: 00 61
+0000000F: 00 6D
+00000010: 00 6A
+00000011: 00 68
+00000016: 00 01
+00000017: 00 01
+0000001A: 00 01
+
+>Disciples of Steel
+
+Disciples of Steel
+
+Unprotect v1.001 (White Jaguar & others)
+STEEL.EXE
+00069D53: 09 00
+0006A569: 09 00
+0006F5A1: 03 00
+
+Unprotect v1.013 (White Jaguar)
+STEEL.EXE
+0006A0AB: 09 00
+0006A8BB: 09 00
+0006F8F3: 03 00
+
+Crack (Alexander Ageev):
+STEEL.EXE
+v1.013: (size 759930)
+00046634: 74 90
+00046635: 06 90
+00046636: FF 90
+00046637: 46 90
+00046638: B6 90
+00046639: E9 90
+0004663A: 05 90
+0004663B: 00 90
+0006A0AA: 75 90
+0006A0AB: 09 90
+0006A8BA: 75 90
+0006A8BB: 09 90
+0006F8F2: 7E 90
+0006F8F3: 03 90
+
+>Torment
+
+See All Movies:
+torment.ini
+[Movies]
+BISLOGO=1
+TSRLOGO=1
+OPENING=1
+SS_MSLAB=1
+SIGIL=1
+TIME=1
+SS_PHARD=1
+SS_ADETH=1
+ALYBIRTH=1
+DEATH=1
+MAZE1=1
+CURSTD=1
+OUTLANDS=1
+BAATOR=1
+CARCERI=1
+CRETURN=1
+FORTRESS=1
+FORTDOOR=1
+ARRV_IGN=1
+T1ENTER=1
+METEOR=1
+DRAGON=1
+T1ABSORB=1
+FINALE=1
+CONFLAG=1
+T1DEATH=1
+RUNE=1
+MAZE2=1    - личное знакомство с Lady of Pain
+CANNON=1   - видео к Mechanus Cannon
+
+Отучалка от CD (fargus version)
+torment.exe
+0003A0FC: 55 33
+0003A0FD: 8B C0
+0003A0FE: EC F7
+0003A0FF: 6A D0
+0003A100: FF C3
+
+torment.ini:
+CD1:=E:\CD1      ; пpописать свой пyть
+CD2:=E:\CD2      ;
+CD3:=E:\CD3      ;
+CD4:=E:\CD4      ;
+CD5:=E:\CD5      ;
+
+
+>Blades of Exile
+
+BLADES.EXE
+0007EACC: 00 01
+0007EF3E: 00 01
+0007F430: 00 01
+00080EBE: 80 C6
+00080EBF: 3E 06
+00080EC2: 00 01
+00080EC3: 75 90
+00080EC4: 1B 90
+00083D3B: 80 C6
+00083D3C: 3E 06
+00083D40: 75 90
+00083D41: 34 90
+00083D48: 80 C6
+00083D49: 3E 06
+00083D4D: 75 90
+00083D4E: 27 90
+00083D55: 80 C6
+00083D56: 3E 06
+00083D5A: 75 90
+00083D5B: 1A 90
+00083D62: 80 C6
+00083D63: 3E 06
+00083D67: 75 90
+00083D68: 0D 90
+00083D6F: 80 C6
+00083D70: 3E 06
+00083D74: 74 EB
+000AE159: 75 90
+000AE15A: 04 90
+000AE15C: 00 01
+000B0D2D: 80 C6
+000B0D2E: 3E 06
+000B0D31: 00 01
+000B0D32: 75 90
+000B0D33: 30 90
+000F04F0: 80 C6
+000F04F1: 3E 06
+000F04F4: 00 01
+000F04F5: 75 90
+000F04F6: 06 90
+000F053E: 80 C6
+000F053F: 3E 06
+000F0542: 00 01
+000F0543: 75 90
+000F0544: 0F 90
+
+HOW TO LOAD CUSTOM SCENARIOS:
+
+rename:
+scenario.bmp -> valleydy.bmp
+scenario.exs -> valleydy.exs
+scenario.meg -> valleydy.meg
+(where "scenario" is scenario file name)
+and place in bladscen directory
+
+Wizardry 6:   Bugfix
+Wizardry 7:   Crack, bugfix, misc cheats
+Wizardry 7 Gold:   rip fix
+Daemonsgate:   Passwords, crack
+Realms of Arkania 2:  Passwords, cheat, fix
+Realms of Arkania 3:  Fix (rip)
+Dark Heart of Uukrul:  Crack
+Megatraveller-1:  Passwords
+Jagged Alliance-2:  Cheats, play w/o CD
+Whale's Voyage:   Crack
+Exile series:   Reg. formula (unchecked), cracks for 1 and 3.
+Nethergate:   Crack (partial)
+Ravenloft-1:   Crack (NOT recommended)
+Baldur's Gate:   Cheat
+Baldur's Gate: TOSC  Cheats
+Baldur's Gate-2:  Cheat
+Lands of Lore:   Bugfix
+Realmz:    Reg. file (UUE)
+Avernum:   Reg. formula, gold limit removal
+SpellJammer: Crack, fix
+Realms of Arkania II: Star Trail: fix
+UnReal World:   Crack
+Siege of Avalon: crack
+
+
+> Wizardry 6 Bane of Cosmic Forge
+
+Remove divide overflow for fast computers
+WROOT.EXE
+00002245: F7 B8
+00002246: F3 FF
+00002247: 83 FF
+00002248: FA BA
+00002249: 05 06
+0000224A: 7E 00
+0000224B: 01 90
+0000224C: 40 90
+
+>Wizardry 7 Crusaders of Dark Savant
+
+Remove doc check.
+DS.EXE
+00002C45: 0074 EB
+
+Pentium II fix, for Pentium fix :)
+DS.EXE
+0000369B: 0037 E6
+
+No ability decreasing at change profession
+VPCVW.OVR
+00008FA8: 88 90
+00008FA9: 87 90
+00008FAA: 64 90
+00008FAB: 5D 90
+
+Remove spell points limit of 999
+VPCLV.OVR
+00004C8C: 007E EB
+
+HP&SP on levels below max.reached rise as if above it
+VPCLV.OVR
+00004703: 007D EB
+00004BFF: 007D EB
+
+Spell points always rise by 15
+VPCLV.OVR
+00004C70: 0005 00
+
+>Wizardry 7 Gold:   rip fix
+
+После финального игpа вываливается с ошибкой:
+
+Риповальщики выкинули набор .bmp файлов из
+которых формируется финальный мультик, и игра виснет. Надо в каталог
+
+ wizardry/res/media/video
+
+положить 40 .bmp файлов с именами
+
+ S00%d.BMP, где %d от 1 до 40
+
+Вместо мультика естественно будет чушь, но игра не вылетит.
+
+
+>Daemonsgate
+
+Passwords (Shadow Dweller):
+66 1 1 2 DOCUMENT     70 2 3 6 LANDS     70 3 8 2 PLUNGED
+71 1 6 1 BROTHER      71 3 2 1 LIFE      72 1 2 5 FATHER
+72 1 4 7 OF           73 2 3 4 COULD     74 1 1 7 DEATH
+74 4 2 2 HEROES       75 2 1 4 EVENTS    76 1 2 3 THE
+76 3 2 4 WATERS       77 1 1 4 MASSACRE  77 2 4 3 AND
+77 5 1 7 SLAVES       78 2 2 1 SOLDIERS  79 1 3 4 WERE
+79 3 3 1 NUMEROUS     80 1 3 3 TOOLS     80 3 4 2 BY
+81 1 3 6 SHAPING      81 3 2 3 HOLD      82 2 4 1 PESTURS
+82 4 1 2 THEN         83 1 3 4 EARLY     83 1 7 2 EVIDENT
+84 1 6 8 ANYONE       85 1 2 6 CAN       85 3 4 1 SPIRITS
+86 2 1 3 WALL         87 2 3 1 ARGUE     87 2 8 2 UNDER
+88 1 4 6 BROUGHT      88 3 1 3 DEFEAT    89 2 2 9 GROUP
+89 3 1 2 WAKE         90 1 4 3 OWN       90 2 5 4 MASHAN
+92 2 2 2 RICH         93 1 3 2 SUCH      93 2 1 1 TRADE
+94 1 4 2 FOR          94 2 4 2 STAND     95 1 3 5 THESIS
+95 2 2 2 WHICH        95 2 3 3 TAPPED    96 1 1 4 ROOTS
+96 3 2 6 DAEMONS
+
+Remove password counter:
+MAIN_DAT\misc_256.rsc (ver 1.1, june'94)
+000210AE 03 00
+
+Crack (Alexander Ageev):
+misc_256.rsc
+0000AE45: 81 C7
+0000AE46: 3E 06
+0000AE4B: 74 75
+
+
+>Realms of Arkania 2: Star Trail
+
+Passwords
+Page Line Word                           Page Line Word
+  1    5    2     PLAYING                  2    6    3     COMFORTABLE
+  3    1   11     REALITY                  3   13    6     MISSISSIPPI
+  4    2    6     EXPLORE                  5    5    6     SPLIT
+  6    6    1     DUTY                     7    2    9     PUCKBOY
+  8    3    8     DIARY                    9    5    2     BREEZE
+ 10    3    4     HERBS                   11    4    3     TAVERN
+ 12    1    9     ENTERTAINMENT           13    8    7     DISCOVER
+ 15    7    4     DAMAGE                  16    5    3     TERRAIN
+ 17    4    6     BEDROLLS                18    4    7     ANXIOUS
+ 20    7    1     TRAIL                   21    2    3     HURL
+ 22    3    2     WEAPON                  23    5    2     SIMPLY
+ 31    6    2     ARCANE                  32    3    3     STRIKE
+ 33    3    3     CHALLENGE               34    2    3     PERAINE
+ 36    3    8     ARKANIA                 37    4    2     MAGIC
+ 38    2    2     SILVAN                  39    4    1     MONEY
+ 40    4    2     SKILLS                  41    1    3     ATTACK
+ 42    3    1     EVENLY                  43    1    3     HAPPY
+ 44    2    4     CLICK                   45    7    3     SCALE
+ 46    3    6     BACKPACK                47    3    2     RIGHT
+ 48    1    4     WARRIOR                 49    1    9     PUMPKIN
+ 50    5    2     STAR                    57    4    2     LORE
+ 58    3    3     AGILITY                 59    4    2     RABBIT
+ 60    2    4     ART                     61    4    3     INSPIRES
+ 62    2    2     PHEX                    63    2    6     PROVE
+ 65    5    4     MATTER
+
+> Решение проблемы лиц при переносе из первой части
+
+    Спелл "камуфляж" находится по относительному (к пеpвому байту слова "СНAR"
+после котоpого следует имя чеpектеpа) смещению 0B7h (183). Там должно быть
+значение 10h (16), котоpое следует поменять на 0 (существуют несколько веpсий
+ROA2, поэтому есть веpоятность что фоpмат их сейвов может pазличаться).
+
+    Абсолютные адpеса в сейве для паpтии из 6 чаpов и моей веpсии ROA2 (v2.00):
+
+    0114h + 0B7h = 01CBh
+    0709h + 0B7h = 07C0h
+    0CFEh + 0B7h = 0DB5h
+    12F3h + 0B7h = 13AAh
+    18E8h + 0B7h = 199Fh
+    1EDDh + 0B7h = 1F94h
+
+
+No failures using increase attempts
+STAR.EXE
+000A1A67: 4F 00
+000A1BBE: 53 00
+000F777B: 67 00
+000F7CF8: 67 00
+
+Remove problems with more than 32Mb XMS
+STAR.EXE
+0001C98C: 55 B4
+0001C98D: 8B 08
+0001C98E: EC FF
+0001C990: 06 14
+0001C991: 56 7B
+0001C992: 57 92
+0001C993: B4 85
+0001C994: 08 C0
+0001C995: FF 79
+0001C996: 1E 02
+0001C997: 14 B4
+0001C998: 7B 7F
+0001C99A: C0 D2
+0001C99B: 8B 90
+0001C99C: C2 90
+0001C9A4: 5F CB
+
+
+> Realms of Arkania 3
+
+Лечение вылета в канализации для рипа:
+Файл seqs.alf. Самый конец. Ищешь "modulesewer" и после него заменяешь
+байтики (~десяток) на от какого-нибудь дpугого "moduleXXXXX"...
+
+
+> Dark Heart of Uukrul
+
+Crack:
+uukrul.ovr
+0000E3BC: 74 EB
+
+>Megatraveller-1
+
+Passwords:
+
+                   Rounds     Law     Cost     Penetr    Damage
+Snub Pistol          6         5       150        6
+Body Pistol                    1       500        1
+Auto Rifle          20         3      1000        3
+18mm Shotgun        10         8       150        1        4
+9mm SMG             30         3                  3        3
+Light Assault Gun                      600        8        4
+TL12 Laser Carbine 120                4000       10        3
+TL7 Rocket Launcher  1         1      4500       36        8
+9mm Rifle            3         8      1000        5
+Assault Rifle       30         3       400        3        3
+
+                              Cargo        StrPts
+Small Interplanetary craft      2            300
+Trader/Armed Merchant          20           1500
+Armed Escort                    5           1750
+Destroyer                       8           2000
+Corsair                        12           2500
+Scout Ship                      8           1500
+Imperial Xboat                  0           1500
+
+            1      2      3      4      5      6
+Army      Lieut  Captn  Major  Lt.Col Colnel General
+Navy      Ensign Lieut  ?      Comndr Captn  Admiral
+Merchants 4thOff 3rdOff 2ndOff 1stOff ?      Owner
+Marines   Lieut  Captn  Major? Lt.Col Colnel Brigad
+
+> JA2 (Бука)
+
+Есть пара вариантов патча ja2.exe:
+1) При создании чара вместо 1 - чар есть игруха пишет 0 - чар ещё не создан:
+0012E936: 01 00
+0012E35C: 01 00
+Соответственно, если у вас сав с уже созданным чаром, то это не прокатит.
+2) Есть чар - нет чара, в I.M.P.е по вводу пароля всеравно пойдём на прцедуру
+создания чара:
+0015DA24: 14 00
+0015DA57: 05 00
+
+Ну и ещё для кучи отучалка от сидюка:
+0010060E: 74 EB
+
+> Whale's Voyage
+
+Crack (Sergey Suslenkov):
+wv.exe
+0000342F: 74 EB
+
+> Exile
+
+Registration (Yuri PQ):
+а мне сказали унивеpсальную фоpмулу:
+t = ((((a**2+50)//3000)*81)//10000)+10000
+это REXX, ** - степень, // - деление по модулю, a - число, котоpое игpушка
+скажет, t - то что надо ей сказать. 3й заpегистpился без пpоблем - и pедактоp
+в т.ч. фоpмула якобы подходит ко всем тpем...
+
+Crack (Alexander Ageev):
+Original Exile1:    63F27: 3B 46 FC 75 1E
+Cracked  Exile1:    63F27: 3B 46 FC 90 90
+
+Original Exile1ed:  2A825: 3B 46 FC 75 1D
+Cracked  Exile1ed:  2A825: 3B 46 FC 90 90
+
+Original Exile3:    8E913: 26 3B 06 8A 59 75 22
+Cracked  Exile3:    8E913: 26 3B 06 8A 59 90 90
+
+>Nethergate
+
+Crack (Alexander Ageev):
+NETHERGATE.EXE
+0001BE91: 75 EB
+0004D000: 80 C6
+0004D001: 3D 05
+0004D006: 00 01
+0004D007: 0F E9
+0004D008: 85 B8
+0004D009: B7 08
+0004D00A: 08 00
+0004D00C: 00 90
+
+Убирает shareware daemon, но в последующих местах встречаются глюки, т.к.
+shareware version неполна.
+
+>Ravenloft-1: Strahd's Possession
+
+Crack (Nicol Morozov):
+CODE.2
+v1.1A
+0005270B: 74 EB
+v1.2
+00052E54: 55 C3
+
+Кракать, однако, крайне не рекомендуется - вызывает кучу разнообразных глюков
+(защита такая?). Пароли лежат в файле code.2 - лучше оттуда и вводить.
+
+>Baldur's Gate
+
+XP limit removal:
+BGmain.exe
+original version:
+2FCA76 76 EB
+2FCAA4 76 EB
+final patch:
+2FDE8D 76 EB
+2FDEBB 76 EB
+
+>BG: TOSC
+
+XP limit removal: после yстановки патча (фиpменного + от MaskIt'a):
+bgmain.exe от 19.03.99
+30D4B5 76 EB
+30D4E3 76 EB
+bgmain2.exe от 09.06.99
+30FC37 76 EB
+30FC64 76 EB
+
+Change locale to Russia
+BGMain.exe
+0002C00F: 09 19
+00490640: 43 52
+00490641: 61 75
+00490642: 6E 73
+00490643: 61 73
+00490644: 64 69
+
+Change start caps to 161 000
+BGMain.exe
+00194E21: A8 E8
+00194E22: 5B 74
+00194E23: 01 02
+
+>Baldur's Gate-2
+
+XP limit removal:
+bgmain.exe (ver 2.0.0.2)
+00039825: 75 90
+00039826: 27 90
+
+>Lands of Lore-1
+
+Runs on Pentium:
+main.exe
+Original: C3 74 13 66 B8 01
+Cracked:  C3 EB 13 66 B8 01
+(0002919С floppy ver, 00054FC2 CD ver)
+
+>Realmz
+
+Uudecode, rename realmz.reg to "Realmz Preferences" and move to
+/Acampref/RealmzPref/ in your Windows folder.
+
+section 1 of uuencode 5.21 of file realmz.rar    by R.E.M.
+
+begin 644 realmz.rar
+M4F%R(1H'`#O0<P@`#0`````````1LW0`@"H`2P```$(!````&[>7HVD)."@4
+M-0H`(````%)%04Q-6BY214<-D92(``````#/\"-)<8`X'YPDD*/0H&AD;FD@
+M:65&6!!:U8X8]W3LBZ?4]@^FYP8,@KQ1R*2[H'MA>1]^!1M0^,IYD6VIC^@L
+"6X`L
+`
+end
+sum -r/size 59958/219 section (from "begin" to "end")
+sum -r/size 43373/137 entire input file
+
+>Avernum
+
+registercode:
+x=((((((((a*(a+7)+51) mod 32901)*79) mod 28719)*29) mod 18345)*731) mod 10000)+
++10000  [a - выдаваемый номер, mod - деление по модулю, x - искомый код]
+9000 gold limit removal (v.1.2)
+Original: 0000397F: 59  59  50  68  28  23
+Cracked:  0000397F: 59  59  50  68  7F  FF
+
+000232D7: 7E->EB
+
+>Spelljammer
+
+Unprotect (v1.0)
+SJ.EXE
+00025953: 0B 33
+
+Remove divide overflow on PIIs (v1.0)
+SF3.EXE
+0005AE10: 00 01
+
+Unprotect (v1.1)
+SJ.EXE
+00026438: 0B 33
+
+Remove divide overflow on PIIs (v1.1)
+SF3.EXE
+0005CB7C: 00 01
+
+>Realms of Arkania II: Star Trail
+
+Remove problems with more than 32Mb XMS
+STAR.EXE
+0001C98C: 55 B4
+0001C98D: 8B 08
+0001C98E: EC FF
+0001C990: 06 14
+0001C991: 56 7B
+0001C992: 57 92
+0001C993: B4 85
+0001C994: 08 C0
+0001C995: FF 79
+0001C996: 1E 02
+0001C997: 14 B4
+0001C998: 7B 7F
+0001C99A: C0 D2
+0001C99B: 8B 90
+0001C99C: C2 90
+0001C9A4: 5F CB
+
+
+>UnReal World
+
+Декодировать, разархивировать, поместить в директорию с игрой:
+
+section 1 of uuencode 5.20 of file urwrgst.rar    by R.E.M.
+
+begin 644 urwrgst.rar
+M4F%R(1H'`,^0<P``#0````````"EGG1`@"@`%````!0````"\0R*VZN%."P4
+M,`@`(0```')G<W0N9&%T4E!'($=!344-"F)G85-F04)S#0I?S71`@"<`,```
+M`.P3```"_)#`17F-.BP4,P<`(````'5S<"YS878(T`S0``````#/$/I>*NB$
+@($80F_XPJ';,0]+-^!4=$?^`"WZW4]YF,S6/HO^`7,"`
+`
+end
+sum -r/size 53144/260 section (from "begin" to "end")
+sum -r/size 48257/167 entire input file
+
+>Siege of Avalon: crack
+
+siege.ini:
+
+=== Cut ===
+[Keys]
+RKey=507186394
+Serial01=0
+RegID01=0
+Key01=0
+Serial02=0
+RegID02=0
+Key02=0
+Serial03=0
+RegID03=0
+Key03=0
+Serial04=0
+RegID04=0
+Key04=0
+Serial05=0
+RegID05=0
+Key05=0
+Serial06=0
+RegID06=0
+Key06=0
+=== Cut ===
+Вернуться в раздел "Ролевые игры" - Обсудить эту статью на Форуме
+Главная - Поиск по сайту - О проекте - Форум - Обратная связь
+
+Copyright © faqs.org.ru, 1998-2005
