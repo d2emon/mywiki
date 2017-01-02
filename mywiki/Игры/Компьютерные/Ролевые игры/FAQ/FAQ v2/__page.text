@@ -1557,19 +1557,9 @@ Buck Rogers: Countdown to Doomsday (CtD), Matrix Cubed (MC)
 ----
 HTML-ваpиант CRPG FAQ и почти все упомянутые матеpиалы можно найти на http://rpg.gamenavigator.com
 ----
-
-faqs.org.ru	
-
- Главная > Компьютерные игры > Ролевые игры >
- Приложение к RPG FAQ: Cracks and Answers
-
- From: Comoderator <Comoderator@p33.f1127.n5020.z2.fidonet.org>
-Date: Mon, 23 Sep 2002 23:23:13 +0400
-
--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--
              Приложение к RU.GAME.RPG FAQ: CRACKS AND ANSWERS
                                 37 games (+1)
--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--+--
+----
 
 Dark Sun-1:   Passwords
 EOB-2:    Crack
@@ -1592,7 +1582,7 @@ Blades of Exile:  Crack
 > К новым играм NoCd и прочие кряки берутся с http://www.gamecopyworld.com
 
 
-> Dark Sun I
+!!! > Dark Sun I
 
 Passwords:
 8,35,2,a  - agile       5,12,4,b  - box       4,13,4,l  - large
@@ -1602,14 +1592,14 @@ Passwords:
 1,4,13,s  - slaver      6,29,1,e  - every     2,10,6,h  - humans
 2,26,4,a  - armor       3,27,3,w  - water     3,14,1,p  - pouches
 
->EoB-2
+!!! >EoB-2
 
 Crack:
 Original: OB C0 74 14 47
 Cracked:  OB C0 EB 14 47
 
 
-> Ultima 6
+!!! > Ultima 6
 
 Copy Protection Questions and Answers:
 Lord British's Questions
@@ -1658,7 +1648,7 @@ Selganor's Questions
   A: Kinetic propellent
 
 
-> Ultima 7 The Black Gate and The Forge of Virtue
+!!! > Ultima 7 The Black Gate and The Forge of Virtue
 
 Passwords (1):
 Latitude of Spektran                  (120)
@@ -1678,7 +1668,7 @@ How many parts of the body should one wish to protect  (6)
 Fewer than how many pearls in 10,000 are black         (1)
 On what page is the spell known as An Zu               (42)
 
-> Ultima 7 The Serpent Isle and The Silver Seed
+!!! > Ultima 7 The Serpent Isle and The Silver Seed
 
 Passwords:
 How many spells in Ninth Circle of Magic               (8)
@@ -1698,7 +1688,7 @@ How many types of weapons are described in book        (4)
 How many Words of Power are there                      (27)
 How many letters in the name of the woman              (6)
 
-> Champions of Krynn
+!!! > Champions of Krynn
 
 (1)
 game.ovr
@@ -1716,7 +1706,7 @@ Cracked:  16 57 9A 2F 07 B7 0B EB 03
 Original: 16 57 9A 2F 07 B7 0B 75 06 C6 46
 Cracked:  16 57 9A 2F 07 B7 0B 90 90 C6 46
 
-> The Death Knights of Krynn
+!!! > The Death Knights of Krynn
 
 (1)
 GAME.OVR
@@ -1736,13 +1726,13 @@ game.ovl
 Original: 80 BD F6 01 0A 72
 Cracked:  80 BD F6 01 0A EB
 
-> Dark Queen of Krynn: Remove Password code
+!!! > Dark Queen of Krynn: Remove Password code
 
 dqk.exe (?)
 000319F8: 74 EB
 000319FF: 75 EB
 
-> Ishar 1
+!!! > Ishar 1
 
 Passwords:
 
@@ -1765,13 +1755,13 @@ word    line    page     password
  5       1       11       icon
  5       1       13       some
 
-> Ishar 2
+!!! > Ishar 2
 
 Passwords:
 
 2  2  6    Des
 
-> Ishar 3
+!!! > Ishar 3
 
 3 1 16  UNE    1 2 20 SEULE
 1 2 19  ON     5 2 16 SONT
@@ -1781,7 +1771,7 @@ Passwords:
 3 2 14  CASES  2 3 21 SORTS
 4 2 13  SUR    1 3 13
 
-> Arena
+!!! > Arena
 
 Цены заклятий:
 
@@ -1829,7 +1819,7 @@ Allow saving everywhere (-"-)
 ACD.EXE
 00029F3A: 75 EB
 
->Betrayal at Antara
+!!! >Betrayal at Antara
 
 Russian ver., глава 8
 файл Antarar.exe:
@@ -1840,7 +1830,7 @@ Russian ver., глава 8
 000EE1FF        02  88  07  47  49  eb  f1  90
 /*******************************************************/
 
->World of Xeen
+!!! >World of Xeen
 
 Remove password check (Run UNP -K XEEN.DAT before!)
 XEEN.DAT
@@ -1869,7 +1859,7 @@ XEEN.CFG
 00000017: 00 01
 0000001A: 00 01
 
->Disciples of Steel
+!!! >Disciples of Steel
 
 Disciples of Steel
 
@@ -1903,7 +1893,7 @@ v1.013: (size 759930)
 0006F8F2: 7E 90
 0006F8F3: 03 90
 
->Torment
+!!! >Torment
 
 See All Movies:
 torment.ini
@@ -1954,7 +1944,7 @@ CD4:=E:\CD4      ;
 CD5:=E:\CD5      ;
 
 
->Blades of Exile
+!!! >Blades of Exile
 
 BLADES.EXE
 0007EACC: 00 01
@@ -2036,8 +2026,7 @@ Realms of Arkania II: Star Trail: fix
 UnReal World:   Crack
 Siege of Avalon: crack
 
-
-> Wizardry 6 Bane of Cosmic Forge
+!!! > Wizardry 6 Bane of Cosmic Forge
 
 Remove divide overflow for fast computers
 WROOT.EXE
@@ -2050,7 +2039,7 @@ WROOT.EXE
 0000224B: 01 90
 0000224C: 40 90
 
->Wizardry 7 Crusaders of Dark Savant
+!!! >Wizardry 7 Crusaders of Dark Savant
 
 Remove doc check.
 DS.EXE
@@ -2080,7 +2069,7 @@ Spell points always rise by 15
 VPCLV.OVR
 00004C70: 0005 00
 
->Wizardry 7 Gold:   rip fix
+!!! >Wizardry 7 Gold:   rip fix
 
 После финального игpа вываливается с ошибкой:
 
@@ -2095,8 +2084,7 @@ VPCLV.OVR
 
 Вместо мультика естественно будет чушь, но игра не вылетит.
 
-
->Daemonsgate
+!!! >Daemonsgate
 
 Passwords (Shadow Dweller):
 66 1 1 2 DOCUMENT     70 2 3 6 LANDS     70 3 8 2 PLUNGED
@@ -2127,8 +2115,7 @@ misc_256.rsc
 0000AE46: 3E 06
 0000AE4B: 74 75
 
-
->Realms of Arkania 2: Star Trail
+!!! >Realms of Arkania 2: Star Trail
 
 Passwords
 Page Line Word                           Page Line Word
@@ -2201,21 +2188,19 @@ STAR.EXE
 0001C99C: C2 90
 0001C9A4: 5F CB
 
-
-> Realms of Arkania 3
+!!! > Realms of Arkania 3
 
 Лечение вылета в канализации для рипа:
 Файл seqs.alf. Самый конец. Ищешь "modulesewer" и после него заменяешь
 байтики (~десяток) на от какого-нибудь дpугого "moduleXXXXX"...
 
-
-> Dark Heart of Uukrul
+!!! > Dark Heart of Uukrul
 
 Crack:
 uukrul.ovr
 0000E3BC: 74 EB
 
->Megatraveller-1
+!!! >Megatraveller-1
 
 Passwords:
 
@@ -2246,7 +2231,7 @@ Navy      Ensign Lieut  ?      Comndr Captn  Admiral
 Merchants 4thOff 3rdOff 2ndOff 1stOff ?      Owner
 Marines   Lieut  Captn  Major? Lt.Col Colnel Brigad
 
-> JA2 (Бука)
+!!! > JA2 (Бука)
 
 Есть пара вариантов патча ja2.exe:
 1) При создании чара вместо 1 - чар есть игруха пишет 0 - чар ещё не создан:
@@ -2261,13 +2246,13 @@ Marines   Lieut  Captn  Major? Lt.Col Colnel Brigad
 Ну и ещё для кучи отучалка от сидюка:
 0010060E: 74 EB
 
-> Whale's Voyage
+!!! > Whale's Voyage
 
 Crack (Sergey Suslenkov):
 wv.exe
 0000342F: 74 EB
 
-> Exile
+!!! > Exile
 
 Registration (Yuri PQ):
 а мне сказали унивеpсальную фоpмулу:
@@ -2286,7 +2271,7 @@ Cracked  Exile1ed:  2A825: 3B 46 FC 90 90
 Original Exile3:    8E913: 26 3B 06 8A 59 75 22
 Cracked  Exile3:    8E913: 26 3B 06 8A 59 90 90
 
->Nethergate
+!!! >Nethergate
 
 Crack (Alexander Ageev):
 NETHERGATE.EXE
@@ -2303,7 +2288,7 @@ NETHERGATE.EXE
 Убирает shareware daemon, но в последующих местах встречаются глюки, т.к.
 shareware version неполна.
 
->Ravenloft-1: Strahd's Possession
+!!! >Ravenloft-1: Strahd's Possession
 
 Crack (Nicol Morozov):
 CODE.2
@@ -2315,7 +2300,7 @@ v1.2
 Кракать, однако, крайне не рекомендуется - вызывает кучу разнообразных глюков
 (защита такая?). Пароли лежат в файле code.2 - лучше оттуда и вводить.
 
->Baldur's Gate
+!!! >Baldur's Gate
 
 XP limit removal:
 BGmain.exe
@@ -2326,7 +2311,7 @@ final patch:
 2FDE8D 76 EB
 2FDEBB 76 EB
 
->BG: TOSC
+!!! >BG: TOSC
 
 XP limit removal: после yстановки патча (фиpменного + от MaskIt'a):
 bgmain.exe от 19.03.99
@@ -2351,14 +2336,14 @@ BGMain.exe
 00194E22: 5B 74
 00194E23: 01 02
 
->Baldur's Gate-2
+!!! >Baldur's Gate-2
 
 XP limit removal:
 bgmain.exe (ver 2.0.0.2)
 00039825: 75 90
 00039826: 27 90
 
->Lands of Lore-1
+!!! >Lands of Lore-1
 
 Runs on Pentium:
 main.exe
@@ -2366,7 +2351,7 @@ Original: C3 74 13 66 B8 01
 Cracked:  C3 EB 13 66 B8 01
 (0002919С floppy ver, 00054FC2 CD ver)
 
->Realmz
+!!! >Realmz
 
 Uudecode, rename realmz.reg to "Realmz Preferences" and move to
 /Acampref/RealmzPref/ in your Windows folder.
@@ -2383,7 +2368,7 @@ end
 sum -r/size 59958/219 section (from "begin" to "end")
 sum -r/size 43373/137 entire input file
 
->Avernum
+!!! >Avernum
 
 registercode:
 x=((((((((a*(a+7)+51) mod 32901)*79) mod 28719)*29) mod 18345)*731) mod 10000)+
@@ -2394,7 +2379,7 @@ Cracked:  0000397F: 59  59  50  68  7F  FF
 
 000232D7: 7E->EB
 
->Spelljammer
+!!! >Spelljammer
 
 Unprotect (v1.0)
 SJ.EXE
@@ -2412,7 +2397,7 @@ Remove divide overflow on PIIs (v1.1)
 SF3.EXE
 0005CB7C: 00 01
 
->Realms of Arkania II: Star Trail
+!!! >Realms of Arkania II: Star Trail
 
 Remove problems with more than 32Mb XMS
 STAR.EXE
@@ -2433,8 +2418,7 @@ STAR.EXE
 0001C99C: C2 90
 0001C9A4: 5F CB
 
-
->UnReal World
+!!! >UnReal World
 
 Декодировать, разархивировать, поместить в директорию с игрой:
 
@@ -2450,7 +2434,7 @@ end
 sum -r/size 53144/260 section (from "begin" to "end")
 sum -r/size 48257/167 entire input file
 
->Siege of Avalon: crack
+!!! >Siege of Avalon: crack
 
 siege.ini:
 
@@ -2475,8 +2459,3 @@ Key05=0
 Serial06=0
 RegID06=0
 Key06=0
-=== Cut ===
-Вернуться в раздел "Ролевые игры" - Обсудить эту статью на Форуме
-Главная - Поиск по сайту - О проекте - Форум - Обратная связь
-
-Copyright © faqs.org.ru, 1998-2005
