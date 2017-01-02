@@ -1,0 +1,16 @@
+[General]
+type = wiki
+tags = ролевки, игры, фентези
+order = 6
+datetime = 2017-01-02 16:48:04.361000
+cursorposition = 74
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+
+[wiki]
+md5_hash = f78a9f804798d2f02677cb717acaf53f
+
