@@ -1,14 +1,8 @@
 [General]
 type = wiki
-tags = 
+tags = игры
 order = 16
-creationdatetime = 2016-10-25 21:17:23.860000
-datetime = 2016-10-26 09:02:42.933000
-cursorposition = 75
-
-[wiki]
-md5_hash = 22d77ff5c190890a11e8afd70cf3bbf1
-
-[Misc]
-pageindex = 1
+creationdatetime = 2016-10-05 13:39:41.740042
+datetime = 2016-10-05 13:42:51.370696
+cursorposition = 1032
 
