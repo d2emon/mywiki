@@ -2,8 +2,8 @@
 type = wiki
 tags = ролевки, игры
 order = 8
-datetime = 2017-01-02 23:56:13.897000
-cursorposition = 964
+datetime = 2017-01-03 03:35:57.165000
+cursorposition = 6242
 
 [Misc]
 pageindex = 1
@@ -12,5 +12,5 @@ pageindex = 1
 expand = False
 
 [wiki]
-md5_hash = e9a5f2048778856289933202cd90ca0b
+md5_hash = a604a96faebf49aaca36275e7a7c29c5
 
