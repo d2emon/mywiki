@@ -3,10 +3,14 @@ type = wiki
 tags = 
 order = 0
 datetime = 2012-12-17 00:12:04.382000
+cursorposition = 0
 
 [Misc]
 pageindex = 1
 
 [Tree]
 expand = False
+
+[wiki]
+md5_hash = f196899bf865f60bf8ed2e09a56e943d
 
