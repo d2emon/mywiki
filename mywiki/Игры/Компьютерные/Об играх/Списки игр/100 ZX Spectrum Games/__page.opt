@@ -3,10 +3,11 @@ type = wiki
 tags = временное
 order = 0
 datetime = 2013-04-02 22:44:45.042000
+cursorposition = 0
 
 [Misc]
 pageindex = 1
 
 [wiki]
-md5_hash = be17b4186bae2daa1eb0eb0bbc657abe
+md5_hash = 109b33fc546a794a516810ff081cfa9e
 
