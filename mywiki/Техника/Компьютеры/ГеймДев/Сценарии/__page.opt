@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = геймдев, комп
+order = 9
+creationdatetime = 2017-01-14 23:03:50.016000
+datetime = 2017-01-14 23:04:02.757000
+cursorposition = 26
+
+[wiki]
+md5_hash = da36aa63dba92957e187dcb863633a3c
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+
