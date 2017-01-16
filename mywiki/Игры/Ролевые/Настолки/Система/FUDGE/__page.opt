@@ -3,11 +3,11 @@ type = wiki
 tags = ролевки, wikipedia, игры
 order = 6
 creationdatetime = 2016-05-19 10:02:45.282253
-datetime = 2016-06-19 23:47:04.114000
-cursorposition = 4844
+datetime = 2017-01-16 23:43:26.899304
+cursorposition = 8788
 
 [wiki]
-md5_hash = 4eb9d0d1ff1bef912485302c8a2d6a84
+md5_hash = fa925cc4cdb5bbc12a7d150a0ee0dee3
 
 [Misc]
 pageindex = 1
