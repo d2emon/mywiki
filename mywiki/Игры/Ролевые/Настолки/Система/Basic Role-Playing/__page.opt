@@ -1,7 +1,7 @@
 [General]
 type = wiki
 tags = wikipedia, игры, ролевки
-order = 1
+order = 0
 creationdatetime = 2016-06-19 21:20:16.665000
 datetime = 2016-06-19 21:23:06.522000
 cursorposition = 2196
