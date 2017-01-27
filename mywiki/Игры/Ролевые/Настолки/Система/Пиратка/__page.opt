@@ -1,20 +1,17 @@
 [General]
 type = wiki
-tags = ролевки, пираты, игры
+tags = игры, wikipedia, ролевки
 order = 21
-datetime = 2016-03-06 22:02:25.700000
+creationdatetime = 2017-01-26 21:51:11.810434
+datetime = 2017-01-26 21:51:15.530203
 cursorposition = 0
+
+[wiki]
+md5_hash = e40c07413c63f3a6e24153ce6dd28d51
 
 [Misc]
 pageindex = 1
 
-[wiki]
-<<<<<<< HEAD
-md5_hash = dc2dfc66a9ccd9ddabe8d4b1a09da9c2
-=======
-md5_hash = 2f85d04495ada2cd5a08e3c685282630
->>>>>>> a0eedf612e736b643aae99eb5ab3b4801585a8f3
-
 [Tree]
-expand = True
+expand = False
 
