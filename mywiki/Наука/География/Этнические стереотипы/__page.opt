@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = posmotre.li, география, наука
+order = 8
+creationdatetime = 2017-02-01 03:07:12.180000
+datetime = 2017-02-01 03:13:05.238000
+cursorposition = 56
+
+[wiki]
+md5_hash = 3b8c3d9554e3bd3bbefb3eef16db9dc7
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = True
+

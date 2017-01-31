@@ -1,13 +1,13 @@
 [General]
 type = wiki
-tags = дописать, наука
+tags = наука, география
 order = 1
 creationdatetime = 2017-02-01 02:52:35.380000
-datetime = 2017-02-01 02:53:13.967000
+datetime = 2017-02-01 03:02:28.895000
 cursorposition = 71
 
 [wiki]
-md5_hash = 719c535a28a4d9b0c278bd1e3181bdd1
+md5_hash = b8f62cab36496978fd592c26be035b2c
 
 [Misc]
 pageindex = 1
