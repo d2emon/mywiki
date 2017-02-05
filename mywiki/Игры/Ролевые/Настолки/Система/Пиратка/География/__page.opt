@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = игры, wikipedia, ролевки
+order = 0
+creationdatetime = 2017-02-03 08:28:49.608890
+datetime = 2017-02-04 00:07:37.356695
+cursorposition = 5915
+
+[wiki]
+md5_hash = 39bcf48ed375aa973d82265738822968
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = True
+
