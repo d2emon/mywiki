@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = пираты, wikipedia
+order = 0
+creationdatetime = 2017-02-08 06:34:36.778000
+datetime = 2017-02-08 06:44:12.958000
+cursorposition = 2337
+
+[wiki]
+md5_hash = b6b209974a1b6adf9d02bba153551e7d
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+
