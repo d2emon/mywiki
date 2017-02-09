@@ -3,11 +3,11 @@ type = wiki
 tags = ролевки, пираты, игры
 order = 1
 creationdatetime = 2017-01-24 02:10:22.861000
-datetime = 2017-01-24 02:16:48.777000
-cursorposition = 3711
+datetime = 2017-02-09 14:34:34.813048
+cursorposition = 70
 
 [wiki]
-md5_hash = a3ead4f71ebdddf244707737d7e72c2d
+md5_hash = c02fd2e9c5e1780842fdadbadcf1c6a7
 
 [Misc]
 pageindex = 1
