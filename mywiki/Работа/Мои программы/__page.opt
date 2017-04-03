@@ -2,11 +2,11 @@
 type = wiki
 tags = мое, комп
 order = 0
-datetime = 2017-04-03 09:48:44.915000
-cursorposition = 643
+datetime = 2017-04-03 09:55:31.372000
+cursorposition = 810
 
 [Misc]
-pageindex = 1
+pageindex = 0
 
 [Tree]
 expand = False
