@@ -1,0 +1,14 @@
+[General]
+type = wiki
+tags = терминал, wikipedia
+order = 2
+creationdatetime = 2017-04-17 14:57:28.532000
+datetime = 2017-04-17 14:57:34.891000
+cursorposition = 13
+
+[wiki]
+md5_hash = db1f288968d900066b840a8a1ed1e9e3
+
+[Misc]
+pageindex = 1
+
