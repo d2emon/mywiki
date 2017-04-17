@@ -1,9 +1,17 @@
-[History]
-lastviewedpage = /
+[General]
+type = wiki
+tags = 
+order = 1
+datetime = 2015-10-28 14:53:51.508632
+cursorposition = 0
+selectedtab = 0
+
+[Misc]
+pageindex = 1
 
 [Tree]
 expand = True
 
-[General]
-selectedtab = 0
+[wiki]
+md5_hash = b00140370ada13919714557bfd3e4770
 

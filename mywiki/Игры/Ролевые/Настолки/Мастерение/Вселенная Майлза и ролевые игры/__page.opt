@@ -1,13 +1,13 @@
 [General]
 type = wiki
 tags = игры, ролевки
-order = 3
+order = 5
 creationdatetime = 2016-05-19 11:28:36.248810
 datetime = 2016-05-19 11:33:17.244229
 cursorposition = 50444
 
 [wiki]
-md5_hash = c688548117f38706b75baa75a8595492
+md5_hash = 1cde70ff4651f4057ebfde6c1d6ae407
 
 [Misc]
 pageindex = 1

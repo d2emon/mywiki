@@ -5,12 +5,12 @@ order = 0
 datetime = 2016-08-13 21:58:41.074989
 cursorposition = 0
 
-[wiki]
-md5_hash = 28efa01ee67e4c553e02bcf68167f8a4
-
 [Misc]
 pageindex = 1
 
 [Tree]
 expand = False
+
+[wiki]
+md5_hash = 28efa01ee67e4c553e02bcf68167f8a4
 

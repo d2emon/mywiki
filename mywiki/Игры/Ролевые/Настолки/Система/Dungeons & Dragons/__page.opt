@@ -1,12 +1,12 @@
 [General]
 type = wiki
 tags = dnd, lurkmore, игры, ролевки
-order = 6
-datetime = 2016-05-19 10:02:13.898063
-cursorposition = 150
+order = 4
+datetime = 2017-01-16 22:51:03.381155
+cursorposition = 53209
 
 [wiki]
-md5_hash = 44ff9aa863780dde7e3981a6d28cd234
+md5_hash = db560bb932589858a5a8fbdf6277cb0a
 
 [Misc]
 pageindex = 1

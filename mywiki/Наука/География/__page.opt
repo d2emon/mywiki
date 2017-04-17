@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = наука, география
+order = 1
+creationdatetime = 2017-02-01 02:52:35.380000
+datetime = 2017-02-01 03:02:28.895000
+cursorposition = 71
+
+[wiki]
+md5_hash = d8b17049738000edb02dc77fac153565
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+

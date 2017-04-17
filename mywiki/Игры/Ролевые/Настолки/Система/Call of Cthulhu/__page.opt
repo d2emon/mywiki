@@ -1,13 +1,13 @@
 [General]
 type = wiki
 tags = игры, хоррор, wikipedia, ролевки
-order = 3
+order = 2
 creationdatetime = 2016-06-19 21:31:51.462000
-datetime = 2016-06-19 21:35:45.828000
-cursorposition = 476
+datetime = 2017-01-16 23:26:45.226895
+cursorposition = 1628
 
 [wiki]
-md5_hash = c9a607188705fa80e28a76e98b2c54d2
+md5_hash = 70b04ad5da904ca1f22561f2488cfa4a
 
 [Misc]
 pageindex = 1

@@ -1,13 +1,13 @@
 [General]
 type = wiki
 tags = wikipedia, игры, ролевки, постапокал
-order = 10
+order = 8
 creationdatetime = 2016-06-19 21:37:06.949000
-datetime = 2016-06-19 21:41:47.909000
-cursorposition = 16891
+datetime = 2017-01-16 22:17:58.017630
+cursorposition = 15760
 
 [wiki]
-md5_hash = a94433689ac9d59c65bb9cf957ff3b29
+md5_hash = d3756f49bd8a5977656cad229ddb172e
 
 [Misc]
 pageindex = 1
