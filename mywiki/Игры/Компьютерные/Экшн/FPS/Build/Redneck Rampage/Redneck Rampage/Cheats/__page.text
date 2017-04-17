@@ -68,3 +68,35 @@ Enter "rdmoonshine" while playing to use one bottle of moonshine, even if there 
 ||rdmonsters		||Toggle No Monsters							||
 ||rdshowmap	||Toggle Show Map								||
 ||rdelvis			||Turn yourself invincible						||
+
+||
+||REDELVIS			||God Mode												||
+||REDALL				||All weapons,health keys and inventory		||
+||RDGUNS				||All Guns													||
+||RDKEYS				||All Keys													||
+||RDITEMS			||All Inventory, Keys									||
+||REDCLIP				||Clipping Mode											||
+||RDMONSTERS	||Toggle Monsters										||
+||RDSHOWMAP		||Shows All Map										||
+||RDSKILL#			||Change Skill Level, # is 1-4						||
+||REDRATE			||Shows Framerate									||
+||RDDEBUG			||DE Bug Mode											||
+||RDMEADOW###	||Go to Episode Example: RDMEADOW104 = episode 1 level 4	||
+||RDCLUCK			||Throws feathers when you hit space bar	||
+||Push ~ Button		||Brings you back to life, works only once		||
+||RDMOONSHINE	||Gives you moonshine								||
+||RDINVENTORY	||Gives you inventory									||
+||RDVIEW				||Shows your body and gun						||
+||RDMAXX			||????? (if anyone knows what this does, let me know)				||
+||RDMEADOW107	||Takes you to the last level in episode 1		||
+||RDJOSEPH			||Gives you the motorcycle							||
+||RDDONUT,RDGREG,RDARIJJIT	||Supposed to give you the boat.							||
+||RDMRBILL			||Supposed to increase damage.					||
+||RDYERAT			||Toggle Coordinates									||
+||RDTEACHERS		||Displays "You are all wrong" message.		||
+||RDRAFAEL			||Displays "For your Grandpa" message		||
+||RDRHETT			||Commit Suicide										||
+||RDAARON			||Mushroom Mode										||
+||RDKFC				||Chicken mode											||
+||RDWOLESLAGLE	||Toggles 'Drunk' mode								||
+||RDNOCHEAT		||Disable Cheats										||
