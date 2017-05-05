@@ -6,7 +6,7 @@ datetime = 2015-12-11 10:31:14.727000
 cursorposition = 41
 
 [Tree]
-expand = True
+expand = False
 
 [Misc]
 pageindex = 1
