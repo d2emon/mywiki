@@ -1,4 +1,4 @@
 MyWiki
 ======
 
-This is [MyWiki](mywiki/mywiki)
+This is [MyWiki](mywiki/mywiki.md)
