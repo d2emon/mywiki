@@ -9,4 +9,5 @@ cursorposition = 18
 pageindex = 1
 
 [Tree]
-expand = True
+expand = False
+
