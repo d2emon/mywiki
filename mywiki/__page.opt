@@ -3,6 +3,7 @@ type = wiki
 tags = 
 order = 1
 datetime = 2015-10-28 14:53:51.508632
+selectedtab = 2
 
 [Misc]
 pageindex = 1
@@ -15,5 +16,6 @@ md5_hash = b00140370ada13919714557bfd3e4770
 
 [Tabs]
 tab_0 = Работа/Fireball Games/Игры/Чувачки/Варианты
-tab_1 = Языки
-tab_2 = Работа
+tab_1 = Юмор
+tab_2 = Работа/Мои программы/GitHub/home-server
+
