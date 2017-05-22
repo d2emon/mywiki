@@ -1,0 +1,139 @@
+!!  TaskItem
+
+class TaskItem(models.Model):
+    """A task item for a task.
+    number: Number of the taskitem. This remains same across versions, (But the ids change).
+    project: Project which this task item is created for.
+    task_num: number of the task for which this is a taskitem.
+    name: name of the taskitem.
+    user: user who needs to do this taskitem.
+    expected time: How much time this todo should take.
+    actual_time: How much time this todo actually took.
+    unit: the unit in which you want to measure the time. Can be hours, days or months.
+    is_complete: Has this todo item been completed.
+    
+    created_on: When was this todo created. AUto filled.
+    created_by: Who was the user who created this task.
+    last_updated_by: Who was the user who last updated this taskitem.
+    is_delted: When a taskitem is marked as deleted, it is not acually deleted but rather the flag is set, to mark its delted status.
+    
+    effective_start_date: Since when is this version of the task in effect.
+    effective_end_date: Till when was this version of the task in effect.
+    version_number: What is the version number of the task. Starts at 1. Increments at each new version there after.
+    is_current: Is this the current version of the task?
+    
+    objects: Modify to use a custom manager, so that we can get only the current taskitem, and not the old versioned ones.
+    all_objects: But have the old manager, when we want access to the old taskitems as well, for eg on history page.
+    """
+    number = models.IntegerField()
+    project = models.ForeignKey(Project)
+    task_num = models.IntegerField()
+    name = models.CharField(max_length = 200)
+    user = models.ForeignKey(User, null = True)
+    expected_time = models.DecimalField(decimal_places = 2, max_digits = 10)
+    actual_time = models.DecimalField(decimal_places = 2, max_digits = 10, null = True)
+    unit = models.CharField(max_length = 20, choices = unit_choices)
+    is_complete = models.BooleanField(default = False)
+    
+    created_on = models.DateTimeField(auto_now_add = 1)
+    created_by = models.ForeignKey(User, related_name = 'created_taskitems')
+    last_updated_by = models.ForeignKey(User,  related_name = 'updated_taskitems')
+    is_deleted = models.BooleanField(default = False)
+    #Versioning
+    effective_start_date = models.DateTimeField(auto_now_add = 1)
+    effective_end_date = models.DateTimeField(null = True)
+    version_number = models.IntegerField()
+    is_current = models.BooleanField(default = True)
+    
+    objects = TaskItemManager()
+    all_objects = models.Manager()
+    
+    def save(self):
+        """If this is the firsts time populate required details, if this is update version it."""
+        if not self.id:
+            self.version_number = 1
+            self.number = -1
+            cursor = connection.cursor()
+            cursor.execute('SELECT MAX(number) from project_taskitem WHERE project_id = %s' % self.project.id)
+            num = cursor.fetchone()[0]
+            if not num:
+                num = 0
+            self.number = num + 1
+            super(TaskItem, self).save()
+            log_text = 'Item %s created for task %s.' % (self.name, self.task.name)
+            log_description = 'Item was created by %s on %s' % (self.created_by.username, time.strftime('%d %B %y'))
+            log = Log(project = self.task.project, text = log_text, description = log_description)
+            log.save()
+        else:
+            #Version it
+            import copy
+            new_item = copy.copy(self)
+            self.is_current = False
+            self.effective_end_date = datetime.datetime.now()
+            super(TaskItem, self).save()
+            cursor = connection.cursor()
+            foo = 'SELECT MAX(version_number) from project_taskitem WHERE project_id = %s AND number = %s' % (self.project.id, self.number)
+            cursor.execute(foo)
+            num = cursor.fetchone()[0]
+            if not num:
+                num = 0
+            new_item.version_number = num + 1
+            new_item.is_current = True
+            new_item.id = None
+            super(TaskItem, new_item).save()
+            log_text = 'Item %s for taks %s has been updated.' % (self.name, self.task.name)
+            log_description = 'Task was updated by %s on %s' % (self.last_updated_by.username, time.strftime('%d %B %y'))
+            log = Log(project = self.task.project, text = log_text, description = log_description)
+            log.save()
+            
+    def save_without_versioning(self):
+        """But we migth want the old save which we have overriden. So provide a method which does not version."""
+        super(TaskItem, self).save()
+        
+    def as_text(self):
+        """Summary representation of the taskitem."""
+        txt = 'Name: %s \n Task: %s \n Expected time: %s %s \n Actual time: %s %s User: %s' % (self.name, self.task.name, self.expected_time, self.unit, self.actual_time, self.unit, self.user)
+        return txt
+    
+    @classmethod
+    def as_csv_header(self):
+        return ('Name', 'Time', 'User', 'Complete?')
+    
+    def as_csv(self):
+        return (self.name, str(self.expected_time) + self.unit, self.user, self.is_complete)
+    
+            
+    def get_task(self):
+        """Get the task from the taskitem. This is not a direct FK reference as the tasks may be versioned."""
+        return Task.objects.get(project = self.project, number = self.task_num, is_current = True)
+    task = property(get_task, None, None)
+    
+    def version_url(self):
+        """The url to see old versions for the taskitem."""
+        return '/%s/taskitemhist/%s/' % (self.project, self.number)
+            
+    def edit_url(self):
+        """The url to edit the taskitem."""
+        return '/%s/edititem/%s/' % (self.project, self.number)
+    
+    def revision_url(self):
+        """The url where a previous revision can be seen."""
+        return '/%s/itemrevision/%s/' % (self.task.project, self.id)
+        
+    
+    def old_versions(self):
+        """return all versions of the taskitem."""
+        return TaskItem.all_objects.filter(project = self.project, number = self.number).order_by('-version_number')
+    
+    
+    
+    def time_worked(self):
+        """Get the time worked."""
+        if self.actual_time:
+            time = self.actual_time
+        else:
+            time = self.expected_time
+        return '%s %s' % (time, self.unit)
+            
+    class Admin:
+        pass

@@ -1,0 +1,11 @@
+!! ChildTaskItemManager
+
+class ChildTaskItemManager(models.Manager):
+    """Manager for model Task. Used to get the task items for a task. Only gets the current task items."""
+    def __init__(self, task, *args, **kwargs):
+        super(ChildTaskItemManager, self).__init__(*args, **kwargs)
+        self.task = task
+        
+    def get_query_set(self):
+        qs = TaskItem.objects.filter(project = self.task.project, task_num = self.task.number, is_current = True)
+        return qs

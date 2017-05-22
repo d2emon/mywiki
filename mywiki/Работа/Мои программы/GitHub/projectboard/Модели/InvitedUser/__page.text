@@ -1,0 +1,22 @@
+!! InvitedUser
+
+class InvitedUser(models.Model):
+    """Users who have invited to a given project
+    user: the user
+    project: the project
+    group: access rights
+    rejected: has the user rejected the invitation"""    
+    user = models.ForeignKey(User)
+    project = models.ForeignKey(Project)
+    group = models.CharField(max_length = 20, choices = options)
+    rejected = models.BooleanField(default = False)
+    
+    def save(self):
+        """Log it and save."""
+        log_text = '%s has been invited to as %s of %s.' % (self.user.username, self.group, self.project.name)
+        log = Log(project = self.project, text=log_text)
+        log.save()
+        super(InvitedUser, self).save()    
+    
+    class Admin:
+        pass    
