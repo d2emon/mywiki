@@ -1,13 +1,13 @@
 [General]
 type = wiki
 tags = дописать
-order = 10
+order = 11
 creationdatetime = 2015-04-20 00:39:32.745496
 datetime = 2017-05-27 15:36:27.193000
-cursorposition = 17452
+cursorposition = 17449
 
 [wiki]
-md5_hash = 6a1755e738dd18ae03ed6b7f5f33fdb5
+md5_hash = c09419a7a09f6f73a87425fe105a7102
 
 [Misc]
 pageindex = 0

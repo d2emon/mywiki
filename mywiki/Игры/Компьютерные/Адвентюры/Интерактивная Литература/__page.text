@@ -4,6 +4,8 @@
 
 (:childlist:)
 
+Interactive fiction (IF, буквальный перевод — интерактивная литература; текстовые квесты; adventure — приключенческая игра) — жанр компьютерных игр, в котором общение с игроком осуществляется посредством текстовой информации. Развитие этого жанра, в связи с низким требованием к ресурсам, началось весьма давно, и не прекратилось даже с появлением графических игр. Существуют два вида интерфейса — интерфейс, в котором текст вводится с клавиатуры или интерфейс в виде меню, где игрок выбирает действие из нескольких предложенных (англ. CYOA, Choose Your Own Adventure).
+
 Interactive fiction, often abbreviated IF, describes software simulating environments in which players use text commands to control characters and influence the environment. Works in this form can be understood as literary narratives and as video games.[1] In common usage, the term refers to text adventures, a type of adventure game where the entire interface is text only.[2] The term is sometimes used to encompass the entirety of the medium, but is also sometimes used to distinguish games produced by the interactive fiction community from those created by games companies.[citation needed] It can also be used to distinguish the more modern style of such works, focusing on narrative and not necessarily falling into the adventure game genre at all, from the more traditional focus on puzzles. More expansive definitions of interactive fiction may refer to all adventure games, including wholly graphical adventures such as Myst.
 
 As a commercial product, interactive fiction reached its peak in popularity from 1979-1986[3], as a dominant software product marketed for home computers. Because their text-only nature sidestepped the problem of writing for the widely divergent graphics architectures of the day, interactive fiction games were easily ported across all the popular platforms, even those such as CP/M not known for gaming or strong graphics capabilities. Today, interactive fiction no longer appears to be commercially viable, but a steady stream of new works is produced by an online interactive fiction community, using freely available development systems. Most of these games can be downloaded for free from the Interactive Fiction Archive (see external links).
@@ -190,14 +192,10 @@ Older development Systems
 
 ----
 
-!!!! Текстовые
+!! Текстовая приключенческая игра
 
-Interactive fiction (IF, буквальный перевод — интерактивная литература; текстовые квесты; adventure — приключенческая игра) — жанр компьютерных игр, в котором общение с игроком осуществляется посредством текстовой информации. Развитие этого жанра, в связи с низким требованием к ресурсам, началось весьма давно, и не прекратилось даже с появлением графических игр. Существуют два вида интерфейса — интерфейс, в котором текст вводится с клавиатуры или интерфейс в виде меню, где игрок выбирает действие из нескольких предложенных (англ. CYOA, Choose Your Own Adventure).
+The earliest adventure games were text adventures, also known as interactive fiction. Games such as the popular Zork series of the late 1970s and early 1980s allowed the player to use a keyboard to enter commands such as "get rope" or "go west" while the computer describes what is happening. A great deal of programming went into parsing the player's text input.
 
-!!!!! Игры в псевдографике
+Первоначально, из-за малого распространения графических устройств отображения и недостатка ресурсов (памяти и мощности процессора), приключенческие игры были текстовыми. Позднее этот жанр был назван текстовым квестом. Отличие от графических квестов состоит в том, что игрок взаимодействует с игровым миром посредством командной строки и информация о мире выводится в виде текстов и рисунков из печатных знаков. В текстовых квестах вовсе не обязательно отсутствует графическая составляющая — это ярко выражено в более поздних текстовых квестах (Superhero league of Hoboken и т. п.)
 
-Разновидность текстовых игр, в которых имеется графическая картинка в виде псевдографики — мозаики, построенной из ASCII-символов.
-
-Примеры:
-
-* Roguelike
+Пионеры жанра приключенческих игр — Colossal Cave Adventure, Охота на Вампуса, Zork — были текстовыми.
