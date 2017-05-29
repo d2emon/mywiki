@@ -1,0 +1,116 @@
+!! package.json
+
+* name
+** The name must be less than or equal to 214 characters. This includes the scope for scoped packages.
+** The name can't start with a dot or an underscore.
+** New packages must not have uppercase letters in the name.
+** The name ends up being part of a URL, an argument on the command line, and a folder name. Therefore, the name can't contain any non-URL-safe characters.
+* version
+** 1.0.0
+* description
+* keywords
+* homepage
+* bugs
+** { "url" : "https://github.com/owner/project/issues", "email" : "project@hostname.com"}
+* license
+* people fields: author, contributors
+** { "name" : "Barney Rubble", "email" : "b@rubble.com", "url" : "http://barnyrubble.tumblr.com/"}
+** "Barney Rubble <b@rubble.com> (http://barnyrubble.tumblr.com/)"
+* files
+* bin
+** { "bin" : { "myapp" : "./cli.js" } }
+** { "name": "my-program" , "version": "1.2.5", "bin": "./path/to/program" }
+* man
+** Specify either a single file or an array of filenames to put in place for the man program to find.
+** { "name" : "foo", "version" : "1.2.3", "description" : "A packaged foo fooer for fooing foos", "main" : "foo.js", "man" : "./man/doc.1"}
+** { "name" : "foo", "version" : "1.2.3", "description" : "A packaged foo fooer for fooing foos", "main" : "foo.js", "man" : [ "./man/foo.1", "./man/bar.1" ]} will create files to do man foo and man foo-bar.
+* directories
+* directories.lib[[<<]]Tell people where the bulk of your library is. Nothing special is done with the lib folder in any way, but it's useful meta info.
+* directories.bin[[<<]]If you specify a bin directory in directories.bin, all the files in that folder will be added.
+* directories.man[[<<]]A folder that is full of man pages. Sugar to generate a "man" array by walking the folder.
+* directories.doc
+* directories.example[[<<]]Put example scripts in here. Someday, it might be exposed in some clever way.
+* directories.test[[<<]]Put your tests in here. It is currently not exposed, but it might be in the future.
+* repository
+** "repository" :   { "type" : "git"  , "url" : "https://github.com/npm/npm.git"  }
+** "repository" :   { "type" : "svn"  , "url" : "https://v8.googlecode.com/svn/trunk/"  }
+** For GitHub, GitHub gist, Bitbucket, or GitLab repositories you can use the same shortcut syntax you use for npm install:
+*** "repository": "npm/npm"
+*** "repository": "gist:11081aaa281"
+*** "repository": "bitbucket:example/repo"
+*** "repository": "gitlab:another/repo"
+* scripts
+* config
+** { "name" : "foo", "config" : { "port" : "8080" } }
+** and then had a "start" command that then referenced the npm_package_config_port environment variable, then the user could override that by doing npm * dependencies
+** Git urls can be of the form:
+*** git://github.com/user/project.git#commit-ish
+*** git+ssh://user@hostname:project.git#commit-ish
+*** git+ssh://user@hostname/project.git#commit-ish
+*** git+http://user@hostname/project/blah.git#commit-ish
+*** git+https://user@hostname/project/blah.git#commit-ish
+** As of version 1.1.65, you can refer to GitHub urls as just "foo": "user/foo-project". Just as with git URLs, a commit-ish suffix can be included. For example:
+*** {  "name": "foo",  "version": "0.0.0",  "dependencies": {    "express": "expressjs/express",    "mocha": "mochajs/mocha#4727d357ea",    "module": "user/repo#feature\/branch"   }}
+** Local Paths
+*** {   "name": "baz",  "dependencies": {    "bar": "file:../foo/bar"  }}
+* devDependencies
+* peerDependencies
+* bundledDependencies[[<<]]This defines an array of package names that will be bundled when publishing the package.
+* optionalDependencies
+* engines[[<<]]You can specify the version of node that your stuff works on:
+** { "engines" : { "node" : ">=0.10.3 <0.12" } }
+* os
+** "os" : [ "darwin", "linux" ]
+** "os" : [ "!win32" ]
+* cpu
+** "cpu" : [ "x64", "ia32" ]
+** "cpu" : [ "!arm", "!mips" ]
+* preferGlobal
+* private
+* publishConfig[[<<]]This is a set of config values that will be used at publish-time. It's especially handy if you want to set the tag, registry or access, so that you can ensure that a given package is not tagged with "latest", published to the global public registry or that a scoped module is private by default.
+
+!!! Default
+
+* "contributors": [...]
+** If there is an AUTHORS file in the root of your package, npm will treat each line as a Name <email> (url) format, where email and url are optional. Lines which start with a # or are blank, will be ignored.
+
+!!! Scripts
+
+* prepublish: Run BEFORE the package is published. (Also run on local npm install without any arguments. See below.)
+* prepare: Run both BEFORE the package is published, and on local npm install without any arguments. (See below.) This is run AFTER prepublish, but BEFORE prepublishOnly.
+* prepublishOnly: Run BEFORE the package is published. (See below.)
+* publish, postpublish: Run AFTER the package is published.
+* preinstall: Run BEFORE the package is installed
+* install, postinstall: Run AFTER the package is installed.
+* preuninstall, uninstall: Run BEFORE the package is uninstalled.
+* postuninstall: Run AFTER the package is uninstalled.
+* preversion: Run BEFORE bumping the package version.
+* version: Run AFTER bumping the package version, but BEFORE commit.
+* postversion: Run AFTER bumping the package version, and AFTER commit.
+* pretest, test, posttest: Run by the npm test command.
+* prestop, stop, poststop: Run by the npm stop command.
+* prestart, start, poststart: Run by the npm start command.
+* prerestart, restart, postrestart: Run by the npm restart command. Note: npm restart will run the stop and start scripts if no restart script is provided.
+* preshrinkwrap, shrinkwrap, postshrinkwrap: Run by the npm shrinkwrap command.
+
+!!! Flow
+
+prepublish
+prepare
+prepubliahOnly
+'''publish'''
+
+prepublish
+prepare
+preinstall
+'''install'''
+
+'''uninstall'''
+postuninstall
+
+pre* '''version''' post*
+pre* '''test''' post*
+pre* '''stop''' post*
+pre* '''start''' post*
+pre* '''restart''' post*
+pre* '''shrinkwrap''' post*
