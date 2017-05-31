@@ -33,63 +33,21 @@
 
 !!!  Ссылки
 
-    
-    def get_absolute_url(self):
-        """Tte absolute url for project."""
-        return '/%s/' % self.shortname
-    
-    def tasks_url(self):
-        """Url to the tasks page."""
-        return '/%s/tasks/' % self.shortname
-    
-    def quicktasks_url(self):
-        """Url to the tasks quick entry page."""
-        return '/%s/tasks/quickentry/' % self.shortname
-    
-    def quicktaskitems_url(self):
-        """Url to the tasks quick entry page."""
-        return '/%s/taskitems/quickentry/' % self.shortname
-    
-    def noticeboard_url(self):
-        """Urls to the noticeboard."""
-        return '/%s/noticeboard/' % self.shortname
-    
-    def wiki_url(self):
-        """Url to the project wiki."""
-        return '/%s/wiki/' % self.shortname
-    
-    def new_wikipage_url(self):
-        """Url to create a new wiki page."""
-        return '/%s/wiki/new/' % self.shortname
-    
-    def files_url(self):
-        """Url to files page."""
-        return '/%s/files/' % self.shortname
-    
-    def todo_url(self):
-        """Url to the todo page."""
-        return '/%s/todo/' % self.shortname
-    
-    def calendar_url(self):
-        """Url to the calendars page."""
-        return '/%s/calendar/' % self.shortname
-    
-    
-    def metrics_url(self):
-        """Url to the metrics page."""
-        return '/%s/health/' % self.shortname
-    
-    def logs_url(self):
-        """Url to the logs page."""
-        return '/%s/logs/' % self.shortname
-    
-    def feed_url(self):
-        """Url to the rss for this project."""
-        return '/feeds/project/%s/' % self.shortname
-    
-    def settings_url(self):
-        """Url to the settings for this project."""
-        return '/%s/settings/' % self.shortname
+||	
+||/%project%/										||project				||
+||/%project%/tasks/								||tasks					||
+||/%project%/tasks/quickentry/			||quicktasks		||
+||/%project%/taskitems/quickentry/	||quicktaskitems	||
+||/%project%/noticeboard/					||noticeboard		||
+||/%project%/wiki/								||wiki					||
+||/%project%/wiki/new/						||new_wikipage	||
+||/%project%/files/								||files					||
+||/%project%/todo/								||todo					||
+||/%project%/calendar/						||calendar			||
+||/%project%/health/							||metrics				||
+||/%project%/logs/								||logs					||
+||/feeds/project/%project%/				||feed					||
+||/%project%/settings/							||settings				||
     
 !!! Прочие методы
     def get_last_date(self):
