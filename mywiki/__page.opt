@@ -3,7 +3,7 @@ type = wiki
 tags = 
 order = 1
 datetime = 2015-10-28 14:53:51.508632
-selectedtab = 2
+selectedtab = 0
 
 [Misc]
 pageindex = 1
@@ -15,7 +15,7 @@ expand = True
 md5_hash = b00140370ada13919714557bfd3e4770
 
 [Tabs]
-tab_0 = Игры/Компьютерные
+tab_0 = Игры/Ролевые/Настолки/Система/Заколдованная страна/Опасности
 tab_1 = Работа/Fireball Games/Игры
 tab_2 = Работа/Мои программы/GitHub/projectboard/URL
 
