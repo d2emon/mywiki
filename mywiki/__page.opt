@@ -3,7 +3,7 @@ type = wiki
 tags = 
 order = 1
 datetime = 2015-10-28 14:53:51.508632
-selectedtab = 1
+selectedtab = 2
 
 [Misc]
 pageindex = 1
@@ -17,5 +17,5 @@ md5_hash = b00140370ada13919714557bfd3e4770
 [Tabs]
 tab_0 = Миры/Мир номер три/Кино/Списки/Со смыслом
 tab_1 = Игры/Компьютерные/Стратегии
-tab_2 = Работа/Мои программы/GitHub/projectboard
+tab_2 = Работа/Мои программы/GitHub/projectboard/Модели
 
