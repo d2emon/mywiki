@@ -7,8 +7,11 @@ datetime = 2017-05-08 21:14:03.858461
 cursorposition = 478
 
 [wiki]
-md5_hash = edf7072385d9abcf28dc9690d0e80514
+md5_hash = 6c6a155e3211fdae0926f990ea891d85
 
 [Misc]
 pageindex = 1
+
+[Tree]
+expand = True
 
