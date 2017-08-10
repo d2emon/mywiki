@@ -12,3 +12,6 @@ pageindex = 1
 [Tree]
 expand = True
 
+[wiki]
+md5_hash = cfc135b16ddc5b62fa3bff3dd6d23962
+
