@@ -5,6 +5,7 @@ order = 12
 creationdatetime = 2016-05-15 17:31:04.627000
 datetime = 2017-01-17 15:30:50.611693
 cursorposition = 10
+selectedtab = 0
 
 [wiki]
 md5_hash = dad77e0daca9c3145c66ac5022719d12
@@ -14,4 +15,7 @@ pageindex = 1
 
 [Tree]
 expand = True
+
+[Tabs]
+tab_0 = Мои программы/Коллекция
 
