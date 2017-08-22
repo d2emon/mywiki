@@ -3,7 +3,7 @@ type = wiki
 tags = 
 order = 1
 datetime = 2015-10-28 14:53:51.508632
-selectedtab = 1
+selectedtab = 2
 
 [Misc]
 pageindex = 1
@@ -16,6 +16,6 @@ md5_hash = b00140370ada13919714557bfd3e4770
 
 [Tabs]
 tab_0 = Миры/Мир номер три/Кино/Списки/Со смыслом
-tab_1 = Работа/Fireball Games/Игры/Город
-tab_2 = Работа/Fireball Games/Игры
+tab_1 = Работа/Fireball Games/Игры/Alone in the Dark
+tab_2 = Игры/Компьютерные/Стратегии/Глобальные/Paradox
 
