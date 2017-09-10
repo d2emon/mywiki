@@ -1,0 +1,9 @@
+!! SubtaskManager
+
+class SubtaskManager(models.Manager):
+    """Manager for model Task. Used to get the subtasks for a task. Only gets the current subtasks."""
+    def __init__(self, task, *args, **kwargs):
+        super(SubtaskManager, self).__init__(*args, **kwargs)
+        self.task = task
+    def get_query_set(self):
+        return Task.objects.filter(project = self.task.project, parent_task_num = self.task.number, is_current = True)

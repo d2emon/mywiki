@@ -1,0 +1,5 @@
+!! TaskItemManager
+
+class TaskItemManager(models.Manager):
+    def get_query_set(self):
+        return super(TaskItemManager, self).get_query_set().filter(is_current = True) 

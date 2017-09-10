@@ -1,0 +1,14 @@
+!! TaskNote
+
+class TaskNote(models.Model):
+    """
+    Task_num: The task for which this note is created.
+    We cant just use a foreign key coz, the note is for a specific task number, not a revision of it.
+    text: Text of the noe.
+    user: User who wrote this note.
+    created_on: When wa sthis note created.
+    """
+    task_num = models.IntegerField()
+    text = models.TextField()
+    user = models.ForeignKey(User)
+    created_on = models.DateTimeField(auto_now_add = 1)  

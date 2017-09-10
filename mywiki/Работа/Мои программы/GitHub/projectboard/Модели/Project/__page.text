@@ -1,0 +1,184 @@
+!! Project
+
+*     shortname = models.CharField(max_length = 20, unique = True) - ссылка на преокт
+*     name = models.CharField(max_length = 200) - название проекта
+*     owner = models.ForeignKey(User) - владелец проекта
+*     start_date = models.DateField() - дата начала
+*     end_date = models.DateField(null = True) - дата конца
+*     is_active = models.BooleanField(default = True) - активность
+*     created_on = models.DateTimeField(auto_now_add = 1) - дата создания
+
+!!! Валидация
+
+# Название не может быть пустым
+# Ссылка не может быть пустой
+# Ссылка - правильный идентификатор
+# Ссылка уникальна
+
+!!! Сохранение
+
+Обязательно валидировать
+
+!!! Форматирование
+
+    @classmethod
+    def as_csv_header(self):
+        return ('Shortname', 'Name', 'Owner', 'Start Date', 'End Date')
+        
+    def as_csv(self):
+        return (self.shortname, self.name, self.owner, self.start_date, self.end_date)
+        
+    def __unicode__(self):
+        return self.shortname
+
+!!!  Ссылки
+
+||	
+||/%project%/										||project				||
+||/%project%/tasks/								||tasks					||
+||/%project%/tasks/quickentry/			||quicktasks		||
+||/%project%/taskitems/quickentry/	||quicktaskitems	||
+||/%project%/noticeboard/					||noticeboard		||
+||/%project%/wiki/								||wiki					||
+||/%project%/wiki/new/						||new_wikipage	||
+||/%project%/files/								||files					||
+||/%project%/todo/								||todo					||
+||/%project%/calendar/						||calendar			||
+||/%project%/health/							||metrics				||
+||/%project%/logs/								||logs					||
+||/feeds/project/%project%/				||feed					||
+||/%project%/settings/							||settings				||
+    
+!!! Прочие методы
+    def get_last_date(self):
+        """Returns a reasonable last date even if the end date for the project is null."""
+        cursor = connection.cursor()
+        stmt = 'SELECT ifnull( ifnull( end_date, max( project_task.expected_end_date ) ) , adddate( curdate( ) , 30 ) ) FROM project_project LEFT JOIN project_task ON project_project.id = project_task.project_id WHERE project_project.id = %s' % self.id
+        cursor.execute(stmt)
+        data = cursor.fetchone()
+        return data[0]
+    
+    def get_interesting_months(self):
+        """Get interesting months for this project. Interesting months are those month in which either a task started or a task ended."""
+        cursor = connection.cursor()
+        stmt = 'SELECT DISTINCT year( expected_start_date ) , month( expected_start_date ), 1 FROM project_task UNION SELECT DISTINCT year( expected_end_date ) , month( expected_end_date ), 1 FROM project_project, project_task WHERE project_project.id = project_task.project_id AND project_project.id = %s' % self.id
+        cursor.execute(stmt)
+        data = cursor.fetchall()
+        return data
+    
+    def new_tasks(self):
+        """Shows the three recemtly created tasks."""
+        return self.task_set.all().order_by('-created_on')[:3]
+    
+    def overdue_tasks(self):
+        """Shows all the tasks which are over due."""
+        return self.task_set.filter(expected_end_date__lt = datetime.datetime.today(), is_complete = False)
+    
+    def invited_users(self):
+        """Shows the users which have been invited, but have not accepted the invitation."""
+        return self.inviteduser_set.all()
+    
+    def num_deadline_miss(self):
+        cursor = connection.cursor()
+        cursor.execute('SELECT COUNT(id) FROM project_task WHERE expected_end_date < actual_end_date AND project_id = %s AND is_current = %s' % (self.id, True))
+        data = cursor.fetchone()
+        return data[0]
+    
+    def extra_hours(self):
+        cursor = connection.cursor()
+        cursor.execute('SELECT COUNT(project_taskitem.id) FROM project_task, project_taskitem WHERE project_task.number = project_taskitem.task_num AND project_taskitem.expected_time < project_taskitem.actual_time AND project_task.project_id = %s AND project_taskitem.is_current = %s AND project_task.is_current = %s' % (self.id, True, True))
+        data = cursor.fetchone()
+        return data[0]
+    
+    def num_taskitems(self):
+        cursor = connection.cursor()
+        stmt = 'SELECT COUNT(project_taskitem.id) FROM project_task, project_taskitem WHERE project_task.number = project_taskitem.task_num AND project_task.project_id = %s AND project_taskitem.is_current = %s  AND project_task.is_current = %s' % (self.id, True, True)
+        cursor.execute(stmt)
+        print stmt
+        data = cursor.fetchone()
+        stmt = 'SELECT project_task.project_id, project_taskitem.name FROM project_task, project_taskitem WHERE project_task.number = project_taskitem.task_num AND project_task.project_id = %s AND project_taskitem.is_current = %s  AND project_task.is_current = %s' % (self.id, True, True)
+        cursor.execute(stmt)
+        print cursor.fetchall()
+        return data[0]
+    
+    def sum_time(self):
+        cursor = connection.cursor()
+        stmt = 'SELECT unit, sum(CASE WHEN project_taskitem.actual_time IS NULL THEN project_taskitem.expected_time ELSE project_taskitem.actual_time END) FROM project_task, project_taskitem WHERE project_task.number = project_taskitem.task_num AND project_task.project_id = %s AND project_taskitem.is_current = %s  AND project_task.is_current = %s GROUP BY unit' % (self.id, True, True)
+        cursor.execute(stmt)
+        data = cursor.fetchall()
+        return data
+    
+    def sum_time_complete(self):
+        cursor = connection.cursor()
+        cursor.execute('SELECT unit, sum(CASE WHEN project_taskitem.actual_time IS NULL THEN project_taskitem.expected_time ELSE project_taskitem.actual_time END) FROM project_task, project_taskitem WHERE project_task.number = project_taskitem.task_num AND project_task.project_id = %s AND project_taskitem.is_current = %s AND project_taskitem.is_complete = %s  AND project_task.is_current = %s GROUP BY unit' % (self.id, True, True, True))
+        data = cursor.fetchall()
+        return data
+    
+    def start_month(self):
+        cursor = connection.cursor()
+        cursor.execute('SELECT monthname(expected_start_date), year(expected_start_date), count(id) FROM project_task WHERE project_id = %s AND is_current = %s GROUP BY month(expected_start_date), month(expected_start_date)' % (self.id, True))
+        data = cursor.fetchall()
+        return data
+    
+    def end_month(self):
+        cursor = connection.cursor()
+        cursor.execute('SELECT monthname(expected_end_date), year(expected_end_date), count(id) FROM project_task WHERE project_id = %s AND is_current = %s GROUP BY month(expected_end_date), month(expected_end_date)' % (self.id, True))
+        data = cursor.fetchall()
+        return data
+    
+    def user_tasks_sp(self, user):
+        """How many tasks does a specific user have."""
+        cursor = connection.cursor()
+        stmt = "SELECT (CASE WHEN project_task.is_complete = 1 THEN 'Complete' Else 'In Progress' END) as status, count(project_task.id) FROM auth_user, project_task WHERE auth_user.id = project_task.user_responsible_id AND project_task.is_current = %s AND project_task.project_id = %s AND auth_user.id = %s GROUP BY project_task.is_complete ORDER BY status" % (True, self.id, user.id)
+        cursor.execute(stmt)
+        data = cursor.fetchall()
+        return data
+    
+    def user_timeload(self):
+        """How much load does a user have."""
+        cursor = connection.cursor()
+        stmt = 'SELECT auth_user.username, sum(CASE WHEN project_taskitem.actual_time IS NULL THEN project_taskitem.expected_time ELSE project_taskitem.actual_time END), unit FROM auth_user, project_taskitem, project_task WHERE project_taskitem.task_num = project_task.number AND project_taskitem.user_id = auth_user.id AND project_taskitem.is_current = %s  AND project_task.is_current = %s AND project_task.project_id = %s GROUP BY project_taskitem.user_id, project_taskitem.unit' % (True, True, self.id)
+        cursor.execute(stmt)
+        data = cursor.fetchall()
+        return data
+    
+    def user_timeload_sp(self, user):
+        """How much load does a specific user have."""
+        cursor = connection.cursor()
+        stmt = "SELECT (CASE WHEN project_taskitem.is_complete = 1 THEN 'Complete' Else 'In Progress' END) as status, sum(CASE WHEN project_taskitem.actual_time IS NULL THEN project_taskitem.expected_time ELSE project_taskitem.actual_time END), unit FROM auth_user, project_taskitem, project_task WHERE project_taskitem.task_num = project_task.number AND project_taskitem.user_id = auth_user.id AND project_taskitem.is_current = %s  AND project_task.is_current = %s AND project_task.project_id = %s AND auth_user.id = %s GROUP BY project_taskitem.is_complete, project_taskitem.unit ORDER BY status" % (True, True, self.id, user.id)
+        cursor.execute(stmt)
+        data = cursor.fetchall()
+        return data
+        
+    def start_task_dates(self):
+        """Number of tasks per day."""
+        cursor = connection.cursor()
+        cursor.execute('SELECT expected_start_date, count(expected_start_date) FROM project_task WHERE project_id = %s AND is_current = %s GROUP BY expected_start_date' % (self.id, True))
+        data = cursor.fetchall()
+        return data
+        
+    def task_start_dates_month(self, year, month):
+        """Number of tasks per day."""
+        cursor = connection.cursor()
+        cursor.execute('SELECT expected_start_date, count(expected_start_date) FROM project_task WHERE project_id = %s AND is_current = %s AND year(expected_start_date) = %s AND month(expected_start_date) = %s GROUP BY expected_start_date' % (self.id, True, year, month))
+        data = cursor.fetchall()
+        return data
+    
+    def task_end_dates_month(self, year, month):
+        """Number of tasks per day."""
+        cursor = connection.cursor()
+        cursor.execute('SELECT expected_end_date, count(expected_end_date) FROM project_task WHERE project_id = %s AND is_current = %s AND year(expected_end_date) = %s AND month(expected_end_date) = %s GROUP BY expected_end_date' % (self.id, True, year, month))
+        data = cursor.fetchall()
+        return data
+    
+    def get_task_hierachy(self):
+        """REturn taks hiearchy as a nested list. This methods can be veru costly. Use carefully."""
+        top_tasks = self.task_set.filter(parent_task_num__isnull = True)
+        task_list = []
+        for task in top_tasks:
+            task_list.append(task)
+            task_list.append(get_tree(task))
+        return task_list
+        
+    class Admin:
+        pass

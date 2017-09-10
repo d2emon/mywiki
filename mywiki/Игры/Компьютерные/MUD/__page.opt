@@ -2,8 +2,8 @@
 type = wiki
 tags = ролевки, lurkmore, игры, инди, терминал
 order = 5
-datetime = 2015-12-03 12:04:00.791745
-cursorposition = 47375
+datetime = 2017-05-28 13:01:42.649000
+cursorposition = 47470
 
 [Misc]
 pageindex = 1
@@ -12,5 +12,5 @@ pageindex = 1
 expand = False
 
 [wiki]
-md5_hash = d9b0680860df713723d2cd68a4e2736c
+md5_hash = 39f5dce1bae25986ef5c18c92d92750a
 

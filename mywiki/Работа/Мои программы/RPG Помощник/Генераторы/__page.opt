@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = мое, ролевки, комп
+order = 0
+creationdatetime = 2017-08-28 02:42:43.546000
+datetime = 2017-08-28 08:42:51.586343
+cursorposition = 30
+
+[wiki]
+md5_hash = ccb16f7ebcbe81a0e9f6514dbc8b91dd
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+

@@ -1,0 +1,17 @@
+!! AddTodoItemForm
+
+class AddTodoItemForm(forms.Form):
+    """A form to add a todo item to a todo list."""
+    text = DojoCharField()
+    
+    def __init__(self, list = None, *args, **kwargs):
+        kwargs.update({'prefix':list.id})
+        super(AddTodoItemForm, self).__init__(*args, ** kwargs)
+        self.list = list
+        
+    def save(self):
+        todoitem = TodoItem(text = self.cleaned_data['text'], list = self.user)
+        todoitem.save()
+        
+        
+        return todoitem

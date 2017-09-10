@@ -1,0 +1,36 @@
+!! WikiPageRevision
+
+class WikiPageRevision(models.Model):
+    """user: The user who wrote this page revision.
+    wiki_page: The page for which this revision is created.
+    wiki_text: The text entered for this revion.
+    html_text: The text converted to html.
+    created_on: When was this revision created. Auto filled.
+    
+    Version_number: Version number for this revision. Starts from 1 and increemnst there after.
+    """
+    user = models.ForeignKey(User)
+    wiki_page = models.ForeignKey(WikiPage)
+    wiki_text = models.TextField()
+    html_text = models.TextField()
+    created_on = models.DateTimeField(auto_now_add = 1)
+    version_number = models.IntegerField(default = 0)
+    
+    def save(self):
+        self.html_text = self.wiki_text
+        log_text = 'A revision for wiki page %s has been created.' % self.wiki_page.title
+        log_description = 'Revision was created by %s on %s.' % (self.user.username, time.strftime('%d %B %y'))
+        log = Log(project = self.wiki_page.project, text = log_text, description = log_description)
+        last_version = WikiPageRevision.objects.filter(wiki_page = self.wiki_page).count()
+        self.version_number = last_version + 1
+        log.save()
+        super(WikiPageRevision, self).save()
+        
+    def get_absolute_url(self):
+        return '/%s/wiki/%s/revisions/%s/' % (self.wiki_page.project.shortname, self.wiki_page.name, self.id)
+        
+    class Admin:
+        pass
+    
+    class Meta:
+        ordering = ('-created_on',)

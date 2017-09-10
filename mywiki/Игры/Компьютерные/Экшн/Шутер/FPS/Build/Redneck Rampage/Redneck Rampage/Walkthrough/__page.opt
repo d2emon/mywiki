@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = юмор, вестерн, конспирология, реднеки
+order = 1
+creationdatetime = 2017-04-17 20:52:13.980000
+datetime = 2017-04-17 21:05:03.075000
+cursorposition = 361
+
+[wiki]
+md5_hash = c074f4873584a00470411748445fcf36
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+

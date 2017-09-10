@@ -1,0 +1,16 @@
+[General]
+type = wiki
+tags = дописать, временное
+order = 2
+datetime = 2015-02-13 17:16:49.528851
+cursorposition = 0
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+
+[wiki]
+md5_hash = 36a6706c6d5152726ad2b9a7ccc9f148
+

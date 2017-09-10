@@ -1,0 +1,18 @@
+!! TodoItem
+
+class TodoItem(models.Model):
+    """A todo item of the project."""
+    list = models.ForeignKey(TodoList)
+    text = models.CharField(max_length = 200)
+    is_complete = models.BooleanField(default = False)
+    created_on = models.DateTimeField(auto_now_add = 1)
+    
+    @classmethod
+    def as_csv_header(self):
+        return ('List Name', 'Todo Item', 'Is Complete?')
+    
+    def as_csv(self):
+        return (self.list.name, self.text, self.is_complete)
+    
+    class Admin:
+        pass

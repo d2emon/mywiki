@@ -1,0 +1,27 @@
+!! Notice
+
+class Notice(models.Model):
+    """
+    number: of the notice under the current project.
+    user: User who wrote this notice.
+    text: text of the notice.
+    created_on: When was this notice created. Auto filled."""
+    
+    user = models.ForeignKey(User)
+    project = models.ForeignKey(Project)
+    text = models.TextField()
+    created_on = models.DateTimeField(auto_now_add = 1)
+    
+    @classmethod
+    def as_csv_header(self):
+        return ('Notice Text', 'Notice created by', 'Created on')
+    
+    def as_csv(self):
+        return (self.text, self.user.username, self.created_on.strftime('%Y-%m-%d'))    
+    
+    class Admin:
+        pass
+    
+    class Meta:
+        ordering = ('-created_on',)
+    
