@@ -1,7 +1,7 @@
 [General]
 type = wiki
 tags = терминал, wikipedia
-order = 3
+order = 6
 datetime = 2016-03-30 18:16:05.926807
 cursorposition = 52
 
@@ -9,7 +9,7 @@ cursorposition = 52
 pageindex = 1
 
 [wiki]
-md5_hash = 2f48fd28e172250df6df3baba5a1ec02
+md5_hash = 955af2bbb60ebb9b996cff1fab91935d
 
 [Tree]
 expand = False

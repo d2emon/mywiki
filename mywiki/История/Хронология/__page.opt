@@ -1,13 +1,13 @@
 [General]
 type = wiki
 tags = история
-order = 16
+order = 17
 creationdatetime = 2016-07-18 13:10:54.505998
 datetime = 2016-07-18 13:47:06.193578
 cursorposition = 28
 
 [wiki]
-md5_hash = 2d48bf2f2185878845699e538f1a1e91
+md5_hash = 3d6cdf33bdefc6f3b52ffc13bbea7bc4
 
 [Misc]
 pageindex = 1

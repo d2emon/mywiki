@@ -1,0 +1,16 @@
+[General]
+type = wiki
+tags = сай-фай
+order = 5
+datetime = 2015-12-02 20:59:15.800000
+cursorposition = 0
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+
+[wiki]
+md5_hash = cd28ec87a216eb99a9571504533c2fdb
+

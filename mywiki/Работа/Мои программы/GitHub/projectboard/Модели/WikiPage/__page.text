@@ -1,0 +1,48 @@
+!! WikiPage
+
+class WikiPage(models.Model):
+    """Model of the wiki page.
+    name: name of the page, should be alphanumeric. Shown in url.
+    Title: title for the page. Can contain spaces.
+    current_revion: the wiki_page which is the current revision for this page.
+    created_on: When was this page created. Auto filled.
+    is_deleted: Set this flat when the page needs to be delted.
+    """
+    name = models.CharField(max_length = 20)
+    title = models.CharField(max_length = 200)
+    project = models.ForeignKey(Project)
+    current_revision = models.ForeignKey('WikiPageRevision', null = True)
+    created_on = models.DateTimeField(auto_now_add = 1)
+    is_deleted = models.BooleanField(default = True)
+    
+    def edit_url(self):
+        return '/%s/wiki/%s/edit/' % (self.project.shortname, self.name)
+    
+    def get_absolute_url(self):
+        return '/%s/wiki/%s/' % (self.project.shortname, self.name)
+    
+    def version_url(self):
+        return '/%s/wiki/%s/revisions/' % (self.project.shortname, self.name)
+    
+    def save(self):
+        if not self.name:
+            name = '_'.join(self.title.split())
+            count = WikiPage.objects.filter(name__istartswith=name).count()
+            if count:
+                name = '%s_%s' % (name, count)
+            name = name[:19]
+            self.name = name
+        log_text = 'Wiki page %s has been created.' % self.title
+        log_description = None#'Page was created by %s on %s' % (self.current_revision.user.username, time.strftime('%d %B %y'))
+        log = Log(project = self.project, text = log_text, description = log_description)
+        log.save()
+        super(WikiPage, self).save()
+    
+    def delete(self):
+        """Wiki pages can not be deleted. If a delete request comes, the is_deleted flag is set to true."""
+        is_deleted = True
+        self.save()
+        
+    class Admin:
+        pass
+    

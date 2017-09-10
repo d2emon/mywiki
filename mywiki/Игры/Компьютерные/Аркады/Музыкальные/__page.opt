@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = дописать, игры, комп
+order = 7
+creationdatetime = 2017-05-27 15:31:38.371000
+datetime = 2017-05-28 12:14:47.528000
+cursorposition = 1060
+
+[wiki]
+md5_hash = 5ed3b1f2daacfabd3434731a73f6cb16
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+

@@ -1,0 +1,14 @@
+[General]
+type = wiki
+tags = wikipedia
+order = 8
+creationdatetime = 2016-07-13 13:24:53.945000
+datetime = 2016-07-13 13:41:41.497000
+cursorposition = 13
+
+[wiki]
+md5_hash = 1c5477d620c94cc08d499ede295b6dd3
+
+[Misc]
+pageindex = 0
+

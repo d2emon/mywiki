@@ -1,0 +1,14 @@
+[General]
+type = wiki
+tags = wikipedia, игры, перчинка
+order = 10
+creationdatetime = 2016-07-13 12:30:33.724000
+datetime = 2016-07-13 12:36:13.670000
+cursorposition = 83
+
+[wiki]
+md5_hash = 946cad0d91d07c065e816f5e86e4d1d6
+
+[Misc]
+pageindex = 1
+

@@ -1,0 +1,115 @@
+!! Классификация
+
+* Ultima (U, 9 основных частей и несколько побочных); 
+* Ultima Underworld (UUW, 2 части); 
+* Wizardry (Wiz или "Колдовня", 7 основных частей); 
+* Might & Magic (M&M или "муму", 8 основных частей и одна побочная); 
+* SSI Goldbox series (GB или "голдбоксы", 11 игр, конструктор и почивший GMUD); 
+* Realms of Arkania (RoA, 3 части); 
+* Ancient Domains of Mystery (ADOM); 
+* UnReal World (URW); 
+* Wizards & Warriors (W&W); 
+* Darklands; 
+* Lands of Lore (LoL, 3 части, но две последние зачислять в CRPG не спешат); 
+* Dungeon Master (DM, 2 части, вторая в двух вариантах); 
+* Albion; 
+* Stonekeep; 
+* Dark Heart of Uukrul; 
+* Anvil of Dawn (AoD); 
+* Fallout (2 части); 
+* Planescape: Torment; 
+* Baldur's Gate (BG, с add-on'ом Tales of the Sword Coast, 2 части); 
+* Wizards & Warriors (W&W); 
+* Betrayal at Krondor (BAK); 
+* Betrayal at Antara; 
+* Return to Krondor (RTK); 
+* The Elder Scrolls (TES, 2 части, более известные как Arena и Daggerfall [DF или "баггер"]); 
+* Faery Tale Adventure-2 (FTA2); 
+* Thunderscape (TS); 
+* Ravenloft (RL, 2 части); 
+* Menzoberranzan (Menzo, "мензурка" или "мензобезобраз"); 
+* Dark Sun (DS, 2 части); 
+* Eye of the Beholder (EoB или "бехи", 3 части); 
+* Ishar (3 части) и многие другие. 
+
+Также несколько наиболее известных примеров marginal inclusions: 
+
+*  action-adventures "с элементами"
+** Al-Qadim [AQ], 
+** Entomorph;
+*  квесты опять же "с элементами"
+** Quest for Glory [QFG] 1-4, 
+** Druid, 
+** Veil of Darkness, 
+** Bloodnet; 
+* RPG/FPS
+** Descent to Undermountain [DTUM], 
+** Battlespire, 
+** System Shock-2 [SS2]; 
+* RPG/tactics
+** Jagged Alliance-2 [JA2], 
+** Allods 1-2, 
+* RPG/strategy
+** Birthright, 
+** Lords of Midnight [LOM], 
+* RPG/flight sim [kind of..]
+** Spelljammer [SJ], 
+** Dragon Strike
+
+
+* Команда:
+** Один персонаж - UUW, Ultima-8, Daggerfall
+** Один персонаж и NPC - Ultima 4-7, Fallout, Baldur's Gate, Ishar
+** Команда - M&M 4-7, Wizardry, Exile, FTA-2
+** Команда и NPC - Goldbox series, M&M 1-3, Aethra, EoB...
+** Hет явного разделения - BaK, Antara, почти все j"RP"G
+* NPC
+** NPC контролируются - Ishar, M&M 1-3, Aethra
+** NPC самостоятельны - Fallout, Ultima-7
+** Контроль зависит от условий - Goldbox series, Baldur's Gate
+* Движок:
+** Дискретный от 1 лица - EoB, Stonekeep, Ishar, Wizardry
+** 2.5/3D от 1 лица - RoA3, DF, UUW, RL, Thunderscape
+** Изометрия - Ultima-8, Fallout, Summoning, Baldur's Gate
+** "Три четверти" - Ultima 6-7, Magic Candle-3, Dark Sun
+** Тайловый, сверху - Exile, Nahlakh, Magic Candle 1-2, Ultima-4
+** Смешанный - Albion, Amberstar, Warriors of Eternal Sun
+* Бой 
+** Автобой - Ultima-7 (kind of), Mordor
+** Realtime-симуляция - UUW, Daggerfall
+** Realtime-мышекличный - EoB, Ishar, Anvil of Dawn, Ultima-8
+** RT-фазовый (пауза) - Baldur's Gate, Darklands, Daemonsgate
+** Turnbased-тактика - Goldbox, Aethra, RoA, Exile, Magic Candle
+** Turnbased-походовой - M&M, Yendorian Tales, Ancients
+** TB-фазовый - Wizardry, Bard's Tale, Thunderscape, Amberstar
+* Боевой режим
+** Боевой режим - Goldbox, RoA
+** Hеразрывная реализация - U8, UUW, DF, M&M
+* Мир
+** Цельный мир - U4-7, Wizardry 6-7, M&M 1-5
+** Разбитый на зоны - M&M 6-8, Baldur's Gate, Dark Sun, U8
+** Hесвязанные зоны, соед. картой - Goldbox, RoA 1-2, Fallout
+* Миры:
+** Фэнтези - RoA, BG, Magic Candle...
+** HФ - Buck Rogers, Megatraveller, Planet's Edge
+** Постапокалипсис - Fallout, Wasteland
+** Техномагия/стеб - Wizardry-7, M&M, масса j"RP"G
+** Современность - Legacy, Jagged Alliance-2
+* Правила:
+** Классовая система - Wizardry, M&M, Goldbox
+** Безклассовая - Daggerfall, Thunderscape, Fallout
+** Возможность dualclass'а - Wizardry, Goldbox, BG, Torment
+* Атрибуты
+** Высокий рост первичных атрибутов - ADOM, M&M
+** Атрибуты мало меняются - Goldbox, EoB, Fallout
+* Рост 
+** Рост уровня на фиктивном опыте - Goldbox, Fallout
+** Рост навыков с их применением - Daggerfall, Krondor, Nahlakh
+** Оба - Wizardry 6-7
+** Рост уровня от применения навыков - Daggerfall
+** Рост навыков за фиктивный опыт - Natuk, Disciples of Steel
+* Магия 
+** Магия на "мане" - Aethra, Wizardry, M&M, Arkania
+** Магия на стамине или здоровье - Nahlakh, Krondor
+** Оба - Albion, Amberstar
+** Магия на меморайзе - Goldbox, EoB, Magic Candle

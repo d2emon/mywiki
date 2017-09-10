@@ -1,0 +1,10 @@
+!! Заготовки
+
+Использование заготовок
+
+# Create a new empty repo on GitHub (no link with boilerplate, no need for a fork)
+# clone it
+# clone boilerplate in a separate location on your disk
+# copy the right template from the local boilerplate clone to your new locally cloned Github repo
+# (git add, git commit) Push that specific template back to your new Github repo.
+# start working from there

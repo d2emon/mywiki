@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = город, космоопера
+order = 2
+creationdatetime = 2015-12-04 15:18:34.941000
+datetime = 2015-12-04 15:27:11.124000
+cursorposition = 7799
+
+[wiki]
+md5_hash = 80024b74a1d6f24b8d9e5ff2a5c774b1
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = True
+

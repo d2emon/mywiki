@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = игры, ролевки, lurkmore, киберпанк
+order = 0
+creationdatetime = 2015-12-03 09:46:16.870614
+datetime = 2017-05-28 14:16:47.953000
+cursorposition = 1223
+
+[wiki]
+md5_hash = b1709b58a12f3f1aceb50a389c6bc1ab
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = True
+

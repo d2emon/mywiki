@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = мое, комп
+order = 2
+creationdatetime = 2017-05-22 10:59:55.342192
+datetime = 2017-05-22 11:24:37.453231
+cursorposition = 24
+
+[wiki]
+md5_hash = ff26a75c0d53837bbcb1bac1ed98d51f
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+

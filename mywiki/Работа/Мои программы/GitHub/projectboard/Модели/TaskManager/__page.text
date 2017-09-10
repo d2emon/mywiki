@@ -1,0 +1,11 @@
+!! TaskManager
+
+class TaskManager(models.Manager):
+    """Manager for model Task. It get only those rows which are current."""
+    def get_query_set(self):
+        """Modify the queryset returned by this, so we only get the curent tasks."""
+        return super(TaskManager, self).get_query_set().filter(is_current = True)
+    
+    def all_include_old(self):
+        """Get all the rows, including the versioned with old ones."""
+        return super(TaskManager, self).all()

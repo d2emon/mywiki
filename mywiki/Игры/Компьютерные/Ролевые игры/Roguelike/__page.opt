@@ -1,13 +1,16 @@
 [General]
 type = wiki
 tags = терминал, игры, ролевки
-order = 5
-datetime = 2015-12-02 22:51:34.971000
-cursorposition = 0
+order = 6
+datetime = 2017-01-02 23:48:24.210000
+cursorposition = 467
 
 [Tree]
 expand = False
 
 [wiki]
-md5_hash = 294c3352a93f9b6576f37fb1c5915bfe
+md5_hash = 85a10915c2617155253d01f3dbb38115
+
+[Misc]
+pageindex = 1
 

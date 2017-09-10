@@ -1,0 +1,196 @@
+!! Task
+
+class Task(models.Model):
+    """Model for task.
+    number: of the task under the current project.
+    name: name for this task.
+    project: the project under hwich this task was created.
+    parent_task: For which task is this a subtask. If this is null, this is a task directly under project.
+    user_responsible: who is the person who is responsible for completing this task.
+    dates: excpected, and actual dates for this task.
+    is_complete: has this task been completed? Defaults to false.
+    
+    created_on: when was this task created. Auto filled.
+    is_delted: On deletion the task is not deleted, rather it is marked as deleted.
+    created_by: The user who created this task.
+    last_updated_by: The user who last updated this task item.
+    
+    effective_start_date: Since when is this version of the task in effect.
+    effective_end_date: Till when was this version of the task in effect.
+    version_number: What is the version number of the task. Starts at 1. Increments at each new version there after.
+    is_current: Is this the current version of the task?
+    
+    objects: Modify to use a custom manager, so that we can get only the current task, and not the old versioned ones.
+    all_objects: But have the old manager, when we want access to the old tasks as well, fo eg on history page.
+    """
+    
+    number = models.IntegerField()
+    name = models.CharField(max_length = 200)
+    project = models.ForeignKey(Project)
+    parent_task_num = models.IntegerField(null = True, blank = True)
+    user_responsible = models.ForeignKey(User, null = True, blank = True)
+    expected_start_date = models.DateField()
+    expected_end_date = models.DateField(null = True, blank = True)
+    actual_start_date = models.DateField(null = True,  blank = True)
+    actual_end_date = models.DateField(null = True,  blank = True)
+    is_complete = models.BooleanField(default = False)
+    created_on = models.DateTimeField(auto_now_add = 1)
+    is_deleted = models.BooleanField(default = False)
+    created_by = models.ForeignKey(User, related_name = 'created_tasks')
+    last_updated_by = models.ForeignKey(User, related_name = 'updated_tasks')
+    #Versioning
+    effective_start_date = models.DateTimeField(auto_now_add = True)
+    effective_end_date = models.DateTimeField(null = True, auto_now = True)
+    version_number = models.IntegerField()
+    is_current = models.BooleanField(default = True)
+    
+    objects = TaskManager()
+    all_objects = models.Manager()
+    
+    def __unicode__(self):
+        return self.name
+    
+    def __str__(self):
+        return self.name
+    
+    def delete(self):
+        log_text = 'Task %s has been deleted.' % self.name
+        log_description = 'Task was deleted on %s' % time.strftime('%d %B %y')
+        log = Log(project = self.project, text=log_text, description = log_description)
+        log.save()
+        self.taskitem_set.all().delete()
+        super(Task, self).delete()
+    
+    @classmethod
+    def as_csv_header(self):
+        return ('Name', 'User', 'Start Date', 'End Date', 'Actual Start Date', 'Actual End Date', 'Is Complete')
+    
+    def as_csv(self):
+        return (self.name, self.user_responsible, self.expected_start_date, self.expected_end_date, self.actual_start_date, self.actual_end_date, self.is_complete)
+    
+    def get_sub_tasks(self):
+        """Get subtasks for this task."""
+        return Task.objects.filter(project = self.project, parent_task_num = self.number)
+    
+    def __init__(self, *args, **kwargs):
+        """Update the details managers to show only the current objects, and drop old versioned ones."""
+        super(Task, self).__init__(*args, **kwargs)
+        self.task_set = SubtaskManager(self)
+        self.taskitem_set = ChildTaskItemManager(self)
+    
+    def save(self):
+        """If this is the firsts time populate required details, if this is update version it."""
+        if not self.id:
+            self.version_number = 1
+            cursor = connection.cursor()
+            cursor.execute('SELECT MAX(number) from project_task WHERE project_id = %s' % self.project.id)
+            num = cursor.fetchone()[0]
+            if not num:
+                num = 0
+            self.number = num + 1#Task.objects.filter(project = self.project, is_current = True).count() + 1
+            if self.user_responsible:
+                log_text = 'Task %s has for %s been created.  ' % (self.name, self.user_responsible)
+            else:
+                log_text = 'Task %s has been created.  ' % self.name
+            log_description = 'Task was created by %s on %s' % (self.created_by.username, time.strftime('%d %B %y'))
+            log = Log(project = self.project, text=log_text, description = log_description)
+            log.save()             
+            super(Task, self).save()
+        else:
+            #Version it
+            import copy
+            new_task = copy.copy(self)
+            """self.is_current = False
+            self.effective_end_date = datetime.datetime.now()
+            super(Task, self).save()"""
+            self.update_field('is_current', False)
+            new_task.id = None
+            new_task.is_current = True
+            new_task.version_number = self.version_number + 1
+            if self.user_responsible:
+                log_text = 'Task %s for %s has been updated.  ' % (self.name, self.user_responsible)
+            else:
+                log_text = 'Task %s has been updated' % (self.name)
+            log_description = 'Task was updated by %s on %s' % (self.last_updated_by.username, time.strftime('%d %B %y'))
+            log = Log(project = self.project, text=log_text, description = log_description)
+            log.save()            
+            super(Task, new_task).save()
+            
+    def save_without_versioning(self):
+        """Have a way to Save without versioning, as we overriden save()"""
+        super(Task, self).save()
+        
+    def update_field(self, field, value):
+        """Update a field without updating any other field. We need this when we are versioning a Task and we want to save
+        the objects to set its is_current, but not modify any other field."""
+        cursor = connection.cursor()
+        stmt = 'UPDATE project_task SET %s = %s WHERE id = %s' % (field, value, self.id)
+        cursor.execute(stmt)
+        
+        
+    def as_text(self):
+        """Return a summary textual representation of the task."""
+        txt = 'Name: %s \n Start Date: %s \n End Date: %s \n Person responsible: %s \n Is Complete?: %s \n Actual start date: %s \n Actual end date: %s' % (self.name, self.expected_start_date, self.expected_end_date, self.user_responsible, self.is_complete, self.actual_start_date, self.actual_end_date)
+        return txt
+        
+    def set_is_complete(self, value):
+        """If a task is marked as complete all its sub tasks and task items should be marked as complete."""
+        self.is_complete = value
+        if value:
+            cursor = connection.cursor()
+            cursor.execute('UPDATE project_task SET is_complete = %s WHERE parent_task_num = %s' % (True , self.number))
+            cursor.execute('UPDATE project_taskitem SET is_complete = %s WHERE task_num = %s' % (True, self.number))
+    
+    def get_is_complete(self):
+        return self.is_complete
+    
+    """Expose this as a property."""
+    is_complete_prop = property(get_is_complete, set_is_complete)            
+            
+    def get_old_versions(self):
+        """Get all the versions of this task."""
+        return Task.all_objects.filter(number = self.number, project  = self.project).order_by('-created_on')
+            
+    def num_child_tasks(self):
+        """Get number of subtasks for this task."""
+        return self.task_set.all().count()
+    
+    def num_items(self):
+        """Get number of taskitems for this task."""
+        return self.taskitem_set.all().count()
+    
+    def get_absolute_url(self):
+        """Get url to details for this task."""
+        return '/%s/taskdetails/%s/' % (self.project.shortname, self.number)
+    
+    def version_url(self):
+        """Get url to old versions for this task."""
+        return '/%s/taskhistory/%s/' % (self.project.shortname, self.number)
+    
+    def revision_url(self):
+        """Get url to details for this task."""
+        return '/%s/taskrevision/%s/' % (self.project.shortname, self.id)
+    
+    def edit_url(self):
+        """Get url to editing for this task."""
+        return '/%s/edittask/%s/' % (self.project.shortname, self.number)
+    
+    def add_note_url(self):
+        return '/%s/taskdetails/%s/addnote/' % (self.project.shortname, self.number)
+    
+    def add_note(self, text, user):
+        """Add a note to this task."""
+        note = TaskNote(text = text, user = user)
+        note.task_num = self.number
+        note.save()
+        return note
+    
+    def get_notes(self):
+        """Get notes for this task."""
+        return TaskNote.objects.filter(task_num = self.number)
+    
+    class Meta:
+        ordering = ('-created_on',)
+            
+    class Admin:
+        pass                  

@@ -1,0 +1,30 @@
+!! Log
+
+class Log(models.Model):
+    """Log of the project.
+    project: Project for which this log is written.
+    text: Text of the log.
+    created_on: When was this log created."""
+    project = models.ForeignKey(Project)
+    text = models.CharField(max_length = 200)
+    description = models.CharField(max_length = 200, null = True)
+    created_on = models.DateTimeField(auto_now_add = 1)
+    
+    def get_absolute_url(self):
+        return '/%s/logs/' % self.project.shortname
+    
+    def __unicode__(self):
+        return '%s (Logged on %s)' % (self.text, self.created_on)
+    
+    @classmethod
+    def as_csv_header(self):
+        return ('Log Text', 'Description', 'Logged on')
+    
+    def as_csv(self):
+        return (self.text, self.description, self.created_on.strftime('%Y-%m-%d'))
+    
+    class Meta:
+        ordering = ('-created_on', )
+    
+    class Admin:
+        pass

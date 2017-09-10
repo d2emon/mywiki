@@ -1,0 +1,24 @@
+!! SubscribedUser
+
+class SubscribedUser(models.Model):
+    """Users who have access to a given project
+    user: the user
+    project: the project
+    group: access rights"""
+    user = models.ForeignKey(User)
+    project = models.ForeignKey(Project)
+    group = models.CharField(max_length = 20, choices = options)
+    
+    def save(self):
+        """Log it and save."""
+        log_text = '%s has accepted invitation and is a %s of %s.' % (self.user.username, self.group, self.project.name)
+        log = Log(project = self.project, text=log_text)
+        log.save()
+        super(SubscribedUser, self).save()
+        
+    def get_absolute_url(self):
+        return '/%s/user/%s/' % (self.project.shortname, self.user.username)
+        
+    
+    class Admin:
+        pass    

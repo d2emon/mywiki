@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = игры, история
+order = 0
+creationdatetime = 2017-06-22 09:51:57.074000
+datetime = 2017-06-22 09:52:19.652000
+cursorposition = 23
+
+[wiki]
+md5_hash = 3d06b5c2bc34e08cbafa72d11c157e2b
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+

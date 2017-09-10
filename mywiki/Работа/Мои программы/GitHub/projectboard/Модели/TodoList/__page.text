@@ -1,0 +1,48 @@
+!! TodoList
+
+class TodoList(models.Model):
+    """A todo list of a user of the project.
+    name: name of the todo list.
+    user: User for which this todo list is created.
+    project: Project under which this list is created.
+    is_complete_attr: Is this list complete?
+    created_on: When was this list created?
+    """
+    name = models.CharField(max_length = 200)
+    user = models.ForeignKey(User)
+    project = models.ForeignKey(Project)
+    is_complete_attr = models.BooleanField(default = False)
+    created_on = models.DateTimeField(auto_now_add = 1)
+    
+    def get_is_complete(self):
+        """Get if list is complete."""
+        return self.is_complete_attr
+    
+    @classmethod
+    def as_csv_header(self):
+        return ('List Name', 'Is Complete?')
+    
+    def as_csv(self):
+        return (self.name, self.is_complete)
+        
+    
+    def set_is_complete(self, is_complete_attr):
+        """Get if list is complete.
+        When it is, mark all todo items as done too."""
+        self.is_complete_attr = is_complete_attr
+        self.save()
+        cursor = connection.cursor()
+        cursor.execute('UPDATE project_todoitem SET is_complete = %s WHERE list_id = %s', (True, self.id))
+    
+    """Expose the previous two method as a property."""    
+    is_complete = property(get_is_complete, set_is_complete, None)
+    
+    def get_item_form(self):
+        """Get the form to add an item."""
+        return AddTodoItemForm(self)
+    
+    """And expose it as a property."""
+    item_form = property(get_item_form, None, None)
+    
+    class Admin:
+        pass
