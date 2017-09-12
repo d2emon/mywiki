@@ -3,7 +3,11 @@ type = wiki
 tags = 
 order = 2
 datetime = 2013-07-09 20:50:33.788316
+cursorposition = 0
 
 [Misc]
 pageindex = 1
+
+[wiki]
+md5_hash = bb1dda4c26109f642a3680da4d6bc056
 
