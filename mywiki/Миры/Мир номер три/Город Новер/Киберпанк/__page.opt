@@ -3,10 +3,11 @@ type = wiki
 tags = киберпанк
 order = 3
 datetime = 2013-04-02 17:48:42.224000
+cursorposition = 0
 
 [Misc]
 pageindex = 0
 
 [wiki]
-md5_hash = de69857105b2771d5b81128d89929a4c
+md5_hash = 1c1dca9af69cfc46824e6ba2c51000f4
 
