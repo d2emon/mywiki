@@ -3,6 +3,7 @@ type = wiki
 tags = 
 order = 0
 datetime = 2013-11-10 18:09:43.113844
+cursorposition = 0
 
 [Misc]
 pageindex = 1
