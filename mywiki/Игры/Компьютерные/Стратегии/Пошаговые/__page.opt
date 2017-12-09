@@ -3,11 +3,11 @@ type = wiki
 tags = игры
 order = 5
 creationdatetime = 2016-06-16 19:16:39.586000
-datetime = 2016-10-19 06:49:36.678000
-cursorposition = 609
+datetime = 2017-12-09 13:41:43.460000
+cursorposition = 4207
 
 [wiki]
-md5_hash = 7f6d79de532accef23bb5e2cca07f4f0
+md5_hash = 1b8237ff433b9f4e740c6886d203aa83
 
 [Misc]
 pageindex = 1
