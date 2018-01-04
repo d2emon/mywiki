@@ -1,13 +1,13 @@
 [General]
 type = wiki
 tags = dnd, ролевки
-order = 7
+order = 8
 creationdatetime = 2015-12-21 21:47:24.221000
 datetime = 2015-12-21 21:48:39.807000
 cursorposition = 7715
 
 [wiki]
-md5_hash = 0ff014b515708ce03252d22a5b39985a
+md5_hash = f1649b494c1c9f9ea07b741a335acdb3
 
 [Misc]
 pageindex = 1

@@ -3,10 +3,10 @@ type = wiki
 tags = юмор, ролевки, классификация, dnd
 datetime = 2016-06-13 00:12:01.713000
 cursorposition = 497
-order = 15
+order = 19
 
 [wiki]
-md5_hash = 665b15f17188bb6817efd5e612896b2b
+md5_hash = a438f4d09412ca182673e22db6fc2126
 
 [Misc]
 pageindex = 1
