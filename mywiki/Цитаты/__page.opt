@@ -3,13 +3,13 @@ type = wiki
 tags = цитаты
 order = 14
 datetime = 2016-07-24 04:21:23.478000
-cursorposition = 2768
+cursorposition = 65
 
 [Misc]
-pageindex = 1
+pageindex = 0
 
 [Tree]
-expand = False
+expand = True
 
 [wiki]
 md5_hash = 5d57c3d43c8536e94312bc62b15e1b21
