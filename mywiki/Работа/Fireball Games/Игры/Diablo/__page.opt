@@ -3,11 +3,19 @@ type = wiki
 tags = 
 order = 11
 creationdatetime = 2016-12-19 11:58:16.539338
+<<<<<<< HEAD
 datetime = 2018-04-12 22:13:43.806266
 cursorposition = 653
 
 [wiki]
 md5_hash = fe7cd03e70b327bfc74b67a349659711
+=======
+datetime = 2018-04-11 09:26:05.513875
+cursorposition = 657
+
+[wiki]
+md5_hash = e3cf02aba16c8a39fcdf74b157f7562d
+>>>>>>> 8afbc80c605a2df08ee40955ccfc7a26b3f1ea45
 
 [Misc]
 pageindex = 1
