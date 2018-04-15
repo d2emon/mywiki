@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = 
+order = 1
+creationdatetime = 2018-04-15 17:30:27.830000
+datetime = 2018-04-15 17:31:10.830000
+cursorposition = 25
+
+[wiki]
+md5_hash = dca935f785857457727cdbb1911bd1d5
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+

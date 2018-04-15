@@ -3,7 +3,7 @@ type = wiki
 tags = 
 order = 1
 datetime = 2015-10-28 14:53:51.508632
-selectedtab = 0
+selectedtab = 1
 
 [Misc]
 pageindex = 1
