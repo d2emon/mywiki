@@ -1,0 +1,65 @@
+!! Канва бизнес-модели
+
+Канва бизнес-модели (от англ. Business model canvas) — один из инструментов стратегического управления для предпринимателей, продвигаемый в рамках L.E.A.N., который позволяет сделать описание проекта. Автором и создателем канвы бизнес-модели являются Александр Остервальдер и Ив Пинье.
+
+Business model canvas в первую очередь предназначена для действующих бизнесов и компаний, и применяется для разбора существующей бизнес-модели с целью нахождения слабых мест или новых точек роста.
+
+%thumb%Attach:Business_Model_Canvas.png%%
+
+!!! Description
+
+Канва бизнес-модели состоит из 9 блоков, которые могут быть объединены в 4 группы, каждый из блоков описывает свою часть бизнес-модели организации, а именно: ключевые партнеры, ключевые активности, достоинства и предложения, отношения с заказчиком, пользовательские сегменты, ключевые ресурсы, каналы поставки, структура затрат и источники доходов.
+
+Основные группы и блоки в рамках бизнес-модели:
+
+* '''Инфраструктура''' – описывает как и с помощью чего компания производит ценность, по сути определяется основа производственных процессов предприятия. Состоит из трех областей:
+** '''Процессы''' – наиболее важные процессы в цепочке создания ценностей клиентам компании. An example for Bic, the pen manufacturer, would be creating an efficient supply chain to drive down costs.
+** '''Ресурсы''' – ключевые ресурсы, которые необходимы для создания ценности клиентам компании. Ресурсы могут быть человеческие, финансовые, средства производства, интеллектуальные.
+** '''Партнеры''' – ключевые партнеры, взаимоотношения с которыми могут повлиять на процесс создания ценности для клиентов компании. Формы взаимодействия с партнерами, могут принимать различные формы, к примеру: ключевой поставщик, стратегический альянс, совместное предприятие и т.д.
+* '''Предложение''' – описывает продукт или услугу, которые компания предлагает на рынке. Состоит из одной области:
+** '''Предлагаемая ценность (Value proposition)''' – набор продуктов и услуг, которые выделяют компанию среди конкурентов на рынке и создают ценность для клиентов. Ценность продуктов и услуг предлагаемых на рынке, как правило достигается за счет следующих характеристик: новизна, производительность, гибкость и адаптируемость, комплектность, дизайн, бренд и статусность, цена, снижение рисков, доступность, удобство.[[<<]]The value propositions may be:
+*** Quantitative – price and efficiency
+*** Qualitative – overall customer experience and outcome
+* '''Клиенты''' – описывает основные сегменты рынка либо клиентов, на обслуживании которых будет в первую очередь ориентироваться компания. А также основные процессы и способы работы с клиентами. Состоит из трех областей:
+** '''Клиенты''' – компания должна в первую очередь понять, кто будет пользоваться предлагаемыми ею продуктами или услугами, каковы их потребности и каковы особенности целевого рынка. Различные группы клиентов включают: массовый рынок, нишевые рынки, сегменты рынка, диверсификация (фокусирование одновременно на различных сегментах рынка), взаимозависимость клиентов (компания в рамках одного предложения обслуживает потребности различных клиентов). The different types of customer segments include:
+*** Mass Market: There is no specific segmentation for a company that follows the Mass Market element as the organization displays a wide view of potential clients. e.g. Car
+*** Niche Market: Customer segmentation based on specialized needs and characteristics of its clients. e.g. Rolex
+*** Segmented: A company applies additional segmentation within existing customer segment. In the segmented situation, the business may further distinguish its clients based on gender, age, and/or income.
+*** Diversify: A business serves multiple customer segments with different needs and characteristics.
+*** Multi-Sided Platform / Market: For a smooth day-to-day business operation, some companies will serve mutually dependent customer segment. A credit card company will provide services to credit card holders while simultaneously assisting merchants who accept those credit cards.
+** '''Каналы сбыта''' – способ доставки продукта или услуги до клиента, удовлетворяющий потребностям в скорости, эффективности и стоимости.
+** '''Взаимоотношения''' – каким образом будут строиться взаимоотношения с клиентами, каким образом компания будет приобретать новых клиентов, удерживать существующих и развивать отношения с ними. Различные формы построения взаимоотношения с клиентами включают:
+*** '''Персональное обслуживание''' – личное взаимодействие между сотрудником компании и клиентом, как правило в офисах продаж, по телефону, в рамках онлайн-чата и т.д. Such assistance is performed either during sales, after sales, and/or both.
+*** '''Эксклюзивное персональное обслуживание''' – схоже с персональным обслуживанием, но с выделением для каждого клиента персонального менеджера по обслуживанию.
+*** '''Самообслуживание''' – клиенты самостоятельно обслуживают себя посредством предлагаемых компанией инструментов.
+*** '''Автоматизированное обслуживание''' – схоже с самообслуживанием, но системы компании могут определять потребности клиента и предлагать наиболее интересные предложения. An example of this would be Amazon.com making book suggestion based on the characteristics of the previous book purchased.
+*** '''Сообщество клиентов''' – прямое взаимодействие между клиентами компании, компания предоставляет платформу в рамках которой клиенты могут обмениваться идеями, советами и решать различные проблемы.
+*** '''Совместная работа''' – клиенты непосредственно участвую в процессе создания дизайна продукта или услуги компании.
+* '''Финансы''' – описание особенностей организации финансовых потоков компании, как входящих (ценообразование), так и исходящих (структура затрат). Состоит из двух областей:
+** '''Структура затрат''' – описание основных финансовых моделей и объектов инвестиций компании, которые необходимо понести для создания продукта или услуги. Основные элементы в описании структуры затрат: фиксированные расходы, переменные расходы, модели оптимизации затрат (экономия за счет масштаба, аутсорсинг непрофильных функций и т.д.).
+*** Classes of Business Structures:
+**** Cost-Driven – This business model focuses on minimizing all costs and having no frills. e.g. Low cost airlines
+**** Value-Driven – Less concerned with cost, this business model focuses on creating value for their products and services. e.g. Louis Vuitton, Rolex
+*** Characteristics of Cost Structures:
+**** Fixed Costs – Costs are unchanged across different applications. e.g. salary, rent
+**** Variable Costs – These costs vary depending on the amount of production of goods or services. e.g. music festivals
+**** Economies of Scale – Costs go down as the amount of good are ordered or produced.
+**** Economies of Scope – Costs go down due to incorporating other businesses which have a direct relation to the original product.
+** '''Источники дохода''' – способ получения финансирования с каждого из рыночных сегментов, на котором она работает. Выделяют следующие источники дохода для компании: продажа товара, плата за использование, плата за подписку, сдача в аренду, лицензирование, посредничество, реклама.  Several ways to generate a revenue stream:
+*** Asset Sale – (the most common type) Selling ownership rights to a physical good. e.g. retail corporations
+*** Usage Fee – Money generated from the use of a particular service e.g. UPS
+*** Subscription Fees – Revenue generated by selling a continuous service. e.g. Netflix
+*** Lending/Leasing/Renting – Giving exclusive right to an asset for a particular period of time. e.g. Leasing a Car
+*** Licensing – Revenue generated from charging for the use of a protected intellectual property.
+*** Brokerage Fees – Revenue generated from an intermediate service between 2 parties. e.g. Broker selling a house for commission
+*** Advertising – Revenue generated from charging fees for product advertising.
+
+!!! Alternative forms
+
+The Business Model Canvas has been used and adapted to suit specific business scenarios and applications. Examples include:
+
+* Product/market fit
+* Supply chain
+* Cash flow
+* Internal communications
+* Lean startup § Lean Canvas
