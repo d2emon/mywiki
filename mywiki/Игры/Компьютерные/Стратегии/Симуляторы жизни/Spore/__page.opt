@@ -3,11 +3,11 @@ type = wiki
 tags = игры, экология, история
 order = 3
 creationdatetime = 2016-03-31 17:31:17.329425
-datetime = 2016-03-31 18:25:20.138854
-cursorposition = 39606
+datetime = 2018-04-19 13:23:44.087922
+cursorposition = 28726
 
 [wiki]
-md5_hash = 335ee93cb0e387905c4696ae0f8eccf7
+md5_hash = ed77b463c8f6fa773a65063920894016
 
 [Misc]
 pageindex = 1
