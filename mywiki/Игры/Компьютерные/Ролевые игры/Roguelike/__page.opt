@@ -2,14 +2,14 @@
 type = wiki
 tags = терминал, игры, ролевки
 order = 7
-datetime = 2017-01-02 23:48:24.210000
-cursorposition = 467
+datetime = 2018-04-19 16:37:41.293942
+cursorposition = 163
 
 [Tree]
 expand = False
 
 [wiki]
-md5_hash = 85a10915c2617155253d01f3dbb38115
+md5_hash = 1ac64a1a4faf28f714676bd84db011bd
 
 [Misc]
 pageindex = 1

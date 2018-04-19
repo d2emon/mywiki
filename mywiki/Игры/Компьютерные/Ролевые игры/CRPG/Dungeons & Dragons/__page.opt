@@ -3,14 +3,14 @@ type = wiki
 tags = игры, ролевки, dnd
 order = 2
 creationdatetime = 2016-05-30 21:19:54.155000
-datetime = 2017-01-03 03:33:02.538000
-cursorposition = 12140
+datetime = 2018-04-19 16:57:59.348381
+cursorposition = 6300
 
 [wiki]
-md5_hash = 2e3ef39368143930208cd6ba52286aaa
+md5_hash = 2caa9656f95798ee7dc17ead79924d93
 
 [Misc]
-pageindex = 0
+pageindex = 1
 
 [Tree]
 expand = False

@@ -3,7 +3,7 @@ type = wiki
 tags = 
 order = 1
 datetime = 2015-10-28 14:53:51.508632
-selectedtab = 2
+selectedtab = 3
 
 [Misc]
 pageindex = 1
@@ -17,5 +17,6 @@ md5_hash = b00140370ada13919714557bfd3e4770
 [Tabs]
 tab_0 = Работа/Fireball Games/Движки
 tab_1 = Работа/Fireball Games/По жанрам/Боевики
-tab_2 = Игры/Компьютерные/Ролевые игры
+tab_2 = Игры/Компьютерные/Ролевые игры/CRPG/Изометрические
+tab_3 = Игры/Карточки
 
