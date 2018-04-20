@@ -1,13 +1,13 @@
 [General]
 type = wiki
 tags = adme, игры
-order = 0
+order = 1
 creationdatetime = 2016-01-16 14:13:19.443000
 datetime = 2016-01-16 14:48:22.838000
 cursorposition = 7942
 
 [wiki]
-md5_hash = b4dbf84b6c32ac84e51f82fbba8b6974
+md5_hash = b27fa5de4ee5310137a112119671633a
 
 [Misc]
 pageindex = 1
