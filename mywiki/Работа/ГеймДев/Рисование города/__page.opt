@@ -3,7 +3,11 @@ type = wiki
 tags = habrahabr, история, город
 order = 16
 datetime = 2014-09-17 14:33:38.133592
+cursorposition = 0
 
 [Misc]
 pageindex = 1
+
+[wiki]
+md5_hash = 2318288cf18e660740291a7414252ba6
 
