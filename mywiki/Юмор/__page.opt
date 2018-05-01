@@ -7,7 +7,7 @@ cursorposition = 38
 selectedtab = 0
 
 [Tree]
-expand = False
+expand = True
 
 [Misc]
 pageindex = 1
