@@ -7,11 +7,11 @@ cursorposition = 38
 selectedtab = 0
 
 [Tree]
-expand = False
+expand = True
 
 [Misc]
 pageindex = 1
 
 [wiki]
-md5_hash = 2784a5cc3cbe4017f81cb0c072384983
+md5_hash = 24c7002258c87886963421b1172b0c0c
 

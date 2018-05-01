@@ -1,13 +1,13 @@
 [General]
 type = wiki
 tags = геймдев, комп
-order = 6
+order = 7
 creationdatetime = 2017-01-15 02:16:53.018000
 datetime = 2017-01-15 02:39:17.511000
 cursorposition = 90141
 
 [wiki]
-md5_hash = 52d7b9ff5c9433dd54f893a5718a37d3
+md5_hash = 52f8c66a65c19e1f02e681b6a340efa8
 
 [Misc]
 pageindex = 1
