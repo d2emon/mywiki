@@ -10,7 +10,7 @@ selectedtab = 0
 md5_hash = 3d6b85c398240218ffb7954cd39eccbf
 
 [Tree]
-expand = True
+expand = False
 
 [Misc]
 pageindex = 1
