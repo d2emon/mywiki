@@ -3,10 +3,11 @@ type = wiki
 tags = юмор, абсурд
 order = 0
 datetime = 2013-11-23 12:05:06.979677
+cursorposition = 0
 
 [Misc]
 pageindex = 1
 
 [wiki]
-md5_hash = 72d41c82aba64dd76c46332bf2693ccf
+md5_hash = db8a7e7b7a6265a3756f331c51a3a0d1
 

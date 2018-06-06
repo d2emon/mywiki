@@ -7,11 +7,11 @@ datetime = 2015-10-28 10:20:21.904133
 cursorposition = 21020
 
 [wiki]
-md5_hash = 18a3cbf0d3030ae2af44cf1effd898e1
+md5_hash = 97c1d31775e99aea88f1199a0e2502e2
 
 [Misc]
 pageindex = 1
 
 [Tree]
-expand = False
+expand = True
 
