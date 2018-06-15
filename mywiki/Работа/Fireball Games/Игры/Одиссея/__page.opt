@@ -1,0 +1,25 @@
+[General]
+type = wiki
+tags = пираты, викторианская эпоха, игры
+order = 99
+creationdatetime = 2016-03-16 19:31:24.200000
+<<<<<<< HEAD
+datetime = 2018-04-12 22:15:35.810103
+cursorposition = 294
+
+[wiki]
+md5_hash = a1f471f240d32300e6fb9e37a952d9f6
+=======
+datetime = 2018-04-11 09:20:38.281021
+cursorposition = 234
+
+[wiki]
+md5_hash = 251f340102dec4c20f8b7e60d7e65c8b
+>>>>>>> 8afbc80c605a2df08ee40955ccfc7a26b3f1ea45
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+
