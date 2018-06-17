@@ -3,19 +3,6 @@ type = wiki
 tags = 
 order = 76
 creationdatetime = 2016-12-19 11:24:40.425388
-<<<<<<< HEAD
-datetime = 2018-04-12 22:11:48.662574
-cursorposition = 692
-
-[wiki]
-md5_hash = c51b6ae38f4fc8bb9e6fe897b1c03683
-=======
-datetime = 2018-04-11 09:18:44.242729
-cursorposition = 684
-
-[wiki]
-md5_hash = 57f0d886a605d55a90f05a0f87b3ee2a
->>>>>>> 8afbc80c605a2df08ee40955ccfc7a26b3f1ea45
 
 [Misc]
 pageindex = 1
