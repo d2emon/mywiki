@@ -1,0 +1,18 @@
+[@
+#!/usr/bin/env bash
+
+echo '{{TITLE}}: '
+echo '{{KEY}}: {{DESC}};'
+@]
+(:childlist:)
+...
+[@
+echo ' '
+read -p "Пожалуйста, выберите режим [a/i/r/s] и нажмите [Enter]: " -r DISTR
+
+case $DISTR in
+	{{KEY}})
+		{{FUNC}}
+		;;
+esac
+@]

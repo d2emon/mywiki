@@ -1,0 +1,2 @@
+ docker build -t {{CONTAINER-CORE}} --no-cache -f docker/Dockerfile .
+>> Install
