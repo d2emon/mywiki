@@ -1,0 +1,38 @@
+[@
+# Ignore installed node modules
+node_modules
+
+# Ignore final files
+dist
+
+# Ignore logs
+npm-debug.log
+
+# IDE
+.idea
+
+nbproject/*
+
+# local js files
+*.local.js
+*.local.yml
+*.log
+*.log.*
+*.lock
+
+# for backend testing
+src/backend/handlers/endpoints/dev-test/*
+devTestHandler.js
+/.vs/slnx.sqlite
+/.vs/nlk3.0/v15/.suo
+/.vs/tasks.vs.json
+/.vs/VSWorkspaceState.json
+.vscode/sftp.json
+.vscode/launch.json
+jsconfig.json
+Mongo/*
+Redis/*
+.cron
+bump-version.sh
+gradle.properties
+@]

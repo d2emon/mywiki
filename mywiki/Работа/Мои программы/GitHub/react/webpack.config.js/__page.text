@@ -1,0 +1,242 @@
+const path = require('path');
+const webpack = require('webpack');
+const autoprefixer = require('autoprefixer');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+// const CleanWebpackPlugin = require('clean-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const Webpack2Polyfill = require("webpack2-polyfill-plugin");
+
+const cfg = require('./src/backend/helpers/Cfg');
+const Config = cfg.load('index');
+const FrontendConfig = cfg.load('application_config');
+
+const nodeEnv = process.env.NODE_ENV || 'development';
+const isPro = nodeEnv === 'production';
+
+// const stylesheetsLoader = 'style-loader!css-loader?modules&localIdentName=[path]-[local]-[hash:base64:3]';
+const extractTextPlugin = new ExtractTextPlugin({
+    filename: 'styles.css?_=[hash]',
+    publicPath: FrontendConfig.resource_host === "" ? "/" : FrontendConfig.resource_host,
+});
+const extractSass = new ExtractTextPlugin({
+    filename: "[name].css?_=[hash]",
+    publicPath: FrontendConfig.resource_host === "" ? "/" : FrontendConfig.resource_host,
+});
+const htmlWebpackPlugin = new HtmlWebpackPlugin(
+    {
+        template: './src/frontend/start.html',
+        filename: 'start.html',
+        inject: true,
+        resource_host: FrontendConfig.resource_host,
+        hitcounter: Config.hitcounter.frontend,
+        hash: true,
+        chunks: ['commons', 'application']
+    }
+);
+const htmlLoginWebpackPlugin = new HtmlWebpackPlugin(
+    {
+        template: './src/frontend/login.html',
+        filename: 'login.html',
+        inject: false,
+        oauth_authorize: Config.services.oauth.header.loginUrl,
+        client_id: Config.services.oauth.header.client_id,
+        return_uri: Config.services.oauth.header.client_secret,
+        method: "POST",
+        resource_host: FrontendConfig.resource_host,
+        hash: true,
+        chunks: ['commons', 'application']
+    }
+);
+const htmlTutorialWebpackPlugin = new HtmlWebpackPlugin(
+    {
+        template: './src/frontend/tutorial.html',
+        filename: 'tutorial.html',
+        inject: false,
+        resource_host: FrontendConfig.resource_host,
+        hash: true,
+        chunks: ['commons', 'application']
+    }
+);
+const copyImagesWebpackPlugin = new CopyWebpackPlugin([{
+    context: __dirname + "/src/frontend/img/",
+    from: '**/*',
+    to: __dirname + '/dist/img/'
+}]);
+const copyFontsWebpackPlugin = new CopyWebpackPlugin([{
+    context: __dirname + "/src/frontend/css/",
+    from: '**/*',
+    to: __dirname + '/dist/css/'
+}]);
+const definePlugin = new webpack.DefinePlugin({
+    'process.env': {
+        'NODE_ENV': JSON.stringify(nodeEnv)
+    }
+});
+
+let plugins = [
+    // new webpack.optimize.CommonsChunkPlugin({
+    //     name: 'commons',
+    //     children: true,
+    //     minChunks: module => module.context && module.context.indexOf('node_modules') !== -1
+    // }),
+    new Webpack2Polyfill(),
+    new webpack.optimize.CommonsChunkPlugin({
+        name: "commons",
+        minChunks: function (module) {
+            return module.context && module.context.indexOf('node_modules') !== -1;
+        },
+    }),
+    extractTextPlugin,
+    htmlWebpackPlugin,
+    htmlLoginWebpackPlugin,
+    htmlTutorialWebpackPlugin,
+    definePlugin,
+    copyImagesWebpackPlugin,
+    copyFontsWebpackPlugin,
+    extractSass
+];
+
+if (isPro) {
+    plugins.push(
+        new webpack.LoaderOptionsPlugin({
+            minimize: true,
+            debug: false
+        }),
+        new webpack.optimize.UglifyJsPlugin({
+            sourceMap: true,
+            comments: false,
+            ie8: true
+        })
+    )
+}
+// else {
+//     plugins.push(
+//         new webpack.HotModuleReplacementPlugin(),
+//         new webpack.NamedModulesPlugin(),
+//         new webpack.NoEmitOnErrorsPlugin()
+//     )
+// }
+
+console.log("Окружение сборки: ", isPro ? 'production' : 'development');
+
+
+// Можно потом вынести в отдельный файл
+// Плагин пытается найти локальные версии конфига при сборке билда
+
+function CustResolvePlugin(options) {
+    //console.log('Options:', options);
+    this.rootPath = options.rootPath;
+
+    // бэк конфиги подлежащие локализации
+    // потом можно сделать автоматический список путем считывания директории
+    this.frontend_localize = [
+        'application_config'
+    ];
+
+}
+
+CustResolvePlugin.prototype.apply = function (resolver) {
+
+    let self = this;
+    let rootPath = self.rootPath;
+
+    const path = require('path');
+    const fs = require('fs');
+
+
+    resolver.plugin('described-resolve', (request, finalCallback) => {
+
+
+        for (let k in self.frontend_localize) {
+            let end_of_path = 'backend/config/' + self.frontend_localize[k];
+
+            let localFile = rootPath + '/backend/config/' +
+                self.frontend_localize[k] + '.local.js';
+
+            if (request.request.endsWith(end_of_path)) {
+
+                try {
+                    fs.readFileSync(localFile);
+                    //ok
+                    let origPath = request.request;
+                    let localPath = origPath + '.local';
+                    const localRequest = Object.assign({}, request, {
+                        request: localPath
+                    });
+                    console.log("\n" + 'replace ' + origPath
+                        + " with " + localFile + "\n");
+                    return resolver.doResolve('resolve', localRequest,
+                        'changed global path \''
+                        + origPath + '\' to \'' + localPath + '\''
+                        , finalCallback);
+                } catch (err) {
+                    //global
+                    return finalCallback();
+                }
+
+
+            }
+        }
+
+        return finalCallback();
+    });
+
+
+};
+// конец плагина CustResolvePlugin
+
+module.exports = {
+    context: path.join(__dirname, ''),
+    devtool: isPro ? 'source-map' : 'source-map',
+    entry: {
+        application: ['./src/frontend/client.jsx'],
+    },
+    module: {
+        loaders: [{
+            test: /\.jsx?$/,
+            exclude: [
+                [/node_modules/],
+                path.resolve(__dirname, "backend/config/"),
+                path.resolve(__dirname, "backend/database/"),
+                path.resolve(__dirname, "backend/handlers/"),
+                path.resolve(__dirname, "backend/middleware/"),
+                path.resolve(__dirname, "backend/services/"),
+                path.resolve(__dirname, "backend/services/soap"),
+            ],
+            loader: 'babel-loader',            
+            query: {
+                cacheDirectory: true,
+                plugins: [
+                    'dynamic-import-node',
+                    'transform-runtime',
+                    'transform-decorators-legacy',                    
+                ],
+                presets: ['env', 'react', 'stage-1'],
+            },
+        },{
+            test: /\.scss$/,
+            loader: extractSass.extract({use: ["css-loader"], fallback: "style-loader"})
+        }, {
+            test: /\.(css)$/,
+            loader: extractTextPlugin.extract({use: ["css-loader", "postcss-loader"]})
+        }]
+    },
+    resolve: {
+        extensions: ['.js', '.jsx', '.less', '.scss', '.css'],
+        plugins: [new CustResolvePlugin({
+            rootPath: __dirname + '/src'
+        })]
+    },
+    output: {
+        path: __dirname + '/dist',
+        publicPath: FrontendConfig.resource_host === "" ? "/" : FrontendConfig.resource_host + "/",
+        chunkFilename: '[name]_[hash].bundle.js',
+        filename: '[name]_[hash].js'
+    },
+    devServer: {
+        contentBase: './dist',
+        hot: true
+    },
+    plugins
+};

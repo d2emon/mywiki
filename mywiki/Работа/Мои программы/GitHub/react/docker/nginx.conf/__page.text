@@ -1,0 +1,47 @@
+server {
+    listen      80 default_server;
+    server_name _;
+
+    location / {
+        proxy_pass       http://server:9091;
+        proxy_buffering  off;
+        add_header       X-Proxy            server;
+
+        proxy_set_header Host               $host;
+        proxy_set_header X-Real-IP          $remote_addr;
+        proxy_set_header X-Forwarded-For    $proxy_add_x_forwarded_for;
+
+        proxy_connect_timeout   600;
+        proxy_send_timeout      600;
+        proxy_read_timeout      600;
+        send_timeout            600;
+    }
+
+    location /ws {
+        proxy_pass       http://service:9393;
+        proxy_buffering  off;
+        add_header       X-Proxy            service;
+
+        proxy_set_header Host               $host;
+        proxy_set_header X-Real-IP          $remote_addr;
+        proxy_set_header X-Forwarded-For    $proxy_add_x_forwarded_for;
+
+        proxy_connect_timeout   600;
+        proxy_send_timeout      600;
+        proxy_read_timeout      600;
+        send_timeout            600;
+    }
+
+    location ~* \.(JPG|jpg1|jpg|jpeg|gif|png|svg|js|css|mp3|ogg|mpeg|avi|zip|gz|bz2|rar|swf|flv|exe|bmp|tiff|tif|ico|doc|docx|xls|xlsx|ppt|pptx|pdf|html|htm|txt|file|ttf|eot|woff|woff2|otf|mp4|ogv|webm|json)$ {
+        expires     -1;
+        root        /usr/share/nginx/html/dist;
+        add_header  X-Proxy                     static;
+        add_header  Access-Control-Allow-Origin *;
+    }
+}
+
+server {
+    listen      80;
+    server_name "";
+    return      444;
+}

@@ -1,0 +1,106 @@
+const path = require('path');
+const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const CompressionPlugin = require('compression-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+
+const stylesheetsLoader = ExtractTextPlugin.extract({
+    fallbackLoader: 'style-loader',
+    loader: 'css-loader?modules&localIdentName=[hash:base64]'
+});
+const stylesheetsPlugin = new ExtractTextPlugin('[hash].css');
+const htmlWebpackPlugin = new HtmlWebpackPlugin(
+    {
+        template: './src/frontend/start.html',
+        filename: 'start.html',
+        inject: true
+    }
+);
+const htmlLoginWebpackPlugin = new HtmlWebpackPlugin(
+    {
+        template: './src/frontend/login.html',
+        filename: 'login.html',
+        inject: false
+    }
+);
+const definePlugin = new webpack.DefinePlugin({
+    __DEV__: JSON.stringify(JSON.parse(process.env.NODE_ENV === 'development' || 'false')),
+    'process.env': {
+        NODE_ENV: JSON.stringify(process.env.NODE_ENV || 'production')
+    }
+});
+const uglifyPlugin = new webpack.optimize.UglifyJsPlugin({ compress: { warnings: false } });
+const compressionPlugin = new CompressionPlugin();
+
+const extractTextPlugin = new ExtractTextPlugin('./[name]-l.css');
+const copyImagesWebpackPlugin = new CopyWebpackPlugin([{
+    context: __dirname + "/src/frontend/img/",
+    from: '**/*',
+    to: __dirname + '/dist/img/'
+}]);
+const copyFontsWebpackPlugin = new CopyWebpackPlugin([{
+    context: __dirname + "/src/frontend/css/",
+    from: '**/*',
+    to: __dirname + '/dist/css/'
+}]);
+const extractSass = new ExtractTextPlugin({
+    filename: "[name].css",
+});
+
+const nodeEnv = process.env.NODE_ENV || 'development';
+const isPro = nodeEnv === 'production';
+
+console.log("Окружение сборки: ", isPro ? 'production' : 'development');
+
+module.exports = {
+    context: path.join(__dirname,''),
+    entry: {
+        application: ['./src/frontend/client.jsx'],
+    },
+    devtool: 'cheap-source-map',
+    plugins: [
+        stylesheetsLoader,
+        stylesheetsPlugin,
+        htmlWebpackPlugin,
+        htmlLoginWebpackPlugin,
+        copyImagesWebpackPlugin,
+        copyFontsWebpackPlugin,
+        extractSass,
+        definePlugin,
+        uglifyPlugin,
+        compressionPlugin,
+    ],
+    module: {
+        loaders: [{
+            test: /\.jsx?$/,
+            exclude: [
+                /node_modules/,
+                path.resolve(__dirname, "backend/database/"),
+                path.resolve(__dirname, "backend/handlers/"),
+                path.resolve(__dirname, "backend/middleware/"),
+                path.resolve(__dirname, "backend/services/"),
+                path.resolve(__dirname, "backend/services/soap"),
+            ],
+            loader: 'react-hot-loader!babel-loader'
+        }, {
+            test: /\.scss$/,
+            loader: extractSass.extract({use: ["css-loader", "sass-loader"], fallback:"style-loader"})
+        }, {
+            test: /\.(less|css)$/,
+            loader: extractTextPlugin.extract({use: ["css-loader", "less-loader", "postcss-loader"]})
+        }, {
+            test: /\.(jpe?g|png|gif)$/,
+            loader: 'file'
+        }],
+    },
+    resolve: {
+        extensions: ['.js', '.jsx', '.less', '.scss', '.css'],
+    },
+    output: {
+        path: __dirname + '/dist',
+        publicPath: isPro ? '/' : '/',
+        chunkFilename: '[name].js',
+        filename: '[name].js'
+    },
+};

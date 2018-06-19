@@ -1,0 +1,152 @@
+const path = require('path');
+const Config = require('./src/backend/config');
+const FrontendConfig = require('./src/backend/config/application_config');
+const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const CompressionPlugin = require('compression-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const Webpack2Polyfill = require("webpack2-polyfill-plugin");
+
+const stylesheetsLoader = ExtractTextPlugin.extract({
+    fallback: 'style-loader',
+    use: 'css-loader?modules&localIdentName=[hash:base64]'
+});
+const stylesheetsPlugin = new ExtractTextPlugin({
+    filename: '[hash].css',
+    publicPath: FrontendConfig.resource_host === "" ? "/" : FrontendConfig.resource_host
+});
+//const htmlWebpackPlugin = new HtmlWebpackPlugin({template: './src/frontend/start.html' });
+const htmlWebpackPlugin = new HtmlWebpackPlugin(
+    {
+        template: './src/frontend/start.html',
+        filename: 'start.html',
+        inject: true,
+        hash: true,
+        resource_host: FrontendConfig.resource_host,
+        hitcounter: Config.hitcounter.frontend,
+        chunks: ['commons', 'application']
+    }
+);
+const htmlLoginWebpackPlugin = new HtmlWebpackPlugin(
+    {
+        hash: true,
+        template: './src/frontend/login.html',
+        filename: 'login.html',
+        inject: false,
+        oauth_authorize: Config.services.oauth.loginUrl,
+        client_id: Config.services.oauth.client_id,
+        return_uri: Config.services.oauth.redirectUrl,
+        method: "GET",
+        resource_host: FrontendConfig.resource_host,
+        chunks: ['commons', 'application']
+    }
+);
+const htmlTutorialWebpackPlugin = new HtmlWebpackPlugin(
+    {
+        hash: true,
+        template: './src/frontend/tutorial.html',
+        filename: 'tutorial.html',
+        inject: false,
+        resource_host: FrontendConfig.resource_host,
+        chunks: ['commons', 'application']
+    }
+);
+const definePlugin = new webpack.DefinePlugin({
+    __DEV__: JSON.stringify(JSON.parse(process.env.NODE_ENV === 'development' || 'false')),
+    'process.env': {
+        NODE_ENV: JSON.stringify(process.env.NODE_ENV || 'production')
+    }
+});
+const uglifyPlugin = new webpack.optimize.UglifyJsPlugin({compress: {warnings: false}});
+const compressionPlugin = new CompressionPlugin();
+
+const extractTextPlugin = new ExtractTextPlugin({
+    filename: 'styles.css',
+    publicPath: FrontendConfig.resource_host === "" ? "/" : FrontendConfig.resource_host
+});
+const extractSass = new ExtractTextPlugin({
+    filename: "application.css",
+    publicPath: FrontendConfig.resource_host === "" ? "/" : FrontendConfig.resource_host
+});
+const copyImagesWebpackPlugin = new CopyWebpackPlugin([{
+    context: __dirname + "/src/frontend/img/",
+    from: '**/*',
+    to: __dirname + '/dist/img/'
+}]);
+const copyFontsWebpackPlugin = new CopyWebpackPlugin([{
+    context: __dirname + "/src/frontend/css/",
+    from: '**/*',
+    to: __dirname + '/dist/css/'
+}]);
+
+const nodeEnv = process.env.NODE_ENV || 'development';
+const isPro = nodeEnv === 'production';
+
+console.log("Окружение сборки: ", isPro ? 'production' : 'development');
+
+module.exports = {
+    context: path.join(__dirname, ''),
+    entry: {
+        application: ['./src/frontend/client.jsx'],
+    },
+    devtool: 'cheap-source-map',
+    plugins: [
+        new Webpack2Polyfill(),
+        new webpack.optimize.CommonsChunkPlugin({
+            name: "commons",
+            minChunks: function (module) {
+                return module.context && module.context.indexOf('node_modules') !== -1;
+            },
+        }),
+        stylesheetsPlugin,
+        htmlWebpackPlugin,
+        definePlugin,
+        uglifyPlugin,
+        compressionPlugin,
+        copyFontsWebpackPlugin,
+        copyImagesWebpackPlugin,
+        htmlLoginWebpackPlugin,
+        htmlTutorialWebpackPlugin,
+        extractTextPlugin,
+        extractSass
+    ],
+    module: {
+        loaders: [{
+            test: /\.jsx?$/,
+            exclude: [
+                /node_modules/,
+                path.resolve(__dirname, "backend/database/"),
+                path.resolve(__dirname, "backend/handlers/"),
+                path.resolve(__dirname, "backend/middleware/"),
+                path.resolve(__dirname, "backend/services/"),
+                path.resolve(__dirname, "backend/services/soap"),
+            ],
+            loader: 'babel-loader',
+            query: {
+                cacheDirectory: true,
+                plugins: [
+                    'dynamic-import-node',
+                    'transform-runtime',
+                    'transform-decorators-legacy',
+                ],
+                presets: ['env', 'react', 'stage-1'],
+            },
+        },  {
+            test: /\.scss$/,
+            loader: extractSass.extract({use: ["css-loader"], fallback: "style-loader"})
+        }, {
+            test: /\.(css)$/,
+            loader: extractTextPlugin.extract({use: ["css-loader", "postcss-loader"]})
+        }],
+    },
+    resolve: {
+        extensions: ['.js', '.jsx', '.less', '.scss', '.css'],
+    },
+    output: {
+        path: __dirname + '/dist',
+        publicPath: FrontendConfig.resource_host === "" ? "/" : FrontendConfig.resource_host + "/",
+        chunkFilename: '[name].bundle.js?_=[hash]',
+        filename: '[name].js?_=[hash]'
+    },
+};
