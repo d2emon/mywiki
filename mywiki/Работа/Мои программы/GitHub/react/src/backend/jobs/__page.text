@@ -1,0 +1,17 @@
+./src/backend/jobs:
+.
+..
+esiaCheckRequestStatus.js
+hello_world.js
+incoming
+job_base.js
+process_new_big_data_files.js
+receive_from_big_data.js
+
+./src/backend/jobs/incoming:
+.
+..
+.gitignore
+vu_07_05_2018.csv
+vu_09_05_2018.csv
+vu_10_05_2018.csv
