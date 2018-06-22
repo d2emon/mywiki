@@ -1,2 +1,4 @@
+[@
 # copy tasks into .cron file to schedule it
 * * * * * cd /usr/src/app/src/backend && sh run_job.sh process_new_big_data_files >> /usr/src/app/logs/process_new_big_data_files.log
+@]

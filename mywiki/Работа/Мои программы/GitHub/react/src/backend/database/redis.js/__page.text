@@ -1,0 +1,63 @@
+[@
+import redis from "redis";
+import cfg from "../helpers/Cfg";
+const Config = cfg.load('index');
+
+// const client = redis.createClient("/var/run/redis/redis.sock");
+
+class RedisProvider {
+    client = false;
+    active = false;
+
+    constructor() {
+        if (!this.client) {
+            this.client = redis.createClient(Config.redis.host);
+            this.client.on("error", (err) => console.log("uh oh", err));
+            this.client.on("connect", () => console.log("==> Redis connected."));
+        }
+    }
+
+    getClient() {
+        return this.client;
+    }
+
+    /**
+     *
+     * @param key
+     * @param replayCallback
+     * @param errorCallback
+     */
+    get (key, replayCallback, errorCallback, ...args) {
+        this.client.get(key, (err, replay) => {
+            if (err !== null) {
+                errorCallback(err, ...args);
+            } else if (replay) {
+                replayCallback(replay, ...args);
+            } else {
+                errorCallback(new Error("is null"), ...args);
+            }
+        });
+    }
+
+    validateToken (key, link) {
+        const that = this;
+        return new Promise((resolve, reject) => {
+            that.client.get(key, (err, replay) => {
+                if (err !== null) {
+                    reject({err, link});
+                } else if (replay) {
+                    resolve({replay, link});
+                } else {
+                    reject({error: new Error("is null"), link});
+                }
+            });
+        });
+    }
+}
+
+const Cache = new RedisProvider();
+export {Cache};
+
+export const CACHE_TOKEN = '|cache|token|';
+export const OAUTH_TOKEN = '|oauth|token|';
+@]

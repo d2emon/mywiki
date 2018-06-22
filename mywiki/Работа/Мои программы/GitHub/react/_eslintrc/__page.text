@@ -1,3 +1,4 @@
+[@
 {
   "parser": "babel-eslint",
   "extends": "airbnb",
@@ -26,3 +27,4 @@
     "import/resolver": "webpack"
   }
 }
+@]

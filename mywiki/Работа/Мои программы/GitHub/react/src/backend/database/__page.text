@@ -1,20 +1,16 @@
-./src/backend/database:
-.
-..
-cache.js
+!! Базы данных
+
+(:childlist:)
+
+	cache.js
 mongodb.js
-mongodb_schema
+	* mongodb_schema
+		bigdata_scheme.js
+		desktop.js
+		esiaRequest.js
+		familyMember.js
+		feedback.js
+		profileStub.js
+		subscriptionRead.js
+		userMeta.js
 redis.js
-
-./src/backend/database/mongodb_schema:
-.
-..
-bigdata_scheme.js
-desktop.js
-esiaRequest.js
-familyMember.js
-feedback.js
-profileStub.js
-subscriptionRead.js
-userMeta.js
-

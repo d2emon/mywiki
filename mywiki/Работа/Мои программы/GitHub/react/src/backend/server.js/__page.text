@@ -1,0 +1,106 @@
+[@
+import cfg from "./helpers/Cfg";
+const config = cfg.load('index');
+import {routerApi} from "./routes";
+import {redisClient} from "./database/redis";
+import {logger} from "./helpers/Graylog";
+import apiRateLimit from "./middleware/RateLimit";
+
+//require('./database/mongodb');
+
+/**
+ * Запуск серверной части для фронта
+ */
+const path = require('path');
+const express = require('express');
+const cookieParser = require('cookie-parser');
+const bodyParser = require('body-parser');
+import validateRequest from "./middleware/validateRequest"
+
+const session = require('express-session');
+const RedisStore = require('connect-redis')(session);
+
+import {Cache, CACHE_TOKEN} from "./database/redis";
+let sess = {
+    store: new RedisStore({client: Cache.getClient(), prefix:'nelk.session'}),
+    secret: 'ilovescotchscotchyscotchscotch',
+    saveUninitialized: false,
+    resave: false,
+    cookie: { maxAge: 2340000 },
+    name: "nlksessionexp",
+};
+
+const app = express();
+app.use(cookieParser());
+app.use(session(sess));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: true, parameterLimit: 1000000}));
+
+process.on('uncaughtException', (err) => {
+    console.log('uncaughtException',err);
+    process.exit(0);
+});
+
+process.on('UnhandledPromiseRejectionWarning', (err) => {
+    console.log('UnhandledPromiseRejectionWarning',err);
+    process.exit(0);
+});
+
+process.on('unhandledRejection', (reason, p) => {
+    logger.error('Unhandled Rejection at: Promise', {p, reason: reason.stack});
+    console.log('Unhandled Rejection at: Promise',{p, reason: reason.stack});
+    //console.log('Unhandled Rejection at: Promise', p, 'reason:', reason);
+});
+
+const port = process.env.PORT ? process.env.PORT : config.backend.server.default_port;
+const dist = path.join(__dirname, '/../../dist');
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: true, parameterLimit: 1000000 }));
+app.use(express.static(dist));
+//app.use(apiRateLimit({duration: config.webapi.ratelimit.duration, max: config.webapi.ratelimit.max}));
+
+app.all('/*', function (req, res, next) {
+    let d = new Date();
+    let n = d.toString();
+    //console.log("===[", n, "]=== ", ": ", req.protocol + '://' + req.get('host') + req.originalUrl);
+    res.setHeader('Access-Control-Allow-Origin', (req.headers.origin)?req.headers.origin:req.headers.host  );
+    res.setHeader('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS');
+    res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,Content-type,Accept,X-Access-Token,X-Key,IV-USER,Cookie,Set-Cookie');
+    res.setHeader('Access-Control-Allow-Credentials', config.backend.server.cors.credentials);
+    if (req.method === 'OPTIONS') {
+        res.setHeader('Access-Control-Max-Age', 17200);
+        res.status(200).end();
+    } else {
+        next();
+    }
+});
+
+app.all(config.makeSlashes(config.webapi.api_route, config.webapi.version) + '*', [validateRequest]);
+Object.keys(routerApi).map((item) => {
+    app.use("/" + config.webapi.api_route + "/" + item, routerApi[item]);
+});
+
+console.log("Server runs as: ", config.frontend.auth_type === "oauth" ? "production":"development");
+
+// if (config.frontend.auth_type === "oauth") {
+//     require('./routes/production.js')(app, null);
+// } else {    
+//     require('./routes/development.js')(app, null);    
+// }
+require('../frontend/routes')(app, null);
+
+
+app.all('*', (req, res) => {
+    res.statusCode = 500;
+    logger.error("Backend Request Error", {url: req.protocol + '://' + req.get('host') +  req.originalUrl, query: req.query, body: req.body, headers: req.headers});
+    res.redirect("/");
+});
+
+app.listen(port, (error) => {
+    if (error) {
+        logger.error("Backend Listen Error", error.message);
+    }
+    console.info('==> API %s Сервер запущен на порту %s.', config.webapi.version, port);
+});
+@]

@@ -1,0 +1,144 @@
+[@
+import graylog2 from "graylog2";
+
+import cfg from "../helpers/Cfg";
+const config = cfg.load('index');
+
+import fs from "fs";
+
+
+const logger = new graylog2.graylog(config.log.graylog);
+
+logger.on('error', function (error) {
+    console.error('Error while trying to write to graylog2:', error);
+});
+
+logger.createFileLogger = (file)=>{
+    
+    const dir = '/usr/src/app/logs';
+    
+    class fl{
+        
+        _checkFile(file){
+             if(!config.log.file.files.hasOwnProperty(file)){
+                 return false;
+             }
+             return true;
+        }
+        
+        
+        
+        _getNowDate() {
+            let _addZerro = (num)=>{
+                if (num < 10) {
+                    num = '0' + num + '';
+                }
+                return num;
+            };
+            let dt = new Date();
+            let timetag = dt.getFullYear() + '-' + _addZerro(dt.getMonth() + 1) + '-' + _addZerro(dt.getDate());
+            timetag = timetag + ' ' + _addZerro(dt.getHours()) + ':' + _addZerro(dt.getMinutes()) + ':' + _addZerro(dt.getSeconds()) + '.' + dt.getMilliseconds();
+            return timetag;
+        }
+        
+        _bt(level) {
+            level = level || 4;
+            try {
+                throw new Error();
+            } catch (e) {
+
+                if (typeof e.stack == 'string') {
+                    var arStack = e.stack.split("\n");
+                    if (typeof arStack[level] != 'undefined') {
+                        return arStack[level].trim();
+                    }
+                }
+
+                return 'unknown';
+
+            }
+
+        }
+        
+        constructor(file){
+            if(!this._checkFile(file)){
+                console.log('You cannot use name ['+file+'] for log. You must register it in config.log.file.files before using.');
+                this.enable = false;
+                return;
+            }
+            this.filename = config.log.file.files[file]+'.log';
+            this.enable = config.log.file.enable || false;
+        }
+        
+        debug(){
+            return this.log.apply(this, [{ level:'DEBUG', args: Array.prototype.slice.call( arguments, 0 )}] ); 
+        }
+        error(){
+            return this.log.apply(this, [{ level:'ERROR', args: Array.prototype.slice.call( arguments, 0 )}] ); 
+        }
+        info(){
+            return this.log.apply(this, [{ level:'INFO', args: Array.prototype.slice.call( arguments, 0 )}] ); 
+        }
+        warn(){
+            return this.log.apply(this, [{ level:'WARNING', args: Array.prototype.slice.call( arguments, 0 )}] ); 
+        }
+        
+        log(){
+            
+            if(!this.enable){
+                return;
+            }
+            
+            let args = Array.prototype.slice.call( arguments, 0 );
+            args = args[0];
+            let where = this._bt();
+            let when = this._getNowDate();
+            let level = args['level'];
+            let what = '';
+            let lgth = args['args'].length;
+            for(let k in args['args']){
+                
+                if(args['args'][k] instanceof Array || args['args'][k] instanceof Object){
+                    args['args'][k] = JSON.stringify(args['args'][k]);
+                }
+                what = what+args['args'][k];
+                if(k!=lgth-1){
+                    what = what+' ';
+                }
+            }
+            let arLine = [];
+            for(let i in config.log.file.format){
+                if(config.log.file.format[i] === 'what') arLine.push(what);
+                if(config.log.file.format[i] === 'when') arLine.push(when);
+                if(config.log.file.format[i] === 'level') arLine.push(level);
+                if(config.log.file.format[i] === 'where') arLine.push(where);
+            }
+            
+            let strToLog = "\n"+arLine.join(' ');
+            let self = this;
+            
+            
+            
+            fs.appendFile(dir+'/'+this.filename, strToLog, function (err) {
+                console.log(strToLog);
+                if (err){
+                  console.log('Error while write log to '+self.filename);   
+                }
+            });
+            
+        }
+        
+    };
+    
+    
+  
+    
+    return new fl(file);
+    
+};
+
+let glog = logger.createFileLogger('graylog');
+
+
+export { logger };
+@]

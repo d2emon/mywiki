@@ -1,3 +1,4 @@
+[@
 const path = require('path');
 const Config = require('./src/backend/config');
 const FrontendConfig = require('./src/backend/config/application_config');
@@ -150,3 +151,4 @@ module.exports = {
         filename: '[name].js?_=[hash]'
     },
 };
+@]

@@ -1,0 +1,20 @@
+[@
+const fs = require('fs');
+
+let cfg = {
+    load: function(name){
+        
+        try{
+            fs.readFileSync(__dirname+'/../config/'+name+'.local.js');
+            console.log('Load local config with name ['+name+']');
+            return require('../config/'+name+'.local.js');
+	}catch (err) {
+            console.log('No local config with name ['+name+'], so using global');
+            return require('../config/'+name+'.js');
+	}
+        
+    }
+};
+
+module.exports = cfg;
+@]

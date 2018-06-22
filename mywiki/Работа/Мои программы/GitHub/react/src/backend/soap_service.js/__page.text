@@ -1,0 +1,89 @@
+[@
+import soap from "soap";
+import http from 'http';
+import express from "express";
+import mongoose from "mongoose";
+import fs from "fs";
+import cfg from "./helpers/Cfg";
+const config = cfg.load('index');
+
+require('./database/mongodb');
+
+const xml = fs.readFileSync('./src/backend/wsdl/Subscription.wsdl', 'utf8')
+        .replace('{__location__}',config.soap_service.base_url+'/'+config.soap_service.entry_point);
+
+const port = config.soap_service.port;
+
+let app = express();
+
+const server = app.listen(port, function () {
+    const host = "0.0.0.0";
+    const port = server.address().port;
+});
+
+const SchemaEx = require("./wsdl/schema");
+const Subscription = mongoose.model('Subscription', SchemaEx);
+
+const services = {
+    EventService: {
+        EventServiceSOAP: {
+            SendEvent: function (args, callback) {
+                let reqData = args;
+                // приводим к более красивому виду для валидируемой модели
+                if(args.hasOwnProperty('BodyRequestType') && 
+                        args.BodyRequestType.hasOwnProperty('params')) {
+                    reqData.BodyRequestType = args.BodyRequestType.params;
+                };
+                const RequestData = new Subscription(reqData);  
+                //server.log('RequestData',JSON.stringify(RequestData,null,4));
+                const err = RequestData.validateSync();
+                if (err) {
+                    const keys = Object.keys(err.errors);
+                    if (keys.length > 0) {
+                        const message = err.errors[keys[0]].message;
+                        throw {
+                            Fault: {
+                                Code: 500,
+                                Reason: { Message: message },
+                            }
+                        };
+                    }
+                }
+                RequestData.save()
+                    .then(function (doc) {
+                        callback({Status: 0, CorrelationId: doc.id, Message: "Сообщение поставлено в очередь."});
+                    })
+                    .catch(function (err) {
+                        const keys = Object.keys(err.errors);
+                        if (keys.length > 0) {
+                            const message = err.errors[keys[0]].message;
+                            //callback({errorCode: -1, errorMessage: message, return: false});
+                            throw {
+                                Fault: {
+                                    Code: -1,
+                                    Reason: { Message: message },
+                                }
+                            };
+                        } else {
+                            //callback({errorCode: -2, errorMessage: "", return: false});
+                            throw {
+                                Fault: {
+                                    Code: -2,
+                                    Reason: { Message: "" },
+                                }
+                            };
+                        }
+                    });
+            }
+        }
+    }
+};
+
+server.log = (type, data) => console.log(type, data);
+
+soap.listen(server, {
+    path: '/'+config.soap_service.entry_point,
+    services,
+    xml,
+});
+@]

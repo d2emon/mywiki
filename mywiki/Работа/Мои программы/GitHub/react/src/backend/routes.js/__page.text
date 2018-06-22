@@ -1,0 +1,26 @@
+[@
+const express = require('express');
+import config from "./config/handlers.config";
+import {loadHandler} from "./handlers/endpoints";
+
+let routerApi = [];
+if (config.handlers.length) {
+    config.handlers.map((item) => {
+        Object.keys(item).map((v) => {
+            routerApi[v] = express.Router();
+            item[v].map((itm) => {
+                //console.log(itm.handler, v);
+                try{
+                    routerApi[v].use("/", express.Router().all(itm.api, loadHandler(itm.handler, v)));
+                } catch (e){
+                    console.log('ERROR: with handler '+itm.handler,'version=',v, 'err=',e.message);
+                }
+            });
+        });
+    });
+}
+
+export {
+    routerApi
+};
+@]

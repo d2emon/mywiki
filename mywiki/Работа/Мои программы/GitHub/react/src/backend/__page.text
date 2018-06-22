@@ -12,9 +12,9 @@ jobs
 	jobs.js
 middleware
 routes
-	routes.js
+routes.js
 	run_job.sh
-	server.js
+server.js
 services
-	soap_service.js
+soap_service.js
 wsdl

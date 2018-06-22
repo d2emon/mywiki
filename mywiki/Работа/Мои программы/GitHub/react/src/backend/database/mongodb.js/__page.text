@@ -1,0 +1,15 @@
+[@
+import cfg from "../helpers/Cfg";
+
+const Constants = cfg.load('index');
+
+var mongoose = require('mongoose');
+mongoose.Promise = global.Promise;
+mongoose.connect(Constants.mongo.uri);
+mongoose.connection.on('connected', function(){
+    console.log("==> Mongodb connected");
+});
+mongoose.connection.on('error', (err) => {
+    throw err;
+});
+@]

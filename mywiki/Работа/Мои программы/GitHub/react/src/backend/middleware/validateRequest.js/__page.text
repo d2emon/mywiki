@@ -1,0 +1,100 @@
+[@
+import {loadHandler} from "../handlers/endpoints";
+import config from "../config";
+import {Cache, CACHE_TOKEN} from "../database/redis";
+import {logger} from "./../helpers/Graylog";
+
+const Validator = (req, res, next) => {
+    
+    // исключительно для тестового обработчика, которого даже в гите нет
+    // он под игнором
+    // тут подробности http://telegra.ph/Server-hehndlery-dlya-testirovaniya-12-08
+    if(req.path.endsWith('/dev-test/')){
+        return next();
+    }
+    
+    let token = (req.body && req.body.access_token)
+        || (req.query && req.query.access_token)
+        || req.headers['x-access-token'];
+
+    let key = (req.body && req.body.x_key)
+        || (req.query && req.query.x_key)
+        || req.headers['x-key'];
+
+    let sso = (req.body && req.body.sso)
+        || (req.query && req.query.sso)
+        || req.headers[config.backend.server.cors.user_header];
+
+    if (req.path === '/' + config.webapi.api_route + '/' + config.webapi.version + '/auth/login') {
+        return loadHandler("loginHandler", config.webapi.version)(req, res, next);
+    }
+
+    function error400(token) {
+        logger.error("Токен перестал быть валидным", {token});
+        res.status(400);
+        res.json({
+            "status": 400,
+            "message": "Токен перестал быть валидным"
+        });
+
+    }
+
+    function error403(url) {
+        logger.error("Not Authorized", {url});
+        res.status(403);
+        res.json({
+            "status": 403,
+            "message": "Not Authorized"
+        });
+    }
+
+    if (token) {
+        try {
+
+            // let decoded = jwt.decode(token, config.jwt.secret);
+            // if (decoded.exp <= Date.now()) {
+            //     Cache.client.del(CACHE_TOKEN + token);
+            //     return error400();
+            // }
+
+            Cache.client.get(CACHE_TOKEN + token, (err, replay) => {
+                if (err !== null || replay === null) {
+                    return error400(CACHE_TOKEN + token);
+                } else {
+                    if (req.url.indexOf('/' + config.webapi.api_route + '/' + config.webapi.version + '/') >= 0) {
+                        next();
+                    } else {
+                        return error403('/' + config.webapi.api_route + '/' + config.webapi.version + '/');
+                    }
+                }
+            });
+
+        } catch (err) {
+            logger.error("Некорректный токен", {error: err.message});
+            res.status(500);
+            res.json({
+                "status": 500,
+                "message": "Некорректный токен",
+                "error": err
+            });
+        }
+    } else {
+        logger.error("Некорректный токен или ключ", {token});
+        res.status(401);
+        res.json({
+            "status": 401,
+            "message": "Некорректный токен или ключ",
+            "token": token
+        });
+        return;
+    }
+};
+
+/**
+ *
+ * @param req
+ * @param res
+ * @param next
+ */
+export default Validator;
+@]
