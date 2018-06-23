@@ -1,0 +1,25 @@
+!! service:
+
+* image: {{BASE-IMAGE-DEV}}
+* volumes:
+** ./src:/usr/src/app/src:rw
+** ./logs:/usr/src/app/logs:rw
+** ./.babelrc:/usr/src/app/.babelrc:rw
+* ports:
+** 9393:9393
+* command:
+[> @@
+nodemon src/backend/soap_service.js --watch src/ --exec ./node_modules/.bin/babel-node >> logs/service.log 2>&1
+@@ <]
+
+----
+
+/usr/src/app
+
+* [[../../src|src]]
+* [[../../logs|logs]]
+* [[../../_babelrc|.babelrc]]
+
+----
+
+nodemon [[../../src/backend/soap_service.js|src/backend/soap_service.js]] --watch [[../../src|src/]]  --exec ./node_modules/.bin/babel-node >>  [[../../logs/service.log|logs/service.log]] 2>&1

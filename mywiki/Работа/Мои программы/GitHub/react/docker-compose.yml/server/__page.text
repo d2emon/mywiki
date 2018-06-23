@@ -1,0 +1,28 @@
+!! server:
+
+* image: {{BASE-IMAGE-DEV}}
+* volumes:
+** ./dist:/usr/src/app/dist:rw
+** ./src:/usr/src/app/src:rw
+** ./logs:/usr/src/app/logs:rw
+** ./.babelrc:/usr/src/app/.babelrc:rw
+* ports:
+** 9091:9091
+* command: 
+[> @@
+./node_modules/.bin/babel-watch --watch src/backend/ --use-polling src/backend/server.js >> logs/server.log 2>&1
+#   command: nodemon src/backend/server.js --watch src/ --exec ./node_modules/.bin/babel-node >> logs/server.log
+@@ <]
+
+----
+
+/usr/src/app
+
+* [[../../dist|dist]]
+* [[../../src|src]]
+* [[../../logs|logs]]
+* [[../../_babelrc|.babelrc]]
+
+----
+
+./node_modules/.bin/babel-watch --watch [[../../src/backend|src/backend]] --use-polling [[../../src/backend/server.js|src/backend/server.js]] >> [[../../logs/server.log|logs/server.log]] 2>&1

@@ -1,0 +1,23 @@
+!! jobs:
+
+* image: {{BASE-IMAGE-DEV}}
+* volumes:
+** ./src:/usr/src/app/src:rw
+** ./logs:/usr/src/app/logs:rw
+** ./.babelrc:/usr/src/app/.babelrc:rw
+* command: 
+[> @@
+nodemon src/backend/jobs.js --watch src/ --exec ./node_modules/.bin/babel-node >> logs/jobs.log 2>&1
+@@ <]
+
+----
+
+/usr/src/app
+
+* [[../../src|src]]
+* [[../../logs|logs]]
+* [[../../_babelrc|.babelrc]]
+
+----
+
+nodemon [[../../src/backend/jobs.js|src/backend/jobs.js]] --watch [[../../src|src/]]  --exec ./node_modules/.bin/babel-node >>  [[../../logs/jobs.log|logs/jobs.log]] 2>&1

@@ -1,0 +1,24 @@
+!! webpack:
+
+* image: {{BASE-IMAGE-DEV}}
+* restart: always
+* volumes:
+** ./src:/usr/src/app/src:rw
+** ./dist:/usr/src/app/dist:rw
+** ./webpack.config.js:/usr/src/app/webpack.config.js:rw
+** ./.babelrc:/usr/src/app/.babelrc:rw
+** ./postcss.config.js:/usr/src/app/postcss.config.js:rw
+* command: 
+[> @@
+npm run build-dev
+@@ <]
+
+----
+
+/usr/src/app
+
+* [[../../src|src]]
+* [[../../dist|dist]]
+* [[../../webpack.config.js|webpack.config.js]]
+* [[../../_babelrc|.babelrc]]
+* [[../../postcss.config.js|postcss.config.js]]

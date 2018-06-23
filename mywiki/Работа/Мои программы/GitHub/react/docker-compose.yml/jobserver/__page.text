@@ -1,0 +1,28 @@
+!! jobserver:
+
+* image: {{BASE-IMAGE-DEV}}
+* volumes:
+** ./dist:/usr/src/app/dist:rw
+** ./src:/usr/src/app/src:rw
+** ./logs:/usr/src/app/logs:rw
+** ./.babelrc:/usr/src/app/.babelrc:rw
+** ./.cron:/var/spool/cron/crontabs/root:rw
+* # infinite life
+* command:
+[> @@
+/usr/sbin/crond -f -L /usr/src/app/logs/cron.log
+@@ <]
+
+----
+
+/usr/src/app
+
+* [[../../dist|dist]]
+* [[../../src|src]]
+* [[../../logs|logs]]
+* [[../../_babelrc|.babelrc]]
+* [[../../_cron.sample|/var/spool/cron/crontabs/root]]
+
+----
+
+/usr/sbin/crond -f -L [[../../logs/cron.log|/usr/src/app/logs/cron.log]]

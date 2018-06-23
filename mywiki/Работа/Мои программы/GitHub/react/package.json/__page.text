@@ -1,3 +1,20 @@
+* "flow": "flow",
+* "flow:check": "flow check ./src/",
+* "clean": "rm -rf ./dist",
+* "build-dev": "cross-env NODE_ENV=development webpack --config [[../webpack.config.js|webpack.config.js]] --progress --profile --colors --watch --watch-poll",
+* "build": "cross-env NODE_ENV=production webpack --config [[../webpack.production.js|webpack.production.js]] --progress --profile --colors",
+* "start_server_frontend": "cross-env NODE_ENV=development pm2 start --watch --interpreter babel-node [[../src/frontend/server.js|src/frontend/server.js]] --name frontend",
+* "start_server_backend": "cross-env NODE_ENV=development pm2 start --watch --interpreter babel-node [[../src/backend/server.js|src/backend/server.js]] --name backend",
+* "start_all": "npm run start_server_frontend && npm run start_server_backend",
+* "ws": "cross-env NODE_ENV=production babel-node [[../src/backend/soap_service.js|src/backend/soap_service.js]]",
+* "kill_all": "pm2 kill",
+* "stop_all": "pm2 stop frontend && pm2 stop backend",
+* "restart_all": "pm2 restart frontend && pm2 restart backend",
+* "list": "pm2 list",
+* "soap-dev": "cross-env NODE_ENV=development pm2 start --watch --interpreter babel-node [[../src/backend/soap_service.js|src/backend/soap_service.js]] --name soap"
+
+----
+
 [@
 {
   "name": "lk",

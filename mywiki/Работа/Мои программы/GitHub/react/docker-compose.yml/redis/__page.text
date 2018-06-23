@@ -1,0 +1,6 @@
+!! redis:
+* image: redis:alpine
+* volumes:
+** ./Redis/data:/data
+* ports:
+** '6379:6379'
