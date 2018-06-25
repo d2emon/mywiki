@@ -1,0 +1,58 @@
+[@
+/**
+ * логин коде
+ *
+ function gc(name) {
+        var matches = document.cookie.match(new RegExp(
+            "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+        ));
+        return matches ? decodeURIComponent(matches[1]) : undefined;
+    }
+ if(gc("sudirtokenexp")) document.getElementById("loginForm").submit();
+ else document.getElementById("formDisplay").style.display = "block";
+
+ */
+import cfg from "../backend/helpers/Cfg";
+const config = cfg.load('index');
+/**
+ * Запуск серверной части для фронта
+ */
+const path = require('path');
+const express = require('express');
+const app = express();
+const morgan = require('morgan');
+//const passport = require('passport');
+const session = require('express-session');
+const RedisStore = require('connect-redis')(session);
+const cookieParser = require('cookie-parser');
+const bodyParser = require('body-parser');
+
+
+const port = process.env.PORT ? process.env.PORT : config.frontend.server.default_port;
+const dist = path.join(__dirname, '/../../dist');
+
+//require('./passport.js')(passport);
+
+import {Cache, CACHE_TOKEN} from "../backend/database/redis";
+
+let sess = {
+    store: new RedisStore({client: Cache.getClient(), prefix:'nelk.session'}),
+    secret: 'ilovescotchscotchyscotchscotch',
+    saveUninitialized: false,
+    resave: false,
+    cookie: { },
+};
+app.use(session(sess));
+app.use(cookieParser());
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: true, parameterLimit: 1000000}));
+
+require('./routes.js')(app, null);
+
+app.listen(port, (error) => {
+    if (error) {
+        console.log(error);
+    }
+    console.info('==> Application Сервер запущен на порту %s.', port);
+});
+@]

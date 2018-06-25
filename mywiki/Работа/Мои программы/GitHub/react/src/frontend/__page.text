@@ -9,15 +9,15 @@ config
 css
 form
 Helpers
-	img
+img
 	login.html
 middleware
 modals
 models
-	passport.js
+passport.js
 reducers
-	routes.js
-	server.js
+routes.js
+server.js
 	start.html
 templates
 	tutorial.html

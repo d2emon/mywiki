@@ -1,0 +1,28 @@
+[@
+const LocalStrategy = require('passport-local').Strategy;
+// import config from "../backend/config/index";
+// import {Cache, CACHE_TOKEN} from "../backend/database/redis";
+
+/**
+�������
+*/
+module.exports = function (passport) {
+    passport.serializeUser(function(token, done) {
+        done(null, token);
+    });
+
+    passport.deserializeUser(function(id, done) {
+        done(null, {token:id});
+    });
+
+    passport.use('local-login', new LocalStrategy({
+            usernameField: 'email',
+            passwordField: 'password',
+            passReqToCallback: true
+        },
+        function (req, email, password, done) {
+            return done(null, {token: 1, expires:1});
+        }
+    ));
+};
+@]

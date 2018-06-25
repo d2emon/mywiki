@@ -1,0 +1,498 @@
+[@
+import HttpRequest from "../backend/helpers/HttpRequest";
+import Config from "../backend/config/index";
+import ConfigApp from "../backend/config/application_config";
+
+const path = require('path');
+const express = require('express');
+const dist = path.join(__dirname, '/../../dist');
+const axios = require('axios');
+const querystring = require('querystring');
+
+
+import {Cache, CACHE_TOKEN} from "../backend/database/redis";
+import {generateGUID} from "../backend/helpers/Promises";
+import { loginHandlerLocal } from "../backend/handlers/endpoints/v1/loginHandler";
+import { getApiHttpHost } from "../backend/handlers/endpoints";
+import { setCookie } from "../backend/helpers/RouteHelper";
+
+module.exports = function (app, passport) {
+
+    app.use(express.static(dist));
+
+    /**
+     * Проверим тип авторизации
+     */
+    if (Config.frontend.auth_type === "oauth") {
+        /**
+         * Авторизация OAuth
+         */
+        app.get("/oauth", function (req, res, next) {
+            //if(req.hasOwnProperty('session')){ req.session = null; }
+            const guidLast = generateGUID();
+            let request = new HttpRequest({});
+            let code = (req.body && req.body.code) || (req.query && req.query.code);
+            if (!code) {
+                console.log("Error code: ", code);
+                return next("code not found");
+            }
+            /**
+             * Билдим реквест в oauth
+             */
+            request.setPost({
+                grant_type: "authorization_code",
+                code,
+                client_id: Config.services.oauth.client_id,
+                client_secret: Config.services.oauth.client_secret,
+                redirect_uri: Config.services.oauth.redirectUrl,
+            });
+
+            console.log(`${new Date()} [${guidLast}] Судир прислал code: ${code}`);
+            console.log(`${new Date()} [${guidLast}] Идем на к Судир с по урл: ${Config.services.oauth.tokenUrl}`);
+            console.log(`${new Date()} [${guidLast}] Параметры передаваемые судиру: ${querystring.stringify(request.getPost())}`);
+
+            let resp = axios.post(
+                Config.services.oauth.tokenUrl,
+                querystring.stringify(request.getPost()),
+            );
+            resp.then(response => {
+                const API_ROOT = getApiHttpHost(req);//ConfigApp.webapi.backend + Config.makeSlashes(Config.webapi.api_route, Config.webapi.version);
+                response.data.oauth_token = req.cookies[Config.services.oauth.tokenName];
+                response.data.guidLast = guidLast;
+
+                console.log(`${new Date()} [${guidLast}] Получили ответ от судира: ${querystring.stringify(response.data)}`);
+                console.log(`${new Date()} [${guidLast}] Идем к нашему бэкенду за продолжением: ${API_ROOT + "auth/login"}`);
+                console.log(`${new Date()} [${guidLast}] Передали бэкенду параметры: ${querystring.stringify(response.data)}`);
+
+                resp = axios.post(
+                    API_ROOT + "auth/login",
+                    querystring.stringify(response.data),
+                );
+                /**
+                 * Авторизовали пользователя на webapi
+                 */
+                resp.then(response => {
+                    if (response.data) {
+                        console.log(`${new Date()} [${guidLast}] Получили ответ от бэкенда: ${querystring.stringify(response.data)}`);
+                        const tempToken = {
+                            token: response.data.token,
+                            expires: response.data.expires,
+                            oauth_token: response.data.oauth_token,
+                            sso: response.data.sso
+                        };
+
+                        // авторизуем на фронте
+                        // req.logIn(tempToken, function (err) {
+                        //     if (err) {
+                        //         console.log("AUTHORIZATION ON FRONTEND ERROR:", err);
+                        //         return next(err);
+                        //     }
+                            if (tempToken.oauth_token !== req.cookies[Config.services.oauth.tokenName]) {
+                                console.log("TOKENS ERROR:", tempToken.oauth_token, req.cookies[Config.services.oauth.tokenName]);
+                                return next();
+                            }
+                            req.session.uniqueID = req.cookies[Config.services.oauth.tokenName];
+                            console.log(`${new Date()} [${guidLast}] Создали уникальную сессию для пользователя: ${req.session.uniqueID}`);
+                            res.cookie("token", tempToken.token, {maxAge: tempToken.expires});
+                            console.log(`${new Date()} [${guidLast}] Сохранили в куки пользователю наш токен: ${req.session.uniqueID}`);
+                            res.cookie("PHPSESSID", tempToken.token, {maxAge: tempToken.expires});
+                            console.log(`${new Date()} [${guidLast}] Сохранили в куки пользователю PHPSESSID: ${tempToken.token}`);
+                            console.log(`${new Date()} [${guidLast}] Переходим на страницу личного кабинета. Done.`);
+
+                            console.log("Cookies redirect:", req.cookies["nlkredirect"]);
+                            if (req.cookies["nlkredirect"]) {
+                                let redirect = req.cookies["nlkredirect"].replace("login","");                                
+                                res.cookie("nlkredirect", "");                                
+                                return res.redirect(redirect);
+                            } 
+                            return res.redirect('/my/');
+                        //});
+                    }
+                }).catch(error => {
+                    console.log(`${new Date()} [${guidLast}] Ответ от бэкенда был с ошибкой: ${error.message}`);
+                    res.json({error: error.message});
+                });
+            }).catch(error => {
+                console.log(`${new Date()} [${guidLast}] Ответ от судира был с ошибкой: ${error.message}`);
+                res.json({error: error.message});
+            });
+        });
+
+        /**
+         * Смотрим на авто-авторизацию
+         */
+        app.get('/login', function (req, res, next) {
+            /**
+             * был ли залогинен ранее
+             */
+            if (isLoggedInEXT(req, res, next)) {
+                let request = new HttpRequest({});
+                request.setPost({
+                    client_id: Config.services.oauth.client_id,
+                    response_type: "code",
+                    redirect_uri: Config.services.oauth.redirectUrl,
+                });
+                return res.redirect(Config.services.oauth.loginUrl + "?" + request.http_build_query(request.getPost()));
+            } else {
+                res.sendFile(path.join(dist, 'login.html'));
+            }
+        });
+
+        app.get('/mes/payment', isLoggedIn, function (req, res, next) {
+            let requestMap = {};
+            let reqst = (req.body && req.body.items) || (req.query && req.query.items);
+            let tokenA = (req.body && req.body.access_token)
+                || (req.query && req.query.access_token)
+                || req.headers['x-access-token'];
+
+            [reqst].map((item) => {
+                if (item.hasOwnProperty("code")) {
+                    requestMap.code = item.code;
+                }
+                if (item.hasOwnProperty("nn_schetch")) {
+                    requestMap.nn_schetch = item.nn_schetch;
+                }
+                if (item.hasOwnProperty("payment_code")) {
+                    requestMap.payment_code = item.payment_code;
+                }
+                if (item.hasOwnProperty("amount")) {
+                    requestMap.amount = item.amount;
+                }
+                if (item.hasOwnProperty("payment_year")) {
+                    requestMap.payment_year = item.payment_year;
+                }
+                if (item.hasOwnProperty("payment_month")) {
+                    requestMap.payment_month = item.payment_month;
+                }
+                requestMap.type = "ROUTE_TYPE_ADD_PAYMENT";
+                requestMap.access_token = tokenA;
+            });
+
+            const API_ROOT = getApiHttpHost(req);//ConfigApp.webapi.backend + Config.makeSlashes(Config.webapi.api_route, Config.webapi.version);
+            console.log("MOSENERGO Request send:",  API_ROOT + "mosenergo" + "?" + querystring.stringify(requestMap));
+            const resp = axios.get(
+                API_ROOT + "mosenergo" + "?" + querystring.stringify(requestMap), {
+                    headers: {"Cookie": req.headers.cookie}
+                }
+            );
+            resp.then(response => {
+                console.log("MOSENERGO Response recv");
+                console.log("MOSENERGO RESPONSE: ", response)
+                if (response.data && response.data.hasOwnProperty("status_code") && response.data.status_code === 0) {
+                    res.redirect(response.data.status_data);
+                } else {
+                    console.log("MOSENERGO ?ERROR: ", response)
+                    res.redirect('/');
+                }
+            }).catch(error => {
+                console.log("MOSENERGO ERROR: ", error)
+                res.redirect('/');
+            });
+        });
+
+        app.get('/logout', function (req, res) {
+            if (req.cookies && req.cookies.token) {
+                res.cookie("token", "");
+                res.cookie("nlksessionexp", "");
+            }
+            req.logout();
+            res.redirect('/');
+        });
+        app.get('/my/*', isLoggedIn, function (req, res) {
+            res.sendFile(path.join(dist, 'start.html'));
+        });
+
+    } else {
+
+        app.post('/login', function (req, res, next) {
+
+            let response = loginHandlerLocal(req, res, next);
+            if (response) {
+                const tempToken = {
+                    token: response.token,
+                    expires: response.expires,
+                    oauth_token: response.oauth_token,
+                    sso: response.sso,
+                };
+
+                if (!req.session) {
+                    res.cookie("token", "");
+                    res.cookie("nlksessionexp", "");
+                    return res.redirect('/');
+                }
+                req.session.uniqueID = tempToken.sso;
+                req.session.token = tempToken.token;
+
+                res.cookie("token", tempToken.token, {maxAge: tempToken.expires});
+                res.cookie("PHPSESSID", tempToken.token, {maxAge: tempToken.expires});
+                if (req.cookies["nlkredirect"]) {
+                    let redirect = req.cookies["nlkredirect"].replace("login#","#");                                
+                    res.cookie("nlkredirect", "");                                
+                    return res.redirect(redirect);
+                } 
+                return res.redirect('/my/');
+            } else {
+                res.cookie("token", "");
+                res.cookie("nlksessionexp", "");
+                res.redirect('/');
+            }
+            /*         
+            const API_ROOT = ConfigApp.webapi.backend + Config.makeSlashes(Config.webapi.api_route, Config.webapi.version);
+            const resp = axios.post(
+                API_ROOT + "auth/login",
+                querystring.stringify({}),{headers:{"iv-user": req.headers[Config.backend.server.cors.user_header]}}
+            );
+            resp.then(response => {
+                if (response.data) {
+                    const tempToken = {
+                        token: response.data.token,
+                        expires: response.data.expires,
+                        oauth_token: response.data.oauth_token,
+                        sso: response.data.sso,
+                    };
+                        res.cookie("token", tempToken.token, {maxAge: tempToken.expires});
+                        res.cookie("PHPSESSID", tempToken.token, {maxAge: tempToken.expires});
+                        req.session.uniqueID = tempToken.sso;
+                        return res.redirect('/my/');
+                }
+            }).catch(error => {
+                res.redirect('/');
+            });
+            */
+        });
+
+        app.get('/login', function (req, res, next) {
+            if (isLoggedInEXTHeader(req, res, next)) {
+                return res.redirect('/my/');
+            } else {
+                res.sendFile(path.join(dist, 'login.html'));
+            }
+        });
+
+        app.get('/mes/payment', isLoggedInHeader, function (req, res, next) {
+            let requestMap = {};
+            let reqst = (req.body && req.body.items) || (req.query && req.query.items);
+            let tokenA = (req.body && req.body.access_token)
+                || (req.query && req.query.access_token)
+                || req.headers['x-access-token'];
+
+            [reqst].map((item) => {
+                if (item.hasOwnProperty("code")) {
+                    requestMap.code = item.code;
+                }
+                if (item.hasOwnProperty("nn_schetch")) {
+                    requestMap.nn_schetch = item.nn_schetch;
+                }
+                if (item.hasOwnProperty("payment_code")) {
+                    requestMap.payment_code = item.payment_code;
+                }
+                if (item.hasOwnProperty("amount")) {
+                    requestMap.amount = item.amount;
+                }
+                if (item.hasOwnProperty("payment_year")) {
+                    requestMap.payment_year = item.payment_year;
+                }
+                if (item.hasOwnProperty("payment_month")) {
+                    requestMap.payment_month = item.payment_month;
+                }
+                requestMap.type = "ROUTE_TYPE_ADD_PAYMENT";
+                requestMap.access_token = tokenA;
+            });
+
+            const API_ROOT = getApiHttpHost(req);//ConfigApp.webapi.backend + Config.makeSlashes(Config.webapi.api_route, Config.webapi.version);
+            console.log("Cookies:", req.headers.cookie);    
+
+            const resp = axios.get(
+                API_ROOT + "mosenergo" + "?" + querystring.stringify(requestMap), {
+                    headers: {"Cookie": req.headers.cookie}
+                }
+            );
+            resp.then(response => {                
+                if (response.data && response.data.hasOwnProperty("status_code") && response.data.status_code === 0) {
+                    res.redirect(response.data.status_data);
+                } else {
+                    res.redirect('/');
+                }
+            }).catch(error => {
+                res.redirect('/');
+            });
+        });
+
+
+        app.get('/logout', function (req, res) {
+            if (req.cookies && req.cookies.token) {
+                res.cookie("token", "");
+                res.cookie("nlksessionexp", "");
+            }
+            //req.logout();
+            res.redirect('/');
+        });
+        
+        app.get('/my/*', isLoggedInHeader, function (req, res) {
+            res.sendFile(path.join(dist, 'start.html'));
+        });
+
+    }
+
+    app.get('/change-password', function (req, res) {
+        // res.status(301).redirect(Config.services.oauth.changePasswordUrl + Config.services.oauth.client_id);
+        res.status(301).redirect(Config.services.oauth.changePasswordUrl);
+    });
+
+    /**
+     * Tutorial
+     */
+    app.get('/tutorial', function (req, res, next) {
+        res.sendFile(path.join(dist, 'tutorial.html'));
+    });
+
+    app.get('*', isIndexLogin, function (req, res) {
+        //res.sendFile(path.join(dist, 'login.html'));
+        res.redirect('/login');
+    });
+};
+
+function isIndexLogin (req, res, next) {
+    let logout = false;
+    let isHeader = "";
+    if (Config.frontend.auth_type === "oauth") isHeader = req.cookies[Config.services.oauth.tokenName];
+    else isHeader = req.headers[Config.backend.server.cors.user_header];
+    if (req && req.session){
+        if (!req.session.hasOwnProperty("uniqueID") || !req.session.uniqueID) { logout = true;}
+        if (req.session.hasOwnProperty("uniqueID")
+            && req.session.uniqueID
+            && req.session.uniqueID !== isHeader
+        ) { logout = true;}
+        if (!logout) {
+            return res.redirect('/my/');
+        }
+    }
+    return next();
+}
+
+/**
+ * Проверим, залогинен ли пользователь
+ * @param req
+ * @param res
+ * @param next
+ */
+function isLoggedIn(req, res, next) {
+    let logout = false;
+    if (req && req.session){
+        if (!req.session.hasOwnProperty("uniqueID") || !req.session.uniqueID) { logout = true;}
+        if (req.session.hasOwnProperty("uniqueID")
+            && req.session.uniqueID
+            && req.session.uniqueID !== req.cookies[Config.services.oauth.tokenName]
+        ) { logout = true; }
+        if (logout) {
+            if (req.cookies && req.cookies.token) {
+                res.cookie("token", "");
+                res.cookie("nlksessionexp", "");
+            }
+            req.session = null;
+            //req.logout();
+            return res.redirect('/');
+        }
+    }
+
+    return next();
+
+    // if (req.isAuthenticated() && req.cookies && (req.cookies.token && req.cookies[Config.services.oauth.tokenName])) {
+    //     if (req.session && req.session.passport
+    //         && req.session.passport.hasOwnProperty("user")
+    //         && req.cookies[Config.services.oauth.tokenName] !== req.session.passport.user.oauth_token) {
+    //         return res.redirect('/logout');
+    //     }
+    //     Cache.get(CACHE_TOKEN + req.cookies.token, function (done) {
+    //         return next();
+    //     }, function (error) {
+    //         res.redirect('/login');
+    //     });
+    //     return;
+    // }
+}
+
+function isLoggedInHeader(req, res, next) {
+    let logout = false;
+    if (req && req.session){
+        if (!req.session.hasOwnProperty("uniqueID") || !req.session.uniqueID) { logout = true;}
+        if ((req.session.hasOwnProperty("uniqueID")
+            && req.session.uniqueID
+            && req.session.uniqueID !== req.headers[Config.backend.server.cors.user_header])
+            || (!req.session.hasOwnProperty('token') || req.session.token != req.cookies.token)
+        ) { logout = true; }
+        if (!req.session.hasOwnProperty('token') || req.session.token != req.cookies.token) { logout = true; console.log("Пользователь что-то поменял. Разлогируем его.")}            
+    } else {
+        if (req && !req.session) { logout = true;}
+    }
+
+    if (logout) {
+        if (req.cookies && req.cookies.token) {
+            res.cookie("token", "");
+            res.cookie("nlksessionexp", "");
+        }
+        req.session = null;
+        //req.logout();
+        return res.redirect('/');
+    }
+
+    return next();
+    // if (req.isAuthenticated() && req.cookies && req.cookies.token) {
+    //     Cache.get(CACHE_TOKEN + req.cookies.token, function (done) {
+    //         return next();
+    //     }, function (error) {
+    //         res.redirect('/login');
+    //     });
+    //     return;
+    // }
+    // res.redirect('/login');
+}
+
+function isLoggedInEXT(req, res, next) {
+    let logout = false;
+    if (req && req.session){
+        if (req.session.hasOwnProperty("uniqueID")
+            && req.session.uniqueID
+            && req.session.uniqueID !== req.cookies[Config.services.oauth.tokenName]
+        ) { logout = true; }
+
+        if (!req.session.hasOwnProperty("uniqueID") && req.cookies[Config.services.oauth.tokenName]) {
+            logout = true;
+        }
+    }
+    if (logout) {
+        if (req.cookies && req.cookies.token) {
+            res.cookie("token", "");
+            res.cookie("nlksessionexp", "");
+        }
+        req.session = null;
+    }
+    return logout;//!!(/*req.isAuthenticated() && */req.cookies && (req.cookies.token && req.cookies[Config.services.oauth.tokenName]));
+}
+
+function isLoggedInEXTHeader(req, res, next) {
+    let logout = false;
+    if (req && req.session){
+        if (req.session.hasOwnProperty("uniqueID")
+            && req.session.uniqueID
+            && req.session.uniqueID !== req.headers[Config.backend.server.cors.user_header]
+        ){ logout = true; }
+        
+        if (!req.session.hasOwnProperty("uniqueID") && req.headers[Config.backend.server.cors.user_header]) {
+            logout = true;
+        }
+    }
+    if (req && !req.session) { logout = true;}
+    if (logout) {
+        if (req.cookies && req.cookies.token) {
+            res.cookie("token", "");
+            res.cookie("nlksessionexp", "");
+        }
+        //req.logout();
+        //return res.redirect('/');
+    }
+    return (/*req.isAuthenticated() &&*/ req.cookies && req.cookies.token);
+}
+
+//function getElkCache
+@]
