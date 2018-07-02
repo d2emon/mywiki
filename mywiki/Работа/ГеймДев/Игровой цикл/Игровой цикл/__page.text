@@ -1,0 +1,569 @@
+!! Игровой цикл
+
+Очень важно, какой тип игры вы создаете. Если игра динамическая, нам нужно всё время обновлять картинку на устройстве. Это значит, что сначала нужно создать её, применив новые координаты объектов, а затем вывести на экран. Наше зрение устроено так, что если мы будем делать это меньше, чем за 0,04 с, то нам будет казаться движение объектов непрерывным. Но объекты могут быть разными по сложности прорисовки, а устройства, на которых вы играете – разными по быстродействию.
+
+Может так случиться, что на одних планшетах или мобильниках наше приложение будет «летать», так что пользователь не будет даже успевать играть, а на других – будет тормозить так, что пользователь, скорей всего, удалит её со своего устройства. Возникает мысль, проходить один игровой цикл за 0,04 с (25 кадров (циклов) в секунду) на всех устройствах. Всё было бы хорошо, если бы все устройства могли это сделать. Представьте, что у вас 10 динамических объектов в игре, которые взаимодействуют между собой, порождая новые объекты, например, взрыв при столкновении. Также надо не забыть воспроизводить звуки и реагировать на включения пользователя в игру. Я уже не говорю о реалистичной графике окружающего мира.
+
+Что же делать, если наше устройство не успевает в какой-то сцене создать игровой цикл? Решений несколько, ниже рассмотрено одно из них.
+
+!!! Создаем игровой цикл
+
+Основная идея заключается в том что, если реальное время прорисовки кадра больше, чем расчетное время обновления кадров (то есть система не успевает), мы жертвуем этим кадром и увеличиваем время на прорисовку следующего кадра. Если система сразу успевает прорисовывать кадр, то она будет делать это максимально быстро, но поток будет приостанавливается на время опережения, чтобы количество кадров, а точнее скорость выполнения программы, было заданным, и не зависела от быстродействия самого устройства.
+
+Такой подход позволяет снизить энергозатраты устройства и воспроизводить игру примерно одинаково на разных устройствах. На частоте обновления 25 кадров в секунду, я замечал неприятные подергивания объектов на телефоне с андроид 2.2.1 (особенно, если они перемещаются быстро), а вот при 30 кадров в секунду всё было хорошо. При 50 кадров в секунду на планшете с андроид 4.2.2 всё работало прекрасно, а вот на телефоне были иногда были заметны пропуски кадров, особенно при большой скорости объекта.
+
+Рассмотрим более подробно наш код.
+
+Создаем класс MainThread, который наследуется от класса Thread. В дальнейшем мы будем вызывать его в игровом классе GameView.
+
+[@
+public class MainThread extends Thread { 
+@]
+
+[@
+public class MainThread extends Thread {
+@]
+
+Задаемся количеством кадров в секунду (MAX_FPS) равным 30.
+
+[@
+private final static int MAX_FPS = 30; // desired fps
+@]
+
+Пусть максимальное количество кадров в секунду, которым мы готовы пожертвовать (пропустить) при отображении равно 4. Это число фактически найдено мною экспериментально, вы можете поиграться с этими числами.
+
+[@
+// maximum number of frames to be skipped
+
+private final static int MAX_FRAME_SKIPS = 4;
+@]
+
+Рассчитаем в миллисекундах продолжительность отображения кадра.
+
+[@
+private final static int FRAME_PERIOD = 1000 / MAX_FPS;  // the frame period
+@]
+
+Объявляем метод, который создает поверхность, на которой будут прорисовываться объекты.
+
+[@
+private SurfaceHolder surfaceHolder; // Surface holder that can access the physical surface
+@]
+
+Объявляем класс, который будет рисовать объекты и обновлять их координаты.
+
+[@
+private GameView gameView;// The actual view that handles inputs and draws to the surface
+@]
+
+Объявляем переменную состояния игры, если она равна true, то поток проигрывается.
+
+[@
+private boolean running;   // flag to hold game state 
+ 
+public void setRunning(boolean running) {
+    this.running = running;
+}
+@]
+
+Создаем конструктор класса.
+
+[@
+public MainThread(SurfaceHolder surfaceHolder, GameView gameView) {
+    super();
+    this.surfaceHolder = surfaceHolder;
+    this.gameView = gameView;
+}
+
+@ Override
+public void run() {
+    Canvas canvas;</code>
+    long beginTime;  // the time when the cycle begun
+    long timeDiff;  // the time it took for the cycle to execute
+    int sleepTime;// ms to sleep (<0 if we're behind)
+    int framesSkipped;</font>// number of frames being skipped
+
+    sleepTime = 0;
+    while (running) {
+        canvas = null; // try locking the canvas for exclusive pixel editing in the surface
+
+        try {
+            canvas = this.surfaceHolder.lockCanvas();
+            synchronized (surfaceHolder) {
+
+                beginTime = System.currentTimeMillis(); //Returns the current time in milliseconds since January 1, 1970 00:00:00.0 UTC.
+                framesSkipped = 0; // resetting the frames skipped
+
+                // update game state
+                this.gameView.update();
+                // render state to the screen draws the canvas on the panel
+                this.gameView.render(canvas);
+                timeDiff = System.currentTimeMillis() - beginTime;</font> // calculate how long did the cycle take
+
+                // calculate sleep time
+                sleepTime = (int)(FRAME_PERIOD - timeDiff);
+                if (sleepTime > 0) {</font> // if sleepTime > 0 we're OK
+                    try {</font> 
+                        // send the thread to sleep for a short period
+                        // very useful for battery saving
+
+                        Thread.sleep(sleepTime);
+                    } catch (InterruptedException e) {}
+                }
+ 
+                while (sleepTime < 0 && framesSkipped < MAX_FRAME_SKIPS) {
+                    // we need to catch up
+                    this.gameView.update();</font>  // update without rendering
+                    sleepTime += FRAME_PERIOD; // add frame period to check if in next frame
+                    framesSkipped++;
+                }
+            }
+        } finally {
+            // in case of an exception the surface is not left in
+            // an inconsistent state
+            if (canvas != null) {
+                surfaceHolder.unlockCanvasAndPost(canvas);
+            }
+        }  // end finally
+    }
+}
+}
+@]
+
+Теперь рассмотрим подробнее, что делает класс GameView.
+
+[@
+public class GameView extends SurfaceView implements SurfaceHolder.Callback {
+
+    private final Drawable mAsteroid;
+    private int widthAsteroid;
+    private int heightAsteroid;
+    private int leftAsteroid;
+    private int xAsteroid1 = 30;
+    private int rightAsteroid;
+    private int topAsteroid;
+    private int yAsteroid = -30;
+    private int bottomAsteroid;
+    private int centerAsteroid;
+    private int height;
+    private int width;
+    private int speedAsteroid = 5;
+    private int xAsteroid;
+
+    private MainThread thread;
+    public GameView(Context context) {
+        super(context); 
+
+        // adding the callback (this) to the surface holder to intercept events
+        getHolder().addCallback(this);
+
+        // create mAsteroid where adress of picture  asteroid is located
+        mAsteroid = context.getResources().getDrawable(R.drawable.asteroid);
+
+        // create the game loop thread
+        thread = new MainThread(getHolder(), this);
+    }
+@]
+
+Данный метод позволяет менять поверхность прорисовки, например, когда поворачиваем экран.
+
+[@
+@Override
+public void surfaceChanged(SurfaceHolder holder, int format, int width,int height) {
+}
+@]
+
+Метод создающий поверхность для рисования.
+
+[@
+@Override
+public void surfaceCreated(SurfaceHolder holder) {
+    thread.setRunning(true);
+    thread.start();
+}
+@]
+
+Метод удаляет поверхность для рисования в случае остановки потока.
+
+[@
+@Override
+public void surfaceDestroyed(SurfaceHolder holder) {
+    thread.setRunning(false);
+    boolean retry = true;
+    while (retry) {
+        try {
+            thread.join();
+            retry = false;
+        }
+        catch (InterruptedException e) {
+            // try again shutting down the thread
+        }
+    }
+}
+@]
+
+В данном методе мы прорисовываем наши объекты на поверхности экрана.
+
+[@
+public void render(Canvas canvas) {
+@]
+
+Создаем темно-голубой фон.
+
+[@
+canvas.drawColor(Color.argb(255, 2, 19, 151));
+@]
+
+Узнаем высоту и ширину экрана устройства, чтобы потом масштабировать размеры объектов в зависимости от размера экрана.
+
+[@
+height = canvas.getHeight();
+width = canvas.getWidth();
+@]
+
+Задаем основные размеры астероида (ширину и высоту картинки). Левый край привязываем к координате по Х, вершину картинки привязываем к координате по У. Таким образом, мы определили координаты левого верхнего угла картинки. Когда мы будем менять эти координаты, картинка начнет двигаться. Не забудьте положить в папку drawable рисунок астероида в формате png.
+
+[@
+    //Work with asteroid
+    widthAsteroid = 2 * width / 13;//set width asteroid
+    heightAsteroid = widthAsteroid;
+    leftAsteroid = xAsteroid; //the left edge of asteroid
+    rightAsteroid = leftAsteroid + widthAsteroid;//set right edge of asteroid
+    topAsteroid = yAsteroid;
+    bottomAsteroid = topAsteroid + heightAsteroid;
+    centerAsteroid = leftAsteroid + widthAsteroid / 2;
+
+    mAsteroid.setBounds(leftAsteroid, topAsteroid, rightAsteroid, bottomAsteroid);
+    mAsteroid.draw(canvas);
+}
+@]
+
+Обновляем координаты картинки, заставляя её двигаться сверху вниз. Если координата по У левого верхнего угла картинки стала больше, чем высота экрана, то обнуляем У и астероид скачком появляется вверху экрана. Чтобы астероид летел вниз мы каждый игровой цикл прибавляем к координате число speedAsteroid, которое в свою очередь определяем по случайному закону от 5 до 15 (speedAsteroid = 5+ rnd.nextInt(10);).
+
+[@
+public void update() {
+    if (yAsteroid > height) {
+        yAsteroid = 0;
+        // find by random function Asteroid & speed Asteroid
+        Random rnd = new Random();
+        xAsteroid = rnd.nextInt(width - widthAsteroid);
+        speedAsteroid = 5+ rnd.nextInt(10);
+    } else {
+        yAsteroid +=speedAsteroid;
+    }
+}
+}
+@]
+
+Чтобы астероид не вылетал каждый раз с одного и того же места, координату по Х определяем по случайному закону в пределах ширины экрана минус ширина астероида. В момент запуска приложения, астероид вылетает с начальными координатами, которые мы задали при объявлении переменных private int xAsteroid = 30; private int yAsteroid = -30;. В дальнейшем скорость полета и начальная координата меняются по случайному закону.
+
+Файлы приложения на данный момент
+
+AhdroidManifest.xml
+[@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+package="com.adc2017gmail.moonbase" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SecondActivity"
+            android:label="@string/title_activity_second"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+</manifest>
+@]
+
+GameView.java
+[@
+package com.adc2017gmail.moonbase;
+import android.content.Context;
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.drawable.Drawable;
+import android.view.SurfaceHolder;
+import android.view.SurfaceView;
+import java.util.Random;
+
+public class GameView extends SurfaceView implements SurfaceHolder.Callback {
+
+    private final Drawable mAsteroid;
+    private int widthAsteroid;
+    private int heightAsteroid;
+    private int leftAsteroid;
+    private int rightAsteroid;
+    private int topAsteroid;
+    private int yAsteroid = -30;
+    private int bottomAsteroid;
+    private int centerAsteroid;
+    private int height;
+    private int width;
+    private int speedAsteroid = 5;
+    private int xAsteroid = 30;
+
+    private MainThread thread;
+
+    public GameView(Context context) {
+        super(context);
+
+        // adding the callback (this) to the surface holder to intercept events
+        getHolder().addCallback(this);
+
+        // create mAsteroid where adress picture  asteroid
+        mAsteroid = context.getResources().getDrawable(R.drawable.asteroid);
+
+         // create the game loop thread
+         thread = new MainThread(getHolder(), this);
+    }
+
+    @Override
+    public void surfaceChanged(SurfaceHolder holder, int format, int width,int height) {
+    }
+
+    @Override
+    public void surfaceCreated(SurfaceHolder holder) {
+
+        thread.setRunning(true);
+        thread.start();
+    }
+
+    @Override
+    public void surfaceDestroyed(SurfaceHolder holder) {
+
+        thread.setRunning(false);
+        boolean retry = true;
+        while (retry) {
+            try {
+                thread.join();
+                retry = false;
+            }
+            catch (InterruptedException e) {
+                // try again shutting down the thread
+            }
+        }
+    }
+
+    public void render(Canvas canvas) {
+        canvas.drawColor(Color.argb(255, 2, 19, 151));
+        height = canvas.getHeight();
+        width = canvas.getWidth();
+
+        //Work with asteroid
+        widthAsteroid = 2 * width / 13;//set width asteroid
+        heightAsteroid = widthAsteroid;
+        leftAsteroid = xAsteroid;//the left edge of asteroid
+        rightAsteroid = leftAsteroid + widthAsteroid;//set right edge of asteroid
+        topAsteroid = yAsteroid;
+        bottomAsteroid = topAsteroid + heightAsteroid;
+        centerAsteroid = leftAsteroid + widthAsteroid / 2;
+
+        mAsteroid.setBounds(leftAsteroid, topAsteroid, rightAsteroid, bottomAsteroid);
+        mAsteroid.draw(canvas);
+    }
+
+    public void update() {
+        if (yAsteroid > height) {
+            yAsteroid = 0;
+
+            // find by random function Asteroid & speed Asteroid
+            Random rnd = new Random();
+            xAsteroid = rnd.nextInt(width - widthAsteroid);
+            speedAsteroid = 5+ rnd.nextInt(10);
+        } else {
+            yAsteroid +=speedAsteroid;
+        }
+    }
+}
+@]
+
+MainThread.java
+[@
+package com.adc2017gmail.moonbase;
+
+import android.graphics.Canvas;
+import android.view.SurfaceHolder;
+
+public class MainThread extends Thread {
+
+    private final static int MAX_FPS = 30;// desired fps
+    private final static int MAX_FRAME_SKIPS = 4;// maximum number of frames to be skipped
+    private final static int FRAME_PERIOD = 1000 / MAX_FPS; // the frame period
+
+    // Surface holder that can access the physical surface
+    private SurfaceHolder surfaceHolder;
+
+    // The actual view that handles inputs
+    // and draws to the surface
+    private GameView gameView;
+
+    // flag to hold game state
+    private boolean running;
+
+    public void setRunning(boolean running) {
+        this.running = running;
+    }
+
+    public MainThread(SurfaceHolder surfaceHolder, GameView gameView) {
+        super();
+        this.surfaceHolder = surfaceHolder;
+        this.gameView = gameView;
+    }
+
+    @Override
+    public void run() {
+        Canvas canvas;
+        long beginTime;// the time when the cycle begun
+        long timeDiff; // the time it took for the cycle to execute 
+        int sleepTime;// ms to sleep (<0 if we're behind)
+        int framesSkipped;// number of frames being skipped
+        sleepTime = 0;
+        while (running) {
+            canvas = null;
+            // try locking the canvas for exclusive pixel editing in the surface
+            try {
+                canvas = this.surfaceHolder.lockCanvas();
+                synchronized (surfaceHolder) {
+
+                    beginTime = System.currentTimeMillis();//Returns the current time in milliseconds since January 1, 1970 00:00:00.0 UTC.
+                    framesSkipped = 0; // resetting the frames skipped
+
+                    // update game state
+                    this.gameView.update();
+                    // render state to the screen draws the canvas on the panel
+                    this.gameView.render(canvas);
+                    // calculate how long did the cycle take
+                    timeDiff = System.currentTimeMillis() - beginTime;
+
+                    // calculate sleep time
+                    sleepTime = (int)(FRAME_PERIOD - timeDiff);
+                    if (sleepTime > 0) {
+                        if sleepTime > 0 //we're OK
+                            try {
+                                // send the thread to sleep for a short period
+                                // very useful for battery saving
+                                Thread.sleep(sleepTime);
+                            } catch (InterruptedException e) {}
+                        }
+
+                        while (sleepTime < 0 && framesSkipped < MAX_FRAME_SKIPS) {
+                            // we need to catch up
+                            this.gameView.update(); // update without rendering
+                            sleepTime += FRAME_PERIOD; // add frame period to check if in next frame
+                            framesSkipped++;
+                        }
+                    }
+                } finally {
+                    // in case of an exception the surface is not left in
+                    // an inconsistent state
+                    if (canvas != null) {
+                        surfaceHolder.unlockCanvasAndPost(canvas);
+                    }
+                }  // end finally
+            }
+        }
+    }
+@]
+
+MainActivity.java
+
+[@
+package com.adc2017gmail.moonbase;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageButton;
+
+public class MainActivity extends Activity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        final ImageButton imgbtn8 = (ImageButton)findViewById(R.id.image_button8);
+
+        imgbtn8.setOnClickListener(new View.OnClickListener()
+        {
+            public void onClick(View v)
+            {
+                imgbtn8.setImageResource(R.drawable.btn2);
+                Intent intent8 = new Intent(MainActivity.this, SecondActivity.class);
+                startActivity(intent8);
+            }
+        });
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.action_settings) {
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+}
+@]
+
+SecondActivity.java
+[@
+package com.adc2017gmail.moonbase;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+
+public class SecondActivity extends Activity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(new GameView(this));
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_second, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+         //noinspection SimplifiableIfStatement
+         if (id == R.id.action_settings) {
+             return true;
+         }
+
+         return super.onOptionsItemSelected(item);
+    }
+}
+@]
