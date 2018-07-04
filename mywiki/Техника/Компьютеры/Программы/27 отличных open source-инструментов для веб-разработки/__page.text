@@ -1,0 +1,113 @@
+!! 27 отличных open source-инструментов для веб-разработки
+
+В 2017-м мы сравнили около 7 500 open source-инструментов для веб-разработки, из которых выбрали 27 лучших (0,4%). Это крайне конкурентный список, в который вошли инструменты, библиотеки и проекты, опубликованные в течение 2017-го. Mybridge AI оценивает их качество на основании популярности, заинтересованности и новизне. Чтобы было понятно, у выбранных продуктов среднее количество звёзд на Github — 5260.
+
+Open source-инструменты могут почти даром повысить вашу продуктивность. Также вы можете чему-то научиться, читая исходный код и создавая что-нибудь на основе этих проектов. Так что рекомендуем уделить время и поэкспериментировать с инструментами из нашей подборки, возможно, какие-то из них прошли мимо вас.
+
+!!! No 1
+https://github.com/toddmotto/public-apis
+Public APIs: коллективный список публичных JSON API для использования в веб-разработке [31 194 звезды на Github].
+
+!!! No 2
+https://github.com/zeit/hyper
+Hyper v2.0: терминал на основе веб-технологий [20 633 звезды на Github].
+
+!!! No 3
+https://github.com/parcel-bundler/parcel
+Parcel: очень быстрый, не требующий конфигурирования упаковщик для веб-приложений [15 386 звёзд на Github].
+
+!!! No 4
+https://github.com/feathericons/feather
+Feather: замечательные open source-иконки [11 593 звезды на Github].
+
+!!! No 5
+https://github.com/hyperapp/hyperapp
+Hyperapp v1.0: однокилобайтная библиотека для создания приложений с современным интерфейсом [9773 звезды на Github].
+
+!!! No 6
+https://github.com/wulkano/kap
+Kap: open source-инструмент для записи содержимого экрана, построенный на веб-технологиях [6318 звёзд на Github].
+
+!!! No 7
+https://github.com/evolus/pencil
+Pencil v3.0: доступный каждому open source-инструмент для создания диаграмм и прототипирования. Сделан с помощью Electron [5567 stars on Github].
+
+!!! No 8
+https://github.com/kitze/sizzy
+Sizzy: инструмент для очень быстрого тестирования адаптивных сайтов [4639 звёзд на Github].
+
+!!! No 9
+https://github.com/SparkPost/heml
+Heml: open source язык разметки для создания адаптивных электронных писем [3532 звезды Github].
+
+!!! No 10
+https://github.com/cypress-io/cypress
+Cypress: быстрый, простой и надёжный инструмент тестирования для всего, что выполняется в браузере [3243 звезды на Github].
+
+!!! No 11
+https://github.com/freeCodeCamp/mail-for-good
+Mail-for-good: open source-инструмент для управления некоммерческими рассылками электронных писем [2609 звёзд на Github].
+
+!!! No 12
+https://github.com/michael-lazar/rtv
+Rtv: позволяет просматривать Reddit с вашего терминала [2524 звезды Github].
+
+!!! No 13
+https://github.com/siddharthkp/bundlesize
+BundleSize: позволяет контролировать размеры пакетов [2309 звёзд на Github].
+
+!!! No 14
+https://github.com/521dimensions/amplitudejs
+Amplitude.JS (v3.0): современный HTML5-аудиоплеер. Не нужно никаких зависимостей [2232 звезды на Github].
+
+!!! No 15
+https://github.com/developit/mitt
+Mitt: маленький, 200-байтный функциональный генератор событий / pubsub [2203 звезды на Github].
+
+!!! No 16
+https://github.com/ecthros/uncaptcha
+Uncaptcha: обходит гугловскую аудио-reCaptcha с точностью в 85 % [2015 звёзд на Github].
+
+!!! No 17
+https://github.com/samccone/bundle-buddy
+Bundle-buddy: инструмент для определения дублирований пакетов в результате разделения [1995 звёзд на Github].
+
+!!! No 18
+https://github.com/Fakerr/git-recall
+Git-recall: простой и удобный инструмент, помогающий быстро вспомнить, что именно вы делали [1911 звёзд на Github].
+
+!!! No 19
+https://github.com/probot/probot
+Probot: фреймворк для сборки GitHub-приложений, помогающий автоматизировать и оптимизировать рабочий процесс [1802 звезды на Github].
+
+!!! No 20
+https://github.com/zeit/hazel
+Hazel: этот проект позволяет легко развёртывать и обновлять сервер для Electron-приложений. Достаточно выполнить единственную команду и заполнить два текстовых поля [1775 звёзд на Github].
+
+!!! No 21
+https://github.com/ngryman/speedracer
+Speedracer: измеряет метрики производительности вашей библиотеки или приложения [1660 звёзд на Github].
+
+!!! No 22
+https://github.com/RyanFitzgerald/devportfolio-template
+Devportfolio-template: лёгкий настраиваемый шаблон для создания одностраничных персональных сайтов-портфолио, написанный с помощью JavaScript и Sass [1596 звёзд на Github].
+
+!!! No 23
+https://github.com/intercellular/cell
+Cell: самоуправляемый фреймворк веб-приложений [1439 звёзд на Github].
+
+!!! No 24
+https://github.com/wingify/across-tabs
+Across-tabs v1.0: обеспечивает простое взаимодействие между браузерными cross-origin-закладками [1163 звезды на Github].
+
+!!! No 25
+https://github.com/Chimeejs/chimee
+Chimee: невероятно удобный браузерный видеоплеер [1009 звёзд на Github].
+
+!!! No 26
+https://github.com/digicorp/propeller
+Propeller v1.0: адаптивный фронтенд-фреймворк, построенный с учётом Google Material Design Standards & Bootstrap [1007 звёзд на Github].
+
+!!! No 27
+https://github.com/EmilTholin/image-trace-loader
+Image-trace-loader: загружает изображения, применяет к ним трассировку и экспортирует результат в виде изображений или закодированных в URL SVG+XML-данных [919 звёзд на Github].
