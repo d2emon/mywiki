@@ -1,0 +1,81 @@
+!! 7 examples of great game physics that every developer should study
+
+Physics in games can make explosions and enemy deaths more spectacular and entertaining than canned animations, and it's great for things like projectile weapons and fire propagation. But physics can do so much more than provide eye candy--it can be a major tool for game design. 
+
+Physics can drive core mechanics like in Portal and Where's My Water?, or it can underpin them — as in World of Goo's tower building and Red Faction Guerilla's spectacular world-warping destruction physics. It can even convey emotion, such as when you pull off the spider's leg in Limbo and feel its tug of pain. 
+
+Physics can make your game more exciting and surprising. It can establish realism or surrealism. Above all, when used well it makes games more fun. And it can easily become the main selling point not only for a puzzle game but also for simulations, platformers, or even shooters. 
+
+We reached out to several developers for their suggestions of creative or skilled uses of physics intertwined with game mechanics, and then assembled this list. All seven of these applications of physics went above and beyond the norm to amaze and delight players, and all offer a degree of emergence in their design as a result. 
+
+!!! 1) Gravity in the Mario Galaxy series
+
+Gravity Ghost developer Erin Robinson cites Super Mario Galaxy as a major inspiration in tuning her game's movement mechanics. Its planetoid-hopping take on platforming may have technically broken the laws of physics, but its implementation of gravity enabled some brilliant and creative level designs.
+
+Mario follows the surface curvatures of the small, odd, arbitrarily-shaped celestial bodies thanks to a clever trick in the game's engine. I'll leave the technical explanation to Jeremy Alessi's Gamasutra article from 2008, but in essence a clever simplification of real gravity allows the game to always pull Mario's feet toward the ground — even if that leaves him hanging upside down or suspended sideways on a bizarre concave-shaped planet.
+
+Interestingly, not all objects in the game are affected by this gravitational pull. 
+
+In Super Mario Galaxy, something as simple and rudimentary as movement feels not just whimsical but magical. Mario looks right at home as he leaps and scampers and slides around the spherical, conical, hollow, and less geometry-friendly worlds. It's fresh and exciting even now, more than eight years on, and the elegant implementation makes the otherworldly mechanic feel smooth and completely natural. 
+
+TAKEAWAY: Believable gravity need not be realistic, and moreover it need not affect everything in your world. Gravity can also be an enabler for level designs that think outside the box.
+
+!!! 2) Portal's physics-twisting portal guns
+
+Valve's Portal games took Half-Life 2's already-fascinating gravity gun — which could pick up, move, and fling objects found scattered around City 17's ruins — and gave it a clever upgrade. The gun in Portal creates person-sized wormholes from one visible point to another. And that ability to twist the very fabric of (in-game) reality enabled the development team to craft some ingenious puzzles.
+
+Manifold Garden developer William Chyr explains that Portal serves as a model for how to introduce a mechanic that twists physics. "It breaks down the concept into really basic steps that everyone can follow," he says, "and doesn't overstay its welcome." Moreover, the portal mechanic is done with such careful consistency that mistakes are relatively painless and puzzles can always be reasoned through. (And there's a special thrill in more advanced portal maneuvers such as putting one portal directly above the other so that Chell can reach terminal velocity before you propel her across some massive chasm.) 
+
+TAKEAWAY: You can break and twist your own physics system if it allows for a compelling mechanic, but be sure to keep this behavior consistent or you'll create undue friction between the player and your design.
+
+!!! 3) Physics simulation as the game in Turbo Dismount (and others)
+
+A good physics simulation can be great fun by itself. Aimless games like Garry's Mod, BeamNG.drive, and Turbo Dismount (among others) rely entirely on playful interactions with an underlying physics system.
+
+In Garry's Mod, there's a large building component that lets players add and manipulate whatever props and objects they like, while in BeamNG.drive you simply have a driving sandbox filled with cars that handle according to a hyper-realistic soft-body physics model. And in Turbo Dismount, the joy is less in creating or moving as in finding ever more elaborate ways to send a ragdoll character flailing. Or, to venture deeper into the realm of software toys, you can consider Earth Primer, which teaches earth sciences through playful interactions with small physics sandboxes. 
+
+Bossa Studios CEO Henrique Olifiers notes that these sorts of games illustrate how physics can be a powerful and compelling system on its own. "Physics itself can become the digital entertainment," he suggests. Games like Turbo Dismount are in essence just a bunch of basic interaction inputs that lead to outputs dictated by a physics system, but in this simple capacity they can provide hours of fun. 
+
+TAKEAWAY: A physics simulation can just as easily be the game as be a supporting element to the game. Fluid dynamics, ragdolls, soft-body crash physics, and variable gravity all can drive the entire experience, and playing with the forces they exert is often compelling in and of itself.
+
+!! 4) Grand Theft Auto V's fudged vehicle and character physics
+
+Grand Theft Auto V pulls off the rare feat of physics that enhances the believability of the world while at the same time allowing insane cartoony carnage. "Everything tries as best as possible to mimic reality as long as 'reality' doesn't get in the way of the fun, of the gameplay," explains Olifiers. The physics underlying character and vehicle movement, as well as weapons and explosions, are accurate only for "normal" life in Los Santos. 
+
+Seemingly by design, the edge cases offer huge potential for fun. Olifiers notes that GTA V is a mainstay on the /r/GamePhysics subreddit for its myriad physics-driven bugs, features, exploits, and incredible stunts. 
+
+TAKEAWAY: By designing a physics system that gleefully breaks immersion at the slightest sign of havoc or opportunity for chaos, Rockstar ensured that there's always fun to be had destroying, racing around, and exploiting Grand Theft Auto V's open-world sandbox.
+
+!!! 5) Gliding with Just Cause 3's wingsuit
+
+You won't find many games with player movement as exhilarating as Just Cause 3, which lets the player fly around for as long as he can stay airborne with a combination of parachute, grappling hook, and wingsuit. The first two of these are intentionally designed to break the system — to enable the player to pull off gravity-defying mid-air turns and dashes that open up all sorts of combat options. But the latter — the wingsuit — is about pure freedom and joy. 
+
+QWOP designer and NYU Game Center assistant professor Bennett Foddy cites the wingsuit as "an example of a perfectly-tuned game mechanic that is in harmony with the physics system." Using it always feels like teetering on the edge of disaster — whether soaring gently or swooping down like an eagle or flying rapidly up a hillside. But to master its interplay between lift, drag, and momentum — and particularly to master its use in conjunction with the grappling hook — is to fly. Few games offer that sensation.
+
+TAKEAWAY: If over-the-top fun is a priority, design mechanics that throw realism out the window. But keep them real and in harmony with the world they inhabit — because as Just Cause 3 shows, a great physics-driven mechanic can be entrancing.
+
+!!! 6) Elasto Mania's springy, elastic bike movement and puzzle-platforming
+
+Once the province of college students the world over, Elasto Mania remains an exceptional example in physics-driven gameplay. Similar to the more recent Trials series, but more abstract and puzzle-oriented, Elasto Mania puts you on a motorbike in a bizarre and maze-like world of jagged platforms and apples and asks that you simply touch a flower. (It's anything but simple.) Getting to the flower requires some elaborate thinking and extreme care, as not only is your bike extraordinarily elastic and sensitive to the slightest change in momentum but also your paper-thin rider's a dead man if his head so much as brushes the ground. 
+
+Foddy explains the brilliance of Elasto Mania rests in the way it shows "how emergent complex mechanics appear when there's interaction between a physics engine and a thoughtfully designed world." The game's five inputs (lean forward and backward, accelerate, brake, switch direction) provide all the control needed to push the rear-wheel-drive highly-elastic bike through incredible trials and a multitude of creative solutions using torque, gravity, and spring physics (the bike is very much like a spring on wheels). 
+
+TAKEAWAY: Complexity arises naturally from a simple set of interactions between physics-driven character movement and a world that's been designed with careful consideration for the possibility space.
+
+!!! 7) Building rockets to other worlds in Kerbal Space Program
+
+Normally physics-driven game mechanics involve you working with a physics system. They're about either going with the flow or using it to your advantage in some other way. But Kerbal Space Program is one of the rare games that has you actively fighting against physics to get anything done. The core mechanics here are not just driven by or rooted in physics; they're opposed by it. 
+
+Olifiers describes physics as Kerbal's main objective. At every second, he says, you try "to infer how your strategies and choices will beat the unstoppable pull of gravity." This battle against the steadfastness of gravity leads to unpredictable outcomes, which makes unpredictability part of the core gameplay loop — what Olifiers explains as "the anticipation of the performance of each design against the physical rules playing against every flaw of your engineering." 
+
+TAKEAWAY: Physics can be a formidable opponent, both steadfastly consistent and curiously unpredictable — as a slight change in input might have knock-on effects that lead to a massive change in outcome.
+
+CONCLUSIONS: Physics makes great gameplay, not just aesthetics
+
+With physics engines pre-baked into major game-making tools, it's easier than ever to leverage its power. But don't stop at making your animations look better. Physics can do so much more than improve cosmetics. Olifiers says that his team makes extensive use of physics for its capacity to enable emergence. It's unpredictable and subversive but it doesn't feel unfair, because as Olifiers explains there's "a deterministic aspect to physics that players decode at a subconscious level." 
+
+We expect the crazy outcomes of a physics system, and that makes the game feel better. It makes you, the developer seem smarter. And it makes your design feel right. 
+
+For more on how physics can make your games better, be sure to check out Pascal Luban's excellent 2007 feature — which delves deeper into the topic and suggests physics-driven mechanics that still haven't been used in a published game. 
+
+Thanks to Pascal Luban, Erin Robinson, Henrique Olifiers, William Chyr, and Bennett Foddy for their help putting this list together.
