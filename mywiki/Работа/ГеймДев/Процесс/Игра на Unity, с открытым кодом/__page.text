@@ -1,0 +1,181 @@
+!! Игра на Unity, с открытым кодом
+
+Черная пятница, черная пятница… надоело. Объявляю свой личный Белый понедельник — за пару ночей написал небольшую игру и выкладываю ее код на всеобщее пользование, со скидкой 90%. Зачем мне это надо? Ну я вижу следующие плюсы — тот самый открытый код для поиска работы (да да, сейчас я нахожусь в активном поиске), почитать в комментариях о своих косяках, наконец то сменить статус на Хабре.
+
+!!! Суть игры
+
+Идея пришла внезапно, и пока она не улетела решил записать а потом и воплотить ее. Представьте холодную, темную камеру в некой тюрьме. В ней сидит, неизвестно как и неизвестно кем, прикованный волшебник, которого каждую ночь мучает всякая нечисть. Из последних сил он создает небольшой файрбол и вдыхает в него подобие жизни. 
+
+Познакомьтесь, это Кальцифер, ваш аватар в этой игре. 
+
+%thumb%Attach:z_0xn74xtgflo9kfcfqryn3jirw.gif%%
+
+Именно им вы будете уничтожать вся гадость, которая ползет в сторону нашего закованного бедняги. 
+
+[[Ссыль на код -> https://github.com/DemiLix/1NightGame]]
+
+!!! Пояснения насчет кода
+
+Начнем с GameManager. Он всему голова, именно в нем меняется состоянии игры — Initialization->GameLoop->Win или Lose. Одинок и един, ибо синглтон. Так как игра не сетевая, простая, и без сложных переходов, то было принято решение использовать этот паттерн. Здесь же идет обработка попаданий по игроку (см. ниже Известные проблемы), учет хитпоинтов и проверка на выигрыш\проигрыш. Был бы GodObject, да слишком мало у нас классов, поэтому знает не всё обо всех. На этапе инициализации, создается пул объектов отображающих анимацию урона по игроку и смерти врагов. Для отслеживания состояния хитпоинтов, можно подписаться на UpdateHpWizardDelegate или UpdateHpCalciferDelegate. В нашем случае это делает GUIManager для отображения текущего хп на экране. 
+
+%thumb%Attach:g0of9xbggse6zhd3f8ceyho_wic.png%%
+
+К этому времени SpawnManager уже составил список точек спавна врагов 
+
+%thumb%Attach:d07kcrpqoearwidqvo3dwmghzv4.png%%
+
+a WaveManager загрузил порядок волн создания врагов. Волны можно настроить двумя способами: прописать в коде игры или загрузить с Json файла. Для редактирования этого Json написан кастомный editor:GameDataEditor
+
+%thumb%Attach:taegax2h_j9cuud_oececvvinzu.png%%
+
+Можно прописать точный номер спавна или указать что можно создаться на любом свободном. 
+
+Создание волн сделанно с помощью хитрой корутины:
+
+!!!! SpawnWaves
+[@
+ private IEnumerator SpawnWaves()
+        {
+            yield return new WaitForSeconds(firstWaveDelay);
+            while (currentWave < waves.Count)
+            {
+                if (!CheckFinishedCurrentWave())
+                {
+                    var step = waves[currentWave].GetCurrentWaveStep();
+                    if (step != null)
+                    {
+                        yield return new WaitForSeconds(step.delay);
+                        var spawners = step.spawners;
+                        if (spawners != null)
+                        {
+                            foreach (var spawn in spawners)
+                            {
+                                SpawnPoint spawnPoint;
+                                if (spawn.index == Consts.INDEX_RANDOM_SPAWN_POINT)
+                                {
+                                    spawnPoint = SpawnManager.S_Instance.GetRandomEmptySpawnPoint();
+                                }
+                                else
+                                {
+                                    spawnPoint = SpawnManager.S_Instance.GetSpawnPointByIndex(spawn.index);
+                                }
+                                if (spawnPoint != null)
+                                {
+                                    SpawnManager.S_Instance.SpawnEnemy(spawnPoint, spawn.name);
+                                }
+                                else
+                                {
+                                    throw new Exception("Not empty spawn point");
+                                }
+                            }
+                        }
+                        Debug.Log(step.text);
+                    }
+                    waves[currentWave].currentStep++;
+                }
+                else
+                {
+                    SelectNextWave();
+                }
+            }
+        }
+@]
+
+Вначале проходит firstWaveDelay секунд до начала запуска 1 первой волны. После этого в цикле прогоняют все волны по очереди, вставляя нужную задержку step.delay между шагами волны. Почему в корутине а не например в Update? Да собственно можно и так и эдак, просто тут более наглядно, видно где задержка ( yield return new WaitForSeconds) и не надо городить лишние циклы и проверки. 
+
+Давай те глянем что же представляют из себя SpawnPoint. Это MonoBehavior c 2 компонентами: SpawnPoint и CircleCollider2D. В первом, с помощью второго, определяется занят ли спавн каким то врагом. OnDrawGizmos отображает в редакторе Unity расположение спавнов.
+
+!!!! OnDrawGizmos
+[@
+ void OnDrawGizmos()
+        {
+            if (m_IsDirty)
+            {
+                Gizmos.color = Color.red;
+            }
+            else
+            {
+                Gizmos.color = Color.green;
+            }
+            Gizmos.DrawSphere(transform.position, 0.3f);
+        }
+@]
+
+%thumb%Attach:pqxf7i6_zse_r7iy0icnmg1jvuc.png%%
+
+Все враги происходят от базового класса BasicEnemy в котором есть несколько виртуальных методов:
+
+ContactWizard() , для взаимодействия с волшебником
+ContactCalcifer(), для взаимодействия с Кальцифером
+ShowDeathAnimation(), для показа анимации смерти
+
+Их можно переопределить в потомках, для различной реакции на эти события. Например PoisonEnemy ранит при прикосновении Кальцифера, в отличии от остальных врагов.
+
+!!!! PoisonEnemy.ContactCalcifer
+[@
+  public override void ContactCalcifer()
+        {
+            GameManager.S_Instance.DamageCalcifer(damage);
+            base.ContactCalcifer();
+        }
+@]
+
+Кстати, врагов и многие другие объекты (много и часто создаваемых на сцене) мы не удаляем с помощью Destroy(this), а отправляем обратно в пул объектов — ObjectPool.Recycle(this). Таким макаром мы неплохо экономим на создании объектов, которое как известно достаточно затратное дело.
+
+Так например анимации заканчиваются вызовом SelfDestroy(), который и возвращает объект анимации обратно в пул. 
+
+%thumb%Attach:lpw5uf2h6mfaljilo0rqg3ovxfm.png%%
+
+Движутся же враги с помощью {-силы пафоса-} компонента BasicEnemyMoving. В нем нас интересуют два метода: OnEnable()и Move(). OnEnable () вызывается после вытаскивания врага с пула и нужен для поворота врага (если необходимо) в сторону цели.
+
+!!!! OnEnable
+[@
+public void OnEnable()
+        {
+            if (obj!=null&&obj.NeedRotateForDirection) 
+            {
+                Vector3 moveDirection = transform.position - GameManager.S_Instance.wizardTransform.position;
+                if (moveDirection != Vector3.zero)
+                {
+                    float angle =  Mathf.Atan2(moveDirection.y, moveDirection.x) * Mathf.Rad2Deg-90;
+                    transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward); 
+                }
+            }
+        }
+@]
+
+Move() же является виртуальным методом, который и движет врага к цели. Его можно переопределить в потомках и сделать особенное движение (с рывками, синусоидальное и т.п.)
+
+!!!! Move
+[@
+ public virtual void Move()
+        {
+            transform.position = Vector3.MoveTowards(transform.position, SpawnManager.S_Instance.TEMP_GOAL.position, speed * Time.deltaTime);
+        }
+@]
+
+На этом как бы всё. 
+
+
+!!! Известные косяки
+
+* Синглтоны
+* Отсутствие классов Wizard и Calcifer. Вся логика с их взаимодействием лежит в GameManager
+* Магические числа с углами поворота спрайтов. Да понимаю что надо бы все спрайты подвести к одному углу и уже от него плясать. Но времени не хватило.
+* Отсутствует запись прогресса
+* Кривое объявление префабов врагов в SpawnManager
+
+!!! TODO
+
+* Смена дня\ночи. Днем отдыхаешь, раскидываешь скиллы и т.п. Ночью жгешь вражин.
+* Новые типы врагов: стреляющие, ранящие Кальцифера, оставляющие слизь/паутину, телепортирующиеся, размножающиеся
+* Прокачка Кальцифера: статы, tower defence, скиллы
+* Несколько концовок. Есть пара задумок насчет нескольких вариантов развития событий, в случаи проигрыша на разных этапах/разной прокачки
+* Освещение. Стены камеры освещаются Кальцифером, по мере его роста, все сильнее и сильнее.
+* Кат сцены.
+
+Анимация огонька взята с powstudios.com
+
+За спрайт волшебника отдельное спасибо милой Kori Tyan 
+
+%thumb%Attach:98ivbktxydtejzpvzutfxrvbcfg.png%%
