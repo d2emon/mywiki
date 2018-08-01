@@ -1,0 +1,189 @@
+!! How to Use Voronoi Diagrams to Control AI
+
+What is the safest route to take, where are the most enemies located, and where is the nearest health pack? These common spatial relationship questions can all be solved efficiently with a mathematical routine called Voronoi. By the end of this tutorial you will have the tools and knowledge to analyze your maps and produce information that will be key to the AI's realism and success.
+
+!!! Spatial Relationships
+
+A spatial relationship is anything that describes how one object in a space is related to another one. For example: their distance from each other, how much area each covers and whether their areas overlap, or how many of these objects are located in one area.
+
+These relationships pop up in video games all the time and can provide very useful information to the AI, or even to the player.
+
+!!! Voronoi Has the Answer
+
+A Voronoi diagram describes the spatial relationship between points that are near each other, or their nearest neighbours. It is a set of connection polygons derived from points or locations. Each line of a Voronoi "region" is halfway between two points.
+
+Here, let's look at an image to get a feel for it:
+
+%thumb%Attach:Voronoi_diagrams_for_AI-1-regions.jpg%%
+
+Here you can see that each line is exactly halfway between two points, and that they all meet together in the middle. Let's add some more points to the scene and see what happens:
+
+%thumb%Attach:Voronoi_diagrams_for_AI-2-more_points.jpg%%
+
+Now, that is getting more interesting! We are starting to get actual regions.
+
+So what does each region tell us? We know that while inside a region, we are guaranteed to be closest to the single point that is also inside the region. This tells us a lot about what is near us and is the fundamental spatial relationship in Voronoi diagrams.
+
+!!! Voronoi Upside Down: The Delaunay Triangulation
+
+The inverse of a Voronoi diagram is called the Delaunay Triangulation. This diagram consists of lines from each point to its nearest neighbours, and each line is perpendicular to the Voronoi edge it crosses. Here is what it looks like:
+
+%thumb%Attach:Voronoi_diagrams_for_AI-3-delaunay_triangulation.jpg%%
+
+The white lines are the Delaunay lines. Each Delaunay line corresponds to one and only one Voronoi edge. Although at first glance it looks like some overlap multiple edges, let's take a closer look and clarify what we are seeing.
+
+%thumb%Attach:Voronoi_diagrams_for_AI-4-delaunay_zoomed.jpg%%
+
+Here, the green Delaunay line is related to the pink Voronoi edge. You just have to imagine the pink edge extending farther and then you will see that they cross.
+
+With Delaunay you can see we have a set of triangles now instead of many-point polygons. This is incredibly useful as we have now just subdivided an area into renderable triangles. This technique can be used for tessellation, or triangulation of shapes. Super cool!
+
+It's also a great way to build up the set of points as a graph, in case you want to venture from one point to another. Just imagine that the points are cities.
+
+!!! Voronoi Data Structure
+
+All right, we know what Voronoi looks like; now let's take a peek at the data structure for a Voronoi diagram. First, we need to store the points that are the basis of the Voronoi diagram:
+
+[@
+class VoronoiPoint {
+    float x
+    float y
+    VoronoiRegion* region
+}
+@]
+
+Each VoronoiPoint has a location (x, y), and a reference to the region it is inside.
+
+Next, we need to describe the VoronoiRegion:
+
+[@
+class VoronoiRegion {
+    VoronoiPoint* point
+    Edge *edges[] // our list of edges
+}
+@]
+
+The region stores a reference to its VoronoiPoint, as well as a list of the VoronoiEdges that bound it.
+
+Now let's look at the VoronoiEdges:
+
+[@
+class VoronoiEdge {
+    VoronoiPoint* pointA
+    VoronoiPoint* pointB
+    float distance // distance between point A and point B
+    float x1, z1, x2, z2 // to visualize start & end of the edge
+}
+@]
+
+An edge knows the two points that define it, as well as the distance between them. For visual representation, or for building up the actual shape of the polygon region, you should store the start and end points of the edge.
+
+And there we have it. With that information, we can easily use the Voronoi diagram. Farther down, we will look at how to actually generate the Voronoi diagram. But for now, let's look at some examples of how we can use the data.
+
+!!! Find the Nearest Health Pack
+
+Let's take a look again at the Voronoi diagram of points.
+
+%thumb%Attach:Voronoi_diagrams_for_AI-5-voronoi_nearest_health_packs.jpg%%
+
+If each point represented a health pack, you could find out quite quickly where the nearest one was - but first, you have to locate the region you are in. Voronoi does not provide an efficient way to find this out straight out of the box. However, you can store a reference to each region in a quadtree, or an R-tree, so that the lookup will be quick. And once you have your region, you can find its neighbours, and their neighbours.
+
+For instance, if the health pack in your region is gone, you need a way to find the next closest one. If we refer to our data structure and the pseudocode above, we see that from a region we can find out its edges. And with those edges we can then get the neighbours. Grab the closest neighbour and then we can see whether it has a health pack.
+
+The Delaunay Triangulation can be used here as well. It consists of lines between each of the health packs. This can then be traversed with A* pathfinding to find the next nearest pack if it so happens that someone has grabbed all of the packs near you.
+
+!!! Find the Safest Route
+
+Instead of health packs, let's picture each point as an enemy guard tower. You need to find the safest way through them without being caught. A common method for traversing a graph in video games is to use the A* algorithm (http://en.wikipedia.org/wiki/A*_search_algorithm). Since the Voronoi diagram is a graph, this is easy to set up. You just need to have an A* algorithm that supports generic graph structures; a little planning ahead of time can pay off here.
+
+With the graph set up, we need to weigh each edge. The weight value we are concerned with is the distance from these guard towers, and we can grab this directly from our data structure: each VoronoiEdge knows its distance between its two points already. Normally a lower value on an A* edge is better, however in this case we want the larger value to be more ideal, since it represents the distance to the tower.
+
+Here is what the starting graph looks like if we want to move from point A to point B:
+
+%thumb%Attach:Voronoi_diagrams_for_AI-6-voronoi_safest_route.jpg%%
+
+Applying the weight to each edge, we start to see what route might be best to take:
+
+%thumb%Attach:Voronoi_diagrams_for_AI-7-voronoi_safest_path.jpg%%
+
+The red edges represent the closest encounters with the towers. The orange less so; yellow less than that; and finally green being the safest. Running A* with these weights should produce the following path:
+
+%thumb%Attach:Voronoi_diagrams_for_AI-8-cirum_circles.jpg%%
+
+Using the weights this way will not ensure the quickest path, but the safest, which is what you want. It would also be wise for the AI to stick close to that path and avoid straying!
+
+Another step you can take to guarantee safe passage is to remove any edges that fall under a minimum safe distance. For example if each guard tower had a vision range of 30 units, then any edges whose distance to their points is less than that could be removed from the graph and not traversed at all.
+
+Another use of this is to find the widest route for units that are large and cannot fit through narrow spaces. Since each edge has a distance between its two points, we know whether it can fit through that space.
+
+Conversely, if we instead used a Delaunay triangulation of the diagram, we would get lines going from each guard tower. A guard AI stationed at a tower could find out quickly what the other nearby towers are, and possibly head over to one to assist it if needed.
+
+!!! Find a Dense Collection of Items
+
+Say you want to air-drop a packet of catnip for a whole bunch of cute kittens in a field. What is the best location to drop it so the most kittens can enjoy it? This could end up being a very, very expensive calculation. But luckily we can make an educated guess by using our Delaunay triangulation.
+
+Tip: Remember that the Delaunay triangulation is just the inverse of the Voronoi diagram. It is simply formed by joining each Voronoi point with its neighbour points obtained from its list of edges.
+
+With this collection of triangles, we can examine the area that each triangle covers. If we find the triangle with the smallest area, then we have the three closest points, or kittens. It may not be the densest average pack of kittens in the field, but it is a good guess. If we are able to drop multiple catnip packets then we can just mark what triangles we already targeted and get the next smallest one.
+
+The representation of these areas is also known as the circum-circles of the Delaunay triangulation. Each circle is the largest circle that can fit within the points of the triangles. Here is an image of the circum-circles for a Voronoi diagram:
+
+%thumb%Attach:Voronoi_diagrams_for_AI-9-voronoi_safe_path.jpg%%
+
+You can use the exact center of the circles to determine the middle of the area to drop the catnip packet. The radius of the circle is actually a better method to determining the best triangle to drop on instead of triangle area - especially if two points of a triangle are very close together and one is far away, producing a very sharp triangle with little area but representing points that are actually quite far apart.
+
+!!! Implementing Voronoi
+
+There are several ways to generate Voronoi diagrams, and the time at which you have the data can help determine which technique to use.
+
+!!!! Fortune's Line-Sweep Algorithm
+
+The fastest method is called Fortune's Line-sweep Algorithm. It is O(n log(n)) and requires that all points used to generate the graph are present at the time of generation. If you add new points in later, you have to re-generate the whole graph. This might not be a big deal with few points, but if you have 100,000 or so, it could take a while!
+
+Implementing this algorithm is not trivial. You have to intersect parabolas and deal with some special cases. However it is the fastest technique. Luckily, there are many open source implementations of it out there already for you to use and we have linked to them here.
+
+Lets take a quick look at how it works.
+
+The algorithm consists of sweeping a line (either vertical or horizontal) across the area of points. When it encounters a point it begins to draw a parabola from it that continues on with the sweeping line. Here is an animation of the process:
+
+%thumb%Attach:Voronoi_diagrams_for_AI-10-fortunes_algorithm.jpg%%
+
+The intersecting parabolas produce the Voronoi edges. Why parabolas, though?
+
+To understand that, picture each point containing a balloon that is expanding until it makes contact with another balloon. You can extract this idea into circles expanding on a 2D plane. We take that one step further and place an upside-down cone on each point, a cone that has a slope of 45 degrees and that goes up to infinity. We then imagine the sweep line as a plane, also at 45 degrees, that sweeps along until it comes into contact with the cones. Since the plane and the cones are at the same angle, they produce parabolas when they intersect.
+
+%thumb%Attach:Voronoi_diagrams_for_AI-11-plane_cone_parabolas.jpg%%
+
+As the cones grow vertically, eventually they are going to intersect with one or more other cones. If we look at where the cones, or circles, intersect we get the straight lines of the Voronoi edges. Here you can see the red line of where the cones intersect. If the cones expanded some more (went up vertically to infinity), the red line would continue to extend.
+
+%thumb%Attach:Voronoi_diagrams_for_AI-12-cone_line_intersect.jpg%%
+
+When the plane sweeps across and makes first contact with a cone, a line is produced as so:
+
+%thumb%Attach:Voronoi_diagrams_for_AI-13-cone_plane_intersect.jpg%%
+
+As the plane moves through the cones, you can see the parabolas forming:
+
+%thumb%Attach:Voronoi_diagrams_for_AI-14-plane_cone_parabolas.jpg%%
+
+The plane continues through the scene. For every point it encounters, it examines the neighbour points on the sweep line that already have parabolas and begins a new parabola for this point. It continues to move on and grow until this new parabola starts to overlap with a different one than before. That previous parabola is then closed off. This is a place where three points' Voronoi lines meet.
+
+As stated before, it's a bit complicated, so here are some open source implementations you can use and examine:
+
+* Java on GitHub. Authors: Benny Kjær Nielsen and Allan Odgaard https://github.com/sorbits/visual-fortune-algorithm/tree/master
+* Python on GitHub: https://github.com/MikkoJo/Voronoi. Author: Mikko Johansson
+* Detailed Fortune's Algorithm implementation: http://blog.ivank.net/fortunes-algorithm-and-implementation.html
+
+!!!! Incremental Triangle Insertion
+
+Another method is to incrementally insert one point at a time, starting with a base triangle of three points outside of the possible range of all other points. This technique is O(n^2) and does not require all the points to be present at the time of generation.
+
+When a new point is inserted, it locates an existing region that it fits into. That region is then subdivided and new regions are created.
+
+Here is an open source example for you to use and examine:
+
+* Java source. Author: Paul Chew. Free to use. Download the ZIP file. Source: http://www.cs.cornell.edu/home/chew/Delaunay.html
+
+!!! Conclusion
+
+By now you should have a feeling for what Voronoi diagrams can provide for your game and its AI. With a well structured graph of nodes and edges you can query important information to ensure the kittens get the catnip they need and that you can take the safest route to get to them. And, just in case, you can find where the nearest med kit is, too.
