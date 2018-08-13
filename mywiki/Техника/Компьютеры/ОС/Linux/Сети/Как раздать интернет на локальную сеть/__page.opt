@@ -1,14 +1,13 @@
 [General]
 type = wiki
-tags = комп
-order = 2
-creationdatetime = 2016-10-04 11:18:18.820136
-datetime = 2016-10-04 11:20:22.955605
-cursorposition = 4218
-
-[wiki]
-md5_hash = ba1444c6efffb1921b242606c024cfb9
+tags = 
+order = 13
+datetime = 2013-01-11 11:31:57.500000
+cursorposition = 0
 
 [Misc]
 pageindex = 1
+
+[wiki]
+md5_hash = 4d988344d7b18737da624c09ba0b1657
 
