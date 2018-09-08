@@ -1,0 +1,137 @@
+!! Современный Торнадо: распределённый хостинг картинок в 30 строк кода
+
+Впервые слышите о tornado? Слышали, но боялись асинхронности? Смотрели на него более полугода назад? Тогда я посвящаю эту статью вам.
+
+!!! Подготовка
+
+Писать будем на третьем питоне. Если он не установлен, советую воспользоваться pyenv. Кроме tornado нам понадобится motor — асинхронный драйвер к mongodb:
+
+[@
+pip3 install tornado motor
+@]
+
+Импортируем необходимые модули
+
+[@
+import bson
+import motor
+from tornado import web, gen, ioloop
+@]
+
+!!! Подключаемся к gridfs
+
+Как распределённое хранилище будем использовать gridfs:
+
+[@
+db = motor.MotorClient().habr_tornado
+gridfs = motor.MotorGridFS(db)
+@]
+
+В первой строке мы подключаемся к mongodb и выбираем базу 'habr_tornado'. Далее подключаемся к gridfs (по умолчанию это будет коллекция fs).
+
+!!! Upload handler
+
+[@
+class UploadHandler(web.RequestHandler):
+    @gen.coroutine
+    def get(self):
+        files = yield gridfs.find({}).sort("uploadDate", -1).to_list(20)
+        self.render('upload.html', files=files)
+
+    @gen.coroutine
+    def post(self):
+        file = self.request.files['file'][0]
+        gridin = yield gridfs.new_file(content_type=file.content_type)
+        yield gridin.write(file.body)
+        yield gridin.close()
+        self.redirect('')
+@]
+
+Мы относледовались от tornado.web.RequestHandler. И теперь переопределяя методы get и post пишем обработчики соответствующих http запросов.
+
+Декоратор tornado.gen.coroutine позволяет вместо асинхронных колбэков использовать генераторы. Сточка files = yield gridfs ... визуально мало чем отлечается от синхронного files = gridfs. Но функциональное различие огромно. В случае yield произойдёт асинхронный запрос к базе и ожидание его завершания. То есть пока база данных будет «думать», сайт сможет заниматься обработкой других запросов.
+
+Итак в методе get, мы асинхронно получаем из gridfs мета-информацию о последних загруженных файлах. И направляем её в шаблон.
+
+В методе post мы достаём отправленный (с помощью формы отрисованной в шаблоне) файл изображения. Затем асинхронно открыаем gridfs-файл, сохраняем туда картинку и закрываем его. После этого делаем редирект на ту же страницу для отображения обновлённого списка файлов.
+
+!!! ShowImageHandler
+
+Теперь нам нужно достать из gridfs и отобразить полученное изображение:
+
+[@
+class ShowImageHandler(web.RequestHandler):
+    @gen.coroutine
+    def get(self, img_id):
+        try:
+            gridout = yield gridfs.get(bson.objectid.ObjectId(img_id))
+        except (bson.errors.InvalidId, motor.gridfs.NoFile):
+            raise web.HTTPError(404)
+        self.set_header('Content-Type', gridout.content_type)
+        self.set_header('Content-Length', gridout.length)
+        yield gridout.stream_to_handler(self)
+@]
+
+Здесь мы обрабатываем только GET хттп запрос. Сначала мы асинхронно получаем файл из gridfs по id. Этот id уникален и был автоматически сгенерирован при сохрании изображения в UploadHandler. Если в процессе возникают исключения (некорректный id или отсутствует файл) — показываем 404-ю страницу. Далее устанавливаем соответствующие заголовки, чтобы браузер идентифицировал ответ как изображение. И асинхронно отдаём тело картинки.
+
+!!! Роутинг
+
+Для привязки наших обработчиков (UploadHandler и ShowImageHandler) к url, создадим экземпляр tornado.web.Application:
+
+[@
+app = web.Application([
+    web.url(r'/', UploadHandler),
+    web.url(r'/imgs/([\w\d]+)', ShowImageHandler, name='show_image'),
+])
+@]
+
+Параметром мы передаём список описывающий отображение url-регулярок на их обработчики. Группа регулярки ([\w\d]+) как раз и будет передаваться в ShowImageHandler.get как img_id. А параметр name='show_image' мы будем использовать в шаблоне для генерации урл.
+
+!!! Запускаем сервер
+
+[@
+app.listen(8000)
+ioloop.IOLoop.instance().start()
+@]
+
+Теперь результат можно наблюдать в браузере: http://localhost:8000/
+
+!!! Шаблон
+
+[@
+<!DOCTYPE html>
+<html>
+    <h1>Upload an image</h1>
+    <form action="" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept="image/*" onchange="javascript:this.form.submit()">
+    </form>
+
+    <h2>Recent uploads</h2>
+    {% for file in files %}
+        {% set url = reverse_url('show_image', file['_id']) %}
+        <a href="{{ url }}"><img src="{{ url }}" style="max-width: 50px;"></a>
+    {% end %}
+</html>
+@]
+
+Здесь вам всё должно быть знакомо по django или jinja. Единственное отличие: end вместо endfor
+
+!!! Результат
+
+Итак мы получили быстрый, масшабируемый, асинхронный по своей сути, но написаный в псевдо-синхронном стиле хостинг картинок. А главное, теперь вы знаете как устроены: роутинг, обработчики запросов и шаблоны в tornado. А так же умеете асинхронно работать с mongodb и gridfs в частности.
+
+!!! Но...
+
+Вы наверняка заметили одно узкое место: file = self.request.files['file'][0]. Да, действительно, мы грузим весь файл изображения в память прежде чем записать его в базу. И вы наверное, подумываете что можно воспользоваться чем-то типа NginxHttpUploadModule. Однако теперь это можно сделать и средствами tornado: tornado.web.stream_request_body. Возможно, это мы и сделаем в одном из следующих уроков.
+
+!!! Cсылки
+
+* [[код этого урока -> https://github.com/imbolc/habr-modern-tornado]]
+* [[pyenv -> https://github.com/yyuu/pyenv/]]
+* [[tornado -> http://tornado.readthedocs.org/]]
+* [[motor -> http://motor.readthedocs.org/]]
+* [[mongodb -> http://docs.mongodb.org/]]
+
+!!! Ваше мнение
+
+Понравилось ли? Стоит ли продолжать? Исправления? Пожелания?
