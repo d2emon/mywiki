@@ -3,7 +3,7 @@ type = wiki
 tags = 
 order = 1
 datetime = 2015-10-28 14:53:51.508632
-selectedtab = 0
+selectedtab = 1
 
 [Misc]
 pageindex = 1
@@ -13,4 +13,7 @@ expand = True
 
 [wiki]
 md5_hash = b00140370ada13919714557bfd3e4770
+
+[Tabs]
+tab_0 = Миры/Мир номер три/Кино/Хронология/80-е
 
