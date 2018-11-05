@@ -1,0 +1,102 @@
+!! 14 Technologies Every Web Developer Should Be Able to Explain
+
+I often find myself thinking of new and simple ways to explain some pretty complicated web development concepts to our clients. What I have found is that the concepts aren’t hard to grasp, but rather all the other terminology is really hard to keep straight. This is my attempt to explain some common terminology in today’s modern web world (as of January 2015) and my hope is that you can find it helpful too.
+
+!!! 1. Browsers
+Browsers are the interpreters of the web. They request information and then when they receive it, they show us on the page in a format we can see and understand.
+
+* Google Chrome - Currently, the most popular browser brought to you by Google
+* Safari - Apple’s web browser
+* Firefox - Open-source browser supported by the Mozilla Foundation
+* Internet Explorer - Microsoft’s browser. You will most often hear web developers complain about this one.
+
+!!! 2. HTML
+HTML is a markup language. It provides the structure of a website so that web browsers know what to show.
+
+!!! 3. CSS
+CSS is a Cascading Style Sheet. CSS let’s web designers change colors, fonts, animations, and transitions on the web. They make the web look good.
+
+* LESS - a CSS pre-compiler to make working with CSS easier and add functionality
+* SASS - a CSS pre-compiler to make working with CSS easier and add functionality
+
+!!! 4. Programming Languages
+Programming languages are ways to communicate to computers and tell them what to do. There are many different programming languages just like there are many different lingual languages (English, Spanish, French, Chinese, etc). One is not better than the other. Developers typically are just proficient at a couple so they promote those more than others. Below are just some of the languages and links to their homepages
+
+* Javascript - used by all web browsers, Meteor, and lots of other frameworks
+* Coffeescript - is a kind of “dialect” of javascript. It is viewed as simpler and easier on your eyes as a developer but it complies (converts) back into javascript
+* Python -used by the Django framework and used in a lot of mathematical calculations
+* Ruby - used by the Ruby on Rails framework
+* PHP - used by Wordpress
+* Go - newer language, built for speed.
+* Objective-C - the programming language behind iOS (your iPhone), lead by Apple
+* Swift - Apple’s newest programming language
+* Java - Used by Android (Google) and a lot of desktop applications.
+
+!!! 5. Frameworks
+Frameworks are built to make building and working with programming languages easier. Frameworks typically take all the difficult, repetitive tasks in setting up a new web application and either does them for you or make them very easy for you to do.
+
+* Meteor - a full-stack (front and back end) javascript framework
+* Node.js - a server-side javascript framework
+* Ruby on Rails - a full-stack framework built using ruby
+* Django - a full-stack framework built using python
+* Ionic - a mobile framework
+* Phonegap / Cordova - a mobile framework that exposes native api’s of iOS and Android for use when writing javascript
+* Bootstrap - a UI (user interface) framework for building with HTML/CSS/Javascript
+* Foundation - a UI framework for building with HTML/CSS/Javascript
+* Wordpress - a CMS (content management system) built on PHP. Currently, about 20% of all websites run on this framework
+* Drupal - a CMS framework built using PHP.
+* .NET - a full-stack framework built by Microsoft
+* Angular.js - a front-end javascript framework.
+* Ember.js - a front-end javascript framework.
+* Backbone.js - a front-end javascript framework.
+
+!!! 6. Libraries 
+Libraries are groupings of code snippets to enable a large amount of functionality without having to write it all by yourself. Libraries typically also go through the trouble to make sure the code is efficient and works well across browsers and devices (not always the case, but typically they do).
+
+* jQuery
+* Underscore
+
+!!! 7. Databases
+Databases are where all your data is stored. It’s like a bunch of filing cabinets with folders filled with files. Databases come mainly in two flavors: SQL and NoSQL. SQL provides more structure which helps with making sure all the data is correct and validated. NoSQL provides a lot of flexibility for building and maintaining applications.
+
+* MongoDB - is an open-sourced NoSQL database and is currently the only database supported by Meteor.
+* Redis - is the most popular key-value store. It is lighting fast for retrieving data but doesn’t allow for much depth in the data storage.
+* PostgreSQL - is a popular open-sourced SQL database.
+* MySQL - is another popular open-sourced SQL database. MySQL is used in Wordpress websites.
+* Oracle - is an enterprise SQL database.
+* SQL Server - is an SQL server manager created by Microsoft.
+
+!!! 8. Client (or Client-side)
+A client is one user of an application. It’s you and me when we visit http://google.com. Client’s can be desktop computers, tablets, or mobile devices. There are typically multiple clients interacting with the same application stored on a server.
+
+!!! 9. Server (or Server-side)
+A server is where the application code is typically stored. Requests are made to the server from clients, and the server will gather the appropriate information and respond to those requests.
+
+!!! 10. Front-end
+The front-end is comprised of HTML, CSS, and Javascript. This is how and where the website is shown to users.
+
+!!! 11. Back-end
+The back-end is comprised of your server and database. It’s the place where functions, methods, and data manipulation happens that you don’t want the clients to see.
+
+!!! 12. Protocols
+Protocols are standardized instructions for how to pass information back and forth between computers and devices.
+
+* HTTP - This protocol is how each website gets to your browser. Whenever you type a website like “http://google.com” this protocol requests the website from google’s server and then receives a response with the HTML, CSS, and javascript of the website.
+* DDP - is a new protocol created in connection with Meteor. The DDP protocol uses websockets to create a consistent connection between the client and the server. This constant connection lets websites and data on those websites update in real-time without refreshing your browser.
+* REST - is a protocol mainly used for API’s. It has standard methods like GET, POST, and PUT that let information be exchanged between applications.
+
+!!! 13. API
+An API is an application programming interface. It is created by the developer of an application to allow other developers to use some of the application’s functionality without sharing code. Developers expose “end points” which are like inputs and outputs of the application. Using an API can control access with API keys. Examples of good API’s are those created by Facebook, Twitter, and Google for their web services.
+
+!!! 14. Data formats
+Data formats are the structure of how data is stored.
+
+* JSON - is quickly becoming the most popular data format
+* XML - was the main data format early in the web days and predominantly used by Microsoft systems
+* CSV - is data formatted by commas. Excel data is typically formatted this way.
+
+Thanks for reading and I hope you found something in here that gave you a new way to think about or talk about web technologies. This was not meant to be an all-encompassing list, but rather a way to talk about all the great technologies we have at our finger tips.
+
+And next week, we will tackle this mess (not really, my fingers hurt)
+
+%thumb%Attach:Rails_Competencies.png%%
