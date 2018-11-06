@@ -1,0 +1,5 @@
+!! 6. Libraries 
+Libraries are groupings of code snippets to enable a large amount of functionality without having to write it all by yourself. Libraries typically also go through the trouble to make sure the code is efficient and works well across browsers and devices (not always the case, but typically they do).
+
+* jQuery
+* Underscore
