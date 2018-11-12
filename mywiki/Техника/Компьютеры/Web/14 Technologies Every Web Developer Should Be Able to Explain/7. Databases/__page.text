@@ -1,0 +1,9 @@
+!! 7. Databases
+Databases are where all your data is stored. It’s like a bunch of filing cabinets with folders filled with files. Databases come mainly in two flavors: SQL and NoSQL. SQL provides more structure which helps with making sure all the data is correct and validated. NoSQL provides a lot of flexibility for building and maintaining applications.
+
+* MongoDB - is an open-sourced NoSQL database and is currently the only database supported by Meteor.
+* Redis - is the most popular key-value store. It is lighting fast for retrieving data but doesn’t allow for much depth in the data storage.
+* PostgreSQL - is a popular open-sourced SQL database.
+* MySQL - is another popular open-sourced SQL database. MySQL is used in Wordpress websites.
+* Oracle - is an enterprise SQL database.
+* SQL Server - is an SQL server manager created by Microsoft.
