@@ -1,0 +1,2 @@
+!! 9. Server (or Server-side)
+A server is where the application code is typically stored. Requests are made to the server from clients, and the server will gather the appropriate information and respond to those requests.

@@ -1,0 +1,12 @@
+!! 4. Programming Languages
+Programming languages are ways to communicate to computers and tell them what to do. There are many different programming languages just like there are many different lingual languages (English, Spanish, French, Chinese, etc). One is not better than the other. Developers typically are just proficient at a couple so they promote those more than others. Below are just some of the languages and links to their homepages
+
+* Javascript - used by all web browsers, Meteor, and lots of other frameworks
+* Coffeescript - is a kind of “dialect” of javascript. It is viewed as simpler and easier on your eyes as a developer but it complies (converts) back into javascript
+* Python -used by the Django framework and used in a lot of mathematical calculations
+* Ruby - used by the Ruby on Rails framework
+* PHP - used by Wordpress
+* Go - newer language, built for speed.
+* Objective-C - the programming language behind iOS (your iPhone), lead by Apple
+* Swift - Apple’s newest programming language
+* Java - Used by Android (Google) and a lot of desktop applications.

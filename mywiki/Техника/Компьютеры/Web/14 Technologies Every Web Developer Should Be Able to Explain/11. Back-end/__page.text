@@ -1,0 +1,2 @@
+!! 11. Back-end
+The back-end is comprised of your server and database. It’s the place where functions, methods, and data manipulation happens that you don’t want the clients to see.

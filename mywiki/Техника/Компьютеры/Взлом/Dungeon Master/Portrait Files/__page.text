@@ -1,0 +1,240 @@
+!! Portrait Files (.CMP)
+!!! Portraits description
+
+The Chaos Strikes Back utility disk includes a tool called the Portrait Editor. It allows you to change the name title and image of your champions in a Dungeon Master or Chaos Strikes Back saved game.
+
+You can also save portraits for later use in .cmp files. The Chaos Strikes Back Utility Disk contains a set of .cmp files for all the Dungeon Master champions. Their new appearance is meant to reflect their higher level of experience in case you choose to import your Dungeon Master party.
+
+The goal of this page is to describe the format of .cmp files.
+
+Each .cmp file is 508 bytes long and contains:
+
+* The champion's name and title
+* The champion's image in 32x29 pixels each with 16 possible colors.
+
+The file format is the same for Chaos Strikes Back for Atari ST and Amiga.
+
+I wrote a tool called CMPConverter v1.1 to convert files between .cmp and .bmp formats.
+
+Notes:
+
+* On the Atari ST and Amiga English Release 1 Utility Disks the portrait of Wuuf has an incorrect title: "WUUF - MANA HELL HOUND". This was fixed to "WUUF - THE BIKA" in the Amiga English Release 2 and 3.
+
+!!! Detailed file structure
+In this part of the document each section of the file is entitled with the following information: Offset hexadecimal (offset decimal) Size of section in bytes - Description of section.
+Below the title of each section are details about its content.
+
+!!!! 000h (000) 16 bytes - File header
+2 bytes: 91 A7 : Magic number for Portrait file (file signature).
+
+* Files that do not start with this signature cannot be opened by the portrait editor. The Atari ST version and the Amiga English Release 1 would tell "This champion is damaged!"; the Amiga Utility Disk English Release 2 and 3 would tell "This champion cannot be used with this adventure".
+
+7 words: System reserved use.
+
+A value of 0001h in the second word identifies that the file originates from Atari ST.
+
+* The portraits supplied on the utility disk have the following values for these 7 words:
+[>
+000A 0001 0001 0001 0000 0000 0000 for ALEX AZIZI BORIS DAROOU ELIJA GANDO GOTHMOG HALK HAWK HISSSSA SONJA SYRA TIGGY WUTSE ZED.
+0000 0000 0001 0001 0000 0000 0000 for IAIDO LEIF LEYLA LINFLAS MOPHUS NABI STAMM WUUF CHANI.
+<]
+Using any one of these two patterns does not seem to make any difference both of them are OK in any portrait.
+* Notes:
+** When you save a portrait from DMute v1.3 it fills these 14 bytes with only 00 bytes. This is fine with the Chaos Strikes Back for Atari ST Utility Disk as well as the Amiga English Release 1 but such portraits cannot be loaded by the Chaos Strikes Back for Amiga Utility Disk English Release 2 and 3 which will tell "This champion cannot be used with this adventure".
+** If random bytes are used it may or may not work. Both the Atari ST and the Amiga Utility Disk English Release 1 2 and 3 may tell "This champion cannot be used with this adventure" if they don't accept the byte pattern. A pattern working with the Atari ST version or the Amiga English Release 1 may not work with the Amiga English Release 2 and 3 versions.
+
+!!!! 010h (016) 8 bytes - Champion's first name
+The name can contain up to 7 characters and must be uppercase only. Allowed characters: "A to Z . ; :" and space. The string must be terminated with a 00 byte. If the name is shorter than 7 characters it is padded with 00 bytes.
+
+!!!! 018h (024) 20 bytes - Champion's title
+The title can contain up to 19 characters and must be uppercase only. Allowed characters: "A to Z . ; :" and space. The string must be terminated with a 00 byte. If the title is shorter than 19 characters it is padded with 00 bytes.
+
+!!!! 02Ch (044) 464 bytes - Champion's image
+The image is saved in Atari planar format. It is divided into 58 blocks of 8 bytes.
+
+Each block of 8 bytes defines a half of a line (16 pixels). Blocks are listed line by line from the upper left corner of the image to the lower right corner.
+
+Each pixel is coded on 4 bits (2^4=16 colors). Bit 0 is the least significant bit and Bit 3 is the most significant bit.
+
+Please refer to the table below for the bit values/colors correspondance.
+
+An example of an 8 bytes block with arbitrary values:
+
+[@
+01001011 11100001 00001101 01001010 10100010 10101111 00101001 11111000
+^      ^ ^      ^ ^               ^                   ^               ^
+|      | |      | |               |                   |               |
+|      | |      | |               |                   |               - Bit 3 of the 16th pixel
+|      | |      | |               |                   - Bit 3 of the 1st pixel
+|      | |      | |               - Bit 1 of the 16th pixel
+|      | |      | - Bit 1 of the 1st pixel
+|      | |      - Bit 0 of the 16th pixel
+|      | - Bit 0 of the 9th pixel
+|      - Bit 0 of the 8th pixel
+- Bit 0 of the 1st pixel
+@]
+
+!!!! 1FBh (507) End of file
+
+!!!! Color table
+The color palette is not saved in the .cmp files. It is the same palette as the one used in the game:
+
+||
+||Color Number	||3 ||2 ||1 ||0	||Color name	||Original Atari ST RGB values (0-7)	||Original Apple IIGS and Amiga RGB values (0-F)	||Converted RGB values (0-255)	||
+||0 (00)		||0 ||0 ||0 ||0	||Black			||0 0 0									||0 0 0												||00 00 00						||
+||1 (01)		||0 ||0 ||0 ||1	||Gray 43%		||3 3 3									||6 6 6												||6D 6D 6D						||	
+||2 (02)		||0 ||0 ||1 ||0	||Gray 57%		||4 4 4									||8 8 8												||92 92 92						||	
+||3 (03)		||0 ||0 ||1 ||1	||Dark Brown	||3 1 0									||6 2 0												||6D 24 00						||	
+||4 (04)		||0 ||1 ||0 ||0	||Turquoise		||0 6 6									||0 C C												||00 DB DB						||	
+||5 (05)		||0 ||1 ||0 ||1	||Light Brown	||4 2 0									||8 4 0												||92 49 00						||	
+||6 (06)		||0 ||1 ||1 ||0	||Dark Green	||0 4 0									||0 8 0												||00 92 00						||	
+||7 (07)		||0 ||1 ||1 ||1	||Light Green	||0 6 0									||0 C 0												||00 DB 00						||	
+||8 (08)		||1 ||0 ||0 ||0	||Red			||7 0 0									||F 0 0												||FF 00 00						||	
+||9 (09)		||1 ||0 ||0 ||1	||Gold			||7 5 0									||F A 0												||FF B6 00						||	
+||A (10)		||1 ||0 ||1 ||0	||Flesh			||6 4 3									||C 8 6												||DB 92 6D						||	
+||B (11)		||1 ||0 ||1 ||1	||Yellow		||7 7 0									||F F 0												||FF FF 00						||	
+||C (12)		||1 ||1 ||0 ||0	||Gray 28%		||2 2 2									||4 4 4												||49 49 49						||	
+||D (13)		||1 ||1 ||0 ||1	||Gray 71%		||5 5 5									||A A A												||B6 B6 B6						||	
+||E (14)		||1 ||1 ||1 ||0	||Blue			||0 0 7									||0 0 F												||00 00 FF						||	
+||F (15)		||1 ||1 ||1 ||1	||White			||7 7 7									||F F F												||FF FF FF						||	
+
+Here is the same table with the colors listed in the same order as they appear on the Portrait Editor screen:
+
+||
+||Color Number	||3 ||2 ||1 ||0	||Color name	||Original Atari ST RGB values (0-7)	||Original Apple IIGS and Amiga RGB values (0-F)	||Converted RGB values (0-255)	||
+||0 (00)		||0 ||0 ||0 ||0	||Black			||0 0 0									||0 0 0												||00 00 00						||
+||C (12)		||1 ||1 ||0 ||0	||Gray 28%		||2 2 2									||4 4 4												||49 49 49						||	
+||1 (01)		||0 ||0 ||0 ||1	||Gray 43%		||3 3 3									||6 6 6												||6D 6D 6D						||	
+||2 (02)		||0 ||0 ||1 ||0	||Gray 57%		||4 4 4									||8 8 8												||92 92 92						||	
+||D (13)		||1 ||1 ||0 ||1	||Gray 71%		||5 5 5									||A A A												||B6 B6 B6						||	
+||F (15)		||1 ||1 ||1 ||1	||White			||7 7 7									||F F F												||FF FF FF						||	
+||3 (03)		||0 ||0 ||1 ||1	||Dark Brown	||3 1 0									||6 2 0												||6D 24 00						||	
+||5 (05)		||0 ||1 ||0 ||1	||Light Brown	||4 2 0									||8 4 0												||92 49 00						||	
+||A (10)		||1 ||0 ||1 ||0	||Flesh			||6 4 3									||C 8 6												||DB 92 6D						||	
+||8 (08)		||1 ||0 ||0 ||0	||Red			||7 0 0									||F 0 0												||FF 00 00						||	
+||9 (09)		||1 ||0 ||0 ||1	||Gold			||7 5 0									||F A 0												||FF B6 00						||	
+||B (11)		||1 ||0 ||1 ||1	||Yellow		||7 7 0									||F F 0												||FF FF 00						||	
+||7 (07)		||0 ||1 ||1 ||1	||Light Green	||0 6 0									||0 C 0												||00 DB 00						||	
+||6 (06)		||0 ||1 ||1 ||0	||Dark Green	||0 4 0									||0 8 0												||00 92 00						||	
+||4 (04)		||0 ||1 ||0 ||0	||Turquoise		||0 6 6									||0 C C												||00 DB DB						||	
+||E (14)		||1 ||1 ||1 ||0	||Blue			||0 0 7									||0 0 F												||00 00 FF						||	
+
+Note: The original Atari ST RGB values were listed by Wayne Holder in an article he published (see below).
+
+The original Amiga RGB values were extracted from the game executable.
+
+The converted RGB values were computed using the following formula: Round(Atari ST value * 255 / 7)
+
+!! Article by Wayne Holder about Portraits
+
+Wayne Holder published the technical details of cmp files as a reply to users wanting to exchange portraits in the CPU Newswire online magazine from STR Publishing Inc. Issue No.4.03 January 19 1990. Here it is in its original form:
+
+[@
+FTL RESPONDS! CPU/STR Spotlight   FTL tries hard to satisfy!
+===============================
+
+
+
+                   THE FINE ART OF CUSTOMER SATISFACTION
+                   =====================================
+
+
+
+ FTL Replies;
+
+
+
+  News Flash from Gestapo Headquarters!
+  - - -
+ Regarding the  debate over  my request  to stop uploading saved games.   I
+ think I  can propose  an alternate  solution.   As I  mentioned before my
+ concern is  primarily protecting  our copyrights.   I really don't want to
+ discourage people from trading  Champions.   However currently  the saved
+ game file  contains more than the Champion stats.  In discussing this with
+ my staff we came up with the idea of creating a utility that would extract
+ only the  Champion data  from a  game file and convert it into a form that
+ could be uploaded and directly read  by  the  Chaos  Strikes  Back Utility
+ disk.  Would this be an acceptable solution?
+
+
+ Editor Note;
+
+ to FTL....
+          Not only  is the solution offered by you (FTL) excellent it also
+ illustrates clearly for all to see  why this  company is  the success it
+ is..   These good  people recognize the true value of customer support and
+ offer themselves to this ens unselfishly.  Many  thanks are  offered for a
+ quick and  equitable solution.   Your  sense of  humor is to be applauded.
+ Your handling of  this  entire  situation  could  easily  be  a  lesson in
+ diplomacy and good will all of us can learn from.  Again thanks.
+
+                              ---===**===---
+
+  Regarding the Champion picture files.
+           Here is a description of the format of these files.
+                          (All offsets in bytes)
+
+    offset   0: 0x91A7  Magic number for Portrait file
+    offset   2: 0x000A  System reserved use
+    offset   4: 0x0001  Identifies file originates from Atari ST
+    offset   6: 0x0001  System reserved use
+    offset   8: 0x0001  System reserved use
+    offset  10: 0x0000  System reserved use
+    offset  12: 0x0000  System reserved use
+    offset  14: 0x0000  System reserved use
+    offset  16: "NICKNME"0 Nickname (8 bytes total incl zero delim)
+    offset  24: "CHAMP TITLE"0 Title (20 bytes total incl zero delim)
+    offset  44: portrait data See note 3.
+
+  - - -
+  Notes:
+  1. Title is optional (first byte may be zero) but all Champions must
+     have a NICKNAME (offset 16)
+
+  2. Valid characters for nickname or title are uppercase A-Z comma
+     period semicolon colon and space.
+
+  3. Portrait is 464 bytes (32 pixels wide by 29 lines tall)
+     saved in Atari planar format as follows:
+   line 1 <16 bit plane 0> MSB is leftmost pixel
+    <16 bit plane 1>
+    <16 bit plane 2>
+    <16 bit plane 3>
+    <16 bit plane 0> LSB is rightmost pixel
+    <16 bit plane 1>
+    <16 bit plane 2>
+    <16 bit plane 3>
+   Lines 2-29 repeat as above.
+
+
+  4. Color palette is not saved in file but is assumed to be as follows:
+   color  0: 0x0000 Black
+   color  1: 0x0333 gray
+   color  2: 0x0444 gray
+   color  3: 0x0310 brown
+   color  4: 0x0066 cyan
+   color  5: 0x0420 brown
+   color  6: 0x0040 green
+   color  7: 0x0060 green
+   color  8: 0x0700 red
+   color  9: 0x0750 gold
+   color 10: 0x0643 flesh
+   color 11: 0x0770 yellow
+   color 12: 0x0222 gray
+   color 13: 0x0555 gray
+   color 14: 0x0007 blue
+   color 15: 0x0777 white
+
+  - - -
+     If  anyone  writes  any  useful  utilities  with this info I'd like to
+ receive  a copy.  Send it to:
+
+                               Wayne Holder
+                         C/O Software Heaven Inc.
+                       6160 Lusk Blvd.   Suite C-206
+                          San Diego Calif 92121.
+@]
+
+!!! Special Thanks
+
+I wish to thank George Gilbert the developer of DMute. I used this tool to produce some sample .cmp files that helped me decode the whole file. I could have done it using the Chaos Strikes Back Portrait Editor but DMute was easier to use.
