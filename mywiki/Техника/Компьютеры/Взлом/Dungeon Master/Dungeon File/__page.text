@@ -1,0 +1,1206 @@
+!! Dungeon File (DUNGEON.DAT)
+Version 1.8 - June 5, 2011
+by ChristopheF
+
+Dungeon files are called DUNGEON.DAT in most versions of the games. The Apple II GS dungeon file is called DUNGEON.GAME (this version also contains an additional dungeon file called DUNGEON.BONUS for the Kid Dungeon). In multilingual versions, DUNGEONF.DAT and DUNGEONG.DAT are also used respectively for French and German versions of the dungeons.
+
+Each dungeon file describes a complete dungeon with walls, doors, items, creatures, etc... It is possible to play completely new games by replacing the original dungeon files by new fan-made dungeons.
+
+The file format for dungeons is nearly the same for all versions of Dungeon Master, Chaos Strikes Back and Dungeon Master II. Here are the few differences:
+
+* Little endian or big endian[[<<]]Computers can store a word of data (2 bytes) in two ways:
+** Little endian: the least significant byte is stored first. Dungeons use this format on Apple II GS, PC, Super NES, FM-Towns, PC-98 and IBM PS-V.
+** Big endian: the most significant byte is stored first. Dungeons use this format on Atari ST, Amiga, X68000, Macintosh and Sega CD.
+
+It is possible to convert a dungeon between these two formats by swapping the two bytes of each word of data (single bytes must not be swapped).
+
+* Checksum
+** A dungeon file may optionnaly include a 16 bits checksum (a word) at the end of the file. The games will accept dungeons with a correct checksum or no checksum at all, but they will reject a dungeon with an incorrect checksum (This was not checked with all versions).
+** In Dungeon Master versions 1.x (Atari ST), the original dungeon files never have a checksum.
+** In Dungeon Master and Chaos Strikes Back versions 2.x and above, English dungeon files always have a checksum and non English dungeon files never have a checksum (this applies to the Dungeon Master dungeon, the Kid Dungeon and the Chaos Strikes Back Prison.
+** In the Chaos Strikes Back dungeon and in the Dungeon Master II dungeon (including beta and demo versions) there is always a checksum.
+
+* Compression
+** Each dungeon file may be optionnaly compressed. Most versions of the games will accept both compressed and uncompressed dungeons, but for example Dungeon Master for Atari ST version 1.2 English does not support compressed dungeons. (This was not checked with all versions).
+
+Here is a summary of the properties of the dungeons from all the available versions of the games on this site:
+
+||
+||Dungeon File Description MD5 Hash	||Endian	||Checksum	||Compressed Size (if compressed)	||Uncompressed size	||Notes	||
+Dungeon Master
+DUNGEON.DAT (Atari ST 1.0 EN 1987-12-08)
+EBCCB5F99C4437ADCB34D9228B57EB6A	Big	No		33286	
+DUNGEON.DAT (Atari ST 1.0 EN 1987-12-11)
+C4A54AF4284F40BC3D53FE2C7EF5195B	Big	No		33314	
+DUNGEON.DAT (Atari ST 1.1 EN)
+E0333C81C52E957DACD3B45739D077C9	Big	No		33442	
+DUNGEON.DAT (Atari ST 1.2 EN)
+050FB2CFDED1B502EC2C53956B94C5BD	Big	No		33442	
+DUNGEON.DAT (Atari ST 1.2 GE)
+CEA11D6E9F7E1698FC95329FE3FB0899	Big	No		33792	Identical to uncompressed DUNGEON.DAT (Amiga 2.0 & 2.2 GE), DUNGEONG.DAT (Amiga 3.6 EN FR GE)
+DUNGEON.DAT (Atari ST 1.3 FR)
+DFD82FB7D44E4B5CC81ADD257655C966	Big	No		33774	Identical to uncompressed DUNGEON.DAT (Amiga 2.0 FR), DUNGEONF.DAT (Amiga 3.6 EN FR GE)
+DUNGEON.GAME (Apple IIGS 2.0 EN)
+E10959DE5CE74E48A17E2CC84D1C0B92	Little	Yes	25006	33444	Once converted to big endian, identical to DUNGEON.DAT (Amiga 2.0 & 2.1 & 2.2 EN, 3.6 EN FR GE)
+DUNGEON.DAT (Amiga 2.0 & 2.1 & 2.2 EN, 3.6 EN FR GE)
+30028FB6A301ECB20127EF0B3AF32B05	Big	Yes	25006	33444	Once converted to little endian, identical to dungeon.game (Apple IIGS 2.0 EN)
+DUNGEON.DAT (Amiga 2.0 FR), DUNGEONF.DAT (Amiga 3.6 EN FR GE)
+C0E1BF1B9C5578681879D624BB28E663	Big	No	25414	33774	Once uncompressed, identical to DUNGEON.DAT (Atari ST 1.3 FR)
+DUNGEON.DAT (Amiga 2.0 & 2.2 GE), DUNGEONG.DAT (Amiga 3.6 EN FR GE)
+59E332CF47852D5C7C88A9538F0ADCEA	Big	No	25380	33792	Once uncompressed, identical to DUNGEON.DAT (Atari ST 1.2 GE)
+DUNGEON.DAT (FM-Towns 2.0 EN)
+3DC0A932D0E0ADFE59878F07C51700C5	Little	Yes		33423	
+DUNGEON.DAT (FM-Towns 2.0 JP, PC-98 2.0 JP)
+FE098F70CE83CFE3F2333565093DAF35	Little	No		33931	
+DUNGEON.DAT (X68000 3.0 JP)
+3E9612E7137BB0BA63D79D35F3458B4E	Big	No		33990	
+DUNGEON.DAT (PC 3.4 EN, 3.4 EN FR GE)
+766450C940651FC021C92FE5D0D0B3A6	Little	Yes		33357	
+DUNGEONF.DAT (PC 3.4 EN FR GE)
+82C7802122E9CFB2DC117BC9D197F457	Little	No		33687	
+DUNGEONG.DAT (PC 3.4 EN FR GE)
+B9487DB563FF9E89605C77EE44D17D14	Little	No		33705	
+Extract (Super NES 1.0 EN (Europe), 1.0 EN (USA), 1.0 & 1.1 JP)
+049D670A12CC1979F20AC0E15EDDDD79	Little	No		33380	This dungeon was extracted from the Super NES ROM using DM SNES-PC Exchange
+Kid Dungeon (Bonus dungeon supplied with some versions of the game)
+DUNGEON.BONUS (Apple IIGS 2.0 EN)
+550EFD94ECB941D44E65DEF1B758587C	Little	Yes	4958	6562	
+DUNGEONB.DAT (Amiga 2.2 EN, 2.2 GE)
+D42915CF346494EFA0ED78CFBBB4C2B5	Big	Yes	4806	6359	
+Chaos Strikes Back Prison (where you can choose champions)
+DUNGEON.DAT (Atari ST 2.0 & 2.1 EN Game Disk, Amiga 3.1 & 3.5 EN Game Disk, Amiga 3.1 & 3.3 EN FR GE Game Disk)
+6695D2ACEBCE49F95DB1D8F3A5C733DE	Big	Yes	2098	2622	Once converted to little endian, identical to DUNGEON.DAT (FM-Towns 3.1 EN)
+DUNGEONF.DAT (Amiga 3.1 & 3.3 EN FR GE Game Disk)
+5ECE6270669693F7F48BD2E1E350CDB6	Big	No	2091	2624	
+DUNGEONG.DAT (Amiga 3.1 & 3.3 EN FR GE Game Disk)
+7926A41466C7113C082A8D766B2E5A16	Big	No	2076	2618	
+DUNGEON.DAT (FM-Towns 3.1 EN)
+83C56CF1B779E7460A55C9299EBEB04B	Little	Yes	2098	2622	Once converted to big endian, identical to DUNGEON.DAT (Atari ST 2.0 & 2.1 EN Game Disk, Amiga 3.1 & 3.5 EN Game Disk, Amiga 3.1 & 3.3 EN FR GE Game Disk)
+DUNGEON.DAT (FM-Towns 3.1 JP, PC-98 31. JP)
+7CA51C17EF8BD542CA5F0273672EC1A5	Little	No	2065	2600	
+DUNGEON.DAT (X68000 3.1 JP)
+8EEA67CFDF033031530E9B4F88D57066	Big	No	2066	2602	
+Chaos Strikes Back (extracted from MINI.DAT saved game)
+MINI.DAT (Atari ST 2.0 & 2.1 EN)
+9B5D7323884BE0FFA20F74D54B6A9039	Big	Yes		32655	
+MINI.DAT (Amiga EN Release 1, 2 & 3)
+F12B500022EC4ED87C7220F12A072098	Big	Yes		32688	
+MINIF.DAT (Amiga FR)
+E74F95A65907D6CDFEFCFC3D13A0DEAE	Big	Yes		32776	
+MINIG.DAT (Amiga GE)
+05E615C44984A0F168ACA867C646CD2F	Big	Yes, Invalid!		32780	
+MINI.DAT (FM-Towns 3.1 EN)
+9B7F387DCF7FC221F08274E6D5EA1531	Little	Yes		32684	
+MINI.DAT (FM-Towns 3.1 JP)
+870E5764D6BA74BE3806C6ABEA733347	Little	Yes		33116	
+MINI.DAT (PC-98 3.1 JP)
+05CF681CCF56F5B6B23A654868EA9CB8	Little	Yes		33124	
+MINI.DAT (X68000 3.1 JP)
+9834E01A73F61306CA145D792193F737	Big	Yes		33124	
+Dungeon Master II Beta version on PC
+DUNGEON.DAT (PC Beta 0.9 EN)
+80D989890FFCA46BABC84442272E2089	Little	Yes		39554	
+Dungeon Master II Demo
+DUNGEON.DAT (PC Demo 1.0 EN)
+9794F25CC83BEFA0BD798AE0442EAE9D	Little	Yes		6535	Once converted to big endian, identical to DUNGEON.DAT (Macintosh Demo 1.0 EN)
+DUNGEON.DAT (Macintosh Demo 1.0 EN)
+C9C909CB8CC2ED68DEF20211B8C1CAF6	Big	Yes		6535	Once converted to little endian, identical to DUNGEON.DAT (PC Demo 1.0 EN)
+Dungeon Master II
+DUNGEON.DAT (Amiga 1.0 EN, Macintosh 1.0 EN)
+719AE78BC124027806C65491A256827D	Big	Yes		39411	
+DUNGEON.DAT (Macintosh 1.0 JP)
+29F386D5EC836BB5294155F6975F1E01	Big	Yes		37957	
+DUNGEON.DAT (PC 1.0 EN, 1.0 FR, 1.0 GE)
+6CACCD7875009E82FE2E28E7F6D6ADC0	Little	Yes		39437	
+DUNGEON.DAT (Sega CD 1.0 EN)
+918CA21778D88A028BB7541DC064BB41	Big	Yes		37957	
+DUNGEON.DAT (Sega CD 1.0 JP)
+92F83C251FEC69E01C594BC01CE5CD51	Big	Yes		37957	
+DUNGEON.DAT (FM-Towns 1.0 JP)
+74C7549F174574201988BF936385841A	Little	Yes		37954	
+DUNGEON.DAT (PC-9801 1.0 JP)
+74616DFE800CA2A5DAC76A60A95387E5	Little	Yes		39004	
+DUNGEON.DAT (IBM PS-V 1.0 JP, PC-9821 1.0 JP)
+FA644B2451AF197874EE7DC3951E7033	Little	Yes		37957	
+
+Notes
+
+* The DUNGEON.DAT file in Chaos Strikes Back is the prison (the little two levels dungeon where you choose your champions when you start a new game). The main dungeon is stored as a saved game on the utility disk (the file is called MINI.DAT).
+* In Dungeon Master II, the music to play on each map is not stored in the dungeon file.
+* Dungeons can contain up to 256 maps of 32x32 tiles. Maps can be on 64 levels (several maps can be on the same level, like in the main exterior level in Dungeon Master II)
+
+!!! Detailed file structure
+
+Here is a detailed description of the contents of the DUNGEON.DAT file from Dungeon Master for PC.
+
+This example is used to show the structure of a dungeon file. Offsets would be different in other dungeons.
+
+Notes:
+
+* This file is 33357 bytes long.
+
+In this part of the document, each section of the file is entitled with the following information: Offset hexadecimal (offset decimal) Size of section in bytes - Description of section.
+Below the title of each section are details about its content.
+
+!!!! 0000h (00000) 44 bytes - File header
+
+* 1 word: 0063 (99) : Random seed and Dungeon ID. This value is used to define where to display random decorations on walls and floors.
+* It is also a unique value identifying the dungeon. Hint Oracle hints files refer to this value to associate the dungeon with the hints file. It is stored in the header of the hints file as described on Technical Documentation - File Formats - Hint Oracle Hints File (HCSB.HTC).[[<<]]Values are 99 (Dungeon Master), 8 (Chaos Strikes Back Prison), 13 (Chaos Strikes Back Dungeon), 0 (Dungeon Master II).
+* 1 word: 2FFB (12283) : Size of global map data in bytes (total size of all maps)
+* 1 byte: 0E (14) : Number of maps (in Dungeon Master and Chaos Strikes Back, number of maps = number of levels)
+* 1 byte: 00 (0) : Unused, padding
+* 1 word: 06D5 (1749): Text data size in words (1749 words * 2 = 3498 bytes)
+* 1 word: 0861 (0000 10 00011 00001 : X=1, Y=3, south direction) : Starting party position (must start on map 0)
+** Bits 15-12: Unused
+** Bits 11-10: Direction
+*** '00' North
+*** '01' East
+*** '10' South
+*** '11' West
+** Bits 9-5: Y coordinate
+** Bits 4-0: X coordinate
+* 1 word: 068F (1679) : Object list size in words (1679 words * 2 = 3358 bytes)
+* 16 words: Number of objects of each type:
+** 1 word: 00AA (170) : Number of doors
+** 1 word: 00B3 (179) : Number of teleporters
+** 1 word: 007D (125) : Number of texts
+** 1 word: 02AC (684) : Number of actuators
+** 1 word: 00B6 (182) : Number of creatures
+** 1 word: 006B (107) : Number of weapons
+** 1 word: 0079 (121) : Number of clothes
+** 1 word: 0023 (35) : Number of scrolls
+** 1 word: 0038 (56) : Number of potions
+** 1 word: 000C (12) : Number of containers
+** 1 word: 0118 (280) : Number of miscellaneous items
+** 3 words: 0000 0000 0000 : Unused
+** 1 word: 0000 (0) : Number of missiles
+** 1 word: 0000 (0) : Number of clouds
+
+!!!! 002Ch (44) 224 bytes - Map definitions
+
+Each map is defined by 16 bytes (14 maps * 16 bytes = 224 bytes)
+
+* 00h (00) 1 word: Offset of map data in global map data
+* 02h (02) 1 word: This word is not used by Dungeon Master and Chaos Strikes Back, where its value is always 0000. It is only used in Dungeon Master II.[[<<]]This word is a bit field defining which components are used on the map:
+** Bits 15-9: Unused
+** Bit 8: Door type 1
+** Bit 7: Door type 0
+** Bit 6: Portraits
+** Bit 5: Blue haze of teleporters
+** Bit 4: Stairs going down
+** Bit 3: Stairs going up
+** Bit 2: Nearly invisible pit. This bit is always set to 0 in the Dungeon Master II dungeon because it does not use this kind of pits. However the pictures do exist and they work fine, even with this bit set to 0)
+** Bit 1: Pit in the ceiling. Always set to 1 in the Dungeon Master II dungeon, probably because detecting that with the original dungeon editor was too difficult (as it would need to examine other maps)
+** Bit 0: Normal pit
+
+The exact role of these bits is not clear.
+
+If one bit for doors is set to 0 then the corresponding doors are not displayed and replaced by a grimacing face (the door frame is still displayed, though).
+
+The other bits can be changed from 1 to 0 without any visible impact as things are still displayed correctly.
+
+This word may be used to allocate memory for graphics or for color palette management. What is known is that the values are used by the code.
+
+* 04h (04) 1 word: 0000 : Unused
+* 06h (06) 1 byte: Map offset x
+* 07h (07) 1 byte: Map offset y
+* 08h (08) 1 word: Map size
+** Bits 15-11: Map height - 1
+** Bits 10-6: Map width - 1
+** Bits 5-0: Level number. Several maps can be at the same level in order to produce large levels. This is only used in Dungeon Master II where for example the exterior level (level 6) is made of 26 maps, resulting in a global size of 86x93 tiles. Here are the associations of levels and maps in the Dungeon Master II dungeon:
+*** Level 1: Map 01
+*** Level 2: Maps 02 03
+*** Level 3: Maps 04 05
+*** Level 4: Maps 06 07
+*** Level 5: Maps 08 09
+*** Level 6: Maps 10 11 14 15-19 22-34 37 39 41-43
+*** Level 7: Maps 00 12 20 21 35 36 40
+*** Level 8: Map 13
+*** Level 9: -
+*** Level 10: Map 38
+* 0Ah (10) 1 word: Number of graphics
+** Bits 15-12: Number of floor graphics available for random decorations
+** Bits 11-8: Number of floor graphics available in the map
+** Bits 7-4: Number of wall graphics available for random decorations
+** Bits 3-0: Number of wall graphics available in the map
+** Note: The number of graphics available for random decorations must be smaller than the number of graphics available in the map. The first graphics in the lists of available graphics (defined at the end of each map data) are used for random decorations.[[<<]]Random decorations are only placed on the sides of 'Wall' and 'Floor' tiles if they allow them (four bits to allow each side of the tile to receive a decoration). The program generates a random number between 0 and 29. If the random number is lesser than the number of graphics available for random decorations, then the decoration is displayed.
+* 0Ch (12) 1 word:
+** Bits 15-12: Map difficulty. The difficulty (also known as 'depth') is used as an experience multiplier and to determine the initial hit points of generated creatures. Difficulty 0 produces permanent light, as in the Hall of Champions.
+** Bits 11-8: These bits are not used by the games, but there are some non zero values:
+** Dungeon Master: Value 4 for map 3, Value 1 for map 5, Value 3 for map 12
+** Chaos Strikes Back: Value 3 for map 0, Value 1 for map 1, Value 3 for map 2, Value 4 for map 3, Value 2 for map 4, Value 3 for map 5, Value 3 for map 6, Value 3 for map 7, Value 2 for map 8, Value 2 for map 9
+** Dungeon Master II: Values 1 to 5
+** Bits 7-4: Number of creatures types allowed in map
+** Bits 3-0: Number of door decoration graphics (7 max)
+* 0Eh (14) 1 word: Door indices. These indices define both the graphic to use and the door characteristics (used as an index in the 'Door characteristics' in Item 559)
+** Bits 15-12: Index for door type 1
+*** '0000' (0) Grate door
+*** '0001' (1) Wooden door
+*** '0010' (2) Iron door
+*** '0011' (3) Ra door
+*** Other values: Unknown
+** Bits 11-8: Index for door type 0 (Same possible values as door type 1)
+** Bits 7-4: Map graphics style. Must be 0h in Dungeon Master and Chaos Strikes Back because there is only one style available (other values cause graphical glitches or crashes). Here are the possible values in Dungeon Master 2:
+*** 0: Blue zone
+*** 1: Outside
+*** 2: Cave
+*** 3: Interior
+*** 4: Skullkeep roof
+*** 5: Mist
+** Bits 3-0: 00 : Floor and ceiling graphics style. Must be 0h in Dungeon Master and Chaos Strikes Back because there is only one style available (other values cause graphical glitches or crashes). Unused in Dungeon Master II (always 0h).
+
+The Dungeon Master dungeon contains 14 maps, one per level.
+
+The Chaos Strikes Back Prison dungeon contains 2 maps, one per level.
+
+The Chaos Strikes Back dungeon contains 11 maps, one per level. The last map is empty.
+
+The Dungeon Master II dungeon contains 44 maps on 7 levels. Here is a short description of each map:
+
+* 00 Level 7: Hall of champions
+* 01 Level 1: Skullkeep, Roof
+* 02 Level 2: Skullkeep, Lightnings corridor, Skeleton and Onyx keys
+* 03 Level 2: Skullkeep, Door to access Dragoth map
+* 04 Level 3: Skullkeep, Rams pushing to pits
+* 05 Level 3: Skullkeep, Moving teleporters, Fireball reflection
+* 06 Level 4: Skullkeep, Multiple doors and switches
+* 07 Level 4: Skullkeep, Flying chest (below map 4)
+* 08 Level 5: Skullkeep, Vexirks and corridor of fire
+* 09 Level 5: Skullkeep, Zo pit, first machine room
+* 10 Level 6: Skullkeep, Boiler and Pyro
+* 11 Level 6: Skullkeep, Entrance
+* 12 Level 7: Dru Tan map, Blood key
+* 13 Level 8: Fire elementals
+* 14 Level 6: Thorn demons
+* 15 Level 6: Wolves (Second key)
+* 16 Level 6: Exterior: Glops (Beginning of game)
+* 17 Level 6: Cemetery
+* 18 Level 6: Merchant
+* 19 Level 6: Food merchant
+* 20 Level 7: Cave below wolves map
+* 21 Level 7: Leads below Skullkeep (Second Tempest)
+* 22 Level 6: Home, Altar of Vi
+* 23 Level 6: Temple: moving pits
+* 24 Level 6: Merchant
+* 25 Level 6: Trees, marsh
+* 26 Level 6: Gigglers, Fireballs
+* 27 Level 6: Non material creatures (First key)
+* 28 Level 6: Two merchants (clothes and weapons)
+* 29 Level 6: Axes map (Third key)
+* 30 Level 6: Above map 30, access to merchants
+* 31 Level 6: Merchant
+* 32 Level 6: Weapons merchant (Vorax)
+* 33 Level 6: Exterior: near Skullkeep entrance
+* 34 Level 6: Merchant
+* 35 Level 7: Cave: Bats
+* 36 Level 7: Below the temple (random doors)
+* 37 Level 6: Not accessible
+* 38 Level 10: Dragoth map
+* 39 Level 6: Exterior: Access to Wolves map
+* 40 Level 7: Skeletons below Skullkeep
+* 41 Level 6: Exterior: access to cemetery, back to temple, merchant
+* 42 Level 6: Exterior: access to axes map
+* 43 Level 6: Bats under Skulkeep (pits to close)
+
+!!!! 010Ch (268) 818 bytes - Index of tiles with objects on them (per column)
+
+This section contains one word for each column in each map of the dungeon, from left to right and above to below. The sum of the widths of all maps is 409. (409 columns * 2 bytes = 818 bytes)
+
+Each word contains the number of tiles having one (or more) object(s) on them encountered so far while browsing all the dungeon columns. The first word is always 0 because at the beginning of the very first column, no object has been encountered yet. The second word contains the number of tiles having objects on them in the first column. The third word contains the number of tiles having objects on them in the first and second columns, etc... Consequently, each word value is greater or equal to the previous value. The last word in this section contains the number of tiles having objects on them in the whole dungeon, excepted those in the last column of the last map. As there are no objects in the last column of the original Dungeon Master dungeon, the last word contains exactly the number of tiles having objects on them in the whole dungeon (this value is 1300).
+The content of this section is used as a shortcut as it can be rebuilt easily.
+
+!!! 043Eh (1086) 3358 bytes - List of object IDs of first objects on tiles
+
+Each ID is defined by 2 bytes. 1679 (item list size) * 2 = 3358 bytes
+
+There is free space at the end, filled with FF FF words. An FF FF word means that no object is referenced.
+
+2600 bytes used (1300 objects), 758 (379 objects) FF bytes
+
+Each tile has a bit to specify if there are objects on it. Tiles are ordered as in the dungeon file: from up to down, left to right, first map to the last map. The first object ID is located on the first tile having an object, etc...
+
+When several objects are located on the same tile, only the first one is referenced here. Each object references the next object ID located on the same tile. The last object in a linked list has this next object ID: FFFEh
+
+A given object should NOT be referenced by several other objects. The game engine does not allow this and will often crash or corrupt save games when you do so. However, there are few situations where it will work without causing any trouble.
+
+Object ID
+
+* 1 word:
+* Bits 15-14: Object position on tile: North/Top left (00) East/Top right (01) South/Bottom left (10) West/bottom right (11)
+* Bits 13-10: Object category
+** 0000 (0) Doors
+** 0001 (1) Teleporters
+** 0010 (2) Wall texts and messages
+** 0011 (3) Actuators
+** 0100 (4) Creatures
+** 0101 (5) Weapons
+** 0110 (6) Clothes
+** 0111 (7) Scrolls
+** 1000 (8) Potions
+** 1001 (9) Containers
+** 1010 (10) Miscellaneous objects
+** 1011 (11) Unused
+** 1100 (12) Unused
+** 1101 (13) Unused
+** 1110 (14) Missiles. There must not be such objects in a dungeon file, only in saved games. Otherwise they would stay in place in the dungeon because the associated timer would be missing.
+** 1111 (15) Clouds. There must not be such objects in a dungeon file, only in saved games. Otherwise they would stay in place in the dungeon because the associated timer would be missing.
+* Bits 9-0: Object number in list. Valid values range from 0 to 1021.
+
+!!!! 115Ch (4444) 3498 bytes - Text Data
+
+!!!!! Dungeon Master and Chaos Strikes Back
+
+Four types of text strings are found in a dungeon:
+
+* Wall text: text that is displayed on a wall in the dungeon view
+* Message: text that is displayed on the bottom of the screen (for example when entering the Prison in Chaos Strikes Back)
+* Scroll text: text that is displayed when looking at a scroll in a champion's inventory
+* Champion text: texts that are never displayed. They are used to store the initial champion name, skills and statistics.
+
+!!!!! Dungeon Master II
+
+Champion names, skills and statistics are stored in the graphics.dat file.
+
+Some English text data is present in all Dungeon Master II dungeon.dat files (even in the non English versions). However this text data is not used in the dungeon (at least never visible while playing the game), except in Dungeon Master for PC 0.9 Beta. All other versions of Dungeon Master II store all the real text data in the graphics.dat file instead.
+
+!!!!! Fonts
+
+The game uses two fonts to print text on screen. There are two versions of each font, an 'old' font that is used only in Dungeon Master for Atari ST versions 1.0, 1.1 and 1.2 and a 'new' font that is used in all other versions of Dungeon Master and Chaos Strikes Back. The differences between the two fonts are highlighted on the images below:
+
+* A font of 36 characters for wall texts (stored in graphics.dat item #120 in game engine versions 1.x and 2.x, or in item #258 in game engine versions 3.x) %thumb%Attach:Technical.Documentation_Font.Used.For.Wall.Texts_Schema.png%%
+* A font of 128 characters for messages and scroll texts (stored in graphics.dat item #557 in game engine versions 1.x and 2.x and also in Dungeon Master for X68000 3.0, or in item #695 in game engine versions 3.x) %thumb%Attach:Technical.Documentation_Font.Used.For.Interface.And.Scrolls_Schema.png%%
+
+Some versions include a third font in graphics.dat item #12 but it is never used. Later versions of the games do not include it anymore.
+
+!!!!! Encoding
+
+Text data is stored as words. Each word contains 3 codes of 5 bits, and 1 unused bit:
+
+* 1 word: 3 characters
+** Bit 15: Unused, always 0
+** Bits 14-10: First code
+** Bits 9-5: Second code
+** Bits 4-0: Third code
+
+Here is the meaning of each 5 bits code:
+* 0 to 25: Letters 'A' to 'Z'
+* 26: ' ' (Space)
+* 27: '.'
+* 28: Separator
+* 29: Escape code 1
+* 30: Escape code 2
+* 31: End of text
+
+When the game engine decodes dungeon text data, it outputs a string of bytes where each byte is the index of a character in one of the two fonts. Because the two fonts are quite different (numbers of characters and character indices) the game decodes wall texts differently than other texts.
+
+* Codes 0 to 27: 'A' to 'Z', space and '.'
+** Wall text: a byte with the same value as the code is written in the ouput string.
+** Other text: the ASCII code of the character is written in the output string (ASCII codes correspond to the appropriate character indices in the font).
+** For example, if code 0 (letter 'A') is found in a wall text, a 00h byte is written in the output string because character 0 in the wall text font is an 'A'. However, if code 0 is found in another type of text, a 41h byte is written instead because the 'A' character has index 41h in the other font (this matches the ASCII code for 'A').
+* Code 28: Separator[[<<]]The separator character is decoded differently depending on the type of text:
+** Wall texts: Separator is decoded as a 80h byte.
+** Message: Separator is decoded as a 'Space' character
+** Scroll and champion texts: Separator is decoded as a 'Line Feed' character
+* Code 29: Escape code 1
+** When code 29 is found, the next code in the text data is used as an index in a table of zero terminated strings. The corresponding string in the table is appended to the output string. Nothing prevents this escape code from being used in a wall text however it cannot work because the character indices in the table are all higher than 35 which is the index of the last character in the font for wall texts.
+** Each string in the table contains a single character (2 bytes per string). The table is identical in all versions of Dungeon Master and Chaos Strikes Back:
+*** 61 00 62 00 63 00 64 00 65 00 66 00 67 00 68 00 
+*** 69 00 6A 00 6B 00 6C 00 6D 00 6E 00 6F 00 70 00 
+*** 71 00 72 00 73 00 74 00 75 00 76 00 77 00 78 00 
+*** 30 00 31 00 32 00 33 00 34 00 35 00 36 00 37 00 
+** Note that this escape code and the table above has no real use in the games.
+** This escape code is used only twice in the French dungeons in the following versions:
+*** Dungeon Master for Atari ST version 1.3 FR
+*** Dungeon Master for Amiga version 2.0 FR
+*** Dungeon Master for PC version 3.4 EN FR GE
+** Both times it is followed by code 1Ah which outputs a '2' character in the middle of strings where it is clearly a typo, in the message at (00,09,01) and in the scroll at (13,23,04).
+** The values in the table seem to refer to the magic symbols in the font, but with a shift of 1.
+* Code 30: Escape code 2
+* When code 30 is found, the next code in the text data is used as an index in a table of zero terminated strings. The corresponding string in the table is appended to the output string. There are two distinct tables, one is used when decoding wall texts and the other when decoding other types of texts.
+* Each string in the table contains up to 7 characters (8 bytes per string). The content of this table is not the same in all versions of Dungeon Master and Chaos Strikes Back.
+* Table for Escape code 2 in Wall texts: Each byte in these strings is a character index in the font for wall texts
+** Dungeon Master for Atari ST versions 1.0, 1.1 and 1.2 use this table:
+***             String (Hex)              Corresponding characters in font
+*** Code 0-1:   00 00 00 00 00 00 00 00   ''
+*** Code 2:     13 07 04 1A 00 00 00 00   'THE '
+*** Code 3:     18 0E 14 1A 00 00 00 00   'YOU '
+*** Codes 4-31: 00 00 00 00 00 00 00 00   ''
+** These versions of the game use the 'old' font.
+** Dungeon Master for Atari ST version 1.3 and all other versions of Dungeon Master and Chaos Strikes Back use this table:
+***              String (Hex)              Corresponding characters in font
+*** Code 0:      1C 00 00 00 00 00 00 00   ' '
+*** Code 1:      1D 00 00 00 00 00 00 00   ' '
+*** Code 2:      13 07 04 1A 00 00 00 00   'THE '
+*** Code 3:      18 0E 14 1A 00 00 00 00   'YOU '
+*** Code 4:      1E 00 00 00 00 00 00 00   ' '
+*** Code 5:      1F 00 00 00 00 00 00 00   ' '
+*** Code 6:      20 00 00 00 00 00 00 00   ' '
+*** Code 7:      21 00 00 00 00 00 00 00   '''
+*** Code 8:      22 00 00 00 00 00 00 00   ' '
+*** Code 9:      23 00 00 00 00 00 00 00   ' '
+*** Codes 10-31: 00 00 00 00 00 00 00 00   ' '
+** These versions of the game use the 'new' font.
+* Table for Escape code 2 in other texts: Each byte in these strings is a character index in the font for interface and scrolls.
+* Note that when printing scroll texts on screen, 64 is substracted from the character indices of letters (A to Z only) so that they use the characters #1 to #26 in the font instead of the default characters #65 to #90.
+** Dungeon Master for Atari ST versions 1.0, 1.1 and 1.2 use this table:
+***             String (Hex)              Corresponding characters in font
+*** Code 0:     3F 00 00 00 00 00 00 00   '?'
+*** Code 1:     21 00 00 00 00 00 00 00   '!'
+*** Code 2:     54 48 45 20 00 00 00 00   'THE '
+*** Code 3:     59 4F 55 20 00 00 00 00   'YOU '
+*** Codes 4-31: 00 00 00 00 00 00 00 00   ''
+** These versions of the game use the 'old' font.
+** Dungeon Master for Atari ST version 1.3 and all other versions of Dungeon Master and Chaos Strikes Back use this table:
+***              String (Hex)               Corresponding characters in font
+*** Code 0:      78 00 00 00 00 00 00 00   '?'          Bug: this code is used in texts
+*** Code 1:      79 00 00 00 00 00 00 00   ' '    <---- and should be '!' but character
+*** Code 2:      54 48 45 20 00 00 00 00   'THE '       #79h is empty in the font.
+*** Code 3:      59 4F 55 20 00 00 00 00   'YOU '
+*** Code 4:      7A 00 00 00 00 00 00 00   ' '
+*** Code 5:      7B 00 00 00 00 00 00 00   ' '
+*** Code 6:      7C 00 00 00 00 00 00 00   ' '
+*** Code 7:      7D 00 00 00 00 00 00 00   '''
+*** Code 8:      7E 00 00 00 00 00 00 00   ' '
+*** Code 9:      7F 00 00 00 00 00 00 00   ' '
+*** Codes 10-31: 00 00 00 00 00 00 00 00   ''
+** These versions of the game use the 'new' font.
+** Both tables are stored in item 559 in the Atari ST versions and directly in the executable in other versions (you can refer to Technical Documentation - Graphics.dat Item 559 for the Atari ST versions).
+* Code 31: End of text
+** When this code is found, text decoding stops.
+
+In Dungeon Master and Chaos Strikes Back, the initial champion statistics and skills are stored as text in the dungeon file. In Dungeon Master II, this information is stored in the graphics.dat file.
+
+These special texts have the following structure:
+ 
+* Name: 7 characters maximum, followed by a carriage return.
+* Title: 19 characters maximum. The title string is split in two parts of 17 + 2 characters. Each part is followed by a carriage return. The game concatenates the two parts of the title.
+* Gender: 1 character (must be 'M' or 'F') followed by a carriage return. The gender makes not difference, it is not used by the game engine.
+* Health: 4 characters.
+* Stamina: 4 characters. This value is always 10 times the value displayed in the game.
+* Mana: 4 characters followed by a carriage return.
+* Luck: 2 characters. This statistic is not visible in the game.
+* Strength: 2 characters.
+* Dexterity: 2 characters.
+* Wisdom: 2 characters.
+* Vitality: 2 characters.
+* Anti-magic: 2 characters.
+* Anti-fire: 2 characters followed by a carriage return.
+* Fighter: 4 characters, one for each hidden skill.
+* Ninja: 4 characters, one for each hidden skill.
+* Priest: 4 characters, one for each hidden skill.
+* Wizard: 4 characters, one for each hidden skill, followed by an end of text character.
+
+Notes:
+ 
+* The name, title and gender use the same encoding as normal texts (see above).
+* The statistics and skills use an hexadecimal encoding: only character codes 0 to 15 (0h to Fh) are allowed. Example: if in the champion text, the string for health consists of the four characters 0h, 0h, 3h and Bh then it must be interpreted as the hexadecimal value 0x003B which is equal to 59 health points in decimal.
+* For the skills, each character specifies the initial starting level in each hidden skill and not the initial starting experience points.
+* The visible skill levels are computed by adding the experience points (not levels) in the 4 hidden skills and then convert this experience amount to the corresponding skill level.
+* Please refer to the Technical Documentation - Dungeon Master and Chaos Strikes Back Skills and Statistics for the link between experience points and experience levels.
+* Dungeon Master II requires double amounts of experience points for the same experience level compared to Dungeon Master and Chaos Strikes Back.
+
+!!!! 1F06h (7942) 680 bytes - List of doors
+
+Each door is defined by 4 bytes. (170 doors * 4 bytes = 680 bytes)
+
+Door objects must always be created on door tiles.
+
+* 1 word: Next object ID.
+* 1 word: Door attributes.
+** Bits 15-9: Unused.
+** Bit 8: Destructible by chopping.
+*** '0' Not Destructible
+*** '1' Destructible
+** Bit 7: Destructible by Fireball.
+*** '0' Not Destructible
+*** '1' Destructible
+** Bit 6: Button.
+*** '0' Door without button
+*** '1' Door with button
+** Bit 5: Opening direction.
+*** '0' Horizontal
+*** '1' Vertical
+** Bits 4-1: Ornate number (0 no ornate) Be careful to only use ornate defined in the map definition, otherwise glitched graphics will appear.
+** Bit 0: Door type (defines the appearance based on door graphics declared in map)
+
+The attack power required to destroy a door depends on its type. The resistance values are stored in the graphics.dat file in item 559, offset 244h (4 words). Wooden doors are easy, grate doors are harder, iron doors are very hard and Ra doors are nearly indestructible.
+
+!!!! 21AEh (8622) 1074 bytes - List of teleporters
+Each teleporter is defined by 6 bytes. (179 doors * 6 bytes = 1074 bytes)
+
+Teleporter objects must always be created on teleporter tiles.
+
+* 1 word: Next object ID.
+* 1 word: Teleporter attributes
+** Bit 15: Sound.
+*** '0' No sound
+*** '1' Sound
+** Bits 14-13: Scope
+*** '00' Items
+*** '01' Creatures
+*** '10' Items / Party
+*** '11' Everything
+** Bit 12 Rotation type
+*** '0' Relative rotation based on current party orientation.
+*** '1' Absolute rotation from North.
+** Bits 11-10: Rotation
+*** '00' None/North
+*** '01' 90° clockwise/East
+*** '10' 180°/South
+*** '11' 90° anti-clockwise/West
+** Bits 9-5: Destination Y coordinate (without map offset)
+** Bits 4-0: Destination X coordinate (without map offset)
+* 1 word: Destination map
+** Bits 15-8: Destination map (the game hangs if you teleport to a non existant map)
+** Bits 7-0: 00h Unused
+
+!!!! 25E0h (9696) 500 bytes - List of texts (wall texts, champion skills and statistics, messages)
+Each text is defined by 4 bytes. (125 texts * 4 bytes = 500 bytes)
+
+* 1 word: Next object ID.
+* 1 word: Referred text in text data.
+** Bits 15-3: If Bit 2 = 0 and Bit 1 = 0, Offset in text data of beginning of text in number of words. Other cases are not decoded yet.
+** Bit 2: Only used in Dungeon Master II
+*** '0' Regular text
+*** '1' Text requiring translation
+** Bit 1: Only used in Dungeon Master II
+*** '0' Regular text
+*** '1' Text is actually a simplified Actuator
+** Bit 0: Text visibility
+*** '0' Invisible text
+*** '1' Visible text
+
+!!!! 27D4h (10196) 5472 bytes - List of actuators
+Each actuator is defined by 8 bytes. (684 actuators * 8 bytes = 5472 bytes)
+
+Actuators are used to display decorations on walls and floors and to implement the dungeon mechanics.
+
+There are many type of actuators. For some types, the effect of the actuator is different whether the actuator is on a floor tile or a wall tile.
+
+Actuators can target a tile that can be any tile on the same map ('Remote' type) or the tile where the actuator itself is located ('local' type).
+
+Actuators can target other actuators, doors and pits (to open and close them), teleporters and trick walls (to enable or disable them) and texts.
+
+* 1 word: Next object ID.
+* 1 word:
+** Bits 15-7: Data (content depends on actuator type, see below)
+** Bits 6-0: Type (all actuator types are listed below)
+* 1 word:
+** Bits 15-12: Graphic decoration ordinal in the list of allowed decorations (0 means no decoration). If there are several actuators in the same location, only the last one in the list is displayed and determines the active screen zones for mouse clicking.
+** Bits 11: Action target type
+*** '0' Remote tile
+*** '1' Local tile
+** Bits 10-7: Delay before action
+** Bits 6: Sound effect
+** Bits 5: Revert effect when stepping in and out of a tile
+** Bits 4-3: Action type
+*** '00' Set
+*** '01' Clear
+*** '10' Toggle (set if cleared, clear if set)
+*** '11' Hold
+** Bits 2: Once only actuator. When this bit is set, the actuator is disabled after its first activation by changing its type to 0.
+** Bits 1-0: Unused
+* 1 word: This word has different meaning depending on the action target type (Remote or Local).
+** For remote target:
+*** Bits 15-11: Y coordinate of target tile
+*** Bits 10-6: X coordinate of target tile
+*** Bits 5-4: Direction (for a wall tile, determines which wall's face is triggered, North East South West)
+*** Bits 3-0: Unused
+** For local target:
+*** Bits 15-4: Action to execute
+**** '0' No action
+**** '1' or '2' Rotation of actuators in the same tile. Sends the current actuator to the beginning of the list.
+**** '10' Experience gain in Ninja skill number 8. If the actuator is on a floor tile, all champions get the experience. If the actuator is on a wall tile, only the party leader gets the experience.
+**** Other values: No action
+*** Bits 3-0: Unused
+
+Notes:
+
+* Bug: if you put creatures and actuators on the same tile, the actuators must be located before the creature in the list of objects or the game will crash.
+* Bug: Actuators should not be put on the same wall as a champion portrait or the champion portrait will display above the actuator graphic. However, you can have a text object on the same tile with no issue.
+* Only tiles of type 'Wall' can have wall actuators. All other tile types are considered as floor regarding actuators.
+* If you have an actuator on a strairs tile, it is only activated when you arrive by this stair, not when you leave to another level (maybe that was the purpose of the type 5 actuator, but it does not work).
+* It is possible to have actuators on trick walls, but only without decoration or the game may crash. Activation is similar to a floor tile.
+
+You can refer to the Technical Documentation - Dungeon Master and Chaos Strikes Back Items properties page to find the complete list of index values to use in the Data field for each item.
+
+!!!!! Floor actuators
+
+Actuator type	Details
+00 (Floor)
+Inactive floor actuator	Activated by: Nothing
+Example use: display a floor decoration
+Note: Once activated, the type of wall actuators that have the 'once only' flag is set to 'Inactive floor actuator'.
+01 (Floor)
+Floor actuator TPCI	Activated by: Theron, Party, Creatures, Items
+02 (Floor)
+Floor actuator TPC	Activated by: Theron, Party, Creatures (but not items)
+03 (Floor)
+Floor actuator P	Activated by: Party (but not Theron, Creatures and items). Activation also depends on the data value:
+'0' Always activated
+'1' Activated only if party faces north
+'2' Activated only if party faces east
+'3' Activated only if party faces south
+'4' Activated only if party faces west
+04 (Floor)
+Floor actuator I	Activated by: The item specified in the Data field (but not Theron, Party or Creatures). The effect is triggered when at least one item of this type is placed on the tile and canceled when all of them are removed.
+05 (Floor)
+Stairs actuator	Activated by: Party when it arrives from stairs. This type of actuator can only be put on stairs tiles.
+Does not work before version 2.1 because of a bug in the code.
+06 (Floor)
+Creature generator	Activated by: Another actuator (via a timer object of type 5).
+Generates a creature group on the tile. If the tile is occupied, for example by another creature group, the timer stays in the queue for later processing until the tile is free.
+The two other words are used differently than for other actuators:
+1 word:
+Bits 15-12: Graphic number
+Bit 11: Unused
+Bit 10: Number of creatures
+'0' Predefined number of generated creatures, stored in bits 9-7
+'1' Random number of generated creatures, their maximum number is stored in bits 9-7
+Bits 9-7: Value for the number of creatures. Allowed values: 1 à 4, others values can cause crashes.
+Bit 6: Sound effect (teleport sound)
+Bits 5-3: Unused
+Bit 2: Once only actuator
+Bits 1-0: Unused
+1 word:
+
+Bits 15-8: Delay used for a Timer of type 65 (Such a timer changes the first actuator of type 0 to type 6 on the tile). If the delay is 0 no timer is created. Values 1 to 127 cause the timer to expire 1 to 127 clock ticks later. Values 128 to 255 cause the timer to expire 64 x (Value - 126) clock ticks later.
+Bits 7-4: Hit point multiplier. If set to 0, the experience multiplier of the map is used.
+Bits 3-0: Unused
+07 (Floor)
+Floor actuator C	Activated by: Creatures (but not by Theron, Party or Items)
+08 (Floor)
+Party possession detector	Activated by the Party if any champion has the item specified in the Data field in its possessions (including the item in hand).
+09 (Floor)
+Version checker	Implemented in engine version 2.0 and above of Dungeon Master and Chaos Strikes Back (no effect in earlier versions).
+Put the required version in the Data field as 10 x version + revision. Example: '21' for version 2.1.
+Activated if game engine version <= required version.
+Activated by Theron and Party only.
+Meynaf has created a custom dungeon that can detect the version of the game using this actuator: Version checker dungeon
+
+!!!!! Wall actuators
+
+Actuator type	Details
+00 (Wall)
+Inactive wall actuator	Activated by: Nothing
+Example use: display a wall decoration
+Note: Once activated, the type of wall actuators that have the 'once only' flag is set to 'Inactive wall actuator'.
+01 (Wall)	Activated by: Mouse click on decoration with empty hand or any item.
+For alcoves: any item placed in the alcove.
+02 (Wall)	Activated by: If the 'Revert effect' flag is not set: mouse click on decoration with any item but not with empty hand.
+If the 'Revert effect' flag is set: mouse click on decoration with empty hand but not with any item. For alcoves: can only be activated with the idem specified in the data field.
+03 (Wall)	Activated by: If the 'Revert effect' flag is not set: mouse click on decoration with the item specified in the data field but not with any other item or empty hand.
+If the 'Revert effect' flag is set: mouse click on decoration with any item but not with the item specified in the data field.
+For alcoves: Any item except the one specified in the data field.
+The item used to activate the actuator is not removed from the hand.
+04 (Wall)	Activated by: If the 'Revert effect' flag is not set: mouse click on decoration with the item specified in the data field but not with any other item or empty hand.
+If the 'Revert effect' flag is set: mouse click on decoration with any item but not with the item specified in the data field or empty hand.
+The item used to activate the actuator is removed from the hand.
+For alcoves: cannot be activated.
+05 (Wall)
+And / Or gate	Activated by: Another actuator. (A type 6 timer is used to set/clear/toggle the bit specified by byte 8 (position) of the timer object)
+The data field contains two 4 bits values. A reference state that is defined at design time, and a current state that can be changed through activations. The direction of an activation determines which bit of the current state is affected.
+Bit 15: Unused
+Bit 14: Reference state, West
+Bit 13: Reference state, South
+Bit 12: Reference state, East
+Bit 11: Reference state, North
+Bit 10: Current state, West
+Bit 9: Current state, South
+Bit 8: Current state, East
+Bit 7: Current state, North
+Effect: If the two 4 bits values are identical, the effect is produced.
+If the two values are identical from the beginning, the actuator still requires at least one activation before the effect is produced.
+
+06 (Wall)
+Counter	Activated by: Another actuator
+Direction of this actuator and direction of activation are ignore.
+The data field is used as a counter. Each 'open' activation increases the counter, each 'close' or 'toggle' activation decreases the counter. When the counter reaches 0, the effect of the actuator is triggered and the actuator is disabled definitively.
+The actuator is considered 'pressed' if the counter is non-zero.
+07 (Wall)
+Weapon missile shooter	Activated by: Another actuator
+Effect: Shoots a missile in the direction defined by the position of the actuator on the tile. The missile is shot randomly from the left or right.
+Direction of activation: Used.
+Example use: usually a wall decoration is displayed to show holes in the wall.
+The two other words are used differently than for other actuators:
+1 word:
+Bits 15-12: Graphic number
+Bit 11: Always set to 1 but has no effect.
+Bit 2: Once only actuator
+1 word:
+
+Bits 15-12: Missile power decrease. The higher this value, the quicker the power will decrease and the shorter will be the shot. The missile power is decreased by this value at each clock tick. This only works correctly starting with Chaos Strikes Back v2.1. In previous versions this value is hard coded to 0.
+Bits 11-4: Missile power. Determines the size of magic missiles and damage.
+The data field defines the missile type (items are created, no supply needed):
+
+'4' to '7': Torch
+'32' Dagger
+'51' Arrow
+'52' Slayer
+'54' Rock
+'55' Poison dart
+'56' Throwing star
+'128' Boulder
+08 (Wall)
+Magic missile shooter	Identical to type 7, but a magic missile is created based on the value of the Data field:
+'0' Fireball
+'1' Poison Blob
+'2' Lightning Bolt
+'3' Dispell
+'4' Zo spell
+'6' Poison Bolt
+'7' Poison Cloud
+09 (Wall)
+Double weapon missile shooter	Identical to type 7 (Wall), but shoots two missiles (one on each side)
+10 (Wall)
+Double magic missile shooter	Identical to type 8 (Wall), but shoots two missiles (one on each side)
+11 (Wall)	Identical to type 4 with these two differences:
+the actuator is moved to the beginning of the list when activated
+the actuator can only be activated when it is at the end of the list
+12 (Wall)
+Item creator	Activated by: Mouse click with empty hand
+Effect: Creates an item of type specified in the Data field and puts it in the hand.
+The actuator is moved to the beginning of the list when activated.
+The actuator can only be activated when it is at the end of the list.
+Can also activate another actuator.
+13 (Wall)
+Item storage	Activated by: Mouse click with empty hand or Mouse click with an item of type specified in the Data field.
+Effect: When clicked with empty hand, an item of the type specified in the Data field is put in the hand if one can be found on the actuator tile (no matter which position on the tile). If no item is available on the tile there is no effect. When clicked with an item of the type specified in the Data field in hand, the item is removed from the hand and placed in the wall.
+Example use: a torch holder. You can put a torch and get it from the torch holder.
+Can also activate another actuator.
+14 (Wall)
+Item missile shooter	Activated by: Another actuator (by a type 6 timer)
+Effect: Similar to type 7 but shoots the first item found on the actuator tile itself, on the same position as the actuator.
+When there are no more items to shoot, the game can crash or shoot magic missiles. This bug was fixed in CSBwin.
+15 (Wall)
+Double item missile shooter	Similar to type 14 but shoots the first two items. This actuator has the same bug when there are no more items to shoot.
+In Chaos Strikes Back, the "Give up - pull the lever" zone uses this actuator type and works fine only by chance (it crashes in Dungeon Master v1.2)
+16 (Wall)
+Item exchanger	Activated by: Mouse click with the item specified in the Data field in hand. The item is exchanged with the first item found on the actuator tile (its position on the tile is ignored). If no item is found on the tile, activation does not occur.
+17 (Wall)	Identical to type 11 but if it is not the only actuator on its wall side, the actuator is removed from the list.
+18 (Wall)
+End game	Activated by: Another actuator with any action and any direction.
+Effect: triggers the end of the game (simply displays portraits on ST versions). Only works with Chaos Strikes Back v2.0 and above.
+Starting with version 2.1, a delay in seconds can be configured in Bits 10-7 of the second word. The game is stopped during this delay. The delay is hard coded in version 2.0. The delay is removed in versions with an end sequence like Chaos Strikes Back for Amiga v3.3.
+Note : the Chaos Strikes Back dungeon does not use this delay and blocks the party with teleporters.
+Bug : the delay value is always multiplied by 60 to get a number of VBL to wait. This works fine for an NTSC system but for a PAL system the delay value should be multiplied by 50. The effect is that on PAL system the delay seems to be multiplied by 1,2 seconds.
+127 (Wall)
+Champion portrait (Dungeon Master and Chaos Strikes Back)	The Data field contains the champion graphic number to use (0 to 23). Here is the list of champions to use:
+00 Elija / Airwing
+01 Halk / Aroc
+02 Syra / Talon
+03 Hissssa / Leta
+04 Zed / Dema
+05 Chani / Algor
+06 Hawk / Toadrot
+07 Boris / Ven
+08 Mophus / Mantia
+09 Leif / Gnatu
+10 Wu Tse / Slogar
+11 Alex / Sting
+12 Linflas / Skelar
+13 Azizi / Deth
+14 Iaido / Necro
+15 Gando / Plague
+16 Stamm / Tunda
+17 Leyla / Lana
+18 Tiggy / Buzzzz
+19 Sonja / Petal
+20 Nabi / Itza
+21 Gothmog / Tula
+22 Wuuf / Kazai
+23 Daroou / Lor
+When the champion has been resurrected or reincarnated, the actuator is disabled (changed to type 0). However, if other actuators are present on the same tile, a bug allows cloning of the champion.
+The tile in front of the portrait must contain a text object (preferably disabled) containing the champion statistics and skills. The game crashes if this text object is missing.
+Note: although in FTL dungeons these actuators always target the tile in front of the portrait with a direction identical to that of the portrait, the game ignores this and always uses the tile in front of the portrait, no matter which tile is specified.
+
+!!!!! Other actuators
+
+||
+||Actuator type																							||Details	||
+||19 to 125[[<<]]Unused in Dungeon Master and Chaos Strikes Back. Some are used in Dungeon Master II)	||-			||
+||126[[<<]]Champion portrait (Dungeon Master II only)													||-			||
+
+All of the Dungeon Master and Chaos Strikes Back actuators can also be used in Dungeon Master II except the champion portrait actuator which is not recognized. Dungeon Master II also includes many additional actuator types. Please visit Kentaro.k-21's web site for more information about them.
+
+!!!! 3D34h (15668) 2912 bytes - List of creatures
+
+Each creature is defined by 16 bytes. (182 creatures * 16 bytes = 2912 bytes)
+
+* 00h (0) 1 word: Next object ID.
+* 02h (2) 1 word: Next possession object ID. Although not recommended, it is possible to put a creature as a possession of another creature. When the creature dies, the other one is released.
+* 04h (4) 1 byte: Creature type. Here are the possible values in Dungeon Master and Chaos Strikes Back:
+** 0 Giant Scorpion / Scorpion
+** 1 Swamp Slime / Slime Devil
+** 2 Giggler
+** 3 Wizard Eye / Flying Eye
+** 4 Pain Rat / Hellhound
+** 5 Ruster / -
+** 6 Screamer
+** 7 Rockpile / Rock pile
+** 8 Ghost / Rive
+** 9 Stone Golem
+** 10 Mummy
+** 11 Black Flame
+** 12 Skeleton
+** 13 Couatl
+** 14 Vexirk
+** 15 Magenta Worm / Worm
+** 16 Trolin / Ant Man
+** 17 Giant Wasp / Muncher
+** 18 Animated Armour / Deth Knight
+** 19 Materializer / Zytaz
+** 20 Water Elemental
+** 21 Oitu
+** 22 Demon / Demon
+** 23 Lord Chaos
+** 24 Red Dragon / Dragon
+** 25 Lord Order / -
+** 26 Grey Lord
+* 05h (5) 1 byte: Position of each creature on the tile. FFh is a special value when there is a single creature in the center.
+** Bits 7-6: Position of creature 4
+** Bits 5-4: Position of creature 3
+** Bits 3-2: Position of creature 2
+** Bits 1-0: Position of creature 1
+* 06h (6) 1 word: Hit points of creature 1
+* 08h (8) 1 word: Hit points of creature 2
+* 0Ah (10) 1 word: Hit points of creature 3
+* 0Ch (12) 1 word: Hit points of creature 4
+* 0Eh (14) 1 word:
+** Bits 15-11: Unused
+** Bits 10: Important object, non flushable. This bit is only set for specific groups in the dungeon (defined by the creator)
+** Bits 9-8: Direction
+*** '00' North
+*** '01' East
+*** '10' South
+*** '11' West
+** Bit 7: Unused
+** Bits 6-5: Number of creatures in the group - 1
+** Bit 4: Unused
+** Bits 3-0: Used only during the game
+
+Notes:
+
+* There is a bug at least Dungeon Master for Atari ST v1.2 where you should not use creatures 25 and 26: they can cause graphical glitches and crashes.
+* If a creature is teleported to a map where this type of creature is not allowed, the creature is automatically killed. However, this will cause an error if the creature has possessions (this was fixed in CSBwin).
+* In Dungeon Master, the direction of each creature can be different. The program manages this at runtime only and the values stored in the dungeon file are ignored.
+* In Dungeon Master II, items like trees and tables are considered as creatures.
+* In order to correctly display Black Flames, it is required to add the adequate circular floor decoration.
+
+!!!! 4894h (18580) 428 bytes - List of weapons
+
+Each weapon is defined by 4 bytes. (107 weapons * 4 bytes = 428 bytes)
+
+* 1 word: Next object ID.
+* 1 word: Item description
+** Bit 15: Used at runtime, for example set when torch is lit
+** Bits 14: Broken
+** Bits 13-10: Number of charges. For 'Torch' objects, this represents the Luminous Power.
+** Bit 9: Poisoned
+** Bit 8: Cursed. Falchions dropped by Animated Armours and Deth Knights have this attribute set.
+*** '0' Not cursed
+*** '1' Cursed
+** Bits 7: Important item. An important item will not be flushed if the game has no more free space to store newly created items. Only non important items can be flushed. This bit is only set for specific weapons in the dungeon (defined by the creator). Weapons created at runtime (dropped by creatures or launched by missile launchers) have this bit cleared.
+** Bits 6-0: Item type. You can refer to the Technical Documentation - Dungeon Master and Chaos Strikes Back Items properties page to find the complete list of possible values.
+
+!!!! 4A40h (19008) 484 bytes - List of clothes
+
+Each clothe is defined by 4 bytes. (121 clothes * 4 bytes = 484 bytes)
+
+* 1 word: Next object ID.
+* 1 word: Item attributes
+** Bit 15-14: Unused
+** Bit 13: Broken
+** Bit 12-9: Number of charges. This value is not used. There is a function in the game to decrement the number of charges of an object and it would decrement this value when called for an object of type 'Clothe' however this never happens as all actions causing a decrement of the number of charges apply only to object of type 'Weapon'.
+** Bit 8: Cursed. Torso plate, Armet, Foot plate and Leg plate dropped by Animated Armours and Deth Knights have this attribute set.
+*** '0' Not cursed
+*** '1' Cursed
+** Bit 7: Important item. An important item will not be flushed if the game has no more free space to store newly created items. Only non important items can be flushed. This bit is only set for specific clothes in the dungeon (defined by the creator). Clothes created at runtime (dropped by creatures) have this bit cleared.
+** Bits 6-0: Item type. You can refer to the Technical Documentation - Dungeon Master and Chaos Strikes Back Items properties page to find the complete list of possible values.
+
+!!!! 4C24h (19492) 140 bytes - List of scrolls
+
+Each scroll is defined by 4 bytes. (35 scrolls * 4 bytes = 680 bytes)
+
+* 1 word: Next object ID.
+* 1 word: Scroll attributes
+** Bits 15-10: Used at runtime
+*** '0' Open (in hand)
+*** '1' Closed
+** Bits 9-0: Referred text in list of text objects.
+
+Notes:
+
+* Scrolls ignore the visibility attribute of the referred text
+* In some versions like Chaos Strikes Back for Amiga v3.3, if the text is "MAGICMAP" or "CREANAME" then the scroll acts either as the magic map or displays the name of the creature in front of the party.
+* There are 14 characters maximum on each line, including the end of text character but not the carriage return characters. If the end of text character is the 15th character on a line, then garbage will be displayed after. In some versions, you need at least two lines of text or the program will display an additional line with garbage.
+
+!!!! 4CB0h (19632) 224 bytes - List of potions
+
+Each potion is defined by 4 bytes. (56 potions * 4 bytes = 224 bytes)
+
+* 1 word: Next object ID.
+* 1 word: Item attributes.
+** Bits 15: Important item. An important item will not be flushed if the game has no more free space to store newly created items. Only non important items can be flushed. This bit is only set for specific potions in the dungeon (defined by the creator).
+** Bits 14-8: Potion type. You can refer to the Technical Documentation - Dungeon Master and Chaos Strikes Back Items properties page to find the complete list of possible values.
+** Bits 7-0: Potion power. In Dungeon Master and Chaos Strikes Back, the power displayed to the player is obtained by dividing the power value by 40. The result is the symbol number between 1 and 6. There is a bug in the code that shows an underscore character instead of a power symbol for Potions with power < 40. This bug also applies to 'Empty Flask' which has Power = 0 (but not 'Water Flask').
+*** In Dungeon Master II, the potion power is displayed to the player with a bar.
+
+!!!! 4D90h (19856) 96 bytes - List of containers
+Each container is defined by 8 bytes. (12 containers * 8 bytes = 96 bytes)
+
+* 1 word: Next object ID.
+* 1 word: Next contained object ID
+* 1 word:
+** Bits 15-3: Unknown (Seems to have random content)
+** Bits 2-1: Container type. In Dungeon Master and Chaos Strikes Back, the only valid value is 00 for the Chests.
+** Bit 0: Unknown (Seems to have random content)
+* 1 word: 00 00 : Unused
+
+!!!! 4DF0h (19952) 1120 bytes - List of miscellaneous items
+
+Each miscellaneous item is defined by 4 bytes. (280 miscellaneous items * 4 bytes = 1120 bytes)
+
+* 1 word: Next object ID.
+* 1 word: Item attributes
+** Bits 15-14: Used for Waterskin / Compass / Bones
+*** '00' Empty / North / Champion #1
+*** '01' Almost empty / East / Champion #2
+*** '10' Almost full / South / Champion #3
+*** '11' Full / West / Champion #4
+** Also used by Illumulet & Jewel Symal (worn / not worn).
+** There is a function in the game to decrement the number of charges of an object and it would decrement this value when called for an object of type 'Miscellaneous object' however this never happens as all actions causing a decrement of the number of charges apply only to object of type 'Weapon'.
+** Bits 13-8: Unused
+** Bits 7: Important item. An important item will not be flushed if the game has no more free space to store newly created items. Only non important items can be flushed. This bit is only set for specific items in the dungeon (defined by the creator) and for the bones of dead champions (created at runtime). All other items created at runtime (dropped by creatures or launched by missile launchers) have this bit cleared.
+** Bits 6-0: Item type. You can refer to the Technical Documentation - Dungeon Master and Chaos Strikes Back Items properties page to find the complete list of possible values.
+
+!!!! 4DF0h (19952) 0 bytes - List of missiles
+
+Each missile is defined by 8 bytes.
+
+* 1 word: Next object ID.
+* 1 word: Missile object (dagger, fireball, ...)
+** 1 byte: Range Energy remaining. This value is decreased each time the missile moves. When it reaches 0, the missile stops moving. This value is used to compute missile damage when a collision occurs.
+** 1 byte: Damage Energy remaining. This value is decreased each time the missile moves. This value is also used to compute missile damage when a collision occurs.
+* 1 word: Timer index
+
+!!!! 4DF0h (19952) 0 bytes - List of clouds
+Each cloud is defined by 4 bytes.
+
+* 1 word: Next object ID.
+* 1 word:
+** Bits 15-8: Value. Like Damage.
+** Bit 7: Unknown
+** Bit 6-0: Type (50 is special to creatures?) (fluxcage?)
+
+!!!! 5250h (21072) 12283 bytes - Map data
+
+Each map is defined by a variable number of bytes. For each map in order, there is one byte per tile, plus one byte for each creature graphic, wall decoration graphic, floor decoration graphic and door decoration graphics (in that order). The number of graphics of each kind is specified in the map definition section.
+
+Each tile is defined by 1 byte.
+
+* 1 byte: Tile definition
+** Bits 7-5: Tile type:
+*** '000' (0) Wall
+*** '001' (1) Floor
+*** '010' (2) Pit
+*** '011' (3) Stairs
+*** '100' (4) Door
+*** '101' (5) Teleporter
+*** '110' (6) Trick wall
+*** '111' (7) Empty tile. Only valid in Dungeon Master II.
+** Bit 4: Object(s) on this tile
+*** '0' No object on this tile
+*** '1' A list of object on this tile
+** Bits 3-0: Tile attributes depending on tile type:
+*** Wall
+**** Bit 3:
+***** '0' Do not allow random decoration on North side
+***** '1' Allow random decoration on North side
+**** Bit 2:
+***** '0' Do not allow random decoration on East side
+***** '1' Allow random decoration on East side
+**** Bit 1:
+***** '0' Do not allow random decoration on South side
+***** '1' Allow random decoration on South side
+**** Bit 0:
+***** '0' Do not allow random decoration on West side
+***** '1' Allow random decoration on West side
+*** Floor
+**** Bit 3:
+***** '0' Do not allow random decoration
+***** '1' Allow random decoration
+**** Bit 2-0: Unused
+*** Pit
+**** Bit 0:
+***** '0' Normal
+***** '1' Imaginary
+**** Bit 1: Unused
+**** Bit 2:
+***** '0' Visible
+***** '1' Invisible
+**** Bit 3:
+***** '0' Closed
+***** '1' Open
+*** Stairs
+**** Bit 3: Orientation
+***** '0' West-East
+***** '1' North-South
+**** Bit 2: Direction
+***** '0' Down
+***** '1' Up
+**** Bit 1-0: Unused
+*** Door
+**** Bit 2-0: State
+***** '000' Open
+***** '001' 1/4 closed
+***** '010' 1/2 closed
+***** '011' 3/4 closed
+***** '100' Closed
+***** '101' Bashed
+***** '110' Invalid
+***** '111' Invalid
+**** Bit 3: Orientation
+***** '0' West-East
+***** '1' North-South
+*** Teleporter
+**** Bit 1-0: Unused
+**** Bit 2: Visibility
+***** '0' Invisible
+***** '1' Visible (blue haze)
+**** Bit 3:
+***** '0' Closed
+***** '1' Open
+*** Trick wall
+**** Bit 0:
+***** '0' False
+***** '1' Imaginary
+**** Bit 1: Unused
+**** Bit 2:
+***** '0' Closed
+***** '1' Open
+**** Bit 3:
+***** '0' Do not allow random decoration
+***** '1' Allow random decoration
+*** Empty tile
+**** Bit 3-0: Unused.
+
+Each creature graphic is defined by 1 byte. The number of bytes is specified in the map definition.
+
+Each wall decoration graphic is defined by 1 byte. The number of bytes is specified in the map definition. Here is the list of possible values for Dungeon Master:
+
+* 00 Unreadable Wall Inscription
+* 01 Square Alcove
+* 02 Vi Altar
+* 03 Arched Alcove
+* 04 Hook
+* 05 Iron Lock
+* 06 Wood Ring
+* 07 Small Switch
+* 08 Dent 1
+* 09 Dent 2
+* 10 Iron Ring
+* 11 Crack
+* 12 Slime Outlet
+* 13 Dent 3
+* 14 Tiny Switch
+* 15 Green Switch Out
+* 16 Blue Switch Out
+* 17 Coin Slot
+* 18 Double Iron Lock
+* 19 Square Lock
+* 20 Winged Lock
+* 21 Onyx Lock
+* 22 Stone Lock
+* 23 Cross Lock
+* 24 Topaz Lock
+* 25 Skeleton Lock
+* 26 Gold Lock
+* 27 Tourquoise Lock
+* 28 Emerald Lock
+* 29 Ruby Lock
+* 30 Ra Lock
+* 31 Master Lock
+* 32 Gem Hole
+* 33 Slime
+* 34 Grate
+* 35 Fountain
+* 36 Manacles
+* 37 Ghoul's Head
+* 38 Empty Torch Holder
+* 39 Scratches
+* 40 Poison Holes
+* 41 Fireball Holes
+* 42 Dagger Holes
+* 43 Champion Mirror
+* 44 Lever Up
+* 45 Lever Down
+* 46 Full Torch Holder
+* 47 Red Switch Out
+* 48 Eye Switch
+* 49 Big Switch Out
+* 50 Crack Switch Out
+* 51 Green Switch In
+* 52 Blue Switch In
+* 53 Red Switch In
+* 54 Big Switch In
+* 55 Crack Switch In
+* 56 Amalgam (Encased Gem)
+* 57 Amalgam (Free Gem)
+* 58 Amalgam (Without Gem)
+* 59 Lord Order (Outside)
+
+Each floor decoration graphic is defined by 1 byte. The number of bytes is specified in the map definition. Here is the list of possible values for Dungeon Master:
+
+* 00 Square Grate
+* 01 Square Pressure Pad
+* 02 Moss
+* 03 Round Grate
+* 04 Round Pressure Plate
+* 05 Black Flame Pit
+* 06 Crack
+* 07 Tiny Pressure Pad
+* 08 Puddle
+
+Each door decoration graphic is defined by 1 byte. The number of bytes is specified in the map definition. Here is the list of possible values for Dungeon Master:
+
+* 00 Square Grid
+* 01 Iron Bars
+* 02 Jewels
+* 03 Wooden Bars
+* 04 Arched Grid
+* 05 Block Lock
+* 06 Corner Lock
+* 07 Black door (Dungeon Entrance)
+* 08 Red Triangle Lock
+* 09 Triangle Lock
+* 10 Ra Door Energy
+* 11 Iron Door Damages
+
+!!!! 824Bh (33355) 1 word - Checksum
+
+This word contains the checksum of all the previous data in the file.
+
+Tested on PC34ML version (to be tested with other versions): if checksum is not present, no problem. If present and correct value, no problem. If present but wrong value, then the message "The game is damaged!" is displayed by the game.
+
+!!!! 824Dh (33357) 0 bytes - End of file
+
+!!!! Compressed dungeons
+
+This section describes the format of a compressed dungeon file. Once uncompressed, the data obtained has exactly the same format as an uncompressed dungeon.
+
+!!!! 0000h (00000) 28 bytes - File header
+
+* 1 word: 8104 (33028) : File signature. If a dungeon file starts with this word value, the game will know that the dungeon is compressed.
+* 1 dword: Size of the uncompressed dungeon data.
+* 1 word: Unknown use. 000Ch or 0008h have been encountered.
+* 4 bytes: List of the 4 most common byte values in the dungeon data.
+* 16 bytes: List of the 16 less common byte values in the dungeon data.
+
+!!!! 0000h (00028) x bytes - Compressed data
+
+* The most common bytes in the uncompressed dungeon data are encoded as three bits '0xx'. The two bits after the first '0' bit define the index in the table of most common bytes.
+* The less common bytes in the uncompressed dungeon data are encoded as six bits '10xxxx'. The four bits after the first two '10' bits define the index in the table of less common bytes.
+* The least common bytes in the uncompressed dungeon data are encoded as ten bits '11xxxxxxxx'. The eight bits after the first two '11' bits directly define the byte value.
+
+In each byte of compressed data, bits are read from the most significant one to the least significant one. Once all bits in a byte have been used, the next byte is read from the file.

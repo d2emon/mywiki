@@ -1,0 +1,6 @@
+!! 12. Protocols
+Protocols are standardized instructions for how to pass information back and forth between computers and devices.
+
+* HTTP - This protocol is how each website gets to your browser. Whenever you type a website like “http://google.com” this protocol requests the website from google’s server and then receives a response with the HTML, CSS, and javascript of the website.
+* DDP - is a new protocol created in connection with Meteor. The DDP protocol uses websockets to create a consistent connection between the client and the server. This constant connection lets websites and data on those websites update in real-time without refreshing your browser.
+* REST - is a protocol mainly used for API’s. It has standard methods like GET, POST, and PUT that let information be exchanged between applications.

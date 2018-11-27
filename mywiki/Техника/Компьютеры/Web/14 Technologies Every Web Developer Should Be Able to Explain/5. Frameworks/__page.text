@@ -1,0 +1,17 @@
+!! 5. Frameworks
+Frameworks are built to make building and working with programming languages easier. Frameworks typically take all the difficult, repetitive tasks in setting up a new web application and either does them for you or make them very easy for you to do.
+
+* Meteor - a full-stack (front and back end) javascript framework
+* Node.js - a server-side javascript framework
+* Ruby on Rails - a full-stack framework built using ruby
+* Django - a full-stack framework built using python
+* Ionic - a mobile framework
+* Phonegap / Cordova - a mobile framework that exposes native api’s of iOS and Android for use when writing javascript
+* Bootstrap - a UI (user interface) framework for building with HTML/CSS/Javascript
+* Foundation - a UI framework for building with HTML/CSS/Javascript
+* Wordpress - a CMS (content management system) built on PHP. Currently, about 20% of all websites run on this framework
+* Drupal - a CMS framework built using PHP.
+* .NET - a full-stack framework built by Microsoft
+* Angular.js - a front-end javascript framework.
+* Ember.js - a front-end javascript framework.
+* Backbone.js - a front-end javascript framework.

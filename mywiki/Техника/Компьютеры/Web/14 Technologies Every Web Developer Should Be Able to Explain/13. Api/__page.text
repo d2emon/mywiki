@@ -1,0 +1,2 @@
+!! 13. API
+An API is an application programming interface. It is created by the developer of an application to allow other developers to use some of the application’s functionality without sharing code. Developers expose “end points” which are like inputs and outputs of the application. Using an API can control access with API keys. Examples of good API’s are those created by Facebook, Twitter, and Google for their web services.

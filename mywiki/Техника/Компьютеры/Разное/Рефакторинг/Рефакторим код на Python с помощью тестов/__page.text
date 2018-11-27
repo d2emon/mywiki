@@ -1,0 +1,900 @@
+!! Рефакторим код на Python с помощью тестов
+
+В статье описан пошаговый рефакторинг кода с помощью тестов. Рефакторинг опасен при работе с непротестированным или устаревшим кодом, но тестирование поможет уменьшить количество внедряемых багов и при определённой доле везения избежать их вовсе.
+
+Рефакторинг не для слабаков и требует двойных усилий: 1) нужно понимать код, который написал кто-то другой или ты сам в прошлом; 2) с умом упрощать или переносить куски кода (читай улучшать код). В рефакторинге, как и в программировании, есть свой свод правил и приёмов, который можно описать как смесь из техники, интуиции, опыта и риска.
+
+Всё-таки программирование – это искусство.
+
+!!! Исходные данные
+
+В качестве примера будем использовать сервис, предоставляющий API и отдающий данные в формате JSON, а именно список из элементов, как показано здесь:
+
+[@
+{
+    "age": 20,
+    "surname": "Frazier",
+    "name": "John",
+    "salary": "£28943"
+}
+@]
+
+После того, как мы преобразуем объект JSON в питоновскую структуру, то получим набор словарей, где коллекция age – целое число, остальные – строки.
+
+Потом кто-то дописал класс, который рассчитывает некоторые статистические данные по исходным. Класс называется DataStats и содержит единственный метод stats(), входными параметрами которого являются данные, полученная от сервиса (JSON), и два целых числа iage и isalary. Согласно документации, эти параметры – исходный возраст и исходная зарплата, используемые для вычисления среднегодовой надбавки к зарплате.
+
+Код класса:
+
+[@
+import math
+import json
+
+
+class DataStats:
+
+    def stats(self, data, iage, isalary):
+        # iage and isalary are the starting age and salary used to
+        # compute the average yearly increase of salary.
+
+        # Compute average yearly increase
+        average_age_increase = math.floor(
+            sum([e['age'] for e in data])/len(data)) - iage
+        average_salary_increase = math.floor(
+            sum([int(e['salary'][1:]) for e in data])/len(data)) - isalary
+
+        yearly_avg_increase = math.floor(
+            average_salary_increase/average_age_increase)
+
+        # Compute max salary
+        salaries = [int(e['salary'][1:]) for e in data]
+        threshold = '£' + str(max(salaries))
+
+        max_salary = [e for e in data if e['salary'] == threshold]
+
+        # Compute min salary
+        salaries = [int(d['salary'][1:]) for d in data]
+        min_salary = [e for e in data if e['salary'] ==
+                      '£{}'.format(str(min(salaries)))]
+
+        return json.dumps({
+            'avg_age': math.floor(sum([e['age'] for e in data])/len(data)),
+            'avg_salary': math.floor(sum(
+                [int(e['salary'][1:]) for e in data])/len(data)),
+            'avg_yearly_increase': yearly_avg_increase,
+            'max_salary': max_salary,
+            'min_salary': min_salary
+        })
+@]
+
+!!! Цель
+Легко заметить некоторые проблемы в классе, описанном выше. Самые заметные:
+
+* Класс использует один метод и не содержит __init__(). Его можно заменить на единственную функцию без потери функционала.
+* Метод stats() слишком большой и выполняет много разрозненных задач, что усложняет последующую отладку.
+* Много повторяющегося кода, по крайней мере несколько строк очень похожи. Например, две очень похожих операции '£' + str(max(salaries)) и '£{}'.format(str(min(salaries))), или две строки начинаются с salaries =, или несколько конструкторов списков.
+
+Мы собираемся использовать этот код в нашем Amazing New Project™, так что хотелось бы исправить эти недостатки.
+
+Однако класс работает идеально, используется в производстве долгие годы и не содержит известных багов. Мы хотим написать код лучше, сохраняя при этом функционал, то есть сделать рефакторинг.
+
+!!! Путь
+
+Я хочу показать, как безопасно отрефакторить такой класс, используя тесты. Этот способ отличается от разработки через тестирование (TDD), хотя они похожи. Используемый класс разрабатывался без помощи TDD, и для него нет никаких тестов, но тем не менее их можно использовать, чтобы удостовериться, что работа класса осталась прежней. Такой способ стоит называть рефакторинг через тестирование (TDR – test driven refactoring).
+
+Идея TDR проста. В первую очередь, разрабатываются тесты, которые проверяют работу какого-то кода, лучше маленькой части с чётко определённой областью деятельности и выходными данными. Позднее юнит-тестирование, которое симулирует, что автор кода должен был сделать (кхм, это же ты несколько месяцев назад…).
+
+Как только юнит-тесты будут готовы, можно смело редактировать код, зная, что работа новой версии кода будет такой же, как и у предыдущей. Как можно догадаться, эффективность метода напрямую зависит от качества написанных юнит-тестов, именно поэтому рефакторинг сложен.
+
+!!! Предостережения
+
+Прежде чем начнём наш первый рефакторинг, выскажу два замечания. Первое: код в примере легко отрефакторить. Здесь нет необходимости соблюдать принципы ООП, но я пошел этим путём, чтобы продемонстрировать технику рефакторинга для упаковщиков.
+
+Второе: в чистом TDD не рекомендуется тестировать внутренние методы, которые не формируют публичные API объекта. В целом, мы выделяем такие объекты, добавляя нижнее подчёркивание перед названием. Причина в том, что TDD подразумевает, что объекты формируются исходя из ООП, которое рассматривает объекты как результат его работы, а не как структуру. Таким образом, в тестировании нас интересуют публичные методы.
+
+Однако стоит отметить, что иногда сложно сделать публичный метод, так как в методе запутанная логика, которую мы хотим протестировать. По моему мнению, совет по TDD должен звучать так: «Тестируйте внутренние методы, только если в них содержится неочевидная логика».
+
+Когда же идёт рефакторинг, мы разбираем существующую структуру и чаще всего преобразуем её в набор приватных методов, помогающих выделять и обобщать части программного кода. Мой совет, в таких случаях стоит тестировать полученные методы, это позволяет быть более уверенным в том, что ты сделал. С опытом придёт понимание, какие тесты нужны, а какие можно опустить.
+
+!!! Подготовка к тестированию
+
+Клонируем этот репозиторий и создаём виртуальную рабочую среду. Активируем её и устанавливаем необходимые пакеты.
+
+[@ pip install -r requirements.txt @]
+
+Репозиторий уже содержит конфигурационный файл для pytest, который нужно модифицировать, чтобы избежать ввода вашей виртуальной среды. В нём нужно поправить параметр norecursedirs, добавив имя виртуальной среды, которая только что была создана. Я обычно даю имя виртуальное среде с префиксом venv, поэтому её название имеет вид venv*.
+
+На данном этапе из родительской директории репозитория, которая содержит pytest.ini, должна запускаться команда pytest -svv, результат будет походить на то, что представлено ниже:
+
+[@
+========================== test session starts ==========================
+platform linux -- Python 3.5.3, pytest-3.1.2, py-1.4.34, pluggy-0.4.0
+cachedir: .cache
+rootdir: datastats, inifile: pytest.ini
+plugins: cov-2.5.1
+collected 0 items
+
+====================== no tests ran in 0.00 seconds ======================
+@]
+
+Этот репозиторий содержит две ветки. В ветке master, в которой вы сейчас находитесь, содержится начальная настройка, в ветке develop – конечный результат рефакторинга. Каждый шаг из этого поста имеет свой коммит с соответствующими правками.
+
+!!! Шаг 1. Тестируем конечный результат
+
+Коммит: 27a1d8c
+
+Когда начинаешь рефакторить систему, вне зависимости от её размера, нужно обязательно протестировать конечный результат её работы. В этом случае систему стоит рассматривать как чёрный ящик (т.е. вы не знаете, что находится внутри) и проверить внешнее поведение. В этом случае можно написать тест, который инициализирует класс и запускает метод с тестовыми данными, возможно реальными, и проверяет выходные данные. Естественно, мы напишем тест с действующими выходными данными, возвращаемыми методом, поэтому тест проходит автоматически.
+
+Запросив данные у сервера, мы получаем следующее:
+
+[@
+test_data = [
+    {
+        "id": 1,
+        "name": "Laith",
+        "surname": "Simmons",
+        "age": 68,
+        "salary": "£27888"
+    },
+    {
+        "id": 2,
+        "name": "Mikayla",
+        "surname": "Henry",
+        "age": 49,
+        "salary": "£67137"
+    },
+    {
+        "id": 3,
+        "name": "Garth",
+        "surname": "Fields",
+        "age": 70,
+        "salary": "£70472"
+    }
+]
+@]
+
+и, вызвав метод stats() с выходными данными, где iage = 20 и isalary = 20000, получим следующий JSON:
+
+[@
+{
+    "avg_age": 62,
+    "avg_salary": 55165,
+    "avg_yearly_increase": 837,
+    "max_salary": [{
+        "id": 3,
+        "name": "Garth",
+        "surname": "Fields",
+        "age": 70,
+        "salary": "£70472"
+    }],
+    "min_salary": [{
+        "id": 1,
+        "name": "Laith",
+        "surname": "Simmons",
+        "age": 68,
+        "salary": "£27888"
+    }]
+}
+@]
+
+Предупреждение: в примере я использую очень короткий список реальных данных (3 словаря). В реальном рефакторинге я бы использовал много разнообразных данных, чтобы быть уверенным, что это не пограничный случай.
+
+Тест:
+
+[@
+import json
+
+from datastats.datastats import DataStats
+
+
+def test_json():
+    test_data = [
+        {
+            "id": 1,
+            "name": "Laith",
+            "surname": "Simmons",
+            "age": 68,
+            "salary": "£27888"
+        },
+        {
+            "id": 2,
+            "name": "Mikayla",
+            "surname": "Henry",
+            "age": 49,
+            "salary": "£67137"
+        },
+        {
+            "id": 3,
+            "name": "Garth",
+            "surname": "Fields",
+            "age": 70,
+            "salary": "£70472"
+        }
+    ]
+
+    ds = DataStats()
+
+    assert ds.stats(test_data, 20, 20000) == json.dumps(
+        {
+            'avg_age': 62,
+            'avg_salary': 55165,
+            'avg_yearly_increase': 837,
+            'max_salary': [{
+                "id": 3,
+                "name": "Garth",
+                "surname": "Fields",
+                "age": 70,
+                "salary": "£70472"
+            }],
+            'min_salary': [{
+                "id": 1,
+                "name": "Laith",
+                "surname": "Simmons",
+                "age": 68,
+                "salary": "£27888"
+            }]
+        }
+    )
+@]
+
+Как было сказано ранее, тест явно проходит, так как был искусственно сконструирован из результатов работы неизменённого кода.
+Ну что ж, этот тест очень важен! Сейчас мы знаем, что если своими изменениями кода мы нарушим его алгоритм работы, то хотя бы один тест не пройдёт.
+
+!!! Шаг 2. Избавляемся от JSON
+
+Коммит: 65e2997
+
+Метод возвращает данные в формате JSON и, посмотрев код, можно заметить, что форматирование происходит с помощью функции json.dumps().
+
+Структура кода, где code_part_2 зависит от code_part_1:
+
+[@
+class DataStats:
+
+    def stats(self, data, iage, isalary):
+        [code_part_1]
+
+        return json.dumps({
+            [code_part_2]
+        })
+@]
+
+Первый рефакторинг будет происходить следующим образом:
+
+# Мы напишем тест test__stats() для метода _stats(), который будет возвращать данные в формате питоновской структуры. Позже можно будет вручную сформировать JSON или выполнить json.loads() в питоновском скрипте. Тест не проходит.
+# Мы продублируем код метода stats(), который выводит данные в новый метод_stats(). Тест проходит.
+
+[@
+class DataStats:
+
+    def _stats(parameters):
+        [code_part_1]
+
+        return [code_part_2]
+
+    def stats(self, data, iage, isalary):
+        [code_part_1]
+
+        return json.dumps({
+            [code_part_2]
+        })
+@]
+
+Уберём дублирующийся код в stats() и заменим его вызовом _stats():
+
+[@
+class DataStats:
+
+    def _stats(parameters):
+        [code_part_1]
+
+        return [code_part_2]
+
+    def stats(self, data, iage, isalary):
+        return json.dumps(
+            self._stats(data, iage, isalary)
+        )
+@]
+
+Сейчас мы сможем отрефакторить первоначальный тест test_json(), который мы написали, но это более сложные изменения, и я оставлю их для другого раздела.
+
+Сейчас код нашего класса выглядит следующим образом:
+
+[@
+class DataStats:
+
+    def _stats(self, data, iage, isalary):
+        # iage and isalary are the starting age and salary used to
+        # compute the average yearly increase of salary.
+
+        # Compute average yearly increase
+        average_age_increase = math.floor(
+            sum([e['age'] for e in data])/len(data)) - iage
+        average_salary_increase = math.floor(
+            sum([int(e['salary'][1:]) for e in data])/len(data)) - isalary
+
+        yearly_avg_increase = math.floor(
+            average_salary_increase/average_age_increase)
+
+        # Compute max salary
+        salaries = [int(e['salary'][1:]) for e in data]
+        threshold = '£' + str(max(salaries))
+
+        max_salary = [e for e in data if e['salary'] == threshold]
+
+        # Compute min salary
+        salaries = [int(d['salary'][1:]) for d in data]
+        min_salary = [e for e in data if e['salary'] ==
+                      '£{}'.format(str(min(salaries)))]
+
+        return {
+            'avg_age': math.floor(sum([e['age'] for e in data])/len(data)),
+            'avg_salary': math.floor(sum(
+                [int(e['salary'][1:]) for e in data])/len(data)),
+            'avg_yearly_increase': yearly_avg_increase,
+            'max_salary': max_salary,
+            'min_salary': min_salary
+        }
+
+    def stats(self, data, iage, isalary):
+        return json.dumps(
+            self._stats(data, iage, isalary)
+        )
+@]
+
+И у нас есть два теста, проверяющих правильность его выполнения.
+
+!!! Шаг 3. Рефакторим тесты
+
+Коммит: d619017
+
+Очевидно, что список словарей test_data будет использован в каждом проводимом тесте, так что сейчас самое время перенести его в глобальную переменную. Нет смысла использовать фикстуру (fixture), так как тестовые данные статичны.
+
+Также можно вынести выходные данные в глобальную переменную, но предстоящие тесты не используют весь выходной словарь, поэтому мы можем отложить это решение.
+
+Теперь набор тестов выглядит так:
+
+[@
+import json
+
+from datastats.datastats import DataStats
+
+
+test_data = [
+    {
+        "id": 1,
+        "name": "Laith",
+        "surname": "Simmons",
+        "age": 68,
+        "salary": "£27888"
+    },
+    {
+        "id": 2,
+        "name": "Mikayla",
+        "surname": "Henry",
+        "age": 49,
+        "salary": "£67137"
+    },
+    {
+        "id": 3,
+        "name": "Garth",
+        "surname": "Fields",
+        "age": 70,
+        "salary": "£70472"
+    }
+]
+
+
+def test_json():
+
+    ds = DataStats()
+
+    assert ds.stats(test_data, 20, 20000) == json.dumps(
+        {
+            'avg_age': 62,
+            'avg_salary': 55165,
+            'avg_yearly_increase': 837,
+            'max_salary': [{
+                "id": 3,
+                "name": "Garth",
+                "surname": "Fields",
+                "age": 70,
+                "salary": "£70472"
+            }],
+            'min_salary': [{
+                "id": 1,
+                "name": "Laith",
+                "surname": "Simmons",
+                "age": 68,
+                "salary": "£27888"
+            }]
+        }
+    )
+
+
+def test__stats():
+
+    ds = DataStats()
+
+    assert ds._stats(test_data, 20, 20000) == {
+        'avg_age': 62,
+        'avg_salary': 55165,
+        'avg_yearly_increase': 837,
+        'max_salary': [{
+            "id": 3,
+            "name": "Garth",
+            "surname": "Fields",
+            "age": 70,
+            "salary": "£70472"
+        }],
+        'min_salary': [{
+            "id": 1,
+            "name": "Laith",
+            "surname": "Simmons",
+            "age": 68,
+            "salary": "£27888"
+        }]
+    }
+@]
+
+!!! Шаг 4. Изолируем подсчёт среднего возраста
+
+Коммит: 9db1803
+
+В разработке ПО главной задачей является изолирование независимых функций. Таким образом, наш рефакторинг должен разбить существующий код на маленькие разделённые функции.
+
+Выходной словарь содержит пять ключей, которым соответствуют значения либо подсчитанные «на лету» (для avg_age и avg_salary), либо по коду метода (для avg_yearly_increase, max_salary и min_salary). Мы можем начать замену кода, который вычисляет значение каждого ключа выделенными методами, пытаясь изолировать алгоритмы.
+
+Для изоляции кода нужно в первую очередь его продублировать, поместив копию в выделенный метод. Так как мы рефакторим с помощью тестов, то нулевым шагом будет написать тест для этого метода.
+
+[@
+def test__avg_age():
+
+    ds = DataStats()
+
+    assert ds._avg_age(test_data) == 62
+@]
+
+Мы знаем, что метод должен вернуть 62, поскольку это значение возвращает оригинальный метод stats(). Обратите внимание, что нет смысла передавать переменные iage и isalary, поскольку они не используются в исправленном коде.
+
+Тест не пройден, так что мы можем послушно пойти и продублировать код, используемый для подсчёта avg_age:
+
+[@
+ def _avg_age(self, data):
+        return math.floor(sum([e['age'] for e in data])/len(data))
+@]
+
+Как только тест проходит, мы можем заменить скопированный код в _stats() на вызов функции _avg_age():
+
+[@
+return {
+            'avg_age': self._avg_age(data),
+            'avg_salary': math.floor(sum(
+                [int(e['salary'][1:]) for e in data])/len(data)),
+            'avg_yearly_increase': yearly_avg_increase,
+            'max_salary': max_salary,
+            'min_salary': min_salary
+        }
+@]
+
+Проверяем, проходит ли тест. Здорово! Мы изолировали первую функцию и написали уже три теста.
+
+!!! Шаг 5. Изолируем подсчёт средней зарплаты
+
+Коммит: 4122201
+
+Ключ avg_salary работает так же, как и avg_age с другим кодом. Таким образом, процесс рефакторинга такой же, как и в предыдущем шаге, а результатом будет новый тест test__avg_salary():
+
+[@
+def test__avg_salary():
+
+    ds = DataStats()
+
+    assert ds._avg_salary(test_data) == 55165
+@]
+
+Новый метод _avg_salary():
+
+[@
+ def _avg_salary(self, data):
+        return math.floor(sum([int(e['salary'][1:]) for e in data])/len(data))
+@]
+
+Новый вид возвращаемого значения:
+
+[@
+return {
+            'avg_age': self._avg_age(data),
+            'avg_salary': self._avg_salary(data),
+            'avg_yearly_increase': yearly_avg_increase,
+            'max_salary': max_salary,
+            'min_salary': min_salary
+        }
+@]
+
+!!! Шаг 6. Изолируем алгоритм ежегодного повышения зарплаты
+
+Коммит: 4005145
+
+Оставшиеся три ключа подсчитываются алгоритмами, которые длиннее одной строки и не могут быть записаны напрямую в описание словаря. Однако процесс рефакторинга не особо изменяется: как и раньше мы сначала тестируем вспомогательный метод, затем определяем его посредством дублирования и, наконец, вызываем вспомогательный метод, удаляя продублированный код.
+
+Для среднегодового повышения зарплаты у нас новый тест:
+
+[@
+def test__avg_yearly_increase():
+
+    ds = DataStats()
+
+    assert ds._avg_yearly_increase(test_data, 20, 20000) == 837
+@]
+
+Новый метод, который проходит тест:
+
+[@
+def _avg_yearly_increase(self, data, iage, isalary):
+        # iage and isalary are the starting age and salary used to
+        # compute the average yearly increase of salary.
+
+        # Compute average yearly increase
+        average_age_increase = math.floor(
+            sum([e['age'] for e in data])/len(data)) - iage
+        average_salary_increase = math.floor(
+            sum([int(e['salary'][1:]) for e in data])/len(data)) - isalary
+
+        return math.floor(average_salary_increase/average_age_increase)
+@]
+
+Новая версия метода _stats():
+
+[@
+def _stats(self, data, iage, isalary):
+        # Compute max salary
+        salaries = [int(e['salary'][1:]) for e in data]
+        threshold = '£' + str(max(salaries))
+
+        max_salary = [e for e in data if e['salary'] == threshold]
+
+        # Compute min salary
+        salaries = [int(d['salary'][1:]) for d in data]
+        min_salary = [e for e in data if e['salary'] ==
+                      '£{}'.format(str(min(salaries)))]
+
+        return {
+            'avg_age': self._avg_age(data),
+            'avg_salary': self._avg_salary(data),
+            'avg_yearly_increase': self._avg_yearly_increase(
+                data, iage, isalary),
+            'max_salary': max_salary,
+            'min_salary': min_salary
+        }
+@]
+
+Обратите внимание, что мы не решаем проблему дублирования кода, кроме того, что вводим для рефакторинга. Первое, к чему мы стремимся, это полностью изолировать независимые функции.
+
+!!! Шаг 7. Изолируем подсчёт максимальной и минимальной зарплаты
+
+Коммит: 17b2413
+
+Во время рефакторинга все следует делать поочерёдно, но ради краткости я покажу результат двух шагов за раз. Читателям я рекомендую выполнить их как самостоятельные шаги, как я и сделал при написании кода, который публикую ниже.
+
+Новые тесты:
+
+[@
+def test__max_salary():
+
+    ds = DataStats()
+
+    assert ds._max_salary(test_data) == [{
+        "id": 3,
+        "name": "Garth",
+        "surname": "Fields",
+        "age": 70,
+        "salary": "£70472"
+    }]
+
+
+def test__min_salary():
+
+    ds = DataStats()
+
+    assert ds._min_salary(test_data) == [{
+        "id": 1,
+        "name": "Laith",
+        "surname": "Simmons",
+        "age": 68,
+        "salary": "£27888"
+    }]
+@]
+
+Новые методы в классе DataStats:
+
+[@
+def _max_salary(self, data):
+        # Compute max salary
+        salaries = [int(e['salary'][1:]) for e in data]
+        threshold = '£' + str(max(salaries))
+
+        return [e for e in data if e['salary'] == threshold]
+
+    def _min_salary(self, data):
+        # Compute min salary
+        salaries = [int(d['salary'][1:]) for d in data]
+        return [e for e in data if e['salary'] ==
+                '£{}'.format(str(min(salaries)))]
+@]
+
+И метод _stats() сейчас очень короткий:
+
+[@
+def _stats(self, data, iage, isalary):
+        return {
+            'avg_age': self._avg_age(data),
+            'avg_salary': self._avg_salary(data),
+            'avg_yearly_increase': self._avg_yearly_increase(
+                data, iage, isalary),
+            'max_salary': self._max_salary(data),
+            'min_salary': self._min_salary(data)
+        }
+@]
+
+!!! Шаг 8. Избавляемся от повторяющегося кода
+
+Коммит: b559a5c
+
+Сейчас, когда у нас есть главные тесты, мы можем изменять код различных вспомогательных методов. Они достаточно малы, что позволяет делать изменения без написания дополнительных тестов. Это применимо к данному случаю, но в общем нет такого понятия как «достаточно маленький» так же, как нет реального определения «юнит теста». Вообще, вы должны быть уверены, что изменяемая часть кода покрыта тестами. Если это не так, то следует добавить один или несколько тестов, пока вы не почувствуете себя достаточно уверенно.
+
+Два метода _max_salary() и _min_salary() имеют много общего кода, хоть и второй более краткий.
+
+[@
+def _max_salary(self, data):
+        # Compute max salary
+        salaries = [int(e['salary'][1:]) for e in data]
+        threshold = '£' + str(max(salaries))
+
+        return [e for e in data if e['salary'] == threshold]
+
+    def _min_salary(self, data):
+        # Compute min salary
+        salaries = [int(d['salary'][1:]) for d in data]
+        return [e for e in data if e['salary'] ==
+                '£{}'.format(str(min(salaries)))]
+@]
+
+Я начну с того, что объявлю пороговую переменную threshold во второй функции. После любых изменений я запускаю тесты, чтобы проверить что внешнее поведение кода не изменилось.
+
+[@
+ def _max_salary(self, data):
+        # Compute max salary
+        salaries = [int(e['salary'][1:]) for e in data]
+        threshold = '£' + str(max(salaries))
+
+        return [e for e in data if e['salary'] == threshold]
+
+    def _min_salary(self, data):
+        # Compute min salary
+        salaries = [int(d['salary'][1:]) for d in data]
+        threshold = '£{}'.format(str(min(salaries)))
+
+        return [e for e in data if e['salary'] == threshold]
+@]
+
+Теперь очевидно, что функции, кроме min() и max(), одинаковы. Они до сих пор используют разные имена переменных и разный код для формирования порога, так что в первую очередь я их сравняю, скопировав код из _min_salary() в _max_salary() и изменив min() на max().
+
+[@
+def _max_salary(self, data):
+        # Compute max salary
+        salaries = [int(d['salary'][1:]) for d in data]
+        threshold = '£{}'.format(str(max(salaries)))
+
+        return [e for e in data if e['salary'] == threshold]
+
+    def _min_salary(self, data):
+        # Compute min salary
+        salaries = [int(d['salary'][1:]) for d in data]
+        threshold = '£{}'.format(str(min(salaries)))
+
+        return [e for e in data if e['salary'] == threshold]
+@]
+
+Теперь я могу создать ещё одну вспомогательную функцию _select_salary(), которая продублирует этот код и примет в качестве одного из аргументов функцию, используемую вместо min() или max(). Как я делал ранее, я сначала дублирую код, а затем убираю повторы, заменяя их на вызов новой функции.
+
+[@
+ def _select_salary(self, data, func):
+        salaries = [int(d['salary'][1:]) for d in data]
+        threshold = '£{}'.format(str(func(salaries)))
+
+        return [e for e in data if e['salary'] == threshold]
+
+    def _max_salary(self, data):
+        return self._select_salary(data, max)
+
+    def _min_salary(self, data):
+        return self._select_salary(data, min)
+@]
+
+Затем я заметил дублирующийся код в _avg_salary() и _select_salary():
+
+[@
+def _avg_salary(self, data):
+        return math.floor(sum([int(e['salary'][1:]) for e in data])/len(data))
+
+
+   def _select_salary(self, data, func):
+        salaries = [int(d['salary'][1:]) for d in data]
+@]
+
+Я решил вынести общий алгоритм в метод _salaries(). Как и раньше, я сначала написал тест:
+
+[@
+def test_salaries():
+
+    ds = DataStats()
+
+    assert ds._salaries(test_data) == [27888, 67137, 70472]
+@]
+
+Затем применил метод:
+
+[@
+def _salaries(self, data):
+        return [int(d['salary'][1:]) for d in data]
+@]
+
+И в итоге заменил дублирующийся код вызовом нового метода:
+
+[@
+def _salaries(self, data):
+        return [int(d['salary'][1:]) for d in data]
+
+
+   def _select_salary(self, data, func):
+        threshold = '£{}'.format(str(func(self._salaries(data))))
+
+        return [e for e in data if e['salary'] == threshold]
+@]
+
+Пока я делал изменения, я заметил, что функция _avg_yearly_increase() содержит такой же код и исправил её.
+
+[@
+def _avg_yearly_increase(self, data, iage, isalary):
+        # iage and isalary are the starting age and salary used to
+        # compute the average yearly increase of salary.
+
+        # Compute average yearly increase
+        average_age_increase = math.floor(
+            sum([e['age'] for e in data])/len(data)) - iage
+        average_salary_increase = math.floor(
+            sum(self._salaries(data))/len(data)) - isalary
+
+        return math.floor(average_salary_increase/average_age_increase)
+@]
+
+В этот момент было бы полезно входные данные поместить внутри класса и использовать как self.data, вместо того, чтобы передавать её во всех методах класса. Однако это нарушит API класса, так как в текущий момент DataStats инициализирован без данных. Позже я покажу, как вводить изменения, которые могут нарушить API и коротко обрисую проблему. Сейчас же я продолжу изменять класс без изменений внешнего интерфейса.
+
+Похоже, что age имеет такую же проблему с повторением кода, как и salary, поэтому таким же образом я введу метод _ages() и изменю методы _avg_age() и _avg_yearly_increase().
+
+Кстати, говоря о _avg_yearly_increase(), код данного метода дублируется в методах _avg_age() и _avg_salary(), так что стоит его заменить вызовами двух функций. Поскольку я перемещаю код между существующими методами, мне не нужны дальнейшие тесты.
+
+[@
+def _avg_yearly_increase(self, data, iage, isalary):
+        # iage and isalary are the starting age and salary used to
+        # compute the average yearly increase of salary.
+
+        # Compute average yearly increase
+        average_age_increase = self._avg_age(data) - iage
+        average_salary_increase = self._avg_salary(data) - isalary
+
+        return math.floor(average_salary_increase/average_age_increase)
+@]
+
+!!! Шаг 9. Рефакторинг повышенной сложности
+Коммит: cc0b0a1
+
+У начального класса не было метода __init__() и, таким образом, отсутствовала часть инкапсуляции ООП. Не было причин оставлять класс, так как метод stats() можно было легко извлечь и представить в виде простой функции.
+
+Это стало более очевидно, когда мы отрефакторили метод, потому что сейчас у нас есть 10 методов, которые принимают data как параметр. Было бы неплохо загрузить входные данные во время инициализации метода, а затем получать доступ к ним как self.data. Это значительно улучшит читаемость класса и оправдает его существование.
+
+Однако, если мы добавим метод, требующий параметры, мы изменим API класса, нарушив совместимость с любым другим кодом, который его импортирует и использует. Поскольку мы хотим сохранить API без изменений, нам нужно придумать обходной путь, который позволит использовать преимущества нового чистого класса, но в то же время не нарушит API. Это не всегда достижимо, но в этом случае проблему поможет решить адаптер (или упаковщик).
+
+Цель состоит в том, чтобы текущий класс сделать соответствующим новому API, а затем написать упаковщик, который адаптирует этот класс под требования старого API. Стратегия не очень отличается от той, что мы использовали ранее, только в этот раз мы будем работать с классами, а не методами. Огромным усилием моего воображения я назвал новый класс NewDataStats. Простите, но иногда нужно просто сделать работу.
+
+Первым делом, как это часто бывает с рефакторингом, будет продублировать код, а когда мы вставим новый код, нам нужны будут тесты, которые его проверят. Тесты будут такие же, как и ранее, поскольку новый класс должен выполнять тот же функционал, что и раньше, так что я просто создал новый файл test_newdatastats.py и начал создавать первый тест test_init().
+
+[@
+import json
+
+from datastats.datastats import NewDataStats
+
+
+test_data = [
+    {
+        "id": 1,
+        "name": "Laith",
+        "surname": "Simmons",
+        "age": 68,
+        "salary": "£27888"
+    },
+    {
+        "id": 2,
+        "name": "Mikayla",
+        "surname": "Henry",
+        "age": 49,
+        "salary": "£67137"
+    },
+    {
+        "id": 3,
+        "name": "Garth",
+        "surname": "Fields",
+        "age": 70,
+        "salary": "£70472"
+    }
+]
+
+
+def test_init():
+
+    ds = NewDataStats(test_data)
+
+    assert ds.data == test_data
+@]
+
+Этот тест не проходит, и код, реализующий класс, очень прост:
+
+[@
+class NewDataStats:
+
+    def __init__(self, data):
+        self.data = data
+@]
+
+Теперь я могу начать повторяющийся процесс:
+
+# Я скопирую один тест из DataStats и адаптирую его для NewDataStats.
+# Я скопирую код из DataStats в NewDataStats, адаптируя его под новое API, и удостоверюсь, что он проходит тест.
+
+Итеративное удаление методов из DataStats и замена их вызовом из NewDataStats будут излишними. В следующем разделе я покажу, почему и как этого можно избежать.
+
+Пример результата тестов для NewDataStats:
+
+[@
+def test_ages():
+
+    ds = NewDataStats(test_data)
+
+    assert ds._ages() == [68, 49, 70]
+@]
+
+И код, который проходит тест:
+
+[@
+def _ages(self):
+        return [d['age'] for d in self.data]
+@]
+
+После этого я заметил, что сейчас методы похожие на _ages() не нуждаются в входных параметрах, я могу преобразовать их в свойства, соответственно меняя тесты.
+
+[@
+@property
+    def _ages(self):
+        return [d['age'] for d in self.data]
+@]
+
+Настало время заменить методы в DataStats вызовом из NewDataStats. Мы можем это сделать пошагово, метод за методом, но что нам на самом деле нужно, так это заменить метод stats().
+
+[@
+ def stats(self, data, iage, isalary):
+        nds = NewDataStats(data)
+        return nds.stats(iage, isalary)
+@]
+
+И поскольку все другие методы больше не используются, мы можем безопасно удалить их, не боясь, что тесты не пройдут. В случае с тестами, удаление методов приведёт к тому, что многие тесты DataStats не пройдут, так что их тоже следует удалить.
+
+[@
+class DataStats:
+
+    def stats(self, data, iage, isalary):
+        nds = NewDataStats(data)
+        return nds.stats(iage, isalary)
+@]
+
+!!! Послесловие
+Если вам интересна тема рефакторинга, то стоит почитать классику – Мартин Фаулер «РЕФАКТОРИНГ. Улучшение существующего кода», в этой книге собран набор шаблонов рефакторинга. Справочный язык – Java, но шаблоны легко применяются и на Python.
