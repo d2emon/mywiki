@@ -1,17 +1,7 @@
-46.1	Assembler i8086, MS-DOS, fasm
-46.2	Assembler i8086, MS-DOS, masm
-46.3	Assembler i8086, MS-DOS, tasm
-46.4	Assembler i386, Linux, nasm
-46.5	То же, только GAS
-46.6	AMD64 Linux, GAS
-46.7	Assembler i386, Windows, masm
-46.8	Assembler fasm for Windows
-46.9	Assembler микроконтроллер ATMega16, AVR Studio
-46.10	Assembler TASM для ZX Spectrum 48/128
-
 !! Ассемблер
 
 Очевидно, что никакой сложности в решении такая задача собой не представляет. Тем не менее, решив подобную задачу на каком-либо языке программирования, субъект чаще всего начинает oшибочно самоидентифицироваться с программистом.
 
 Однако на языках ассемблера данная задача представляется более сложной:
 
+(:childlist:)
