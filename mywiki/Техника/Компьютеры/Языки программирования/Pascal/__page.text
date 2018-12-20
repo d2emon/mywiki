@@ -1,0 +1,9 @@
+!! Pascal
+
+(:childlist:)
+
+[>[@
+begin
+  write('Hello, World!')
+end.
+@]<]

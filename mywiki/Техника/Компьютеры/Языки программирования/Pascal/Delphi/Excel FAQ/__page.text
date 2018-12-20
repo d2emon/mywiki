@@ -1,0 +1,1158 @@
+!! Excel FAQ
+
+Объект Cells предназначен для доступа к ячейкам в стиле R1C1 к одной ячейке. Range — в стиле A1 к области (коллекции) ячеек. Удобство объекта Range в том, что можно, при использовании оператор with, обращаться к нескольким свойствам и методам. Объект Rows возвращает коллекцию строк и Columns — коллекцию столбцов объекта Range (вместо этих свойств можно использовать свойства EntireRow и EntireColumn).
+
+* Range Collection
+* Cells Property
+* Rows Property
+* Columns Property
+* Excel Range Object
+
+!!! Как записать значения сразу в несколько ячеек?
+
+Для записи в несколько (область) ячеек используется объект Range (ExcelRange). Пример, как можно получить объект Range для области ячеек.
+
+!!!! Delphi:
+
+[@
+oRng: ExcelRange;
+...
+    ASheet := (XL.ActiveWorkbook.ActiveSheet as _Worksheet);
+    oRng := ASheet.Range['A1:B5', EmptyParam];
+    oRng := ASheet.Range['A1', 'B5'];
+    oRng := ASheet.Range[ASheet.Cells.Item[1, 1], ASheet.Cells.Item[5, 2]];
+    oRng.Formula := 123.45;
+
+
+// обращение к объекту Rows
+    oRng := ASheet.Range['3:7', EmptyParam].Rows;
+    oRng := ASheet.Range['A3:A7', EmptyParam].EntireRow;
+
+// обращение к объекту Columns
+    oRng := ASheet.Range['B:E', EmptyParam].Columns;
+    oRng := ASheet.Range['B1:E1', EmptyParam].EntireColumn;
+@]
+
+Заметьте, что при обращении к свойству Range и Cells объекта Range, адресация будет уже работать относительно области, указанной в объекте Range. Например, нижеприведенный код будет указывать не на ячейку "A1", как сразу можно подумать, а на "C2":
+
+[@
+ASheet.Range['C2:F20', EmptyParam].Range['A1', EmptyParam];
+@]
+
+А вот такой код вернет ячейку с адресом "D3":
+
+[@
+ASheet.Range['C2:F20', EmptyParam].Range['B2', EmptyParam];
+@]
+
+!!! Как определить область выделенных ячеек и ее границы?
+
+Чтобы получить область (или области) выделенных ячеек, нужно получить объект Range из свойства Selection объекта Excel.Application и обратиться к свойству Range.Areas.
+
+!!!! Delphi:
+
+[@
+    try
+      with XL.Selection[lcid] as ExcelRange do
+
+        for i := 1 to Areas.Count do
+          with Areas[i] do
+
+            ShowMessageFmt('R%dC%d:R%dC%d',
+              [Row, Column, Row + Rows.Count - 1, Column + Columns.Count - 1]);
+    except
+      // Selection - это не Range!
+    end;
+@]
+
+!!! Как записывать значения в ячейку (Value, Value2, Text, Formula)?
+
+Начиная с версии Excel XP (10.0), свойство Value имеет параметр. Отличие Value2 от Value в том, что Value2 не поддерживает "форматирования на лету" для типов Currency, Double и Date. Свойство Text (только чтение для Range) возвращает текст в ячейке. Свойство Formula выполняет те же функции, что и Value, с поддержкой "форматирования на лету", а также позволяет записывать в ячейку формулы со ссылками в стиле A1 (в идеале английские, но что на практике, смотрите здесь). Для стиля R1C1 используется свойство FormulaR1C1.
+
+Для записи локализованных ("русских") форматов данных и формул используются свойства с окончанием Local, например FormulaLocal.
+
+!!!! Delphi:
+
+[@
+Range['A1', EmptyParam].Value2 := 'Любой текст';
+Range['A2', EmptyParam].Value[xlRangeValueDefault] := 123.45;
+Range['A3', EmptyParam].Formula := Date;
+
+// Будьте внимательны - в английских формулах разделитель аргументов
+// только символ "," (запятая), а не ";", как в русских формулах!
+Range['A4', EmptyParam].Formula := '=sum(A2:A3)';
+@]
+
+!!!! C#:
+
+[@
+// согласитесь, что немного неудобно писать так
+oSheet.get_Range("A6", Type.Missing).set_Value(
+  Excel.XlRangeValueDataType.xlRangeValueDefault, 123.45);
+// или
+oSheet.get_Range("A7", Type.Missing).set_Value(Type.Missing, 123.45);
+// гораздо удобнее
+oSheet.get_Range("A6", Type.Missing).Value2 = 123.45;
+// или
+oSheet.get_Range("A6", Type.Missing).Formula = 123.45;
+@]
+
+Если вы попробуете записать макрос в Excel, то увидите, что запись значений ведется в свойство FormulaR1C1. С тем же успехом можно писать и в свойство Formula.
+
+Внимание! При записи в свойство Formula, если это не формула, следите, чтобы текст не начинался с символов "=", "+", "-", "*", "/". Или просто к тексту прибавляйте в начало знак апострофа (код символа 39):
+
+!!!! Delphi:
+
+[@
+Range['A1', EmptyParam].Formula := #39'Любой текст';
+Range['A1', EmptyParam].Formula := #39 + MyStringVar;
+@]
+
+!!! Что работает быстрее, запись в Range или Cells?
+
+Запись в Range работает быстрее, но не существенно (смотрите в Demo-проекте пример "Как сделать, чтобы Excel работал быстрее?"). Это связано с тем, что в Excel TLB свойство Cells.Item[R, C] имеет тип OleVariant и, как следствие, позднее связывание. В C# между Range и Cells нет никакой разницы.
+
+Для перевода из координат R1C1 в A1 удобно пользоваться "самодельными" функциями, например:
+
+!!!! Delphi:
+
+[@
+function xlRCtoA1(const ARow, ACol: Integer;
+  RowAbsolute: Boolean = False;
+  ColAbsolute: Boolean = False): String;
+
+const
+  A1 = Ord('A') - 1;  // номер "A" минус 1 (65 - 1 = 64)
+  AZ = Ord('Z') - A1; // кол-во букв в англ. алфавите (90 - 64 = 26)
+
+var
+  t, m: Integer;
+  S: String[9]; // чтобы экономить память IV=256 последний столбец 
+begin
+  // номер колонки
+  t := ACol div AZ; // целая часть
+
+  m := (ACol mod AZ); // остаток?
+  if m = 0 then Dec(t);
+  if t &gt; 0 then S := Char(A1 + t) else S := '';
+  if m = 0 then t := AZ else t := m;
+  S := S + Char(A1 + t);
+  // весь адрес
+
+  if ColAbsolute then S := '$' + S;
+  if RowAbsolute then S := S + '$';
+  S := S + IntToStr(ARow);
+  Result := S;
+
+end;
+@]
+
+!!! Что такое UsedRange? Как найти последнюю используемую ячейку? Что такое SpecialCells? Что такое CurrentRegion?
+
+UsedRange — прямоугольная область, включающая все заполненные ячейки и незаполненные, в промежутках между заполненными ячейками, на листе. Координаты области не обязательно начинаются в ячейке A1. Также для определения координат различных ячеек можно использовать объект SpecialCells, например, с параметром xlCellTypeLastCell для нахождения последней (крайней справа снизу) используемой ячейки. CurrentRegion возвращает область вокруг ячейки, выделенную пустыми (незаполненными) ячейками. End — находит последнюю ячейку в строке или столбце перед первой попавшейся пустой ячейкой, или первую заполненную, если вызывать метод End для пустой ячейки.
+
+!!!! Delphi:
+
+[@
+R: ExcelRange;
+...
+// вся используемая область ячеек (прямоугольная)
+R := ASheet.UsedRange[lcid];
+
+// получить последнюю (правую нижнюю) ячейку используемой области
+R := ASheet.Range['A1', EmptyParam].SpecialCells(xlCellTypeLastCell, EmptyParam);
+
+// получить все непустые ячейки вокруг ячейки "A5" (удобно для обнаружения таблиц
+// на листе)
+
+R := ASheet.Range['A5', EmptyParam].CurrentRegion;
+
+// Найти последнюю непустую ячейку в столбце, если "A9" - непустая ячейка.
+// Или первую непустую, если "A9" - пустая ячейка.
+R := ASheet.Range['A9', EmptyParam].End_[xlDown];
+@]
+
+!!! Как получить адрес ячейки?
+
+!!!! Delphi:
+
+[@
+R: ExcelRange;
+...
+    // абсолютные координаты в стиле A1
+
+    R := ASheet.Range['A1', EmptyParam];
+    R.Select;
+    R.Formula := R.Address[True, True, xlA1, EmptyParam, EmptyParam];
+
+    // относительные координаты в стиле A1
+    R := ASheet.Range['A2', EmptyParam];
+    R.Formula := R.Address[False, False, xlA1, EmptyParam, EmptyParam];
+
+    // если указать RowAbsolute и ColumnAbsolute False,
+    // то будет выдан адрес относительно активной ячейки
+    R := ASheet.Range['A3', EmptyParam];
+    R.Formula := R.Address[False, False, xlR1C1, EmptyParam, EmptyParam];
+
+    // теперь получим абсолютный адрес
+
+    R := ASheet.Range['A4', EmptyParam];
+    R.Formula := R.Address[True, True, xlR1C1, EmptyParam, EmptyParam];
+
+    // также координаты ячейки можно получить из свойств
+    // Row и Column объекта Range
+    R := ASheet.Range['A5', EmptyParam];
+    R.Formula := Format('Строка %d, Колонка %d', [R.Row, R.Column]);
+@]
+
+!!! Нужно ли выделять ячейку/область для того, чтобы вносить в нее данные?
+
+Не нужно. Достаточно указать адрес области ячеек в объекте Range для выбранного объекта Worksheet (и/или Workbook). Любой Select или Activate только замедлит работу вашей программы. Кроме того, метод Select возможно вызвать только на активном листе активной книги! Не используйте Select и Activate без необходимости.
+
+!!! В чем отличие Range.Activate от Range.Select?
+
+И метод Activate и Select делают одно и то же — выделяют (активируют) ячейку. Разница лишь в том, что метод Activate позволяет выбрать только одну ячейку на листе или сделать активной любую ячейку в области, выделенной методом Select. Метод Select позволяет выделять одну и более областей ячеек.
+
+!!! Как установить свойству ячейки NumberFormat "общий" формат, текстовый формат, формат даты, числа, валюты?
+
+Для правильной работы NumberFormat с английскими форматами не забудьте подключить модуль TrDispCall
+
+!!!! Delphi:
+
+[@
+// Установка текстового формата.
+    // Записанное число как текст будет воспринят как текст,
+    // если указать текстовый формат
+    with ASheet.Range['A1', EmptyParam] do begin
+
+      NumberFormat := '@';
+      Value[xlRangeValueDefault] := '1234567890123456';
+    end;
+    // Записанное число как текст будет воспринят как число,
+    // если указать общий формат
+    with ASheet.Range['A1', EmptyParam] do begin
+
+      NumberFormat := '';
+      Value2 := '1234567890123456';
+    end;
+    // Записанное в ячейку число будет воспринято как число, но
+    // с выравниванием влево как текст
+    with ASheet.Range['A1', EmptyParam] do begin
+
+      NumberFormat := '@';
+      Value2 := Now();
+    end;
+    // Для установки "общего" формата достаточно записать
+    // в свойство NumberFormat пустую строку
+    with ASheet.Range['A1', EmptyParam] do begin
+
+      NumberFormat := '';
+    end;
+    // Для установки формата даты запишем в NumberFormat
+    // формат "короткой" даты.
+    with ASheet.Range['A1', EmptyParam] do begin
+
+      NumberFormat := ShortDateFormat; // SysUtils
+    end;
+    // Установим формат целых чисел с разделителем тысяч
+    with ASheet.Range['A1', EmptyParam] do begin
+
+      NumberFormat := '#,##0';
+    end;
+    // Установим формат float чисел с разделителем тысяч и
+    // двумя знаками после запятой
+    with ASheet.Range['A1', EmptyParam] do begin
+
+      NumberFormat := '#,##0.00';
+    end;
+@]
+
+!!! Передаю в ячейку 385.00, а показывает 385. Почему?
+
+Потому что в ячейке установлен "общий" формат (general), который отсекает незначащие цифры. В данном примере всегда будут указываться 2 цифры после запятой:
+
+!!!! Delphi:
+
+[@
+ASheet.Range['A1', EmptyParam].NumberFormat := '0.00';
+ASheet.Range['A1', EmptyParam].Value2 := 385; // будет отображено "385.00"
+@]
+
+При записи в ячейку чисел как текста, целые числа автоматический преобразуются в численный формат, а вещественные нет. Вследствие чего возникает ошибка "число сохранено как текст".
+
+Лучше числа не записывать в ячейку как текст и не надеяться, что Excel всегда сможет "на лету" преобразовать текст верно. Вы никогда не можете быть уверенными, какие локальные установки формата чисел будут установлены на компьютере пользователя. Всегда перед записью переводите записываемые числа из текста в число (Float или Integer) в своей программе.
+
+!!! Делаю экспорт в Excel, допустим, текст "000069987", а он выводит в ячейку 69987, т.е. удаляет лидирующие нули. Как мне сделать, чтобы в ячейку выводилось 000069987?
+
+При записи текста, содержащего одни цифры, Excel пытается его преобразовать в число. Чтобы избажать такой "помощи" со стороны Excel'я, перед записью в ячейку установите в свойство NumberFormat текстовый формат или добавьте перед текстом символ апострофа "'" (код символа 39).
+
+!!!! Delphi:
+
+[@
+    S := '000069987';
+    // установим текстовый формат перед записью в ячейку
+    with ASheet.Range['A1', EmptyParam] do begin
+
+      NumberFormat := '@';
+      Formula := S;
+    end;
+    // или добавим перед текстом апостроф - результат тот же и даже быстрее работает
+    // так как не приходится изменять свойство NumberFormat
+    ASheet.Range['A2', EmptyParam].Formula := #39 + S;
+@]
+
+!!! Как очистить область ячеек? Как определить что ячейка Excel пустая?
+
+!!!! Delphi:
+
+[@
+    ASheet.Range['A1', EmptyParam].Formula := 123.45;
+    ASheet.Range['A2', EmptyParam].Formula := 0;
+
+
+// проверяем
+    ASheet.Range['B1', EmptyParam].Formula := VarIsClear(ASheet.Range['A1', EmptyParam].Value2);
+    ASheet.Range['B2', EmptyParam].Formula := VarIsClear(ASheet.Range['A2', EmptyParam].Value2);
+    ASheet.Range['B3', EmptyParam].Formula := VarIsClear(ASheet.Range['A3', EmptyParam].Value2);
+
+// Записали в ячейку информацию и проверяем, что вернет нам функция VarIsClear
+
+// Запишем в A3 пустой текст, а в A1 очистим форматы
+    ASheet.Range['A1', EmptyParam].ClearFormats;
+    ASheet.Range['A3', EmptyParam].Formula := '';
+
+// проверим
+    ASheet.Range['B1', EmptyParam].Formula := VarIsEmpty(ASheet.Range['A1', EmptyParam].Value2);
+    ASheet.Range['B2', EmptyParam].Formula := VarIsEmpty(ASheet.Range['A2', EmptyParam].Value2);
+    ASheet.Range['B3', EmptyParam].Formula := VarIsEmpty(ASheet.Range['A3', EmptyParam].Value2);
+
+
+// После записи пустой строки ячейка так и осталась "пустой"
+// Очистим содержание всех ячеек и посмотрим, что получилось
+    ASheet.UsedRange[lcid].ClearContents;
+    ASheet.Range['B1', EmptyParam].Formula := VarIsEmpty(ASheet.Range['A1', EmptyParam].Value2);
+    ASheet.Range['B2', EmptyParam].Formula := VarIsEmpty(ASheet.Range['A2', EmptyParam].Value2);
+    ASheet.Range['B3', EmptyParam].Formula := VarIsEmpty(ASheet.Range['A3', EmptyParam].Value2);
+
+
+// Видно, что теперь все ячейки "пустые" (нет данных).
+@]
+
+Чтобы радикально очистить ячейки (данные, форматы, примечания и т.д.), можно вызвать метод Clear.
+
+!!! Как задать имя области ячеек? Как обратиться к ячейке по имени? Как определить, что такое имя существует на листе? Как задать имя области ячеек?
+
+!!!! Delphi:
+
+[@
+// создадим функцию для проверки наличия именованной области ячеек на листе
+function RangeNameExists(ASheet: ExcelWorksheet; const ARangeName: String): Boolean;
+var
+  i: Integer;
+  S: ExcelWorksheet;
+  WB: ExcelWorkbook;
+
+begin
+  Result := False;
+  if not Assigned(ASheet) then Exit;
+  WB := ASheet.Parent as ExcelWorkbook;
+  for i := 1 to WB.Names.Count do begin
+
+    if AnsiSameText(WB.Names.Item(i, EmptyParam, EmptyParam).Name_, ARangeName) then begin
+      // имя нашли, а на нашем ли листе?
+      S := WB.Names.Item(i, EmptyParam, EmptyParam).RefersToRange.Worksheet as ExcelWorksheet;
+      Result := AnsiSameText(S.Name, ASheet.Name);
+      if Result then Break;
+    end;
+  end;
+
+end;
+
+// присвоим имя "MyNamedRange" области "B2:D7"
+    (ASheet.Parent as ExcelWorkbook).Names.Add(
+      'MyNamedRange', // Name,
+
+      ASheet.Range['B2:D7', EmptyParam], // RefersTo: OleVariant; стиль адресации A1
+      True, // Visible: OleVariant;
+      EmptyParam, // MacroType: OleVariant;
+      EmptyParam, // ShortcutKey: OleVariant;
+
+      EmptyParam, // Category: OleVariant;
+      EmptyParam, // NameLocal: OleVariant;
+      EmptyParam, // RefersToLocal: OleVariant;
+      EmptyParam, // CategoryLocal: OleVariant;
+      EmptyParam, // RefersToR1C1: OleVariant; // адрес в стиле R1C1
+
+      EmptyParam // RefersToR1C1Local: OleVariant
+    ); // : Name;
+
+// теперь попробуем определить наличие именованной области и, если есть такая, 
+// обведем область рамкой
+
+    if RangeNameExists(ASheet, 'MyNamedRange')
+      then ASheet.Range['MyNamedRange', EmptyParam].BorderAround(
+        xlContinuous,
+        xlThick,
+        xlColorIndexAutomatic,
+        EmptyParam
+        );
+@]
+
+Если вы зададите области имя, уже существующее в листе, то старое имя будет утеряно, т.е. получится перезапись имени. Присваивать имена области ячеек можно и неактивному листу. Задавать адрес ячейки можно и как текст (не обязательно ссылку на объект Range), а также можно в стиле R1C1, указав адрес области ячеек в параметре RefersToR1C1.
+
+!!! Как объединить ячейки? Как узнать, что ячейка входит в объединенную область и определить границы этой области?
+
+!!!! Delphi:
+
+[@
+    // объединим область ячеек "A1:C2" строки "вместе"
+    ASheet.Range['A1:C2', EmptyParam].Merge(False);
+    ASheet.Range['A1', EmptyParam].Select; // подправим вид курсора
+    ASheet.Range['A1', EmptyParam].MergeArea.Formula := 'A1:C2 объединены';
+
+    // объединим область ячеек "A3:C4" "раздельно" каждую строку
+
+    ASheet.Range['A3:C4', EmptyParam].Merge(True);
+
+    // определим, что ячейка C2 принадлежит объединенной области
+    // при этом тестируем крайнюю ячейку области на вхождение
+
+    if ASheet.Range['C2', EmptyParam].MergeCells then begin
+
+    // если это так, то получим координаты области
+      ASheet.Range['A3', EmptyParam].MergeArea.Formula := 'В стиле A1: ' +
+        ASheet.Range['C2', EmptyParam].MergeArea.Address[True, True,
+        xlA1, EmptyParam, EmptyParam];
+      ASheet.Range['A4', EmptyParam].MergeArea.Formula :=
+        Format('Начало в R%dC%d, конец в R%dC%d', [
+          ASheet.Range['C2', EmptyParam].MergeArea.Row,
+          ASheet.Range['C2', EmptyParam].MergeArea.Column,
+          ASheet.Range['C2', EmptyParam].MergeArea.Row +
+            ASheet.Range['C2', EmptyParam].MergeArea.Rows.Count - 1,
+          ASheet.Range['C2', EmptyParam].MergeArea.Column +
+            ASheet.Range['C2', EmptyParam].MergeArea.Columns.Count - 1
+
+        ]);
+    end;
+@]
+
+Смотрите дальше, как сделать автоподбор высоты строк для объединенных ячеек.
+
+!!! Как записывать данные из вариантного массива в Excel?
+
+Запись данных из вариантного массива (VarArray) очень хорошо расписана в статьях "По волнам интеграции… III" и "Зарисовка на тему экспорта в Excel". Для разнообразия, приведу еще раз этот вариант быстрого экспорта в Excel.
+
+Внимание! Если вы пытаетесь записать в область одну строку, то МАССИВ все равно ДОЛЖЕН БЫТЬ ДВУМЕРНЫМ! Т.е. varData := VarArrayCreate([1, 1, 1, ColumnCount], varVariant); При записи массива вы должны указать в адресе области ячеек Range ВСЮ область для заполнения.
+
+!!!! Delphi:
+
+[@
+procedure CopyFromDataSet(ASheet: _WorkSheet; DataSet: TDataSet);
+
+var
+  R, C: Integer;
+  vData: Variant;
+begin
+  DataSet.Last; // специально для IBX
+  // строки на одну больше, чем в датасете - для шапки
+  vData := VarArrayCreate([0, DataSet.RecordCount, 1, DataSet.FieldCount], varVariant);
+  for C := 0 to DataSet.FieldCount - 1 do
+
+    vData[0, C + 1] := DataSet.Fields[C].DisplayLabel;
+  DataSet.First;
+  R := 1;
+  while not DataSet.Eof do begin
+
+    for C := 0 to DataSet.FieldCount - 1 do
+      case DataSet.Fields[C].DataType of
+
+        ftString, ftFixedChar, ftWideString:
+          vData[R, C + 1] := #39 + DataSet.Fields[C].Value;
+        else vData[R, C + 1] := DataSet.Fields[C].Value;
+      end;
+    Inc(R);
+    DataSet.Next;
+  end;
+  // укажем всю область, в которую будут записаны данные из массива
+
+  with ASheet do with Range['A1',
+    Cells.Item[DataSet.RecordCount + 1, DataSet.FieldCount]] do begin
+
+    Formula := vData;
+    Borders.Weight := xlHairline;
+    EntireColumn.AutoFit;
+  end;
+  vData := Unassigned; // освободим память сами
+  // настройка внешнего вида
+  with ASheet do Range['A1',
+    Cells.Item[1, DataSet.FieldCount]].Interior.ColorIndex := 15;
+  ASheet.Application.ActiveWindow.SplitRow := 1;
+  ASheet.Application.ActiveWindow.FreezePanes := True;
+  ASheet.Application.ActiveWindow.DisplayGridlines := False;
+
+end;
+@]
+
+!!!! C#:
+
+[@
+      // данные будут взяты из таблицы EMPLOYEE из файла DBDEMOS.MDB
+      string dbFile = Environment.GetFolderPath(Environment.SpecialFolder.CommonProgramFiles);
+      dbFile += @"\Borland Shared\Data\dbdemos.mdb";
+      // заменим путь к файлу dbdemos
+      dbFile = Regex.Replace(oleDbConnection1.ConnectionString,
+        @"^(?&lt;start&gt;.*?;Data Source=)(?&lt;db&gt;[^;]*)(?&lt;end&gt;;.*)$",
+        "${start}" + dbFile + "${end}");
+      oleDbConnection1.ConnectionString = dbFile;
+      try
+      {
+        oleDbDataAdapter1.Fill(dataSet1, "employee");
+        oleDbConnection1.Close(); // закроем соединение
+        //
+        DataTable tblEmployee = dataSet1.Tables["employee"];
+        dataGrid1.DataSource = tblEmployee; // dataSet1.Tables["employee"];
+        // создадим двумерный массив для экспорта
+        object[,] arrEmployee = (object[,]) Array.CreateInstance(typeof(object),
+          new int[2] {tblEmployee.Rows.Count + 1, tblEmployee.Columns.Count}, // длины массива
+          new int[2] {0, 1}); // начальные индексы строк и столбцов
+        // заголовки
+        for (int i = 0; i &lt; tblEmployee.Columns.Count; i++)
+          arrEmployee[0, i + 1] = tblEmployee.Columns[i].Caption;
+        // данные
+        for (int R = 0; R &lt; tblEmployee.Rows.Count; R++)
+          for (int C = 0; C &lt; tblEmployee.Columns.Count; C++) {
+            arrEmployee[R + 1, C + 1] = tblEmployee.Rows[R][C];
+            Application.DoEvents();
+          }
+        Excel.Worksheet oSheet = null;
+        Excel.Range oRng = null;
+        Excel.Application XL = new Excel.Application();
+        try
+        {
+          XL.Visible = true;
+          XL.Interactive = false;
+          XL.Workbooks.Add(Type.Missing);
+          oSheet = (Excel.Worksheet) XL.ActiveSheet;
+          oRng = oSheet.get_Range(oSheet.Cells[1, 1],
+            oSheet.Cells[tblEmployee.Rows.Count + 1, tblEmployee.Columns.Count]);
+          oRng.Formula = arrEmployee; // запись данных
+          oRng.EntireColumn.AutoFit();
+          oRng.Borders.LineStyle = Excel.XlLineStyle.xlContinuous;
+          oRng.Borders.Weight = Excel.XlBorderWeight.xlHairline;
+          // шапка
+          oRng = oSheet.get_Range(oSheet.Cells[1, 1],
+            oSheet.Cells[1, tblEmployee.Columns.Count]);
+          oRng.Interior.ColorIndex = 15; // 25% серого
+          oRng.Interior.Pattern = Excel.XlPattern.xlPatternSolid;
+          XL.ActiveWindow.SplitRow = 1;
+          XL.ActiveWindow.FreezePanes = true;
+          XL.ActiveWindow.DisplayGridlines = false;
+          XL.ActiveWorkbook.Saved = true;
+          this.Activate();
+        }
+        finally
+        {
+          oSheet = null;
+          XL.Interactive = true;
+          XL.UserControl = true;
+          XL = null;
+        }
+        dataSet1.Tables.Remove(tblEmployee);
+      }
+      catch (Exception ex)
+      {
+        if (oleDbConnection1.State == ConnectionState.Open) oleDbConnection1.Close();
+        MessageBox.Show(ex.Message);
+      }
+@]
+
+!!! Как прочесть данные из области ячеек в массив?
+
+Точно также, как и при экспорте, только самому создавать массив не нужно — Excel все сделает за вас. В принципе, после получения данных в массив, Excel уже не нужен, и от него можно отсоединиться.
+
+!!!! Delphi:
+
+[@
+var
+  myVarArray: OleVariant;
+…
+  // массив будет создан автоматически
+
+  MyVarArray := ASheet.UsedRange[lcid].Value[xlRangeValueDefault];
+  // цикл по строкам
+  for R := VarArrayLowBound(MyVarArray, 1) to VarArrayHighBound(MyVarArray, 1) do
+
+  // цикл по столбцам
+    for C := VarArrayLowBound(MyVarArray, 2) to VarArrayHighBound(MyVarArray, 2) do
+C#:
+
+// объявим пустой двумерный массив и получим в него данные
+object[,] srcArr = (object[,]) ASheet.UsedRange.get_Value(
+          Excel.XlRangeValueDataType.xlRangeValueDefault);
+// цикл по массиву 
+for (int R = srcArr.GetLowerBound(0); R &lt;= srcArr.GetUpperBound(0); R++) 
+  for (int C = srcArr.GetLowerBound(1); C &lt;= srcArr.GetUpperBound(1); C++) 
+@]
+
+Почему при выгрузке данных в Excel не могу записать строк больше 65536?
+
+Потому что это максимально возможное количество строк объекта Worksheet. Если вы записываете больше строк, чем 65536, то помещайте их на следующий лист книги — благо, что количество листов ограничено только оперативной памятью комьютера.
+
+!!! Как писать в ячейки нескольких листов сразу?
+
+Чтобы занести данные в несколько листов сразу, вы можете объединить листы методом Worksheets.Select и воспользоваться методом FillAcrossSheets
+
+!!!! Delphi:
+
+[@
+var
+  SelSheets: Sheets;
+…
+    // заносим данные в активный лист
+
+    XL.Range['B2', EmptyParam].Formula := 123.45;
+    XL.Range['B3', EmptyParam].Borders.LineStyle := xlUnderlineStyleDouble;
+
+    // выберем 4 листа, в которые будут сдублированы данные
+    SelSheets := XL.ActiveWorkbook.Sheets[VarArrayOf([1, 2, 3, 4])] as Sheets;
+
+
+//    SelSheets.Select(False, lcid); // не обязательно
+
+    // заполним выбранные листы данными из активного листа из любой области ячеек
+    SelSheets.FillAcrossSheets((XL.ActiveSheet as _Worksheet).UsedRange[lcid],
+      xlFillWithAll, lcid);
+@]
+
+!!! Как изменить цвет фона и шрифта ячейки?
+
+Смотрите свойства Font и Interior объекта Range
+
+!!! Как изменить атрибуты шрифта части текста в ячейке (цвет, размер, имя)?
+
+Чтобы изменить часть текста ячейки можно воспользоваться свойством Characters объекта Range.
+
+!!!! Delphi:
+
+[@
+Msg: String;
+...
+    Msg := ' Человек собаке друг J';
+    // занесем тест в ячейку
+    ASheet.Range['B3', EmptyParam].Formula := Msg;
+    // займемся последним символом - изменим атрибуты шрифта
+    ASheet.Range['B3', EmptyParam].Characters[Length(Msg), 1].Font.Name :=
+      'Wingdings';
+    ASheet.Range['B3', EmptyParam].Characters[Length(Msg), 1].Font.Size := 24;
+    ASheet.Range['B3', EmptyParam].Characters[Length(Msg), 1].Font.Color := clBlue;
+@]
+
+!!! Как узнать позицию курсора в редактируемой по F2 ячейке или в строке формул и дописать в нее текст?
+
+Никак! При входе в режим редактирования ячейки объект Excel.Application становится полностью недоступен через OLE.
+
+!!! Как изменить выравнивание/угол наклона текста, отступы в ячейке?
+
+Смотрите свойства HorizontalAlignment, VerticalAlignment, AddIndent и Orientation объекта Range
+
+!!!! Delphi:
+
+[@
+    ASheet.Range['B2', EmptyParam].HorizontalAlignment := xlLeft;
+    ASheet.Range['B2', EmptyParam].VerticalAlignment := xlCenter;
+    ASheet.Range['B2', EmptyParam].Orientation := 45; // 45 градусов
+    // подберем ширину столбца
+
+    ASheet.Range['B:B', EmptyParam].Columns.AutoFit;
+//    ASheet.Range['B2', EmptyParam].EntireColumn.AutoFit;
+@]
+
+!!! Как задать границы для области ячеек (Borders)?
+
+Смотрите свойство Borders объекта Range.
+
+!!!! Delphi:
+
+[@
+// нарисуем рамку вокруг "B2"
+    ASheet.Range['B2', EmptyParam].BorderAround(
+        xlContinuous,
+        xlThick,
+        xlColorIndexAutomatic,
+        EmptyParam
+      );
+
+    // нарисуем границу сверху
+
+    ASheet.Range['A7:А7', EmptyParam].Borders[xlEdgeTop].LineStyle := xlContinuous;
+    ASheet.Range['A7:E7', EmptyParam].Borders[xlEdgeTop].Weight := xlMedium;
+@]
+
+!!! Как скопировать форматы и формулы из строки в нижележащую область (AutoFill)?
+
+Это как раз самый удобный метод копирования форматов и формул для расширения области данных при использовании шаблонов. Подразумевается, что между НАЧАЛО/КОНЕЦ находятся подготовленные ячейки шаблона (форматирование, именованная область DataRange для данных).
+
+!!!! Delphi:
+
+[@
+    // НАЧАЛО ШАБЛОНА
+    // шапка
+    ASheet.Range['A1', EmptyParam].Formula := 'Шапка';
+    // таблица
+
+    ASheet.Range['A2', EmptyParam].Formula := '#';
+    ASheet.Range['B2', EmptyParam].Formula := 'Имя';
+    ASheet.Range['C2', EmptyParam].Formula := 'Кол-во';
+    ASheet.Range['D2', EmptyParam].Formula := 'Цена';
+    ASheet.Range['E2', EmptyParam].Formula := 'Сумма';
+    ASheet.Range['A2:E2', EmptyParam].BorderAround(
+        xlContinuous,
+        xlHairline,
+        xlColorIndexAutomatic,
+        EmptyParam
+      );
+    // сделаем вид, что у нас уже готова строка шаблона данных
+
+    // и зададим форматы и формулы
+    ASheet.Range['A3', EmptyParam].Font.Bold := True;
+    ASheet.Range['C3', EmptyParam].Formula := '=round(rand()*10+1,0)';
+    ASheet.Range['D3', EmptyParam].Formula := '=round(rand()*100,2)';
+
+    // в случаях формул удобно использовать стил R1C1
+
+    ASheet.Range['E3', EmptyParam].FormulaR1C1 := '=round(RC[-1]*RC[-2],2)';
+    ASheet.Range['E3', EmptyParam].NumberFormat := '#,##0.00';
+
+    // пустая строка для того, чтоб сумма считалась автоматом
+    ASheet.Range['A4', EmptyParam].EntireRow.Hidden := True;
+
+    // добавим итоговую сумму (с пустой строкой)
+
+    ASheet.Range['E5', EmptyParam].FormulaR1C1 := '=sum(R[-1]C:R[-2]C)';
+    ASheet.Range['E5', EmptyParam].Font.Bold := True;
+    ASheet.Range['A5:E5', EmptyParam].Borders[xlEdgeTop].LineStyle :=
+      xlContinuous;
+    ASheet.Range['A5:E5', EmptyParam].Borders[xlEdgeTop].Weight := xlMedium;
+
+    // области данных присвоим имя
+    (ASheet.Parent as ExcelWorkbook).Names.Add(
+      'DataRange', // Name,
+
+      ASheet.Range['A3:E3', EmptyParam], // RefersTo: OleVariant;
+      True, // Visible: OleVariant;
+      EmptyParam, // MacroType: OleVariant;
+      EmptyParam, // ShortcutKey: OleVariant;
+
+      EmptyParam, // Category: OleVariant;
+      EmptyParam, // NameLocal: OleVariant;
+      EmptyParam, // RefersToLocal: OleVariant;
+      EmptyParam, // CategoryLocal: OleVariant;
+      EmptyParam, // RefersToR1C1: OleVariant;
+
+      EmptyParam // RefersToR1C1Local: OleVariant
+    );
+    ASheet.Range['DataRange', EmptyParam].Borders[xlEdgeBottom].LineStyle :=
+      xlContinuous;
+    ASheet.Range['DataRange', EmptyParam].Borders[xlEdgeBottom].Weight := xlHairline;
+    // КОНЕЦ ШАБЛОНА
+
+    // Начало работы с шаблоном
+    // Добавим 4 строки для занесения данных (итого уже 5 строк для данных)
+
+    // Неудобство при использовании Cells в Range - обязательное
+    // дублирование Cells во втором параметре
+    ASheet.Range[
+      ASheet.Cells.Item[ASheet.Range['DataRange', EmptyParam].Row + 1, 1],
+      ASheet.Cells.Item[ASheet.Range['DataRange', EmptyParam].Row + 4, 1]
+    ].EntireRow.Insert(xlShiftDown, EmptyParam);
+
+    // теперь заполним область форматированием, захватив (ОБЯЗАТЕЛЬНО)
+
+    // и область-шаблон "DataRange"
+    ASheet.Range['DataRange', EmptyParam].AutoFill(
+      ASheet.Range[
+        // захватим область источника
+        ASheet.Cells.Item[ASheet.Range['DataRange', EmptyParam].Row, 1],
+        ASheet.Cells.Item[ASheet.Range['DataRange', EmptyParam].Row + 5,
+        ASheet.Range['DataRange', EmptyParam].Columns.Count]
+      ],
+      xlFillCopy
+    );
+
+    // заносим данные из массива (номер и имя) - 5 строк, 2 столбца
+
+    arrData := VarArrayCreate([1, 5, 1, 2], varVariant);
+    for i := 1 to 5 do begin
+
+      arrData[i, 1] := i;
+      arrData[i, 2] := Format('Имя %d', [i]);
+    end;
+    ASheet.Range[
+      ASheet.Cells.Item[ASheet.Range['DataRange', EmptyParam].Row, 1],
+      ASheet.Cells.Item[ASheet.Range['DataRange', EmptyParam].Row + 5, 2]
+    ].Formula := arrData;
+@]
+
+!!! Как скопировать область ячеек с сохранением всех форматов? Как скопировать только значения ячейки?
+
+Метод Copy позволяет не только копировать содержимое области ячеек в буфер обмена (при пустом параметре), но и задать конкретный адрес ячеек для копирования. Если вы хотите вставить из буфера только некоторые параметры скопированной в БО ячейки, то для вставки используйте метод PasteSpecial, указав необходимый XlPasteType (первый аргумент).
+
+!!!! Delphi:
+
+[@
+    R := ASheet.Range['A1', EmptyParam];
+    // скопируем ячейку "A1" в "C3" - напрямую в ячейку
+
+    R.Copy(ASheet.Range['C3', EmptyParam]); // текущий лист
+    // в соседний лист
+    R.Copy((XL.Sheets[2] as _Worksheet).Range['C3', EmptyParam]);
+
+    // скопируем через буфер обмена
+
+    R.Copy(EmptyParam); // поместим в БО
+
+    // вставим в ячейку "C3" в текущем листе
+    ASheet.Paste(ASheet.Range['C5', EmptyParam], EmptyParam, lcid);
+    // в соседний лист
+
+    (XL.Sheets[2] as _Worksheet).Paste(
+      (XL.Sheets[2] as _Worksheet).Range['C5', EmptyParam], EmptyParam, lcid);
+
+    // вставляем только значение ячейки без форматирования
+    ASheet.Range['C7', EmptyParam].PasteSpecial(xlPasteValues,
+      xlPasteSpecialOperationNone, False, False);
+@]
+
+!!! Как скопировать область, чтобы сохранились размеры строк/столбцов?
+
+К сожалению, при копировании не сохраняются размеры строк и столбцов. Для сохранения размеров строк и столбцов можно использовать несколько способов:
+
+!!!! Delphi:
+
+[@
+    // способ первый - использование метода PasteSpecial
+    // скопируем область ячеек в буфер обмена
+    R.Copy(EmptyParam); // поместим в БО
+    // вставим в "C3" - ширина колонки не изменилась
+
+    ASheet.Paste(ASheet.Range['C5', EmptyParam], EmptyParam, lcid);
+    // специальная свтавка с XlPasteType = xlPasteColumnWidths
+    ASheet.Range['C5', EmptyParam].PasteSpecial(xlPasteColumnWidths,
+      xlPasteSpecialOperationNone, False, False);
+
+    // второй способ - обращение к коллекциям Rows и Columns
+    // копируем весь/все столбец(ы)
+    R.EntireColumn.Copy(EmptyParam); // поместим в БО
+
+    // обязательно должна быть указана первая строка!
+    ASheet.Paste(ASheet.Range['E1', EmptyParam], EmptyParam, lcid);
+
+    // третий способ - "копирование" свойства ColumnWidth
+    R.Copy(ASheet.Range['G4', EmptyParam]);
+    // Просто "копируем" ширину столбца
+
+    ASheet.Range['G4', EmptyParam].ColumnWidth := R.ColumnWidth;
+@]
+
+!!! Как сделать автоперенос строк в ячейке?
+
+Чтобы сделать перенос слов в ячейке, установите свойство WrapText объекта Range.
+
+!!!! Delphi:
+
+[@
+    ASheet.Range['A1', EmptyParam].WrapText := True;
+    ASheet.Range['A1', EmptyParam].EntireRow.AutoFit;
+@]
+
+!!! Как вставить несколько строк/столбцов? Как удалить несколько строк/столбцов? Как прятать/показывать строки и столбцы? Как программно изменить высоту строки или ширину столбца?
+
+!!!! Delphi:
+
+[@
+    // заполним ячейки данными для наглядности
+    ASheet.Range['A1', EmptyParam].Formula := 1;
+    R := ASheet.Range['A1:A25', EmptyParam];
+    R.DataSeries(xlColumns, xlLinear, xlDay, 1, EmptyParam, EmptyParam);
+    R := ASheet.Range['A1:O1', EmptyParam];
+    R.DataSeries(xlRows, xlLinear, xlDay, 1, EmptyParam, EmptyParam);
+
+    // не забывайте указывать EntireRow и EntireColumn!
+
+    // добавим пять пустых строк после 20-й строки
+    ASheet.Range['21:25', EmptyParam].EntireRow.Insert(xlShiftDown, EmptyParam);
+
+    // удвоим ширину второго и третьего столбцов
+    ASheet.Range['B:C', EmptyParam].EntireColumn.ColumnWidth :=
+      ASheet.Range['B:C', EmptyParam].EntireColumn.ColumnWidth * 2;
+    // удвоим высоту второй и третьей строки
+
+    ASheet.Range['2:3', EmptyParam].EntireRow.RowHeight :=
+      ASheet.Range['2:3', EmptyParam].EntireRow.RowHeight * 2;
+
+    // удалим 4, 6 и 8 столбцы (два способа - кому что понравится)
+//    ASheet.Range['D:D,F:F,H:H', EmptyParam].EntireColumn.Delete(xlShiftToLeft);
+    ASheet.Range['D1,F1,H1', EmptyParam].EntireColumn.Delete(xlShiftToLeft);
+@]
+
+!!! Как подогнать высоту или ширину ячеек для отображения всего текста?
+
+Для отображения всего текста в ячейке или области ячеек используйте метод AutoFit объекта Range.
+
+!!!! Delphi:
+
+[@
+// для строки
+ASheet.Range['A1', EmptyParam].EntireRow.AutoFit;
+// для столбца
+ASheet.Range['A1', EmptyParam].EntireColumn.AutoFit;
+AutoFit Method
+@]
+
+!!! Как сделать автоподбор высоты строк для объединенных ячеек?
+
+Как известно, метод AutoFit для подбора высоты объединенных ячеек не срабатывает. Для этого был придуман простой метод (взят отсюда и просто адаптирован под Delphi). Работает для объединенных ячеек в одной строке. Просто укажите одну из объединенных ячеек области (свойство WrapText должно быть включено).
+
+!!!! Delphi:
+
+[@
+  procedure AutoFitMergedCellRowHeight(Rng: ExcelRange);
+  var
+
+    mergedCellRgWidth: Single;
+    rngWidth, possNewRowHeight: Single;
+    i: Integer;
+  begin
+    if Rng.MergeCells then begin
+      // здесь использована самописная функция перевода стиля R1C1 в A1
+      if xlRCtoA1(Rng.Row, Rng.Column) = xlRCtoA1(
+        Rng.Range['A1', EmptyParam].Row, Rng.Range['A1', EmptyParam].Column)
+        then Rng := Rng.MergeArea;
+      with Rng do begin
+
+        if (Rows.Count = 1) and (WrapText) then begin
+          (Rng.Parent as _Worksheet).Application.ScreenUpdating[lcid] := False;
+          rngWidth := Cells.Item[1, 1].ColumnWidth;
+          mergedCellRgWidth := 0;
+          for i := 1 to Columns.Count do
+
+            mergedCellRgWidth := Cells.Item[1, i].ColumnWidth + MergedCellRgWidth;
+          MergeCells := False;
+          Cells.Item[1, 1].ColumnWidth := MergedCellRgWidth;
+          EntireRow.AutoFit;
+          possNewRowHeight := RowHeight;
+          Cells.Item[1, 1].ColumnWidth := rngWidth;
+          MergeCells := True;
+          RowHeight := possNewRowHeight;
+          (Rng.Parent as _Worksheet).Application.ScreenUpdating[lcid] := True;
+        end; // if
+
+      end; // with
+    end; // if
+  end; // procedure
+
+// вызов
+
+AutoFitMergedCellRowHeight(ASheet.Range['F3', EmptyParam]);
+@]
+
+Конечно, функция должна быть вызвана для каждой строки, что, естественно, будет работать довольно долго. Поэтому старайтесь не использовать перенос текста в объединенных ячейках.
+
+!!! Как программно "заморозить" строки/столбцы?
+
+!!!! Delphi:
+
+[@
+      // Отделить 3 строки
+      XL.ActiveWindow.SplitRow := 3;
+      // Отделить 1 колонку
+      XL.ActiveWindow.SplitColumn := 1;
+      // заморозим
+      XL.ActiveWindow.FreezePanes := True;
+@]
+
+!!! Как добавить примечание к ячейке? Как удалить примечание? Как изменить атрибуты шрифта примечания?
+
+Комментарий — это своеобразный объект Shape, привязанный к определенному объекту Range.
+
+!!!! Delphi:
+
+[@
+    // Добавление примечания
+    // Способ первый
+    ASheet.Range['A1', EmptyParam].AddComment('Note:'#10'Hello A1!');
+    // Способ второй
+
+    ASheet.Range['A2', EmptyParam].NoteText('Note:'#10'Hello A2!', EmptyParam, EmptyParam);
+
+    // Изменим атрибуты части текста примечания
+    // обращаясь к свойствам Shape.TextFrame.Characters,
+    // т.е. Comment - это некий объект Shape
+    with ASheet.Range['A1', EmptyParam].Comment.Shape.TextFrame.Characters(
+    // если не указать длину, то от заданной позиции и до конца текста
+
+      7, EmptyParam) do begin
+      Font.Bold := False;
+      Font.Color := clNavy;
+    end;
+
+    // добавим третью строку к коментарию в A2
+    ASheet.Range['A2', EmptyParam].NoteText(
+      ASheet.Range['A2', EmptyParam].NoteText(EmptyParam,
+      EmptyParam, EmptyParam) + #10'Третяя строка',
+      EmptyParam, EmptyParam);
+
+    // или так
+
+    ASheet.Range['A2', EmptyParam].Comment.Text(
+      ASheet.Range['A2', EmptyParam].Comment.Text(EmptyParam,
+      EmptyParam, EmptyParam) + #10'Третяя строка',
+      EmptyParam, EmptyParam);
+
+    // можно показывать комментарий все время, как транспарант
+    ASheet.Range['A2', EmptyParam].Comment.Visible := True; // False
+
+    // теперь просто удалим комментарий
+    ASheet.Range['A1', EmptyParam].Comment.Delete;
+
+    // или так
+    ASheet.Range['A1', EmptyParam].ClearNotes;
+@]
+
+!!! Как добавить URL? Как сделать гиперссылку для рисунка?
+
+!!!! Delphi:
+
+[@
+    // добавим гиперссылки в A7 и A8
+
+    with ASheet do Hyperlinks.Add(
+      Range['A7', EmptyParam],
+      'http://www.delphikingdom.com/asp/section.asp?id=16',
+      EmptyParam,
+      'Все материалы раздела'#10'Hello, World!',
+      'Hello, World!');
+    with ASheet do Hyperlinks.Add(
+      Range['A8', EmptyParam],
+      'http://www.delphikingdom.com/asp/nets.asp',
+      EmptyParam,
+      'Верхний уровень "Дерева тем"'#10'тематического каталога',
+      'Тематический каталог');
+
+    // вставим рисунок в текущую ячейку и создадим гиперсылку
+
+    Pic := (ASheet.Pictures(EmptyParam, lcid) as Pictures).Insert(
+      MyPicsPath + '\common.gif', EmptyParam);
+
+    ASheet.Hyperlinks.Add(
+      Pic.ShapeRange.Item(1),
+      'http://www.delphikingdom.com/',
+      EmptyParam,
+      'Королевство Delphi',
+      EmptyParam);
+
+    // редактирование
+    with ASheet.Range['A8', EmptyParam].Hyperlinks.Item[1] do begin
+
+      Address := 'http://www.delphikingdom.com/asp/answer.asp?IDAnswer=23150';
+      ScreenTip := 'Вопроc ¹ 23150';
+      TextToDisplay := 'Как в Excel редактировать гиперссылки, содержащиеся в ячейках?';
+    end;
+
+    // удалим гиперссылку - останется только тект, указанный в TextToDisplay
+    ASheet.Range['A8', EmptyParam].Hyperlinks.Item[1].Delete;
+@]
+
+!!! Как отсортировать область ячеек?
+
+Пример сортировки всех данных на листе по первому, второму и третьему столбцам.
+
+!!!! Delphi:
+
+[@
+      ASheet.UsedRange[lcid].Sort(
+      ASheet.Range['A1', EmptyParam], // Key1: OleVariant;
+      xlAscending, // Order1: XlSortOrder;
+      ASheet.Range['B1', EmptyParam], // Key2: OleVariant;
+      EmptyParam, // xlSortValues
+
+      xlAscending, // Order2: XlSortOrder;
+      ASheet.Range['C1', EmptyParam], // Key3: OleVariant;
+      xlAscending, // Order3: XlSortOrder;
+      xlGuess, // Header: XlYesNoGuess;
+
+      EmptyParam, // OrderCustom: OleVariant;
+      False, // MatchCase: OleVariant;
+      xlTopToBottom, // Orientation: XlSortOrientation;
+      xlStroke // SortMethod: XlSortMethod
+    );
+@]
+
+!!! Как сделать поиск значений в области ячеек или по всему листу?
+
+Для поиска в области ячеек задайте диапазон ячеек при получении ссылки на объект Range. Если нужно искать по всему листу, то укажите UsedRange или просто одну ячейку, например "A1". Метод Find и FindNext возвращают объект Range, если значение найдено, и, если ничего не найдено, то nil (или null в C#).
+
+!!!! Delphi:
+
+[@
+var R: ExcelRange;
+...
+    S := '77';
+    R := ASheet.UsedRange[lcid].Find(
+      S, // What: OleVariant;
+      EmptyParam, // After: OleVariant;
+      xlValues, // LookIn: OleVariant;
+      xlPart, // LookAt: OleVariant;
+
+      xlByRows, // SearchOrder: OleVariant;
+      xlNext, // SearchDirection: XlSearchDirection;
+      False, // MatchCase: OleVariant;
+      False, //MatchByte: OleVariant
+      // нужно установить в True, если
+
+      EmptyParam // SearchFormat: OleVariant
+    );
+
+    // поиск был завершен удачно, если определен объект R
+    // поиск следующих ячеек с искомым текстом
+    if Assigned(R) then begin
+
+      Addr := R.Address[True, True, xlA1, EmptyParam, EmptyParam];
+      repeat
+        // зальем красным цветом найденные ячейки
+        R.Interior.Color := RGB(255, 0, 0);
+        R.Font.Color := RGB(255, 255, 220);
+        // найдем следующую
+
+        R := ASheet.UsedRange[lcid].FindNext(R);
+        if Assigned(R)
+          then Addr2 := R.Address[True, True, xlA1, EmptyParam, EmptyParam];
+        // выход, если не найдено или адрес совпал (круг завершен)
+      until not Assigned(R) or SameText(Addr, Addr2);
+    end;
+@]
+
+!!! Как, имея ссылку на ячейку, узнать имя листа, которому она принадлежит? Узнать имя книги?
+
+Получить ссылку на объект Worksheet, содержащий данную ячейку можно из свойства Parent.
+
+[@
+var R: ExcelRange;
+...
+    // получим имя листа
+    R.Formula := 'Имя листа: ' + (R.Parent as _Worksheet).Name;
+
+    // получим имя книги
+    R.Offset[1, 0].Formula := 'Имя книги: ' +
+      ((R.Parent as _Worksheet).Parent as _Workbook).Name;
+
+    // получим имя книги с полным путем к ней
+
+    R.Offset[2, 0].Formula := 'Полное имя книги: ' +
+      ((R.Parent as _Worksheet).Parent as _Workbook).FullName[lcid];
+
+    // из ячейки к объекту Excel.Application доступ только через Worksheet
+
+    R.Offset[3, 0].Formula :=
+      (R.Parent as _Worksheet).Application.OperatingSystem[lcid];
+@]
