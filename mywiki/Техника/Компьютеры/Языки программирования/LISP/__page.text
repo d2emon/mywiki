@@ -1,0 +1,38 @@
+!! LISP
+
+Вообще-то будет так:
+
+[>[@
+(eval (cons (quote mapcar) 
+            (cons (cons (quote function)
+                        (cons (quote princ) ()))
+                  (cons (cons (quote quote)
+                              (cons (cons #\H (cons #\e (cons #\l (cons #\l (cons #\o 
+                                     (cons #\, (cons #\Space 
+                                      (cons #\w (cons #\o (cons #\r (cons #\l (cons #\d (cons #\! 
+                                       ()))))))))))))) ())) ()))))
+@]<]
+
+Но можно и так:
+
+[>[@
+(mapcar #'princ '(#\H #\e #\l #\l #\o #\, #\Space #\w #\o #\r #\l #\d #\!))
+@]<]
+
+Или так:
+
+[>[@
+(princ "Hello, world!")
+@]<]
+
+Алсо в Common Lisp:
+
+[>[@
+(format t "hello world~%")
+@]<]
+
+Или даже так (в REPL):
+
+[>[@
+"Hello, world!"
+@]<]

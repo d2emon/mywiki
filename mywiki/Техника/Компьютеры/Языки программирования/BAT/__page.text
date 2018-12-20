@@ -1,0 +1,12 @@
+!! BAT
+
+[>[@
+@echo off ;традиционная строка любого батника
+echo Hello, World!
+@]<]
+
+или так
+
+[>[@
+@echo Hello, World!
+@]<]

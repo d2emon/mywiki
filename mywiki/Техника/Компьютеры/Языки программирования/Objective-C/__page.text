@@ -1,0 +1,12 @@
+!! Objective-C для Яблочников и GNUstep’а
+[>[@
+#import <Foundation/Foundation.h>
+@interface HelloWorld : NSObject
+@end
+@imlementation HelloWorld
++load{
+  NSLog(@"Hello, World!");
+  return;
+}
+@end
+@]<]

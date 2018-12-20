@@ -1,3 +1,21 @@
 !! Python
 
 (:childlist:)
+
+Похожим образом:
+
+[>[@
+print "Hello, World!"
+@]<]
+
+…или так:
+
+[>[@
+import __hello__
+@]<]
+
+А вот в Python 3.0 (aka Py3k, Пузик) — немного по-другому:
+
+[>[@
+print("Hello, World!")
+@]<]

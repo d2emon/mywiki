@@ -1,7 +1,7 @@
 [General]
 type = wiki
 tags = www, комп
-order = 1
+order = 35
 datetime = 2015-12-02 21:41:01.347000
 cursorposition = 0
 
@@ -13,4 +13,3 @@ expand = False
 
 [wiki]
 md5_hash = 03fa5cb4b859b974fecdaa68c493d800
-

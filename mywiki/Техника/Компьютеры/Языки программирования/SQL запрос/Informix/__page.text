@@ -1,0 +1,13 @@
+!! Informix
+[>[@
+SELECT FIRST 1 'Hello, World!' FROM systables;
+@]<]
+
+Обычно хеллоуворлдщика можно ввести в транс, добавив в какой-нибудь частоиспользуемый header-файл следующие строчки (ахтунг, C-specific!):
+
+[>[@
+#ifndef DEFINE_ME
+#error Fatal error! There must be some brain in your head!
+#endif
+@]<]
+

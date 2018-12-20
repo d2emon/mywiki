@@ -1,0 +1,4 @@
+!! FireBird SQL / InterBase
+[>[@
+SELECT 'Hello, World!' FROM RDB$DATABASE;
+@]<]

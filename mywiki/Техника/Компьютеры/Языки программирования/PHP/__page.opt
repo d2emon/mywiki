@@ -1,7 +1,7 @@
 [General]
 type = wiki
 tags = php, комп
-order = 2
+order = 50
 datetime = 2015-12-02 21:41:38.136000
 cursorposition = 0
 
@@ -13,4 +13,3 @@ expand = False
 
 [wiki]
 md5_hash = 3a34f09f33c707e7c23d6a2c2dcac5e8
-
