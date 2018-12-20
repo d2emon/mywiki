@@ -1,0 +1,11 @@
+!! GML
+На GML:
+
+[>[@
+show_message("Hello, World!");
+@]<]
+или же
+
+[>[@
+draw_text(42, 42, "Hello, World!");
+@]<]

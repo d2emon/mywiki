@@ -1,0 +1,16 @@
+!! Assembler TASM для ZX Spectrum 48/128
+[>[@
+  ORG #C000
+Start:
+  LD HL,Text
+Loop:
+  LD A,(HL)
+  XOR A
+  RET Z
+  RST 16
+  INC HL
+  JR Loop
+Text:
+  DB 'Hello, world!
+  DB 0
+@]<]

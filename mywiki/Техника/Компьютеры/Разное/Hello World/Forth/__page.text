@@ -1,0 +1,14 @@
+!! Forth
+
+[>[@
+: HELLO 72 EMIT 101 EMIT 2 0 DO 108 EMIT LOOP 111 EMIT ;
+: WORLD 119 EMIT 111 EMIT 114 EMIT 108 EMIT 100 EMIT ;
+: HELLO_WORLD HELLO 44 EMIT SPACE WORLD 33 EMIT ;
+HELLO_WORLD
+@]<]
+
+Тот же Forth без выебоновЪ:
+
+[>[@
+: HelloWorld ." Hello, world!" ;
+@]<]

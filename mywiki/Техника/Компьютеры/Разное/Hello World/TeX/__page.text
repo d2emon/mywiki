@@ -1,0 +1,24 @@
+!! TeX
+[>[@
+\documentclass[a4paper,12pt]{article}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[pdftex,unicode]{hyperref}
+\begin{document}
+Hello, World!
+\end{document}
+@]<]
+
+(на самом деле предыдущий оратор показал код на LATEX, а на православном TEX это выглядит куда проще):
+
+[>[@
+Hello, World!
+@]<]
+
+Не совсем так:
+
+[@[>
+Hello, World!
+\bye
+<]@]

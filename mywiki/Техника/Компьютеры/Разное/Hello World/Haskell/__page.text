@@ -1,0 +1,35 @@
+!! Haskell
+Так — в весьма простом и довольно красивом, но малопопулярном языке Haskell (обратите внимание на прекрасную читаемость и простоту кода):
+
+[>[@
+{-# LANGUAGE NoImplicitPrelude #-}
+ 
+import qualified Data.ByteString as BS -- бесполезный импорт. Помог бы автору, но мне тоже лень.
+import Data.Foldable (foldl1)
+import Data.Function ((.))
+import Text.Show (show)
+import Data.List ((++))
+import Data.Char (Char)
+import Control.Monad ((>>=))
+import System.IO
+ 
+main :: IO ()
+       -- а тут автор был настолько ленив, что использовал один приём 2 раза. Подряд.
+main = hSetBuffering stdout NoBuffering >>= \ _ -> hSetBuffering stdin LineBuffering >>= \ _ -> putHelloWorld (message1)
+  where 
+    message :: [[Char]]
+    message = [ 'H':'e':'l':'l':'o':',':[], 'w':'o':'r':'l':'d':'!':[] ]
+ 
+    putHelloWorld :: [Char] -> IO () -- putHelloWorld = putStrLn
+    putHelloWorld []     = System.IO.hPutStr stdout ('\n':[])
+    putHelloWorld (x:xs) = System.IO.hPutStr stdout (x:[]) >>= \ _ -> putHelloWorld xs
+ 
+    message1 = let f = (++) . (++ " "); f1 = foldl1 f
+               in  f1 message
+@]<]
+
+Чуть менее полный {-матана-} говнокода вариант на Haskell:
+
+[>[@
+main = putStrLn "Hello, world!"
+@]<]

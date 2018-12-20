@@ -1,0 +1,6 @@
+!! Pascal
+[>[@
+begin
+  write('Hello, World!')
+end.
+@]<]

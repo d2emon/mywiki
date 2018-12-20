@@ -1,0 +1,32 @@
+!! C++
+[>[@
+#include <iostream> 
+int main()
+{
+    std::cout << "Hello, World!" << std::endl;
+    return 0;
+}
+<]@]
+
+Чуть более извращённый вариант:
+
+[>[@
+#include <iostream>
+using namespace std; 
+int main()
+{
+    cout << "Hello, World!" << endl;
+ 
+    return 0;
+}
+@]<]
+
+Win32 API
+
+[>[@
+#include <windows.h>
+int WINAPI WinMain (HINSTANCE,HINSTANCE,PSTR,int){
+MessageBox(0,"Hello, World","F*ck",0);
+return 0;
+}
+@]<]
