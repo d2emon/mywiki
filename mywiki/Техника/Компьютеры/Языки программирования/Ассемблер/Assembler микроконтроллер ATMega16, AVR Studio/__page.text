@@ -1,0 +1,30 @@
+!! Assembler микроконтроллер ATMega16, AVR Studio
+[>[@
+.include "m16def.inc"
+.cseg
+.org $0000
+rjmp  start      ;Reset handler
+.org $0030
+start:
+ldi   r24,  25  ; ~= 9600 @ 4Mhz clock
+out   UBRRL,  r24
+out   UBRRH,  r2
+ldi   r24,  1 << TXEN
+out   UCSRB,  r24
+ldi   r24,  1 << URSEL | 1 << UCSZ0 | 1 << UCSZ1 ; 8-n-1
+out   UCSRC,  r24
+ 
+; send msg
+ldi   ZL, msg << 1
+loop:
+lpm   r0, Z+ ; next char
+tst   r0   ; terminated?
+stop: breq  stop
+ 
+while_busy:
+sbis  UCSRA,  UDRE
+rjmp  while_busy
+out   UDR,  r0
+rjmp  loop
+msg:  .db  "Hello, world!", 13, 10, 0
+@]<]

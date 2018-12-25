@@ -1,0 +1,13 @@
+!! Assembler i8086, MS-DOS, fasm
+[>[@
+use16
+org 100h
+ 
+mov ah,09h
+mov dx,msg
+int 21h
+ 
+mov ax,4C00h
+int 21h
+msg db 'Hello, World!$'
+@]<]

@@ -1,0 +1,4 @@
+!! PostgreSQL
+[>[@
+SELECT 'Hello, World!';
+@]<]

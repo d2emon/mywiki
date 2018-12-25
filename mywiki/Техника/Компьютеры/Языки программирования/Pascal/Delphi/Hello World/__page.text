@@ -1,0 +1,45 @@
+!! Delphi
+[>[@
+{$apptype console}
+begin
+  Writeln('Hello, World!');
+end.
+@]<]
+
+На WinAPI:
+
+[>[@
+uses windows;
+begin
+  MessageBox(0,'Hello, World!','Заголовок',0);
+end.
+@]<]
+
+На ООП:
+
+[>[@
+uses windows;
+{$apptype console}
+Type
+  THelloWorld = class
+  procedure ShowMsg();
+  procedure PrintMsg();
+  end;
+Procedure THelloWord.ShowMsg();
+begin
+  MessageBox(0,'Hello, World!','Заголовок',0);
+end;
+ 
+Procedure THelloWord.PrintMsg();
+begin
+  WriteLn('Hello, World!');
+end;
+ 
+var
+ H : THelloWorld;
+begin
+ H := THelloWorld.Create;
+ H.ShowMsg;
+ H.PrintMsg;
+end.
+@]<]

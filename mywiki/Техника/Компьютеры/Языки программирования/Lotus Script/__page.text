@@ -1,0 +1,23 @@
+!! Lotus Script
+
+[>[@
+  Messagebox "Hello, World!", MB_OK
+@]<]
+
+Или так (не самый заметный вариант):
+
+[>[@
+  PRINT "Hello, World!"
+@]<]
+
+Или рядом с LS:
+
+[>[@
+  @Prompt([OK];"";"Hello, World!");
+@]<]
+
+Ещё на "собаках" (аналог print'а):
+
+[>[@
+  @StatusBar("Hello, World!")
+@]<]
