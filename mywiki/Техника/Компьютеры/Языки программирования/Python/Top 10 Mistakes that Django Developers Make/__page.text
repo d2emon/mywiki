@@ -1,0 +1,224 @@
+!! Top 10 Mistakes that Django Developers Make
+
+In this tutorial, we will look at some common mistakes that are often made by Django developers and ways to avoid them. This tutorial is useful even if you’re a skilled Django developer because mistakes, like maintaining an unmanageably large settings or naming conflicts in static assets, aren’t just limited to new developers taking their first stab at Django.
+
+Django is a free and open source Python web framework that helpfully solves common development challenges and allows you build flexible, well-structured applications. Django has a lot of modern features out of the box. For me personally, the Admin, Object Relational Mapping tool (ORM), Routing, and Templating features made Django my first choice because applications require a lot of work and, while I enjoy my job as much as any developer could, I want to spend as little time as possible on these basic repetitive tasks. Django allows you to do all this without compromising on flexibility.
+
+Django’s killer feature is a powerful configurable admin interface which builds automatically (automagically?) from your models’ schema and admin panel models, making you feel like a wizard. Through the Admin interface, a user can configure a lot of things including the access control list (ACL), row-level permissions and actions, filters, orders, widgets, forms, extra URL helpers, and anything else you can imagine. I believe every application requires an admin panel—if not yet, it’s simply a matter of time until your basic application needs one. With Django admin, you can create one quickly and flexibly.
+
+Django has a powerful ORM which works with all major databases out of the box. Since it’s lazy, it hits your database only when you need it, unlike other ORMs. It supports all major SQL instructions (and functions) which you can use from your Python source code and feels very comfortable because of Python’s features.
+
+Django’s templating engine is very flexible and powerful at the same time. You can use a lot of standard filters and tags as well as create your new custom filters and tags for your project. Django supports other template engines as well as Django templates, and it provides an API for easy integration of other template engines through standard shortcut functions for templates processing.
+
+Django has a lot of other big features like a URL router that can parse incoming requests and build new URLs from a router schema. As a whole, the Django framework is a pleasant experience and whenever you need help, just read the documentation.
+
+!!! Mistake No. 1: Using the Global System Python Environment for Project Dependencies
+Don’t use Python’s global environment for project dependencies, since it can produce dependency conflicts. Python can’t use multiple package versions at the same time. This can be a problem if different projects require different incompatible versions of the same package.
+
+This mistake is usually made by new Python and Django developers that don’t know about Python’s environment isolation features.
+
+There are a lot of ways to isolate your environment, but the most common ways are:
+
+* virtualenv: A Python package which generates a Python environment folder and has scripts for [de]activating the environment and managing installed Python packages in the environment. This is my favorite method because it is the simplest way to do the job. Usually, I create the environment close to the project folder.
+* virtualenvwrapper: A Python package which installs globally and provides a toolset for creating/deleting/activating/etc. virtual environments. All virtual environments are stored in one folder (which can be overridden through environment variable WORKON_HOME). I don’t see any advantages to using virtualenvwrapper instead of virtualenv.
+* Virtual Machines (VM): There’s no greater isolation than an entire virtual machine dedicated to your application. There are plenty of tools to choose from, including VirtualBox (free), VMware, Parallels, and Proxmox (my personal favorite, and it has a free version). Combined with a VM automation tool like Vagrant, this can be an extremely powerful solution.
+* Containers: In the past few years, I’ve been using Docker in almost every project, especially in every new project that I start from scratch. Docker is an amazing tool that provides a lot of features and has a lot of third-party tools for container automation. It has a layer caching feature which makes rebuilding your containers extremely fast. In containers, I use the global system Python environment, because every container has its own filesystem and projects are isolated on the high level. Docker allows new team members to start work on the project faster, especially if they have Docker experience.
+
+If you ask me, I prefer the virtualenv Python package and Docker containers for project dependency isolation and management.
+
+!!! Mistake No. 2: Not Pinning Project Dependencies in a requirements.txt File
+Every new Python project should start with a requirements.txt file and a new isolated environment. Normally you install all packages through pip/easy_install but never forget to add them to your requirements.txt file too. This makes it easier (possible to be more appropriate) to deploy your project on servers, or for a team member to bootstrap the project on their own machine.
+
+Additionally, it is just as important to pin the specific version of your dependencies in your requirements.txt file. Usually, different versions of a package provide different modules, functions, and function parameters; even a minor version change in a dependency can break your package. This is a very serious problem if your project is live and you have regularly scheduled deployments since, without versioning, your build system will always install the latest available version of the package.
+
+Always pin your packages for production! Personally, I use a very nice tool called pip-tools which helps me do this. It provides a set of command-line tools that help manage your dependencies. It automatically generates a requirements.txt that pins not just your dependencies but your entire dependency tree, which includes the dependencies of your dependencies.
+
+Sometimes, you want to update only some packages from your dependencies list (for example, only Django/Flask/any framework or utility), if you used “pip freeze” you don’t know which dependencies are for which packages, and so you can’t upgrade a dependency. With pip-tools, however, it automatically pins the packages depending on which dependency you pinned, so it automatically resolves which packages need to be updated. As a bonus, you also know exactly which package came from which dependency because of how it marks them with comments in the requirements.txt file.
+
+To be extra cautious, it’s a nice idea to back up your dependency source files too! Keep a copy in your file system, a Git-managed folder, S3 folder, FTP, SFTP—wherever, but have it on hand. There have been instances where a relatively minor package being unlisted broke a large number of packages on npm. Pip helpfully provides the tool for downloading all required dependencies as source files, read more by running pip help download.
+
+!!! Mistake No. 3: Using Old-style Python Functions Instead of Class-based Views
+Sometimes it is a good idea to use a small Python function in an application’s views.py file especially for tests or utility views, but generally, you should use class-based views (CBVs) in your applications.
+
+CBVs are generic views that provide abstract classes implementing common web development tasks built by professionals and covering all common behaviors. They have an amazing structured API, and you can use all of the advantages of object-oriented programming when you use CBVs. It makes your source code more clear and readable. Forget the pain of using Django standard view functions for listings, CRUD operations, forms processing, etc. You just extend the suitable CBV for your view and override class properties or functions (usually a function returns a property and you can add any logic there what makes spaghetti from your source code in case of using view functions instead of CBVs) which configure the view behavior.
+
+For example, you can have different mix-ins in your project which override basic CBV behaviors for building view contexts, checking authorization on the row level, auto-building template paths from your application structure, integrating smart caching, and more.
+
+I built the package named Django Template Names, which standardizes template names for your views based on an application name and a view class name. I use it every day and it saves a lot of my time for inventing names. Simply put the mixin in your CBV—class Detail(TemplateNames, DetailView):—and it will begin working! Of course, you can override my functions and add mobile responsive templates, different templates for user-agents, or anything else you want.
+
+!!! Mistake No. 4: Writing Fat Views and Skinny Models
+Writing your application logic in views instead of models means you’ve written code that belongs in your model into the view, making it “fat” and your model “skinny.”
+
+You should write fat models, skinny views.
+
+Break logic into small methods on your models. This allows you use it multiple times from multiple sources (admin interface UI, front-end UI, API endpoints, multiple views) in a few lines of code instead of copy-pasting tons of code. So next time you’re sending a user an email, extend the model with an email function instead of writing this logic in your controller.
+
+This also makes your code easier to unit test because you can test the email logic in one place, rather than repeatedly in every controller where this takes place.
+
+You can read more about the problem in the Django Best Practices project. The solution is simple: Write fat models and skinny views, so let’s do it in your next project (or refactor your current one).
+
+!!! Mistake No. 5: A Huge, Unmanageable Settings File
+Even the new Django project settings file has a lot of settings. In a real project, a settings file grows to 700+ lines of configuration and is going to become difficult to maintain, especially when your dev, production, and staging environments all need custom configurations.
+
+You can divide the configuration file manually and create custom loaders, but I want to introduce you to a nice and well-tested Python package, Django Split Settings, that I have co-authored.
+
+The package provides two functions—optional and include—which support wildcards for the paths and import your configuration files in the same context, making it simple to build your configuration using declared configuration entries in previously loaded files. It doesn’t affect Django performance and you can use it in any project.
+
+Check out the minimal configuration example:
+
+[@
+from split_settings.tools import optional, include
+
+include(
+    'components/base.py',
+    'components/database.py',
+    'components/*.py',
+
+    # the project different envs settings
+    optional('envs/devel/*.py'),
+    optional('envs/production/*.py'),
+    optional('envs/staging/*.py'),
+    
+    # for any local settings
+    optional(‘local_settings.py'),
+)
+@]
+
+!!! Mistake No. 6: All-in-one Application, Bad Application Structure, and Incorrect Resource Placement
+Any Django project consists of multiple applications. In Django notation, an application is a Python package which contains at least __init__.py and models.py files; in the latest Django versions, models.py is no longer required. __init__.py is enough.
+
+Django applications can contain Python modules, Django-specific modules (views, URLs, models, admin, forms, template tags, etc), static files, templates, database migrations, management commands, unit tests, and more. You should divide your monolith applications into small, reusable applications using simple logic. You should be able to describe the entire purpose of the app in one or two short sentences. For example: “Allows users to register and activate their account by email.”
+
+It is a good idea is to call the project folder project and place applications in project/apps/. Then, place all application dependencies into their own subfolders.
+
+Examples:
+
+* Static files: project/apps/appname/static/appname/
+* Template tags: project/apps/appname/templatetags/appname.py
+* Template files: project/apps/appname/templates/appname/
+Always prefix the application name in the subfolders because all static folders are merged into one folder and, if two or more applications had a js/core.js file, the last application in settings.INSTALLED_APPLICATIONS will override the previous ones. I once had this bug in my current project and lost about six hours debugging until I realized another developer had overridden static/admin/js/core.js because the team was implementing a custom SPA admin panel and named their files the same way.
+
+Here is example structure for a portal application which has a lot of resources and Python modules.
+
+[@
+root@c5b96c395cfb:/test# tree project/apps/portal/
+project/apps/portal/
+├── __init__.py
+├── admin.py
+├── apps.py
+├── management
+│   ├── __init__.py
+│   └── commands
+│       ├── __init__.py
+│       └── update_portal_feeds.py
+├── migrations
+│   └── __init__.py
+├── models.py
+├── static
+│   └── portal
+│       ├── css
+│       ├── img
+│       └── js
+├── templates
+│   └── portal
+│       └── index.html
+├── templatetags
+│   ├── __init__.py
+│   └── portal.py
+├── tests.py
+├── urls.py
+└── views.py
+
+11 directories, 14 files
+@]
+
+Using such a structure, you can at any moment export the application into another Python package and use it again. You can even publish it in PyPi as an open source package, or move it to another folder.
+
+You’ll end up with a project structure like this:
+
+[@
+root@c5b96c395cfb:/test# tree -L 3
+.
+├── deploy
+│   ├── chef
+│   └── docker
+│       ├── devel
+│       └── production
+├── docs
+├── logs
+├── manage.py
+├── media
+├── project
+│   ├── __init__.py
+│   ├── apps
+│   │   ├── auth
+│   │   ├── blog
+│   │   ├── faq
+│   │   ├── pages
+│   │   ├── portal
+│   │   └── users
+│   ├── conf
+│   ├── settings.py
+│   ├── static
+│   ├── templates
+│   ├── urls.py
+│   └── wsgi.py
+└── static
+    └── admin
+        ├── css
+        ├── fonts
+        ├── img
+        └── js
+
+25 directories, 5 files
+@]
+In a real project, of course, it will be more complex, but this structure makes things simpler and cleaner.
+
+!!! Mistake No. 7: STATICFILES_DIRS and STATIC_ROOT Confuse Newbie Django Developers
+
+Static files are assets which do not change through the app’s use, e.g., JavaScript, CSS, images, fonts, etc. In Django, they are only “collected” into a public directory during the deploy process.
+
+In development mode—python manage.py runserver—Django searches for static files using the STATICFILES_FINDERS setting. By default, it tries to find the requested static file in folders listed in the STATICFILES_DIRS setting. In case of failure, Django tries to find the file using django.contrib.staticfiles.finders.AppDirectoriesFinder, which looks in the static folder of every installed application in the project. This allows you write reusable applications which are shipped with their own static files.
+
+In production, you serve your static using a standalone web server like Nginx. The web server knows nothing about the Django project applications structure or which folders your static files are distributed in. Fortunately, Django provides you with the collect static management command python manage.py collectstatic, which walks through STATICFILES_FINDERS and copies all static files from applications static folders and folders listed in STATICFILES_DIRS into the directory you specify in the STATIC_ROOT setting. This allows for resolution of static file resources using the same logic as Django development mode server and has all static files in one place for your web server.
+
+Don’t forget to run collectstatic in your production environment!
+
+!!! Mistake No. 8: Default STATICFILES_STORAGE, Django Templates Loaders in Production
+!!!! STATICFILES_STORAGE
+Let’s talk about production environment asset management. We can provide the best user experience if we use an “assets never expire” policy (which you can read more about here). It means that all our static files should be cached by web browsers for weeks, months, or even years. In other words, your users should download your assets only once!
+
+That’s cool, and we can do it with few lines in Nginx configuration for our static files folder, but what about cache invalidation? If the user will download our assets only once, what happens if you updated your logo, fonts, JavaScript, or the text color for an item in a menu? To bypass this, you should generate unique URLs and filenames for our static files on every deploy!
+
+We can do it simply by using ManifestStaticFilesStorage as STATICFILES_STORAGE (be careful, hashing is only enabled in DEBUG=false mode) and running the collectstatic management command discussed above. This will decrease assets requests count to your production website and will make your website render much faster.
+
+!!!! Cached Django Template Loader
+Another cool Django feature is the cached template loader, which doesn’t reload and parse template files on every template render. Template parsing is a very expensive operation and uses a lot of resources. By default, Django templates are parsed on every request, but this is bad, especially during production, where you can process thousands of requests in a short span of time.
+
+Check out the cached.Loader configuration section for a good example and details on how to do this. Don’t use the loader in development mode because it doesn’t reload parsed templates from the file system; you will need to restart your project using python manage.py startapp on every template change. This can be annoying during development, but it is perfect for the production environment.
+
+!!! Mistake No. 9: Pure Python Scripts for Utilities or Scripts
+Django provides a very nice feature called Management Commands. Just use it instead of reinventing wheels and writing raw Python scripts for your project utilities.
+
+Also, check out the Django Extensions package, which is a collection of custom extensions for Django. Maybe someone has already implemented your commands! There are already a lot a lot of common task commands.
+
+!!! Mistake No. 10: Reinventing the Wheel
+Django and Python have thousands of ready-to-use solutions. Try Googling before you write something that is not unique; there’s probably a feature-rich solution that already exists.
+
+Just try to make things simple. Google first! Install, configure, extend, and integrate into your project if you find a good-quality package, and of course, contribute to open source when you have a chance.
+
+To start with, here’s a list of my own public packages for Django:
+
+* Django Macros URL makes it easy to write (and read) URL patterns in your Django applications by using macros.
+* Django Templates Names is a small mix-in which allows you to easily standardize your CBV template names.
+* django-split-settings lets you organize Django settings into multiple files and directories. Easily override and modify settings. Use wildcards in settings file paths and mark settings files as optional.
+Don’t Repeat Yourself (DRY)!
+
+I really like DRY methodology; that’s why I created Django skeleton as a convenience tool which has some really neat features out of the box:
+
+* Docker images for development/production, managed by docker-compose, which allows you to orchestrate a list of containers easily.
+* Simple Fabric script for production deploy.
+* Configuration for the Django Split Settings package with settings for base and local sources.
+* Webpack integrated into the project - Only the dist folder will be collected by Django on collectstatic command.
+* Configured all basic Django settings and features like cacheable Django templates in production, hashed static files, integrated debug toolbar, logging, etc.
+It’s a ready-to-use Django Skeleton for your next project from scratch and will, hopefully, save you a lot of time by bootstrapping your project. Webpack has minimal basic configuration, but it also has SASS installed pre-configured to handle .scss files.
