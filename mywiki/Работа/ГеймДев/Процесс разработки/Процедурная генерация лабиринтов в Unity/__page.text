@@ -1,0 +1,882 @@
+!! Процедурная генерация лабиринтов в Unity
+
+https://www.raywenderlich.com/177695/procedural-generation-mazes
+
+[>
+Примечание: этот туториал написан для Unity 2017.1.0 и предназначен для опытных пользователей. Подразумевается, что вы уже хорошо знакомы с программирование игр в Unity.
+<]
+
+Вы, как Unity-разработчик, наверно, имеете достаточный опыт в создании уровней вручную. Но хотели ли вы когда-нибудь генерировать уровни на лету? Процедурная генерация мешей для полов и стен, в отличие от простого расположения заранее созданных моделей, обеспечивает гораздо большую гибкость и реиграбельность игры.
+
+В этом туториале вы научитесь следующему:
+
+* Процедурно генерировать уровни на примере создания игры про бег в лабиринте.
+* Генерировать данные лабиринтов.
+* Использовать данные лабиринтов для построения меша.
+
+!!! Приступаем к работе
+
+В большинстве алгоритмов (таких, например, как [[этот -> http://www.astrolog.org/labyrnth/algrithm.htm]] и [[этот -> http://www.jamisbuck.org/mazes/]]) создаются «идеальные» плотные лабиринты, то есть такие, у которых есть только один верный путь и нет петель. Они похожи на лабиринты, публикуемые в газетных разделах «Головоломки».
+
+Attach:3b9bace8f7a5c37fbcc5fa8d269c29a4.png
+
+Однако в большинство игр приятнее играть, когда лабиринты неидеальны и в них есть петли. Они должны быть обширными и состоящими их открытых пространств, а не из узких извилистых коридоров. Это особенно справедливо для жанра rogue-like, в котором процедурные уровни являются не столько «лабиринтами», а скорее подземельями.
+
+%thumb%Attach:c2b7b60d40485befed2f14359b334c7e.jpg%%
+
+В этом туториале мы реализуем один из простейших алгоритмов лабиринтов, описанный [[здесь -> http://www.robotron2084guidebook.com/home/games/berzerk/mazegenerator/]]. Я выбрал его для того, чтобы реализовать лабиринты в игре с минимальным количеством усилий. Такой простой подход хорошо работает в классических играх, перечисленных по ссылке, поэтому мы можем использовать его для создания лабиринтов в игре под названием Speedy Treasure Thief.
+
+В этой игре каждый уровень — это новый лабиринт, в котором спрятан сундук с сокровищем. Однако у вас не так много времени на его поиски и побег до того, как вернутся стражники! На каждом уровне есть ограничение по времени и вы можете играть, пока вас не поймают. Набранные очки зависят от количества украденных вами сокровищ.
+
+%thumb%Attach:628ee3b4497ff3827eac10ca0947be70.png%% 
+
+Для начала создадим в Unity новый пустой проект.
+
+Скачайте [[заготовку проекта -> https://koenig-media.raywenderlich.com/uploads/2017/11/proc-mazes-starter.zip]], распакуйте её и импортируйте в новый проект **proc-mazes-starter.unitypackage**. В заготовке проекта есть следующее содержимое:
+
+# Папка Graphics, в которой содержится вся необходимая для игры графика.
+# Сцена Scene — исходная сцена для этого туториала, содержащая игрока и UI.
+# Папка Scripts, содержащая два вспомогательных скрипта. Остальные скрипты мы напишем в процессе выполнения туториала.
+
+И этого достаточно, чтобы приступить к работе. Каждый из этих пунктов мы рассмотрим подробнее позже.
+
+!!! Задаём архитектуру кода
+
+Начнём с добавления в сцену пустого проекта. Выберите GameObject ▸ Create Empty, назовите его Controller и поместите в (X:0, Y:0, Z:0). Этот объект будет просто точкой присоединения скриптов, управляющих игрой.
+
+В папке Scripts проекта создайте скрипт C# с названием GameController, а затем создайте ещё один скрипт и назовите его MazeConstructor. Первый скрипт будет управлять игрой в целом, а второй — заниматься генерированием лабиринта.
+
+Замените все строки в GameController следующим кодом:
+
+[@
+using System;
+using UnityEngine;
+
+[RequireComponent(typeof(MazeConstructor))]               // 1
+
+public class GameController : MonoBehaviour
+{
+    private MazeConstructor generator;
+
+    void Start()
+    {
+        generator = GetComponent<MazeConstructor>();      // 2
+    }
+}
+@]
+
+Вкратце расскажу, что мы только что создали:
+
+# Атрибут RequireComponent обеспечивает добавление компонента MazeConstructor при добавлении этого скрипта к GameObject.
+# Частная переменная хранит ссылку, возвращаемую GetComponent().
+
+Добавьте этот скрипт в сцену: перетащите скрипт GameController из окна Project на GameObject Controller в окне Hierarchy.
+
+Заметьте, что к Controller также добавился MazeConstructor; это происходит автоматически благодаря атрибуту RequireComponent.
+
+Теперь замените всё в MazeConstructor на следующий код:
+
+[@
+using UnityEngine;
+
+public class MazeConstructor : MonoBehaviour
+{
+    //1
+    public bool showDebug;
+    
+    [SerializeField] private Material mazeMat1;
+    [SerializeField] private Material mazeMat2;
+    [SerializeField] private Material startMat;
+    [SerializeField] private Material treasureMat;
+
+    //2
+    public int[,] data
+    {
+        get; private set;
+    }
+
+    //3
+    void Awake()
+    {
+        // default to walls surrounding a single empty cell
+        data = new int[,]
+        {
+            {1, 1, 1},
+            {1, 0, 1},
+            {1, 1, 1}
+        };
+    }
+    
+    public void GenerateNewMaze(int sizeRows, int sizeCols)
+    {
+        // stub to fill in
+    }
+}
+@]
+
+Вот, что здесь происходит:
+
+# Все эти поля доступны нам в Inspector. showDebug переключает отображение отладки, а различные ссылки Material являются материалами для генерируемых моделей. Кстати, атрибут SerializeField отображает поле в Inspector, даже несмотря на то, что переменная является private.
+# Далее идёт свойство data. Объявления доступа (например, объявление свойства как public, но затем назначение его private set) делает его read-only за пределами класса. Таким образом, данные лабиринта невозможно будет изменять извне.
+# Последняя часть интересного кода находится в Awake(). Функция инициализирует data с массивом 3 x 3 из единиц, окружающих ноль. 1 означает стену, а 0 — пустое пространство, то есть сетка по умолчанию выглядит как окружённая стеной комната.
+
+Это уже неплохой фундамент для кода, но пока мы ничего ещё не увидим!
+
+Для отображения данных лабиринта и проверки того, как он выглядит, добавим в MazeConstructor следующий метод:
+
+[@
+void OnGUI()
+{
+    //1
+    if (!showDebug)
+    {
+        return;
+    }
+
+    //2
+    int[,] maze = data;
+    int rMax = maze.GetUpperBound(0);
+    int cMax = maze.GetUpperBound(1);
+
+    string msg = "";
+
+    //3
+    for (int i = rMax; i >= 0; i--)
+    {
+        for (int j = 0; j <= cMax; j++)
+        {
+            if (maze[i, j] == 0)
+            {
+                msg += "....";
+            }
+            else
+            {
+                msg += "==";
+            }
+        }
+        msg += "\n";
+    }
+
+    //4
+    GUI.Label(new Rect(20, 20, 500, 500), msg);
+}
+@]
+
+Рассмотрим каждый из откомментированных разделов:
+
+# Этот код проверяет, включено ли отображение отладки.
+# Инициализация нескольких локальных переменных: локальная копия сохранённого лабиринта, максимальная строка и столбец, а также строка.
+# Два вложенных цикла проходят по строкам и столбцам двухмерного массива. Для каждой строки/столбца массива код проверят сохранённое значение и добавляет "...." или "==" в зависимости от того, равно ли значение нулю. Также после прохождения по всем столбцам в строке код добавляет новую строку, чтобы каждая строка массива начиналась с новой строкиline.
+# Наконец, GUI.Label() выводит создаваемую строку. В этом проекте используется новая система GUI вывода данных игроку, но старая система проще для создания быстрых отладочных сообщений.
+
+Не забудьте включить Show Debug для компонента MazeConstructor. Нажмите Play, и на экране отобразятся сохранённые данные лабиринта (которые пока являются лабиринтом по умолчанию):
+
+%thumb%Attach:68bbea12a0c02dc71869f82afef9eb4b.png%% 
+
+Неплохое начало! Однако код пока не генерирует сам лабиринт. В следующем разделе я расскажу, как решить эту задачу.
+
+!!! Генерирование данных лабиринта
+
+Заметьте, что в MazeConstructor.GenerateNewMaze() пока пусто; это заготовка, которую мы заполним позже. В конце метода Start() скрипта GameController добавьте следующую строку. Она будет вызывать этот метод-заготовку:
+
+[@
+    generator.GenerateNewMaze(13, 15);
+@]
+
+«Волшебные» числа 13 и 15 — это параметры метода, определяющие размеры лабиринта. Хотя мы пока их не используем, эти параметры размера задают количество строк и столбцов сетки.
+
+На этом этапе мы можем приступить к генерированию данных для лабиринта. Создайте новый скрипт MazeDataGenerator; этот класс инкапсулирует логику генерирования данных, и будет использоваться в MazeConstructor. Откройте новый скрипт и замените всё на следующий код:
+
+[@
+using System.Collections.Generic;
+using UnityEngine;
+
+public class MazeDataGenerator
+{
+    public float placementThreshold;    // chance of empty space
+
+    public MazeDataGenerator()
+    {
+        placementThreshold = .1f;                               // 1
+    }
+
+    public int[,] FromDimensions(int sizeRows, int sizeCols)    // 2
+    {
+        int[,] maze = new int[sizeRows, sizeCols];
+        // stub to fill in
+        return maze;
+    }
+}
+@]
+
+Заметьте, что этот класс не наследует от MonoBehaviour. Он не будет использоваться непосредственно как компонент, а только внутри MazeConstructor, поэтому не обязан обладать функционалом MonoBehaviour.
+
+# placementThreshold будет использоваться алгоритмом генерирования данных для определения того, пусто ли пространство. В конструкторе класса этой переменной назначается значение по умолчанию, но она сделана public, чтобы другой код мог управлять настройкой генерируемого лабиринта.
+# Один из методов (в этом случае FromDimensions()) снова пока пуст и оставлен заготовкой, которую мы заполним позже.
+
+Далее мы добавим в MazeConstructor несколько разделов кода, чтобы он мог вызывать метод-заготовку. Для начала добавим частную переменную для хранения генератора данных:
+
+[@
+private MazeDataGenerator dataGenerator;
+@]
+
+Затем создадим его экземпляр в Awake(), сохранив генератор в новую переменную добавлением следующей строки вверху метода Awake().
+
+[@
+    dataGenerator = new MazeDataGenerator();
+@]
+
+Наконец, вызовем FromDimensions() в GenerateNewMaze(), передавая размер сетки и сохраняя получившиеся данные. Найдите в GenerateNewMaze() строку, в которой написано // stub to fill in, и замените её следующим:
+
+[@
+    if (sizeRows % 2 == 0 && sizeCols % 2 == 0)
+    {
+        Debug.LogError("Odd numbers work better for dungeon size.");
+    }
+
+    data = dataGenerator.FromDimensions(sizeRows, sizeCols);
+@]
+
+Здесь добавлено предупреждение о том, что лучше использовать для размеров нечётные числа, потому что сгенерированный лабиринт будет окружён стенами.
+
+Запустите игру, чтобы увидеть пустые данные лабиринта, но уже с правильными размерами:
+
+%thumb%Attach:0002479c32b512b41a2c27d26ce050d5.png%% 
+
+Отлично! Всё готово к сохранению и отображению данных лабиринта! Настало время реализовать внутри FromDimensions() алгоритм генерации лабиринта.
+
+%thumb%Attach:e26f3bd411f8913964b8eea8736d6539.png%% 
+
+Описанный выше алгоритм обходит каждую вторую ячейку в сетке (то есть не каждую ячейку!) располагая стену и выбирая соседнее пространство для блокировки. Программируемый здесь алгоритм будет слегка отличаться от него, он также решает, нужно ли пропускать пространство, что может приводить к возникновению в лабиринте открытых пространств. Поскольку алгоритм не должен хранить много информации или знать много об остальной части лабиринта, например, о точках ветвления, по которым нужно пройти, то код становится очень простым.
+
+Для реализации этого алгоритма генерации лабиринта добавьте в FromDimensions() из MazeDataGenerator следующий код, заменив строку с // stub to fill in.
+
+[@
+    int rMax = maze.GetUpperBound(0);
+    int cMax = maze.GetUpperBound(1);
+
+    for (int i = 0; i <= rMax; i++)
+    {
+        for (int j = 0; j <= cMax; j++)
+        {
+            //1
+            if (i == 0 || j == 0 || i == rMax || j == cMax)
+            {
+                maze[i, j] = 1;
+            }
+
+            //2
+            else if (i % 2 == 0 && j % 2 == 0)
+            {
+                if (Random.value > placementThreshold)
+                {
+                    //3
+                    maze[i, j] = 1;
+
+                    int a = Random.value < .5 ? 0 : (Random.value < .5 ? -1 : 1);
+                    int b = a != 0 ? 0 : (Random.value < .5 ? -1 : 1);
+                    maze[i+a, j+b] = 1;
+                }
+            }
+        }
+    }
+@]
+
+Как вы видите, код получает границы 2D-массива, а затем обходит его:
+
+# Для каждой ячейки сетки код сначала проверяет, выходит ли текущая ячейка за пределы сетки (то есть находится ли какой-то из индексов на границе массива). Если это так, то он ставит стену, присваивая 1.
+# Далее код проверяет, делятся ли координаты на 2 нацело, чтобы выполнять действия в каждой второй ячейке. Также здесь есть дополнительная проверка на описанное выше значение placementThreshold для пропуска случайным образом этой ячейки и продолжения обхода массива.
+# Наконец, код присваивает значение 1 текущей ячейке и случайно выбранной соседней ячейке. Код использует несколько тернарных операций для прибавления к индексу массива 0, 1 или -1, получая таким образом индекс соседней ячейки.
+
+Отобразим данные лабиринта снова, чтобы посмотреть, как выглядит сгенерированный лабиринт:
+
+%thumb%Attach:fab1b50bd4771cacf4caff0266e13389.png%%
+
+Перезапустите игру, чтобы увидеть, что данные лабиринта каждый раз новые. Отлично!
+
+Следующая серьёзная задача — генерация 3D-меша из 2D-данных лабиринта.
+
+!!! Генерирование меша лабиринта
+
+Теперь после генерирования всех данных лабиринта мы можем на основании этих данных построить меш.
+
+Создайте ещё один новый скрипт MazeMeshGenerator. Так же, как MazeDataGenerator инкапсулировал логику генерирования лабиринта, MazeMeshGenerator будет содержать логику генерирования меша и использоваться MazeConstructor для выполнения этого этапа генерирования лабиринта.
+
+Точнее, он позже будет содержать логику генерирования меша. Сначала мы просто создадим для демонстрации текстурированный четырёхугольник, а потом изменим этот код для генерирования всего лабиринта. Чтобы сделать это, нам нужно внести небольшие изменения в редактор Unity, и уже потом углубляться в код.
+
+Для начала нам нужно привязать материалы, которые будут применяться к сгенерированному мешу.
+
+Выберите в окне Project папку Graphics, затем выберите в окне Hierarchy Controller, чтобы отобразить в Inspector его компонент Maze Constructor.
+
+Перетащите материалы из папки Graphics в слоты материалов Maze Constructor. Используйте floor-mat для Material 1 и wall-mat для Material 2, а start и treasure перетащите в соответствующие слоты.
+
+Так как мы уже работаем в Inspector, добавим также тэг Generated: нажмите на меню Tag в верхней части Inspector и выберите Add Tag. При генерировании мешей мы будем назначать им этот тэг, чтобы находить их.
+
+Внеся все необходимые изменения в редакторе Unity, откройте новый скрипт и замените всё на этот код:
+
+[@
+using System.Collections.Generic;
+using UnityEngine;
+
+public class MazeMeshGenerator
+{    
+    // generator params
+    public float width;     // how wide are hallways
+    public float height;    // how tall are hallways
+
+    public MazeMeshGenerator()
+    {
+        width = 3.75f;
+        height = 3.5f;
+    }
+
+    public Mesh FromData(int[,] data)
+    {
+        Mesh maze = new Mesh();
+
+        //1
+        List<Vector3> newVertices = new List<Vector3>();
+        List<Vector2> newUVs = new List<Vector2>();
+        List<int> newTriangles = new List<int>();
+        
+        // corners of quad
+        Vector3 vert1 = new Vector3(-.5f, -.5f, 0);
+        Vector3 vert2 = new Vector3(-.5f, .5f, 0);
+        Vector3 vert3 = new Vector3(.5f, .5f, 0);
+        Vector3 vert4 = new Vector3(.5f, -.5f, 0);
+
+        //2
+        newVertices.Add(vert1);
+        newVertices.Add(vert2);
+        newVertices.Add(vert3);
+        newVertices.Add(vert4);
+
+        //3
+        newUVs.Add(new Vector2(1, 0));
+        newUVs.Add(new Vector2(1, 1));
+        newUVs.Add(new Vector2(0, 1));
+        newUVs.Add(new Vector2(0, 0));
+
+        //4
+        newTriangles.Add(2);
+        newTriangles.Add(1);
+        newTriangles.Add(0);
+
+        //5
+        newTriangles.Add(3);
+        newTriangles.Add(2);
+        newTriangles.Add(0);
+
+        maze.vertices = newVertices.ToArray();
+        maze.uv = newUVs.ToArray();
+        maze.triangles = newTriangles.ToArray();
+
+        return maze;
+    }
+}
+@]
+
+Два поля в верхней части класса, width и height, аналогичны placementThreshold из MazeDataGenerator: это значения, которые в конструкторе задаются по умолчанию и используемые кодом генерирования меша.
+
+Основная часть интересного кода находится внутри FromData(); это метод, который MazeConstructor вызывает для генерирования меша. В данный момент этот код просто создаёт единственный четырёхугольник для демонстрации своей работы. Вскоре мы расширим его до целого уровня.
+
+На этой иллюстрации показано, из чего создан четырёхугольник:
+
+%thumb%Attach:88c82daf92435b7f0c727acf9549006b.png%%
+
+Код длинный, но довольно сильно повторяющийся с небольшими вариациями:
+
+# Меш состоит из трёх списков: вершин, координат UV и треугольников.
+# Список вершин хранит позицию каждой вершины...
+# Перечисленные координаты UV соответствуют вершинам в этом списке...
+# А треугольники являются индексами в списке вершин (т.е. «этот треугольник состоит из вершин 0, 1 и 2»).
+# Заметьте, что создаются два треугольника; четырёхугольник состоит из двух треугольников. Также заметьте, что используются типы данных List (для присоединения к списку), но в конце концов для Mesh требуется Arrays.
+
+MazeConstructor должен создать экземпляр MazeMeshGenerator, а затем вызвать метод генерирования меша. Также он также должен отображать меш, поэтому мы добавим следующие фрагменты кода:
+
+Сначала добавим частное поле для хранения генератора меша.
+
+[@
+private MazeMeshGenerator meshGenerator;
+@]
+
+Создадим его экземляр в Awake(), сохранив генератор меша в новом поле добавлением следующей строки в верхней части метода Awake():
+
+[@
+    meshGenerator = new MazeMeshGenerator();
+@]
+
+Далее добавим метод DisplayMaze():
+
+[@
+private void DisplayMaze()
+{
+    GameObject go = new GameObject();
+    go.transform.position = Vector3.zero;
+    go.name = "Procedural Maze";
+    go.tag = "Generated";
+
+    MeshFilter mf = go.AddComponent<MeshFilter>();
+    mf.mesh = meshGenerator.FromData(data);
+    
+    MeshCollider mc = go.AddComponent<MeshCollider>();
+    mc.sharedMesh = mf.mesh;
+
+    MeshRenderer mr = go.AddComponent<MeshRenderer>();
+    mr.materials = new Material[2] {mazeMat1, mazeMat2};
+}
+@]
+
+Наконец, для вызова DisplayMaze() добавим в конец GenerateNewMaze() следующую строку:
+
+[@
+    DisplayMaze();
+@]
+
+Сам по себе Mesh — это просто данные. Он невидим, пока не назначен объекту (если конкретнее, то MeshFilter объекта) в сцене. Поэтому DisplayMaze() не только вызывает MazeMeshGenerator.FromData(), но и вставляет этот вызов посередине создания экземпляра нового GameObject, задавая тэг Generated, добавляя MeshFilter и сгенерированный меш, добавляя MeshCollider для коллизий с мешем, и, наконец, добавляя MeshRenderer и материалы.
+
+Мы написали класс MazeMeshGenerator и создали его экземпляр в MazeConstructor, поэтому нажмите Play:
+
+%thumb%Attach:81d9ad10e17965451f8c6318a6200d87.png%% 
+
+Мы построили затекстурированный четырёхугольник полностью с помощью кода! Это интересное и важное начало, поэтому прервитесь, чтобы проанализировать свою работу на этом этапе и понять, как работает код.
+
+Далее мы довольно сильно рефакторизируем FromData(), заменив его полностью на такой код:
+
+[@
+public Mesh FromData(int[,] data)
+{
+    Mesh maze = new Mesh();
+
+    //3
+    List<Vector3> newVertices = new List<Vector3>();
+    List<Vector2> newUVs = new List<Vector2>();
+
+    maze.subMeshCount = 2;
+    List<int> floorTriangles = new List<int>();
+    List<int> wallTriangles = new List<int>();
+
+    int rMax = data.GetUpperBound(0);
+    int cMax = data.GetUpperBound(1);
+    float halfH = height * .5f;
+
+    //4
+    for (int i = 0; i <= rMax; i++)
+    {
+        for (int j = 0; j <= cMax; j++)
+        {
+            if (data[i, j] != 1)
+            {
+                // floor
+                AddQuad(Matrix4x4.TRS(
+                    new Vector3(j * width, 0, i * width),
+                    Quaternion.LookRotation(Vector3.up),
+                    new Vector3(width, width, 1)
+                ), ref newVertices, ref newUVs, ref floorTriangles);
+
+                // ceiling
+                AddQuad(Matrix4x4.TRS(
+                    new Vector3(j * width, height, i * width),
+                    Quaternion.LookRotation(Vector3.down),
+                    new Vector3(width, width, 1)
+                ), ref newVertices, ref newUVs, ref floorTriangles);
+
+
+                // walls on sides next to blocked grid cells
+
+                if (i - 1 < 0 || data[i-1, j] == 1)
+                {
+                    AddQuad(Matrix4x4.TRS(
+                        new Vector3(j * width, halfH, (i-.5f) * width),
+                        Quaternion.LookRotation(Vector3.forward),
+                        new Vector3(width, height, 1)
+                    ), ref newVertices, ref newUVs, ref wallTriangles);
+                }
+
+                if (j + 1 > cMax || data[i, j+1] == 1)
+                {
+                    AddQuad(Matrix4x4.TRS(
+                        new Vector3((j+.5f) * width, halfH, i * width),
+                        Quaternion.LookRotation(Vector3.left),
+                        new Vector3(width, height, 1)
+                    ), ref newVertices, ref newUVs, ref wallTriangles);
+                }
+
+                if (j - 1 < 0 || data[i, j-1] == 1)
+                {
+                    AddQuad(Matrix4x4.TRS(
+                        new Vector3((j-.5f) * width, halfH, i * width),
+                        Quaternion.LookRotation(Vector3.right),
+                        new Vector3(width, height, 1)
+                    ), ref newVertices, ref newUVs, ref wallTriangles);
+                }
+
+                if (i + 1 > rMax || data[i+1, j] == 1)
+                {
+                    AddQuad(Matrix4x4.TRS(
+                        new Vector3(j * width, halfH, (i+.5f) * width),
+                        Quaternion.LookRotation(Vector3.back),
+                        new Vector3(width, height, 1)
+                    ), ref newVertices, ref newUVs, ref wallTriangles);
+                }
+            }
+        }
+    }
+
+    maze.vertices = newVertices.ToArray();
+    maze.uv = newUVs.ToArray();
+    
+    maze.SetTriangles(floorTriangles.ToArray(), 0);
+    maze.SetTriangles(wallTriangles.ToArray(), 1);
+
+    //5
+    maze.RecalculateNormals();
+
+    return maze;
+}
+
+//1, 2
+private void AddQuad(Matrix4x4 matrix, ref List<Vector3> newVertices,
+    ref List<Vector2> newUVs, ref List<int> newTriangles)
+{
+    int index = newVertices.Count;
+
+    // corners before transforming
+    Vector3 vert1 = new Vector3(-.5f, -.5f, 0);
+    Vector3 vert2 = new Vector3(-.5f, .5f, 0);
+    Vector3 vert3 = new Vector3(.5f, .5f, 0);
+    Vector3 vert4 = new Vector3(.5f, -.5f, 0);
+
+    newVertices.Add(matrix.MultiplyPoint3x4(vert1));
+    newVertices.Add(matrix.MultiplyPoint3x4(vert2));
+    newVertices.Add(matrix.MultiplyPoint3x4(vert3));
+    newVertices.Add(matrix.MultiplyPoint3x4(vert4));
+
+    newUVs.Add(new Vector2(1, 0));
+    newUVs.Add(new Vector2(1, 1));
+    newUVs.Add(new Vector2(0, 1));
+    newUVs.Add(new Vector2(0, 0));
+
+    newTriangles.Add(index+2);
+    newTriangles.Add(index+1);
+    newTriangles.Add(index);
+
+    newTriangles.Add(index+3);
+    newTriangles.Add(index+2);
+    newTriangles.Add(index);
+}
+@]
+
+Ого, какой длинный кусок кода! Но здесь снова повторяется почти одно и то же, только меняются некоторые числа. В частности, код генерирования четырёхугольника перемещён в отдельный метод AddQuad() для его повторного вызова для пола, потолка и стен каждой ячейки сетки.
+
+# Последние три параметра AddQuad() — это всё тот же список вершин, UV и треугольников. Первая строка метода получает индекс, с которого нужно начинать. При добавлении новых четырёхугольников индекс будет увеличиваться.
+# Однако первый параметр AddQuad() — это матрица преобразований, и эта часть может быть сложной для понимания. По сути, положение/поворот/масштаб может храниться в виде матрицы, а затем применяться к вершинам. Именно это делает вызов MultiplyPoint3x4(). Таким образом, код генерирования четырёхугольника можно использовать для полов, потолков, стен и т.д. Нам достаточно лишь изменять используемую матрицу преобразований!
+# Вернёмся к FromData(). Списки для вершин UV и треугольников создаются в верхней части. На этот раз у нас есть два списка треугольников. Объект Mesh Unity может иметь множество подмешей с различными материалами на каждом, то есть каждый список треугольников является отдельным подмешем. Мы объявляем два подмеша, чтобы можно было назначить разные материалы полу и стенам.
+# После этого мы проходим по 2D-массиву и создаём четырёхугольники для пола, потолка и стен в каждой ячейке сетки. Каждой ячейке нужен пол и потолок, кроме того, выполняются проверки соседних ячеек на необходимость стен. Заметьте, что AddQuad() вызывается несколько раз, но каждый раз с другой матрицей преобразований и разными списками треугольников, используемыми для полов и стен. Также заметьте, что для определения расположения и размеров четырёхугольников используются width и height.
+# О, и ещё небольшое дополнение: RecalculateNormals() подготавливает меш к освещению.
+
+Нажмите Play, чтобы увидеть, как генерируется весь меш:
+
+%thumb%Attach:d8fcc1574baf6339bb9474a587ab9675.png%%
+
+Поздравляю, на этом мы закончили с генерированием лабиринта и с основной частью программирования, необходимого для Speedy Treasure Thief! В следующем разделе мы рассмотрим оставшуюся часть игры.
+
+!!! Завершаем игру
+
+Нам нужно внести в код и другие дополнения и изменения, но сначала давайте используем то, что находилось в заготовке проекта. Как я упоминал во введении, в заготовке проекта находятся два скрипта, сцена с игроком и UI, а также вся графика для игры с лабиринтом. Скрипт FpsMovement — это просто односкриптовая версия контроллера персонажа из моей книги, а TriggerEventRouter — это вспомогательный код, удобный работы с триггерами игры.
+
+В сцене уже настроен игрок, в том числе у него есть компонент FpsMovement и 
+к камере присоединён направленный источник света. Кроме того, в окне Lighting Settings отключены скайбокс и окружающее освещение. Наконец, в сцене есть холст UI с метками для очков и времени.
+
+И это всё, что есть в заготовке проекта. Теперь мы напишем оставшийся код для игры.
+
+Начнём с MazeConstructor. Для начала добавим следующие свойства для хранения размеров и координат:
+
+[@
+public float hallWidth
+{
+    get; private set;
+}
+public float hallHeight
+{
+    get; private set;
+}
+
+public int startRow
+{
+    get; private set;
+}
+public int startCol
+{
+    get; private set;
+}
+
+public int goalRow
+{
+    get; private set;
+}
+public int goalCol
+{
+    get; private set;
+}
+@]
+
+Теперь нужно добавить новые методы. Первый — это DisposeOldMaze(); как понятно из названия, он удаляет существующий лабиринт. Код находит все объекты с тэгом Generated и уничтожает их.
+
+[@
+public void DisposeOldMaze()
+{
+    GameObject[] objects = GameObject.FindGameObjectsWithTag("Generated");
+    foreach (GameObject go in objects) {
+        Destroy(go);
+    }
+}
+@]
+
+Следующим мы добавим метод FindStartPosition(). Этот код начинает с 0,0 и проходит по всем данных лабиринта, пока не находит открытое пространство. Затем эти координаты сохраняются как начальная позиция лабиринта.
+
+[@
+private void FindStartPosition()
+{
+    int[,] maze = data;
+    int rMax = maze.GetUpperBound(0);
+    int cMax = maze.GetUpperBound(1);
+
+    for (int i = 0; i <= rMax; i++)
+    {
+        for (int j = 0; j <= cMax; j++)
+        {
+            if (maze[i, j] == 0)
+            {
+                startRow = i;
+                startCol = j;
+                return;
+            }
+        }
+    }
+}
+@]
+
+Аналогично, FindGoalPosition() по сути делает то же самое, только начинает с максимальных значений и выполняет обратный отсчёт. Добавим и этот метод тоже.
+
+[@
+private void FindGoalPosition()
+{
+    int[,] maze = data;
+    int rMax = maze.GetUpperBound(0);
+    int cMax = maze.GetUpperBound(1);
+
+    // loop top to bottom, right to left
+    for (int i = rMax; i >= 0; i--)
+    {
+        for (int j = cMax; j >= 0; j--)
+        {
+            if (maze[i, j] == 0)
+            {
+                goalRow = i;
+                goalCol = j;
+                return;
+            }
+        }
+    }
+}
+@]
+
+PlaceStartTrigger() и PlaceGoalTrigger() размещают объекты в сцене в позициях начала и цели. Их коллайдер является триггером, применяется соответствующий материал, а затем добавляется TriggerEventRouter (из заготовки проекта). Этот компонент получает функцию обработки события, которая вызывается, когда что-то входит в объём триггера. Добавим и эти два метода.
+
+[@
+private void PlaceStartTrigger(TriggerEventHandler callback)
+{
+    GameObject go = GameObject.CreatePrimitive(PrimitiveType.Cube);
+    go.transform.position = new Vector3(startCol * hallWidth, .5f, startRow * hallWidth);
+    go.name = "Start Trigger";
+    go.tag = "Generated";
+
+    go.GetComponent<BoxCollider>().isTrigger = true;
+    go.GetComponent<MeshRenderer>().sharedMaterial = startMat;
+
+    TriggerEventRouter tc = go.AddComponent<TriggerEventRouter>();
+    tc.callback = callback;
+}
+
+private void PlaceGoalTrigger(TriggerEventHandler callback)
+{
+    GameObject go = GameObject.CreatePrimitive(PrimitiveType.Cube);
+    go.transform.position = new Vector3(goalCol * hallWidth, .5f, goalRow * hallWidth);
+    go.name = "Treasure";
+    go.tag = "Generated";
+
+    go.GetComponent<BoxCollider>().isTrigger = true;
+    go.GetComponent<MeshRenderer>().sharedMaterial = treasureMat;
+
+    TriggerEventRouter tc = go.AddComponent<TriggerEventRouter>();
+    tc.callback = callback;
+}
+@]
+
+Наконец, заменим весь метод GenerateNewMaze() следующим кодом:
+
+[@
+public void GenerateNewMaze(int sizeRows, int sizeCols,
+    TriggerEventHandler startCallback=null, TriggerEventHandler goalCallback=null)
+{
+    if (sizeRows % 2 == 0 && sizeCols % 2 == 0)
+    {
+        Debug.LogError("Odd numbers work better for dungeon size.");
+    }
+
+    DisposeOldMaze();
+
+    data = dataGenerator.FromDimensions(sizeRows, sizeCols);
+
+    FindStartPosition();
+    FindGoalPosition();
+
+    // store values used to generate this mesh
+    hallWidth = meshGenerator.width;
+    hallHeight = meshGenerator.height;
+
+    DisplayMaze();
+
+    PlaceStartTrigger(startCallback);
+    PlaceGoalTrigger(goalCallback);
+}
+@]
+
+Переписанный GenerateNewMaze() вызывает новые методы, которые мы только что добавили, для таких операций, как удаление старого меша и расположение триггеров.
+
+Мы уже многое добавили в MazeConstructor, отличная работа! К счастью, с этим классом мы закончили. Остался ещё один фрагмент кода.
+
+Теперь добавим новый код в GameController. Заменим всё содержимое файла следующим:
+
+[@
+using System;
+using UnityEngine;
+using UnityEngine.UI;
+
+[RequireComponent(typeof(MazeConstructor))]
+
+public class GameController : MonoBehaviour
+{
+    //1
+    [SerializeField] private FpsMovement player;
+    [SerializeField] private Text timeLabel;
+    [SerializeField] private Text scoreLabel;
+
+    private MazeConstructor generator;
+
+    //2
+    private DateTime startTime;
+    private int timeLimit;
+    private int reduceLimitBy;
+
+    private int score;
+    private bool goalReached;
+
+    //3
+    void Start() {
+        generator = GetComponent<MazeConstructor>();
+        StartNewGame();
+    }
+
+    //4
+    private void StartNewGame()
+    {
+        timeLimit = 80;
+        reduceLimitBy = 5;
+        startTime = DateTime.Now;
+
+        score = 0;
+        scoreLabel.text = score.ToString();
+
+        StartNewMaze();
+    }
+
+    //5
+    private void StartNewMaze()
+    {
+        generator.GenerateNewMaze(13, 15, OnStartTrigger, OnGoalTrigger);
+
+        float x = generator.startCol * generator.hallWidth;
+        float y = 1;
+        float z = generator.startRow * generator.hallWidth;
+        player.transform.position = new Vector3(x, y, z);
+
+        goalReached = false;
+        player.enabled = true;
+
+        // restart timer
+        timeLimit -= reduceLimitBy;
+        startTime = DateTime.Now;
+    }
+
+    //6
+    void Update()
+    {
+        if (!player.enabled)
+        {
+            return;
+        }
+
+        int timeUsed = (int)(DateTime.Now - startTime).TotalSeconds;
+        int timeLeft = timeLimit - timeUsed;
+
+        if (timeLeft > 0)
+        {
+            timeLabel.text = timeLeft.ToString();
+        }
+        else
+        {
+            timeLabel.text = "TIME UP";
+            player.enabled = false;
+
+            Invoke("StartNewGame", 4);
+        }
+    }
+
+    //7
+    private void OnGoalTrigger(GameObject trigger, GameObject other)
+    {
+        Debug.Log("Goal!");
+        goalReached = true;
+
+        score += 1;
+        scoreLabel.text = score.ToString();
+
+        Destroy(trigger);
+    }
+
+    private void OnStartTrigger(GameObject trigger, GameObject other)
+    {
+        if (goalReached)
+        {
+            Debug.Log("Finish!");
+            player.enabled = false;
+
+            Invoke("StartNewMaze", 4);
+        }
+    }
+}
+@]
+
+# Первое, что мы добавили — сериализованные поля для объектов в сцене.
+# Добавлено несколько частных переменных для отслеживания таймера и очков игры, а также того, найдена ли цель в лабиринте.
+# MazeConstructor инициализируется так же, как и раньше, но теперь Start() использует новые методы, которые не просто вызывают GenerateNewMaze().
+# StartNewGame() используется для запуска всей игры сначала, а не для переключения уровней внутри игры. Таймеру присваиваются исходные значения, очки сбрасываются, после чего создаётся лабиринт.
+# StartNewMaze() переходит к новому уровню, не перезапуская заново всю игру. Кроме создания нового лабиринта, этот метод располагает игрока в начальной точке, сбрасывает цель и снижает лимит времени.
+# Update() проверяет, активен ли игрок, а затем обновляет время, оставшееся на прохождение уровня. После завершения времени игрок деактивируется и начинается новая игра.
+# OnGoalTrigger() и OnStartTrigger() — это функции обработки событий, передаваемые TriggerEventRouter в MazeConstructor. OnGoalTrigger() записывает, что цель была найдена, а затем увеличивает количество очков. OnStartTrigger() проверяет, найдена ли цель, и если это так, то деактивирует игрока и запускает новый лабиринт.
+
+И это весь код. Теперь вернёмся к сцене в Unity. Для начала выберите Canvas в окне Hierarchy и включите его в Inspector. Canvas был отключен, чтобы не мешать отображению отладки при создании кода лабиринта. Не забывайте, что добавлены сериализованные поля, так что перетащите их объекты сцены (Player, метку Time из Canvas и метку Score) в слоты в Inspector. Также можно отключить Show Debug, а затем нажать на Play:
+
+%thumb%Attach:d348fd6a61e555ec74874e0f99259f54.png%% 
+
+Отличная работа! Процедурная генерация лабиринтов может быть сложной задачей, но в результате мы получаем захватывающий и динамичный игровой процесс.
+
+!!! Куда двигаться дальше?
+
+Если вы повторяли за мной, то уже создали готовую игру. Если хотите, можете скачать [[отсюда -> https://koenig-media.raywenderlich.com/uploads/2017/11/proc-maze-tutorial.zip]] готовый проект Unity.
+
+Далее вы можете исследовать другие алгоритмы генерации лабиринтов, заменив код в FromDimensions(). Также можно попробовать генерировать другие окружения; начните с изучения [[генерирования пещер с помощью клеточных автоматов -> https://www.raywenderlich.com/66062/procedural-level-generation-games-using-cellular-automaton-part-1]].
+
+Случайная генерация предметов и врагов на карте может оказаться очень интересным занятием!
