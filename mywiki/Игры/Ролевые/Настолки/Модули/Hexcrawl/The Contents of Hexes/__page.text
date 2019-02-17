@@ -1,0 +1,48 @@
+!! The Contents of Hexes
+
+A few days ago I posted a selection of grabs from google maps, indicating how large a 1-mile hex actually is, and the kind of things that you might find in one. Then Chris responded, to the effect that (and I'm putting words into his mouth here) 1-mile hexes are all very well, but they are perhaps too granular - it's a heck of a lot of work to map out a setting at the 1-mile level. He posits an "emergent exploring rule" for 6-mile hexes, wherein you simply discover more things in a 6-mile hex the more time you spend exploring it and the more guidance/information you have about it.
+
+The commenters immediately provide solutions, which are pretty good. Myrystyr's one seems like the best:
+
+[>
+A generalised X-in-dY check per Z-time-period, mayhap? Default 2/1d6 per day - 1/ for stumbling-about blind luck, 3/ or 4/ for guides, clues, or character types with better search capability - and up to 3 or 4 times per day for potentially feature-rich locales... And, roll two different-coloured d6 at the same time, 1 the feature check and 1 the encounter check.
+<]
+
+I like the elegant simplicity of this, and I think you can add some other modifiers: the chance would increase or decrease depending on terrain (lower for a forest, higher for plains), demographics (lower for empty wilderness, higher for settled), and so on.
+
+Chris also suggests some other rules of thumb:
+
+* Castles, cities and the like should all be in plain sight unless intentionally hidden away (like Gondolin or Derinkuyu). Heck, roads point you directly to most of them.
+* Infamous lairs, ruins and dungeons should, of course, retain their "Here be dragons" hex map icons and easy-to-find status. The yokels can point out exactly in which direction the castle we don't go near lies.
+* More obscure lairs, lost ruins, buried tombs and especially treasure map loot should require a bit of active hunting out by adventuring parties.
+
+The main, immediately identifiable problem is that you now need some way of governing how many locales can be discovered in this way. The amount of "interesting stuff" in a hex has to be finite. But it is also variable. In my 1-mile hex examples, some have only one thing that you could make into a "locale", but some have several. This is a function, mostly, of how settled the area is, but it also introduces other factors. The more mountainous a region is, for instance, the more stuff you will get per hex on average, because each hex represents more land. (Hexes are "as the crow flies", whereas the land underneath is folded by hills and valleys, making it more packed with actual physical geography.)
+
+What I would suggest is that, by default for a 6-mile hex, any settlement of more than 250 people, any castles or towers, and major geographical features like lakes, rives and mountains, are basically discoverable without the players doing much more than travel through the hex a few times. 
+
+You would then have a default of 3 'discoverable' things per 6-mile hex, modifiable by geography, level of settlement, history, and so on:
+
+* One of these would be something that the players can find if they make an effort to explore. All it would require would be for them to say "we look around the area".
+* Two of them would be 'secret', obscure, or lost things (a ruin, buried tomb, a secretive monster's lair, etc.) These would be near impossible to find by exploration without some level of guidance or inside knowledge. 
+
+This would allow the players to discover stuff just by looking, but would also reward efforts they made to interact with locals to try to get information, and to risk random encounters by searching.
+
+"Why 3 things per 6-mile hex? Isn't that too much?" I hear you cry.
+
+The answer is: no. To illustrate, I'll use two of the 1-mile examples I put up a few days ago, zoomed out to 6-miles (ish; they're a bit smaller and probably more like 8 kilometres):
+
+%thumb%Attach:Image32.png%%
+
+This is Canterbury. As you can see, there is not only the city itself, but two other large villages or small towns (Bridge and Sturry) plus a shitload of other hamlets, and plenty of woods as well as farmlands. In a densely settled area like this (probably much more densely settled than in medieval times, admittedly) you would need at the very least 3 adventuring locales not even mentioning Canterbury itself.
+
+%thumb%Attach:Image33.png%%
+
+This is Tiree -a good chunk of the island. Note that there are 5 large bays to be found here, along with several smaller ones and a lot of little sheltered coves in the centre-right. There are four scattered farming villages, an airport, and 3 lochs. There are also some tiny islets here and there in the sea, too. Again, at least 3 adventuring locales needed.
+
+But 3 is a default, and can be reduced. For example:
+
+ %thumb%Attach:Image34.png%%
+
+The mountains of Assynt. It's empty and devoid of settlement, though there is still plenty to interact with - 6 named lochs, plus lots of smaller ones, and a folded, rugged landscape concealing God Knows What. 3 adventuring locales might be inappropriate in such a landscape, because you don't want to be silly - not every lake has to have a Water in the Waters; not every mountain has to sit atop an ancient dwarven citadel. But perhaps it's also unrealistic to just say "it's an empty hex".
+
+Of course, you wouldn't want your players to figure your system out. An alternative would be to randomise the number of adventuring locales in a 6-mile hex: d3-1 for sparse, d3 for average, d3+1 for settled, etc. Modified also by type of geography.
