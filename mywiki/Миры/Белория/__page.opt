@@ -1,10 +1,10 @@
 [General]
 type = wiki
 tags = 
-order = 34
 creationdatetime = 2016-07-12 08:42:28.007264
 datetime = 2016-07-12 08:44:20.868029
 cursorposition = 56
+order = 36
 
 [wiki]
 md5_hash = 6f132fb2ec3a59f9f66ac59fb3df0f66
