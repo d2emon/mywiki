@@ -1,0 +1,200 @@
+!! GeoJSON
+
+GeoJSON — открытый формат, предназначенный для хранения географических структур данных, основан на JSON.
+
+Формат может хранить примитивные типы для описания географических объектов, такие как: точки (адреса и местоположения), линии (улицы, шоссе, границы), полигоны (страны, штаты, участки земли). Также могут храниться так называемые мультитипы, которые представляют собой объединение нескольких примитивных типов.
+
+Формат GeoJSON отличается от других стандартов ГИС тем, что он был написан и поддерживается не какой-либо организацией по стандартизации, а с помощью рабочей группы разработчиков.
+
+Дальнейшим развитием GeoJSON является TopoJSON, расширение GeoJSON, которое кодирует геопространственную топологию, и, как правило, обеспечивает меньший размер файлов.
+
+!!! История
+
+Формат GeoJSON начал обсуждаться рабочей группой в марте 2007 года и окончательная спецификация стандарта была готова к июню 2008 года.
+
+!!! Пример
+
+(:source lang="js":)
+{ "type": "FeatureCollection",
+    "features": [
+      { "type": "Feature",
+        "geometry": {"type": "Point", "coordinates": [102.0, 0.5]},
+        "properties": {"prop0": "value0"}
+        },
+      { "type": "Feature",
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [102.0, 0.0], [103.0, 1.0], [104.0, 0.0], [105.0, 1.0]
+            ]
+          },
+        "properties": {
+          "prop0": "value0",
+          "prop1": 0.0
+          }
+        },
+      { "type": "Feature",
+         "geometry": {
+           "type": "Polygon",
+           "coordinates": [
+             [ [100.0, 0.0], [101.0, 0.0], [101.0, 1.0],
+               [100.0, 1.0], [100.0, 0.0] ]
+             ]
+         },
+         "properties": {
+           "prop0": "value0",
+           "prop1": {"this": "that"}
+           }
+         }
+       ]
+     }
+(:sourceend:)
+
+!!!! Объекты
+
+!!!!! Примитивные типы
+
+!!!!!! Point
+
+(:source lang="js":)
+{ "type": "Point", 
+    "coordinates": [30, 10]
+}
+(:sourceend:)
+
+!!!!!! LineString
+
+(:source lang="js":)
+{ "type": "LineString", 
+    "coordinates": [
+        [30, 10], [10, 30], [40, 40]
+    ]
+}
+(:sourceend:)
+
+!!!!!! Polygon
+
+(:source lang="js":)
+{ "type": "Polygon", 
+    "coordinates": [
+        [[30, 10], [40, 40], [20, 40], [10, 20], [30, 10]]
+    ]
+}
+(:sourceend:)
+
+(:source lang="js":)
+{ "type": "Polygon", 
+    "coordinates": [
+        [[35, 10], [45, 45], [15, 40], [10, 20], [35, 10]], 
+        [[20, 30], [35, 35], [30, 20], [20, 30]]
+    ]
+}
+(:sourceend:)
+
+!!!!! Мультитипы
+
+!!!!!! MultiPoint
+
+(:source lang="js":)
+{ "type": "MultiPoint", 
+    "coordinates": [
+        [10, 40], [40, 30], [20, 20], [30, 10]
+    ]
+}
+(:sourceend:)
+
+!!!!!! MultiLineString
+
+(:source lang="js":)
+{ "type": "MultiLineString", 
+    "coordinates": [
+        [[10, 10], [20, 20], [10, 40]], 
+        [[40, 40], [30, 30], [40, 20], [30, 10]]
+    ]
+}
+(:sourceend:)
+
+!!!!!! MultiPolygon
+
+(:source lang="js":)
+{ "type": "MultiPolygon", 
+    "coordinates": [
+        [
+            [[30, 20], [45, 40], [10, 40], [30, 20]]
+        ], 
+        [
+            [[15, 5], [40, 10], [10, 20], [5, 10], [15, 5]]
+        ]
+    ]
+}
+(:sourceend:)
+
+(:source lang="js":)
+{ "type": "MultiPolygon", 
+    "coordinates": [
+        [
+            [[40, 40], [20, 45], [45, 30], [40, 40]]
+        ], 
+        [
+            [[20, 35], [10, 30], [10, 10], [30, 5], [45, 20], [20, 35]], 
+            [[30, 20], [20, 15], [20, 25], [30, 20]]
+        ]
+    ]
+}
+(:sourceend:)
+
+!!! Использование
+
+GeoJSON поддерживается множеством картографических программных пакетов и ГИС, включая OpenLayers, Leaflet, MapServer, Geoforge software, GeoServer, GeoDjango, GDAL, Safe Software FME, и CartoDB. Кроме этого, можно использовать GeoJSON с PostGIS и Mapnik,, оба работают с форматов с помощью библиотеки GDAL OGR. Онлайн-сервисы Bing Maps, Yahoo! и Google также поддерживают GeoJSON в своих API.
+
+Интерфейс Javascript API v3 карт Google Maps напрямую поддерживают интеграцию слоёв данных GeoJSON с 19 марта 2014 года.
+
+GitHub тоже поддерживает GeoJSON и GeoJSON-экспорт Potrace.
+
+!!! TopoJSON
+
+TopoJSON является развитием GeoJSON. Вместо того, чтобы представлять географические объекты по-отдельности, в TopoJSON они сшиты в единые объекты, называемые дугами (arcs). Дуги — это последовательность точек, в то время как линии и полигоны — являются последовательностью дуг. Каждая дуга определяется только один раз, но может быть использована несколько раз в различных формах, тем самым уменьшается избыточность и размер файлов.
+
+Спецификация формата TopoJSON размещена на сайте GitHub.
+
+!!!! Схема TopoJSON
+
+Пример описания объекта, размещающегося около координат нулевой параллели и нулевой широты. Простое но содержит все необходимые типы геометрии: Полигоны(Polygon), Линии(LineString), Точки(Point), Дуги (arcs) и Описания:
+
+(:source lang="js":)
+{
+  "type":"Topology",
+  "transform":{
+    "scale": [1,1],
+    "translate": [0,0]
+  },
+  "objects":{ 
+    "two-squares":{
+      "type": "GeometryCollection",
+      "geometries":[
+        {"type": "Polygon", "arcs":[[0,1]],"properties": {"name": "Left_Polygon" }},
+        {"type": "Polygon", "arcs":[[2,-1]],"properties": {"name": "Right_Polygon" }}
+      ]
+    },
+    "one-line": {
+      "type":"GeometryCollection",
+      "geometries":[
+        {"type": "LineString", "arcs": [3],"properties":{"name":"Under_LineString"}}
+      ]
+    },
+    "two-places":{
+      "type":"GeometryCollection",
+      "geometries":[
+        {"type":"Point","coordinates":[0,0],"properties":{"name":"Origine_Point"}},
+        {"type":"Point","coordinates":[0,-1],"properties":{"name":"Under_Point"}}
+      ]
+    }
+  },
+  "arcs": [
+    [[1,2],[0,-2]],
+    [[1,0],[-1,0],[0,2],[1,0]],
+    [[1,2],[1,0],[0,-2],[-1,0]],
+    [[0,-1],[2,0]]
+  ]
+}
+(:sourceend:)
