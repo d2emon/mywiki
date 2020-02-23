@@ -1,0 +1,312 @@
+!! How To Create An RPG Adventure Game using Vue.JS and Cosmic JS
+
+Cosmic JS is a great content management tool which gives you the ability to upload, access, and edit your data and media files easily. These properties make it a prime candidate to use when building web-based video games as they heavily incorporate a large combination of media images, files, and data objects. In this tutorial, we’ll go over how to make a simple role-playing adventure game built in Vue.JS whilst using Cosmic JS to manage our content.
+
+!!! TL;DR:
+
+* [[RPG Game -> https://cosmicjs.com/apps/vue-rpg-game]]
+* [[RPG Game Demo -> http://cosmic-game.cosmicapp.co/]]
+* [[RPG Game Github -> https://github.com/cosmicjs/vue-rpg-game]]
+
+!!! Intro
+
+As there are many articles on this site to help you get started using Cosmic JS, this tutorial will assume you have a basic understanding of how Cosmic JS works. Refer to the Getting Started Guide. 
+
+Integrating with third party applications is usually one of the most frustrating tasks of setting up a new a project. However, by making a few simple calls to Cosmic JS’s API, we can retrieve our data very easily.
+
+!!! Setting Up Your Project
+
+In this tutorial, we will use vue-cli to quickly get our project up and running. We can also easily install Cosmic JS using npm as well:
+
+
+(:source:)
+$ npm install -g vue-cli
+
+$ vue init webpack cosmic-game
+
+$ cd cosmic-game
+
+$ npm install --save vuex cosmicjs
+
+$ npm install
+
+$ npm run dev
+(:sourceend:)
+
+We will then edit /config/config.js to add our bucket and add our read and write keys for authorization:
+
+(:source lang="js":)
+import Cosmic from 'cosmicjs'
+const api = Cosmic()
+const bucket = api.bucket({
+  slug: process.env.COSMIC_BUCKET || 'cosmic-game',
+  read_key: process.env.COSMIC_READ_KEY,
+  write_key: process.env.COSMIC_WRITE_KEY
+})
+export default bucket
+(:sourceend:)
+
+!!! Uploading and Compartmentalizing our Game Assets using Cosmic JS
+
+To populate our game with its story, environment and characters, we will compartmentalize data in three buckets.
+
+The first Bucket will be “Story”, and will contain anything related to the actual story and environment of the game. We can easily enter and edit story text, and add assets such as environment background images here. Notice how easily we can use the Cosmic JS CMS to edit our data!
+
+The next Bucket will be titled “Hero”. Here, as its name implies, we can add all the assets and metadata relating to the main character. This Bucket can contain all the hero’s sprites (for example: animations for movement, actions, and idling) as well metadata such as the hero’s character stats.
+
+The next and final Bucket will be “Enemies”, and as its name suggests will have all the enemies assets and character stats.
+
+Being able to split up our RPG game into these three Buckets gives us a couple of unique advantages. Firstly, all assets are neatly filed away and are easily accessible. Secondly, the Cosmic JS CMS allows us to easily add and edit storylines, just as easily as one would edit a blog post.
+
+!!! Accessing Data in our Game from Cosmic JS
+
+We can easily access our content from Cosmic JS using the Cosmic JS API, and populate them into three Vue.JS components which reflect the three Buckets we made for the story, hero, and enemies.
+
+We can reference the following function in each of our components mounted calls, so that when the component loads our data from our Buckets is ready to use:
+
+(:source lang="js":)
+async getResObject() {
+  const slug = 'insertObjectSlugHere'
+  try {
+
+    const res = await bucket.getObject({ slug })
+    this.resObject = res
+
+    return
+    })
+  }
+  catch(e) {
+    console.log('Error getting Object from Cosmic JS', e)
+  }
+}
+(:sourceend:)
+
+Before our game starts, we can give our players exposition by pulling in the story from our ‘Story’ Bucket. We can also use the story bucket to further set the scene by setting up the environment:
+
+(:source lang="js":)
+async getResObject() {
+        const slug = 'home'
+        try {
+
+          const res = await bucket.getObject({ slug })
+          this.resObject = res
+
+          let metafields = res.object.metafields
+          metafields.map((field) => {
+            if (field.title == 'HomeScreenTitle') {
+              this.homeScreenTitle = field.value
+            }
+            if (field.title == 'HomeScreenImage') {
+              this.homeScreenImage = field.url
+            }
+            if (field.title = 'HomeScreenTitleImage') {
+              this.homeScreenTitleImage = field.url
+            }
+          })
+        }
+(:sourceend:)
+
+As you can see in the above snippet, we easily convert data hosted on Cosmic JS via REST API, and can store them for use in VueJS’s data object.
+
+Using the same approach, create hero.vue and enemy.vue components and load in their metadata from their respective buckets.
+
+To make component to component dialogue easier (for example, an attack method in hero.vue affecting an enemies health), you can use state management via store, provided by Vuex – which we already installed earlier using NPM. Here is an example file of how Vuex can use the data obtained from Cosmic JS to manage our store:
+
+(:source lang="js":)
+import Vue from 'vue'
+import Vuex from 'vuex'
+Vue.use(Vuex)
+
+const store = new Vuex.Store({
+  state: {
+    currentView: 'homeScreen',
+    currentViewOptions: ['homeScreen', 'howToPlay', 'storyIntro',
+                         'enemySelectionScreen', 'playGame', 'enemyDefeated'],
+    currentActionMessagesFirst: 'Begin Fight',
+    currentActionMessagesSecond: 'Good luck!',
+
+    // Hero Stats
+    currentHeroHealth: '',
+    currentHeroMaxHealth: '',
+    currentHeroLevel: '',
+    currentHeroExperience: '',
+    experienceToNextLevel: '',
+    currentHeroState: '',
+    currentHeroStateOptions: ['idle', 'attacking1', 'attacking2', 'poisoned', 'slain'],
+    heroAnimations: []
+    
+    // Enemy Stats
+    currentEnemy: {},
+  },
+  getters: {
+
+  },
+  mutations: {
+    changeView(state, view) {
+      return state.currentView = view
+    },
+    updateCurrentActionMessages(state, action) {
+      console.log('msg updated in state')
+      let powerAmt = state.currentHeroLevel * 10
+      state.currentActionMessagesFirst = `You ${action} for ${powerAmt}!`
+      state.currentActionMessagesSecond = `${state.currentEnemy.name} attacks for ${state.currentEnemy.damage}!`
+    },
+    initializeEnemy(state, enemy) {
+      state.currentEnemy = enemy
+    },
+    damageEnemy(state, damage) {
+      return state.currentEnemy.health = state.currentEnemy.health - damage
+    },
+    damageHero(state) {
+      state.currentHeroHealth = state.currentHeroHealth - state.currentEnemy.damage
+      if (state.currentHeroHealth <= 0) {
+        state.currentHeroState = 'Dead'
+      }
+    },
+    healHero(state, heal) {
+      state.currentHeroHealth = state.currentHeroHealth + heal
+      console.log('healed for', heal)
+      if (state.currentHeroHealth > state.currentHeroMaxHealth) {
+        state.currentHeroHealth = state.currentHeroMaxHealth
+      }
+    },
+    updateHeroStatus(state, status) {
+      state.currentHeroState = status
+      if (status == 'Attacking') {
+        setTimeout(function(){
+          state.currentHeroState = 'Idle';
+        }, 500);
+      }
+    },
+    grantExperience(state, exp) {
+      state.experienceToNextLevel = state.experienceToNextLevel - exp
+      if (state.experienceToNextLevel <= 0) {
+        state.currentHeroLevel += 1
+        state.currentHeroMaxHealth += 50
+        state.currentHeroHealth = state.currentHeroMaxHealth
+        state.experienceToNextLevel = (state.currentHeroLevel * 50)
+      }
+    }
+  }
+})
+
+export default store
+(:sourceend:)
+
+Now that we have all our necessary game data loaded, we can populate our game! We can load in environment images as background images in our components, add hero and enemy sprites to their respective components, and use our newly created store to handle our battle, leveling up, and other state change logic.
+
+Here is some example code for your home screen menu, where you can see just how we populate and update data received from Cosmic JS:
+
+(:source lang="js":)
+<template>
+  <div class="homeScreen" :style="`background-image:url(${(homeScreenImage)});`">
+    <div class="homeScreenTitle">
+      <img :src="`${homeScreenTitleImage}`">
+    </div>
+
+    <div class="homeScreenOptions">
+      <div class="homeScreenOption" v-on:click="changeView('storyIntro')">
+          Play Game
+      </div>
+
+      <div class="homeScreenOption" v-on:click="changeView('howToPlay')">
+          How To Play
+      </div>
+      
+    </div>
+  </div>
+</template>
+
+<script>
+import bucket from '../../../config/config.js'
+const Cosmic = require('cosmicjs')
+const api = Cosmic()
+  export default {
+    props: [],
+    data() {
+      return {
+        homeScreenTitle: '',
+        homeScreenImage: '',
+        homeScreenTitleImage: ''
+      }
+    },
+    components: {},
+    mounted() {
+      this.getResObject()
+    },
+    computed: {
+      abey() {
+        return this.$store.state.abey
+      }
+    },
+    methods: {
+      changeView(view) {
+        this.$store.commit('changeView', view)
+      },
+      async getResObject() {
+        const slug = 'home'
+        try {
+
+          const res = await bucket.getObject({ slug })
+          this.resObject = res
+
+          let metafields = res.object.metafields
+          metafields.map((field) => {
+            if (field.title == 'HomeScreenTitle') {
+              this.homeScreenTitle = field.value
+            }
+            if (field.title == 'HomeScreenImage') {
+              this.homeScreenImage = field.url
+            }
+            if (field.title = 'HomeScreenTitleImage') {
+              this.homeScreenTitleImage = field.url
+            }
+          })
+        }
+        catch(e) {
+          console.log('Error getting Home Screen Object', e)
+        }
+      },
+    },
+    watch: {}
+  }
+
+</script>
+
+<style scoped>
+  .homeScreen {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed!important;
+    overflow:hidden;
+    text-align: center;
+  }
+
+  .homeScreenTitle {
+    margin-top: 75px;
+  }
+
+  .homeScreenOptions {
+    margin: 45px auto 0 auto;
+    width: 30%;
+    cursor: pointer;
+  }
+
+  .homeScreenOption {
+    border: 2px solid #92ced6;
+    color: #92ced6;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 25px;
+  }
+</style>
+(:sourceend:)
+
+!!! Conclusion 
+
+Building a video game, whether in a browser or elsewhere, requires a whole lot of data management. In this tutorial, not only did we explore how easy it is to manage the data by separating it into three different Buckets – we also saw how quickly and easily that same data can be accessed and modified. Furthermore, integration was exceptionally simple: all one had to do was run a bash command, and make sure environment keys were properly set up.
+
+Cosmic JS is a lightweight, but powerful platform – and I hope this tutorial was able to properly display its many strengths.
