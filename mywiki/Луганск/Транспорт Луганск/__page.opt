@@ -1,12 +1,12 @@
 [General]
 type = wiki
 tags = транспорт, город, луганск
-order = 2
+order = 4
 datetime = 2015-12-02 21:50:53.613000
 cursorposition = 0
 
 [wiki]
-md5_hash = bf4df5be47dae04b01a81eb483cac032
+md5_hash = 7b5c2758ccf2b7224fa0572defb8e8d5
 
 [Tree]
 expand = False

@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = город, луганск
+order = 1
+creationdatetime = 2015-12-07 10:50:00.627000
+datetime = 2015-12-07 11:24:39.195000
+cursorposition = 20
+
+[wiki]
+md5_hash = 238c3d73c26aeac954121916e380d9d4
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+
