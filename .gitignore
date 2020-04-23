@@ -1,8 +1,5 @@
-*.html
 .picasa.ini
 wikify
 temp
 __thumb
-*/__cache.tmp
-
 *.bak
