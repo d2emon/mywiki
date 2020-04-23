@@ -1,0 +1,82 @@
+.glowingtabs{
+position: absolute;
+float: center;
+margin-top: 190px;
+margin-left: 20px;
+line-height:normal;
+border: 0px solid #000; 
+background: #000;
+padding-bottom: 2px;
+}
+
+.glowingtabs ul{
+list-style-type: none;
+margin: 1px; 
+margin-left: 1px;
+width: 908px;
+padding:0;
+}
+
+.glowingtabs li{
+display:inline;
+margin:0;
+padding:0;
+}
+
+.glowingtabs a{
+float:left;
+background:url(/pictures/glowtab-left.gif) no-repeat left top;
+margin: 0;
+margin-right: 0px; /*spacing between each tab*/
+padding:0 0 0 9px;
+text-decoration:none;
+
+}
+
+.glowingtabs a span{
+float:left;
+display:block;
+background:url(/pictures/glowtab.gif) no-repeat right top;
+padding: 5px 12px 3px 3px;
+font-weight:  300;
+  font-family: Tahoma, Arial, Verdana,  Helvetica, sans-serif; color: #fff; 
+  font-size: 11px; 
+padding: 7px;
+padding-right: 14px;
+
+}
+
+
+.glowingtabs a span {float:none;}
+
+
+.glowingtabs a:hover span {
+color: #fff;
+}
+
+.glowingtabs a.current{ /*Selected Tab style*/
+background-position:0 -82px; /*Shift background image up to start of 2nd tab image*/
+}
+
+.glowingtabs a.current span{ /*Selected Tab style*/
+background-position:100% -82px; /*Shift background image up to start of 2nd tab image*/
+color: black;
+}
+
+.glowingtabs a:hover{ /*onMouseover style*/
+background-position:0% -31px; /*Shift background image up to start of 2nd tab image*/
+}
+
+.glowingtabs a:hover span{ /*onMouseover style*/
+background-position:100% -29px; /*Shift background image up to start of 2nd tab image*/
+}
+
+.tabcontainer{
+clear: left;
+width:95%; /*width of 2nd level sub menus*/
+height:1.5em; /*height of 2nd level sub menus. Set to largest's sub menu's height to avoid jittering.*/
+}
+
+.tabcontent{
+display:none;
+}

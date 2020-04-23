@@ -1,0 +1,70 @@
+BODY {COLOR: #333333; FONT-FAMILY: Verdana, Helvetica, Arial; FONT-SIZE: 9pt}
+TABLE {COLOR: #333333; FONT-FAMILY: Verdana, Helvetica, Arial; FONT-SIZE: 10pt}
+A:link {
+	COLOR: #704A22;
+	FONT-FAMILY: Verdana, Helvetica, Arial;
+	FONT-SIZE: 10pt;
+	TEXT-DECORATION: none;
+}
+A:visited {
+	COLOR: #704A22;
+	FONT-FAMILY: Verdana, Helvetica, Arial;
+	FONT-SIZE: 10pt;
+	TEXT-DECORATION: none;
+}
+A:hover {
+	COLOR: #333333;
+	FONT-FAMILY: Verdana, Helvetica, Arial;
+	FONT-SIZE: 10pt;
+	TEXT-DECORATION: underline;
+}
+.menu:link {
+	COLOR: #704A22;
+	FONT-FAMILY: Verdana, Helvetica, Arial;
+	FONT-SIZE: 10pt;
+	TEXT-DECORATION: none;
+}
+.menu:visited {
+	COLOR: #704A22;
+	FONT-FAMILY: Verdana, Helvetica, Arial;
+	FONT-SIZE: 10pt;
+	TEXT-DECORATION: none;
+}
+.menu:hover {
+	COLOR: #333333;
+	FONT-FAMILY: Verdana, Helvetica, Arial;
+	FONT-SIZE: 10pt;
+	TEXT-DECORATION: none;
+	TEXT-DECORATION: none;
+	margin-left: 5px;
+}
+.smlink:link { COLOR: #704A22; FONT-FAMILY: Verdana, Helvetica, Arial; FONT-SIZE: 8pt;}
+.smlink:visited { COLOR: #704A22; FONT-FAMILY: Verdana, Helvetica, Arial; FONT-SIZE: 8pt;}
+.smlink:hover { COLOR: #000000; FONT-FAMILY: Verdana, Helvetica, Arial; FONT-SIZE: 8pt;}
+h1 {
+	COLOR: #704A22;
+	FONT-FAMILY: Verdana, Helvetica, Arial;
+	FONT-SIZE: 16px;
+	letter-spacing : -1px;
+	font-weight : bold;
+}
+h2 {
+	COLOR: #704A22;
+	FONT-FAMILY: Verdana, Helvetica, Arial;
+	FONT-SIZE: 10pt;
+	font-weight : bold;
+
+}
+.question { COLOR: #666666; margin: 10px; font-style : italic; }
+.answer { COLOR: #333333; margin: 10px; }
+.sm { COLOR: #704A22; FONT-FAMILY: Verdana, Helvetica, Arial; FONT-SIZE: 8pt;}
+.sm2 { COLOR: #ffffff; FONT-FAMILY: Helvetica, Verdana; FONT-SIZE: 8pt; margin-top: 5px;}
+.top { COLOR: #003366; FONT-FAMILY: Verdana, Helvetica, Verdana; FONT-SIZE: 10pt;}
+.img { border:1px solid #704A22; }
+.spisok1 { margin: 5px; }
+.spisok2 { border:1px dotted #336699; }
+.leftmenu { COLOR: #ffffff; FONT-FAMILY: Helvetica, Verdana; FONT-SIZE: 11pt; margin-left: 5px;}
+.tabmenu { border :1px dotted #0080C0; }
+.tabsolid { border-right :1px solid #336699; border-left :1px solid #336699; }
+.tabsolid2 { border-bottom :2px solid #C1C18C;border-top :2px solid #C1C18C;}
+.tabbottom { border-bottom :1px solid #C1C18C; }

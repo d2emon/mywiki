@@ -1,0 +1,211 @@
+HTML {PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; 
+FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, Sans-serif}
+
+A:link {COLOR: #ad0000; TEXT-DECORATION: none}
+A:visited {COLOR: #ad0000 ; TEXT-DECORATION: none}
+A:hover {COLOR: #ff0000; TEXT-DECORATION: underline; }       
+A:active {COLOR: #ff0000; TEXT-DECORATION: none; }
+
+.ris {background:  url(img/ris.jpg) no-repeat; background-repeat: no-repeat;  padding-left: 50pt; padding-right: 50pt; padding-top: 20pt; width: 750px; height: 222px}
+.ris1 {background:  url(img/ris1.jpg) no-repeat; width: 221px; height: 729px}
+.ris2 {background:  url(img/ris2.jpg) no-repeat; width: 221px; height: 729px; margin-right: 2%;}
+.h1 {color:#ffffff; font-size: 200%;}
+.h1-1 {color: #ff0000; font-size:25px; font-family: Times New Roman;}
+.h1-2 {color: #f8d977; font-size:25px; }
+.h2 {color:#f8d977; font-size: 25px; text-align: center; }
+.p1 {color:#efb856; text-indent: 50pt; font-family: Times New Roman; font-size:20px}
+.p2 {color:#ad3922; text-indent: 50pt; font-family: sans-serif; font-size:15px;}
+h1, h2 {
+margin-top: 5pt;
+margin-bottom: 10pt;
+}
+.ispolniteli {color:#ffffff; text-indent: 5pt;}
+.menu1 { padding-left: 15pt; padding-right: 15pt; }
+.menu {border-left:2px #77210a solid; padding-left: 15pt; padding-right: 15pt;  }                                              
+.text {padding-left: 15pt; padding-right: 15pt;}      
+#text {padding-left: 25pt; padding-right: 25pt;}                                                                        
+.lin {color: #77210a}
+.prava {font-size: 8px; line-height: 5px; color: #77210a; padding-left: 15pt; padding-right: 15pt;}
+.podtext {padding-left: 15pt; padding-right: 15pt; color: #ff0000; font-size: 10px;}
+.podtext1 {padding-left: 15pt; padding-right: 15pt; color: #4d4b48; font-size: 9px;}
+.h2-inf {font-size: 13px; color: #cd7523; font-family: Times New Roman;}
+.inf {color: #ffffff; font-size: 16px; font-family: Times New Roman; text-align: center}
+.inf2 {color: #ffffff; font-size: 18px; font-family: Times New Roman; text-align: center}
+.nazv {color: #efb856; font-size: 13px; font-family: sans-serif;}
+#nazv1 {background-color: #2c2a27;}
+#nazv2 {background-color: #000000;}
+#nazv3 {background-color: #2c2a27; font-family: sans-serif;  font-size: 13px; color: #efb856;}
+#nazv4 {background-color: #000000; font-family: sans-serif;  font-size: 13px; color: #efb856;}
+.otstypmenu {width: 190px}
+#menu2 {width: 200px}
+.ak-text {color: #efb856; font-size: 15px;}  /*efb856*/	/*6c6a68*/
+.ak {color: #0072ff; font-size: 15px;}
+.akss {color: #ffffff; font-size: 15px;}
+.tak {color: #efb856; font-size: 25px;}
+.ban {color: #ffffff; font-size: 20px}
+.ban2 {color: #efb856; font-size: 13px}
+.karta {color: #fff; font-size: 13px}
+.faq {color: #fff; font-size: 13px}
+.faq-text-v { font-size:13px}
+.faq-text-o {color: #fff; font-size:13px}
+.bold {font-weight: bold; font-family: Times New Roman;}
+a.post {color: #f7e78f; font-family: Times New Roman;}
+#wifr {color: ff0000}
+/* Быстрые переходы */
+.header {font-style: normal; font-weight: bold; font-size: 12px; color: #fbbaba;}  /* 0072ff */
+	a.headers:link {color: #ff0000}  /* 87b1e5 */
+	a.headers:visited {color: #ff0000}	/* 87b1e5 */
+	a.headers:hover {color: #fbbaba; TEXT-DECORATION: none;}
+
+/* Главная текстовая информация */
+.glav-vstyp {color:#efb856; font-size:13px;}
+.glav-vstyp-t {
+color:#efb856; font-size:13px;
+}
+.textarea
+{
+    overflow: auto;
+}
+.glav-chis {color:#ff0000;}
+.ak-gitar {color: #ff0000}
+.ak-gitar-opred {color: #fff}
+.ak-gitar-q {color: #0072ff;}
+.ssilki-glav {}
+	a.ssilki-glav:link {color: #fbbaba}  /* 87b1e5 */
+	a.ssilki-glav:visited {color: #fbbaba}	/* 87b1e5 */
+	a.ssilki-glav:hover {color: #fbbaba;}
+.download {font-size: 15px;}
+	a.download:link {color: #fbbaba}  
+	a.download:visited {color: #fbbaba}	
+	a.download:hover {color: #fbbaba;}
+a.button {
+    /* Sliding right image */
+    background: transparent url('img/knop2.png') no-repeat scroll top right; 
+display: block;
+float: left;
+height: 70px; /* CHANGE THIS VALUE ACCORDING TO IMAGE HEIGHT */
+margin-right: 6px;
+padding-right: 20px; /* CHENGE THIS VALUE ACCORDING TO RIGHT IMAGE WIDTH */
+/* FONT PROPERTIES */
+text-decoration: none;
+color: #ff0000;
+font-family: Arial, Helvetica, sans-serif;
+font-size:12px;
+font-weight:bold;
+}
+a.button span {
+/* Background left image */ 
+background: transparent url('img/knop.png') no-repeat; 
+display: block;
+line-height: 70px; /* CHANGE THIS VALUE ACCORDING TO BUTTONG HEIGHT */
+padding: 7px 0 5px 18px;
+} 
+a.button:hover span{
+text-decoration:underline; 
+}
+
+/* groups */
+.ak-groups {color: #ff0000}
+.ak-groups-2 {color: #870600}
+.ak-groups-opred {color: #fff;}
+
+/* poleznoe */
+.ak-poleznoe {color: #ff0000}
+.ak-poleznoe-opred {color: #fff;}
+
+
+/* Sitemap */
+
+#user A {
+	COLOR: #00cccc
+}
+#user A:hover {
+	COLOR: #00cccc
+}
+.rootnode {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #000000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.rootnode A {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #000000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.simplenode A {
+	FONT-SIZE: 8pt; COLOR: #000000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+#bad A {
+	COLOR: #666666
+}
+#bad A:hover {
+	COLOR: #666666
+}
+.rootnode A:hover {
+	COLOR: #0000ff
+}
+.simplenode A:hover {
+	COLOR: #0000ff
+}
+
+
+
+/* Форум/Портал */ 
+DIV.b_top_menu_forum
+{
+    width: 79px;
+    height: 25px;
+}
+
+DIV.b_top_menu_forum SPAN
+{
+    background-image: url('img/forum_off_2.jpg')
+}
+
+DIV.button
+{
+ text-align: left;
+}
+
+DIV.button A
+{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-position: 0 0;
+    position: relative;
+    overflow: hidden;
+}
+
+DIV.button SPAN
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background-position: 0 0;
+    text-align: left;
+}
+DIV.button A:hover SPAN
+{
+    background-position: 0 100%;
+}
+.portal_on
+{
+        height: 25px;
+        width: 82px;
+        background: URL(img/portal_on.jpg);
+}
+
+/* Новости Akkord-gitar 0072ff*/ 
+.h2-news {color:#f8d977; font-size: 13px; text-align: left; padding: 0px; margin: 0px}
+.arhiv-news {color:#fff; font-size: 10px;}
+
+
+
+
+/* Tabl */
+.tabl-nazad {font-size: 13px; color: #f8d977; text-align: left; padding: 0px; margin: 0px}<br>
+
+
+
+/* search */
+.search {color: #ff0000}
+/* Партнеры */
+.h3-part {color:#f8d977; font-size: 13px; text-align: left; padding: 0px; margin: 0px}

@@ -1,0 +1,66 @@
+/* CSS Document */
+
+/* border for images with class = border_img  */
+.border_img{ border: none; margin: 5px;}
+/* CSS Document */
+
+/* design of paragraph with class = error */
+p.error {
+	 display: block;
+   color: #e86767;
+	font-weight: bold;
+	font-size: 11px;
+	line-height: 17px;
+	background: url(../images/error.gif) left center no-repeat #ffcea7;
+	padding: 15px 50px;
+	border: 1px solid #e86767;
+	margin-bottom: 10px;
+}
+
+/* design of paragraph with class = tips */
+p.tips {
+	 display: block;
+    color: #5fa4ab;
+	font-weight: bold;
+	font-size: 11px;
+	line-height: 17px;
+	background: url(../images/tips.gif) left center no-repeat #dff3f4;
+	padding: 15px 50px;
+	border: 1px solid #99cbd0;
+	margin-bottom: 10px;
+}
+
+/* design of paragraph with class = info */
+p.info{
+    display: block;
+    color: #f09021;
+	font-weight: bold;
+	font-size: 11px;
+	line-height: 17px;
+	background: url(../images/message.gif) left center no-repeat #fffadc;
+	padding: 15px 50px;
+	border: 1px solid #ffca8e;
+	margin-bottom: 10px;
+}
+
+/* design of paragraph with class = quote */
+
+.quote {
+	color: #787878;
+	background: #eee;
+	margin-bottom: 10px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-style:italic;
+	padding: 15px 30px;
+	border: 1px solid #ccc;
+	font-weight: bold;
+	display: block;
+}
+span.highlight {
+	font-weight: bold;
+	padding: 2px 3px;
+	color: #999;
+	background: #eee;
+}
+
+

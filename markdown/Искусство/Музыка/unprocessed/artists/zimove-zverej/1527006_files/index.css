@@ -1,0 +1,63 @@
+body		{ font-family: tahoma, sans-serif; font-size: 9pt; color: #000; background-color: #fff }
+form		{ font-family: tahoma, sans-serif; font-size: 9pt; padding-right: 0pt; padding-left: 0pt; padding-bottom: 0pt; margin: 0pt; padding-top: 0pt }
+button		{ font-family: tahoma, sans-serif; font-size: 9pt }
+a:link		{ font-family: tahoma, sans-serif; color: #008; text-decoration: none }
+a:visited	{ font-family: tahoma, sans-serif; color: #008; text-decoration: none }
+a:active	{ font-family: tahoma, sans-serif; color: #008; text-decoration: none }
+a:hover		{ font-family: tahoma, sans-serif; color: #008; text-decoration: none }
+div		{ font-family: tahoma, sans-serif; font-size: 9pt }
+pre		{ font-family: courier-new; font-size: 9pt }
+p		{ font-family: tahoma, sans-serif; font-size: 9pt }
+td		{ font-family: tahoma, sans-serif; font-size: 9pt }
+th		{ font-family: tahoma, sans-serif; font-size: 9pt }
+select		{ font-family: tahoma, sans-serif; font-size: 9pt }
+option		{ font-family: tahoma, sans-serif; font-size: 9pt }
+input		{ font-family: tahoma, sans-serif; font-size: 9pt }
+textarea	{ font-family: tahoma, sans-serif; font-size: 9pt }
+small		{ font-family: tahoma, sans-serif; font-size: 7.1pt }
+a.author:link		{ font-family: tahoma, sans-serif; color: #008; font-size: 7.1pt; text-decoration: none }
+a.author:visited	{ font-family: tahoma, sans-serif; color: #008; font-size: 7.1pt; text-decoration: none }
+a.author:active		{ font-family: tahoma, sans-serif; color: #008; font-size: 7.1pt; text-decoration: none }
+a.author:hover		{ font-family: tahoma, sans-serif; color: #008; font-size: 7.1pt; text-decoration: none }
+sub		{ font-family: tahoma, sans-serif; font-size: 7.1pt }
+sup		{ font-family: tahoma, sans-serif; font-size: 7.1pt }
+big		{ font-family: tahoma, sans-serif; font-size: 10pt; font-weight: bold }
+strong		{ font-family: tahoma, sans-serif; font-size: 11pt; font-weight: bold }
+dd		{ font-family: tahoma, sans-serif; text-indent: 0pt }
+hr		{ color: #888 }
+.index		{ font-family: tahoma, sans-serif; font-size: 10pt; font-weight: bold; color: #000 }
+.title		{ font-family: tahoma, sans-serif; font-size: 16pt; font-weight: bold; color: #000 }
+.head		{ background-color: #ddd; font-weight: bold }
+.vr		{ background-color: #aaa }
+.count		{ font-family: tahoma, sans-serif; font-size: 7.1pt; color: #888 }
+.no_access	{ background-color: #eee }
+.table_dash	{ padding: 0px; height: 1px; background-color: #ddd }
+.table_table	{ }
+.table_title	{ font-family: tahoma, sans-serif; font-size: 11pt; font-weight: bold; text-align: center; background-color: #eee; border: 1px solid #aaa }
+.table_body	{ background-color: #f8f8f8; border: 1px solid #ccc }
+.table0_table	{ }
+.table0_title	{ font-family: tahoma, sans-serif; font-size: 11pt; font-weight: bold; text-align: center; background-color: #eee; border: 1px solid #aaa }
+.table0_body	{ border: 1px solid #ccc }
+.menu_item		{ background-color: #000 }
+.menu_item_over		{ background-color: #606060; cursor: hand }
+.menu_item_selected	{ background-color: #dc0123 }
+.menu_text		{ font-family: tahoma, sans-serif; font-size: 9pt; font-weight: bold; color: #fff }
+a.menu_text:link	{ font-family: tahoma, sans-serif; font-size: 9pt; font-weight: bold; color: #fff }
+a.menu_text:visited	{ font-family: tahoma, sans-serif; font-size: 9pt; font-weight: bold; color: #fff }
+a.menu_text:active	{ font-family: tahoma, sans-serif; font-size: 9pt; font-weight: bold; color: #fff }
+a.menu_text:hover	{ font-family: tahoma, sans-serif; font-size: 9pt; font-weight: bold; color: #fff }
+.table_multi_item	{ background-color: #ffffff; border: 1px solid #fff }
+.table_multi_item_over	{ background-color: #e7ffaa; cursor: hand; border: 1px dashed #aaa }
+.table_item		{ background-color: #ffffff }
+.table_item_over	{ background-color: #e7ffaa; cursor: hand }
+.table_nav_item		{ background-color: #ffffff; border: 1px solid #fff }
+.table_nav_item_over	{ background-color: #e7ffaa; cursor: hand; border: 1px solid #aaa }
+.table_nav_item_selected{ background-color: #eeeeee; border: 1px solid #aaaaaa; filter: alpha(opacity=50) }
+.system_item		{ background-color: #ffffff }
+.system_item_over	{ background-color: #e7ffaa; cursor: hand }
+.photo_item		{ background-color: #ffffff; border: 1px dashed #aaa; padding-bottom: 8px; padding-top: 8px }
+.photo_item_over	{ background-color: #e7ffaa; cursor: hand; border: 1px dashed #aaa; padding-bottom: 8px; padding-top: 8px }
+.tr0			{ background-color: #eeeeee }
+.tr1			{ background-color: #ffffff }
+.photo_top_item		{ background-color: #d0ff90; border: 1px dashed #aaa; padding-bottom: 8px; padding-top: 8px }
+.photo_top_item_over	{ background-color: #e7ffaa; cursor: hand; border: 1px dashed #aaa; padding-bottom: 8px; padding-top: 8px }

@@ -1,0 +1,1651 @@
+<HTML>
+ <HEAD>
+ 
+ <META NAME="Title" CONTENT="Александр Башлачев. Время полета...">
+<META NAME="Author" CONTENT="Anoxoon">
+<META NAME="Publisher" CONTENT="Anoxoon & Ezhen">
+<META NAME="Copyright" CONTENT="Anoxoon & Ezhen 2000- 2001">
+<META http-equiv=Reply-to content=contact@bashlachev.net>
+<META NAME="Revisit" CONTENT="After 8 days">
+<META NAME="Expires" CONTENT="30">
+<META NAME="Keywords" CONTENT="Александр Башлачев, Фото, Стихи, Аккорды, Песни, Аккорды к песням, Интервью, Письма, Статьи, Фотографии, Тексты, Биография, Дискография, русский-рок, рок-н-ролл, СашБаш, Саш-Баш, Александр, Башлачев, рок-культура, рок- музыка, музыка, mp3, мп3, Ra, Real- Audio, Баш, баш,Описание, Жизнь, Жизнедеятельность, Творчество, Рисунки, Посвящение, Посвящения, Ссылки, Поиск, Фотоальбом, Новости, Форум, Череповец, Кочегарка, Лихо, Таганский концерт, Чернобыльские Бобыли на краю света, Вечный пост, Третья столица, Первый концерт в Москве,  Легенды Русского Рока, Абсолютный Вахтер, Ванюша, Верка, Надька, Любка, Вишня, Влажный блеск наших глаз, Время колокольчиков, Все от винта, Все будет хорошо, В чистом поле дожди косые, Галактическая комедия, Грибоедовский вальс, Дым коромыслом, Егоркина былина, Зимняя сказка, Имя имен, Как ветра осенние, Когда мы вдвоем, Когда мы вместе, Королева бутербродов, Лихо, Мельница, Минута молчания, Музыкант, Мы льем свое больное семя, На жизнь поэтов, Некому березу заломати, Не позволяй душе лениться, Ничего не случилось, Новый Год, О как ты эффектна, Осень, Палата №6, Перекур, Песенка на лесенке, Петербургская свадьба, Пляши в огне, Подвиг разведчика, Подымите мне веки, Поезд, Посошок, Похороны шута, Прямая дорога, Рашид+Оля, Ржавая вода, Рождественская, Рыбный день, Сегодняшний день ничего не меняет, Слет-симпозиум, Случай в Сибири, Спроси звезда, Старинная песня, Сядем рядом, Тепло беспокойно и сыро, Тесто, Трагикомический роман, Хозяйка, Хороший мужик, Час прилива, Черные дыры ,Альбомы.">
+<META NAME="Description" CONTENT=""Время полета..." Сайт посвященный Российскому поэту Александру Башлачеву. Здесь Вы найдете: Биографию, фото, аккорды, стихи, интервью, статьи, дискографию, mp3, форум и письма. В общем все или почти все что Вам может быть нужно.">
+<META NAME="Robots" CONTENT="INDEX,FOLLOW">
+<META NAME="Language" CONTENT="russian">
+<META NAME=classification CONTENT=Music >
+<META http-equiv=Cache-Control content=public>
+<META NAME="ResourceURL" CONTENT="http://www.bashlachev.net/">
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=windows-1251"> 
+
+
+ <script language="JavaScript">
+<!--
+
+function MM_showHideLayers() { //v2.0
+  var i, visStr, args, theObj;
+  args = MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) { //with arg triples (objNS,objIE,visStr)
+    visStr   = args[i+2];
+    if (navigator.appName == 'Netscape' && document.layers != null) {
+      theObj = eval(args[i]);
+      if (theObj) theObj.visibility = visStr;
+    } else if (document.all != null) { //IE
+      if (visStr == 'show') visStr = 'visible'; //convert vals
+      if (visStr == 'hide') visStr = 'hidden';
+      theObj = eval(args[i+1]);
+      if (theObj) theObj.style.visibility = visStr;
+  } }
+}
+//-->
+</script>
+
+<SCRIPT>
+<!--
+var step
+var sign=-1
+var move="no"
+
+function menuInit() {
+	if (document.layers) {
+        document.menu.left=-230
+        }
+	if (document.all) {
+        document.all.menu.style.posLeft=-231
+        }
+}
+
+function onchecked() {
+    if (move=="no") {
+	step=21
+        sign=sign*-1
+        move="yes"
+	movemenu()
+    }
+}
+
+function movemenu() {
+	if (document.layers) {
+        if (step>=0) {
+            document.menu.left+=step*sign
+            step--
+            var movetimer=setTimeout("movemenu()",20)
+	    }
+        else {
+            move="no"
+            clearTimeout(movetimer)
+        }
+	}
+	if (document.all) {
+        if (step>=0) {
+            document.all.menu.style.posLeft+=step*sign
+            step--
+            var movetimer=setTimeout("movemenu()",20)
+	    }
+        else {
+            move="no"
+            clearTimeout(movetimer)
+        }
+    }
+}
+onload=menuInit;
+// -->
+</SCRIPT>
+
+
+<SCRIPT language="JavaScript">
+  if (navigator.appName=="Microsoft Internet Explorer") {
+   document.write('<LINK rel="stylesheet" type="text/css" href="bash.css">');
+  }
+  else {
+   document.write('<LINK rel="stylesheet" type="text/css" href="nn.css">');
+  } 
+</script> 
+
+ </HEAD>
+<TITLE>-= Александр Башлачев- Время полета... =- Невошедшие песни часть 1</TITLE>
+<body background="img/bash.gif"  TopMargin="0" LeftMargin="0" MarginWidth="0" MarginHeight="0" vlink=gray link="#015F5D" alink=gray>
+<a name="S28">
+<TABLE BORDER=0 width=100% CELLPADDING=0 CELLSPACING=0>
+<TR>
+ <TD>
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0>
+	<TR>
+		<TD BGcolor="#015F5D"> 
+			<IMG SRC="menush/spacer.gif" WIDTH=48 HEIGHT=1></TD>
+		<TD BGcolor="#015F5D">
+			<IMG SRC="menush/spacer.gif" WIDTH=73 HEIGHT=1></TD>
+		<TD BGcolor="#015F5D"
+			<IMG SRC="menush/spacer.gif" WIDTH=69 HEIGHT=1></TD>
+		<TD BGcolor="#015F5D">
+			<IMG SRC="menush/spacer.gif" WIDTH=81 HEIGHT=1></TD>
+		<TD BGcolor="#015F5D">
+			<IMG SRC="menush/spacer.gif" WIDTH=77 HEIGHT=1></TD>
+		<TD BGcolor="#015F5D">
+			<IMG SRC="menush/spacer.gif" WIDTH=87 HEIGHT=1></TD>
+		<TD BGcolor="#015F5D">
+			<IMG SRC="menush/spacer.gif" WIDTH=12 HEIGHT=1></TD>
+		<TD BGcolor="#015F5D">
+			<IMG SRC="menush/spacer.gif" WIDTH=43 HEIGHT=1></TD>
+		<TD BGcolor="#015F5D">
+			<IMG SRC="menush/spacer.gif" WIDTH=48 HEIGHT=1></TD>
+		<TD BGcolor="#015F5D">
+			<IMG SRC="menush/spacer.gif" WIDTH=34 HEIGHT=1></TD>
+		<TD BGcolor="#015F5D">
+			<IMG SRC="menush/spacer.gif" WIDTH=30 HEIGHT=1></TD>
+		<TD BGcolor="#015F5D">
+			<IMG SRC="menush/spacer.gif" WIDTH=15 HEIGHT=1></TD>
+		<TD BGcolor="#015F5D">
+			<IMG SRC="menush/spacer.gif" WIDTH=8 HEIGHT=1></TD>
+		<TD BGcolor="#015F5D">
+			<IMG SRC="menush/spacer.gif" WIDTH=24 HEIGHT=1></TD>
+		<TD BGcolor="#015F5D">
+			<IMG SRC="menush/spacer.gif" WIDTH=48 HEIGHT=1></TD>
+		<TD>
+			<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 width=37>
+			  <TD WIDTH=6 HEIGHT=1 BGcolor="#015F5D">
+			<IMG SRC="images/spacer.gif"></TD>
+		   </TABLE></TD>
+		<TD></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=11>
+			<IMG SRC="menush/menu_01.gif" WIDTH=602 HEIGHT=21></TD>
+		<TD COLSPAN=2>
+			<A HREF="index.shtml">
+				<IMG SRC="menush/index.gif" WIDTH=23 HEIGHT=21 BORDER=0></A></TD>
+		<TD>
+			<A HREF="mail.shtml">
+				<IMG SRC="menush/mail.gif" WIDTH=24 HEIGHT=21 BORDER=0></A></TD>
+		<TD COLSPAN=2>
+			<IMG SRC="menush/menu_04.gif" WIDTH=95 HEIGHT=21></TD>
+		<TD>
+			<IMG SRC="menush/spacer.gif" WIDTH=1 HEIGHT=21></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=16>
+			<IMG SRC="menush/menu_05.gif" WIDTH=744 HEIGHT=30></TD>
+		<TD>
+			<IMG SRC="menush/spacer.gif" WIDTH=1 HEIGHT=30></TD>
+	</TR>
+	<TR>
+		<TD ROWSPAN=2>
+			<A HREF="glav.shtml">
+				<IMG SRC="menush/glav.gif" WIDTH=48 HEIGHT=18 BORDER=0></A></TD>
+		<TD COLSPAN=15>
+			<IMG SRC="menush/menu_07.gif" WIDTH=696 HEIGHT=9></TD>
+		<TD>
+			<IMG SRC="menush/spacer.gif" WIDTH=1 HEIGHT=9></TD>
+	</TR>
+	<TR>
+		<TD ROWSPAN=3>
+			<A HREF="bio.shtml">
+				<IMG SRC="menush/bio.gif" WIDTH=73 HEIGHT=24 BORDER=0></A></TD>
+		<TD COLSPAN=14>
+			<IMG SRC="menush/menu_09.gif" WIDTH=623 HEIGHT=9></TD>
+		<TD>
+			<IMG SRC="menush/spacer.gif" WIDTH=1 HEIGHT=9></TD>
+	</TR>
+	<TR>
+		<TD ROWSPAN=7>
+			<IMG SRC="menush/menu_10.gif" WIDTH=48 HEIGHT=52></TD>
+		<TD COLSPAN=5>
+			<IMG SRC="menush/menu_11.gif" WIDTH=326 HEIGHT=4></TD>
+		<TD COLSPAN=8>
+			<IMG SRC="menush/menu_12.gif" WIDTH=250 HEIGHT=4></TD>
+		<TD ROWSPAN=7>
+			<IMG SRC="menush/menu_13.gif" WIDTH=47 HEIGHT=52></TD>
+		<TD>
+			<IMG SRC="menush/spacer.gif" WIDTH=1 HEIGHT=4></TD>
+	</TR>
+	<TR>
+		<TD ROWSPAN=3>
+			<A HREF="song.shtml">
+				<IMG SRC="menush/tv.gif" WIDTH=69 HEIGHT=26 BORDER=0></A></TD>
+		<TD COLSPAN=6>
+			<IMG SRC="menush/menu_15.gif" WIDTH=348 HEIGHT=11></TD>
+		<TD ROWSPAN=3>
+			<A HREF="chat.shtml">
+				<IMG SRC="menush/chat.gif" WIDTH=34 HEIGHT=26 BORDER=0></A></TD>
+		<TD COLSPAN=2 ROWSPAN=2>
+			<A HREF="links.shtml">
+				<IMG SRC="menush/links.gif" WIDTH=45 HEIGHT=15 BORDER=0></A></TD>
+		<TD COLSPAN=3 ROWSPAN=6>
+			<IMG SRC="menush/menu_18.gif" WIDTH=80 HEIGHT=48></TD>
+		<TD>
+			<IMG SRC="menush/spacer.gif" WIDTH=1 HEIGHT=11></TD>
+	</TR>
+	<TR>
+		<TD ROWSPAN=5>
+			<IMG SRC="menush/menu_19.gif" WIDTH=73 HEIGHT=37></TD>
+		<TD ROWSPAN=2>
+			<A HREF="foto.shtml">
+				<IMG SRC="menush/foto.gif" WIDTH=81 HEIGHT=15 BORDER=0></A></TD>
+		<TD ROWSPAN=3>
+			<A HREF="posv.shtml">
+				<IMG SRC="menush/posv.gif" WIDTH=77 HEIGHT=21 BORDER=0></A></TD>
+		<TD COLSPAN=3>
+			<IMG SRC="menush/menu_22.gif" WIDTH=142 HEIGHT=4></TD>
+		<TD ROWSPAN=3>
+			<A HREF="forum/">
+				<IMG SRC="menush/forum.gif" WIDTH=48 HEIGHT=21 BORDER=0></A></TD>
+		<TD>
+			<IMG SRC="menush/spacer.gif" WIDTH=1 HEIGHT=4></TD>
+	</TR>
+	<TR>
+		<TD ROWSPAN=3>
+			<A HREF="apistol.shtml">
+				<IMG SRC="menush/apistol.gif" WIDTH=87 HEIGHT=21 BORDER=0></A></TD>
+		<TD COLSPAN=2 ROWSPAN=3>
+			<A HREF="cgi-bin/book/guestbook.pl">
+				<IMG SRC="menush/guest.gif" WIDTH=55 HEIGHT=21 BORDER=0></A></TD>
+		<TD COLSPAN=2 ROWSPAN=4>
+			<IMG SRC="menush/menu_26.gif" WIDTH=45 HEIGHT=33></TD>
+		<TD>
+			<IMG SRC="menush/spacer.gif" WIDTH=1 HEIGHT=11></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=2 ROWSPAN=3>
+			<IMG SRC="menush/menu_27.gif" WIDTH=150 HEIGHT=22></TD>
+		<TD ROWSPAN=3>
+			<IMG SRC="menush/menu_28.gif" WIDTH=34 HEIGHT=22></TD>
+		<TD>
+			<IMG SRC="menush/spacer.gif" WIDTH=1 HEIGHT=6></TD>
+	</TR>
+	<TR>
+		<TD ROWSPAN=2>
+			<IMG SRC="menush/menu_29.gif" WIDTH=77 HEIGHT=16></TD>
+		<TD ROWSPAN=2>
+			<IMG SRC="menush/menu_30.gif" WIDTH=48 HEIGHT=16></TD>
+		<TD>
+			<IMG SRC="menush/spacer.gif" WIDTH=1 HEIGHT=4></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=3>
+			<IMG SRC="menush/menu_31.gif" WIDTH=142 HEIGHT=12></TD>
+		<TD>
+			<IMG SRC="menush/spacer.gif" WIDTH=1 HEIGHT=12></TD>
+	</TR>
+</TABLE>
+<DIV id=menu>
+<TABLE WIDTH=249 BORDER=0 CELLPADDING=0 CELLSPACING=0>
+	<TR>
+		<TD COLSPAN=5>
+			<IMG SRC="menu/i_01.gif" WIDTH=249 HEIGHT=2></TD>
+	</TR>
+	<TR>
+		<TD>
+			<IMG SRC="menu/i_02.gif" WIDTH=2 HEIGHT=170></TD>
+		<TD WIDTH=215 HEIGHT=270 valign="top">
+		<TABLE border=0 cellPadding=0 cellSpacing=0 width=215 valign="top">
+
+  <TR>
+		          <TD bgColor=#cdcdcd><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#f5f3f4><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>	     
+		       
+		        <TR>
+ <TD bgColor=#EEEEEE><IMG src="menu/n.gif" width=0>
+<font class="glav1">-=Альбомы=-</a></TD></TR>
+  <TR>
+		          <TD bgColor=#cdcdcd><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#f5f3f4><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		       
+		       <TR>
+		          <TD bgColor=#e4e4e4 onmouseout="bgColor='E4E4E4'"
+		          onmouseover="bgColor='FFFFFF'"><IMG height=12
+		            src="menu/n.gif" width=20><A class=links
+		            href="liho.shtml">Лихо 1</A></TD></TR>
+  <TR>
+		          <TD bgColor=#cdcdcd><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#f5f3f4><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR> 
+  
+		       <TR>
+		          <TD bgColor=#e4e4e4 onmouseout="bgColor='E4E4E4'"
+		          onmouseover="bgColor='FFFFFF'"><IMG height=12
+		            src="menu/n.gif" width=20><A class=links
+		            href="liho2.shtml">Лихо 2</A></TD></TR>
+  <TR>
+		          <TD bgColor=#cdcdcd><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#f5f3f4><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>		     
+		      
+
+		        <TR>
+		          <TD bgColor=#e4e4e4 onmouseout="bgColor='E4E4E4'"
+		          onmouseover="bgColor='FFFFFF'"><IMG height=12
+		            src="menu/n.gif" width=20><A class=links
+		            href="trst.shtml">Третья столица</A></TD></TR>
+  <TR>
+		          <TD bgColor=#cdcdcd><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#f5f3f4><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+
+
+		        <TR>
+		          <TD bgColor=#e4e4e4 onmouseout="bgColor='E4E4E4'"
+		          onmouseover="bgColor='FFFFFF'"><IMG height=12
+		            src="menu/n.gif" width=20><A class=links
+		            href="vpost.shtml">Вечный пост</A></TD></TR>
+
+	
+	  <TR>
+		          <TD bgColor=#cdcdcd><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#f5f3f4><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#e4e4e4 onmouseout="bgColor='E4E4E4'"
+		          onmouseover="bgColor='FFFFFF'"><IMG height=12
+		            src="menu/n.gif" width=20><A class=links
+		            href="vrcol.shtml">Время колокольчиков</A></TD></TR>
+	 <TR>
+		          <TD bgColor=#cdcdcd><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#f5f3f4><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>	     
+		       
+		        <TR>
+ <TD bgColor=#EEEEEE><IMG src="menu/n.gif" width=0>
+<font class="glav1">-=Невошедшие песни=-</a></TD></TR>
+  <TR>
+		          <TD bgColor=#cdcdcd><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#f5f3f4><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		       
+		       <TR>
+		          <TD bgColor=#e4e4e4 onmouseout="bgColor='E4E4E4'"
+		          onmouseover="bgColor='FFFFFF'"><IMG height=12
+		            src="menu/n.gif" width=20><A class=links
+		            href="nevosh.shtml">Часть первая</A></TD></TR>
+  <TR>
+		          <TD bgColor=#cdcdcd><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#f5f3f4><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR> 
+  
+		       <TR>
+		          <TD bgColor=#e4e4e4 onmouseout="bgColor='E4E4E4'"
+		          onmouseover="bgColor='FFFFFF'"><IMG height=12
+		            src="menu/n.gif" width=20><A class=links
+		            href="nevosh2.shtml">Часть вторая</A></TD></TR>
+		 <TR>
+		          <TD bgColor=#cdcdcd><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#f5f3f4><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>	     
+		       
+		        <TR>
+ <TD bgColor=#EEEEEE><IMG src="menu/n.gif" width=0>
+<font class="glav1">-=Без нот=-</a></TD></TR>
+  <TR>
+		          <TD bgColor=#cdcdcd><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#f5f3f4><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		       
+		       <TR>
+		          <TD bgColor=#e4e4e4 onmouseout="bgColor='E4E4E4'"
+		          onmouseover="bgColor='FFFFFF'"><IMG height=12
+		            src="menu/n.gif" width=20><A class=links
+		            href="stihi.shtml">Песни</A></TD></TR>
+  <TR>
+		          <TD bgColor=#cdcdcd><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#f5f3f4><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR> 
+  
+		       <TR>
+		          <TD bgColor=#e4e4e4 onmouseout="bgColor='E4E4E4'"
+		          onmouseover="bgColor='FFFFFF'"><IMG height=12
+		            src="menu/n.gif" width=20><A class=links
+		            href="chetv.shtml">Четверостишья</A></TD></TR>	            
+  		 <TR>
+		          <TD bgColor=#cdcdcd><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#f5f3f4><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>	     
+		       
+		        <TR>
+ <TD bgColor=#EEEEEE><IMG src="menu/n.gif" width=0>
+<font class="glav1">-=Разное=-</a></TD></TR>
+  <TR>
+		          <TD bgColor=#cdcdcd><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#f5f3f4><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		       
+		       <TR>
+		          <TD bgColor=#e4e4e4 onmouseout="bgColor='E4E4E4'"
+		          onmouseover="bgColor='FFFFFF'"><IMG height=12
+		            src="menu/n.gif" width=20><A class=links
+		            href="disko.shtml">Дискография</A></TD></TR>
+  <TR>
+		          <TD bgColor=#cdcdcd><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#f5f3f4><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR> 
+  
+		       <TR>
+		          <TD bgColor=#e4e4e4 onmouseout="bgColor='E4E4E4'"
+		          onmouseover="bgColor='FFFFFF'"><IMG height=12
+		            src="menu/n.gif" width=20><A class=links
+		            href="mp3.shtml">MP3-записи ч.1</A></TD></TR>	
+  <TR>
+		          <TD bgColor=#cdcdcd><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#f5f3f4><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR> 
+  
+		       <TR>
+		          <TD bgColor=#e4e4e4 onmouseout="bgColor='E4E4E4'"
+		          onmouseover="bgColor='FFFFFF'"><IMG height=12
+		            src="menu/n.gif" width=20><A class=links
+		            href="mp3_2.shtml">MP3-записи ч.2</A></TD></TR>	              
+
+		       
+
+      </TABLE>
+		</TD>
+		<TD background="menu/i_04.gif">
+			<IMG SRC="menu/i_04.gif" WIDTH=2 HEIGHT=170></TD>
+		<TD valign=bottom><A href="javascript:onchecked()" onfocus=javascript:this.blur()>
+			<IMG SRC="menu/i_05.gif"  BORDER=0></A></TD>
+		<TD background="menu/i_06.gif" valign=bottom>
+			<IMG SRC="menu/i_06.gif" WIDTH=2 HEIGHT=170></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=5>
+			<IMG SRC="menu/i_07.gif" WIDTH=249 HEIGHT=2></TD>
+	</TR>
+</TABLE>
+
+</DIV>
+</TD>
+</TR>
+<TR>
+  <TD>
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 align=right>
+<TR>
+ <TD>
+<!-- HotLog -->
+<script language="javascript">
+hotlog_js="1.0";hotlog_d=document; hotlog_n=navigator;hotlog_rn=Math.random();
+hotlog_n_n=(hotlog_n.appName.substring(0,3)=="Mic")?0:1
+hotlog_r=""+hotlog_rn+"&s=1154&r="+escape(hotlog_d.referrer)+"&pg="+
+escape(window.location.href)
+hotlog_d.cookie="hotlog=1"; hotlog_r+="&c="+(hotlog_d.cookie?"Y":"N");
+hotlog_d.cookie="hotlog=1; expires=Thu, 01-Jan-70 00:00:01 GMT"</script>
+<script language="javascript1.1">
+hotlog_js="1.1";hotlog_r+="&j="+(navigator.javaEnabled()?"Y":"N")</script>
+<script language="javascript1.2">
+hotlog_js="1.2";hotlog_s=screen;
+hotlog_r+="&wh="+hotlog_s.width+'x'+hotlog_s.height+"&px="+((hotlog_n_n==0)?
+hotlog_s.colorDepth:hotlog_s.pixelDepth)</script>
+<script language="javascript1.3">hotlog_js="1.3"</script>
+<script language="javascript">hotlog_r+="&js="+hotlog_js;
+hotlog_d.write("<img src=\"http://hit.hotlog.ru/cgi-bin/hotlog/count?"+
+hotlog_r+"&\" border=0 width=1 height=1>")</script>
+<noscript><img src="http://hit.hotlog.ru/cgi-bin/hotlog/count?s=1154" border=0 
+width=1 height=1></noscript>
+<!-- /HotLog -->
+<br>
+<!-- BannerBank advertising begin: Too Much Music 468x60 -->
+<script>
+// <!--
+var userid = 2397716;
+var page = 1;
+var rndnum = Math.round(Math.random() * 10000);
+document.write('<center><A HREF="http://ad3.bb.ru/bb.cgi?cmd=go&pubid=' + userid + '&pg=' + page + '&vbn=536&num=1&w=468&h=60&nocache=' + rndnum + '" target="_top">');
+document.write('<IMG SRC="http://ad3.bb.ru/bb.cgi?cmd=ad&pubid=' + userid + '&pg=' + page + '&vbn=536&num=1&w=468&h=60&nocache=' + rndnum + '" width=468 height=60 Alt="Too Much Music" border=0></A><BR></center>');
+document.write(' <center><FONT SIZE=1><A HREF="http://www.tmm.ru/" target = "_blank" >Too Much Music</A></FONT></center>');
+// -->
+</script>
+<!-- BannerBank advertising end: Too Much Music 468x60 -->
+</TD>
+<TD>
+&nbsp;&nbsp;&nbsp;&nbsp;
+</TD>
+</TR>
+</TABLE>
+  </TD>
+</TR>
+<TR>
+<TD align=center>
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 align=center>
+	<TR>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=15 HEIGHT=1></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=47 HEIGHT=1></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=277 HEIGHT=1></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=284 HEIGHT=1></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=33 HEIGHT=1></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=57 HEIGHT=1></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=30 HEIGHT=1></TD>
+		<TD></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=3 ROWSPAN=2>
+					<IMG SRC="img/nevosh.gif" WIDTH=339 HEIGHT=71></TD>
+		<TD>
+			<IMG SRC="images/ramka1_02.gif" WIDTH=284 HEIGHT=36></TD>
+		<TD COLSPAN=3>
+			<IMG SRC="images/ramka1_03.gif" WIDTH=120 HEIGHT=36></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=1 HEIGHT=36></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=2 BGcolor="white"  WIDTH=317 HEIGHT=35>
+<SCRIPT>
+var flag_strClear=true;
+function strClear(arg){if(flag_strClear){arg.value="";flag_strClear=false;}}
+</SCRIPT>
+<center>
+<FORM ACTION="http://www.bashlachev.net/cgi-bin/search/search.pl" METHOD="GET">
+<INPUT TYPE="Text" NAME="query" SIZE="30" 
+class=se1 
+onmouseover="this.className = 'se2';" 
+onmouseout="this.className = 'se2';" 
+VALUE="-= поиск =-" onClick="strClear(this)">
+<INPUT TYPE="Hidden" NAME="stpos" VALUE="0">
+<INPUT TYPE="Submit" VALUE=" >> "  style="font-size=11px;"  title="-= Искать =-"
+class=se1 
+onmouseover="this.className = 'se2';" 
+onmouseout="this.className = 'se2';" >
+</center>
+</TD>
+</FORM>
+		<TD COLSPAN=2>
+			<IMG SRC="images/ramka1_05.gif" WIDTH=87 HEIGHT=35></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=1 HEIGHT=35></TD>
+	</TR>
+	<TR>
+		<TD ROWSPAN=2 background="images/l_f.gif">
+			<IMG SRC="images/spacer.gif"></TD>
+		<TD COLSPAN=5 BGcolor="white">
+			<IMG SRC="images/spacer.gif" WIDTH=698 HEIGHT=48></TD>
+		<TD>
+			<IMG SRC="images/ramka1_08.gif" WIDTH=30 HEIGHT=48></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=1 HEIGHT=48></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=5 bgcolor="white">
+	
+<table border=0 cellPadding=0 cellSpacing=0 width=695>	
+ <TR>
+   <TD Width=100% valign=top>
+    <TABLE>
+ <TR>
+  <TD>      <IMG src="img/st.gif" width=10 height=10>  <A href="#s1" class="links">Влажный блеск наших глаз</A>
+          </TD>
+  </TR> 
+  <TR>
+  <TD>    <IMG src="img/st.gif" width=10 height=10>  <A href="#s2" class="links">Галактическая комедия</A>   </TD>
+  </TR>
+   <TR>
+  <TD> 
+     <IMG src="img/st.gif" width=10 height=10>  <A href="#s3" class="links">Новый год</A>
+     </TD>
+  </TR> 
+     <TR>
+  <TD> 
+     <IMG src="img/st.gif" width=10 height=10>  <A href="#s5" class="links">Грибоедовский вальс</A>
+     </TD>
+  </TR> 
+  <TR>
+  <TD> 
+   <IMG src="img/st.gif" width=10 height=10>  <A href="#s6" class="links">Похороны шута</A> <BR>
+   </TD>
+  </TR>
+   <TR>
+  <TD> 
+     <IMG src="img/st.gif" width=10 height=10>  <A href="#s7" class="links">Рождественская</A>
+     </TD>
+  </TR> 
+   <TR>
+  <TD> 
+     <IMG src="img/st.gif" width=10 height=10>  <A href="#s8" class="links">Вишня</A>
+     </TD>
+  </TR> 
+   <TR>
+  <TD> 
+     <IMG src="img/st.gif" width=10 height=10>  <A href="#s9" class="links">Хороший мужик (Песня о Родине)</A>
+     </TD>
+  </TR> 
+  <TR>
+  <TD> 
+     <IMG src="img/st.gif" width=10 height=10>  <A href="#s10" class="links">Не позволяй душе лениться</A>
+     </TD>
+  </TR>   <TR>
+  <TD> 
+     <IMG src="img/st.gif" width=10 height=10>  <A href="#s11" class="links">Больное семя</A>
+     </TD>
+  </TR>   <TR>
+  <TD> 
+     <IMG src="img/st.gif" width=10 height=10>  <A href="#s12" class="links">Хозяйка</A>
+     </TD>
+  </TR>   <TR>
+  <TD> 
+     <IMG src="img/st.gif" width=10 height=10>  <A href="#s13" class="links">Пляши в огне</A>
+     </TD>
+  </TR>   <TR>
+  <TD> 
+     <IMG src="img/st.gif" width=10 height=10>  <A href="#s14" class="links">Пора собираться на бал</A>
+     </TD>
+  </TR>   <TR>
+  <TD> 
+     <IMG src="img/st.gif" width=10 height=10>  <A href="#s15" class="links">Рыбный день</A>
+     </TD>
+  </TR>
+ </TABLE>  
+   
+<pre><font size=3 color="gray" class="posv">
+<a name="s1"> "Влажный блеск наших глаз"</a><br><br>
+</font><font size=3 class="posv2">  
+<div style="margin-left:80;">
+
+C#m           G#m
+Влажный блеск наших глаз...
+ F#m                   C#m
+Все соседи просто ненавидят нас. 
+ C#m        G#m
+А нам на них наплевать.
+F#m                  C#m
+У тебя есть я -- а у меня  диван-кровать.
+C#m            G#m
+Платина платья, штанов свинец
+F#m                         C#m
+Душат только тех, кто не рискует дышать.
+ G#m
+А нам так легко -- мы наконец
+F#m                        C#m
+Сбросили все то, что нам могло мешать.
+ F#       
+ Остаемся одни,
+                 A        
+Поспешно гасим огни 
+G#              C#m
+И никогда не скучаем.
+F#        
+И пусть сосед извинит
+                   A        
+За то, что всю ночь звенит
+        G#                C#m        
+Ложечка в чашке с чаем.
+Ты говоришь, я так хорош --
+Это от того, что ты так хороша со мной.
+Посмотри: мой бедный еж
+Сбросил все иголки -- он совсем ручной.
+Но если ты почувствуешь случайный укол --
+Выдерни занозу и забудь о ней скорей
+Это от того, что мой ледокол
+Не привык к воде тропических морей.
+        Ты никогда не спишь.        
+        Я тоже никогда не сплю.
+        Наверное я тебя люблю. 
+        Но я об этом промолчу,
+        Я скажу тебе лишь        
+        То, что я тебя хочу.
+        За окном -- снег и тишь.
+Мы можем заняться любовью на одной из белых крыш.
+А если встать в полный рост,
+То можно это сделать на одной из звезд.
+Наверное, зря мы забываем вкус слез.
+Но небо пахнет запахом твоих волос.
+И мне никак не удается успокоить ртуть.
+Но если ты устала -- давай спою что-нибудь.
+        Ты говоришь, что я неплохо пою,
+         И, в общем, это то, что надо.
+        Так это очень легко:
+        Я в этих песнях не лгу --
+        Видимо, не могу.
+        Мои законы просты -
+        Мы так легки и чисты.
+        Нам так приятно дышать.
+        Не нужно спать в эту ночь,
+         А нужно выбросить прочь
+       Все, что нам могло мешать.
+
+</div>
+<hr size=1 width=80%>
+</font>
+<font size=3 color="gray" class="posv">
+<a href="#s28"  onMouseOver="window.status='Вверх'; return true;" onMouseOut="window.status='';"><img src="img/st_v.gif" border=0></a>&nbsp;&nbsp;<a name="s2">"Галактическая комедия"</a>
+</font><font size=3 class="posv2">
+<div style="margin-left:80;">
+Проигрыш: A F#m D E
+  
+ A       F#m        D                  E
+Я твердо уверен, что где-то в Галактике дальней,
+   A          F#m        D                 E
+На пыльных тропинках, вдали от космических трасс,
+   D                E               A
+Найдется планета, похожая с нашей детально.
+  D                E               A
+И люди на ней совершенно похожи на нас.
+
+Мой город, и дом, и квартира отыщутся где-то.
+Согласно прописке, там занял пять метров жилья
+Мужчина, который курит мои сигареты
+И пьет жигулевское пиво не реже, чем я.
+
+          F           E            A        
+         У нас с ним одни и те же заботы.
+           F                     E             A
+        Он носит мой галстук, он спорит с моею женой.
+          F                   E                  A
+        И так же, как я, по утрам он спешит на работу,
+          F                E            A
+        А вечером тем же автобусом едет домой.
+
+Ему точно так же бывает и грустно и скучно.
+Бывает порою, что некому руку подать.
+Поэтому нам поскорее с ним встретиться нужно -
+Уж мы бы отлично сумели друг друга понять.
+Итак, решено: oтправляюсь на эту планету.
+Я продал часы, свою бритву и новый утюг.
+Дождался субботы, в субботу построил ракету.
+Ну встречай меня, парень, встречай меня, преданный друг!
+
+        Ведь у нас с тобой одни и те же заботы.
+        Ты носишь мой галстук, ты спишь с моею женой.
+        И так же, как я, по утрам ты идешь на работу,
+        А вечером тем же автобусом едешь домой.
+
+Три дня я плутал переулками звездного мира,
+И к этой планете пришел на крутом вираже.
+Все точно совпало - и город, и номер квартиры,
+И те же соседи живут на одном этаже.
+Соседи сказали - случилось большое несчастье.
+Соседи мне сразу сказали, что в эти три дня
+Он бритву, часы и утюг променял на запчасти
+И тоже решил полететь поглядеть на меня.        
+
+         Теперь его заботы - мои заботы.
+        Я ношу его галстук, я скандалю с его женой.
+        И так же, как он, по утрам я спешу на работу,
+        А вечером тем же автобусом еду домой.Я еду домой.
+
+
+</div>
+<hr size=1 width=80%>
+
+<font size=3 color="gray" class="posv">
+<a href="#s28"  onMouseOver="window.status='Вверх'; return true;" onMouseOut="window.status='';"><img src="img/st_v.gif" border=0></a>&nbsp;&nbsp;<a name="s3">"Новый год"</a>
+</font><font size=3 class="posv2">
+<div style="margin-left:80;">
+A           H       E      A
+Мы у ворот. Эй, отворяй, охрана!
+A                  H        E    A
+Ровно в двенадцать нам разрешают вход.
+A               H       E      A
+Мокрый от пены, и, безусловно, пьяный,
+H          D              E
+Я удираю в новый грядущий год.
+С треском разбив елочные игрушки
+Жмется к столу общество-ассорти.
+Хочется стать взрывчатою хлопушкой
+И расстрелять всех вас залпами конфетти.
+                     A        
+                    Но нужно включиться,
+                               H        
+                    И - раз-два-три! - веселиться.
+                   D           E        
+                    А лучше всего напиться вдрызг
+                         A       E        
+                   Чтоб рухнуть под стол пластом.
+                  A                H        
+                  Кто-то из женщин в маске лисицы
+                   D            E               A     E
+        Приветливо машет мне своим пушистым хвостом.
+Там, наверху, счетчик стучит все чаще.
+Там, наверху, скоро составят счет.
+Кто-то открытку бросил в почтовый ящик.
+Может быть, ангел, может быть - пьяный черт?
+В этом году мне нужен черт лохматый.
+Я с ним охотно чокнусь левой рукой.
+Я объявляю восемьдесят пятый
+Годом серьезных мер по борьбе с тоской.        
+        Но в комнате пусто,
+        Смазаны краски.        
+         Слышен могучий храп за стеной.
+         Кто-то из женщин сбрасывает маску        
+         И остается рядом со мной.
+Как хорошо, когда некуда торопиться.
+Славно проспать первый январский день.
+Надо бы встать, чтобы опохмелиться,
+Надо бы встать, но подниматься лень.
+Город укрылся белой мохнатой шубой.
+В мире объявлен длительный снегопад.
+Лень одеваться, бриться и красить губы.
+Но все равно открывай, наливаем мускат.
+        И мы засыпаем.        
+        Что нам приснится?
+        Лес и дорога, Конь вороной.       
+        Кто-то из женщин в маске лисицы
+        Утром проснется рядом со мной.
+
+Кто-то из женщин быстро с постели встанет,
+Выгладит платье и подойдет к столу.
+Кто-то из женщин все по местам расставит.
+Где-то в углу на кухне найдет метлу.
+
+Кто-то из женщин быстро сметет осколки.
+Вымоет чашки с мылом и кипятком.
+Снимет игрушки. Выбросит наши елки.
+И, не прощаясь, щелкнет дверным замком.
+
+   А солнце все выше! Скоро растает.
+   Деды Морозы получат расчет.
+   Сидя на крыше, скорбно глотает
+   Водку и слезы                
+         мой маленький черт.
+
+</div>
+<hr size=1 width=80%>
+
+
+<font size=3 color="gray" class="posv">
+<a href="#s28"  onMouseOver="window.status='Вверх'; return true;" onMouseOut="window.status='';"><img src="img/st_v.gif" border=0></a>&nbsp;&nbsp;<a name="s5">" Грибоедовский вальс "</a>
+</font><font size=3 class="posv2">
+<div style="margin-left:80;">
+ Am                Dm
+В отдаленном совхозе "Победа"
+      G7                    C
+Был потрепанный старенький "ЗИЛ".
+      Am                  Dm
+А при нем был Степан Грибоедов,
+      E               Am
+И на "ЗИЛе" он воду возил.
+Он справлялся с работой отлично.
+Был по обыкновению пьян.
+Словом, был человеком обычным
+Водовоз Грибоедов Степан.
+После бани он бегал на танцы.
+Так и щупал бы баб до сих пор,
+Но случился в деревне с сеансом
+Выдающийся гипнотизер.
+На заплеванной маленькой сцене
+Он буквально творил чудеса.
+Мужики выражали сомненье,
+И таращили бабы глаза.
+Он над темным народом смеялся.
+И тогда, чтоб проверить обман,
+Из последнего ряда поднялся
+Водовоз Грибоедов Степан.
+Он спокойно вошел на эстраду,
+И мгновенно он был поражен
+Гипнотическим опытным взглядом,
+Словно финским точеным ножом.
+И поплыли знакомые лица...
+И приснился невиданный сон -
+        Видит он небо Аустерлица,        
+	Он не Степка, а Наполеон!
+                Он увидел свои эскадроны.
+                Он услышал раскаты стрельбы
+                Он заметил чужие знамена
+                В окуляре подзорной трубы.
+                Am                     Dm
+                Но он легко оценил положенье
+                     G                 C
+                И движением властной руки
+                       Dm              Am
+                Дал приказ о начале сраженья
+                    E                 Am
+                И направил в атаку полки.
+                Опаленный горячим азартом,
+                Он лупил в полковой барабан.
+                Был неистовым он Бонапартом,
+                Водовоз Грибоедов Степан.
+                Пели ядра, и в пламени битвы
+                Доставалось своим и врагам.
+                Он плевался словами молитвы
+                Незнакомым французским богам.
+                Вот и все. Бой окончен. Победа.
+                Враг повержен. Гвардейцы, шабаш!
+        Покачнулся Степан Грибоедов,
+И слетела минутная блажь.
+На заплеванной сцене райклуба
+Он стоял, как стоял до сих пор.
+А над ним скалил желтые зубы
+Выдающийся гипнотизер.
+Он домой возвратился под вечер
+И глушил самогон до утра.
+Всюду чудился запах картечи
+И повсюду кричали "Ура!"
+Спохватились о нем только в среду.
+Дверь сломали и в хату вошли.
+А на них водовоз Грибоедов,
+Улыбаясь, глядел из петли.
+Он смотрел голубыми глазами.
+Треуголка упала из рук.
+И на нем был залитый слезами
+Императорский серый сюртук.
+
+</div>
+</FONT>
+<hr size=1 width=80%>
+<font size=3 color="gray" class="posv">
+<a href="#s28"  onMouseOver="window.status='Вверх'; return true;" onMouseOut="window.status='';"><img src="img/st_v.gif" border=0></a>&nbsp;&nbsp;<a name="s6">"  Похороны шута "</a>
+</font><font size=3 class="posv2">
+<div style="margin-left:80;">
+  G           C                G
+Еловые лапы охотно грызут мои руки.  
+   G                C              G
+Горячей смолой заливает рубаху свеча.     
+       G             Am              Em
+Средь шумного бала шуты умирают от скуки   
+     C                  D                G
+Под хохот придворных лакеев и вздох палача.
+
+          C        G        D       G       
+        Хмурый дьячок с подбитой щекой        
+        Тянет-выводит за упокой.        
+        Плотник Демьян, сколотивший крест,
+        Как всегда пьян - да нет, гляди-тко, трезв!
+         G        C        D       G        
+       Снял свою маску бродячий актер.         
+       Снял свою каску стрелецкий майор.
+        G       H7              Em        
+       Дама в вуали опухла от слез
+          C        G     D         G                                
+       И воет в печали ободранный пес.
+
+
+Эй, дьякон, молись за спасение божьего храма!
+Эй, дама, ну что там из вас беспрерывно течет?
+На ваших глазах эта старая пошлая драма
+Легко обращается в новый смешной анекдот.
+Вот возьму и воскресну - то-то вам будет потеха!
+Вот так - не хочу помирать, да и дело с концом.
+Подать сюда бочку отборного крепкого смеха!
+Хлебнем и закусим хрустящим соленым словцом.
+        Пенная брага в лампаде дьячка.       
+        Враз излечилась больная щека.
+        Водит с крестом хороводы Демьян.
+        - Эй, плотник, налито! - Да я уже пьян.
+        Спирт в банке грима мешает актер.        
+        Хлещет стрелецкую бравый майор.
+        Дама в вуали и радостный пес -        
+       Эх, поцеловали друг друга взасос.
+Еловые лапы готовы лизать мои руки.
+Но я их - в костер, что растет из огарка свечи.
+Да кто вам сказал, что шуты умирают от скуки?
+Звени, мой бубенчик! Работай, подлец, не молчи!
+Я красным вином написал заявленье о смерти.
+Причина прогула - мол, запил, куда ж во хмелю?
+Два раза за мной приходили дежурные черти,
+На третий сломались и скинулись по рублю.
+А ночью сама притащилась слепая старуха.
+Сверкнула серпом и сухо сказала: "Пора!"
+Но я подошел и такое ей крикнул на ухо,
+Что кости от смеха гремели у ней до утра.
+        Спит и во сне напевает дьячок:        
+       "Крутится, крутится старый волчок"
+        Плотник позорит коллегу-Христа -
+        Спит на заблеванных досках креста.       
+        Дружно храпят актер и майор.
+        Дама с собачкой идут в темный бор.
+        Долго старуха тряслась у костра,
+        Но встал я и сухо сказал ей: "Пора".
+
+</div>
+</FONT>
+<hr size=1 width=80%>
+<font size=3 color="gray" class="posv">
+<a href="#s28"  onMouseOver="window.status='Вверх'; return true;" onMouseOut="window.status='';"><img src="img/st_v.gif" border=0></a>&nbsp;&nbsp;<a name="s7">" Рождественская "</a>
+</font><font size=3 class="posv2">
+<div style="margin-left:80;">
+D                Dm
+Крутит ветер фонари
+A          D
+на реке Фонтанке.
+D                   Dm
+Спите, дети... До зари  
+A             D
+с вами - добрый ангел.
+D                Dm
+Начинает колдовство
+A          D
+домовой-проказник.
+D                   Dm
+Завтра будет Рождество,
+A             D
+Завтра будет праздник.
+Ляжет ласковый снежок
+на дыру-прореху.
+То-то будет хорошо,
+То-то будет смеху.
+Каждый что-нибудь найдет
+в варежках и в шапке.
+А соседский Васька-кот
+спрячет цап-царапки.
+Звон-фольга, как серебро.
+Розовые банты.
+Прочь бумагу! Прочь перо!
+Скучные диктанты.
+Замелькают в зеркалах
+платья-паутинки.
+Любит добрая игла
+добрые пластинки.
+Будем весело делить
+дольки мандарина.
+Будет радостно кружить
+елка-балерина.
+Полетят из-под руки
+клавиши рояля.
+И запляшут пузырьки
+в мамином бокале.
+То-то будет хорошо!
+Смеху будет много.
+Спите, дети. Я пошел.
+Скатертью тревога...
+
+Вариант из альбома "Таганский концерт" имеет отличие в
+аккордном ходе - D Dm A Hm  
+Также в альбомы "Речной вокзал" и "V" помимо 
+аккордного входят отличия текста к первом куплете.
+
+</div>
+</FONT>
+<hr size=1 width=80%>
+<font size=3 color="gray" class="posv">
+<a href="#s28"  onMouseOver="window.status='Вверх'; return true;" onMouseOut="window.status='';"><img src="img/st_v.gif" border=0></a>&nbsp;&nbsp;<a name="s8">" Вишня "</a>
+</font><font size=3 class="posv2">
+<div style="margin-left:80;">
+ Em   G    D    Em G     D    Em
+В поле вишенка одна   ветерку кивает.
+Em    G  D     Em  G   D    Em
+Ходит юная княжна, тихо напевает:
+  Am           Em         Am         H7
+- Что-то князя не видать, песенки не слышно.
+Am       Em        H7         Em
+Я его устала ждать, замерзает вишня.
+В поле снег да тишина. Сказку прячет книжка.
+Веселей гляди, княжна! Да не будь трусишкой.
+Темной ночью до утра звезды светят ясно.
+Жизнь - веселая игра, a игра прекрасна.
+Будь смела и будь нежна даже с волком в поле.
+Только радуйся, княжна, солнышку и воле.
+Будь свободна и люби все, что сердцу мило.
+Только вишню не руби - в ней святая сила.
+Пусть весна нарядит двор в яркие одежды.
+Все, что будет до тех пор, назовем надеждой.
+Нам ли плакать и скучать, открывая двери ?
+Свету теплого луча верят даже звери.
+Всех на свете обними и осилишь стужу.
+Люди станут добрыми, слыша твою душу.
+И войдет в твой терем князь, сядет к изголовью...
+Все, что будет всякий раз, назовешь любовью.
+Всем дается по душе, всем на белом свете.
+В каждом добром мальчише, в женщинах и в детях
+Эта песенка слышна, и поет Всевышний...
+Hачинается весна, расцветает вишня.
+
+</div>
+</FONT>
+<hr size=1 width=80%>
+<font size=3 color="gray" class="posv">
+<a href="#s28"  onMouseOver="window.status='Вверх'; return true;" onMouseOut="window.status='';"><img src="img/st_v.gif" border=0></a>&nbsp;&nbsp;<a name="s9">" Хороший мужик (Песня о Родине) "</a>
+</font><font size=3 class="posv2">
+<div style="margin-left:80;">
+ Dm                      A7            Dm
+Говорила о нем так, что даже чесался язык.
+ Dm                      A7                Dm
+Не артист знаменитый, конечно, но очень похожий.
+     D7                                     Gm
+Молодой, холостой, в общем, с виду хороший мужик.
+     Dm               A7                Dm
+Только как же, мужик ведь - какой он хороший?
+Он к утру приходил на рогах и клонился как штык.
+А она, уходя по утрам, укрывала рогожей.
+И сегодня, шагая с работы, сказала: - Хороший мужик.
+- Ой, да брось ты, мужик ведь - откуда хороший?
+И пила свою чашу и горькую стопку до дна.
+Только тем и ломила хребты с недоноскою ношей.
+- Не сердись, ты хороший мужик, - утешала она.
+И он думал: - Гляди-ка, мужик я, а все же хороший.
+И на бранное ложе сходила как на пьедестал.
+Лишь слегка задыхалась. Да нет же! Дышала как юная лошадь.
+Ну а он еще спал. Жаль, конечно. Да видно устал.
+- Ну а ты как хотела? Мужик ведь - и сразу хороший.
+Подметала свой пол белой ниткой да прям сквозь толстый ватин.
+Чтоб не лечь натощак, до рассвета на кухне курила.
+- Ты хороший мужик, - кружевами его паутин
+Перепутала все, говорила и боготворила.
+И однажды, сорвав ее швы да с изнанки судьбы -
+Да клочками резина и вата, да клочьями кожа -
+Он схватил и понес на руках, как на дыбу, поставил ее на дыбы.
+Только крикнуть успела: - Мужик он и вправду хороший!
+Не Варвара-краса, да не курица-Ряба.
+Не артистка, конечно, но тоже совсем не проста.
+Да Яга не Яга, лишь бы только хорошая баба.
+И под мышку к ней влез и уснул, как за пазухой у Христа.
+Холостые патроны да жены про всех заряжены.
+Он по ней, как по вишне, поет над кудрявой ольхой.
+Так и поняли все, что мужик он хороший. Груженый.
+Ну, а вы как хотели? Мужик ведь - с чего бы плохой?
+
+</div>
+</FONT>
+<hr size=1 width=80%>
+<font size=3 color="gray" class="posv">
+<a href="#s28"  onMouseOver="window.status='Вверх'; return true;" onMouseOut="window.status='';"><img src="img/st_v.gif" border=0></a>&nbsp;&nbsp;<a name="s10">" Не позволяй душе лениться "</a>
+</font><font size=3 class="posv2">
+<div style="margin-left:80;">
+   Am   Dm  G7        C
+Не позволяй    душе лениться,  
+Dm    Am    Hm       E7
+Лупи чертовку     сгоряча. 
+ Am  Dm G7        C
+Душа обя-  зана трудиться
+Dm         Am      E7   Am   
+На производстве кирпича.
+
+Ликует люд в трамвае тесном.
+Танцует трудовой народ.
+Мороз и солнце - день чудесный
+Для фрезеровочных работ.
+
+В огне тревог и в дни ненастья
+Гори, гори, моя звезда!
+Звезда пленительного счастья -
+Звезда Героя соцтруда!
+
+Решил партком единогласно
+Воспламениться и гореть.
+В саду горит костер рябины красной,
+Но никого не может он согреть.
+
+Не мореплаватель, не плотник,
+Не академик, не герой, -
+Иван Кузьмич - ответственный работник.
+Он заслужил почетный геморрой.
+
+Его пример - другим наука.
+Век при дворе. И сам немного царь.
+Так, черт возьми, всегда к твоим услугам
+Аптека, улица, фонарь.
+
+Он был глашатый поколений.
+Куда бы он не убегал,
+За ним по всюду бедный Ленин
+С тяжелой кепкою шагал.
+
+Как славно выйти в чисто поле
+И крикнуть там: - Е..на мать!
+Мы кузнецы. Чего же боле?
+Что можем мы еще сказать?
+
+Когда душа мокра от пота
+Ей некогда ни думать, ни страдать.
+Но у народа нет плохой работы,
+И каждая работа - благодать.
+
+Не позволяй душе лениться
+В республике свободного труда.
+Твоя душа всегда обязана трудиться,
+А паразиты - никогда!
+
+</div>
+</FONT>
+<hr size=1 width=80%>
+<font size=3 color="gray" class="posv">
+<a href="#s28"  onMouseOver="window.status='Вверх'; return true;" onMouseOut="window.status='';"><img src="img/st_v.gif" border=0></a>&nbsp;&nbsp;<a name="s11">" Больное семя "</a>
+</font><font size=3 class="posv2">
+<div style="margin-left:80;">
+     G     D      A
+Мы льем свое больное семя   
+    G   D    A
+На лезвие того ножа,  
+   G     D      A
+Которым нас срезает время,
+G         D   A   
+Когда снимает урожай.
+G       D       C      D   
+Демократичней всех растений
+   G  D      C      D
+Величие простой травы.
+И две мозоли на коленях
+Иным полезней головы!
+Я приглашаю вас к барьеру,
+Своих испытанных врагов -
+За убеждения и веру
+Плеваться с десяти шагов.
+
+Сегодня всем раздали крести -
+И умному и дураку.
+Погиб поэт - невольник чести,
+Сварился в собственном соку,
+   D      A     E
+Пролив свое больное семя   
+D    A   E
+На лезвие того ножа,
+  D     A      E
+Которым нас срезает время,   
+D     A    E
+Когда снимает урожай.
+Давай жевательной резинкой
+Залепим дыры наших ран.
+Разбив любимые пластинки,
+Уткнемся в голубой экран.
+Шуты, фигляры и пророки
+Сегодня носят "Фендера",
+Чтобы воспеть в тяжелом роке
+Интриги скотного двора.
+И каждый вечер в ресторанах
+Они работают и пьют.
+И ищут истину в стаканах,
+И этой истиной плюют!
+Плюют свое больное семя
+На лезвие того ножа,
+Которым нас срезает время,
+Когда снимает урожай.
+Мы запряжем свинью в карету,
+А я усядусь ямщиком.
+И двадцать два квадратных метра
+Объедем за ночь с ветерком.
+Мы вскроем вены торопливо
+Надежной бритвою "Жиллет".
+Но вместо крови льется пиво
+И только пачкает паркет.
+Под тусклым солнцем чахло зреют
+Любви святые семена.
+Любовь подобна гонорее,
+Поскольку лечится она!
+А мы все льем свое больное семя
+На лезвие того ножа,
+Которым нас срезает время,
+Когда снимает урожай.
+
+</div>
+</FONT>
+<hr size=1 width=80%>
+<font size=3 color="gray" class="posv">
+<a href="#s28"  onMouseOver="window.status='Вверх'; return true;" onMouseOut="window.status='';"><img src="img/st_v.gif" border=0></a>&nbsp;&nbsp;<a name="s12">" Хозяйка "</a>
+</font><font size=3 class="posv2">
+<div style="margin-left:80;">
+Am      Dm        E           Am
+Сегодня ночью - дьявольский мороз.
+   Dm     G      C          A7
+Открой, хозяйка, бывшему солдату!
+Dm         G        C          A7   
+Пусти погреться, я совсем замерз,
+   Dm     G    C        A7
+Враги сожгли мою родную хату.
+Dm         G        C          Am   
+Пусти погреться, я совсем замерз,
+   Dm     E             Am
+Враги сожгли мою родную хату.
+
+Перекрестившись истинным крестом,
+Ты молча мне подвинешь табуретку,
+И самовар ты выставишь на стол
+На чистую крахмальную салфетку.
+
+И калачи достанешь из печи,
+С ухватом длинным управляясь ловко.
+Пойдешь в чулан, забрякают ключи.
+Вернешься со своей заветной поллитровкой.
+
+Я поиграю на твоей гармони.
+Рвану твою трехрядку от души.- 
+Чего сидишь, как будто на иконе ?
+А ну, давай, пляши, пляши, пляши...
+
+Когда закружит мои мысли хмель
+И "День Победы" я не доиграю,
+Тогда уложишь ты меня в постель,
+Потом сама тихонько ляжешь с краю.
+
+А через час я отвернусь к стене.
+Пробормочу с ухмылкой виноватой:
+- Я не солдат. Зачем ты веришь мне?
+Я все наврал. Цела родная хата.
+
+И в ней есть все - часы и пылесос.
+И в ней вполне достаточно уюта.
+Я обманул тебя - я вовсе не замерз!
+Да тут ходьбы всего на три минуты.
+
+Известна цель визита моего -
+Чтоб переспать с соседкою-вдовою....
+А ты ответишь: - Это ничего...
+И тихо покачаешь головою.
+
+И вот тогда я кой-чего пойму,
+И кой о чем серьезно пожалею.
+И я тебя покрепче обниму
+И буду греть тебя, пока не отогрею.
+
+Да, я тебя покрепче обниму
+И стану сыном, мужем, сватом, братом.
+Ведь человеку трудно одному,
+Когда враги сожгли родную хату.
+
+</div>
+</FONT>
+<hr size=1 width=80%>
+
+<font size=3 color="gray" class="posv">
+<a href="#s28"  onMouseOver="window.status='Вверх'; return true;" onMouseOut="window.status='';"><img src="img/st_v.gif" border=0></a>&nbsp;&nbsp;<a name="s13">" Пляши в огне "</a>
+</font><font size=3 class="posv2">
+<div style="margin-left:80;">
+Аппликатуру, играемая вместо аккорда G:
+ (3)          (3)                      (3)
+ |o|-|-|-|   |-|-|-|o|   |o|-|-|-|   |o|-|-|-|
+ |o|-|-|-|   |o|-|-|-|   |o|-|-|-|   |o|-|-|-|
+ |-|-|-|-|   |-|-|-|-|   |-|-|-|-|   |-|-|-|-|
+ |-|-|-|-|   |-|-|-|-|   |-|-|-|-|   |-|-|-|-|
+ |-|-|-|-|   |-|-|-|-|   |-|-|-|-|   |-|-|-|-|
+ |-|-|-|-|   |-|-|-|-|   |-|-|-|-|   |-|-|-|-|
+
+И в середине песни
+ (7)         (7)         (7)         (7)
+ |-|-|-|o|   |-|o|-|-|   |o|-|-|-|   |-|o|-|-|   |-|-|-|o|
+ |o|-|-|-|   |o|-|-|-|   |o|-|-|-|   |o|-|-|-|   |o|-|-|-|
+ |o|-|-|-|   |o|-|-|-|   |o|-|-|-|   |o|-|-|-|   |o|-|-|-|
+ |-|-|-|-|   |-|-|-|-|   |-|-|-|-|   |-|-|-|-|   |-|-|-|-|
+
+
+GEm Am  Em  D       G
+Ой-е-е-ей! Бог с тобой!
+Em Am  Em  D       G
+Ой-е-е-ей! Бог с тобой!
+Em         Am         Em              Am          Em
+Если я с собой не в ладу, чтоб ей оборваться, струне,
+              Am       Em             D      G
+Но раз уж объявился в аду - так ты пляши в огне!
+Em         Am      Em    D      G
+Раз ужe в аду, так ты пляши в огне.
+Em         Am       Em       D     G
+Сходу пропаду, если нет ни души во мне.
+Em          Am     Em     D      G
+Мне бы сотворить ворота у трех дорог.
+   Em        Am    Em   D         G
+Да небо своротить охота    до судорог.
+Гадами ползут времена, где всяк себе голова.
+Нынче - Страшный Зуд. На, бери меня, голого!
+Нынче Скудный день. Горе - горном, да смех в меха!
+С пеньем на плетень, - горлом - красного петуха.
+С ниточки по миру отдам, значит сберегу.
+С ниточки по миру - да что я еще могу!
+   Em     Am     D            Em
+Но сбей озноб да брось меня в пот.
+Em    Am     D        Em
+Каков лоб, таков и приход.
+   Am     Em   D              G
+Но дай восход,    и я его подожгу.
+Em      Am     D             Em
+Воля уготована всем кому вольготно.
+Мне с моею милою - рай на шабаше.
+У меня есть все, что душе угодно,
+Но это только то, что угодно душе.
+Ой, не лей елей, да я не пью, я пою, да нынче мне в седло.
+Пей да не жалей, ведь праздник на моей стороне.
+Все бы хорошо, да в одиночку не весело.
+Да почему бы нам с тобой не плясать в огне!
+Чтобы пятки не жгли угли да не пекла зола.
+Да не рубиться в рубли да от зла не искать бы зла.
+Я тобой живу, но прости, мне сны - не житье
+И я не согрешу против истины, согрешив за нее
+Мы облучены, и я иду на звон струны из твоей косы
+Мы обручены, и значит время задуть часы
+Время выйти в лес, где поляны твои святы
+Времени в обрез - цветы и еще цветы.
+Я тебя люблю, и я уйду, раз уж я пришел.
+Я тебя люблю, по колено мне трын-трава.
+Так вей слaвянским словом молва, как все хорошо!
+Славно на земле, где всяк всему голова.
+Я тебя люблю, и в облака смотрю свысока.
+Весело ли грустно, да по Руси по руслу течет река.
+Как течет река в облака, а на самом дне
+Мечется огонь, и я там пляшу в огне!
+
+</div>
+</FONT>
+<hr size=1 width=80%>
+
+<font size=3 color="gray" class="posv">
+<a href="#s28"  onMouseOver="window.status='Вверх'; return true;" onMouseOut="window.status='';"><img src="img/st_v.gif" border=0></a>&nbsp;&nbsp;<a name="s14">" Пора собираться на бал "</a>
+</font><font size=3 class="posv2">
+<div style="margin-left:80;">
+Am                      Dm 
+Мой Бог, вы еще не одеты?   
+E                  Am
+Поймите: нам нужно спешить.   
+Am              Dm
+За Вами прислали карету,
+   E7              Am
+Просили немедленно быть.   
+A7              Dm
+Ну что Вы сидите в халате?   
+G7              C
+Я Вас дожидаться устал.
+    Dm            Am
+Вот Ваше нарядное платье.  
+E                Am
+Пора собираться на бал.
+Взгляните: над 
+Вашим балконом
+Какая сегодня Луна!
+Какие волшебные кони
+Сегодня храпят у окна!
+Хозяйкою нашего трона
+Вас встретит ликующий зал.
+Давайте примерим короны -
+Пора собираться на бал.
+В окошки врывается ветер
+И тихо доносится вальс.
+Примите лишь трон - и весь вечер
+Играет сегодня для Вас.
+Пылающим спиртом наполним
+Мы Ваш изумрудный бокал.
+Все правильно, близится полночь -
+Пора собираться на бал!"
+" - Нет, нет, не готов еще ужин,
+И стирка опять же на мне.
+Я знаю похмельного мужа -
+Не верит он в ваших коней.
+И сил моих женских не хватит,
+Не сладить мне будет с утра...
+Давайте сюда Ваше платье!!!
+На бал собираться пора!"
+</div>
+
+</FONT>
+<hr size=1 width=80%>
+
+<font size=3 color="gray" class="posv">
+<a href="#s28"  onMouseOver="window.status='Вверх'; return true;" onMouseOut="window.status='';"><img src="img/st_v.gif" border=0></a>&nbsp;&nbsp;<a name="s15">" Рыбный день "</a>
+</font><font size=3 class="posv2">
+<div style="margin-left:80;">        
+        G
+        Посмотри:
+                      B         C     G
+                Сырая вата затяжной зари.
+           B          C         G
+                Нас атакуют тучи-пузыри.
+            B         C       G
+                Тугие мочевые пузыри.
+    B           C         D
+        Похоже, наступает рыбный день!
+    B              C           D
+        По всем приметам будет рыбный день!
+    B             C            G
+        Всемирный праздник голубых соплей
+    B             C                 G
+        Налей в бокалы канцелярский клей!
+    B           C           G
+        Давайте праздновать рыбный день.
+    B                    C      G
+        Один из миллиона рыбных дней.
+
+
+        Рыбный день
+
+
+        Шестьдесят минут молчанья в час.
+        Мой растворимый мир открыт для вас.
+        И в паутину заводных сетей
+        Попалась пара заливных гостей.
+        Сегодня тает лед зеркальных глаз
+        Я применил слезоточивый газ.
+        Смотри, сейчас начнется рыбный день
+        Похоже, это будет рыбный день
+        Веселый праздник голубых соплей
+        День рожденья голых королей.
+        Я приглашаю вас на рыбный день
+        Международный рыбный день.
+
+
+                        Рыбный день.
+
+
+        Не торопясь глотаю рыбий жир.
+        Я наблюдаю растворимый мир.
+
+
+                        Рыбный день.
+
+
+        Налегке мы резво плавали в ночном горшке.
+        И каждый думал о червячке
+        На персональном золотом крючке.
+                Но вот сейчас начнется рыбный день.
+                По всем приметам будет рыбный день.
+                Сегодня все идет наоборот.
+                Вот-вот нам перекроют кислород.
+                Для тех, кто вовремя купил билет
+                Сейчас начнется рыбный год,
+                Один из миллиона рыбных лет.
+
+</div>
+</FONT>
+<hr size=1 width=80%>
+
+ </TD>
+</TR>        
+</TABLE>
+
+			</TD>
+		<TD ROWSPAN=2 background="images/ramka1_10.gif">
+			<IMG SRC="images/spacer.gif"></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=1 HEIGHT=172></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=2 ROWSPAN=2>
+			<IMG SRC="images/ramka1_11.gif" WIDTH=62 HEIGHT=60></TD>
+		<TD COLSPAN=4 ROWSPAN=2 BGcolor="white"WIDTH=651 HEIGHT=60>
+			<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0>
+			 <TR>
+			   <TD width=600>
+			 <TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 align=right height=20>
+<TR>
+<TD height=20>
+
+</TD>
+ <TD valign=TOP >
+
+<!-- SpyLOG v2 f:1211 --> 
+<script language="javascript"> 
+u="u610.99.spylog.com";d=document;nv=navigator;na=nv.appName;p=1; 
+bv=Math.round(parseFloat(nv.appVersion)*100); 
+n=(na.substring(0,2)=="Mi")?0:1;rn=Math.random(); z="p="+p+"&rn="+rn;y=""; 
+y+="<a href='http://"+u+"/cnt?f=3&p="+p+"&rn="+rn+"' target=_blank>"; 
+y+="<img src='http://"+u+"/cnt?"+z+ 
+"&r1="+escape(d.referrer)+"&r="+escape(parent.document.referrer)+ 
+"&pg="+escape(window.location.href)+"' border=0 width=88 height=31 alt='SpyLOG'>"; 
+y+="</a>"; d.write(y); if(!n) { d.write("<"+"!--"); } //--></script><noscript> 
+<a href="http://u610.99.spylog.com/cnt?f=3&p=1" target=_blank> 
+<img src="http://u610.99.spylog.com/cnt?p=1" alt='SpyLOG' border='0' width=88 height=31 > 
+</a> </noscript><script language="javascript1.2"><!-- 
+if(!n) { d.write("--"+">"); }//--></script> 
+<!-- SpyLOG -->
+
+</TD>
+<TD width=20>
+&nbsp;
+</TD>
+</TABLE>
+			   </TD>
+			<TD align=center>
+			 <a href="#s28"  onMouseOver="window.status='Вверх'; return true;" onMouseOut="window.status='';"><img src="img/up.gif" border=0></a>
+			 </TD>
+			</TR>
+			</TABLE>
+			</TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=1 HEIGHT=44></TD>
+	</TR>
+	<TR>
+		<TD>
+			<IMG SRC="images/ramka1_13.gif" WIDTH=30 HEIGHT=16></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=1 HEIGHT=16></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=7>
+			<IMG SRC="images/niz.gif" WIDTH=743 HEIGHT=21></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=1 HEIGHT=21></TD>
+	</TR>
+</TABLE>
+</center>
+</TD>
+</TR>
+</TABLE>
+<table border=0 cellPadding=0 cellSpacing=0 width=736 align=center>
+<TR>
+  <TD align=right HEIGHT=21 valign=BOTTOM>
+  <img src="img/line.gif">
+</TD>
+</TR>
+<TR>
+ <TD align=right>
+<font color="#" class="diz1">
+<a href="autors.shtml" class="links">Администрация сайта</a><br> 
+Россия. 9 июня 2000<br>
+Ре-Дизайн: 20 сентября 2001<br>
+контактный e-mail:&nbsp;<a href="mailto:contact@bashlachev.net">contact@bashlachev.net</a>
+ </TD>
+</TR>
+</TABLE>
+&nbsp;
+</BODY>
+</HTML>
+ 
+
+ 

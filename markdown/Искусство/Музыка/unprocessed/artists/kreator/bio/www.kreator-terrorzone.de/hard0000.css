@@ -1,0 +1,24 @@
+.menu {font-family:arial,helvetica,verdana;font-size:10pt}
+.pred {font-family:arial,helvetica,verdana;font-size:11pt;text-align:center}
+.musicra {font-family:arial,helvetica,verdana;font-size:10pt;text-align:center}
+.music {font-family:arial,helvetica,verdana;font-size:12pt;font-weight:bold;text-align:center;font-style:italic}
+.mp3 {font-family:arial,helvetica,verdana;font-size:10pt;text-align:center}
+.spisok {font-family:arial,helvetica,verdana;font-size:12pt}
+.spisokmp3 {font-family:arial,helvetica,verdana;font-size:10pt}
+.glav {font-family:arial,helvetica,verdana;font-size:15pt;font-weight:bold;text-align:center}
+.info {font-family:arial,helvetica,verdana;font-size:10pt}
+.info2 {font-family:arial,helvetica,verdana;font-size:12pt;text-align:center;margin-left:7px}
+.infol {font-family:arial,helvetica,verdana;font-size:12pt;text-align:left;margin-left:7px}
+.infor {font-family:arial,helvetica,verdana;font-size:12pt;text-align:right;margin-left:7px}
+.dop {font-family:arial,helvetica,verdana;font-size:10pt;font-style:italic}
+.az {font-family:arial,helvetica,verdana;font-size:17pt}
+.disco {font-family:arial,helvetica,verdana;font-size:10pt}
+.sostav {font-family:arial,helvetica,verdana;font-size:10pt}
+.linki {font-family:arial,helvetica,verdana;font-size:10pt}
+H4 {font-family:Arial,Verdana,Helvetica; font-size:30pt;text-align:center;text-decoration:none}
+H1 {FONT-WEIGHT: bold; FONT-SIZE: 12pt; FONT-FAMILY: Verdana, Arial, Helvetica; TEXT-DECORATION:underline ;text-align:center}
+A:link {COLOR: #21244a; TEXT-DECORATION: underline}
+A:visited {COLOR: #21244a; TEXT-DECORATION: underline}
+A:active {COLOR: #21244a; TEXT-DECORATION: underline}
+A:hover {COLOR: #0000ff; TEXT-DECORATION: underline}
+p {font-family:Arial,Verdana,Helvetica; text-align:justify;text-indent:15pt;font-size:11pt;margin-left:10px;text-decoration:none}

@@ -1,0 +1,116 @@
+/* Destruction.de Style Sheet */
+
+
+/* Navigationsmenü */
+
+.nav
+		{
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 8pt;
+		letter-spacing:1.1pt;
+		border-style:solid;
+		border-width:1px 1px 1px 1px;
+		border-color:#AAAC8B;
+		padding-left:6px;
+		text-decoration: none;
+		}
+
+.nav a:link
+
+		{
+		font-size: 8pt;
+		text-decoration: none;
+		}
+
+
+.nav a:visited
+
+		{
+		font-size: 8pt; 
+		text-decoration: none;
+		}
+
+.nav a:hover 
+		{
+		font-size: 8pt;
+		text-decoration: none;
+		}
+
+
+.header
+		{
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 9pt;
+		letter-spacing:1.1pt;
+		border-style:solid;
+		border-color:#5A1313;
+		border-width:1px 1px 1px 1px;
+		}
+
+.news
+		{
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 9pt;
+		letter-spacing:1.1pt;
+		border-style:solid;
+		border-color:#5A1313;
+		border-width:0px 2px 2px 2px;
+		}
+
+.text
+		{
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 9pt; 
+		letter-spacing:1.1pt;
+		border-style:solid;
+		border-color:#41411E;
+		border-width:1px 1px 1px 1px;
+		}
+
+
+
+input, textarea, select 
+		{ 
+		background-color:#621414; 
+		font-size:9pt; 
+		color:#FFFFFF; 
+		font-family:Arial, Helvetica, sans-serif; 
+		}
+
+body,p
+		{ 
+		font-size:9pt; 
+		font-family:Arial, Helvetica, sans-serif; 
+
+ scrollbar-base-color:#621414; 
+
+
+		}
+
+
+A:link	{
+		font-family: Arial, Helvetica, sans-serif; 
+		font-size: 9pt;
+		letter-spacing:1.1pt; 
+		text-decoration: none; 
+		}
+
+A:visited 	
+		{
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 9pt;
+		letter-spacing:1.1pt; 
+		text-decoration: none; 
+		}
+
+A:hover  
+	 	{
+		font-family: Arial, Helvetica, sans-serif; 
+		font-size: 9pt;
+		letter-spacing:1.1pt; 
+		text-decoration: underline; 
+		}
+
+
+
+

@@ -1,0 +1,117 @@
+body {background: #35456e; font-size: 76%; margin: 0px; height: 100%}
+.clr {clear: both;}
+#aa {width: 1003px; height:110px;}
+#aa1 {width: 257px; height:110px; background: url(toplogo2.jpg) no-repeat; float:left; padding-top: 0px;}
+#aa2 {width: 726px; height:94px; padding-top: 15px; background: url(topheader.jpg) repeat-x; float:left;}
+#aa3 {width: 20px; height:110px; background: url(topheaderr.jpg) no-repeat; float:left}
+div#tabs {width: 983px; background: url(tab.png) repeat-x 0px 0px; margin: 0px 10px; height: 36px}
+div#tabssx {padding-left: 1px; background: url(tab1.png) no-repeat 0px 0px; height: 36px}
+div#tabsdx {padding-right: 1px; background: url(tab1.png) no-repeat 100% 0px; height: 36px}
+#tabs a:link {padding-right: 8px; display: block; padding-left: 8px; font-weight: bold; font-size: 0.94em; float: left; padding-bottom: 11px; color: #fff; padding-top: 4px; font-family: arial, helvetica, sans-serif; text-decoration: none}
+#tabs a:visited {padding-right: 8px; display: block; padding-left: 8px; font-weight: bold; font-size: 0.94em; float: left; padding-bottom: 11px; color: #fff; padding-top: 4px; font-family: arial, helvetica, sans-serif; text-decoration: none}
+#tabs a:hover {color: #ddd; text-decoration: none}
+#tabs li a {background: url(tab2.png) no-repeat}
+#tabber {padding-right: 0px; padding-left: 0px; float: left; padding-bottom: 0px; padding-top: 0px; white-space: nowrap}
+#tabber ul {padding-right: 0px; padding-left: 0px; float: left; padding-bottom: 0px; margin: 0px; padding-top: 0px; list-style-type: none}
+#tabber li {padding-right: 0px; padding-left: 0px; float: left; padding-bottom: 0px; margin: 0px; padding-top: 0px}
+#tabber li a {background-position: 100% 0px}
+#tabs li.blue {background: url(tabblue.png) repeat-x 0px 0px}
+#tabs li.blue a:hover {background: url(tabred.png) repeat-x 100% 0px}
+body div#sx {background: url(lside.jpg) #f7f7f7 repeat-y 0px 0px}
+body div#dx {background: url(rside.jpg) repeat-y 100% 0px}
+#topmodule {padding-right: 10px; padding-left: 10px; padding-bottom: 0px; width: auto! important; padding-top: 0px}
+#whitebox {background: #fff; margin: 0px 18px; width: auto! important}
+#whitebox div {text-align: left}
+#whitebox_t {background: url(greyline.png) repeat-x 0px 0px}
+#whitebox_tl {background: url(tl.png) no-repeat 0px 0px}
+#whitebox_tr {background: url(tr.png) no-repeat 100% 0px; overflow: hidden; height: 8px}
+#whitebox_m {border-right: #cdcdcd 1px solid; padding-right: 8px; padding-left: 8px; padding-bottom: 1px; border-left: #cdcdcd 1px solid; width: auto! important; padding-top: 1px}
+#whitebox_b {background: url(greyline.png) repeat-x 0px 100%}
+#whitebox_bl {background: url(bl.png) no-repeat 0px 0px}
+#whitebox_br {background: url(br.png) no-repeat 100% 0px; overflow: hidden; height: 8px}
+#area {padding-top: 3px}
+#leftcolumn {padding-right: 0px; padding-left: 0px; float: left; padding-bottom: 0px; margin: 0px; width: 174px; padding-top: 0px}
+#maincolumn {padding-left: 8px; width: 766px; float: left}
+#albums {float: left; width: 435px;}
+#rectangle {float: left; padding-left: 10px; width: 320px;}
+#topartists {float: left; width: 188px;}
+#toplyrics {float: left; padding-left: 10px; width: 565px;}
+div.thinbox h3 {padding-left: 10px; font-weight: bold; font-size: 1em; padding-bottom: 2px; margin: -2px -8px 0px; color: #333; border-bottom: #cdcdcd 1px solid; font-family: helvetica, arial, sans-serif}
+div.thinbox {padding-right: 0px; padding-left: 0px; background: url(tlbox.png) no-repeat 0px 0px; padding-bottom: 0px; margin: 0px 0px 10px; padding-top: 0px}
+div.thinbox div {background: url(trbox.png) no-repeat 100% 0px}
+div.thinbox div div {background: url(blbox.png) no-repeat 0px 100%}
+div.thinbox div div div {padding-right: 8px; padding-left: 8px; background: url(brbox.png) no-repeat 100% 100%; padding-bottom: 8px; width: auto! important; padding-top: 8px}
+div.thinbox ul {padding-left: 20px; margin: 8px 0px}
+div.thinbox ul li a:link {font-weight: bold}
+div.thinbox ul li a:visited {font-weight: bold}
+div.thinbox a.mainlevel:link {padding-left: 0px; background: none transparent scroll repeat 0% 0%}
+div.thinbox a.mainlevel:visited {padding-left: 0px; background: none transparent scroll repeat 0% 0%}
+div.thinbox ul li a:hover {font-weight: bold}
+div.thinbox div div div div {background: none transparent scroll repeat 0% 0%}
+div.center {width: 1003px; text-align: center; align: center}
+div.center {min-width: 750px; max-width: 1040px; margin-left: auto; margin-right: auto}
+div {font-size: 1em; color: #333; line-height: 1.3em; font-family: tahoma,helvetica,arial,sans-serif}
+a {outline: none}
+a:link {font-weight: normal; color: #1b57b1; text-decoration: none}
+a:visited {font-weight: normal; color: #1b57b1; text-decoration: none}
+a:hover {font-weight: normal; color: #00c; text-decoration: underline}
+.let {font-weight: bold; font-size: 1.2em; color: #1b57b1 !important}
+div#footer_r div {font-size: 0.9em; color: #aaa; padding-top: 8px; text-align: center}
+div#footer_r a:link {color: #999}
+div#footer_r a:visited {color: #999}
+body div#footer {background: url(footer.jpg) repeat-x 0px 0px; margin-top: 10px;}
+body div#footer_l {background: url(bottoml.jpg) no-repeat 0px 0px}
+body div#footer_r {background: url(bottomr.jpg) no-repeat 100% 0px; height: 52px}
+.charts {font-size: 0.9em !important;}
+.ago {font-size: 0.8em !important;}
+#page_bg {padding-right: 0px; padding-left: 0px; margin-bottom: 1px; padding-bottom: 10px; padding-top: 10px; height: 100%}
+#updates {width:763px;}
+h1 {font-size: 0.8em; text-align:center; margin:-5px 0 -5px 0; font-family: helvetica, arial, sans-serif; color:#fff;}
+h2 {font-size: 1em; text-align:center; margin:0; font-family: helvetica, arial, sans-serif; color:#000; display:inline}
+h3 {font-size: 1em; text-align:center; font-family: helvetica, arial, sans-serif; color:#000; display:inline}
+.vote {border: 1px solid #ddd; height: 60px; padding-left: 0px;}
+.radio { padding: 0px !important; line-height: 30px !important; margin: 0 !important}
+.notes {/*float: left;*/ padding: 0px !important;}
+.login {margin: 10px 0}
+.profilo {margin: 5px 0}
+a.button {background: transparent url('bg_button_a.gif') no-repeat scroll top right;
+color: #444;display: block;float: left;font: normal 12px arial, sans-serif;height: 24px;margin-right: 6px;padding-right: 18px; /* sliding doors padding */text-decoration: none;}
+a.button span {background: transparent url('bg_button_span.gif') no-repeat;
+display: block;line-height: 14px;padding: 5px 0 5px 18px;}
+a.button:active {background-position: bottom right;color: #000;outline: none; /* hide dotted outline in Firefox */}
+a.button:active span {background-position: bottom left;padding: 6px 0 4px 18px; /* push text down 1px */}
+div.gallery {text-align:center; float: left; width: 150px; height: 150px; margin: 0px 0px 20px 18px;}
+div.gallery a img {padding: 4px; border: 1px solid #ccc;}
+div.gallery a {font-weight: bold; font-size: 0.9em !important; margin: 5px 0 0 0px;}
+div.thinbox div div div div.pellicola {margin:10px; padding-top:13px; background: url(pellicola.png) repeat-x 0px 0px; width:600px; height:86px}
+ol {padding-left:25px;}
+form {margin:0;}
+form.logina {margin-top:3px;}
+.formino {margin-left:5px; height:13px;}
+.loginb  {font-size: 10px; color: #ffffff; border-width: thin; background-color: #1c2e5c; border-top: 2px solid #3f61bd; border-left: 2px solid #3f61bd; border-bottom: 2px solid #0c1e4f; border-right: 2px solid #0c1e4f; font-family: verdana, arial, ms sans serif,tahoma}
+#tabs li.beige a {color: #fff; background:none; padding-top: 5px; margin: 0;}
+#tabs li.beige a:hover {color: #000; background:none; padding-top: 5px; margin: 0;}
+.mp {margin: 0 3px;}
+#maincolumn2 {padding-left: 8px; width: 766px; float: right}
+#leftcolumn2 {padding-right: 0px; padding-left: 0px; float: left; padding-bottom: 0px; margin: 0px; width: 174px; padding-top: 0px}
+h4 {margin:0;}
+#desc {display:none}
+div.thinbox h5 {padding-left: 10px; font-weight: bold; font-size: 1em; padding-bottom: 2px; margin: -2px -8px 0px; color: #333; border-bottom: #cdcdcd 1px solid; font-family: helvetica, arial, sans-serif}
+.facebook a {background: url(/images/facebookoff.png); display: block; height: 48px; width: 48px;}
+.facebook a:hover {background: url(/images/facebookon.png);}
+.facebook a span {display: none;}
+.twitter a {background: url(/images/twitteroff.png); display: block; height: 48px; width: 48px;}
+.twitter a:hover {background: url(/images/twitteron.png);}
+.twitter a span {display: none;}
+.delicious a {background: url(/images/deliciousoff.png); display: block; height: 48px; width: 48px;}
+.delicious a:hover {background: url(/images/deliciouson.png);}
+.delicious a span {display: none;}
+.digg a {background: url(/images/diggoff.png); display: block; height: 48px; width: 48px;}
+.digg a:hover {background: url(/images/diggon.png);}
+.digg a span {display: none;}
+.google a {background: url(/images/googleoff.png); display: block; height: 48px; width: 48px;}
+.google a:hover {background: url(/images/googleon.png);}
+.google a span {display: none;}
+.myspace a {background: url(/images/myspaceoff.png); display: block; height: 48px; width: 48px;}
+.myspace a:hover {background: url(/images/myspaceon.png);}
+.myspace a span {display: none;}

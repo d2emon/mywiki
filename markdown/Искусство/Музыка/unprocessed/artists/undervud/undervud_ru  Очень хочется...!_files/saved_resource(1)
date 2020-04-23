@@ -1,0 +1,2845 @@
+form {
+    margin: 0px;
+    padding: 0px;
+}
+
+.ljclear {
+    clear: both;
+    margin: 0 -1px -1px 0;
+    border: 0;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    font-size: 0;
+    line-height: 0;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.lj_progresscontainer {
+    height: 25px;
+    width: 400px;
+    margin: 1em;
+    background: url(/img/progress/inactive.gif) repeat;
+}
+
+.lj_progressoverlay {
+    background: url(/img/progress/active.gif) repeat;
+}
+
+.lj_progressindefinite {
+    background-image: url(/img/progress/barber.gif);
+}
+
+.lj_hourglass {
+        z-index: 20000;
+}
+
+.ErrorNote .Inner {
+    background-color: #FFEEEE;
+    background-repeat: repeat-x;
+    border: 1px solid #FF9999;
+    padding: 8px;
+}
+
+.Note .Inner {
+    background: #FFFFDD;
+    border: 1px solid #FFCC33;
+    padding: 8px;
+}
+
+.helper {
+    font-size: 0.8em;
+    color: #666;
+}
+
+div.lj_ippu {
+    background-color: #fff;
+    border: 2px solid #444;
+    padding: 2px;
+}
+
+div.lj_ippu_titlebar {
+    background-color: #444;
+    height: 20px;
+    font-weight: bold;
+    color: #fff;
+    width: auto !important;
+    padding: 5px 0 0 5px;
+}
+
+    div.lj_ippu_titlebar div {
+        
+    }
+
+    .lj_ippu_titlebar img {
+        opacity: .25;
+    }
+    
+        .lj_ippu_titlebar img:hover {
+            opacity: 1;
+        }
+
+.LJ_Placeholder_Container {
+    position:relative;
+    display:-moz-inline-box;
+    display:inline-block;
+    border:1px dashed #ccc;
+    }
+.LJ_Placeholder_Container A {
+    position:relative;
+    top:50%;
+    left:50%;
+    visibility:hidden;
+    }
+.LJ_Placeholder_Container A IMG {
+    margin:-17px 0 0 -17px;
+    cursor:pointer;
+    position:relative;
+    visibility:visible;
+    }
+IFRAME.lj_embedcontent {
+    border:0;
+    vertical-align:top;
+    }
+.ljhidden {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 0;
+        height: 0;
+        margin: 0;
+        border: 0;
+        padding: 0;
+        font-size: 0.1px;
+        line-height: 0;
+        opacity: 0;
+        filter: alpha(opacity=0);
+}
+
+.lj_pollanswer {
+}
+
+.lj_pollanswer_loading {
+        color: #CCC;
+        border: 1px solid #EEE;
+}
+
+.super {
+    vertical-align: super;
+    font-size: .7em;
+}
+
+.notice {
+    color: #f00;
+}
+
+.ljedittime {
+    font-size: smaller;
+}
+
+.warning-background {
+    background-image: url('/img/message-warning.gif');
+}
+
+.lj_invisible {
+    display:-moz-inline-box;
+    display:inline-block;
+    line-height:0;
+    width:0;
+    height:0;
+    padding:0;
+    border:0 none transparent;
+    margin:0;
+    overflow:hidden;
+    text-decoration:none;
+}
+
+
+/* Link to current LJ.com version 
+------------------------------------ */
+DL.current-version {
+    margin: 10px 0;
+    padding: 0;
+    border: 0;
+    text-align: left;
+    }
+    DL.current-version DT,
+    DL.current-version DD {
+        display: inline;
+        margin: 0;
+        padding: 0 3px 0 0;
+        text-align: left;
+        white-space: nowrap;
+        font-size: 11px !important;
+        font-weight: normal;
+        }
+
+
+/* transparency for ie */
+.lj_embedcontent { zoom:expression(runtimeStyle.zoom = '1',allowTransparency = true); }
+
+/* WLMInterstitial */
+.wlm-interstitial {
+    text-align:left;
+    padding:20px 230px 10px 10px;
+    background:url(/img/lj_wlm/interstitial-screenshot.jpg) no-repeat 274px 3px;
+    }
+    .wlm-interstitial H1 {
+        font-size:2.6em;
+        text-transform:uppercase;
+        color:#375991;
+        }
+    .wlm-interstitial FIELDSET {
+        border:0;
+        padding:10px 0 0;
+        margin:0;
+        }
+        .wlm-interstitial FIELDSET UL,
+        .wlm-interstitial FIELDSET LI {
+            padding:0;
+            margin:0;
+            display:block;
+            list-style:none;
+            }
+        .wlm-interstitial FIELDSET UL {
+            padding-bottom:10px;
+            }
+        .wlm-interstitial FIELDSET .wlm-submit-button {
+            width:55px;
+            }
+.lj_ippu_titlebar {
+    text-align:left;
+    }
+.lj_ippu_titlebar IMG {
+    cursor:pointer;
+    }
+
+.opera-filter { display:none; }
+HTML:first-child .opera-filter { display:block; } /* opera lt 9.5 */
+HTML:not(IE7) .opera-filter, x:-o-prefocus { display:block; } /* opera gte 9.5 */
+
+
+.user_alias_act {
+	padding: 13px 24px;
+	text-align: left;
+	font-size: 16px;
+	}
+	.user_alias_act INPUT {
+	    font-family: Arial, sans-serif;    
+	    }
+		.user_alias_act .alias-value {
+			width: 380px;
+			}
+	.user_alias_act P {
+		margin: .75em 0px;
+		text-indent: 0;
+	    }
+	.user_alias_act DIV.user-alias-label {
+		padding-top: 5px;
+		margin-bottom: 5px;
+	    font-size: 0.85em;
+	    }
+	.user_alias_act SPAN.helper {
+		padding-top: 12px;
+		display: block;
+		color:#000;
+		font-size: 0.7em;
+		}
+        .user_alias_act A:link,
+        .user_alias_act A:visited,
+        .user_alias_act A:hover,
+        .user_alias_act A:active {
+              border: 0 !important;
+              text-decoration: underline;
+              }
+        .user_alias_act A:link{
+            color: #0000CC;
+            }
+        .user_alias_act A:visited {
+            color: #330066;
+            }
+        .user_alias_act A:link:hover {
+            color: #0000CC;
+            }
+        .user_alias_act A:visited:hover {
+            color: #330066;
+            }
+        .user_alias_act A:link:active {
+            color: #0000CC;
+            }
+        .user_alias_act A:visited:active {
+            color: #330066;
+            }
+
+/* Styles for messagers, 
+Must be removed after implementation of Framework! */
+.b-message {
+    padding: 8px;
+    margin: 10px 0 24px;
+    }
+.b-message-suggestion {
+    background: #FFE8BF;
+    border: 1px solid #FF8E44;
+    } 
+
+/* Disabled block
+--------------------------- */
+/* Must be removed after implementation of Framework! */
+.st-disabled {
+    position:relative;
+    }
+
+/* Blocking layer */
+.b-blocker {
+    position:absolute;
+    top:0;
+    left:0;
+    display:none;
+    width:100%;
+    height:100%;
+    }
+    .st-disabled .b-blocker {
+        display:block;
+        }
+    .b-blocker-over {
+        z-index:1000000000;
+        }
+    .b-blocker-white {
+        background:#FFF;
+        }
+    .b-blocker-gray {
+        background:#808080;
+        }
+    .b-blocker-gray,
+    .b-blocker-white {
+        -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+        filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+        opacity:.5;
+        }
+
+/* Block for adding HTML into headers.
+It must be invisible, use it only for reskining */
+.b-reskining-header {
+	display: none;
+	}
+
+/*---------- Manage Settings ----------*/
+/*-------------------------------------*/
+
+#manageSettings {
+    }
+
+.Subscribe {
+    width: 100%;
+    padding: 0;
+    margin: .5em 0 0 0;
+    clear: both;
+    }
+
+.Subscribe tr.Inactive {
+    color: #aaa;
+}
+
+.Subscribe tr.Disabled {
+    background-color: #eee;
+}
+
+.Subscribe tr.altrow {
+    background-color: #f1f1f1;
+}
+
+.Subscribe tr.Inactive a {
+    color: #aaa;
+}
+
+.Subscribe td {
+    padding: .3em;
+}
+
+.Subscribe td img {
+    border: 0;
+}
+
+.Subscribe td label {
+    cursor: pointer !important;
+}
+
+.Subscribe td p {
+    color: #666;
+    background: #fff;
+    cursor: default !important;
+}
+
+.CategoryRow .Caption {
+    text-align: right;
+    vertical-align: bottom;
+}
+
+.CategoryRow {
+    width: 100%;
+}
+
+.CategoryRow td {
+    vertical-align: middle;
+    border-bottom: 1px solid #ddd;
+    padding: 2em .4em .2em .4em;
+}
+
+.CategoryRowFirst td {
+    padding-top: .2em;
+}
+
+.CategoryRow .caption {
+    text-align: right;
+}
+
+.CategoryRow label {
+}
+
+.CategoryHeading {
+    font-weight: bold;
+}
+
+.CategoryHeadingNote {
+}
+
+#Subscriptions {
+    width: 100%;
+}
+#Subscriptions th {
+    text-align: left;
+}
+#Subscriptions td, #Subscriptions th {
+    padding-left: .5em;
+    padding-right: .5em;
+}
+#Subscriptions tr.lighter {
+    background-color: #cff;
+}
+#Subscriptions tr.darker {
+    background-color: #9cc;
+}
+div.argOptsContainer {
+    display: none;
+}
+
+#SubscribeSaveButtons {
+    text-align: center;
+    border: 1px solid #333;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+#SubscribeSaveButtons input {
+    margin: 5px;
+}
+
+#SubscriptionInfo {
+    width: 95%;
+    text-align: center;
+    margin: 1em auto;
+}
+
+#SubscriptionInfo p, #SubscriptionInfo div {
+    font-size: 1em;
+    margin: 0;
+    padding: .2em;
+}
+
+/*----------- Message Center ----------*/
+/*-------------------------------------*/
+
+
+.NotificationTable {
+    width: 100%;
+}
+
+.NotificationTable tr.Selected {
+    background-color: #cee0fb;
+}
+
+.NotificationTable tr.Selected td {
+    border-top: 1px solid #ccc;
+}
+
+.NotificationTable td {
+    border-top: 1px solid #ddd;
+}
+
+
+#NotificationSidebar {
+
+}
+
+#NotificationSidebar p {
+    margin: 0;
+    padding: 0;
+}
+
+#NotificationSidebar .Blurb {
+    margin: 0 0 1em 0;
+    padding: 0;
+}
+
+#NotificationSidebar .BlurbTitle {
+    font-weight: bold;
+    margin: 0 0 .4em 0;
+}
+
+#NotificationSidebar .ljad {
+    float: left;
+    margin-right: 1em;
+}
+
+.esnlinks {
+    float: right;
+    display: block;
+    margin: 0 0 0 0;
+    font-weight: normal;
+    }
+
+.NotificationTable .inbox {
+    padding: 0;
+    margin: 0em 0 0em 0;
+    border-top: 1px solid #ddd;
+}
+
+.inbox .header {
+    width: 100%;
+    margin: 0;
+    background: #ddd;
+    vertical-align: middle;
+    border: 0;
+    padding: 3px;
+}
+
+.actions {
+    font-size: 0.9em;
+}
+
+span.Pages {
+    float: right;
+}
+
+span.Pages input {
+}
+
+.inbox tr {
+    cursor: pointer;
+}
+
+.inbox_newitems {
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.InboxItem_Controls {
+    float: left;
+    width: 40px;
+}
+
+.InboxItem_Unread {
+    font-weight: bold;
+    }
+
+.InboxItem_Read {
+    color: #888;
+}
+
+span.InboxItem_Read:hover {
+    color: #000;
+}
+
+span.InboxItem_Read a {
+    color: #999 !important;
+}
+span.InboxItem_Read:hover a {
+    color: inherit !important;
+}
+
+.InboxItem_Meta {
+
+}
+
+.InboxItem_Meta td {
+    padding: 0 0 0 0;
+}
+
+.inbox .alt {
+    background: #f6f6f6;
+}
+
+.inbox .alt td {
+}
+
+.inbox .checkbox {
+    width: 1%;
+    padding: .1em;
+    vertical-align: top;
+}
+
+.inbox td.NoItems {
+    font-size: 3em;
+    text-align: center;
+    padding: 1em;
+    color: #ddd;
+    cursor: default !important;
+}
+
+.inbox td.item {
+    padding: .3em 0 .2em .4em !important;
+    vertical-align: middle;
+}
+
+.InboxItem_Content {
+    padding: .5em 0 .2em 0;
+    width: 95%;
+}
+
+.inbox td.time {
+    width: 8.5em;
+    font-size: .8em;
+    color: #555;
+    vertical-align: top;
+    padding-top: .4em;
+}
+
+.inbox .JournalNewComment {
+}
+
+.inbox .Subject {
+    font-weight: bold;
+}
+
+.inbox .ManageButtons {
+    float: right;
+    width: 104px;
+    position: relative;
+    top: 4px;
+    margin: 0 0 .5em 0;
+}
+
+.inbox .Body {
+}
+
+.NotificationTable tr.Selected .Body {
+}
+
+/* folder links */
+.folders a {
+    white-space: nowrap;
+    text-decoration: none;
+    color: #000;
+    display: block;
+    margin: 0px;
+    padding: 0px 0px 1px 2px;
+    border: 1px solid #fff;
+}
+.folders a.subs {
+    padding-left: 1em;
+}
+.folders .subs {
+    padding-left: 1em;
+}
+.folders a.subsubs {
+    padding-left: 2em;
+}
+.folders a:visited, .folders a:link {
+    color: #000;
+}
+.folders a:hover {
+    border: 1px solid #bbb;
+    background-color: #eee;
+}
+
+/**** ESN AJAX ****/
+.ippu {
+    color: #000000
+}
+
+.ippu .track_title {
+    font-weight: bold;
+    color: #CC6644;
+    margin: 4px;
+}
+
+.ippu .track_btncontainer {
+    margin-top: 5px;
+    padding: 1px;
+    width: 250px;
+}
+
+.ippu .track_moreopts {
+    margin: auto auto auto 1em;
+    width: 49%;
+}
+
+.ippu .track_savechanges {
+    margin: auto auto auto auto;
+    width: 49%;
+}
+
+#compose label {
+    font-weight: bold;
+}
+
+div.ContextualPopup {
+    position: relative;
+    margin: 5px 0 0 20px;
+    font: normal 11px "Arial", "Verdana", sans-serif !important;
+    text-align: left;
+    }
+
+* html div.ContextualPopup {
+    background: none !important;
+    }
+
+div.ContextualPopup img {
+    border: 0;
+    }
+
+div.ContextualPopup div.Inner {
+    position: relative;
+    top: -2px;
+    left: -2px;
+    background-color: #fff !important;
+    color: #000 !important;
+    border: 1px solid #036;
+    padding: 0px;
+    width: 20em;
+    }
+
+* html div.ContextualPopup div.Inner {
+    top: 0px;
+    left: 0px;
+    }
+
+div.ContextualPopup .Content {
+    padding: 2px 4px 6px 4px;
+    margin-right: 50px;
+    line-height: 1.4;
+    }
+
+   div.ContextualPopup .Relation {
+       font-weight: bold !important;
+       }
+
+   div.ContextualPopup .Content .OnlineStatus {
+       font-weight: bold;
+       }
+
+   div.ContextualPopup .Content .GizmoBlurb {
+       font-size: smaller;
+       }
+
+div.ContextualPopup .Userpic {
+    float: right;
+    top: 0;
+    right: 0px;
+    padding: 4px 4px 0 0;
+    }
+
+* html div.ContextualPopup .Userpic {
+    top: 2px;
+    }
+
+   div.ContextualPopup .Userpic img {
+        margin: 0 auto;
+        max-width: 50px;
+        width:expression(this.width > 50 ? "50px" : this.width); /*IE Max-width */
+        height: auto;
+        vertical-align: middle;
+        }
+
+   div.ContextualPopup div.Inner a:link,
+   div.ContextualPopup div.Inner a:visited {
+        text-decoration: underline !important;
+        border-bottom:0 none;
+        font-weight: bold;
+        color: #00C !important;
+        }
+
+	div.ContextualPopup div.Inner .alias-unavailable A, 
+	div.ContextualPopup div.Inner .alias-unavailable A:link, 
+	div.ContextualPopup div.Inner .alias-unavailable A:visited {
+		color:#999 !important;
+		}
+
+/*
+    This is utility css that can be used anywhere in the app
+    It should be included on all app pages in all schemes
+*/
+
+/* .pkg class wraps enclosing block element around inner floated elements */
+.pkg:after {
+    content: " ";
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0.1px;
+    font-size: 0.1em;
+    line-height: 0;
+}
+.pkg { display: inline-block; }
+/* no ie mac \*/
+* html .pkg { height: 1%; }
+.pkg[class] { height: auto; }
+.pkg { display: block; }
+/* */
+
+/* form styles */
+label.left {
+    display: block;
+    float: left;
+}
+input.text,
+textarea.text,
+select.select {
+    margin: 0px 3px 0px 0px;
+    padding: 2px 2px;
+    background: #fff url(/img/input-bg.gif) repeat-x 0 -1px;
+    border: 1px solid #bbb;
+    border-top: 1px solid #999;
+    border-left: 1px solid #999;
+}
+select.select {
+    padding: 1px;
+}
+fieldset.nostyle {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+input.create-account {
+    font-size: 110%;
+    color: #fff;
+    margin: 0;
+    background: #559A40;
+    border: 2px solid #76AE65;
+    border-bottom: 2px solid #447C33;
+    border-right: 2px solid #447C33;
+}
+
+.detail {
+    font-size: 90%;
+    color: #444;
+}
+p.detail {
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+h2.widget-header {
+    margin: 0 0 6px 0;
+    padding: 0 0 6px 0;
+    border-bottom: 1px solid #ccc;
+}
+ul.detail li {
+    font-size: 90%;
+}
+hr.hr {
+    border: 0;
+    width: 100%;
+    color: #8FC3F7; background-color: #8FC3F7;
+    height: 1px;
+}
+/* generic class for removing styling from ul */
+ul.nostyle {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* tables where rows alternate colors */
+table.alternating-rows th {
+    text-align: left;
+    border-top: 1px solid #8FC3F7;
+    border-bottom: 1px solid #8FC3F7;
+    background-color: #C5DFF9;
+    padding: 6px 4px;
+}
+table.alternating-rows tr.altrow1 {
+    background-color: #fff;
+}
+table.alternating-rows tr.altrow2 {
+    background-color: #eee;
+}
+table.alternating-rows td {
+    padding: 6px 4px;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+}
+
+/* columns for content layouts */
+
+div.columns-2 .columns-2-left {
+    float: left;
+    width: 49%;
+}
+div.columns-2 .columns-2-right {
+    float: right;
+    width: 49%;
+}
+div.columns-2-r300 {
+    width: 720px;
+}
+div.columns-2-r300 .columns-2-left {
+    float: left;
+    width: 405px;
+    margin-right: 15px;
+}
+div.columns-2-r300 .columns-2-right {
+    float: left;
+    width: 300px;
+}
+
+/* default margin for widgets */
+
+.appwidget {
+    margin-bottom: 15px;
+    position: relative;
+}
+.appwidget .more-link {
+    position: absolute;
+    right: 7px;
+    top: 6px;
+    font-size: 11px;
+    text-decoration: none;
+    padding-left: 10px;
+    text-transform: lowercase;
+    color: #114577 !important;
+    background: url('/img/arrow-double-blue.gif') no-repeat 0 60%;
+}
+*HTML .appwidget .more-link {
+    right: 27px;
+}
+
+.appwidget .more-link:hover {
+    text-decoration: underline;
+}
+/* add this class to anything to make upgrade icon appear next to it */
+
+.upgrade-account {
+    padding-right: 18px;
+    background: url('/horizon/upgrade-paid-icon.gif') no-repeat right 50%;
+}
+
+.arrow-link,
+.more-link {
+    padding-left: 12px;
+    background: url('/img/arrow-double-black.gif') no-repeat 0 50%;
+}
+
+/* Used to encapsualte message forms like Invite and Tell a Friend */
+.message {
+    border: 5px solid #eee;
+    margin-bottom: 15px;
+}
+
+.message blockquote {
+    margin: 0;
+    border: 1px solid #aaa;
+    padding: 15px;
+}
+
+.standout-border {
+    border: 1px solid #8fc3f7;
+    padding: 6px;
+}
+.standout-background {
+    background-color: #c5dff9;
+}
+
+/* Sidebars floated to the right */
+div.right-sidebar {
+    float: right;
+    width: 300px;
+    color: #000000;
+    background-color: #c5dff9;
+    border: 1px solid #8fc3f7;
+    margin: 10px;
+    padding: 10px;
+}
+div.ad-sidebar {
+    width: 300px;
+    float: right;
+}
+
+.textbutton { 
+    color: #0000CC;
+    cursor: pointer;
+}
+
+/* Solid background headings */
+h2.solid-neutral {
+    font-size: 14px;
+    font-family: Arial;
+    font-weight: bold;
+    background: #ededed url(/img/corner.gif) no-repeat 0 0;
+    margin: 0 0 8px 0;
+    padding: 5px 8px;
+    color: #222;
+}
+h2.solid-blue {
+    position: relative;
+    font-size: 14px;
+    font-family: Arial;
+    font-weight: bold;
+    background: #d7e7f7 url(/img/corner.gif) no-repeat 0 0;
+    margin: 0 0 8px 0;
+    padding: 5px 8px;
+    color: #222;
+}
+.solid-neutral {
+    background: #ededed;
+}
+
+input.bright {
+    background: url(/img/yellow_gradient.gif) repeat;
+    border: 1px solid #b48101;
+    color: #1f3368;
+    font-weight: bold;
+}
+
+.rounded-box {
+    background: no-repeat;
+    zoom: 1;
+}
+
+.rounded-box .rounded-box-tr {
+    background: 100% 0 no-repeat;
+}
+
+.rounded-box .rounded-box-bl {
+    background: 0 100% no-repeat;
+}
+
+.rounded-box .rounded-box-br {
+    background: 100% 100% no-repeat;
+    padding: 2px; /* border width */
+}
+
+.rounded-box .rounded-box-content {
+    padding: 10px;
+}
+.ljad h4
+{
+    text-align: left;
+    font-size: 10px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #444;
+    margin: 0;
+}
+.ljad A:link,
+.ljad A:visited
+{
+    font-size: 10px;
+    border: 0 !important;
+}
+.ljad img { border: 0; }
+.ljadskyscraper
+{
+    width: 160px;
+}
+.ljadleaderboard, .ljadleaderboard-top, .ljadleaderboard-bottom
+{
+    width: 728px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ljadsmrect
+{
+    width: 185px;
+}
+.ljadmedrect
+{
+    width: 300px;
+    overflow: hidden;
+    zoom: 1;
+}
+.ljadmedrect OBJECT,
+.ljadmedrect EMBED,
+.ljadmedrect IMG {
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.adv-box BR,
+.ljadafter-post-a BR,
+.ljadmedrect BR {
+    display: none;
+}
+
+.adv-box IMG,
+.ljadafter-post-a IMG,
+.ljadmedrect IMG {
+    vertical-align:top;
+}
+.adv-box DL DD A IMG,
+.ljadafter-post-a DL DD A IMG,
+.ljadmedrect DL DD A IMG {
+    margin:0;
+}
+
+
+.ljad5linkunit
+{
+    width: 728px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ljadbadge
+{
+    width: 160px;
+    margin-bottom: 15px;
+}
+.ljadentrybox
+{
+    width: 468px;
+}
+
+
+/* Styling for search ads */
+
+.lj_inactive_ad {
+    display: none;
+}
+
+.lj_content_ad {
+    border: 1px solid #FFD63F;
+    width: 580px;
+    overflow: hidden;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 5px;
+    padding-bottom: 0;
+}
+
+.lj_content_ad .ad_header {
+    font-weight: bold;
+}
+
+.lj_content_ad .ad_text,
+.lj_content_ad .ad_url {
+    font-size: 11px;
+}
+
+/* Avertising for sup's user
+----------------------------- */
+.adv {
+position: relative;
+overflow: hidden;
+zoom:1;
+min-width: 400px;
+clear: both;
+background: #fff;
+border: 1px solid #808080;
+padding: 12px;
+text-align: left !important;
+}
+.adv-box {
+overflow: hidden;
+height: 250px;
+width: 100%;
+min-width: 400px;
+}
+* HTML .adv-box {
+width:expression(parentNode.clientWidth < 530 ? "400px" : "100%");}
+/* HTML .adv-box {
+width:expression(document.documentElement.clientWidth < 793 ? "400px" : "100%");}
+
+* HTML #adv_digitalmult .adv-box {	
+width:expression(document.documentElement.clientWidth < 944 ? "300px" : "100%");}
+*/
+/* Banner */
+.adv-box-banner {
+float: left;
+width: 313px;
+height: 250px;
+text-align: left;
+}
+
+/*text banner*/
+.adv-box-text {
+float: left;
+overflow: visible;
+width: 100%;
+min-width: 530px;
+margin-right: -313px;
+padding-top: 30px;
+}
+.adv-box-text-in {
+margin-right: 313px;
+}
+.body-adv-box {
+zoom:1;
+}
+/* min-width for ie6 */
+* HTML .mw {
+overflow:hidden;
+width:530px;
+height:0;
+font-size: 0;
+line-height: 0;
+}
+/* Advertising header 
+------------------------------*/
+H3.h-adv-box {
+padding: 3px 7px 5px 7px !important;
+margin: 0 !important;
+border: 0 !important;
+background: #a92242 !important;
+text-transform: uppercase;
+font: 10px/1 Verdana, Arial, sans-serif;
+color: #FFF;
+}
+H3.h-adv-box A {
+border: 0 !important;
+text-decoration: none !important;
+font: 10px/1 Verdana, Arial, sans-serif !important;
+color: #FFF !important;
+background: none !important;
+}
+H3.h-adv-box A:hover {
+border: 0 !important;
+text-decoration: underline !important;
+color: #FFF !important;
+}
+.adv H3.h-adv-box {
+position: absolute;
+right: -1px;
+top: 12px;
+float: right;
+z-index: 100;
+border: 0 !important;
+}/* Define text color and typography */
+html, body {
+    height: 100%;
+}
+body {
+    color: #000000;
+    background-color: #fff;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    min-width: 840px;
+    width: 100%;
+}
+a:link {
+    color: #00C; background-color: transparent;
+}
+a:visited {
+    color: #306; background-color: transparent;
+}
+a:active {
+    color: #F60; background-color: transparent;
+}
+h1 {
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #036; background-color: transparent;
+    margin: 0 0 0.4em 0; padding: 0;
+}
+h1 a {
+    font-weight: normal;
+}
+h2 {
+    font-weight: normal;
+    color: #036;
+    margin: 0.3em 0 0.1em 0; padding: 0;
+}
+h3 {
+    color: #024; background-color: transparent;
+    font-style: italic;
+    margin: 0.2em 0 0.2em 0; padding: 0;
+}
+p {
+    margin: 0.75em 0;
+}
+body, dd, dt, th, td, p, div, li, pre, code, kbd { font-size: small; }
+h3 { font-size: medium; }
+h2 { font-size: large; }
+h1 { font-size: x-large; }
+li { margin-left: 0px; }
+
+h1.title {
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+}
+
+#NavigationWelcomeLogo {
+    position: relative;
+    top: 0;
+    left: 0;
+    font-size: 0.8em;
+    color: #444;
+    height: 6.11em;
+    margin: 0;
+    padding: 0;
+}
+#NavigationWelcomeLogo a {
+    color: #444;
+    font-weight: 700;
+}
+#Content pre {
+   line-height: 1em;
+}
+
+/* Utility CSS */
+.clear {
+    clear: both;
+    margin: 0 -1px -1px 0;
+    border: 0;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    font-size: 0;
+    line-height: 0%;
+}
+
+.hide {
+    display: none;
+}
+hr {
+    border: 0;
+    width: 100%;
+    color: #369; background-color: #369;
+    height: 2px;
+}
+table.edged {
+    border: 2px solid #c5dff9;
+}
+table.edged td {
+    border: 1px solid #8fc3f7;;
+}
+.standout {
+    text-align: center;
+}
+.standout .container {
+    color: #000; background-color: #c5dff9 !important;
+    border: 1px solid #8fc3f7;
+    padding: 3px;
+    /* margin shorthand isn't recognized by IE5/Mac */
+    margin-top: auto; margin-bottom: auto;
+    margin-left: auto; margin-right: auto;
+    width: auto;
+    text-align: left;
+}
+.standout span.container {
+    padding: 8px 7px !important;
+    display: inline-block;
+}
+.errorbar {
+    color: #000;
+    font: 12px Verdana, Arial, Sans-Serif;
+    background-color: #FFEEEE;
+    background-repeat: repeat-x;
+    border: 1px solid #FF9999;
+    padding: 8px;
+    margin-top: auto; margin-bottom: 5px;
+    margin-left: auto; margin-right: auto;
+    width: auto;
+    text-align: left;
+}
+.warningbar {
+    color: #000;
+    font: 12px Verdana, Arial, Sans-Serif;
+    background-color: #FFFFDD;
+    background-repeat: repeat-x;
+    border: 1px solid #FFCC33;
+    padding: 8px;
+    margin-top: auto; margin-bottom: 5px;
+    margin-left: auto; margin-right: auto;
+    width: auto;
+    text-align: left;
+}
+.de {
+    color: #909090; background-color: #ffffff;
+}
+
+/* layout */
+
+.talk-comment {
+    margin-top: 1em;
+    margin-bottom: 0px;
+}
+#commenttext { width: 100%; }
+
+/* Form Items */
+.formitem {
+    color: #343434;
+    font-size: 1em;
+}
+
+.formnumber {
+    font-weight: bold;
+    margin-top: 1.8em;
+    font-size: .9em;
+}
+
+.formitemName {
+    font-weight: bold;
+    font-size: .9em;
+    margin-top: 1.8em;
+}
+
+.formitemDesc {
+    margin-top: .4em;
+    margin-bottom: .4em;
+    color: #505050;
+}
+
+.formitemNote {
+    color: #da6320;
+    font-size: .9em;
+    margin-top: .4em;
+    margin-bottom: .4em;
+}
+
+.formitemFlag {
+    color: #CE0000;
+    font-size: .9em;
+    margin-top: .4em;
+    margin-bottom: .4em;
+}
+
+.borderedtable {
+    border: solid 1px black;
+}
+
+/* the top of the borderedtable, use th tags for header columns */
+.borderedtable th {
+    background-color: #dddddd;
+    border-bottom: solid 1px black;
+    padding-left: 10px;
+    padding-right: 10px;
+    white-space: nowrap;
+}
+
+
+.userslist-table {
+        border: 1px solid #DDD;
+}
+
+.userslist-table TH, .aliaslist-table TH  {
+        background: #DDD;
+        padding: 2px 10px;
+        white-space: nowrap;
+        text-align:left;
+}
+	.aliaslist-table TH {
+		padding: 4px 10px;
+	}
+.userslist-table TD {
+        padding: 3px 10px;
+}
+
+.aliaslist-table {
+	border: 0;
+	border-spacing: 0px;
+	}
+	.aliaslist-table TD {
+		padding: 3px 3px 3px 10px;
+		}
+	.aliaslist-table .user_alias {
+		padding: 3px 0px 3px 10px;
+		}
+		.aliaslist-table .user_alias INPUT {
+			width: 300px;
+			}
+	.aliaslist-table .newalias TD {
+		padding: 14px 0px 3px 10px;
+		font-weight: bold;
+	}
+
+/* Extended.css */
+.hide {
+    display: none;
+}
+div.centered {
+    text-align: center;
+    width: 100%;
+}
+.lesstop {
+    margin-top: 2px;
+}
+.de {
+    color: #909090; background-color: #ffffff;
+}
+#ljbreadcrumbs {
+    text-align: left;
+    white-space: nowrap;
+    font: 11px Arial, Geneva, Helvetica, sans-serif;
+    margin-left: 0;
+    margin-bottom: 1em;
+}
+
+/* layout */
+
+#content pre {
+   line-height: 1.1em;
+   font-size: 1.1em;
+}
+#Comments q {
+    font-style: italic;
+}
+div.transparentpng { display: none; margin: 0; padding: 0; }
+img.transparentpng { border: 0; }
+
+
+/* Ad wrapper styles (for ads printed in BML directly) */
+
+.ljadwrapper-app-full-width
+{
+    margin-bottom: 1em;
+    text-align: center;
+    width: 100%;
+}
+
+.ljadwrapper-app-info-1column,
+.ljadwrapper-app-func-1column,
+.ljadwrapper-app-confirm,
+.ljadwrapper-app-home-login,
+.ljadwrapper-app-schools,
+.ljadwrapper-search,
+.ljadwrapper-journal-indiv-entry,
+.ljadwrapper-journal-skyscraper,
+.ljadwrapper-app-search-skyscraper
+{
+    float: right;
+    margin-left: 2em;
+    margin-bottom: 1em;
+    display: table-cell;
+}
+
+.ljadwrapper-app-func-2column,
+.ljadwrapper-app-info-2column,
+.ljadwrapper-journal-userinfo
+{
+    margin-top: 2em;
+    text-align: center;
+    width: 100%;
+}
+div.copyrighted {
+       font-size: smaller;
+       padding-bottom: 10px;
+}
+.indent_sm {
+    margin-left: 8px;
+}
+
+.friendsfinder {
+   font-family: Verdana, arial, sans-serif !important;
+}
+
+.friendsfinder .rounded-box-content{
+    padding: 30px 25px 40px 25px;
+}
+
+HTML {
+	font-size:100.01%;
+	}
+
+BODY {
+	margin: 0;
+	padding: 0;
+     }
+/* RESET 
+-------------------------------------- */
+body, dd, dt, th, td, p, div, li, pre, code, kbd {
+        font-size: 100%;
+}
+
+#header {
+        line-height: 1.4; }
+
+#header OL, #header UL, #header TABLE, #header TH, #header TD, #header H1,
+#header DL, #header DT, #header DD, #header FORM, #genres UL,
+#footer OL, #footer UL, #footer TABLE, #footer TH, #footer TD, #footer H3,
+#header IMG, #genres LI, #header LABEL {
+        padding:0;
+        margin:0;
+        border:none;
+        outline:none;
+        vertical-align:baseline;
+        font-family:inherit;
+}
+
+#header OL, #header UL,
+#footer OL, #footer UL,
+#genres OL, #genres UL {
+        list-style:none;
+        }
+#header TABLE, #footer TABLE {
+        border-collapse:collapse;
+        border-spacing:0;
+        }
+#header TH, #header TD,
+#footer TH, #footer TD {
+        text-align:left;
+        }
+:focus {
+        outline:none;
+        }
+
+#header TEXTAREA, #header INPUT, #header SELECT {
+        font-family:Arial,sans-serif;
+        font-size:1em;
+        }
+
+
+/* Header
+-------------------------------------- */
+#header {
+        position:relative;
+        padding:35px 24px 0 48px;
+        overflow:visible;
+        min-width:923px !important;
+        z-index: 100;
+        }
+
+/* Logo */
+#header .logo,
+#header .logo A,
+#header .logo SPAN {
+        float:left;
+        width:246px !important;
+        height:54px;
+        }
+#header .logo {
+        background:url(/stc/lanzelot/img/head/logo.gif) no-repeat;
+        }
+        #header .logo A,
+        #header .logo SPAN {
+                text-indent:-9999px;
+                border:none;
+                }
+
+/* Options */
+#header .options {
+        float:right;
+        }
+#header .nolog {
+        padding-top: 15px;
+        font-size: 0.85em;
+        }
+        #header .nolog input {
+                vertical-align: middle;
+                }
+
+.loginlj_form INPUT {
+        width: 50px;
+        font-size: .85em;
+        } 
+
+/* Userbar
+-------------------------------------- */
+.userbar {
+        position:relative;
+        padding:0 64px 0 0 !important;
+        text-align:right;
+        }
+
+/* Nickname */
+.userbar DT .ljuser A {
+        border:none;
+        font-weight:bold;
+        font-size:1.1em;
+        color:#404040;
+        }
+#header .userbar DT .ljuser A IMG {
+        vertical-align:text-top !important;
+        }
+.userbar DT SMALL {
+        position:relative;
+        top:-2px;
+        font-size:.85em;
+        }
+
+/* Links */
+.userbar DD {
+        font-size:.85em;
+        }
+        .userbar DD LI {
+                /*padding:2px 0 0;*/
+                padding: 0px;
+                color:#808080;
+                }
+        .userbar DD A {
+                margin-left:6px;
+                }
+		.userbar DD A.account-icon {
+			    border: 0;
+				margin-left: 3px;
+				position: relative;
+				top: 3px;
+				}
+
+/* Login Box
+-------------------------------------- */
+.login-tl {
+        position:absolute;
+        top:26px;
+        right:18px;
+        z-index:100;
+        width:300px;
+        background:#FFF url(/stc/lanzelot/img/login/tl.gif) no-repeat;
+        text-align:left;
+        }
+.login-br {
+        background:url(/stc/lanzelot/img/login/br.gif) 100% 100% no-repeat;
+        }
+.login-tr {
+        background:url(/stc/lanzelot/img/login/tr.gif) 100% 0 no-repeat;
+        }
+.login-bl {
+        padding:10px 15px 12px;
+        overflow:hidden;
+        background:url(/stc/lanzelot/img/login/bl.gif) 0 100% no-repeat;
+        }
+
+
+/* Logged */
+.options-logged .login-tl {
+        position:static;
+        margin-bottom:-10px;
+        width:auto;
+        }
+.options-logged .login-tr,
+.options-logged .login-br,
+.options-logged .login-bl {
+        background:none;
+        padding:0;
+        }
+
+/* Login Form
+-------------------------------------- */
+#header TABLE.login-form {
+        width:270px;
+        }
+        #header TABLE.login-form TD {
+                vertical-align:middle;
+                font-size:.85em;
+                padding: 0;
+                }
+        #header TABLE.login-form .txt {
+                width:88px;
+                margin: 3px 5px 0 0;
+                }
+        #header TABLE.login-form A {
+                color:#808080 !important;
+                }
+        #header TABLE.login-form A:hover {
+                color:#3F5F9E !important;
+                border-color:#CCC;
+                }
+        #header TABLE.login-form .rememb {
+                margin: 0 3px 0 0;
+                }
+
+/* Login Error
+-------------------------------------- */
+.login-error {
+        padding:12px;
+        text-align:center;
+        color:#CC3F4F;
+        }
+
+
+
+/* Shop 
+--------------------------------------- */
+.tshort {
+        margin-top: 3px;
+        }
+.tshort IMG { position: relative; top: 2px;}
+
+/* Userpic */
+.userbar .userpic {
+        position:absolute;
+        top:2px;
+        right:0;
+        }
+
+/* Search Bar
+-------------------------------------- */
+.searchbar {
+        position:absolute;
+        top:33px;
+        left:50%;
+        margin-left:-18%;
+        width:35%;
+        }
+
+/* Options */
+.searchbar .tabs {
+        overflow:hidden;
+        }
+        .searchbar .tabs LI,
+        .searchbar .tabs LABEL {
+                float:left;
+                }
+        .searchbar .tabs LI {
+                margin-right:-1px !important;
+                background:url(/stc/lanzelot/img/themes/div.gif) 100% 50% no-repeat;
+                }
+        .searchbar .tabs .last {
+                background:none;
+                }
+        .searchbar .tabs LABEL {
+                padding:6px 9px 5px !important;
+                text-transform:uppercase;
+                line-height:1;
+                font-size:.7em;
+                color:#404040;
+                cursor:pointer;
+                }
+        .searchbar .tabs INPUT {
+                display:none;
+                }
+        .searchbar .tabs .cur {
+                background:#5F6F86 url(/stc/lanzelot/img/themes/l.gif) no-repeat;
+                }
+                .searchbar .tabs .cur LABEL {
+                        background:url(/stc/lanzelot/img/themes/r.gif) 100% 0 no-repeat;
+                        color:#FFF;
+                        }
+
+/* Search */
+.searchbar TABLE {
+        clear:both;
+        }
+        .searchbar TABLE TD {
+                vertical-align:top !important;
+                }
+        .searchbar TABLE INPUT {
+                margin:0;
+                }
+        .searchbar TABLE .txt {
+                width:100%;
+                }
+                .searchbar TABLE .txt INPUT {
+                        width:97%;
+                        }
+        .searchbar TABLE .btn {
+                background:none;
+                border: none;
+                float: left;
+                }
+                .searchbar TABLE .btn INPUT {
+                        position:relative;
+                        /*top:-4px;*/
+                        }
+
+/* Links */
+.searchbar .links {
+        padding:3px 0 0;
+        width:98%;
+        overflow:hidden;
+        font-size:.85em;
+        }
+        .searchbar .links,
+        .searchbar .links A {
+                color:#808080 !important;
+                }
+        .searchbar .links A:hover {
+                border-color:#808080 !important;
+                }
+        .searchbar .links .sample {
+                float:left;
+                padding-bottom: 1px;
+                }
+        .searchbar .links .advanced {
+                float:right;
+                }
+
+/* Themes / thanks to Alex Mauzon
+-------------------------------------- */
+.themes {
+        clear:both;
+        padding: 0;
+        overflow:visible;
+        text-align:center;
+        }
+.themes TABLE.menu_holder {
+        margin:auto !important;
+        position: relative;
+        /*width: 100%;*/
+        }
+        
+.themes DIV.menu {
+        text-align:center;
+                float:left;
+                /*left:50%;*/
+                position:relative;
+                
+                } 
+        .themes UL { 
+                float:left;
+                /*left:50%;*/
+                position:relative;
+                }
+        .themes LI,
+        .themes SPAN {
+                float:left;
+                }
+        .themes LI {
+                margin-right:-1px;
+                background:url(/stc/lanzelot/img/themes/div.gif) 100% 50% no-repeat;
+                height: 27px; 
+                }
+        .themes .last {
+                background:none;
+                }
+        .themes .ex {
+                text-indent: -99999px;
+                width: 1px;
+                }
+        .themes .next {
+                background: url(/stc/lanzelot/img/menu/next.gif) 1px 100% no-repeat;
+                }
+                .themes .next SPAN {
+                        background:url(/stc/lanzelot/img/themes/div.gif) 100% 50% no-repeat;
+                }
+                .themes .next.ex SPAN, .themes .next.pr SPAN { background: none;}
+
+        .themes SPAN {
+                padding:5px 12px 4px;
+                }
+        .themes .ex SPAN { padding: 0px; }
+
+        .themes A:link, .themes A:visited {
+                border:none !important;
+                text-transform:uppercase;
+                line-height:1;
+                font-size:.85em;
+                color:#404040 !important;
+                }
+        .themes A:hover {
+                border-bottom:none;
+                }
+                
+        .themes LI UL {
+                display: none;
+                }
+
+/* Current */
+.themes .cur {
+        background:#5F6F86 url(/stc/lanzelot/img/themes/l.gif) no-repeat;
+        position: relative;
+        }
+        .themes .cur SPAN {
+                background:url(/stc/lanzelot/img/themes/r.gif) 100% 0 no-repeat;
+                }
+        .themes .cur A, .themes .cur A:visited {
+                color:#FFF !important;
+                }
+
+/* SubMenu */
+
+.themes .submenu {
+        position: absolute;
+        left: 0;
+        top: 27px;
+        z-index: 5;
+        text-align: left;
+        background: url(/stc/lanzelot/img/menu/cur_bl.gif) 0 100% no-repeat #5f6f86;
+        min-width: 180px;
+        }
+
+.themes .submenu LI {
+        display: block;
+        float: none;
+        background: none;
+        padding: 0px 12px;
+        margin-right: 0;
+        white-space: nowrap;
+        height: auto;
+        }
+.themes .submenu A, .themes .submenu A:visited {
+        text-transform: none;
+        }
+
+.themes .submenu SPAN.pic-count { float: none; background:none;padding: 0 !important; display: block;}
+
+.themes .submenu A:hover {
+        color:#afd2ff !important;
+        text-decoration: underline;
+        border: none;
+        }
+
+        
+.themes .submenu LI DIV {
+        background: url(/stc/lanzelot/img/menu/dot.gif) repeat-x bottom;
+        float: none;
+        padding: 4px 0px;
+        }
+.themes .submenu LI.last {
+        background: url(/stc/lanzelot/img/menu/cur_br.gif) 100% 100% no-repeat !important;
+        }
+
+
+/* Genres
+-------------------------------------- */
+#genres {
+        background:#E7E7E7;
+        line-height:25px;
+        font-size:.85em;
+        height: 25px;
+        text-align: right;
+        padding-right: 24px;
+        }
+#genres UL { float: right;}
+#genres LI {
+        float: left;
+        background:transparent url(/stc/lanzelot/img/menu/div.gif) no-repeat 100% 50%;
+        margin-left:-2px;
+        padding: 0 10px;
+        }
+#genres LI.last { background: none; padding-right: 0; }
+#genres A { 
+        color: #404040 !important;
+        border:none;}
+
+/* Body
+-------------------------------------- */
+#main_body {
+        padding:24px;
+        min-width: 894px;
+        }
+#main_body:after {
+        content:'.';
+        display:block;
+        height:0;
+        clear:both;
+        color:#FFF;
+        }
+
+/*#wrapper {
+        float: left;
+        width:100%;
+        }
+
+#content {
+        margin-right: 336px;
+        padding-right: 25px;
+        }
+*/
+#side {
+        float: left;
+        /*margin-left: -336px;*/
+        width: 335px;
+        }
+.bordered {border-left: 1px solid #ccc;}        
+
+
+/* Lanzelot content 
+---------------------------------- */
+
+.lanzelot-content { 
+        width: 100%;
+        margin: 5px 0; 
+        clear: both; 
+        min-height: 220px; 
+        float: none;
+        }
+
+
+p.lanzelot { line-height: 1.4em;  text-align: left; }
+
+#ljbreadcrumbs {
+        font-size: .85em;
+        }
+
+.borderedtable {
+        border:1px solid black !important;
+}
+.borderedtable TH {
+        border-bottom: 1px solid #000;
+        background: #ccc;
+        }
+a.more-link:hover { text-decoration: none !important;}
+.cprod .alllink a {border: none;}
+
+DIV.homepage-loggedin > DIV { width: 100%}
+
+
+/* * html .lanzelot-content { height: 220px; } */
+
+
+/* Footer
+-------------------------------------- */
+#footer {
+        margin:0 auto;
+        overflow:hidden;
+        font-size:.85em;
+        min-width:942px;
+        clear: both;
+        }
+        #footer UL {
+                padding:4px 0;
+                }
+        #footer LI {
+                float:left;
+                }
+        #footer A:hover {
+                border-color:#CCC;
+                }
+        #footer P {
+                clear:both;
+                padding:24px 0 12px;
+                text-align:right;
+                color:#CCC;
+                }
+
+/* Map */               
+#footer .map {
+        padding: 17px 24px;
+        }
+#footer .map H3 {
+        font-size: 1.4em;
+        font-weight: bold;
+        padding-bottom: 10px;
+        font-style: normal;
+        }
+        #footer .map SPAN { font-size: 1.2em;}  
+        #footer .map LI {
+                display: inline;
+                padding-right: 15px;
+                float: none;
+                line-height: 1.8em;
+                }
+        #footer .map LI A {
+                white-space: nowrap;
+                }       
+        #footer .map TABLE {
+                        background: url(/stc/lanzelot/img/menu/div2.gif) 50% top repeat-y;
+                        margin-bottom: 10px;
+}
+        #footer .map .manage {
+                padding-right: 7%;
+                width: 43%;
+                }
+        #footer .map .other {
+                width: 43%;
+                padding-left: 7%;
+                }
+
+/* Side */
+#footer .side {
+        float:right;
+        }
+        #footer .side LI {
+                margin-left:12px;
+                }
+BODY {
+    background:#FFF;
+    font:.8em Arial,sans-serif !important;
+    color:#404040;
+}
+
+A:link, A:visited {
+    text-decoration:none;
+    border-bottom:solid 1px #CCC;
+    color:#3F5F9E !important;
+}
+
+A:hover {
+    border-color:#3F5F9E;
+}
+
+A.frank-image {
+    border: none;
+}
+
+TABLE.feature-matrix A.feature-link {
+    border: none;
+}
+
+/* Links
+-------------------------------------- */
+.comm {
+    padding-left:18px;
+    background:url(/stc/lanzelot/img/ico/msg.gif) 2px 0 no-repeat;
+    color:#808080;
+}
+
+.more, .reply {
+    padding:.2em .4em;
+    border:none;
+    font-size:.85em;
+}
+
+.more {
+    background:#B2A08F;
+    color:#FFF;
+}
+
+.more:hover {
+    background:#D1BBA7;
+}
+
+.reply {
+    background:#D7E5F6;
+}
+
+.reply:hover {
+    background:#829DBF;
+    color:#FFF;
+}
+
+.theme {
+    color:#B54454;
+}
+
+/* Picture
+-------------------------------------- */
+.pic {
+    vertical-align:top;
+}
+
+.pic.left {
+    float:left;
+    margin:.2em 1em 0 0;
+}
+
+.pic.right {
+    float:right;
+    margin:.2em 0 0 1em;
+}
+
+/* Horizontal Rule
+-------------------------------------- */
+.hr {
+    clear:both;
+    margin:0 0 12px;
+    width:100%;
+    height:1px;
+    overflow:hidden;
+    border:solid 1px #404040;
+    border-width:2px 0 1px;
+}
+
+.hr HR {
+    display:none;
+}
+
+.hr.div {
+    margin:0;
+}
+
+.hr.hair {
+    border-width:1px 0 0;
+    height:0;
+}
+
+.hr.hid {
+    border:none;
+    padding:12px 0;
+}
+
+/* Button
+-------------------------------------- */
+.btn {
+    float:left;
+    background:url(/stc/lanzelot/img/btn/bg.gif) 0 50% repeat-x;
+    border:none;
+    text-align:center;
+    font-size:.85em;
+    color:#666;
+    cursor:pointer;
+}
+
+.ljbtn {
+    background:url(/stc/lanzelot/img/btn/bg.gif) 0 50% repeat-x;
+    border:1px solid #ccc;
+    text-align:center;
+    padding: 5px 20px;
+    font-size:.85em;
+    color:#666;
+    cursor:pointer;
+    width: auto !important;
+}
+
+.btn:hover {
+    color:#999;
+}
+
+.btn.full {
+    width:100%;
+}
+
+.btn SPAN {
+    display:block;
+    background:url(/stc/lanzelot/img/btn/tl.gif) no-repeat;
+}
+
+.btn SPAN SPAN {
+    background:url(/stc/lanzelot/img/btn/br.gif) 100% 100% no-repeat;
+}
+
+.btn SPAN SPAN SPAN {
+    background:url(/stc/lanzelot/img/btn/tr.gif) 100% 0 no-repeat;
+}
+
+.btn SPAN SPAN SPAN SPAN {
+    padding:5px 15px;
+    background:url(/stc/lanzelot/img/btn/bl.gif) 0 100% no-repeat;
+}
+
+.btn-set {
+    overflow:hidden;
+}
+
+/* LJ User / Community
+-------------------------------------- */
+.ljuser, .ljcomm {
+    white-space:nowrap;
+    color:#808080;
+}
+
+.ljuser .ico, .ljcomm .ico {
+    border:none;
+    vertical-align:top;
+}
+
+.ljuser .ico IMG, .ljcomm .ico IMG {
+    vertical-align:middle;
+}
+
+/* Paragraphs
+-------------------------------------- */
+#content P {
+    margin:0 0 12px;
+}
+
+/* Colset
+-------------------------------------- */
+.colset {
+    padding:0 12px;
+    overflow:hidden;
+}
+
+.colset .colset-first {
+    float:left;
+    margin-left:-12px;
+    width:50%;
+}
+
+.colset .colset-second {
+    float:right;
+    margin-right:-12px;
+    width:50%;
+}
+
+/* Two / Three */
+.colset.two-three {
+    padding:0;
+}
+
+.colset.two-three .colset-first {
+    margin:0;
+    width:336px;
+}
+
+.colset.two-three .colset-second {
+    margin:0;
+    width:216px;
+}
+
+/* Three / Two */
+.colset.three-two {
+    padding:0;
+}
+
+/* Head Set
+-------------------------------------- */
+.head-set {
+    padding:12px 0;
+    margin:0 0 12px;
+    overflow:hidden;
+    border-top:solid 1px #000;
+    border-bottom:dotted 1px #CCC;
+}
+
+.head-set H3 {
+    float:left;
+    margin:0 !important;
+}
+
+.head-set UL {
+    float:right;
+    padding:.2em 0 0;
+    font-size:.85em;
+}
+
+.head-set LI {
+    float:left;
+    margin-right:6px;
+    padding-right:6px;
+    border-right:solid 1px #CCC;
+}
+
+.head-set .last {
+    padding:0;
+    margin:0;
+    border:none;
+}
+
+/* Excerpt
+-------------------------------------- */
+.excerpt {
+    font-style:italic;
+}
+
+.excerpt A {
+    display:block;
+    padding:12px 15px;
+    border:dotted 1px #CCC;
+    color:#404040;
+}
+
+.excerpt A:hover {
+    background:#829DBF;
+    border:solid 1px #829DBF;
+}
+
+.excerpt A:hover, .excerpt A:hover * {
+    color:#FFF;
+}
+
+.excerpt .ljuser {
+    font-style:normal;
+}
+
+/* Related
+-------------------------------------- */
+.related {
+    margin:0 0 12px;
+}
+
+.related DD {
+    padding:6px 0 0;
+    font-size:.85em;
+}
+
+.related LI {
+    padding-left:9px;
+    margin:0 0 6px;
+    background:url(/stc/lanzelot/img/ico/bull.gif) 0 .5em no-repeat;
+}
+
+/* Links Set
+-------------------------------------- */
+.links-set {
+    padding:0 0 12px;
+}
+
+.links-set LI {
+    padding:0 0 6px;
+}
+
+/* Navigation
+-------------------------------------- */
+.navigation {
+    overflow:hidden;
+}
+
+.navigation A {
+    border:none;
+}
+
+.navigation .prev {
+    float:left;
+}
+
+.navigation .prev A {
+    padding-left:20px;
+    background:url(/stc/lanzelot/img/cal/prev.gif) 0 50% no-repeat;
+}
+
+.navigation .prev A:hover {
+    background-image:url(/stc/lanzelot/img/cal/prev-a.gif);
+}
+
+.navigation .next {
+    float:right;
+}
+
+.navigation .next A {
+    padding-right:20px;
+    background:url(/stc/lanzelot/img/cal/next.gif) 100% 50% no-repeat;
+}
+
+.navigation .next A:hover {
+    background-image:url(/stc/lanzelot/img/cal/next-a.gif);
+}
+
+/* Bottom
+-------------------------------------- */
+.bottom {
+    margin:0 0 12px;
+    border-bottom:solid 1px #CCC;
+}
+
+
+/* Inner Pages 
+------------------------------------- */
+
+.theme-nav-small li A, .theme-nav-small li A:visited {
+    border-bottom: 0px;
+}
+
+
+.theme-nav li A, .theme-nav li A:hover {
+    border-bottom: 0px;
+    padding: 4px 6px;
+}
+
+.customize-nav li A {
+    border-bottom: 0px;
+}
+
+.theme-nav li.on A:hover {
+    border-bottom: 1px solid #C7E0F6;
+}
+/* Top Navigation 
+-------------------------------------- */
+
+.navigator {
+    font-size: .85em;
+    margin-bottom: 20px;
+}
+
+.navigator SPAN {
+    font-weight: bold;
+}
+
+/* LiveJournal COM
+-------------------------------------- */
+
+ol.num_list {
+    list-style:decimal;
+    padding-left: 1.5em;
+}
+
+.new_friend LI {
+    padding-bottom: 13px;
+    color: #808080;
+}
+
+.new_friend A {
+    font-size: .85em;
+}
+
+.new_friend .add A {
+    font-size: 1em;
+}
+
+.new_friend LI INPUT {
+    width: 125px;
+    margin:0 10px 0 5px;
+}
+#tagform .btn {
+    float:none;
+    border: none;
+}
+
+#tagform .btn:focus {
+    outline: none;
+}
+
+.new_friend TEXTAREA {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.new_friend .ljbtn {
+    float: right;
+    margin-right: -3px;
+    margin-top: 8px;
+}
+
+.import {
+    padding-left: 25px;
+    padding-top: 3px;
+    position: relative;
+    margin-top: -3px;
+}
+
+.import FORM {
+    margin-top: 20px;
+}
+
+.import TD { 
+    padding-bottom: 11px;
+}
+
+.import .label {
+    text-align: right;
+    padding-right: 17px;
+}
+
+.import INPUT { 
+    width: 195px;
+}
+
+.import SELECT {        
+    width: 200px;
+}
+
+.imported {
+    overflow: scroll;
+    height: 160px;
+    border: 1px solid #ccc;
+    margin: 25px 0 0;
+}
+        
+.imported TD {
+    padding: 3px 5px 5px 5px;
+    vertical-align: middle;
+    font-size: .85em;
+}
+
+.imported TD.mail {
+    padding: 3px 5px 5px 20px;
+}
+
+.imported INPUT { 
+    width: auto;
+}
+
+.import .new_friend .ljbtn { 
+    margin-right: 0px;
+}
+        
+/* Sup AD
+-------------------------------------- */
+.sup-ad {
+    overflow: hidden;
+}
+
+.sup-ad DT {
+    float: left;
+    width: 160px;
+    height: 100px;
+    margin-right: 10px;
+    clear:both;
+}
+
+.sup-ad DT a {
+    border: none;
+}
+
+.sup-ad DD {
+    float:left;
+    width: 400px;
+}
+
+.theme-item A.theme-preview-link {
+    border:0 !important;
+}
+
+/* Profile page 
+------------------------------------*/
+#profile_page a:hover {
+    text-decoration: none;
+    }
+
+/* ContextualPopup
+------------------------------------*/
+div.ContextualPopup div.Inner a:link,
+div.ContextualPopup div.Inner a:visited {
+    text-decoration: none !important;
+    border-bottom:solid 1px #CCC !important; 
+    }
+div.ContextualPopup div.Inner a:link:hover,
+div.ContextualPopup div.Inner a:visited:hover {
+    text-decoration:none !important;
+    border-color:#3F5F9E !important; 
+    }
+
+/* Link to current version
+------------------------------------ */
+.current-version {
+    margin:0;
+    padding: 4px 0 2px;
+    }
+
+/* ADV 
+------------------------------------ */ 
+.ljad A, 
+.ljad A:hover { 
+    border:0; 
+    } 
+.ljad DIV A:link, .ljad DIV A:visited { 
+    text-decoration:none; 
+    border-bottom:solid 1px #CCC; 
+    color:#3F5F9E !important; 
+    } 
+.ljad DIV A:hover { 
+    border-color:#3F5F9E; 
+    }
+
+/* 10 years header mod
+------------------------------------ */ 
+
+#header {
+    background:#102446 url(/stc/lanzelot/img/10years/10years-bg.jpg) 0 0 no-repeat;
+    padding-top:31px;
+    }
+
+#header .menu { /* Why are these inline styles appear anyway? */
+	border-top:0 !important;
+	margin-top:0 !important;
+	}
+
+#header .themes A:link,
+#header .themes A:visited {
+    color:#EBF3FB !important;
+    }
+    
+#header .searchbar .links,
+#header .searchbar .links A {
+    color:#FFF !important;
+    }
+#header .searchbar .tabs LABEL {
+	color:#FFF;
+	}
+#header .userbar {
+    color:#92B1DE !important;
+    }
+
+    
+#header .userbar A:link,
+#header .userbar A:visited {
+    color:#EBF3FB !important;
+    }
+
+#header .logo {
+    margin:-31px 0 0 -48px !important;
+    background:url(/stc/lanzelot/img/10years/10years-logo.jpg) 0 0 no-repeat;
+    }
+* HTML #header .logo {
+    display:inline;
+    }
+    
+#header .logo,
+#header .logo A,
+#header .logo SPAN {
+    height:115px;
+    width:320px !important;
+    }
+    
+#header .themes .next {
+    background-image:url(/stc/lanzelot/img/10years/10years-next.gif);
+    }
+
+
+#header .searchbar {
+    top:41px;
+    }
+#header .searchbar .tabs .cur,
+#header .themes .cur {
+    background-image:url(/stc/lanzelot/img/10years/10years-l.gif);
+    }
+#header .searchbar .tabs .cur LABEL,
+#header .themes .cur SPAN {
+    background-image:url(/stc/lanzelot/img/10years/10years-r.gif);
+    }
+#header .themes .submenu SPAN.pic-count {
+    background:none;
+    }    
+
+* HTML #header .themes * {
+    border:0 !important;
+    }
+    
+.login-tl {
+        background:#102446;
+        }
+.login-br,
+.login-tr,
+.login-bl {
+        background:none;
+        }
+.login-tl {
+    top:33px;
+    }
+#header TABLE.login-form LABEL,
+#header TABLE.login-form A:link,
+#header TABLE.login-form A:visited {
+    color:#EBF3FB !important;
+    }
+#header TABLE.login-form A:link:hover,
+#header TABLE.login-form A:visited:hover {
+    color:#EBF3FB !important;
+    border-color:#808080 !important;
+    }
+/* end of 10 years */    
+
+/* Removing Windows Live ID */
+.b-mlm-delete {
+    }
+    .b-mlm-delete FIELDSET {
+        padding: 0;
+        border: 0;
+        margin: 0;
+        }
+    .b-mlm-delete FIELDSET INPUT.text {
+        width: 210px;    
+        }
+    .b-mlm-delete P {
+        margin-bottom: 1em;    
+        }
+        .b-mlm-delete P LABEL {
+            display: block;
+            margin: 0 0 0.5em;
+            }
+    .b-mlm-delete .errorbar {
+         margin-top: 15px;
+         }
+
+
+/* Horizon
+--------------------------------------*/
+/* Logged-in */
+.logged-in #navigation {
+	background:#040404 url(/img/reskining/halloween09/halloween09-hor-in.jpg) 100% 0 no-repeat;
+	min-width:840px;
+	}
+.logged-in #Logo A {
+	position:relative;
+	left:-145px;
+	width:220px;
+	}
+
+/* Logged-out */
+.logged-out #navigation {
+	background:#040404 url(/img/reskining/halloween09/halloween09-hor-out.jpg) 0 0 no-repeat;
+	}
+.logged-out #Logo A {
+	width:250px;
+	}
+
+/* Lanzelot
+--------------------------------------*/
+#header {
+	background:#040404 url(/img/reskining/halloween09/halloween09-lanz.jpg) 0 0 no-repeat;
+	}
+	#header .logo,
+	#header .logo A,
+	#header .logo SPAN {
+		background:none;
+		width:225px !important;			
+		}
+#header .login-tl {
+	background: #040404;
+	}

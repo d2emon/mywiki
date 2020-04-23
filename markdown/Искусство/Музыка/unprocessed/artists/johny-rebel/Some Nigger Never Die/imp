@@ -1,0 +1,6 @@
+document.write('<iframe allowtransparency=\"true\" scrolling=\"no\" marginwidth=\"0\" marginheight=\"0\" frameborder=\"0\" height=\"90\" width=\"728\" src=\"http://ad.yieldmanager.com/iframe3?mVVVAHHuAgBR3EoAAAAAAL-MAAAAAAAAAAAkAAYAAAAAAAEAAwAGD7ncAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD5bgAAAAAAAAIAAQAAAAAAmpmZmZmZ4T-amZmZmZnhPwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABN.sa0OL.JCIUptQmeFh2Apd9kznz1EkSGJArCAAAAAA==,,http%3A%2F%2Fwww.ultimate-guitar.com%2Ftabs%2Fj%2Fjohnny_rebel%2Fsome_nigger_never_die_crd.htm,Z%3D728x90%252c468x60%26artist%3D19442%26g%3D0%26s%3D192113%26title%3Dsomeniggerneverdie%26_salt%3D3780825478%26B%3D10%26u%3Dhttp%253A%252F%252Fwww.ultimate-guitar.com%252Ftabs%252Fj%252Fjohnny_rebel%252Fsome_nigger_never_die_crd.htm%26r%3D1,b1b4e672-b74d-11df-b536-001cc410e98c\"></iframe>');
+var rm_data = new Object();
+rm_data.creative_id = 4906065;
+rm_data.offer_type = 1;
+rm_data.entity_id = 14540;
+if (window.rm_crex_data) {rm_crex_data.push(4906065);}

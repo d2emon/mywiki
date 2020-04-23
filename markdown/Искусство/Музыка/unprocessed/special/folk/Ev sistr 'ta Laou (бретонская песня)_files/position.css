@@ -1,0 +1,363 @@
+/**
+ * @version $Id: position.css 14401 2010-01-26 14:10:00Z louis $
+ * @author Design & Accessible Team ( Angie Radtke / Robert Deutz )
+ * @package Joomla
+ * @subpackage Accessible-Template-Beez
+ * @copyright Copyright (C) 2005 - 2010 Open Source Matters. All rights reserved.
+ * @license GNU/GPL, see LICENSE.php
+ * Joomla! is free software. This version may have been modified pursuant to the
+ * GNU General Public License, and as distributed it includes or is derivative
+ * of works licensed under the GNU General Public License or other free or open
+ * source software licenses. See COPYRIGHT.php for copyright notices and
+ * details.
+ */
+
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+body
+{
+background: #4F5B43 url(../images/bg.jpg); color: #ffffff; background-color: #333333; text-align: left; font: 12px Tahoma, Verdana, Arial, Helvetica, sans-serif; color: #555; margin: 12px 0 0 0;
+}
+
+/* ################   Position ################  */
+
+#left_part {float:left; width:100px;  background:url(../images/solkenar.jpg) transparent right repeat-y;}
+#right_part {float:right; width:100px;  background:url(../images/sagkenar.jpg) transparent left repeat-y;}
+#center_part {background:transparent; margin:0px 100px; background:#ECECEC;}
+
+#left_part, #center_part, #right_part {padding-bottom:32767px; margin-bottom:-32767px;}
+
+#wrapper_all {overflow:hidden; background:transparent;margin-top:-12px; height:100%;}
+
+
+#head {
+	background:  #555F47 url(../images/logo.png) right no-repeat;
+	width:  100%;
+	height: 180px;
+}
+#head_line{background:#222 url(../images/titlebg.gif) repeat-x; height:13px;}
+#footer_line{background:#222 url(../images/titlebg.gif) repeat-x; height:24px;}
+
+#logo_text{
+	background: url(../images/logo_text.gif) no-repeat bottom left;
+
+margin-left: 80px;  
+z-index:5;
+height:100px;
+}
+
+.sitetag
+{
+	font-family: Tahoma, Verdana, sans-serif; 
+	color: #D2D6BB;
+	font-size: 130%; 
+	 margin-left: 95px;  
+padding-top:20px;
+       height:20px;	
+}
+
+#gh_content{left:200px; margin: 5px 50px 50px 50px; font-size:1.1em;}
+#gh_content ul {list-style: disc url(../images/l_icon.gif) inside; } 
+#gh_content ul li{margin:5px 0;}
+
+#nav li.active_menu a {
+	text-decoration: none;
+	cursor: pointer;
+	font-weight: bold;
+}
+#nav {
+	margin: 0px;
+	height: 30px;
+}
+#nav ul {
+	padding: 0px;
+	margin: 0;
+}
+#nav li {
+	margin: 0px;
+	margin-top: 0px;
+	padding: 0;
+	float: left;
+	display: block;
+ width:130px;
+}
+
+#nav li.active_menu a {
+	text-decoration: none;
+	cursor: pointer;
+	font-weight: bold;
+}
+#nav {
+	margin: 0px;
+	height: 30px;
+}
+#nav ul {
+	padding: 0px;
+	margin: 0;
+}
+#nav li {
+	margin: 0px;
+	margin-top: 0px;
+	padding: 0;
+	float: left;
+	display: block;
+ width:130px;
+}
+
+#nav a {
+padding:9px 5px 11px 5px;
+	text-decoration:none;
+color: #6C7151;
+font-family: Tahoma, verdana, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+}
+
+#nav li li{    
+/* height:30px;*/
+}
+
+#nav a:hover {
+	color: #A2B186;/*#6C7151;
+	border-bottom: solid 5px #A2B186;  */
+}
+
+#nav li li a:hover {
+	/*color: /*#A2B186;*//*#6C7151;
+	border-bottom: 0; */
+}
+
+#bodyarea_wrapper{overflow:hidden; background:transparent;margin-top:0; height:100%;}
+
+#bodyarea_left {float:left; width:100px;  background: url(../images/usto_left.gif) no-repeat;}
+#bodyarea_right {float:right; width:100px; background:url(../images/usto_right.gif) no-repeat;}
+#bodyarea_center {background:transparent; width:100%; margin:0px 100px; background:url(../images/usto_center.gif) repeat-x;}
+
+#bodyarea_left, #bodyarea_center, #bodyarea_right {padding-bottom:32767px; margin-bottom:-32767px; font-size: 12px; height:86px;}
+
+#footera_wrapper{overflow:hidden; background:transparent;margin-top:0; height:100%;clear:both; }
+
+#footera_left {float:left; width:35px;  background: url(../images/altb_left.gif) no-repeat;}
+#footera_right {float:right; width:35px; background:url(../images/altb_right.gif) no-repeat;}
+#footera_center {background:transparent; width:100%; margin:0px 35px; background:url(../images/altb_center.gif) repeat-x;}
+
+#footera_left, #footera_center, #footera_right {padding-bottom:32767px; margin-bottom:-32767px; font-size: 12px; height:41px;}
+
+#banner{text-align:center; margin:20px;}
+
+#bodyarea {
+	padding-top: 86px;
+	padding-left: 0px; 
+	font-size: 12px;
+	background:  url(../images/ortaust.gif) no-repeat;
+	color: #000000;
+}
+
+#copyright{font-size:12px; text-align:center; margin:10px;}
+
+#all
+{
+	background: #FFFFFF;
+	border: solid 1px #DBB0CD;
+	color: #000000;
+	font-size: 0.8em;
+	margin: 0 auto;
+	max-width: 1000px;
+	padding: 0 3px 3px 3px;
+	text-align: left;
+}
+
+#page { }
+
+#header
+{
+	background: #fff;
+	color: #000000;
+	margin: 0;
+	position: relative;
+	text-align: right;
+	border-bottom: solid 4px #ccc;
+}
+
+#contentarea,#contentarea2
+{
+	border: solid 0px #000;
+	margin: 0;
+	padding: 0px 0px 0px 0px;
+	position: relative;
+	overflow: hidden;
+}
+#left
+{
+	background: #FFFFFF;
+	border-right: solid 0px #EEEEEE;
+	float: left;
+	margin: 20px 0 0 0;
+	width: 21%;
+}
+
+#right
+{
+	color: #000;
+	float:left;
+	width: 28%;
+	padding-top:10px
+
+}
+
+#main2
+{
+	background: #fff;
+	width:64%;
+	padding: 25px 20px 20px 20px;
+	position: relative;
+	min-height:520px;
+	float:left;
+
+
+}
+
+#main
+{
+	background: #fff;
+	margin: 0 0px 0 0;
+	padding: 25px 20px 20px 20px;
+	position: relative;
+}
+
+#page ul {list-style: disc url(../images/l_icon.gif) inside; } 
+#page ul li{margin:5px 0;}
+
+/* ###################### generell ###################### */
+.unsichtbar,.u2,.invisible , .unseen
+{
+	display: inline;
+	height: 0px;
+	left: -3000px;
+	position: absolute;
+	top: -2000px;
+	width: 0px;
+	z-index: 200;
+}
+
+.wrap
+{
+	border: 0;
+	clear: both;
+	float: none;
+	font-size: 1px;
+	height: 0;
+	line-height: 1px;
+	margin: 0;
+	padding: 0;
+	visibility: hidden;
+}
+
+#logo
+{
+	font-size: 1em !important;
+	font-weight: bold !important;
+	position: relative;
+	text-align: left;
+	text-transform: none !important;
+	z-index: 0;
+	margin-top: 1em;
+}
+
+#logo  img { display: block; }
+
+#logo span
+{
+	display: block;
+	margin: 0px 0 0 100px !important;
+	border-bottom: solid 1px #666;
+}
+
+/* ###############  main * ########################### */
+/* position */
+.leading
+{
+	/*background: #EFDEEA url(../images/biene.gif) no-repeat top left;
+	border: solid 1px #CCCCCC;
+	color: #000000;
+	margin: 0px 0px 0px 0px;
+	padding: 10px 20px 20px 120px;
+	position: relative;*/
+        margin: 20px 50px 0 50px;
+}
+
+.leading_separator
+{
+/*	border-bottom: solid 0px #333333;
+	display: block;
+	height: 10px;
+	margin: 0 0 0px 0;*/
+}
+
+.article_separator
+{
+	border: solid 1px #333333;
+	display: none;
+	margin: 0px 0 0px 0;
+}
+
+.blog { padding: 0; }
+
+.cols1
+{
+	/*display: block;
+	float: none !important;
+	margin: 0 !important;*/
+}
+/*
+.cols2 { width: 45%; }
+.cols3 { width: 30%; }
+
+.column1 , .column2
+{
+	border: solid 0px #D4A7C5;
+	margin: 0 5px 0 0;
+	position: relative;
+}
+
+.column2 , .column1
+{
+	float: left;
+	margin: 0;
+}
+
+.column2
+{
+	float: right;
+	margin: 0;
+	width: 45%;*/
+}
+
+.article_row
+{
+	/*margin: 0px 0 0px 0;
+	padding: 0;
+	overflow: hidden;*/
+        margin: 0px 50px;
+}
+
+.article_column
+{
+	/*border: solid 0px #ccc;*/
+	padding: 0px 10px 15px 0;
+        margin: 0px 50px;
+}
+
+.row_separator2
+{
+/*	display: block;
+	clear: both;
+	margin: 0;
+	border: solid 0px;*/
+}
+table.category{margin:10px;}
+table.category tr td {padding:5px;}

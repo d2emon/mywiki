@@ -1,0 +1,267 @@
+BODY {
+                font-family: arial,tahoma,sans-serif;
+                font-size: 10pt;
+                font-weight: medium;
+                font-style: none;
+                cursor: auto ;
+                color: #ffffff;
+                text-transform: none;
+                overflow: auto;
+}
+
+P {
+                font-family: arial,tahoma,sans-serif;
+                font-size: 10pt;
+                font-weight: medium;
+                font-style: none;
+                cursor: auto ;
+                color: #ffffff;
+                text-transform: none;
+                text-indent: 10px;
+                overflow: auto;
+}
+
+PRE {
+                font-family: "Courier New", Courier, monospace;
+                font-size: 10pt;
+                font-weight: medium;
+                font-style: none;
+                cursor: auto ;
+                color: #ffffff;
+                text-transform: none;
+                text-indent: 10px;
+                overflow: auto;
+}
+
+EM {
+                font-family: "Courier New", Courier, monospace;
+                font-size: 10pt;
+                font-weight: medium;
+                font-style: normal;
+                cursor: auto ;
+                color: #ffee33;
+                text-decoration: none;
+                overflow: auto;
+}
+
+H1 {
+                font-family: arial,tahoma,sans-serif;
+                font-size: 14pt;
+                font-weight: bold;
+                font-style: none;
+                cursor: auto;
+                color: #ffee33;
+                text-transform: uppercase;
+                text-indent: 15px;
+                overflow: auto;
+}
+
+H3 {
+                font-family: arial,tahoma,sans-serif;
+                font-size: 12pt;
+                font-weight: bold;
+                font-style: none;
+                cursor: auto;
+                color: #ddeeff;
+                text-transform: uppercase;
+                text-indent: 15px;
+                overflow: auto;
+}
+
+.left {
+                font-family: arial,tahoma,sans-serif;
+                font-size: 8pt;
+                font-weight: none;
+                font-style: normal;
+                cursor: auto ;
+                text-indent: 0px;
+                color: #ffffff;
+                overflow: auto;
+}
+.gbook {
+                font-family: arial, tahoma, sans-serif;
+                font-size: 10pt;
+                font-weight: medium;
+                font-style: none;
+                cursor: auto ;
+                color: #ffffff;
+                text-indent: 0px;
+                text-transform: none;
+                overflow: auto;
+}
+
+
+UL {
+                font-family: arial,tahoma,sans-serif;
+                font-size: 10pt;
+                font-weight: medium;
+                font-style: none;
+                cursor: auto ;
+                color: #ffffff;
+                text-transform: none;
+                overflow: auto;
+                list-style-type: yes;
+                margin-top: 4pt;
+                margin-bottom: 4pt;
+}
+LI {
+                font-family: arial,tahoma,sans-serif;
+                font-size: 10pt;
+                font-weight: medium;
+                font-style: none;
+                cursor: auto ;
+                margin-bottom : 2pt;
+                list-style: disk;
+}
+
+.small {
+                font-family: arial,tahoma,sans-serif;
+                font-size: 7pt;
+                font-weight: none;
+                font-style: normal;
+                cursor: auto ;
+                text-indent: 0px;
+                color: #ffffff;
+                overflow: auto;
+}
+
+blockquote {
+                margin-top: 10pt;
+                margin-bottom: 4pt;
+                margin-left: 12pt;
+}
+
+strong {
+                font-family: arial,tahoma,sans-serif;
+                font-size: 9pt;
+                font-weight: bold;
+                font-style: none;
+                cursor: auto ;
+                color: #ffee33;
+                text-decoration: none;
+                overflow: auto;
+}
+
+A:link {
+                font-family: arial,tahoma,sans-serif;
+                font-size: 9pt;
+                font-weight: bold;
+                font-style: none;
+                cursor: auto ;
+                color: #33bbff;
+                text-decoration: none;
+                overflow: auto;
+}
+
+A:visited {
+                font-family: arial, tahoma, sans-serif;
+                font-size: 9pt;
+                font-weight: bold;
+                font-style: none;
+                cursor: auto ;
+                color: #22ccff;
+                text-decoration: none;
+                overflow: auto;
+}
+A:hover {
+                font-family: arial, tahoma, sans-serif;
+                font-size: 9pt;
+                font-weight: bold;
+                font-style: none;
+                cursor: auto ;
+                color: #22ccff;
+                text-decoration: overline;
+                overflow: auto;
+}
+
+INPUT {
+                font-family: arial, tahoma, sans-serif;
+                font-size: 8pt;
+                font-weight: medium;
+                font-style: none;
+                color: #000000;
+                background: #cccccc;
+}
+
+TEXTAREA {
+                font-family: arial, tahoma, sans-serif;
+                font-size: 8pt;
+                font-weight: medium;
+                font-style: none;
+                color: #000000;
+                background: #cccccc;
+}
+
+
+.link1:link {color: #ffffff; text-decoration: underline;}
+.link1:visited {color: #ffffff;}
+.link1:hover { color: #996600; background: #ff7000; color: #ffffff;}
+
+.adm_link:link {color: #B6B6B6; text-decoration: none;}
+.adm_link:visited {color: #B6B6B6;text-decoration: none}
+.adm_link:hover { color: #c5c5c5;text-decoration: none}
+
+.link2:link {color: #ffffff; text-decoration: none;}
+.link2:visited {color: #ffffff;text-decoration: none;}
+.link2:hover { color: #996600; background: #ff7000; color: #ffffff;text-decoration: none;}
+
+.link3:link {color: #898A8C; text-decoration: underline;}
+.link3:visited {color: #898A8C;text-decoration: underline;}
+.link3:hover { color: #898A8C;text-decoration: underline;}
+
+.form { border-style: solid; border-width: 1px; border-color: #e0e0e0;}
+.button { border-style: solid; border-width: 1px; border-color: #000000; background: #cccccc;}
+.answer { border-left: dotted 1px #ffee33; margin-left : 60px; padding-left : 10px; color: #ffee33;}
+.text { margin-left : 10px; padding-left : 10px; padding-top : 10px;}
+
+.date {font-size: 10pt; color: #cccccc;}
+
+.gb_copyright {
+	font-size: 7pt;
+}
+A.gb_copyright:link {
+	font-size: 7pt;
+}
+A.gb_copyright:hover {
+	font-size: 7pt;
+}
+A.gb_copyright:visited {
+	font-size: 7pt;
+}
+
+.but:link {
+    background-color: #cccccc;
+    border: 1px;
+    display: "inline-block";
+    margin: 1px;
+    padding: 1px 5px;
+    border-style: solid;
+    color: #000000;
+    text-decoration: none;
+}
+.but:visited {
+    background-color: #cccccc;
+    border: 1px;
+    display: "inline-block";
+    margin: 1px;
+    padding: 1px 5px;
+    border-style: solid;
+    color: #000000;
+    text-decoration: none;
+}
+.but:hover {
+    background-color: #cccccc;
+    border: 1px;
+    display: "inline-block";
+    margin: 1px;
+    padding: 1px 5px;
+    border-style: solid;
+    color: #ffee33;
+    text-decoration: none;
+}
+.form_conf {
+    width:300px;
+    border-style: solid;
+    border-color: #637dff;
+    border-width: 1px;
+}

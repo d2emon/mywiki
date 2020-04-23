@@ -1,0 +1,65 @@
+var begunAds = {
+"banners" : {
+    "autocontext" : [],
+    "hypercontext" : [],
+    "graph" : []},
+"stubs" : {
+    "all_banners" : "http://autocontext.begun.ru/search/?cstr=h1yEf-ZsNPccTsjnxYaLA*yHDIztvhCIfzzBU3FDzFU-IW2RIJN01bq89B4EwxNVdTNfV78TEfthhxQrr6RXw8VUFInZ5S-qKT9ADPg6*BkzOrtquApE3XVp6oUtVafX7Zf9XMMnBNrKHPoeNFdTjOUyzTrEWapFG9UOk9hdpW-sCIxMYR8o1OAmqXBKjBIsNF2L88hujjVaDWV71okp4ueK3TPHly01inQXXXJnOn0GjXyT6VXqZ9n9gybMwZUWgnjX*1m7MQT5Gh-KnnbzE8-6IY67gD2p*BrytKbold5J-CWa6HNa35RVVKO-yrugBiH*2x1d8O*F33XsdmJOg1I4P-4ZXdmaA48BuNv820vcVj1JpCZJ8*DZXEciwzOjvuVRoJMOCBOt0o7WYTv4pgNQwx5xM7WsxnFpGthjTDgvNIaUjWPctCKf2JIqUE3zyBzAUDFliylAHgOTT6GP91sARCyL1PkqlvZzyOj6OdjjNYNFKj1YTwrZZdHRpgJio---Ou12rIJY5ypzHqIYRcJomE3j3Z*Pa88PfPcCL1f72oUBu*w8B3YJpCVu7C0DpDPSRv7ytfFa1sTqe9-F62aimec5ntZ1tb5d1qlvRwYeCpOyuY9sHpO6ovZQQs3BDWGZqVyrGmOsDwuaFs7-daF2LIUCMr3lwEmQFOc0AcCSb9rUJfa1Fw",
+    "behav_all_banners" : "http://autocontext.begun.ru/search/?cstr=",
+    "place_here" : "http://autocontext.begun.ru/geoIpRedirect.php",
+    "become_partner" : "http://www.begun.ru/partner/?r1=Begun&r2=become_partner"},
+"blocks" : [
+    {
+        "id" : 207217064,
+        "options" : {
+            "visual" : {
+                "block" : {
+                    "backgroundColor" : "#F5F5F5",
+                    "borderColor" : "#F5F5F5"},
+                "domain" : {
+                    "color" : "#333333",
+                    "fontSize" : 12},
+                "text" : {
+                    "color" : "#333333",
+                    "fontSize" : 12},
+                "title" : {
+                    "color" : "#1D699D",
+                    "fontSize" : 12},
+                "title_hover" : {
+                    "color" : "#1D699D"}},
+            "dimensions" : {
+                "type" : "horizontal"},
+            "banners_count" : 4,
+            "banners_count_coef" : 1,
+            "use_scroll" : 0,
+            "use_accordion" : 0,
+            "show_thumbnails" : 1,
+            "show_favicons" : 0,
+            "markup_lang" : "notset",
+            "rambler_search_box" : "disabled",
+            "misc_id" : 2,
+            "capacity" : 4,
+            "json" : [],
+            "view_type" : "Usual,Alco,Extended",
+            "block_options" : ""}}],
+"links" : [],
+"params" : {
+    "multispan" : 0,
+    "thumbs" : 1,
+    "thumbs_src" : "thumbs01.begun.ru",
+    "icons" : 0,
+    "stub" : 1,
+    "autoscroll" : 0,
+    "showhref" : 0,
+    "behavshowhref" : 0,
+    "wide" : 0,
+    "is_mobile" : 0,
+    "user_region_id" : 214,
+    "style" : "fixed"},
+"cookies" : {
+    "uuid" : "c0022a25-e85e-4694-933a-43a50d719f5a"},
+"chain" : [],
+"debug" : {}}
+if (typeof Begun != 'undefined' && Begun.Autocontext && typeof Begun.Autocontext.loadFeedDone == 'function')
+Begun.Autocontext.loadFeedDone();
+else if (typeof loadFeedDone == 'function') loadFeedDone();

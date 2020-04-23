@@ -1,0 +1,14 @@
+var MAX_a810ef35 = '';
+MAX_a810ef35 += "<"+"center><"+"script type=\"text/javascript\"><"+"!--\n";
+MAX_a810ef35 += "google_ad_client = \"pub-8266567083002288\";\n";
+MAX_a810ef35 += "google_ad_width = 728;\n";
+MAX_a810ef35 += "google_ad_height = 90;\n";
+MAX_a810ef35 += "google_ad_format = \"728x90_as\";\n";
+MAX_a810ef35 += "google_ad_type = \"text_image\";\n";
+MAX_a810ef35 += "google_ad_channel =\"\";\n";
+MAX_a810ef35 += "//--><"+"/script>\n";
+MAX_a810ef35 += "<"+"script type=\"text/javascript\"\n";
+MAX_a810ef35 += "src=\"http://pagead2.googlesyndication.com/pagead/show_ads.js\">\n";
+MAX_a810ef35 += "<"+"/script>\n";
+MAX_a810ef35 += "<"+"/center><"+"div id=\'beacon_576\' style=\'position: absolute; left: 0px; top: 0px; visibility: hidden;\'><"+"img src=\'http://lists.loadout.com/Openads/www/delivery/lg.php?bannerid=576&amp;campaignid=5&amp;zoneid=8&amp;channel_ids=,&amp;loc=http%3A%2F%2Fwww.mojonixon.com%2Flyrics%2Felvisiseverywhere.html&amp;referer=http%3A%2F%2Fwww.mojonixon.com%2Flyrics%2Findex.html&amp;cb=60d86cde41\' width=\'0\' height=\'0\' alt=\'\' style=\'width: 0px; height: 0px;\' /><"+"/div><"+"script type=\'text/javascript\'>document.context=\'YTowOnt9\'; <"+"/script>\n";
+document.write(MAX_a810ef35);

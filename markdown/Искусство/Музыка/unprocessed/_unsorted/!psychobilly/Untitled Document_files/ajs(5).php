@@ -1,0 +1,3 @@
+var MAX_7d1ff8de = '';
+MAX_7d1ff8de += "<"+"A HREF=http://adultfriendfinder.com/go/g858397 target=_top><"+"img src=http://adserver.adultfriendfinder.com/banner.cgi?lang=english&size=160x600 border=0><"+"/A><"+"div id=\'beacon_385\' style=\'position: absolute; left: 0px; top: 0px; visibility: hidden;\'><"+"img src=\'http://lists.loadout.com/Openads/www/delivery/lg.php?bannerid=385&amp;campaignid=71&amp;zoneid=23&amp;loc=http%3A%2F%2Fwww.mojonixon.com%2Flyrics%2Fhamletchickenplantdisaster.html&amp;referer=http%3A%2F%2Fwww.mojonixon.com%2Flyrics%2Findex.html&amp;cb=5faf10d130\' width=\'0\' height=\'0\' alt=\'\' style=\'width: 0px; height: 0px;\' /><"+"/div><"+"script type=\'text/javascript\'>document.context=\'YTowOnt9\'; <"+"/script>\n";
+document.write(MAX_7d1ff8de);

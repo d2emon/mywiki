@@ -1,0 +1,6 @@
+document.write('<a target=\"_blank\" href=\"http://ad.yieldmanager.com/click2,24sAAATFBgClej8AAAAAAG.8EAAAAAAAAgAMAAYAAAAAAP8AAAADD5H6AAAAAAAAGZUXAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABTqwMAAAAAAAIAAgAAAAAApqPb9icBAAAAAQAAAGY3MjlkNWI4LTQ2ZWMtMTFkZi04ZDM2LTAwMjQ4MTI2ODQ5ZQAwdisAAAA=YXA-AA==,,http%3A%2F%2Fwww.guitaretab.com%2Fz%2Fzombie-ghost-train%2F206692.html,\"><img border=\"0\" alt=\"\" height=\"90\" width=\"728\" src=\"http://content.yieldmanager.edgesuite.net/atoms/32/1a/99/f2/321a99f2a576ab6dc158cc7f94a4f2c7.jpg\"></img></a>');
+var rm_data = new Object();
+rm_data.creative_id = 4160165;
+rm_data.offer_type = 47;
+rm_data.entity_id = 249232;
+if (window.rm_crex_data) {rm_crex_data.push(4160165);}

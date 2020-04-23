@@ -1,0 +1,32 @@
+  body {
+    background:#FFFFFF;
+    color: #000000;
+   }
+
+  a:link { color: #B53129 }
+  a:visited { color: #AD948C }
+  a:active { color: #E78500 }
+  
+  a img { border: 0px }
+
+  hr { color: #E78500 }
+
+  b { color: #B53129 }
+
+  em { color: #AD948C }
+
+  h3 { color: #B53129 }
+
+  h2 { color: #B53129 }
+
+  h1 { color: #B53129 }
+     
+  *#symbol {
+    font-family: symbol; 
+   }
+
+  *#helvetica {
+    font-family: helvetica;
+  }
+             
+  *#red { color: #B53129 }

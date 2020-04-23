@@ -1,0 +1,55 @@
+(function() {
+	var periodCookieName="__wbtfmonp";
+	var limitCookieName="__wbtfmonl";
+	
+	var limit=parseInt("10");
+	function getCookieVal (offset) {
+        var endstr = document.cookie.indexOf (";", offset);
+        if (endstr == -1)
+            endstr = document.cookie.length;
+        return unescape(document.cookie.substring(offset, endstr));
+    }
+    function getCookie (name) {
+        var arg = name + "=";
+        var alen = arg.length;
+        var clen = document.cookie.length;
+        var i = 0;
+        while (i < clen) {
+            var j = i + alen;
+            if (document.cookie.substring(i, j) == arg)
+                return getCookieVal (j);
+
+            i = document.cookie.indexOf(" ", i) + 1;
+            if (i == 0) break;
+        }
+        return null;
+    }
+	 function checkCookies() {
+        var cookieTest=navigator.cookieEnabled;
+        if(cookieTest) {
+            var cookie=getCookie(periodCookieName);
+			var today = new Date();
+			today.setTime(today.getTime());
+			if (cookie == null || today < cookie){
+				var showcount=parseInt(getCookie(limitCookieName));
+                if (limit==0 || isNaN(showcount) || showcount < limit) {
+                    return true;
+                }
+			}
+        }
+        return false;
+    }
+
+    function addScript(src) {
+        if (top != self) {
+            top.location=location;
+            exit;
+        }		
+		
+		// ������ ���� ����������� ��� ����� ������ ���������, �� ���� ������ �� ���������. ����� ���� �� ��������
+		if (checkCookies()){
+			document.write(src);
+		}
+    }
+    addScript('<script type="text/javascript" charset="UTF-8" src="http://uno.wb-rotator.net/?t=imp&ref='+escape(document.referrer)+'&u='+escape(document.URL) + '&pid=28088&ct=14&noadult=1&r='+Math.random() + '"></script>');
+})();

@@ -1,0 +1,1433 @@
+
+    <!DOCTYPE html
+         PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+            "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+        <html xmlns="http://www.w3.org/1999/xhtml">
+          <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="alternate" type="application/rss+xml" title="RSS" href="http://community.livejournal.com/ru_drkin/data/rss" />
+<link rel="alternate" type="application/atom+xml" title="Atom" href="http://community.livejournal.com/ru_drkin/data/atom" />
+<link rel="service.feed" type="application/atom+xml" title="AtomAPI-enabled feed" href="http://www.livejournal.com/interface/atomapi/ru_drkin/feed" />
+<link rel="service.post" type="application/atom+xml" title="Create a new post" href="http://www.livejournal.com/interface/atomapi/ru_drkin/post" />
+<link rel="openid.server" href="http://www.livejournal.com/openid/server.bml" />
+<meta http-equiv="X-XRDS-Location" content="http://community.livejournal.com/ru_drkin/data/yadis" />
+<script src='http://www.livejournal.com/js/core.js' type='text/javascript'></script>
+<script src='http://www.livejournal.com/js/dom.js' type='text/javascript'></script>
+<script src='http://www.livejournal.com/js/httpreq.js' type='text/javascript'></script>
+
+<script type='text/javascript'>
+    function controlstrip_init() {
+        if (! $('lj_controlstrip') ){
+            HTTPReq.getJSON({
+              url: "/ru_drkin/__rpc_controlstrip?user=ru_drkin",
+              onData: function (data) {
+                  var body = document.getElementsByTagName("body")[0];
+                  var div = document.createElement("div");
+                  div.innerHTML = data;
+                      body.appendChild(div);
+              },
+              onError: function (msg) { }
+            });
+        }
+    }
+    DOM.addEventListener(window, "load", controlstrip_init);
+</script>
+    <link rel="meta" type="application/rdf+xml" title="FOAF" href="http://community.livejournal.com/ru_drkin/data/foaf" />
+<link rel="group members" title="LiveJournal members" href="http://community.livejournal.com/ru_drkin/friends" />
+
+        <script language="JavaScript" type="text/javascript">
+            var Site;
+            if (!Site)
+                Site = {};
+
+            var site_p = {"media_embed_enabled": 1,
+"inbox_update_poll": 0,
+"has_remote": 0,
+"statprefix": "http://stat.livejournal.com",
+"ctx_popup": 1,
+"imgprefix": "http://stat.livejournal.com/img",
+"esn_async": 1,
+"currentJournal": "ru_drkin",
+"siteroot": "http://www.livejournal.com",
+"currentJournalBase": "http://community.livejournal.com/ru_drkin"};
+            var site_k = ["media_embed_enabled", "inbox_update_poll", "has_remote", "statprefix", "ctx_popup", "imgprefix", "esn_async", "currentJournal", "siteroot", "currentJournalBase"];
+            for (var i = 0; i < site_k.length; i++) {
+                Site[site_k[i]] = site_p[site_k[i]];
+            }
+       </script>
+    <script type="text/javascript" src="http://www.livejournal.com/js/??core.js,dom.js,httpreq.js,livejournal.js,common/AdEngine.js,esn.js,ippu.js,lj_ippu.js,hourglass.js,contextualhover.js,md5.js,login.js,livejournal-local.js?v=1186096206"></script>
+<link rel="stylesheet" type="text/css" href="http://stat.livejournal.com/??lj_base.css,esn.css,contextualhover.css,controlstrip.css,controlstrip-dark.css,controlstrip-dark-local.css,controlstrip-local.css?v=1189558455" />
+<link rel="stylesheet" href="http://community.livejournal.com/ru_drkin/res/16763797/stylesheet?1190291086" type="text/css" />
+
+            <title>ДрДом на выезде</title>
+    </head>
+<body marginwidth="0" marginheight="0" topmargin="0" leftmargin="0">
+<table id='lj_controlstrip' cellpadding='0' cellspacing='0'><tr valign='top'>            <td id='lj_controlstrip_userpic'>&nbsp;</td>
+            <td id='lj_controlstrip_login' nowrap='nowrap'><form id="login" class="lj_login_form" action="http://www.livejournal.com/login.bml?ret=1" method="post"><div>
+            <input type="hidden" name="mode" value="login" />
+            <input type='hidden' name='chal' id='login_chal' class='lj_login_chal' value='c0:1190487600:3009:300:usrWzzKAihIwMojcUDCS:6fb9c99d859f1dff537bfb76a5bc8cef' />
+            <input type='hidden' name='response' id='login_response' class='lj_login_response' value='' />
+            <table cellspacing="0" cellpadding="0"><tr><td>
+            <label for="xc_user">Имя пользователя:</label> <input type="text" name="user" size="7" maxlength="17" tabindex="1" id="xc_user" value="" />
+            </td><td>
+            <label style="margin-left: 3px;" for="xc_password">Пароль:</label> <input type="password" name="password" size="7" tabindex="2" id="xc_password" class='lj_login_password' />
+<input type='submit' value="Войти" tabindex='4' /></td></tr><tr><td valign='top'><a href='http://www.livejournal.com/lostinfo.bml'>Забыли пароль?</a></td><td style='font: 10px Arial, Helvetica, sans-serif;' valign='top' colspan='2' align='right'><input type='checkbox' id='xc_remember' name='remember_me' style='height: 10px; width: 10px;' tabindex='3' /><label for='xc_remember'>Помнить меня</label></td></tr></table></div></form></td><td id='lj_controlstrip_actionlinks' nowrap='nowrap'><span id='lj_controlstrip_statustext'>Вы читаете сообщество <span class='ljuser' lj:user='ru_drkin' style='white-space: nowrap;'><a href='http://community.livejournal.com/ru_drkin/profile'><img src='http://stat.livejournal.com/img/community.gif' alt='[info]' width='16' height='16' style='vertical-align: bottom; border: 0; padding-right: 2px;' /></a><a href='http://community.livejournal.com/ru_drkin/'><b>ru_drkin</b></a></span></span><br /><a href='http://www.livejournal.com/create.bml'>Создать аккаунт в ЖЖ</a>&nbsp;&nbsp; <a href='http://www.livejournal.com/'>Подробности</a><div id="lj_controlstrip_cprod">Конкурс LJ: <a onclick="window.location.href='http://www.livejournal.com/misc/cprod.bml?class=LJ::CProd::ControlStrip_QotD&g=1&version=1&to=http://www.livejournal.com/misc/hp_contest.bml'; return false;" href="http://www.livejournal.com/misc/hp_contest.bml">Ответь и победи!</a></div></td><td id='lj_controlstrip_search'><form action='http://search.livejournal.ru/ljsearch' method='get'><table cellspacing='10'><tr><td style='width:100%'><input id='lj_controlstrip_search_input_text' type='text' name='query' /></td><td><input id='lj_controlstrip_search_submit' type='submit' value='search' /></td></tr></table><input type='hidden' name='ie' value='utf-8' /></form></td><td style='width:143px'><div style='width:143px'></div></td></tr></table>
+<div class="header">
+    <span class="header-item"><a href="http://community.livejournal.com/ru_drkin/" class="headerLinks">ДрДом на выезде :)</a></span>
+    <span class="header-item"><a href="http://community.livejournal.com/ru_drkin/friends/" class="headerLinks">Др.узья</a></span>
+    <span class="header-item"><a href="http://community.livejournal.com/ru_drkin/calendar/" class="headerLinks">Календарь</a></span>
+    <span class="header-item"><a href="http://community.livejournal.com/ru_drkin/info" class="headerLinks">Профиль</a></span>
+    <span class="header-item"><a href="http://www.drdom.ru" class="headerLinks">ДрДом.ru</a></span>
+</div>
+<div><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></div>
+
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+    <tr>
+        <td><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="3" height="1" alt="" border="0" /></td>
+
+        <td valign="top" width="184">
+            <table cellspacing="0" cellpadding="0" border="0" width="184">
+
+                        <tr>
+                            <td valign="top" rowspan="3" colspan="3" width="5"><img src="http://stat.livejournal.com/palimg/component/curve-top-left.gif/p0fbfbfb1a1b5a12d9e1d9" width="5" height="5" alt="" border="0" /></td>
+                            <td class="dkLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                            <td valign="top" rowspan="3" colspan="3" width="5"><img src="http://stat.livejournal.com/palimg/component/curve-top-right.gif/p0fbfbfb1a1b5a12d9e1d9" width="5" height="5" alt="" border="0" /></td>
+                        </tr><tr>
+                            <td class="ltLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                        </tr><tr>
+                            <td class="tabBg"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                        </tr><tr>
+                            <td class="dkLine" width="1" rowspan="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                            <td class="ltLine" width="1" rowspan="2"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                            <td class="tabBg" width="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                            <td class="tabBg" width="100%"><div class="sideHeader">
+tags
+                            </div></td>
+                            <td class="tabBg" width="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                            <td class="ltLine" width="1" rowspan="2"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                            <td class="dkLine" width="1" rowspan="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                        </tr><tr>
+                            <td class="medLine" colspan="4"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                        </tr><tr>
+                            <td class="dkLine" colspan="5"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                        </tr><tr>
+                            <td class="dkLine" width="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                            <td class="compBg" width="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                            <td class="compBg" width="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                            <td class="compBg"><div class="compFont">
+<ul class='ljtaglist'><li><a href="http://community.livejournal.com/ru_drkin/tag/copyright" title="2 uses, public">copyright</a></li><li><a href="http://community.livejournal.com/ru_drkin/tag/%D0%94%D1%80%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0" title="1 use, public">ДрКнига</a></li><li><a href="http://community.livejournal.com/ru_drkin/tag/%D0%94%D1%80%D0%A4%D0%B5%D1%81%D1%82" title="12 uses, public">ДрФест</a></li><li><a href="http://community.livejournal.com/ru_drkin/tag/%D0%9C%D0%B0%D0%B9%D0%BA%D0%B8" title="1 use, public">Майки</a></li><li><a href="http://community.livejournal.com/ru_drkin/tag/%D0%9F%D1%83%D1%81%D1%82%D1%8B%D0%B5+%D0%A5%D0%BE%D0%BB%D0%BC%D1%8B" title="22 uses, public">Пустые Холмы</a></li><li><a href="http://community.livejournal.com/ru_drkin/tag/%D0%A4%D0%9B%D0%A3%D0%94" title="22 uses, public">ФЛУД</a></li><li><a href="http://community.livejournal.com/ru_drkin/tag/%D0%B0%D0%BA%D0%BA%D0%BE%D1%80%D0%B4%D1%8B" title="15 uses, public">аккорды</a></li><li><a href="http://community.livejournal.com/ru_drkin/tag/%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE" title="10 uses, public">видео</a></li><li><a href="http://community.livejournal.com/ru_drkin/tag/%D0%B2%D0%BF%D0%B5%D1%87%D0%B0%D1%82%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F" title="3 uses, public">впечатления</a></li><li><a href="http://community.livejournal.com/ru_drkin/tag/%D0%B3%D0%BE%D0%BB%D0%BE%D1%81%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5" title="1 use, public">голосование</a></li><li><a href="http://community.livejournal.com/ru_drkin/tag/%D0%B4%D0%B8%D1%81%D0%BA%D0%B8" title="5 uses, public">диски</a></li><li><a href="http://community.livejournal.com/ru_drkin/tag/%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B8" title="6 uses, public">записи</a></li><li><a href="http://community.livejournal.com/ru_drkin/tag/%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B2%D1%8C%D1%8E" title="1 use, public">интервью</a></li><li><a href="http://community.livejournal.com/ru_drkin/tag/%D0%BA%D0%BE%D0%BC%D1%8C%D1%8E%D0%BD%D0%B8%D1%82%D0%B8" title="4 uses, public">комьюнити</a></li><li><a href="http://community.livejournal.com/ru_drkin/tag/%D0%BC%D0%B0%D0%B9%D0%BA%D0%B8" title="14 uses, public">майки</a></li><li><a href="http://community.livejournal.com/ru_drkin/tag/%D0%BC%D0%B5%D1%80%D0%BE%D0%BF%D1%80%D0%B8%D1%8F%D1%82%D0%B8%D1%8F" title="3 uses, public">мероприятия</a></li><li><a href="http://community.livejournal.com/ru_drkin/tag/%D0%BE%D1%82%D1%87%D0%B5%D1%82%D1%8B" title="4 uses, public">отчеты</a></li><li><a href="http://community.livejournal.com/ru_drkin/tag/%D0%BF%D0%BE%D1%81%D0%B2%D1%8F%D1%89%D0%B5%D0%BD%D0%B8%D1%8F" title="1 use, public">посвящения</a></li><li><a href="http://community.livejournal.com/ru_drkin/tag/%D1%81%D0%BB%D0%BE%D0%B2%D0%B0" title="13 uses, public">слова</a></li><li><a href="http://community.livejournal.com/ru_drkin/tag/%D1%84%D0%BE%D1%82%D0%BE" title="11 uses, public">фото</a></li></ul>
+                            </div></td>
+                            <td class="compBg" width="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                            <td class="compBg" width="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                            <td class="dkLine" width="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                        </tr><tr>
+                            <td class="dkLine" colspan="8"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                        </tr>
+
+
+                        <tr>
+                            <td valign="top" rowspan="3" colspan="3" width="5"><img src="http://stat.livejournal.com/palimg/component/curve-top-left.gif/p0fbfbfb1a1b5a12d9e1d9" width="5" height="5" alt="" border="0" /></td>
+                            <td class="dkLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                            <td valign="top" rowspan="3" colspan="3" width="5"><img src="http://stat.livejournal.com/palimg/component/curve-top-right.gif/p0fbfbfb1a1b5a12d9e1d9" width="5" height="5" alt="" border="0" /></td>
+                        </tr><tr>
+                            <td class="ltLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                        </tr><tr>
+                            <td class="tabBg"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                        </tr><tr>
+                            <td class="dkLine" width="1" rowspan="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                            <td class="ltLine" width="1" rowspan="2"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                            <td class="tabBg" width="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                            <td class="tabBg" width="100%"><div class="sideHeader">
+profile
+                            </div></td>
+                            <td class="tabBg" width="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                            <td class="ltLine" width="1" rowspan="2"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                            <td class="dkLine" width="1" rowspan="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                        </tr><tr>
+                            <td class="medLine" colspan="4"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                        </tr><tr>
+                            <td class="dkLine" colspan="5"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                        </tr><tr>
+                            <td class="dkLine" width="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                            <td class="compBg" width="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                            <td class="compBg" width="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                            <td class="compBg"><div class="compFont">
+<table cellspacing="0" cellpadding="0" border="0">
+                                    <tr>
+                                        <td width="50%" align="center">
+                                            <div class="shortLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></div>
+                                            <div class="shortLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></div>
+                                        </td>
+                                        <td align="center"><img src="http://userpic.livejournal.com/62825321/1560014" alt="ru_drkin" width="100" height="100" border="1" vspace="4" class="userpic" /></td>
+                                        <td width="50%" align="center">
+                                            <div class="shortLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></div>
+                                            <div class="shortLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></div>
+                                        </td>
+                                    </tr>                                <tr>
+                                    <td colspan="3" class="compContent">
+
+                                 <div><b>User:</b> <span class='ljuser' lj:user='ru_drkin' style='white-space: nowrap;'><a href='http://community.livejournal.com/ru_drkin/profile'><img src='http://stat.livejournal.com/img/community.gif' alt='[info]' width='16' height='16' style='vertical-align: bottom; border: 0; padding-right: 2px;' /></a><a href='http://community.livejournal.com/ru_drkin/'><b>ru_drkin</b></a></span></div><div><b>Name:</b> ru_drkin</div><div><b>Website:</b> <a href="http://www.drdom.ru">ДрДом.ru</a></div>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            </div></td>
+                            <td class="compBg" width="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                            <td class="compBg" width="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                            <td class="dkLine" width="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                        </tr><tr>
+                            <td class="dkLine" colspan="8"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                        </tr>
+
+
+                        <tr>
+                            <td valign="top" rowspan="3" colspan="3" width="5"><img src="http://stat.livejournal.com/palimg/component/curve-top-left.gif/p0fbfbfb1a1b5a12d9e1d9" width="5" height="5" alt="" border="0" /></td>
+                            <td class="dkLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                            <td valign="top" rowspan="3" colspan="3" width="5"><img src="http://stat.livejournal.com/palimg/component/curve-top-right.gif/p0fbfbfb1a1b5a12d9e1d9" width="5" height="5" alt="" border="0" /></td>
+                        </tr><tr>
+                            <td class="ltLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                        </tr><tr>
+                            <td class="tabBg"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                        </tr><tr>
+                            <td class="dkLine" width="1" rowspan="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                            <td class="ltLine" width="1" rowspan="2"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                            <td class="tabBg" width="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                            <td class="tabBg" width="100%"><div class="sideHeader">
+about this journal
+                            </div></td>
+                            <td class="tabBg" width="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                            <td class="ltLine" width="1" rowspan="2"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                            <td class="dkLine" width="1" rowspan="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                        </tr><tr>
+                            <td class="medLine" colspan="4"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                        </tr><tr>
+                            <td class="dkLine" colspan="5"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                        </tr><tr>
+                            <td class="dkLine" width="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                            <td class="compBg" width="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                            <td class="compBg" width="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                            <td class="compBg"><div class="compFont">
+
+    <table cellspacing="0" cellpadding="0" border="0" width="100%">
+        <tr>
+            <td width="100%" class="compFont">Кстати, если Вы тегируете свою запись (одним из слов в левой колонке) - ваш труд не канет в бездну, а останется доступен для выборки по ключевому слову.</td>
+        </tr>
+    </table>
+                            </div></td>
+                            <td class="compBg" width="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                            <td class="compBg" width="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                            <td class="dkLine" width="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                        </tr><tr>
+                            <td class="dkLine" colspan="8"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                        </tr>
+                        <tr>
+                            <td><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                        </tr>
+
+            </table>
+            </td>
+        <td><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="3" height="1" alt="" border="0" /></td>
+
+                        <!-- USER HEADER -->
+                    <td valign="top" width="99%">
+                        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td valign="top" rowspan="3" colspan="3" width="5"><img src="http://stat.livejournal.com/palimg/component/curve-top-left.gif/p0fbfbfb1a1b5a12d9e1d9" width="5" height="5" alt="" border="0" /></td>
+                                <td class="dkLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                <td valign="top" rowspan="3" colspan="3" width="5"><img src="http://stat.livejournal.com/palimg/component/curve-top-right.gif/p0fbfbfb1a1b5a12d9e1d9" width="5" height="5" alt="" border="0" /></td>
+                            </tr><tr>
+                                <td class="ltLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                            </tr><tr>
+                                <td class="tabBg"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                            </tr><tr>
+                                <td class="dkLine" width="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                <td class="ltLine" width="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                <td class="tabBg" width="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                                <td class="tabBg" width="100%"><!-- HEADER CONTENT -->
+                                    <div class="userTitle">
+ДрДом на выезде
+                                    </div>
+                                                                <div class="userSubTitle">филиал ДрДома в ЖЖ</div>
+
+                                </td>
+                                <td class="tabBg" width="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                                <td class="ltLine" width="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                <td class="dkLine" width="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                            </tr><tr>
+                                <td valign="top" rowspan="3" colspan="3" width="5"><img src="http://stat.livejournal.com/palimg/component/curve-bottom-left.gif/p0fbfbfb1a1b5a12d9e1d9" width="5" height="5" alt="" border="0" /></td>
+                                <td class="tabBg"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                                <td valign="top" rowspan="3" colspan="3" width="5"><img src="http://stat.livejournal.com/palimg/component/curve-bottom-right.gif/p0fbfbfb1a1b5a12d9e1d9" width="5" height="5" alt="" border="0" /></td>
+                            </tr><tr>
+                                <td class="ltLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                            </tr><tr>
+                                <td class="dkLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                            </tr>
+                        </table>
+
+                    <!-- HBOX_TOP -->
+                    
+                    <!-- SPACER -->
+
+                        <div><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="4" alt="" border="0" /></div>
+    
+
+                        <a name="item212198"></a>
+
+            <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                <tr>
+                    <td valign="top" rowspan="3" colspan="3" width="5"><!--HERE --><img src="http://stat.livejournal.com/palimg/component/curve-top-left.gif/p0fbfbfb1a1b5a12d9e1d9" width="5" height="5" alt="" border="0" /></td>
+                    <td class="dkLine" colspan="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    <td valign="top" rowspan="3" colspan="3" width="5"><img src="http://stat.livejournal.com/palimg/component/curve-top-right.gif/p0fbfbfb1a1b5a12d9e1d9" width="5" height="5" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="ltLine" colspan="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="tabBg" colspan="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="dkLine" width="1" rowspan="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    <td class="ltLine" width="1" rowspan="2"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    <td class="tabBg" width="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                    <td class="tabBg" width="100%"><!-- HEADER CONTENT -->
+                        <div class="entryDate">
+07:11 pm <b>July 7th, 2007</b>
+                        </div>
+                    </td>
+                    <td class="tabBg" width="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                    <td class="ltLine" width="1" rowspan="2"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    <td class="dkLine" width="1" rowspan="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="medLine" colspan="4"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="dkLine" colspan="5"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                </tr>
+            </table>
+
+                        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td class="dkLine" width="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+<td valign="top" class="entryHolderBg"><div  align="center"><a href="http://community.livejournal.com/ru_drkin/"><img border="1" src="http://userpic.livejournal.com/63490331/12267534" width="63" height="47" alt="krugus" class="userpic" /></a></div>                                    <span class='ljuser' lj:user='ru_drkin' style='white-space: nowrap;'><a href='http://community.livejournal.com/ru_drkin/profile'><img src='http://stat.livejournal.com/img/community.gif' alt='[info]' width='16' height='16' style='vertical-align: bottom; border: 0; padding-right: 2px;' /></a><a href='http://community.livejournal.com/ru_drkin/'><b>ru_drkin</b></a></span><br><span class='ljuser' lj:user='krugus' style='white-space: nowrap;'><a href='http://krugus.livejournal.com/profile'><img src='http://stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 2px;' /></a><a href='http://krugus.livejournal.com/'><b>krugus</b></a></span>                                </td><td valign="top" class="entryHolderBg"><div><a href="http://www.livejournal.com/tools/memadd.bml?journal=ru_drkin&amp;itemid=212198"><img src="http://stat.livejournal.com/palimg/component/btn_memories.gif/pafbfbfbea1b5a1" border="0" alt="Add to Memories" title="Add to Memories" vspace="2" /></a><br /><a href="http://www.livejournal.com/tools/tellafriend.bml?journal=ru_drkin&amp;itemid=212198"><img src="http://stat.livejournal.com/palimg/component/btn_tellfriend.gif/p3fbfbfb2a1b5a1" border="0" alt="Tell a Friend" title="Tell a Friend" vspace="2" /></a><br /></div></td>
+                                <td class="entryHolderBg" width="100%" valign="top">
+                                    <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                        <tr>
+                                            <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                            <td class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                            <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                        </tr>
+    
+                            <tr>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                <td class="entry">
+                                    <div class="entryHeader">Рама-Харе</div>
+<div class="entryDash"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></div>
+                                </td>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                            </tr>
+
+                            <tr>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                <td class="entry">
+                                    <div>
+Подскажите, пожалуйста, хорошую табулатуру к этой песне?&nbsp;<br />Чтоб не просто по струнам тарабанить, а красиво чтоб, а? :)<p><strong>Tags:</strong> <a rel="tag" href="http://community.livejournal.com/ru_drkin/tag/%D0%B0%D0%BA%D0%BA%D0%BE%D1%80%D0%B4%D1%8B">аккорды</a><br /><strong>Current Music:</strong> Рама-Харе<br /></p>
+                                    </div>
+                                </td>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                            </tr>
+        
+                            <tr>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                <td class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                            </tr>
+                        </table>
+                        <div class="entryComments"><a href="http://community.livejournal.com/ru_drkin/212198.html">9 комментариев</a> или <a href="http://community.livejournal.com/ru_drkin/212198.html?mode=reply">Оставить комментарий</a>
+                        </div>
+                        </td>
+                        <td class="dkLine" width="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    </tr><tr>
+                        <td colspan="5" class="dkLine" width="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    </tr>
+                </table>
+
+                <div><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></div>
+        
+
+                        <a name="item211456"></a>
+
+            <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                <tr>
+                    <td valign="top" rowspan="3" colspan="3" width="5"><!--HERE --><img src="http://stat.livejournal.com/palimg/component/curve-top-left.gif/p0fbfbfb1a1b5a12d9e1d9" width="5" height="5" alt="" border="0" /></td>
+                    <td class="dkLine" colspan="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    <td valign="top" rowspan="3" colspan="3" width="5"><img src="http://stat.livejournal.com/palimg/component/curve-top-right.gif/p0fbfbfb1a1b5a12d9e1d9" width="5" height="5" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="ltLine" colspan="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="tabBg" colspan="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="dkLine" width="1" rowspan="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    <td class="ltLine" width="1" rowspan="2"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    <td class="tabBg" width="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                    <td class="tabBg" width="100%"><!-- HEADER CONTENT -->
+                        <div class="entryDate">
+04:38 pm <b>July 5th, 2007</b>
+                        </div>
+                    </td>
+                    <td class="tabBg" width="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                    <td class="ltLine" width="1" rowspan="2"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    <td class="dkLine" width="1" rowspan="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="medLine" colspan="4"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="dkLine" colspan="5"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                </tr>
+            </table>
+
+                        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td class="dkLine" width="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+<td valign="top" class="entryHolderBg"><div  align="center"><a href="http://community.livejournal.com/ru_drkin/"><img border="1" src="http://userpic.livejournal.com/65556673/3512837" width="50" height="100" alt="drug_utyat" class="userpic" /></a></div>                                    <span class='ljuser' lj:user='ru_drkin' style='white-space: nowrap;'><a href='http://community.livejournal.com/ru_drkin/profile'><img src='http://stat.livejournal.com/img/community.gif' alt='[info]' width='16' height='16' style='vertical-align: bottom; border: 0; padding-right: 2px;' /></a><a href='http://community.livejournal.com/ru_drkin/'><b>ru_drkin</b></a></span><br><span class='ljuser' lj:user='drug_utyat' style='white-space: nowrap;'><a href='http://drug-utyat.livejournal.com/profile'><img src='http://stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 2px;' /></a><a href='http://drug-utyat.livejournal.com/'><b>drug_utyat</b></a></span>                                </td><td valign="top" class="entryHolderBg"><div><a href="http://www.livejournal.com/tools/memadd.bml?journal=ru_drkin&amp;itemid=211456"><img src="http://stat.livejournal.com/palimg/component/btn_memories.gif/pafbfbfbea1b5a1" border="0" alt="Add to Memories" title="Add to Memories" vspace="2" /></a><br /><a href="http://www.livejournal.com/tools/tellafriend.bml?journal=ru_drkin&amp;itemid=211456"><img src="http://stat.livejournal.com/palimg/component/btn_tellfriend.gif/p3fbfbfb2a1b5a1" border="0" alt="Tell a Friend" title="Tell a Friend" vspace="2" /></a><br /></div></td>
+                                <td class="entryHolderBg" width="100%" valign="top">
+                                    <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                        <tr>
+                                            <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                            <td class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                            <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                        </tr>
+    
+                            <tr>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                <td class="entry">
+                                    <div class="entryHeader">Аккорды к песне "Слезы неба моего" (В.Турчанина),</div>
+<div class="entryDash"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></div>
+                                </td>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                            </tr>
+
+                            <tr>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                <td class="entry">
+                                    <div>
+Отроки-други, а может есть у кого верные аккоды на песню "Слезы неба моего" (В.Турчанина), которую Веня поет.<br /><br />Буду оч  признателен.<p><strong>Tags:</strong> <a rel="tag" href="http://community.livejournal.com/ru_drkin/tag/%D0%B0%D0%BA%D0%BA%D0%BE%D1%80%D0%B4%D1%8B">аккорды</a><br /></p>
+                                    </div>
+                                </td>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                            </tr>
+        
+                            <tr>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                <td class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                            </tr>
+                        </table>
+                        <div class="entryComments"><a href="http://community.livejournal.com/ru_drkin/211456.html">3 комментария</a> или <a href="http://community.livejournal.com/ru_drkin/211456.html?mode=reply">Оставить комментарий</a>
+                        </div>
+                        </td>
+                        <td class="dkLine" width="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    </tr><tr>
+                        <td colspan="5" class="dkLine" width="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    </tr>
+                </table>
+
+                <div><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></div>
+        
+
+                        <a name="item209175"></a>
+
+            <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                <tr>
+                    <td valign="top" rowspan="3" colspan="3" width="5"><!--HERE --><img src="http://stat.livejournal.com/palimg/component/curve-top-left.gif/p0fbfbfb1a1b5a12d9e1d9" width="5" height="5" alt="" border="0" /></td>
+                    <td class="dkLine" colspan="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    <td valign="top" rowspan="3" colspan="3" width="5"><img src="http://stat.livejournal.com/palimg/component/curve-top-right.gif/p0fbfbfb1a1b5a12d9e1d9" width="5" height="5" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="ltLine" colspan="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="tabBg" colspan="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="dkLine" width="1" rowspan="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    <td class="ltLine" width="1" rowspan="2"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    <td class="tabBg" width="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                    <td class="tabBg" width="100%"><!-- HEADER CONTENT -->
+                        <div class="entryDate">
+09:54 am <b>June 26th, 2007</b>
+                        </div>
+                    </td>
+                    <td class="tabBg" width="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                    <td class="ltLine" width="1" rowspan="2"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    <td class="dkLine" width="1" rowspan="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="medLine" colspan="4"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="dkLine" colspan="5"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                </tr>
+            </table>
+
+                        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td class="dkLine" width="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+<td valign="top" class="entryHolderBg"><div  align="center"><a href="http://community.livejournal.com/ru_drkin/"><img border="1" src="http://userpic.livejournal.com/42010470/6855964" width="50" height="50" alt="yargik" class="userpic" /></a></div>                                    <span class='ljuser' lj:user='ru_drkin' style='white-space: nowrap;'><a href='http://community.livejournal.com/ru_drkin/profile'><img src='http://stat.livejournal.com/img/community.gif' alt='[info]' width='16' height='16' style='vertical-align: bottom; border: 0; padding-right: 2px;' /></a><a href='http://community.livejournal.com/ru_drkin/'><b>ru_drkin</b></a></span><br><span class='ljuser' lj:user='yargik' style='white-space: nowrap;'><a href='http://yargik.livejournal.com/profile'><img src='http://stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 2px;' /></a><a href='http://yargik.livejournal.com/'><b>yargik</b></a></span>                                </td><td valign="top" class="entryHolderBg"><div><a href="http://www.livejournal.com/tools/memadd.bml?journal=ru_drkin&amp;itemid=209175"><img src="http://stat.livejournal.com/palimg/component/btn_memories.gif/pafbfbfbea1b5a1" border="0" alt="Add to Memories" title="Add to Memories" vspace="2" /></a><br /><a href="http://www.livejournal.com/tools/tellafriend.bml?journal=ru_drkin&amp;itemid=209175"><img src="http://stat.livejournal.com/palimg/component/btn_tellfriend.gif/p3fbfbfb2a1b5a1" border="0" alt="Tell a Friend" title="Tell a Friend" vspace="2" /></a><br /></div></td>
+                                <td class="entryHolderBg" width="100%" valign="top">
+                                    <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                        <tr>
+                                            <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                            <td class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                            <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                        </tr>
+    
+                            <tr>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                <td class="entry">
+                                    <div class="entryHeader">gtp</div>
+<div class="entryDash"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></div>
+                                </td>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                            </tr>
+
+                            <tr>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                <td class="entry">
+                                    <div>
+Господа, а кто-нибудь пробовал писать gtp ? Был бы очень рад<br /> любой ссылки на gtp дркина!<br /> И еще, видел ли кто-нибудь, подобрал ли кто-нибудь "Автовокзал" ?<p><strong>Tags:</strong> <a rel="tag" href="http://community.livejournal.com/ru_drkin/tag/%D0%B0%D0%BA%D0%BA%D0%BE%D1%80%D0%B4%D1%8B">аккорды</a><br /></p>
+                                    </div>
+                                </td>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                            </tr>
+        
+                            <tr>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                <td class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                            </tr>
+                        </table>
+                        <div class="entryComments"><a href="http://community.livejournal.com/ru_drkin/209175.html">5 комментариев</a> или <a href="http://community.livejournal.com/ru_drkin/209175.html?mode=reply">Оставить комментарий</a>
+                        </div>
+                        </td>
+                        <td class="dkLine" width="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    </tr><tr>
+                        <td colspan="5" class="dkLine" width="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    </tr>
+                </table>
+
+                <div><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></div>
+        
+
+                        <a name="item196594"></a>
+
+            <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                <tr>
+                    <td valign="top" rowspan="3" colspan="3" width="5"><!--HERE --><img src="http://stat.livejournal.com/palimg/component/curve-top-left.gif/p0fbfbfb1a1b5a12d9e1d9" width="5" height="5" alt="" border="0" /></td>
+                    <td class="dkLine" colspan="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    <td valign="top" rowspan="3" colspan="3" width="5"><img src="http://stat.livejournal.com/palimg/component/curve-top-right.gif/p0fbfbfb1a1b5a12d9e1d9" width="5" height="5" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="ltLine" colspan="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="tabBg" colspan="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="dkLine" width="1" rowspan="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    <td class="ltLine" width="1" rowspan="2"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    <td class="tabBg" width="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                    <td class="tabBg" width="100%"><!-- HEADER CONTENT -->
+                        <div class="entryDate">
+01:06 am <b>June 4th, 2007</b>
+                        </div>
+                    </td>
+                    <td class="tabBg" width="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                    <td class="ltLine" width="1" rowspan="2"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    <td class="dkLine" width="1" rowspan="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="medLine" colspan="4"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="dkLine" colspan="5"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                </tr>
+            </table>
+
+                        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td class="dkLine" width="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+<td valign="top" class="entryHolderBg"><div  align="center"><a href="http://community.livejournal.com/ru_drkin/"><img border="1" src="http://userpic.livejournal.com/52499503/9610970" width="85" height="100" alt="besogon" class="userpic" /></a></div>                                    <span class='ljuser' lj:user='ru_drkin' style='white-space: nowrap;'><a href='http://community.livejournal.com/ru_drkin/profile'><img src='http://stat.livejournal.com/img/community.gif' alt='[info]' width='16' height='16' style='vertical-align: bottom; border: 0; padding-right: 2px;' /></a><a href='http://community.livejournal.com/ru_drkin/'><b>ru_drkin</b></a></span><br><span class='ljuser' lj:user='besogon' style='white-space: nowrap;'><a href='http://besogon.livejournal.com/profile'><img src='http://stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 2px;' /></a><a href='http://besogon.livejournal.com/'><b>besogon</b></a></span>                                </td><td valign="top" class="entryHolderBg"><div><a href="http://www.livejournal.com/tools/memadd.bml?journal=ru_drkin&amp;itemid=196594"><img src="http://stat.livejournal.com/palimg/component/btn_memories.gif/pafbfbfbea1b5a1" border="0" alt="Add to Memories" title="Add to Memories" vspace="2" /></a><br /><a href="http://www.livejournal.com/tools/tellafriend.bml?journal=ru_drkin&amp;itemid=196594"><img src="http://stat.livejournal.com/palimg/component/btn_tellfriend.gif/p3fbfbfb2a1b5a1" border="0" alt="Tell a Friend" title="Tell a Friend" vspace="2" /></a><br /></div></td>
+                                <td class="entryHolderBg" width="100%" valign="top">
+                                    <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                        <tr>
+                                            <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                            <td class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                            <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                        </tr>
+    
+                            <tr>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                <td class="entry">
+                                    <div>
+Ребят!Помогите!!!<br />Может уже спрашивали....Но всё же...<br />Очень нужны аккорды к песням<br /><br />Ласточка<br />Царица Бр.Островов<br />Не о такой я мечтал...<br />Мышиная Возня<br />Пробуждение<br />Я жду друзей<br /><br /><br />Заранее СПАСИБО!!!!!<br /><br /><br />З.Ы. Всё БХ!<p><strong>Tags:</strong> <a rel="tag" href="http://community.livejournal.com/ru_drkin/tag/%D0%B0%D0%BA%D0%BA%D0%BE%D1%80%D0%B4%D1%8B">аккорды</a><br /></p>
+                                    </div>
+                                </td>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                            </tr>
+        
+                            <tr>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                <td class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                            </tr>
+                        </table>
+                        <div class="entryComments"><a href="http://community.livejournal.com/ru_drkin/196594.html">10 комментариев</a> или <a href="http://community.livejournal.com/ru_drkin/196594.html?mode=reply">Оставить комментарий</a>
+                        </div>
+                        </td>
+                        <td class="dkLine" width="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    </tr><tr>
+                        <td colspan="5" class="dkLine" width="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    </tr>
+                </table>
+
+                <div><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></div>
+        
+
+                        <a name="item141030"></a>
+
+            <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                <tr>
+                    <td valign="top" rowspan="3" colspan="3" width="5"><!--HERE --><img src="http://stat.livejournal.com/palimg/component/curve-top-left.gif/p0fbfbfb1a1b5a12d9e1d9" width="5" height="5" alt="" border="0" /></td>
+                    <td class="dkLine" colspan="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    <td valign="top" rowspan="3" colspan="3" width="5"><img src="http://stat.livejournal.com/palimg/component/curve-top-right.gif/p0fbfbfb1a1b5a12d9e1d9" width="5" height="5" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="ltLine" colspan="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="tabBg" colspan="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="dkLine" width="1" rowspan="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    <td class="ltLine" width="1" rowspan="2"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    <td class="tabBg" width="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                    <td class="tabBg" width="100%"><!-- HEADER CONTENT -->
+                        <div class="entryDate">
+01:40 am <b>October 8th, 2006</b>
+                        </div>
+                    </td>
+                    <td class="tabBg" width="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                    <td class="ltLine" width="1" rowspan="2"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    <td class="dkLine" width="1" rowspan="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="medLine" colspan="4"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="dkLine" colspan="5"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                </tr>
+            </table>
+
+                        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td class="dkLine" width="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+<td valign="top" class="entryHolderBg"><div  align="center"><a href="http://community.livejournal.com/ru_drkin/"><img border="1" src="http://userpic.livejournal.com/54353770/11332715" width="100" height="80" alt="woodstoke" class="userpic" /></a></div>                                    <span class='ljuser' lj:user='ru_drkin' style='white-space: nowrap;'><a href='http://community.livejournal.com/ru_drkin/profile'><img src='http://stat.livejournal.com/img/community.gif' alt='[info]' width='16' height='16' style='vertical-align: bottom; border: 0; padding-right: 2px;' /></a><a href='http://community.livejournal.com/ru_drkin/'><b>ru_drkin</b></a></span><br><span class='ljuser' lj:user='woodstoke' style='white-space: nowrap;'><a href='http://woodstoke.livejournal.com/profile'><img src='http://stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 2px;' /></a><a href='http://woodstoke.livejournal.com/'><b>woodstoke</b></a></span>                                </td><td valign="top" class="entryHolderBg"><div><a href="http://www.livejournal.com/tools/memadd.bml?journal=ru_drkin&amp;itemid=141030"><img src="http://stat.livejournal.com/palimg/component/btn_memories.gif/pafbfbfbea1b5a1" border="0" alt="Add to Memories" title="Add to Memories" vspace="2" /></a><br /><a href="http://www.livejournal.com/tools/tellafriend.bml?journal=ru_drkin&amp;itemid=141030"><img src="http://stat.livejournal.com/palimg/component/btn_tellfriend.gif/p3fbfbfb2a1b5a1" border="0" alt="Tell a Friend" title="Tell a Friend" vspace="2" /></a><br /></div></td>
+                                <td class="entryHolderBg" width="100%" valign="top">
+                                    <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                        <tr>
+                                            <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                            <td class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                            <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                        </tr>
+    
+                            <tr>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                <td class="entry">
+                                    <div>
+Здраствуйте! хотел спросить,у кого-нибудь есть акорды на песню-"Фрэнсы"?<br />Заранее благодарен!)))<p><strong>Tags:</strong> <a rel="tag" href="http://community.livejournal.com/ru_drkin/tag/%D0%B0%D0%BA%D0%BA%D0%BE%D1%80%D0%B4%D1%8B">аккорды</a><br /></p>
+                                    </div>
+                                </td>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                            </tr>
+        
+                            <tr>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                <td class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                            </tr>
+                        </table>
+                        <div class="entryComments"><a href="http://community.livejournal.com/ru_drkin/141030.html">4 комментария</a> или <a href="http://community.livejournal.com/ru_drkin/141030.html?mode=reply">Оставить комментарий</a>
+                        </div>
+                        </td>
+                        <td class="dkLine" width="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    </tr><tr>
+                        <td colspan="5" class="dkLine" width="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    </tr>
+                </table>
+
+                <div><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></div>
+        
+
+                        <a name="item137011"></a>
+
+            <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                <tr>
+                    <td valign="top" rowspan="3" colspan="3" width="5"><!--HERE --><img src="http://stat.livejournal.com/palimg/component/curve-top-left.gif/p0fbfbfb1a1b5a12d9e1d9" width="5" height="5" alt="" border="0" /></td>
+                    <td class="dkLine" colspan="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    <td valign="top" rowspan="3" colspan="3" width="5"><img src="http://stat.livejournal.com/palimg/component/curve-top-right.gif/p0fbfbfb1a1b5a12d9e1d9" width="5" height="5" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="ltLine" colspan="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="tabBg" colspan="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="dkLine" width="1" rowspan="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    <td class="ltLine" width="1" rowspan="2"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    <td class="tabBg" width="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                    <td class="tabBg" width="100%"><!-- HEADER CONTENT -->
+                        <div class="entryDate">
+11:32 pm <b>September 5th, 2006</b>
+                        </div>
+                    </td>
+                    <td class="tabBg" width="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                    <td class="ltLine" width="1" rowspan="2"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    <td class="dkLine" width="1" rowspan="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="medLine" colspan="4"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="dkLine" colspan="5"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                </tr>
+            </table>
+
+                        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td class="dkLine" width="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+<td valign="top" class="entryHolderBg"><div  align="center"><a href="http://community.livejournal.com/ru_drkin/"><img border="1" src="http://userpic.livejournal.com/22084953/5129015" width="100" height="92" alt="dr_azzi" class="userpic" /></a></div>                                    <span class='ljuser' lj:user='ru_drkin' style='white-space: nowrap;'><a href='http://community.livejournal.com/ru_drkin/profile'><img src='http://stat.livejournal.com/img/community.gif' alt='[info]' width='16' height='16' style='vertical-align: bottom; border: 0; padding-right: 2px;' /></a><a href='http://community.livejournal.com/ru_drkin/'><b>ru_drkin</b></a></span><br><span class='ljuser' lj:user='dr_azzi' style='white-space: nowrap;'><a href='http://dr-azzi.livejournal.com/profile'><img src='http://stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 2px;' /></a><a href='http://dr-azzi.livejournal.com/'><b>dr_azzi</b></a></span>                                </td><td valign="top" class="entryHolderBg"><div><a href="http://www.livejournal.com/tools/memadd.bml?journal=ru_drkin&amp;itemid=137011"><img src="http://stat.livejournal.com/palimg/component/btn_memories.gif/pafbfbfbea1b5a1" border="0" alt="Add to Memories" title="Add to Memories" vspace="2" /></a><br /><a href="http://www.livejournal.com/tools/tellafriend.bml?journal=ru_drkin&amp;itemid=137011"><img src="http://stat.livejournal.com/palimg/component/btn_tellfriend.gif/p3fbfbfb2a1b5a1" border="0" alt="Tell a Friend" title="Tell a Friend" vspace="2" /></a><br /></div></td>
+                                <td class="entryHolderBg" width="100%" valign="top">
+                                    <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                        <tr>
+                                            <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                            <td class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                            <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                        </tr>
+    
+                            <tr>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                <td class="entry">
+                                    <div class="entryHeader">Табулатура к Нибелунгу</div>
+<div class="entryDash"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></div>
+                                </td>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                            </tr>
+
+                            <tr>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                <td class="entry">
+                                    <div>
+Господа. А не поделится-ли кто табулатурой к Нибелунгу?<p><strong>Tags:</strong> <a rel="tag" href="http://community.livejournal.com/ru_drkin/tag/%D0%B0%D0%BA%D0%BA%D0%BE%D1%80%D0%B4%D1%8B">аккорды</a><br /><strong>Current Music:</strong> Д'РКИН Веня - Нибелунг<br /></p>
+                                    </div>
+                                </td>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                            </tr>
+        
+                            <tr>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                <td class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                            </tr>
+                        </table>
+                        <div class="entryComments"><a href="http://community.livejournal.com/ru_drkin/137011.html">18 комментариев</a> или <a href="http://community.livejournal.com/ru_drkin/137011.html?mode=reply">Оставить комментарий</a>
+                        </div>
+                        </td>
+                        <td class="dkLine" width="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    </tr><tr>
+                        <td colspan="5" class="dkLine" width="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    </tr>
+                </table>
+
+                <div><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></div>
+        
+
+                        <a name="item132778"></a>
+
+            <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                <tr>
+                    <td valign="top" rowspan="3" colspan="3" width="5"><!--HERE --><img src="http://stat.livejournal.com/palimg/component/curve-top-left.gif/p0fbfbfb1a1b5a12d9e1d9" width="5" height="5" alt="" border="0" /></td>
+                    <td class="dkLine" colspan="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    <td valign="top" rowspan="3" colspan="3" width="5"><img src="http://stat.livejournal.com/palimg/component/curve-top-right.gif/p0fbfbfb1a1b5a12d9e1d9" width="5" height="5" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="ltLine" colspan="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="tabBg" colspan="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="dkLine" width="1" rowspan="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    <td class="ltLine" width="1" rowspan="2"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    <td class="tabBg" width="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                    <td class="tabBg" width="100%"><!-- HEADER CONTENT -->
+                        <div class="entryDate">
+08:53 pm <b>August 17th, 2006</b>
+                        </div>
+                    </td>
+                    <td class="tabBg" width="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                    <td class="ltLine" width="1" rowspan="2"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    <td class="dkLine" width="1" rowspan="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="medLine" colspan="4"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="dkLine" colspan="5"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                </tr>
+            </table>
+
+                        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td class="dkLine" width="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+<td valign="top" class="entryHolderBg"><div  align="center"><a href="http://community.livejournal.com/ru_drkin/"><img border="1" src="http://userpic.livejournal.com/49740405/10550417" width="100" height="73" alt="nmfgigmm" class="userpic" /></a></div>                                    <span class='ljuser' lj:user='ru_drkin' style='white-space: nowrap;'><a href='http://community.livejournal.com/ru_drkin/profile'><img src='http://stat.livejournal.com/img/community.gif' alt='[info]' width='16' height='16' style='vertical-align: bottom; border: 0; padding-right: 2px;' /></a><a href='http://community.livejournal.com/ru_drkin/'><b>ru_drkin</b></a></span><br><span class='ljuser' lj:user='nmfgigmm' style='white-space: nowrap;'><a href='http://nmfgigmm.livejournal.com/profile'><img src='http://stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 2px;' /></a><a href='http://nmfgigmm.livejournal.com/'><b>nmfgigmm</b></a></span>                                </td><td valign="top" class="entryHolderBg"><div><a href="http://www.livejournal.com/tools/memadd.bml?journal=ru_drkin&amp;itemid=132778"><img src="http://stat.livejournal.com/palimg/component/btn_memories.gif/pafbfbfbea1b5a1" border="0" alt="Add to Memories" title="Add to Memories" vspace="2" /></a><br /><a href="http://www.livejournal.com/tools/tellafriend.bml?journal=ru_drkin&amp;itemid=132778"><img src="http://stat.livejournal.com/palimg/component/btn_tellfriend.gif/p3fbfbfb2a1b5a1" border="0" alt="Tell a Friend" title="Tell a Friend" vspace="2" /></a><br /></div></td>
+                                <td class="entryHolderBg" width="100%" valign="top">
+                                    <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                        <tr>
+                                            <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                            <td class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                            <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                        </tr>
+    
+                            <tr>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                <td class="entry">
+                                    <div>
+Люди добрые, а кто-нибудб знает как играется вступление к песне "С соком горького Аира"?(Если у кого-то есть gtp буду вдвойне благодарен) Спасибо!<p><strong>Tags:</strong> <a rel="tag" href="http://community.livejournal.com/ru_drkin/tag/%D0%B0%D0%BA%D0%BA%D0%BE%D1%80%D0%B4%D1%8B">аккорды</a><br /></p>
+                                    </div>
+                                </td>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                            </tr>
+        
+                            <tr>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                <td class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                            </tr>
+                        </table>
+                        <div class="entryComments"><a href="http://community.livejournal.com/ru_drkin/132778.html">5 комментариев</a> или <a href="http://community.livejournal.com/ru_drkin/132778.html?mode=reply">Оставить комментарий</a>
+                        </div>
+                        </td>
+                        <td class="dkLine" width="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    </tr><tr>
+                        <td colspan="5" class="dkLine" width="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    </tr>
+                </table>
+
+                <div><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></div>
+        
+
+                        <a name="item128083"></a>
+
+            <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                <tr>
+                    <td valign="top" rowspan="3" colspan="3" width="5"><!--HERE --><img src="http://stat.livejournal.com/palimg/component/curve-top-left.gif/p0fbfbfb1a1b5a12d9e1d9" width="5" height="5" alt="" border="0" /></td>
+                    <td class="dkLine" colspan="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    <td valign="top" rowspan="3" colspan="3" width="5"><img src="http://stat.livejournal.com/palimg/component/curve-top-right.gif/p0fbfbfb1a1b5a12d9e1d9" width="5" height="5" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="ltLine" colspan="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="tabBg" colspan="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="dkLine" width="1" rowspan="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    <td class="ltLine" width="1" rowspan="2"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    <td class="tabBg" width="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                    <td class="tabBg" width="100%"><!-- HEADER CONTENT -->
+                        <div class="entryDate">
+05:02 pm <b>July 7th, 2006</b>
+                        </div>
+                    </td>
+                    <td class="tabBg" width="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                    <td class="ltLine" width="1" rowspan="2"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    <td class="dkLine" width="1" rowspan="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="medLine" colspan="4"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="dkLine" colspan="5"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                </tr>
+            </table>
+
+                        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td class="dkLine" width="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+<td valign="top" class="entryHolderBg"><div  align="center"><a href="http://community.livejournal.com/ru_drkin/"><img border="1" src="http://userpic.livejournal.com/56634173/10209173" width="90" height="99" alt="taliswoman" class="userpic" /></a></div>                                    <span class='ljuser' lj:user='ru_drkin' style='white-space: nowrap;'><a href='http://community.livejournal.com/ru_drkin/profile'><img src='http://stat.livejournal.com/img/community.gif' alt='[info]' width='16' height='16' style='vertical-align: bottom; border: 0; padding-right: 2px;' /></a><a href='http://community.livejournal.com/ru_drkin/'><b>ru_drkin</b></a></span><br><span class='ljuser' lj:user='taliswoman' style='white-space: nowrap;'><a href='http://taliswoman.livejournal.com/profile'><img src='http://stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 2px;' /></a><a href='http://taliswoman.livejournal.com/'><b>taliswoman</b></a></span>                                </td><td valign="top" class="entryHolderBg"><div><a href="http://www.livejournal.com/tools/memadd.bml?journal=ru_drkin&amp;itemid=128083"><img src="http://stat.livejournal.com/palimg/component/btn_memories.gif/pafbfbfbea1b5a1" border="0" alt="Add to Memories" title="Add to Memories" vspace="2" /></a><br /><a href="http://www.livejournal.com/tools/tellafriend.bml?journal=ru_drkin&amp;itemid=128083"><img src="http://stat.livejournal.com/palimg/component/btn_tellfriend.gif/p3fbfbfb2a1b5a1" border="0" alt="Tell a Friend" title="Tell a Friend" vspace="2" /></a><br /></div></td>
+                                <td class="entryHolderBg" width="100%" valign="top">
+                                    <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                        <tr>
+                                            <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                            <td class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                            <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                        </tr>
+    
+                            <tr>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                <td class="entry">
+                                    <div class="entryHeader">Проклятущая</div>
+<div class="entryDash"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></div>
+                                </td>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                            </tr>
+
+                            <tr>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                <td class="entry">
+                                    <div>
+Здравствуйте, добрые люди (по умолчанию:)!<br />Есть ли у кого вступление к песне "Коперник" ("Проклятущая")? Поделитесь пожалуйста табами, или если есть, то  gpt-файлами! А то без вступления эту песню на гитаре играть как-то непрофессионально что ли. Многое в ней теряется. Благодарю за желание поделиться информацией.<p><strong>Tags:</strong> <a rel="tag" href="http://community.livejournal.com/ru_drkin/tag/%D0%B0%D0%BA%D0%BA%D0%BE%D1%80%D0%B4%D1%8B">аккорды</a><br /><strong>Current Location:</strong> <a href="http://maps.google.com/maps?q=at+home">at home</a><br /><strong>Current Mood:</strong> artistic<br /><strong>Current Music:</strong> no electricity, no music... so far...<br /></p>
+                                    </div>
+                                </td>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                            </tr>
+        
+                            <tr>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                <td class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                            </tr>
+                        </table>
+                        <div class="entryComments"><a href="http://community.livejournal.com/ru_drkin/128083.html">6 комментариев</a> или <a href="http://community.livejournal.com/ru_drkin/128083.html?mode=reply">Оставить комментарий</a>
+                        </div>
+                        </td>
+                        <td class="dkLine" width="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    </tr><tr>
+                        <td colspan="5" class="dkLine" width="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    </tr>
+                </table>
+
+                <div><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></div>
+        
+
+                        <a name="item125490"></a>
+
+            <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                <tr>
+                    <td valign="top" rowspan="3" colspan="3" width="5"><!--HERE --><img src="http://stat.livejournal.com/palimg/component/curve-top-left.gif/p0fbfbfb1a1b5a12d9e1d9" width="5" height="5" alt="" border="0" /></td>
+                    <td class="dkLine" colspan="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    <td valign="top" rowspan="3" colspan="3" width="5"><img src="http://stat.livejournal.com/palimg/component/curve-top-right.gif/p0fbfbfb1a1b5a12d9e1d9" width="5" height="5" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="ltLine" colspan="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="tabBg" colspan="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="dkLine" width="1" rowspan="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    <td class="ltLine" width="1" rowspan="2"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    <td class="tabBg" width="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                    <td class="tabBg" width="100%"><!-- HEADER CONTENT -->
+                        <div class="entryDate">
+12:59 pm <b>June 14th, 2006</b>
+                        </div>
+                    </td>
+                    <td class="tabBg" width="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                    <td class="ltLine" width="1" rowspan="2"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    <td class="dkLine" width="1" rowspan="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="medLine" colspan="4"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="dkLine" colspan="5"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                </tr>
+            </table>
+
+                        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td class="dkLine" width="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+<td valign="top" class="entryHolderBg"><div  align="center"><a href="http://community.livejournal.com/ru_drkin/"><img border="1" src="http://userpic.livejournal.com/45788740/10209225" width="94" height="100" alt="dr_mikesh" class="userpic" /></a></div>                                    <span class='ljuser' lj:user='ru_drkin' style='white-space: nowrap;'><a href='http://community.livejournal.com/ru_drkin/profile'><img src='http://stat.livejournal.com/img/community.gif' alt='[info]' width='16' height='16' style='vertical-align: bottom; border: 0; padding-right: 2px;' /></a><a href='http://community.livejournal.com/ru_drkin/'><b>ru_drkin</b></a></span><br><span class='ljuser' lj:user='dr_mikesh' style='white-space: nowrap;'><a href='http://dr-mikesh.livejournal.com/profile'><img src='http://stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 2px;' /></a><a href='http://dr-mikesh.livejournal.com/'><b>dr_mikesh</b></a></span>                                </td><td valign="top" class="entryHolderBg"><div><a href="http://www.livejournal.com/tools/memadd.bml?journal=ru_drkin&amp;itemid=125490"><img src="http://stat.livejournal.com/palimg/component/btn_memories.gif/pafbfbfbea1b5a1" border="0" alt="Add to Memories" title="Add to Memories" vspace="2" /></a><br /><a href="http://www.livejournal.com/tools/tellafriend.bml?journal=ru_drkin&amp;itemid=125490"><img src="http://stat.livejournal.com/palimg/component/btn_tellfriend.gif/p3fbfbfb2a1b5a1" border="0" alt="Tell a Friend" title="Tell a Friend" vspace="2" /></a><br /></div></td>
+                                <td class="entryHolderBg" width="100%" valign="top">
+                                    <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                        <tr>
+                                            <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                            <td class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                            <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                        </tr>
+    
+                            <tr>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                <td class="entry">
+                                    <div class="entryHeader">Бесимся</div>
+<div class="entryDash"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></div>
+                                </td>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                            </tr>
+
+                            <tr>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                <td class="entry">
+                                    <div>
+Доброго времени суток!<br />Подскажите, пожалуйста, как играть вступление к песне "Бесимся"?<p><strong>Tags:</strong> <a rel="tag" href="http://community.livejournal.com/ru_drkin/tag/%D0%B0%D0%BA%D0%BA%D0%BE%D1%80%D0%B4%D1%8B">аккорды</a><br /></p>
+                                    </div>
+                                </td>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                            </tr>
+        
+                            <tr>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                <td class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                            </tr>
+                        </table>
+                        <div class="entryComments"><a href="http://community.livejournal.com/ru_drkin/125490.html">7 комментариев</a> или <a href="http://community.livejournal.com/ru_drkin/125490.html?mode=reply">Оставить комментарий</a>
+                        </div>
+                        </td>
+                        <td class="dkLine" width="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    </tr><tr>
+                        <td colspan="5" class="dkLine" width="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    </tr>
+                </table>
+
+                <div><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></div>
+        
+
+                        <a name="item125184"></a>
+
+            <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                <tr>
+                    <td valign="top" rowspan="3" colspan="3" width="5"><!--HERE --><img src="http://stat.livejournal.com/palimg/component/curve-top-left.gif/p0fbfbfb1a1b5a12d9e1d9" width="5" height="5" alt="" border="0" /></td>
+                    <td class="dkLine" colspan="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    <td valign="top" rowspan="3" colspan="3" width="5"><img src="http://stat.livejournal.com/palimg/component/curve-top-right.gif/p0fbfbfb1a1b5a12d9e1d9" width="5" height="5" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="ltLine" colspan="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="tabBg" colspan="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="dkLine" width="1" rowspan="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    <td class="ltLine" width="1" rowspan="2"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    <td class="tabBg" width="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                    <td class="tabBg" width="100%"><!-- HEADER CONTENT -->
+                        <div class="entryDate">
+11:57 pm <b>June 13th, 2006</b>
+                        </div>
+                    </td>
+                    <td class="tabBg" width="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                    <td class="ltLine" width="1" rowspan="2"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    <td class="dkLine" width="1" rowspan="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="medLine" colspan="4"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="dkLine" colspan="5"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                </tr>
+            </table>
+
+                        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td class="dkLine" width="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+<td valign="top" class="entryHolderBg"><div  align="center"><a href="http://community.livejournal.com/ru_drkin/"><img border="1" src="http://userpic.livejournal.com/61124206/4753850" width="100" height="100" alt="tihaja_sapa" class="userpic" /></a></div>                                    <span class='ljuser' lj:user='ru_drkin' style='white-space: nowrap;'><a href='http://community.livejournal.com/ru_drkin/profile'><img src='http://stat.livejournal.com/img/community.gif' alt='[info]' width='16' height='16' style='vertical-align: bottom; border: 0; padding-right: 2px;' /></a><a href='http://community.livejournal.com/ru_drkin/'><b>ru_drkin</b></a></span><br><span class='ljuser' lj:user='tihaja_sapa' style='white-space: nowrap;'><a href='http://tihaja-sapa.livejournal.com/profile'><img src='http://stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 2px;' /></a><a href='http://tihaja-sapa.livejournal.com/'><b>tihaja_sapa</b></a></span>                                </td><td valign="top" class="entryHolderBg"><div><a href="http://www.livejournal.com/tools/memadd.bml?journal=ru_drkin&amp;itemid=125184"><img src="http://stat.livejournal.com/palimg/component/btn_memories.gif/pafbfbfbea1b5a1" border="0" alt="Add to Memories" title="Add to Memories" vspace="2" /></a><br /><a href="http://www.livejournal.com/tools/tellafriend.bml?journal=ru_drkin&amp;itemid=125184"><img src="http://stat.livejournal.com/palimg/component/btn_tellfriend.gif/p3fbfbfb2a1b5a1" border="0" alt="Tell a Friend" title="Tell a Friend" vspace="2" /></a><br /></div></td>
+                                <td class="entryHolderBg" width="100%" valign="top">
+                                    <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                        <tr>
+                                            <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                            <td class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                            <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                        </tr>
+    
+                            <tr>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                <td class="entry">
+                                    <div class="entryHeader">"Мария" и "В сторону дождя"</div>
+<div class="entryDash"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></div>
+                                </td>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                            </tr>
+
+                            <tr>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                <td class="entry">
+                                    <div>
+Есть тут кто живой еще? весьма и весьма интересуют аккорды для сабжей. спасибо.<br /><br />АПД. да здравствует коллективный разум! спасибо.<p><strong>Tags:</strong> <a rel="tag" href="http://community.livejournal.com/ru_drkin/tag/%D0%B0%D0%BA%D0%BA%D0%BE%D1%80%D0%B4%D1%8B">аккорды</a><br /><strong>Current Music:</strong> Др. - Мария<br /></p>
+                                    </div>
+                                </td>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                            </tr>
+        
+                            <tr>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                <td class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                            </tr>
+                        </table>
+                        <div class="entryComments"><a href="http://community.livejournal.com/ru_drkin/125184.html">6 комментариев</a> или <a href="http://community.livejournal.com/ru_drkin/125184.html?mode=reply">Оставить комментарий</a>
+                        </div>
+                        </td>
+                        <td class="dkLine" width="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    </tr><tr>
+                        <td colspan="5" class="dkLine" width="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    </tr>
+                </table>
+
+                <div><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></div>
+        
+
+                        <a name="item122665"></a>
+
+            <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                <tr>
+                    <td valign="top" rowspan="3" colspan="3" width="5"><!--HERE --><img src="http://stat.livejournal.com/palimg/component/curve-top-left.gif/p0fbfbfb1a1b5a12d9e1d9" width="5" height="5" alt="" border="0" /></td>
+                    <td class="dkLine" colspan="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    <td valign="top" rowspan="3" colspan="3" width="5"><img src="http://stat.livejournal.com/palimg/component/curve-top-right.gif/p0fbfbfb1a1b5a12d9e1d9" width="5" height="5" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="ltLine" colspan="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="tabBg" colspan="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="dkLine" width="1" rowspan="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    <td class="ltLine" width="1" rowspan="2"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    <td class="tabBg" width="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                    <td class="tabBg" width="100%"><!-- HEADER CONTENT -->
+                        <div class="entryDate">
+10:56 pm <b>May 19th, 2006</b>
+                        </div>
+                    </td>
+                    <td class="tabBg" width="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                    <td class="ltLine" width="1" rowspan="2"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    <td class="dkLine" width="1" rowspan="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="medLine" colspan="4"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="dkLine" colspan="5"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                </tr>
+            </table>
+
+                        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td class="dkLine" width="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+<td valign="top" class="entryHolderBg"><div  align="center"><a href="http://community.livejournal.com/ru_drkin/"><img border="1" src="http://userpic.livejournal.com/37210287/8592487" width="75" height="100" alt="plattan" class="userpic" /></a></div>                                    <span class='ljuser' lj:user='ru_drkin' style='white-space: nowrap;'><a href='http://community.livejournal.com/ru_drkin/profile'><img src='http://stat.livejournal.com/img/community.gif' alt='[info]' width='16' height='16' style='vertical-align: bottom; border: 0; padding-right: 2px;' /></a><a href='http://community.livejournal.com/ru_drkin/'><b>ru_drkin</b></a></span><br><span class='ljuser' lj:user='plattan' style='white-space: nowrap;'><a href='http://plattan.livejournal.com/profile'><img src='http://stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 2px;' /></a><a href='http://plattan.livejournal.com/'><b>plattan</b></a></span>                                </td><td valign="top" class="entryHolderBg"><div><a href="http://www.livejournal.com/tools/memadd.bml?journal=ru_drkin&amp;itemid=122665"><img src="http://stat.livejournal.com/palimg/component/btn_memories.gif/pafbfbfbea1b5a1" border="0" alt="Add to Memories" title="Add to Memories" vspace="2" /></a><br /><a href="http://www.livejournal.com/tools/tellafriend.bml?journal=ru_drkin&amp;itemid=122665"><img src="http://stat.livejournal.com/palimg/component/btn_tellfriend.gif/p3fbfbfb2a1b5a1" border="0" alt="Tell a Friend" title="Tell a Friend" vspace="2" /></a><br /></div></td>
+                                <td class="entryHolderBg" width="100%" valign="top">
+                                    <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                        <tr>
+                                            <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                            <td class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                            <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                        </tr>
+    
+                            <tr>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                <td class="entry">
+                                    <div>
+господа!<br />подсобите пожалуйста!<br />нужно очень аккорды "ano domini"<br />и если вдруг у кого есть аккорды натальи барановской "если бы ты знал, кто я на самом деле.."<br />буду очень благодарна<p><strong>Tags:</strong> <a rel="tag" href="http://community.livejournal.com/ru_drkin/tag/%D0%B0%D0%BA%D0%BA%D0%BE%D1%80%D0%B4%D1%8B">аккорды</a><br /></p>
+                                    </div>
+                                </td>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                            </tr>
+        
+                            <tr>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                <td class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                            </tr>
+                        </table>
+                        <div class="entryComments"><a href="http://community.livejournal.com/ru_drkin/122665.html">13 комментариев</a> или <a href="http://community.livejournal.com/ru_drkin/122665.html?mode=reply">Оставить комментарий</a>
+                        </div>
+                        </td>
+                        <td class="dkLine" width="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    </tr><tr>
+                        <td colspan="5" class="dkLine" width="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    </tr>
+                </table>
+
+                <div><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></div>
+        
+
+                        <a name="item121447"></a>
+
+            <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                <tr>
+                    <td valign="top" rowspan="3" colspan="3" width="5"><!--HERE --><img src="http://stat.livejournal.com/palimg/component/curve-top-left.gif/p0fbfbfb1a1b5a12d9e1d9" width="5" height="5" alt="" border="0" /></td>
+                    <td class="dkLine" colspan="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    <td valign="top" rowspan="3" colspan="3" width="5"><img src="http://stat.livejournal.com/palimg/component/curve-top-right.gif/p0fbfbfb1a1b5a12d9e1d9" width="5" height="5" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="ltLine" colspan="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="tabBg" colspan="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="dkLine" width="1" rowspan="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    <td class="ltLine" width="1" rowspan="2"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    <td class="tabBg" width="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                    <td class="tabBg" width="100%"><!-- HEADER CONTENT -->
+                        <div class="entryDate">
+07:49 pm <b>May 11th, 2006</b>
+                        </div>
+                    </td>
+                    <td class="tabBg" width="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                    <td class="ltLine" width="1" rowspan="2"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    <td class="dkLine" width="1" rowspan="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="medLine" colspan="4"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="dkLine" colspan="5"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                </tr>
+            </table>
+
+                        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td class="dkLine" width="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+<td valign="top" class="entryHolderBg"><div  align="center"><a href="http://community.livejournal.com/ru_drkin/"><img border="1" src="http://userpic.livejournal.com/45788740/10209225" width="94" height="100" alt="dr_mikesh" class="userpic" /></a></div>                                    <span class='ljuser' lj:user='ru_drkin' style='white-space: nowrap;'><a href='http://community.livejournal.com/ru_drkin/profile'><img src='http://stat.livejournal.com/img/community.gif' alt='[info]' width='16' height='16' style='vertical-align: bottom; border: 0; padding-right: 2px;' /></a><a href='http://community.livejournal.com/ru_drkin/'><b>ru_drkin</b></a></span><br><span class='ljuser' lj:user='dr_mikesh' style='white-space: nowrap;'><a href='http://dr-mikesh.livejournal.com/profile'><img src='http://stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 2px;' /></a><a href='http://dr-mikesh.livejournal.com/'><b>dr_mikesh</b></a></span>                                </td><td valign="top" class="entryHolderBg"><div><a href="http://www.livejournal.com/tools/memadd.bml?journal=ru_drkin&amp;itemid=121447"><img src="http://stat.livejournal.com/palimg/component/btn_memories.gif/pafbfbfbea1b5a1" border="0" alt="Add to Memories" title="Add to Memories" vspace="2" /></a><br /><a href="http://www.livejournal.com/tools/tellafriend.bml?journal=ru_drkin&amp;itemid=121447"><img src="http://stat.livejournal.com/palimg/component/btn_tellfriend.gif/p3fbfbfb2a1b5a1" border="0" alt="Tell a Friend" title="Tell a Friend" vspace="2" /></a><br /></div></td>
+                                <td class="entryHolderBg" width="100%" valign="top">
+                                    <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                        <tr>
+                                            <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                            <td class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                            <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                        </tr>
+    
+                            <tr>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                <td class="entry">
+                                    <div>
+Ребят, а как играть к песне "Я жду друзей" соло, которое звучит в начале песни?<p><strong>Tags:</strong> <a rel="tag" href="http://community.livejournal.com/ru_drkin/tag/%D0%B0%D0%BA%D0%BA%D0%BE%D1%80%D0%B4%D1%8B">аккорды</a><br /></p>
+                                    </div>
+                                </td>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                            </tr>
+        
+                            <tr>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                <td class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                            </tr>
+                        </table>
+                        <div class="entryComments"><a href="http://community.livejournal.com/ru_drkin/121447.html">5 комментариев</a> или <a href="http://community.livejournal.com/ru_drkin/121447.html?mode=reply">Оставить комментарий</a>
+                        </div>
+                        </td>
+                        <td class="dkLine" width="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    </tr><tr>
+                        <td colspan="5" class="dkLine" width="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    </tr>
+                </table>
+
+                <div><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></div>
+        
+
+                        <a name="item120140"></a>
+
+            <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                <tr>
+                    <td valign="top" rowspan="3" colspan="3" width="5"><!--HERE --><img src="http://stat.livejournal.com/palimg/component/curve-top-left.gif/p0fbfbfb1a1b5a12d9e1d9" width="5" height="5" alt="" border="0" /></td>
+                    <td class="dkLine" colspan="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    <td valign="top" rowspan="3" colspan="3" width="5"><img src="http://stat.livejournal.com/palimg/component/curve-top-right.gif/p0fbfbfb1a1b5a12d9e1d9" width="5" height="5" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="ltLine" colspan="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="tabBg" colspan="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="dkLine" width="1" rowspan="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    <td class="ltLine" width="1" rowspan="2"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    <td class="tabBg" width="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                    <td class="tabBg" width="100%"><!-- HEADER CONTENT -->
+                        <div class="entryDate">
+06:01 pm <b>May 7th, 2006</b>
+                        </div>
+                    </td>
+                    <td class="tabBg" width="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                    <td class="ltLine" width="1" rowspan="2"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    <td class="dkLine" width="1" rowspan="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="medLine" colspan="4"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="dkLine" colspan="5"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                </tr>
+            </table>
+
+                        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td class="dkLine" width="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+<td valign="top" class="entryHolderBg"><div  align="center"><a href="http://community.livejournal.com/ru_drkin/"><img border="1" src="http://userpic.livejournal.com/50291273/5460259" width="90" height="100" alt="gumha_nukta" class="userpic" /></a></div>                                    <span class='ljuser' lj:user='ru_drkin' style='white-space: nowrap;'><a href='http://community.livejournal.com/ru_drkin/profile'><img src='http://stat.livejournal.com/img/community.gif' alt='[info]' width='16' height='16' style='vertical-align: bottom; border: 0; padding-right: 2px;' /></a><a href='http://community.livejournal.com/ru_drkin/'><b>ru_drkin</b></a></span><br><span class='ljuser' lj:user='gumha_nukta' style='white-space: nowrap;'><a href='http://gumha-nukta.livejournal.com/profile'><img src='http://stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 2px;' /></a><a href='http://gumha-nukta.livejournal.com/'><b>gumha_nukta</b></a></span>                                </td><td valign="top" class="entryHolderBg"><div><a href="http://www.livejournal.com/tools/memadd.bml?journal=ru_drkin&amp;itemid=120140"><img src="http://stat.livejournal.com/palimg/component/btn_memories.gif/pafbfbfbea1b5a1" border="0" alt="Add to Memories" title="Add to Memories" vspace="2" /></a><br /><a href="http://www.livejournal.com/tools/tellafriend.bml?journal=ru_drkin&amp;itemid=120140"><img src="http://stat.livejournal.com/palimg/component/btn_tellfriend.gif/p3fbfbfb2a1b5a1" border="0" alt="Tell a Friend" title="Tell a Friend" vspace="2" /></a><br /></div></td>
+                                <td class="entryHolderBg" width="100%" valign="top">
+                                    <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                        <tr>
+                                            <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                            <td class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                            <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                        </tr>
+    
+                            <tr>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                <td class="entry">
+                                    <div>
+Здраствуйте.<br />Я только позавчера впервые в жизни услышала песню Д'ркина, только вчера узнала, что был на свете такой человек... Я девственна в этом плане, но уже чувствую, что меня несет к его творчеству.<br />Скажите пожалуйста, не кинете ли мне аккорды песни "Не о такой я мечтал"? Саму песню я долго искала и наконец нашла, но аккорды что-то не находятся, а со слухом плоховато... Спасибо большое.<p><strong>Tags:</strong> <a rel="tag" href="http://community.livejournal.com/ru_drkin/tag/%D0%B0%D0%BA%D0%BA%D0%BE%D1%80%D0%B4%D1%8B">аккорды</a><br /></p>
+                                    </div>
+                                </td>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                            </tr>
+        
+                            <tr>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                <td class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                            </tr>
+                        </table>
+                        <div class="entryComments"><a href="http://community.livejournal.com/ru_drkin/120140.html">9 комментариев</a> или <a href="http://community.livejournal.com/ru_drkin/120140.html?mode=reply">Оставить комментарий</a>
+                        </div>
+                        </td>
+                        <td class="dkLine" width="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    </tr><tr>
+                        <td colspan="5" class="dkLine" width="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    </tr>
+                </table>
+
+                <div><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></div>
+        
+
+                        <a name="item119241"></a>
+
+            <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                <tr>
+                    <td valign="top" rowspan="3" colspan="3" width="5"><!--HERE --><img src="http://stat.livejournal.com/palimg/component/curve-top-left.gif/p0fbfbfb1a1b5a12d9e1d9" width="5" height="5" alt="" border="0" /></td>
+                    <td class="dkLine" colspan="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    <td valign="top" rowspan="3" colspan="3" width="5"><img src="http://stat.livejournal.com/palimg/component/curve-top-right.gif/p0fbfbfb1a1b5a12d9e1d9" width="5" height="5" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="ltLine" colspan="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="tabBg" colspan="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="dkLine" width="1" rowspan="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    <td class="ltLine" width="1" rowspan="2"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    <td class="tabBg" width="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                    <td class="tabBg" width="100%"><!-- HEADER CONTENT -->
+                        <div class="entryDate">
+05:45 pm <b>May 6th, 2006</b>
+                        </div>
+                    </td>
+                    <td class="tabBg" width="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                    <td class="ltLine" width="1" rowspan="2"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    <td class="dkLine" width="1" rowspan="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="medLine" colspan="4"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="dkLine" colspan="5"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                </tr>
+            </table>
+
+                        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td class="dkLine" width="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+<td valign="top" class="entryHolderBg"><div  align="center"><a href="http://community.livejournal.com/ru_drkin/"><img border="1" src="http://userpic.livejournal.com/63591890/7812462" width="100" height="100" alt="barabanus" class="userpic" /></a></div>                                    <span class='ljuser' lj:user='ru_drkin' style='white-space: nowrap;'><a href='http://community.livejournal.com/ru_drkin/profile'><img src='http://stat.livejournal.com/img/community.gif' alt='[info]' width='16' height='16' style='vertical-align: bottom; border: 0; padding-right: 2px;' /></a><a href='http://community.livejournal.com/ru_drkin/'><b>ru_drkin</b></a></span><br><span class='ljuser' lj:user='barabanus' style='white-space: nowrap;'><a href='http://barabanus.livejournal.com/profile'><img src='http://stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 2px;' /></a><a href='http://barabanus.livejournal.com/'><b>barabanus</b></a></span>                                </td><td valign="top" class="entryHolderBg"><div><a href="http://www.livejournal.com/tools/memadd.bml?journal=ru_drkin&amp;itemid=119241"><img src="http://stat.livejournal.com/palimg/component/btn_memories.gif/pafbfbfbea1b5a1" border="0" alt="Add to Memories" title="Add to Memories" vspace="2" /></a><br /><a href="http://www.livejournal.com/tools/tellafriend.bml?journal=ru_drkin&amp;itemid=119241"><img src="http://stat.livejournal.com/palimg/component/btn_tellfriend.gif/p3fbfbfb2a1b5a1" border="0" alt="Tell a Friend" title="Tell a Friend" vspace="2" /></a><br /></div></td>
+                                <td class="entryHolderBg" width="100%" valign="top">
+                                    <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                        <tr>
+                                            <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                            <td class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                            <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                        </tr>
+    
+                            <tr>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                <td class="entry">
+                                    <div class="entryHeader">"Я жду друзей"</div>
+<div class="entryDash"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></div>
+                                </td>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                            </tr>
+
+                            <tr>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                <td class="entry">
+                                    <div>
+Здравствуйте, уважаемые почитатели Вени!<br /><br />Попытался подобрать аккорды к "Я жду друзей", но что-то не идет, маленький еще -_- В интернете нашел такую версию:<br /><br /><blockquote><br />проигрыш Am Dm Am E7<br />  Am<br />Спеты все лучшие песни,<br />    C<br />До капли выпито вино.<br /> G                 Dm       Am<br />То, что было суждено пить вместе.<br />  C       G     F<br />Где вы, фрэнды, ах, ах, ах...<br />            Am<br />Какое на душе говно.  &lt;----------<br />    C               Am<br />Я знаю, что вы далеко.<br />           F<br />Но, но, но я включаю рок`н`ролл,<br />Am<br />Я достаю коньяк,<br />F                  Dm               E7<br />Я накрываю на стол и надеваю свой фрак -<br />          Am<br />Я жду друзей.<br /><br />...<br /><br />Может, из боязни потерь<br />В тревоге проходят дни.<br />    F        C              G<br />Но чу, это они - открываю дверь.  &lt;--------------<br />   Am         G     Am        G<br />Но это не их голос, это поет ветер... &lt;------------<br /><br /></blockquote><br /><br />Хоть убейте, но "Какое на душе говно" с Am не подходит -_- Нижние две строчки тоже.<br /><br />Скажите, пожалуйста, это правильная версия песни? И где можно найти правильную? Очень хорошая песня.<p><strong>Tags:</strong> <a rel="tag" href="http://community.livejournal.com/ru_drkin/tag/%D0%B0%D0%BA%D0%BA%D0%BE%D1%80%D0%B4%D1%8B">аккорды</a><br /></p>
+                                    </div>
+                                </td>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                            </tr>
+        
+                            <tr>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                <td class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                            </tr>
+                        </table>
+                        <div class="entryComments"><a href="http://community.livejournal.com/ru_drkin/119241.html">19 комментариев</a> или <a href="http://community.livejournal.com/ru_drkin/119241.html?mode=reply">Оставить комментарий</a>
+                        </div>
+                        </td>
+                        <td class="dkLine" width="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    </tr><tr>
+                        <td colspan="5" class="dkLine" width="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    </tr>
+                </table>
+
+                <div><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></div>
+        
+
+                        <a name="item109567"></a>
+
+            <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                <tr>
+                    <td valign="top" rowspan="3" colspan="3" width="5"><!--HERE --><img src="http://stat.livejournal.com/palimg/component/curve-top-left.gif/p0fbfbfb1a1b5a12d9e1d9" width="5" height="5" alt="" border="0" /></td>
+                    <td class="dkLine" colspan="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    <td valign="top" rowspan="3" colspan="3" width="5"><img src="http://stat.livejournal.com/palimg/component/curve-top-right.gif/p0fbfbfb1a1b5a12d9e1d9" width="5" height="5" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="ltLine" colspan="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="tabBg" colspan="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="dkLine" width="1" rowspan="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    <td class="ltLine" width="1" rowspan="2"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    <td class="tabBg" width="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                    <td class="tabBg" width="100%"><!-- HEADER CONTENT -->
+                        <div class="entryDate">
+01:29 am <b>March 5th, 2006</b>
+                        </div>
+                    </td>
+                    <td class="tabBg" width="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></td>
+                    <td class="ltLine" width="1" rowspan="2"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    <td class="dkLine" width="1" rowspan="3"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="medLine" colspan="4"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                </tr><tr>
+                    <td class="dkLine" colspan="5"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                </tr>
+            </table>
+
+                        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                                <td class="dkLine" width="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+<td valign="top" class="entryHolderBg"><div  align="center"><a href="http://community.livejournal.com/ru_drkin/"><img border="1" src="http://userpic.livejournal.com/63591890/7812462" width="100" height="100" alt="barabanus" class="userpic" /></a></div>                                    <span class='ljuser' lj:user='ru_drkin' style='white-space: nowrap;'><a href='http://community.livejournal.com/ru_drkin/profile'><img src='http://stat.livejournal.com/img/community.gif' alt='[info]' width='16' height='16' style='vertical-align: bottom; border: 0; padding-right: 2px;' /></a><a href='http://community.livejournal.com/ru_drkin/'><b>ru_drkin</b></a></span><br><span class='ljuser' lj:user='barabanus' style='white-space: nowrap;'><a href='http://barabanus.livejournal.com/profile'><img src='http://stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 2px;' /></a><a href='http://barabanus.livejournal.com/'><b>barabanus</b></a></span>                                </td><td valign="top" class="entryHolderBg"><div><a href="http://www.livejournal.com/tools/memadd.bml?journal=ru_drkin&amp;itemid=109567"><img src="http://stat.livejournal.com/palimg/component/btn_memories.gif/pafbfbfbea1b5a1" border="0" alt="Add to Memories" title="Add to Memories" vspace="2" /></a><br /><a href="http://www.livejournal.com/tools/tellafriend.bml?journal=ru_drkin&amp;itemid=109567"><img src="http://stat.livejournal.com/palimg/component/btn_tellfriend.gif/p3fbfbfb2a1b5a1" border="0" alt="Tell a Friend" title="Tell a Friend" vspace="2" /></a><br /></div></td>
+                                <td class="entryHolderBg" width="100%" valign="top">
+                                    <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                        <tr>
+                                            <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                            <td class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                            <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                        </tr>
+    
+                            <tr>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                <td class="entry">
+                                    <div class="entryHeader">Бар Копенгаген - аккорды</div>
+<div class="entryDash"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></div>
+                                </td>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                            </tr>
+
+                            <tr>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                <td class="entry">
+                                    <div>
+Скажите, пожалуйста, а у кого-нибудь есть аккорды или кто-нибудь подбирал "Бар Копенгаген"?<br /><br />"Эй, юнга, держи штурвал, курс на вон тот маяк,.."<br /><br />Дело в том, что нигде не могу найти аккорды, а подобрать сам не в состоянии, тем более, что запись этой песни в очень плохом качестве Т_Т Помогите, пожалуйста.<p><strong>Tags:</strong> <a rel="tag" href="http://community.livejournal.com/ru_drkin/tag/%D0%B0%D0%BA%D0%BA%D0%BE%D1%80%D0%B4%D1%8B">аккорды</a>, <a rel="tag" href="http://community.livejournal.com/ru_drkin/tag/%D1%81%D0%BB%D0%BE%D0%B2%D0%B0">слова</a><br /></p>
+                                    </div>
+                                </td>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                            </tr>
+        
+                            <tr>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                <td class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                                <td width="1" class="medLine"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                            </tr>
+                        </table>
+                        <div class="entryComments"><a href="http://community.livejournal.com/ru_drkin/109567.html">6 комментариев</a> или <a href="http://community.livejournal.com/ru_drkin/109567.html?mode=reply">Оставить комментарий</a>
+                        </div>
+                        </td>
+                        <td class="dkLine" width="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    </tr><tr>
+                        <td colspan="5" class="dkLine" width="1"><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="1" alt="" border="0" /></td>
+                    </tr>
+                </table>
+
+                <div><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="1" height="3" alt="" border="0" /></div>
+        
+                </td>
+    
+        <td><img src="http://stat.livejournal.com/palimg/component/clear.gif" width="3" height="1" alt="" border="0" /></td>
+    </tr>
+</table>
+
+
+<!-- tns-counter.ru -->
+<script language="JavaScript">
+var img = new Image();
+img.src = 'http://www.tns-counter.ru/V13a***' + document.referrer.replace(/\*/g,'%2a') + '*sup_ru/ru/UTF-8/tmsec=lj_blogs-vis-nonad/';
+</script>
+<noscript>
+<img src="http://www.tns-counter.ru/V13a****sup_ru/ru/UTF-8/tmsec=lj_blogs-vis-nonad/" alt=""/>
+</noscript>
+<!--/ tns-counter.ru -->
+<!-- Rambler -->
+<img src="http://scnt.rambler.ru/top100.cnt?1" alt="" width="1" height="1" border="0">
+<!--/ Rambler -->
+<!--Rating@Mail.ru COUNTER-->
+<img height=1 width=1 src="http://d2.c4.b2.a1.top.list.ru/counter?id=1196617"/>
+<!--/COUNTER-->
+</body>
+</html>

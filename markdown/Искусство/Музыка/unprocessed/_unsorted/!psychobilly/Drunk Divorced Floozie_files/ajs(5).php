@@ -1,0 +1,3 @@
+var MAX_db3e6038 = '';
+MAX_db3e6038 += "<"+"script type=\"text/javascript\" language=\"javascript\" src=\"http://www.tkqlhce.com/placeholder-2393423?target=_top&mouseover=N\"><"+"/script><"+"div id=\'beacon_341\' style=\'position: absolute; left: 0px; top: 0px; visibility: hidden;\'><"+"img src=\'http://lists.loadout.com/Openads/www/delivery/lg.php?bannerid=341&amp;campaignid=69&amp;zoneid=23&amp;loc=http%3A%2F%2Fwww.mojonixon.com%2Flyrics%2Fdrunkdivorcedfloozie.html&amp;referer=http%3A%2F%2Fwww.mojonixon.com%2Flyrics%2Findex.html&amp;cb=c5bda452e5\' width=\'0\' height=\'0\' alt=\'\' style=\'width: 0px; height: 0px;\' /><"+"/div><"+"script type=\'text/javascript\'>document.context=\'YTowOnt9\'; <"+"/script>\n";
+document.write(MAX_db3e6038);

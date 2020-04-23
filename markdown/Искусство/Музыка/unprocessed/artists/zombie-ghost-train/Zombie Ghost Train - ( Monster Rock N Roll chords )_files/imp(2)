@@ -1,0 +1,6 @@
+document.write('<iframe scrolling=\"no\" marginwidth=\"0\" marginheight=\"0\" frameborder=\"0\" height=\"250\" width=\"300\" src=\"http://ad.yieldmanager.com/iframe3?24sAAATFBgAqWRUAAAAAAACDBgAAAAAAAAAQAAIAAAAAAAIAAQADD8ywCQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABTqwMAAAAAAAIAAQAAAAAAMzMzMzMz0z8zMzMzMzPTPwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAqrJ2FbjUNCHDPpfN7fQP-JVnpXX-sEUExDK-mAAAAAA==,,http%3A%2F%2Fwww.guitaretab.com%2Fz%2Fzombie-ghost-train%2F206692.html,Z%3D300x250%26s%3D443652%26_salt%3D2475545814%26X%3D4160155%2C1399079%26B%3D10%26u%3Dhttp%253A%252F%252Fwww.guitaretab.com%252Fz%252Fzombie-ghost-train%252F206692.html%26r%3D1,0a895c5a-46ed-11df-9b0c-001d0963b8cb\"></iframe>');
+var rm_data = new Object();
+rm_data.creative_id = 1399082;
+rm_data.offer_type = 1;
+rm_data.entity_id = 21622;
+if (window.rm_crex_data) {rm_crex_data.push(1399082);}

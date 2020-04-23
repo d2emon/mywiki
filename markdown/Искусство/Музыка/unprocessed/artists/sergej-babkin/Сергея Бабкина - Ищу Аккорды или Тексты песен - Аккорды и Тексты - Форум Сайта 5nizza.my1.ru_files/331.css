@@ -1,0 +1,345 @@
+/* General Style */
+a:link {text-decoration:underline; color:#FF7F00;}
+a:active {text-decoration:underline; color:#FF7F00;}
+a:visited {text-decoration:underline; color:#FF7F00;}
+a:hover {text-decoration:none; color:#FFFFFF;}
+
+td, body {font-family:verdana,arial,helvetica; font-size:8pt; color:#FFDBB2}
+form {padding:0px;margin:0px;}
+input,textarea,select {vertical-align:middle; font-size:8pt; font-family:verdana,arial,helvetica;}
+.copy {font-size:7pt;}
+
+a.noun:link {text-decoration:none; color:#DC0600}
+a.noun:active {text-decoration:none; color:#DC0600}
+a.noun:visited {text-decoration:none; color:#DC0600}
+a.noun:hover {text-decoration:none; color:#FF5304}
+.mframe1 {padding:2 10 30 10px;}
+hr {color:#570000;height:1px;}
+label {cursor:pointer;cursor:hand}
+
+.blocktitle {font-family:Verdana,Sans-Serif;color:#FFFFFF;font-size:13px;font-weight:bold; padding-left:22px; background: url('/.s/t/331/15.gif') no-repeat 5px 2px;}
+
+.menut0 {}
+.menut {padding:2 3 3 15px;}
+.mframe {padding:2 0 30 30px;}
+.bannerTable {width:468;height:60;}
+
+.menu1 {font-weight:bold;font-size:8pt;font-family:Arial,Sans-Serif;}
+a.menu1:link {text-decoration:underline; color:#FF7F00}
+a.menu1:active {text-decoration:underline; color:#FF7F00}
+a.menu1:visited {text-decoration:underline; color:#FF7F00}
+a.menu1:hover {text-decoration:none; color:#FFFFFF}
+/* ------------- */
+
+/* Menus */
+ul.uz, ul.uMenuRoot {list-style: none; margin: 0 0 0 0; padding-left: 0px;}
+li.menus {margin: 0; padding: 0 0 0 17px; background: url('/.s/t/331/16.gif') no-repeat 0px 3px; margin-bottom: .6em;}
+/* ----- */
+
+/* Site Menus */
+.uMenuH li {float:left;padding:0 5px;}
+
+
+.uMenuV .uMenuItem {font-weight:normal;}
+.uMenuV li a:link {text-decoration:none; color:#DC0600}
+.uMenuV li a:active {text-decoration:none; color:#DC0600}
+.uMenuV li a:visited {text-decoration:none; color:#DC0600}
+.uMenuV li a:hover {text-decoration:none; color:#FF5304}
+
+.uMenuV .uMenuItemA {font-weight:bold;}
+.uMenuV a.uMenuItemA:link {text-decoration:none; color:#FF5304}
+.uMenuV a.uMenuItemA:visited {text-decoration:none; color:#FF5304}
+.uMenuV a.uMenuItemA:hover {text-decoration:none; color:#FFFFFF}
+.uMenuV .uMenuArrow {position:absolute;width:10px;height:10px;right:0;top:3px;background:url('/.s/img/wd/1/ar1.gif') no-repeat 0 0;}
+.uMenuV li {margin: 0; padding: 0 0 0 17px; background: url('/.s/t/331/16.gif') no-repeat 0px 3px; margin-bottom: .6em;}
+/* --------- */
+
+/* Module Part Menu */
+.catsTd {padding: 0 0 6px 17px; background: url('/.s/t/331/16.gif') no-repeat 0px 3px;}
+.catNumData {font-size:7pt;color:#C44500;}
+.catDescr {font-size:7pt; padding-left:10px;}
+a.catName:link {text-decoration:none; color:#DC0600;}
+a.catName:visited {text-decoration:none; color:#DC0600;}
+a.catName:hover {text-decoration:none; color:#FF5304;}
+a.catName:active {text-decoration:none; color:#DC0600;}
+a.catNameActive:link {text-decoration:none; color:#FF5304;}
+a.catNameActive:visited {text-decoration:none; color:#FF5304;}
+a.catNameActive:hover {text-decoration:none; color:#FFFFFF;}
+a.catNameActive:active {text-decoration:none; color:#FF5304;}
+/* ----------------- */
+
+/* Entries Style */
+.eBlock {}
+.eTitle {font-family:Verdana,Arial,Sans-Serif;font-size:13px;font-weight:bold;color:#FF7F00; padding: 0 0 0 21px; background: url('/.s/t/331/17.gif') no-repeat;}
+.eTitle a:link {text-decoration:underline; color:#FF7F00;}
+.eTitle a:visited {text-decoration:underline; color:#FF7F00;}
+.eTitle a:hover {text-decoration:none; color:#FFFFFF;}
+.eTitle a:active {text-decoration:underline; color:#FF7F00;}
+
+.eText {text-align:justify; padding:5px;border-top:1px dashed #8A0000;}
+
+.eDetails {border-top:1px dashed #8A0000;border-bottom:1px dashed #8A0000;color:#C44500;padding-bottom:5px;padding-top:3px;text-align:left;font-size:7pt;}
+.eDetails1 {border-top:1px dashed #8A0000;border-bottom:1px dashed #8A0000;color:#C44500;padding-bottom:5px;padding-top:3px;text-align:left;font-size:8pt;}
+.eDetails2 {border-top:1px dashed #8A0000;border-bottom:1px dashed #8A0000;color:#C44500;padding-bottom:5px;padding-top:3px;text-align:left;font-size:8pt;}
+
+.eRating {font-size:7pt;}
+
+.eAttach {margin: 16px 0 0 0; padding: 0 0 0 15px; background: url('/.s/t/331/18.gif') no-repeat 0px 0px;}
+/* --------------- */
+
+/* Entry Manage Table */
+.manTable {border-top:1px solid #FFFFFF;border-left:1px solid #FFFFFF;border-bottom:4px solid #FFFFFF;background:#C04141;}
+.manTdError {color:#FF0000;}
+.manTd1 {}
+.manTd2 {}
+.manTd3 {}
+.manTdSep {}
+.manHr {}
+.manTdBrief {}
+.manTdText {}
+.manTdFiles {}
+.manFlFile {}
+.manTdBut {}
+.manFlSbm {}
+.manFlRst {}
+.manFlCnt {}
+/* ------------------ */
+
+/* Comments Style */
+.cAnswer {color:#FFDBB2;padding-left:15px;padding-top:4px;font-style:italic;}
+
+.cBlock1 {background:#240000;border:1px solid #570000;}
+.cBlock2 {background:#240000;border:1px solid #570000;}
+/* -------------- */
+
+/* Comments Form Style */
+.commTable {border:1px solid #570000;background:#3C0000;}
+.commTd1 {color:#FF8300;font-weight:bold;padding-left:5px;}
+.commTd2 {padding-bottom:2px;}
+.commFl {width:100%;color:#FFDBB2;background:#240000;border:1px solid #570000;}
+.smiles {border:1px solid #570000;background:#3C0000;}
+.commReg {padding: 10 0 10 0px; text-align:center;}
+.commError {color:#FF0000;}
+.securityCode {color:#FFDBB2;background:#240000;border:1px solid #570000;}
+/* ------------------- */
+
+/* News/Blog Archive Menu */
+.archUl {list-style: none; margin:0; padding-left:0;}
+.archLi {padding: 0 0 3px 10px; background: url('/.s/t/331/19.gif') no-repeat 0px 4px;}
+.archActive {color:#FFFFFF;}
+a.archLink:link {text-decoration:underline; color:#FFFFFF;}
+a.archLink:visited {text-decoration:underline; color:#FFFFFF;}
+a.archLink:hover {text-decoration:none; color:#D8D5D5;}
+a.archLink:active {text-decoration:none; color:#D8D5D5;}
+/* ---------------------- */
+
+/* News/Blog Archive Style */
+.archiveCalendars {text-align:center;color:#E2B4B4;}
+.archiveDateTitle {font-weight:bold;color:#FFFFFF;padding-top:15px;}
+.archEntryHr {width:250px;color:#DDDDDD;}
+.archiveeTitle li {margin-left: 15px; padding: 0 0 0 15px; background: url('/.s/t/331/20.gif') no-repeat 0px 2px; margin-bottom: .6em;}
+.archiveEntryTime {width:65px;font-style:italic;}
+.archiveEntryComms {font-size:9px;color:#C3C3C3;}
+a.archiveDateTitleLink:link {text-decoration:none; color:#FFFFFF}
+a.archiveDateTitleLink:visited {text-decoration:none; color:#FFFFFF}
+a.archiveDateTitleLink:hover {text-decoration:underline; color:#FFFFFF}
+a.archiveDateTitleLink:active {text-decoration:underline; color:#FFFFFF}
+.archiveNoEntry {text-align:center;color:#E2B4B4;}
+/* ------------------------ */
+
+/* News/Blog Calendar Style */
+.calMonth {}
+.calWday {color:#FFFFFF; background:#690502; width:18px;}
+.calWdaySe {color:#FFFFFF; background:#D20A04; width:18px;}
+.calWdaySu {color:#FFFFFF; background:#D20A04; width:18px; font-weight:bold;}
+.calMday {color:#C44500;background:#240000;}
+.calMdayA {color:#000000;background:#F18008;}
+.calMdayIs {color:#C04141;background:#240000;font-weight:bold;border:1px solid #F18008;}
+.calMdayIsA {border:1px solid #D20A04; background:#F18008;font-weight:bold;color:#000000;}
+a.calMonthLink:link,a.calMdayLink:link {text-decoration:none; color:#FFFFFF;}
+a.calMonthLink:visited,a.calMdayLink:visited {text-decoration:none; color:#FFFFFF;}
+a.calMonthLink:hover,a.calMdayLink:hover {text-decoration:underline; color:#FFFFFF;}
+a.calMonthLink:active,a.calMdayLink:active {text-decoration:underline; color:#FFFFFF;}
+/* ------------------------ */
+
+/* Poll styles */
+.pollBut {width:110px;}
+
+.pollBody {padding:7px; margin:0px; background:#000000}
+.textResults {background:#FFFFFF}
+.textResultsTd {background:#C04141}
+
+.pollNow {background:#FFFFFF}
+.pollNowTd {background:#C04141}
+
+.totalVotesTable {background:#FFFFFF}
+.totalVotesTd {background:#C04141}
+/* ---------- */
+
+/* User Group Marks */
+a.groupModer:link,a.groupModer:visited,a.groupModer:hover {color:yellow;}
+a.groupAdmin:link,a.groupAdmin:visited,a.groupAdmin:hover {color:pink;}
+a.groupVerify:link,a.groupVerify:visited,a.groupVerify:hover {color:#99CCFF;}
+/* ---------------- */
+
+/* Other Styles */
+.replaceTable {background:#3C0000;height:100px;width:300px;border:1px solid #570000;}
+.replaceBody {background:#000000;}
+
+.legendTd {font-size:7pt;}
+/* ------------ */
+
+/* ===== forum Start ===== */
+
+/* General forum Table View */
+.gTable {background:#570000;}
+.gTableTop {padding:2px;height:25px; background:url('/.s/t/331/9.gif') #F18008;color:#240000;font-family:Verdana,Sans-Serif;font-size:13px;font-weight:bold; padding-left:22px;}
+.gTableSubTop {padding:2px;background:url('/.s/t/331/22.gif') center #3E0000;color:#C44500;height:20px;font-size:10px;}
+.gTableBody {padding:2px;background:#240000;}
+.gTableBody1 {padding:2px;background:#240000;}
+.gTableBottom {padding:2px;background:#240000;}
+.gTableLeft {padding:2px;background:#240000;font-weight:bold;color:#FFDBB2}
+.gTableRight {padding:2px;background:#240000;color:#FFDBB2;}
+.gTableError {padding:2px;background:#240000;color:#FF0000;}
+/* ------------------------ */
+
+/* Forums Styles */
+.forumNameTd,.forumLastPostTd {padding:2px;background:#240000}
+.forumIcoTd,.forumThreadTd,.forumPostTd {padding:2px;background:#3C0000}
+.forumLastPostTd,.forumArchive {padding:2px;font-size:7pt;}
+
+a.catLink:link {text-decoration:none; color:#3C0000;}
+a.catLink:visited {text-decoration:none; color:#3C0000;}
+a.catLink:hover {text-decoration:underline; color:#980703;}
+a.catLink:active {text-decoration:underline; color:#3C0000;}
+
+.lastPostGuest,.lastPostUser,.threadAuthor {font-weight:bold}
+.archivedForum{font-size:7pt;color:#FF0000;font-weight:bold;}
+/* ------------- */
+
+/* forum Titles & other */
+.forum {font-weight:bold;font-size:9pt;}
+.forumDescr,.forumModer {color:#C44500;font-size:7pt;}
+.forumViewed {font-size:9px;}
+a.forum:link, a.lastPostUserLink:link, a.forumLastPostLink:link, a.threadAuthorLink:link {text-decoration:underline; color:#FF7F00;}
+a.forum:visited, a.lastPostUserLink:visited, a.forumLastPostLink:visited, a.threadAuthorLink:visited {text-decoration:underline; color:#FF7F00;}
+a.forum:hover, a.lastPostUserLink:hover, a.forumLastPostLink:hover, a.threadAuthorLink:hover {text-decoration:underline; color:#FFFFFF;}
+a.forum:active, a.lastPostUserLink:active, a.forumLastPostLink:active, a.threadAuthorLink:active {text-decoration:underline; color:#FF7F00;}
+/* -------------------- */
+
+/* forum Navigation Bar */
+.forumNamesBar {padding-bottom:7px;font-weight:bold;font-size:7pt;}
+.forumBarKw {font-weight:normal;}
+a.forumBarA:link {text-decoration:none; color:#FFFFFF;}
+a.forumBarA:visited {text-decoration:none; color:#FFFFFF;}
+a.forumBarA:hover {text-decoration:underline; color:#FFFFFF;}
+a.forumBarA:active {text-decoration:underline; color:#FFFFFF;}
+/* -------------------- */
+
+/* forum Fast Navigation Blocks */
+.fastNav,.fastSearch,.fastLoginForm {font-size:7pt;}
+/* ---------------------------- */
+
+/* forum Fast Navigation Menu */
+.fastNavMain {background:#862D2D;color:#FFFFFF;}
+.fastNavCat {background:#F9E6E6;}
+.fastNavCatA {background:#F9E6E6;color:#0000FF}
+.fastNavForumA {color:#0000FF}
+/* -------------------------- */
+
+/* forum Page switches */
+.pagesInfo {background:#3C0000;padding-right:10px;font-size:7pt;}
+.switches {background:#240000;}
+.switch {background:#570000;width:15px;font-size:7pt;}
+.switchActive {background:#F18008;font-weight:bold;color:#000000;width:15px}
+a.switchDigit:link,a.switchBack:link,a.switchNext:link {text-decoration:none; color:#FF7F00;}
+a.switchDigit:visited,a.switchBack:visited,a.switchNext:visited {text-decoration:none; color:#FF7F00;}
+a.switchDigit:hover,a.switchBack:hover,a.switchNext:hover {text-decoration:underline; color:#FFFFFF;}
+a.switchDigit:active,a.switchBack:active,a.switchNext:active {text-decoration:underline; color:#FF7F00;}
+/* ------------------- */
+
+/* forum Threads Style */
+.threadNametd,.threadAuthTd,.threadLastPostTd {padding:2px;padding:2px;background:#240000}
+.threadIcoTd,.threadPostTd,.threadViewTd {padding:2px;background:#3C0000}
+.threadLastPostTd {padding:2px;font-size:7pt;}
+.threadDescr {color:#C44500;font-size:7pt;}
+.threadNoticeLink {font-weight:bold;}
+.threadsType {padding:2px;background:#570000;height:25px;font-weight:bold;font-size:7pt;color:#C44500;padding-left:40px;}
+.threadsDetails {padding:2px;background:#180000;height:20px;color:#C44500;}
+.forumOnlineBar {padding:2px;background:#570000;height:20px;color:#C44500;}
+
+a.threadPinnedLink:link {text-decoration:none; color:#FF7F00;}
+a.threadPinnedLink:visited {text-decoration:none; color:#FF7F00;}
+a.threadPinnedLink:hover {text-decoration:underline; color:#FFFFFF;}
+a.threadPinnedLink:active {text-decoration:underline; color:#FF7F00;}
+
+.threadPinnedLink,.threadLink {font-weight:bold;}
+a.threadLink:link {text-decoration:underline; color:#FF7F00;}
+a.threadLink:visited {text-decoration:underline; color:#FF7F00;}
+a.threadLink:hover {text-decoration:underline; color:#FFFFFF;}
+a.threadLink:active {text-decoration:underline; color:#FF7F00;}
+
+.postpSwithces {font-size:7pt;}
+.thDescr {font-weight:normal;}
+.threadFrmBlock {font-size:7pt;text-align:right;}
+/* ------------------- */
+
+/* Posts View */
+.postTable {background:#570000}
+.postPoll {background:#240000;text-align:center;}
+.postFirst {background:#240000;border-bottom:1px solid silver;}
+.postRest1 {background:#240000;}
+.postRest2 {background:#240000;}
+.postSeparator {height:2px;background:#F18008;}
+
+.postTdTop {background:url('/.s/t/331/22.gif') center #3E0000;color:#C44500;}
+.postBottom {background:#180000;height:20px;color:#C44500;}
+.postUser {font-weight:bold;}
+.postTdInfo {background:#570000;text-align:center;padding:5px;}
+.postRankName {margin-top:5px;}
+.postRankIco {margin-bottom:5px;margin-bottom:5px;}
+.reputation {margin-top:5px;}
+.signatureHr {margin-top:20px;color:#C44500;}
+.posttdMessage {background:#240000;padding:5px;}
+
+.postPoll {padding:5px;}
+.pollQuestion {text-align:center;font-weight:bold;} 
+.pollButtons,.pollTotal {text-align:center;}
+.pollSubmitBut,.pollreSultsBut {width:140px;font-size:7pt;}
+.pollSubmit {font-weight:bold;}
+.pollEnd {text-align:center;height:30px;}
+
+.codeMessage {background:#570000;font-size:9px;}
+.quoteMessage {background:#570000;font-size:9px;}
+
+.signatureView {font-size:7pt;}
+.edited {padding-top:30px;font-size:7pt;text-align:right;color:#C44500;}
+.editedBy {font-weight:bold;font-size:8pt;}
+
+.statusBlock {padding-top:3px;}
+.statusOnline {color:#FFFF00;}
+.statusOffline {color:#FFFFFF;}
+/* ---------- */
+
+/* forum AllInOne Fast Add */
+.newThreadBlock {background: #F9F9F9;border: 1px solid #B2B2B2;}
+.newPollBlock {background: #F9F9F9;border: 1px solid #B2B2B2;}
+.newThreadItem {padding: 0 0 0 8px; background: url('/.s/t/331/23.gif') no-repeat 0px 4px;}
+.newPollItem {padding: 0 0 0 8px; background: url('/.s/t/331/23.gif') no-repeat 0px 4px;}
+/* ----------------------- */
+
+/* Post Form */
+.codeButtons {font-size:7pt;color:#FFDBB2;background:#240000;border:1px solid #570000;}
+.codeCloseAll {font-size:7pt;color:#FFDBB2;background:#240000;border:1px solid #570000;font-weight:bold;}
+.postNameFl,.postDescrFl {background:#3C0000;border:1px solid #570000;width:400px}
+.postPollFl,.postQuestionFl {background:#3C0000;border:1px solid #570000;width:400px}
+.postResultFl {background:#3C0000;border:1px solid #570000;width:50px}
+.postAnswerFl {background:#3C0000;border:1px solid #570000;width:300px}
+.postTextFl {background:#3C0000;border:1px solid #570000;width:550px;height:150px;color:#FFDBB2;}
+.postUserFl {background:#3C0000;border:1px solid #570000;width:300px}
+
+.pollHelp {font-weight:normal;font-size:7pt;padding-top:3px;}
+.smilesPart {padding-top:5px;text-align:center}
+/* --------- */
+
+/* ====== forum End ====== */

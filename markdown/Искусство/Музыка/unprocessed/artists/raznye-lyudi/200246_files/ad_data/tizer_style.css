@@ -1,0 +1,4 @@
+html,body,table {background-color: white;}
+img {float: left; margin-bottom: 1px; margin-right: 4px; border: 1px solid rgb(0, 0, 0);}
+a { font-size: 12px; color: #0000CC; font-family: Tahoma;}
+a:hover { font-size: 12px; color: #0000CC; font-family: Tahoma;}

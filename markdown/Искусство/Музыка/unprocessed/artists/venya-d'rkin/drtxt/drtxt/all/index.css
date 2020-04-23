@@ -1,0 +1,92 @@
+body {
+	background-color: #fffff0;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-align: justify;
+	line-height: 20px;
+	color: #333333;
+	width: 80%;
+	margin-left: 60px;
+	margin-right: 60px;
+}
+.text {
+	text-align: justify;
+	line-height: 21px;
+	color: #333333;
+	font-size: 12px;
+
+}
+a:link {	
+	COLOR:#757593; font-size: 12px;	TEXT-DECORATION: none; letter-spacing: 1px;}
+a:hover {
+	COLOR: #0066ff; TEXT-DECORATION: underline; letter-spacing: 1px;}
+a:visited {
+	color: #757593;
+	TEXT-DECORATION: none;
+	letter-spacing: 1px;
+	font-size: 12px;
+
+	}		
+	
+.A {
+	COLOR: #999999;
+	font-size: 12px;
+	letter-spacing: 2px;
+}
+.big {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 30px;
+	letter-spacing: 5px;}
+
+.td {
+	font-family: Verdana, Arial, sans-serif;
+	font-size: x-small;
+	color: #333333;
+	text-align: center;
+	vertical-align: middle;
+	border: 2px solid #999999;
+} 
+td, th{
+	font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px;
+	text-align: center;
+	vertical-align: middle;
+} 
+	
+.title {
+	font-family: Fusion, "Albertus Medium", "Times New Roman", serif;
+	font-size: 24px;
+	color: #999999;
+	font-weight: bold;
+	line-height: 28px;}
+.subtitle {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #003366;
+	text-transform: uppercase;
+	background-color: #CCCCCC;
+	letter-spacing: 10px;
+	line-height: 13px;
+	height: 11px;
+	font-weight: normal;
+}
+	
+.comment  {COLOR: #666666;	FONT-FAMILY: Arial, Helvetica, sans-serif;	FONT-SIZE: 10px;
+	text-align: left;}
+	
+.pripev {background-color: #fffff0;
+	font-family: Verdana, Arial, Helvetica, sans-serif;font-size: x-small;line-height: 20px; color: #333333;
+	width: 90%; margin-left: 21px;}
+.date {COLOR: #666666;	FONT-FAMILY: Arial, Helvetica, sans-serif;	FONT-SIZE: 11px;
+	text-align: right;	letter-spacing: 2px;}
+.songtitle {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 21px;
+	color: #666666;
+	background-color: #E7EEE3;
+	line-height: 23px;
+}
+.epigraph {text-align:right; font-family:tahoma}
+
+	

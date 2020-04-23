@@ -1,0 +1,40 @@
+body {
+	background-color: #FFFFF0;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 24px;
+	color: #336699;
+	margin: 0px;
+	text-align: center;
+
+}
+td {
+	font-size: 12px;
+	font-style: normal;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	background-color: #E7EEE3;
+	background-image: url(arr_roll.gif);
+}
+.box0 {
+	background-color: #FFFFF0;
+	background-image: url(empty100.gif);
+	font-size: 8px;
+	text-transform: uppercase;}
+.box1 {
+	background-color: #F8F3F1;
+	background-image: url(arr_roll.gif);}
+.box2 {
+	background-color: #FFFFF0;
+	background-image: url(empty100.gif);}	
+a:link {
+	color: #336699;
+	text-decoration: none;}
+a:visited {
+	color: #486AA2;
+	text-decoration: none;}
+a:hover {
+	text-decoration: underline;
+	color: #336699;}
+a:active {
+	color: #0099FF;
+	text-decoration: underline;}

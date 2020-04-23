@@ -1,0 +1,113 @@
+if(cookie_enabled()){
+var swfFLAdHeight=400;
+var swfFLAdWidth=400;
+var swfRandom='720745768';
+var swfFLClickTag='http://engine.mediland.ru/reference?gid=129&pid=636&bid=947&rid=199447169';
+swfFLClickTag = escape (swfFLClickTag);
+var swfFLLocation='http://content.medialand.ru/adnet.medialand.ru/735/cars_400x400.swf';
+
+var myWidth = 0, myHeight = 0;
+if(window.self != window.parent){
+if( typeof( parent.window.innerWidth ) == 'number' ) {
+//Non-IE
+myWidth = parent.window.innerWidth;
+myHeight = parent.window.innerHeight;
+} else if( parent.document.documentElement &&
+( parent.document.documentElement.clientWidth || parent.document.documentElement.clientHeight ) ) {
+//IE 6+ in 'standards compliant mode'
+myWidth = parent.document.documentElement.clientWidth;
+myHeight = parent.document.documentElement.clientHeight;
+} else if( parent.document.body && ( parent.document.body.clientWidth || parent.document.body.clientHeight ) ) {
+//IE 4 compatible
+myWidth = parent.document.body.clientWidth;
+myHeight = parent.document.body.clientHeight;
+}
+} else {
+if( typeof( window.innerWidth ) == 'number' ) {
+//Non-IE
+myWidth = window.innerWidth;
+myHeight = window.innerHeight;
+} else if( document.documentElement &&
+( document.documentElement.clientWidth || document.documentElement.clientHeight ) ) {
+//IE 6+ in 'standards compliant mode'
+myWidth = document.documentElement.clientWidth;
+myHeight = document.documentElement.clientHeight;
+} else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
+//IE 4 compatible
+myWidth = document.body.clientWidth;
+myHeight = document.body.clientHeight;
+}
+}
+var FLflashOffsetLeft=myWidth/2-swfFLAdWidth/2;
+var FLflashOffsetTop=myHeight/2-swfFLAdHeight/2;
+
+if(FLflashOffsetLeft < 0){
+	FLflashOffsetLeft = 350;
+}
+if(FLflashOffsetTop < 0){
+	FLflashOffsetTop = 150;
+}
+
+var creativeFlashVersion = 6; 
+var IE = (navigator.appVersion.indexOf("MSIE") != -1) ? true : false;
+var Win = (navigator.appVersion.indexOf("Windows") != -1) ? true : false;
+var FlashVersion = 0;
+var flash2 = false;
+var flash3 = false;
+var flash4 = false;
+var flash5 = false;
+var flash6 = false;
+if (navigator.mimeTypes && navigator.mimeTypes["application/x-shockwave-flash"]) {
+FlashVersion = navigator.mimeTypes["application/x-shockwave-flash"].enabledPlugin.description.charAt(navigator.mimeTypes["application/x-shockwave-flash"].enabledPlugin.description.indexOf(".") - 1);
+}
+if (IE && Win) {
+document.writeln('<SCR' + 'IPT LANGUAGE=VBScript>');
+document.writeln('on error resume next');
+document.writeln('flash2 = (IsObject(CreateObject("ShockwaveFlash.ShockwaveFlash.2")))');
+document.writeln('flash3 = (IsObject(CreateObject("ShockwaveFlash.ShockwaveFlash.3")))');
+document.writeln('flash4 = (IsObject(CreateObject("ShockwaveFlash.ShockwaveFlash.4")))');
+document.writeln('flash5 = (IsObject(CreateObject("ShockwaveFlash.ShockwaveFlash.5")))');
+document.writeln('flash6 = (IsObject(CreateObject("ShockwaveFlash.ShockwaveFlash.6")))');
+document.writeln('</SCR' + 'IPT>');
+} if(navigator.userAgent.indexOf("WebTV") >= 0) FlashVersion = 2;
+for (x=2; x<=6; x++) {
+if (eval('flash' + x)) FlashVersion = x;
+}
+if (FlashVersion >= creativeFlashVersion) {
+if(window.parent != window.self){
+    parent.setTimeout('var mydiv=document.getElementById(\'FlashDiv\');if(!mydiv){var newdiv=document.createElement(\'div\');document.body.appendChild(newdiv);newdiv.innerHTML=\'<div id="FlashDiv" style="position:absolute; left:' + FLflashOffsetLeft + 'px; top:' + FLflashOffsetTop + 'px; width:' + swfFLAdWidth + 'px; height:' + swfFLAdHeight + 'px; z-index:65535"><OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" WIDTH=' + swfFLAdWidth + ' HEIGHT=' + swfFLAdHeight + ' id=tile ALIGN=""><PARAM NAME=movie VALUE=' + swfFLLocation + '?clickTAG=' + swfFLClickTag + '><PARAM NAME=loop VALUE=true><PARAM NAME=quality VALUE=high><PARAM NAME=wmode VALUE=transparent><PARAM NAME=bgcolor VALUE=#FFFFFF><EMBED src=' + swfFLLocation +  '?clickTAG=' + swfFLClickTag + ' loop=true quality=high wmode=transparent bgcolor=#FFFFFF WIDTH=' + swfFLAdWidth + ' HEIGHT=' + swfFLAdHeight + ' ALIGN="" TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer"></EMBED></OBJECT><img src="http://engine.mediland.ru/action?bid=947&pid=636&rid=46254804&jlt=on" vspace="0" hspace="0" width="0" height="0"></div>\';eval("function hide(){var mydiv=document.getElementById(\'FlashDiv\');mydiv.style.visibility=\'hidden\';};function scrollevent(){document.getElementById(\'FlashDiv\').style.top = document.body.scrollTop +'+FLflashOffsetTop+';};window.hide=hide;window.onscroll=scrollevent;document.adnet_loaded_'+swfRandom+'=1;");var doc;if(document.all){if(window.frames[\'adnet'+swfRandom+'\']){doc=window.frames[\'adnet'+swfRandom+'\'].document;}}else{if(document.getElementById(\'adnet'+swfRandom+'\')){doc=document.getElementById(\'adnet'+swfRandom+'\').contentDocument;}}if(doc){doc.close();}}',1);
+} else {
+    document.write('<div id="FlashDiv" style="position:absolute; left:' + FLflashOffsetLeft + 'px; top:' + FLflashOffsetTop + 'px; width:' + swfFLAdWidth + 'px; height:' + swfFLAdHeight + 'px; z-index:65535">');
+    document.write('<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" WIDTH=' + swfFLAdWidth + ' HEIGHT=' + swfFLAdHeight + ' id=tile ALIGN="">');
+    document.write('<PARAM NAME=movie VALUE=' + swfFLLocation + '?clickTAG=' + swfFLClickTag + '>');
+    document.write('<PARAM NAME=loop VALUE=true>');
+    document.write('<PARAM NAME=quality VALUE=high>');
+    document.write('<PARAM NAME=wmode VALUE=transparent>');
+    document.write('<PARAM NAME=bgcolor VALUE=#FFFFFF>');
+    document.write('<EMBED src=' + swfFLLocation +  '?clickTAG=' + swfFLClickTag + ' loop=true quality=high wmode=transparent bgcolor=#FFFFFF WIDTH=' + swfFLAdWidth + ' HEIGHT=' + swfFLAdHeight + ' ALIGN="" TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer">');
+    document.write('</EMBED>');
+    document.write('</OBJECT>');
+    document.write('<img src="http://engine.mediland.ru/action?bid=947&pid=636&rid=46254804&jlt=on" vspace="0" hspace="0" width="0" height="0">');
+    document.write('</div>');
+    eval('function hide(){var mydiv=document.getElementById("FlashDiv");mydiv.style.visibility="hidden";}function scrollevent(){document.getElementById("FlashDiv").style.top = document.body.scrollTop + '+FLflashOffsetTop+';};window.hide=hide;window.onscroll=scrollevent;function init(){;}');
+}
+}
+} else {
+if(window.self != window.parent){
+var swfRandom='720745768';
+parent.setTimeout('document.adnet_loaded_'+swfRandom+'=1;var doc;if(document.all){if(window.frames["adnet'+swfRandom+'"]){doc=window.frames["adnet'+swfRandom+'"].document;}}else{if(document.getElementById("adnet'+swfRandom+'")){doc=document.getElementById("adnet'+swfRandom+'").contentDocument;}}if(doc){doc.close();}',1);}
+}
+function cookie_enabled() {
+var is_enabled = false;
+if (!window.opera && !navigator.cookieEnabled)
+return is_enabled;
+   if (typeof document.cookie == 'string')
+      if (document.cookie.length==0) {
+         document.cookie = "test";
+         is_enabled = document.cookie == 'test';
+         document.cookie = '';
+      } else {
+         is_enabled = true;
+      }
+   return is_enabled;
+}

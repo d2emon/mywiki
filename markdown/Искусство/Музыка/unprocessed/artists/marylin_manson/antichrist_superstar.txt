@@ -1,0 +1,276 @@
+Song: Antichrist Superstar 
+Album: Antichrist Superstar 
+Artist: Marilyn Manson
+Tabbed by: Abigail Williams
+
+This is my first attempt at tabbing anything so watch out for errors. This
+file looks best in courier or mslinedraw.
+
+First off, this song (and most of the others on the album) is in dropped D
+tuning. The bass line follows what the guitar plays throughout the song. I'm
+not tabbing rythym so listen to the song and figure it out.
+
+Intro/middle/outro
+----------------------------------------------------------
+----------------------------------------------------------
+----------------------------------------------------------
+----------------------------------------------------------
+-0--0-------0--0-------0--0-------------------------------
+-0--0-------0--0-------0--0-------------------------------
+					repeat a bunch of times
+
+
+
+2nd intro/prechorus
+----------------------------------------------------------
+----------------------------------------------------------
+----------------------------------------------------------
+----------------------------------------------------------
+-0--0--3--0--6b---------0--0--3--0--6b--------------------
+-0--0--3--0--6b---------0--0--3--0--6b--------------------
+		 1/4
+
+----------------------------------------------------------
+----------------------------------------------------------
+----------------------------------------------------------
+----------------------------------------------------------
+-0--0--3--0--6b---------0--0--3--0--6--5--3---------------
+-0--0--3--0--6b---------0--0--3--0--6--5--3---------------
+
+
+Verse
+----------------------------------------------------------
+----------------------------------------------------------
+----------------------------------------------------------
+----------------------------------------------------------
+-0--0--3--0----0--0--0--3--0------------------------------
+-0--0--3--0----0--0--0--3--0------------------------------
+					repeat a whole lot
+
+Chorus
+----------------------------------------------------------
+----------------------------------------------------------
+----------------------------------------------------------
+----------------------------------------------------------
+-6--5--3--0--0--3--0----0--0--0--3--0---------------------
+-6--5--3--0--0--3--0----0--0--0--3--0---------------------
+
+
+Play under solo
+----------------------------------------------------------
+----------------------------------------------------------
+----------------------------------------------------------
+----------------------------------------------------------
+-0--0--3--0--6b---------0--0--3--0--6--5--3---------------
+-0--0--3--0--6b---------0--0--3--0--6--5--3---------------
+
+
+Now, to try and make sense of all this
+
+play the intro (try and get whoever is listening to you to do the 	"hail" part)
+play the second intro
+then the verse and sing:
+	You built me up with your wishing hell
+	I didn't have to sell you
+	You threw your money in the pissing well
+	You do just what they tell you
+play the prechorus: 
+	Repent, that's what i'm talking about
+	I shed the skin to feed the fake
+	Repent, that's what i'm talking about
+	Whose mistake am I anyway?
+Chorus:
+	Cut the head off
+	Grows back hard
+	I am the Hydra
+	Now you'll see your star
+solo (just make a bunch of feedback, if you've got a floyd rose, or any
+floating tremolo really, you can get it to sound perfect)
+Verse:
+	Prick your finger it is done
+	The moon has now eclipsed the sun
+	The angel has spread it's wings
+	The time has come for bitter things
+Prechorus and chorus
+Intro:
+	The time has come, it is quite clear
+	Our Antichrist is almost here...
+					It is done
+Chorus (there's another solo in here, but it sounds like it's just a 
+	sampled loop of a couple of guitar feeding back, you can mimic it 	by
+sticking your guitar's pickups in front of your speaker and 	going crazy
+with the toggle switch, it helps if you have a wah-	pedal although it does
+change the tone of the feedback)
+Intro
+
+there you have it, it's a pretty simple song when you get the hang of it.
+I'm going to tab Irresponsible Hate Anthem when I have the time and i'm
+working on Beautiful People, Angel With The Scabbed Wings, and 1996. If
+anyone has any requests E-mail me.
+
+Fleckville@worldnet.att.net 
+
+
+From Radam-ZedComix@worldnet.att.net Fri Jan 10 09:38:43 1997
+Date: Mon, 23 Dec 1996 06:56:08 +0000
+From: RADAM <Radam-ZedComix@worldnet.att.net>
+To: Guitar@OLGA.net
+Subject: ANTICHRIST SUPERSTAR by Marilyn Manson
+
+This is the last pretty little ditty I'll be typing up for you tonight- I'm
+tired- It's time for bed... good night
+
+
+SYMBOLS
+\-slide down to
+p-Pull off to
+*-Abruptly stop note with palm
+
+Antichrist Superstar-intro
+-------------------------------------------------------------------------------e
+-------------------------------------------------------------------------------b
+-------------------------------------------------------------------------------g
+----0-----7-------0-----7-------0-----7-------0--------------------------------d
+2-2-5-2---5---2-2-5-2---5---2-2-5-2---5---2-2-5-2-8p7\5------------------------a
+0-0-3-0*------0-0-3-0*------0-0-3-0*------0-0-3-0-6p5\3------------------------e
+
+        by Graham Nicholson
+
+
+Date: Thu, 24 Apr 1997 13:37:15 +0200
+From: Gustav Forneus <nv95gufo@Katedral.SE>
+To: guitar@olga.net
+Subject: Antichrist Superstar  by  Marilyn Manson
+
+Marilyn Manson - "Antichrist Superstar" (Manson/Ramirez/Gacy)
+transcribed by Gustav Forneus  e-mail: nv95gufo@Katedral.se
+
+Here you go, my first tab ever.  Enjoy it!
+
+					
+                              m = mute the string 
+                              " = play the note(s) palm muted
+ 
+intro
+e|-----------------------------------------------------------------
+B|-----Hey!----Hey!----Hey!----Hey!----Hey!----Hey!----Hey!----Hey!
+G|-----------------------------------------------------------------
+D|-2-2-m---2-2-m---2-2-m---2-2-m---2-2-m---2-2-m---2-2-m---2-2-m---
+A|-2-2-m---2-2-m---2-2-m---2-2-m---2-2-m---2-2-m---2-2-m---2-2-m---
+E|-0-0-m---0-0-m---0-0-m---0-0-m---0-0-m---0-0-m---0-0-m---0-0-m---
+ 
+
+main riff
+e|-----------------------------------------------------------------
+B|-----------------------------------------------------------------
+G|-----------------------------------------------------------------
+D|-2-2-5-2---7-5---2-2-5-2---7-5---2-2-5-2---7-5---2-2-5---8-7-5---
+A|-2-2-5-2-0-7-5---2-2-5-2-0-7-5---2-2-5-2-0-7-5---2-2-5-0-8-7-5---
+E|-0-0-3-0-0-5-3---0-0-3-0-0-5-3---0-0-3-0-0-5-3---0-0-3-0-6-5-3---
+           "               "               "                       
+
+verse riff
+e|-----------------------------------------------------------------
+B|-----------------------------------------------------------------
+G|-----------------------------------------------------------------
+D|-2-2-5-2m2-2-5-2m2-2-5-2m2-2-5-2m2-2-5-2m2-2-5-2m2-2-5-2m2-2-5-2m
+A|-2-2-5-2m2-2-5-2m2-2-5-2m2-2-5-2m2-2-5-2m2-2-5-2m2-2-5-2m2-2-5-2m
+E|-0-0-3-0m0-0-3-0m0-0-3-0m0-0-3-0m0-0-3-0m0-0-3-0m0-0-3-0m0-0-3-0m
+
+
+chorus riff A
+e|-6-6-6-6-5-5-3-3-----------------6-6-6-6-5-5-3-3-----------------
+B|-6-6-6-6-5-5-3-3-----------------6-6-6-6-5-5-3-3-----------------
+G|-7-7-7-7-6-6-4-4-----------------7-7-7-7-6-6-4-4-----------------
+D|-8-8-8-8-7-7-5-5-2-2-5-2---7-5---8-8-8-8-7-7-5-5-2-2-5-2---7-5---
+A|-8-8-8-8-7-7-5-5-2-2-5-2-0-7-5---8-8-8-8-7-7-5-5-2-2-5-2-0-7-5---
+E|-6-6-6-6-5-5-3-3-0-0-3-0-0-5-3---6-6-6-6-5-5-3-3-0-0-3-0-0-5-3---
+    (-----) (-) (-)        "        (-----) (-) (-)        "      
+
+chorus riff B 
+e|-6-6-6-6-5-5-3-3-----------------6-6-6-6-5-5-3-3-
+B|-6-6-6-6-5-5-3-3-----------------6-6-6-6-5-5-3-3-
+G|-7-7-7-7-6-6-4-4-----------------7-7-7-7-6-6-4-4-
+D|-8-8-8-8-7-7-5-5-2-2-5-2---7-5---8-8-8-8-7-7-5-5-
+A|-8-8-8-8-7-7-5-5-2-2-5-2-0-7-5---8-8-8-8-7-7-5-5-
+E|-6-6-6-6-5-5-3-3-0-0-3-0-0-5-3---6-6-6-6-5-5-3-3-
+    (-----) (-) (-)        "        (-----) (-) (-)   
+	
+The chords marked (-----) and (-) are optional.  If they are not played
+remember to let the other ones ring until switching chords.
+
+
+bridge
+e|-----------------------------------------------------------------
+B|-----------------------------------------------------------------
+G|-----------------------------------------------------------------
+D|-2-2-5---8-7-5---2-2-5---8-7-5---2-2-5---8-7-5---2-2-5---8-7-5---
+A|-2-2-5-0-8-7-5---2-2-5-0-8-7-5---2-2-5-0-8-7-5---2-2-5-0-8-7-5---
+E|-0-0-3-0-6-5-3---0-0-3-0-6-5-3---0-0-3-0-6-5-3---0-0-3-0-6-5-3---
+
+*OR*  This riff above is really heard in the background while another
+guitar picks a chord once and then uses the trembar and feedback to hold
+and bend the pitch until the next verse starts.  If you choose to play
+the feedback it does not matter much which chord you use but on my
+guitar it sounds best with a high A#-chord:
+
+e|--------
+B|-15-----       let ring(feedback!)and at the 	
+G|-15-----       end silde down to fret 3
+D|-15-----		
+A|--------
+E|--------
+
+
+
+The bass simply follows the guitar throughout the song
+
+
+song structure 
+
+1x      intro
+
+2x      main riff		
+
+
+2x      verse riff              "You built me up..."
+
+2x      main riff               "REPENT!..."
+
+1x      chorus riff A           "Cut the head off..."
+
+1x      chorus riff B           "I am the hydra..."
+
+
+1x      bridge(the riff or feedback)		
+
+
+2x      verse riff              "Prick your finger..."
+
+2x      main riff               "REPENT!..."
+
+1x      chorus riff A           "Cut the head off..."
+
+1x      chorus riff B           "I am the hydra..."
+
+
+        break		
+
+
+2x      intro                   "Time has come and..."
+
+2x      chorus riff A	 
+
+
+1x      chorus riff A           "Cut the head off..."
+
+1x      chorus riff B           "I am the hydra..."
+
+2x      intro
+
+
+:)Nan i Uppsala som behover en gitarrist? Har har ni ett nyinflyttat
+Sisters-fan till ert forfogande.
+
+Any comments, corrections, etc  please let me know.
+-Gustav

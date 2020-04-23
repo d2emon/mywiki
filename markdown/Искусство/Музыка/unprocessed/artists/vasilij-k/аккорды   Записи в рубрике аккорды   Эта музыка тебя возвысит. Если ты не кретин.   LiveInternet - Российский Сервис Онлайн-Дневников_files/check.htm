@@ -1,0 +1,25 @@
+
+<!-- saved from url=(0044)http://www.liveinternet.ru/cookie/check.html -->
+<HTML><HEAD><META http-equiv="Content-Type" content="text/html; charset=windows-1251"><SCRIPT type="text/javascript"><!--
+function getCookie(cookies, name)
+{
+	for (i = 0; i < cookies.length; i++) {
+		e = cookies[i].indexOf("=");
+		if (e > 0 && cookies[i].substring(0, e) == name)
+			return cookies[i].substring(e + 1, cookies[i].length);
+	}
+	return "";
+}
+
+if (document.location.host != 'www.liveinternet.ru') {
+	if (!document.cookie) {
+		document.location = "http://www.liveinternet.ru/cookie/check-li.html?" + document.location.host;
+	} else {
+		cookies = document.cookie.split('; ');
+		if (!(getCookie(cookies, "bbuserid") && 
+			  getCookie(cookies, "bbpassword") &&
+			  getCookie(cookies, "bbusername")))
+			document.location = "http://www.liveinternet.ru/cookie/check-li.html?" + document.location.host;
+	}
+}        
+//--></SCRIPT></HEAD><BODY marginwidth="0" marginheight="0"></BODY></HTML>

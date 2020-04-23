@@ -1,0 +1,122 @@
+body {
+	font-family: Verdana, Arial, sans-serif;
+	font-size: x-small;
+	color: #000000;
+	text-align: justify;
+	padding-left: 40px;
+	padding-right: 40px;
+	vertical-align: top;
+	background-color: #fffff0;
+	line-height: normal;
+}
+.foot {
+	font-family: Verdana, Arial, sans-serif;
+	font-size: x-small;
+	color: #000000;
+	text-align: center;}
+td, th {
+	font-family: Verdana, Arial, sans-serif;
+	font-size: x-small;
+	color: #000000;
+	text-align: justify;
+	vertical-align: top;
+	padding: 10px;
+
+}
+.title {
+	font-family: Fusion, "Albertus Medium", "Times New Roman", serif;
+	font-size: 24px;
+	color: #999999;
+	font-weight: bold;
+	text-transform: none;
+	line-height: normal;
+
+}
+.subtitle {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	text-transform: uppercase;
+	background-color: #D8D8D8;
+	letter-spacing: 7px;
+	line-height: 11px;
+	padding: 3px;
+}
+.important {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 18px;
+	color: #333333;
+	font-style: italic;
+	letter-spacing: 1px;}
+.date {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #666666;
+	font-weight: normal;
+	padding-right: 40px;
+}
+a:link {
+	color: #000000;
+	text-decoration: none;
+	font-weight: bold;
+}
+a:hover {
+	text-decoration: underline;
+	color: #0066FF;}
+.title1 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #666666;
+	font-weight: bold;
+	text-transform: none;
+	line-height: normal;
+	background-position: center;
+
+
+
+
+}
+.subtitle1 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 16px;
+	color: #666666;
+	font-weight: normal;
+	text-transform: none;
+
+
+
+}
+.comment {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	color: #666666;
+	padding: 0px;
+	margin: 0px;
+
+
+
+}
+a:visited {
+
+	text-decoration: underline;
+	color: #666666;
+}
+.Picters {
+	border: thin outset #999999;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.td {
+	font-family: Verdana, Arial, sans-serif;
+	font-size: x-small;
+	color: #333333;
+	text-align: center;
+	vertical-align: middle;
+	border: 2px solid #999999;
+} 
+.comm {
+	margin: 0px;
+	padding: 0px;
+	border: 0px none;
+
+}

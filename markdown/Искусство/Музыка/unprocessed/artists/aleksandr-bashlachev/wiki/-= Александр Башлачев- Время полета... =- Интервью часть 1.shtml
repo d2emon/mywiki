@@ -1,0 +1,1064 @@
+<HTML>
+ <HEAD>
+ 
+ <META NAME="Title" CONTENT="Александр Башлачев. Время полета...">
+<META NAME="Author" CONTENT="Anoxoon">
+<META NAME="Publisher" CONTENT="Anoxoon & Ezhen">
+<META NAME="Copyright" CONTENT="Anoxoon & Ezhen 2000- 2001">
+<META http-equiv=Reply-to content=contact@bashlachev.net>
+<META NAME="Revisit" CONTENT="After 8 days">
+<META NAME="Expires" CONTENT="30">
+<META NAME="Keywords" CONTENT="Александр Башлачев, Фото, Стихи, Аккорды, Песни, Аккорды к песням, Интервью, Письма, Статьи, Фотографии, Тексты, Биография, Дискография, русский-рок, рок-н-ролл, СашБаш, Саш-Баш, Александр, Башлачев, рок-культура, рок- музыка, музыка, mp3, мп3, Ra, Real- Audio, Баш, баш,Описание, Жизнь, Жизнедеятельность, Творчество, Рисунки, Посвящение, Посвящения, Ссылки, Поиск, Фотоальбом, Новости, Форум, Череповец, Кочегарка, Лихо, Таганский концерт, Чернобыльские Бобыли на краю света, Вечный пост, Третья столица, Первый концерт в Москве,  Легенды Русского Рока, Абсолютный Вахтер, Ванюша, Верка, Надька, Любка, Вишня, Влажный блеск наших глаз, Время колокольчиков, Все от винта, Все будет хорошо, В чистом поле дожди косые, Галактическая комедия, Грибоедовский вальс, Дым коромыслом, Егоркина былина, Зимняя сказка, Имя имен, Как ветра осенние, Когда мы вдвоем, Когда мы вместе, Королева бутербродов, Лихо, Мельница, Минута молчания, Музыкант, Мы льем свое больное семя, На жизнь поэтов, Некому березу заломати, Не позволяй душе лениться, Ничего не случилось, Новый Год, О как ты эффектна, Осень, Палата №6, Перекур, Песенка на лесенке, Петербургская свадьба, Пляши в огне, Подвиг разведчика, Подымите мне веки, Поезд, Посошок, Похороны шута, Прямая дорога, Рашид+Оля, Ржавая вода, Рождественская, Рыбный день, Сегодняшний день ничего не меняет, Слет-симпозиум, Случай в Сибири, Спроси звезда, Старинная песня, Сядем рядом, Тепло беспокойно и сыро, Тесто, Трагикомический роман, Хозяйка, Хороший мужик, Час прилива, Черные дыры ,Альбомы.">
+<META NAME="Description" CONTENT=""Время полета..." Сайт посвященный Российскому поэту Александру Башлачеву. Здесь Вы найдете: Биографию, фото, аккорды, стихи, интервью, статьи, дискографию, mp3, форум и письма. В общем все или почти все что Вам может быть нужно.">
+<META NAME="Robots" CONTENT="INDEX,FOLLOW">
+<META NAME="Language" CONTENT="russian">
+<META NAME=classification CONTENT=Music >
+<META http-equiv=Cache-Control content=public>
+<META NAME="ResourceURL" CONTENT="http://www.bashlachev.net/">
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=windows-1251"> 
+
+ 
+ 
+ 
+ <script language="JavaScript">
+<!--
+
+function MM_showHideLayers() { //v2.0
+  var i, visStr, args, theObj;
+  args = MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) { //with arg triples (objNS,objIE,visStr)
+    visStr   = args[i+2];
+    if (navigator.appName == 'Netscape' && document.layers != null) {
+      theObj = eval(args[i]);
+      if (theObj) theObj.visibility = visStr;
+    } else if (document.all != null) { //IE
+      if (visStr == 'show') visStr = 'visible'; //convert vals
+      if (visStr == 'hide') visStr = 'hidden';
+      theObj = eval(args[i+1]);
+      if (theObj) theObj.style.visibility = visStr;
+  } }
+}
+//-->
+</script>
+
+		 
+
+<SCRIPT>
+<!--
+var step
+var sign=-1
+var move="no"
+
+function menuInit() {
+	if (document.layers) {
+        document.menu.left=-230
+        }
+	if (document.all) {
+        document.all.menu.style.posLeft=-231
+        }
+}
+
+function onchecked() {
+    if (move=="no") {
+	step=21
+        sign=sign*-1
+        move="yes"
+	movemenu()
+    }
+}
+
+function movemenu() {
+	if (document.layers) {
+        if (step>=0) {
+            document.menu.left+=step*sign
+            step--
+            var movetimer=setTimeout("movemenu()",20)
+	    }
+        else {
+            move="no"
+            clearTimeout(movetimer)
+        }
+	}
+	if (document.all) {
+        if (step>=0) {
+            document.all.menu.style.posLeft+=step*sign
+            step--
+            var movetimer=setTimeout("movemenu()",20)
+	    }
+        else {
+            move="no"
+            clearTimeout(movetimer)
+        }
+    }
+}
+onload=menuInit;
+// -->
+</SCRIPT>
+
+
+<SCRIPT language="JavaScript">
+  if (navigator.appName=="Microsoft Internet Explorer") {
+   document.write('<LINK rel="stylesheet" type="text/css" href="bash.css">');
+  }
+  else {
+   document.write('<LINK rel="stylesheet" type="text/css" href="nn.css">');
+  } 
+</script> 
+ </HEAD>
+<TITLE>-= Александр Башлачев- Время полета... =- Интервью часть 1</TITLE>
+<body background="img/bash.gif"  Bgcolor="white" TopMargin="0" LeftMargin="0" MarginWidth="0" MarginHeight="0" vlink=gray link="#015F5D" alink=gray>
+<a name="S28">
+<TABLE BORDER=0 width=100% CELLPADDING=0 CELLSPACING=0>
+<TR>
+ <TD>
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0>
+	<TR>
+		<TD BGcolor="#015F5D"> 
+			<IMG SRC="menush/spacer.gif" WIDTH=48 HEIGHT=1></TD>
+		<TD BGcolor="#015F5D">
+			<IMG SRC="menush/spacer.gif" WIDTH=73 HEIGHT=1></TD>
+		<TD BGcolor="#015F5D"
+			<IMG SRC="menush/spacer.gif" WIDTH=69 HEIGHT=1></TD>
+		<TD BGcolor="#015F5D">
+			<IMG SRC="menush/spacer.gif" WIDTH=81 HEIGHT=1></TD>
+		<TD BGcolor="#015F5D">
+			<IMG SRC="menush/spacer.gif" WIDTH=77 HEIGHT=1></TD>
+		<TD BGcolor="#015F5D">
+			<IMG SRC="menush/spacer.gif" WIDTH=87 HEIGHT=1></TD>
+		<TD BGcolor="#015F5D">
+			<IMG SRC="menush/spacer.gif" WIDTH=12 HEIGHT=1></TD>
+		<TD BGcolor="#015F5D">
+			<IMG SRC="menush/spacer.gif" WIDTH=43 HEIGHT=1></TD>
+		<TD BGcolor="#015F5D">
+			<IMG SRC="menush/spacer.gif" WIDTH=48 HEIGHT=1></TD>
+		<TD BGcolor="#015F5D">
+			<IMG SRC="menush/spacer.gif" WIDTH=34 HEIGHT=1></TD>
+		<TD BGcolor="#015F5D">
+			<IMG SRC="menush/spacer.gif" WIDTH=30 HEIGHT=1></TD>
+		<TD BGcolor="#015F5D">
+			<IMG SRC="menush/spacer.gif" WIDTH=15 HEIGHT=1></TD>
+		<TD BGcolor="#015F5D">
+			<IMG SRC="menush/spacer.gif" WIDTH=8 HEIGHT=1></TD>
+		<TD BGcolor="#015F5D">
+			<IMG SRC="menush/spacer.gif" WIDTH=24 HEIGHT=1></TD>
+		<TD BGcolor="#015F5D">
+			<IMG SRC="menush/spacer.gif" WIDTH=48 HEIGHT=1></TD>
+		<TD>
+			<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 width=37>
+			  <TD WIDTH=6 HEIGHT=1 BGcolor="#015F5D">
+			<IMG SRC="images/spacer.gif"></TD>
+		   </TABLE></TD>
+		<TD></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=11>
+			<IMG SRC="menush/menu_01.gif" WIDTH=602 HEIGHT=21></TD>
+		<TD COLSPAN=2>
+			<A HREF="index.shtml">
+				<IMG SRC="menush/index.gif" WIDTH=23 HEIGHT=21 BORDER=0></A></TD>
+		<TD>
+			<A HREF="mail.shtml">
+				<IMG SRC="menush/mail.gif" WIDTH=24 HEIGHT=21 BORDER=0></A></TD>
+		<TD COLSPAN=2>
+			<IMG SRC="menush/menu_04.gif" WIDTH=95 HEIGHT=21></TD>
+		<TD>
+			<IMG SRC="menush/spacer.gif" WIDTH=1 HEIGHT=21></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=16>
+			<IMG SRC="menush/menu_05.gif" WIDTH=744 HEIGHT=30></TD>
+		<TD>
+			<IMG SRC="menush/spacer.gif" WIDTH=1 HEIGHT=30></TD>
+	</TR>
+	<TR>
+		<TD ROWSPAN=2>
+			<A HREF="glav.shtml">
+				<IMG SRC="menush/glav.gif" WIDTH=48 HEIGHT=18 BORDER=0></A></TD>
+		<TD COLSPAN=15>
+			<IMG SRC="menush/menu_07.gif" WIDTH=696 HEIGHT=9></TD>
+		<TD>
+			<IMG SRC="menush/spacer.gif" WIDTH=1 HEIGHT=9></TD>
+	</TR>
+	<TR>
+		<TD ROWSPAN=3>
+			<A HREF="bio.shtml">
+				<IMG SRC="menush/bio.gif" WIDTH=73 HEIGHT=24 BORDER=0></A></TD>
+		<TD COLSPAN=14>
+			<IMG SRC="menush/menu_09.gif" WIDTH=623 HEIGHT=9></TD>
+		<TD>
+			<IMG SRC="menush/spacer.gif" WIDTH=1 HEIGHT=9></TD>
+	</TR>
+	<TR>
+		<TD ROWSPAN=7>
+			<IMG SRC="menush/menu_10.gif" WIDTH=48 HEIGHT=52></TD>
+		<TD COLSPAN=5>
+			<IMG SRC="menush/menu_11.gif" WIDTH=326 HEIGHT=4></TD>
+		<TD COLSPAN=8>
+			<IMG SRC="menush/menu_12.gif" WIDTH=250 HEIGHT=4></TD>
+		<TD ROWSPAN=7>
+			<IMG SRC="menush/menu_13.gif" WIDTH=47 HEIGHT=52></TD>
+		<TD>
+			<IMG SRC="menush/spacer.gif" WIDTH=1 HEIGHT=4></TD>
+	</TR>
+	<TR>
+		<TD ROWSPAN=3>
+			<A HREF="song.shtml">
+				<IMG SRC="menush/tv.gif" WIDTH=69 HEIGHT=26 BORDER=0></A></TD>
+		<TD COLSPAN=6>
+			<IMG SRC="menush/menu_15.gif" WIDTH=348 HEIGHT=11></TD>
+		<TD ROWSPAN=3>
+			<A HREF="chat.shtml">
+				<IMG SRC="menush/chat.gif" WIDTH=34 HEIGHT=26 BORDER=0></A></TD>
+		<TD COLSPAN=2 ROWSPAN=2>
+			<A HREF="links.shtml">
+				<IMG SRC="menush/links.gif" WIDTH=45 HEIGHT=15 BORDER=0></A></TD>
+		<TD COLSPAN=3 ROWSPAN=6>
+			<IMG SRC="menush/menu_18.gif" WIDTH=80 HEIGHT=48></TD>
+		<TD>
+			<IMG SRC="menush/spacer.gif" WIDTH=1 HEIGHT=11></TD>
+	</TR>
+	<TR>
+		<TD ROWSPAN=5>
+			<IMG SRC="menush/menu_19.gif" WIDTH=73 HEIGHT=37></TD>
+		<TD ROWSPAN=2>
+			<A HREF="foto.shtml">
+				<IMG SRC="menush/foto.gif" WIDTH=81 HEIGHT=15 BORDER=0></A></TD>
+		<TD ROWSPAN=3>
+			<A HREF="posv.shtml">
+				<IMG SRC="menush/posv.gif" WIDTH=77 HEIGHT=21 BORDER=0></A></TD>
+		<TD COLSPAN=3>
+			<IMG SRC="menush/menu_22.gif" WIDTH=142 HEIGHT=4></TD>
+		<TD ROWSPAN=3>
+			<A HREF="forum/">
+				<IMG SRC="menush/forum.gif" WIDTH=48 HEIGHT=21 BORDER=0></A></TD>
+		<TD>
+			<IMG SRC="menush/spacer.gif" WIDTH=1 HEIGHT=4></TD>
+	</TR>
+	<TR>
+		<TD ROWSPAN=3>
+			<A HREF="apistol.shtml">
+				<IMG SRC="menush/apistol.gif" WIDTH=87 HEIGHT=21 BORDER=0></A></TD>
+		<TD COLSPAN=2 ROWSPAN=3>
+			<A HREF="cgi-bin/book/guestbook.pl">
+				<IMG SRC="menush/guest.gif" WIDTH=55 HEIGHT=21 BORDER=0></A></TD>
+		<TD COLSPAN=2 ROWSPAN=4>
+			<IMG SRC="menush/menu_26.gif" WIDTH=45 HEIGHT=33></TD>
+		<TD>
+			<IMG SRC="menush/spacer.gif" WIDTH=1 HEIGHT=11></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=2 ROWSPAN=3>
+			<IMG SRC="menush/menu_27.gif" WIDTH=150 HEIGHT=22></TD>
+		<TD ROWSPAN=3>
+			<IMG SRC="menush/menu_28.gif" WIDTH=34 HEIGHT=22></TD>
+		<TD>
+			<IMG SRC="menush/spacer.gif" WIDTH=1 HEIGHT=6></TD>
+	</TR>
+	<TR>
+		<TD ROWSPAN=2>
+			<IMG SRC="menush/menu_29.gif" WIDTH=77 HEIGHT=16></TD>
+		<TD ROWSPAN=2>
+			<IMG SRC="menush/menu_30.gif" WIDTH=48 HEIGHT=16></TD>
+		<TD>
+			<IMG SRC="menush/spacer.gif" WIDTH=1 HEIGHT=4></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=3>
+			<IMG SRC="menush/menu_31.gif" WIDTH=142 HEIGHT=12></TD>
+		<TD>
+			<IMG SRC="menush/spacer.gif" WIDTH=1 HEIGHT=12></TD>
+	</TR>
+</TABLE>
+<DIV id=menu>
+<TABLE WIDTH=249 BORDER=0 CELLPADDING=0 CELLSPACING=0>
+	<TR>
+		<TD COLSPAN=5>
+			<IMG SRC="menu/i_01.gif" WIDTH=249 HEIGHT=2></TD>
+	</TR>
+	<TR>
+		<TD>
+			<IMG SRC="menu/i_02.gif" WIDTH=2 HEIGHT=170></TD>
+		<TD WIDTH=215 HEIGHT=233 valign="top">
+		<TABLE border=0 cellPadding=0 cellSpacing=0 width=215 valign="top">
+
+  <TR>
+		          <TD bgColor=#cdcdcd><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#f5f3f4><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>	     
+		       
+		        <TR>
+ <TD bgColor=#EEEEEE><IMG src="menu/n.gif" width=0>
+<font class="glav1">-=Статьи=-</a></TD></TR>
+  <TR>
+		          <TD bgColor=#cdcdcd><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#f5f3f4><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		       
+		       <TR>
+		          <TD bgColor=#e4e4e4 onmouseout="bgColor='E4E4E4'"
+		          onmouseover="bgColor='FFFFFF'"><IMG height=12
+		            src="menu/n.gif" width=20><A class=links
+		            href="stats.shtml">Статьи ч.1</A></TD></TR>
+  <TR>
+		          <TD bgColor=#cdcdcd><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#f5f3f4><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR> 
+  
+		       <TR>
+		          <TD bgColor=#e4e4e4 onmouseout="bgColor='E4E4E4'"
+		          onmouseover="bgColor='FFFFFF'"><IMG height=12
+		            src="menu/n.gif" width=20><A class=links
+		            href="stats2.shtml">Статьи ч.2</A></TD></TR>
+  <TR>
+		          <TD bgColor=#cdcdcd><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#f5f3f4><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>		     
+		      
+
+		        <TR>
+		          <TD bgColor=#e4e4e4 onmouseout="bgColor='E4E4E4'"
+		          onmouseover="bgColor='FFFFFF'"><IMG height=12
+		            src="menu/n.gif" width=20><A class=links
+		            href="stats3.shtml">Статьи ч.3</A></TD></TR>
+  <TR>
+		          <TD bgColor=#cdcdcd><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#f5f3f4><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+
+
+		        <TR>
+		          <TD bgColor=#e4e4e4 onmouseout="bgColor='E4E4E4'"
+		          onmouseover="bgColor='FFFFFF'"><IMG height=12
+		            src="menu/n.gif" width=20><A class=links
+		            href="stats4.shtml">Статьи ч.4</A></TD></TR>
+
+	
+	  <TR>
+		          <TD bgColor=#cdcdcd><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#f5f3f4><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#e4e4e4 onmouseout="bgColor='E4E4E4'"
+		          onmouseover="bgColor='FFFFFF'"><IMG height=12
+		            src="menu/n.gif" width=20><A class=links
+		            href="stats5.shtml">Статьи ч.5</A></TD></TR>
+	 
+  <TR>
+		          <TD bgColor=#cdcdcd><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#f5f3f4><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#e4e4e4 onmouseout="bgColor='E4E4E4'"
+		          onmouseover="bgColor='FFFFFF'"><IMG height=12
+		            src="menu/n.gif" width=20><A class=links
+		            href="stats6.shtml">Статьи ч.6</A></TD></TR>
+  <TR>
+		          <TD bgColor=#cdcdcd><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#f5f3f4><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#e4e4e4 onmouseout="bgColor='E4E4E4'"
+		          onmouseover="bgColor='FFFFFF'"><IMG height=12
+		            src="menu/n.gif" width=20><A class=links
+		            href="stat_en.shtml">Статьи ч.7(eng)</A></TD></TR>
+	 <TR>
+		          <TD bgColor=#cdcdcd><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#f5f3f4><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>	     
+		       
+		        <TR>
+ <TD bgColor=#EEEEEE><IMG src="menu/n.gif" width=0>
+<font class="glav1">-=Интервью=-</a></TD></TR>
+  <TR>
+		          <TD bgColor=#cdcdcd><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#f5f3f4><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		       
+		       <TR>
+		          <TD bgColor=#e4e4e4 onmouseout="bgColor='E4E4E4'"
+		          onmouseover="bgColor='FFFFFF'"><IMG height=12
+		            src="menu/n.gif" width=20><A class=links
+		            href="inter1.shtml">Интервью ч.1</A></TD></TR>
+  <TR>
+		          <TD bgColor=#cdcdcd><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#f5f3f4><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR> 
+  
+		       <TR>
+		          <TD bgColor=#e4e4e4 onmouseout="bgColor='E4E4E4'"
+		          onmouseover="bgColor='FFFFFF'"><IMG height=12
+		            src="menu/n.gif" width=20><A class=links
+		            href="inter2.shtml">Интервью ч.2</A></TD></TR>
+		 <TR>
+		          <TD bgColor=#cdcdcd><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#f5f3f4><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>	     
+		       
+		      		        <TR>
+		          <TD bgColor=#e4e4e4 onmouseout="bgColor='E4E4E4'"
+		          onmouseover="bgColor='FFFFFF'"><IMG height=12
+		            src="menu/n.gif" width=20><A class=links
+		            href="inter3.shtml">Интервью ч.3</A></TD></TR>
+		 <TR>
+		          <TD bgColor=#cdcdcd><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#f5f3f4><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>	     
+		       
+		        <TR>
+		          <TD bgColor=#e4e4e4 onmouseout="bgColor='E4E4E4'"
+		          onmouseover="bgColor='FFFFFF'"><IMG height=12
+		            src="menu/n.gif" width=20><A class=links
+		            href="inter4.shtml">Интервью ч.4</A></TD></TR>
+		 <TR>
+		          <TD bgColor=#cdcdcd><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#f5f3f4><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>	     
+		       
+		        <TR>
+ <TD bgColor=#EEEEEE><IMG src="menu/n.gif" width=0>
+<font class="glav1">-=Разное=-</a></TD></TR>
+  <TR>
+		          <TD bgColor=#cdcdcd><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#f5f3f4><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		       
+		       <TR>
+		          <TD bgColor=#e4e4e4 onmouseout="bgColor='E4E4E4'"
+		          onmouseover="bgColor='FFFFFF'"><IMG height=12
+		            src="menu/n.gif" width=20><A class=links
+		            href="pismak.shtml">Письма госпоже "K"</A></TD></TR>
+ <TR>
+		          <TD bgColor=#cdcdcd><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#f5f3f4><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>	     
+		       
+		        <TR>
+		          <TD bgColor=#e4e4e4 onmouseout="bgColor='E4E4E4'"
+		          onmouseover="bgColor='FFFFFF'"><IMG height=12
+		            src="menu/n.gif" width=20><A class=links
+		            href="pisma.shtml">Письма Нелюбиным</A></TD></TR>
+  <TR>
+		          <TD bgColor=#cdcdcd><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        
+        </TABLE>
+		</TD>
+		<TD background="menu/i_04.gif">
+			<IMG SRC="menu/i_04.gif" WIDTH=2 HEIGHT=170></TD>
+		<TD valign=bottom><A href="javascript:onchecked()" onfocus=javascript:this.blur()>
+			<IMG SRC="menu/i_05.gif"  BORDER=0></A></TD>
+		<TD background="menu/i_06.gif" valign=bottom>
+			<IMG SRC="menu/i_06.gif" WIDTH=2 HEIGHT=170></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=5>
+			<IMG SRC="menu/i_07.gif" WIDTH=249 HEIGHT=2></TD>
+	</TR>
+</TABLE>
+
+</DIV>
+</TD>
+</TR>
+<TR>
+  <TD>
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 align=right>
+<TR>
+ <TD>
+<!-- HotLog -->
+<script language="javascript">
+hotlog_js="1.0";hotlog_d=document; hotlog_n=navigator;hotlog_rn=Math.random();
+hotlog_n_n=(hotlog_n.appName.substring(0,3)=="Mic")?0:1
+hotlog_r=""+hotlog_rn+"&s=1154&r="+escape(hotlog_d.referrer)+"&pg="+
+escape(window.location.href)
+hotlog_d.cookie="hotlog=1"; hotlog_r+="&c="+(hotlog_d.cookie?"Y":"N");
+hotlog_d.cookie="hotlog=1; expires=Thu, 01-Jan-70 00:00:01 GMT"</script>
+<script language="javascript1.1">
+hotlog_js="1.1";hotlog_r+="&j="+(navigator.javaEnabled()?"Y":"N")</script>
+<script language="javascript1.2">
+hotlog_js="1.2";hotlog_s=screen;
+hotlog_r+="&wh="+hotlog_s.width+'x'+hotlog_s.height+"&px="+((hotlog_n_n==0)?
+hotlog_s.colorDepth:hotlog_s.pixelDepth)</script>
+<script language="javascript1.3">hotlog_js="1.3"</script>
+<script language="javascript">hotlog_r+="&js="+hotlog_js;
+hotlog_d.write("<img src=\"http://hit.hotlog.ru/cgi-bin/hotlog/count?"+
+hotlog_r+"&\" border=0 width=1 height=1>")</script>
+<noscript><img src="http://hit.hotlog.ru/cgi-bin/hotlog/count?s=1154" border=0 
+width=1 height=1></noscript>
+<!-- /HotLog -->
+<br>
+<!-- BannerBank advertising begin: Too Much Music 468x60 -->
+<script>
+// <!--
+var userid = 2397716;
+var page = 1;
+var rndnum = Math.round(Math.random() * 10000);
+document.write('<center><A HREF="http://ad3.bb.ru/bb.cgi?cmd=go&pubid=' + userid + '&pg=' + page + '&vbn=536&num=1&w=468&h=60&nocache=' + rndnum + '" target="_top">');
+document.write('<IMG SRC="http://ad3.bb.ru/bb.cgi?cmd=ad&pubid=' + userid + '&pg=' + page + '&vbn=536&num=1&w=468&h=60&nocache=' + rndnum + '" width=468 height=60 Alt="Too Much Music" border=0></A><BR></center>');
+document.write(' <center><FONT SIZE=1><A HREF="http://www.tmm.ru/" target = "_blank" >Too Much Music</A></FONT></center>');
+// -->
+</script>
+<!-- BannerBank advertising end: Too Much Music 468x60 -->
+</TD>
+<TD>
+&nbsp;&nbsp;&nbsp;&nbsp;
+</TD>
+</TR>
+</TABLE>
+  </TD>
+</TR>
+<TR>
+<TD align=center>
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 align=center>
+	<TR>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=15 HEIGHT=1></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=47 HEIGHT=1></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=277 HEIGHT=1></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=284 HEIGHT=1></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=33 HEIGHT=1></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=57 HEIGHT=1></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=30 HEIGHT=1></TD>
+		<TD></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=3 ROWSPAN=2>
+			<IMG SRC="img/inter.gif" WIDTH=339 HEIGHT=71></TD>
+		<TD>
+			<IMG SRC="images/ramka1_02.gif" WIDTH=284 HEIGHT=36></TD>
+		<TD COLSPAN=3>
+			<IMG SRC="images/ramka1_03.gif" WIDTH=120 HEIGHT=36></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=1 HEIGHT=36></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=2 BGcolor="white"  WIDTH=317 HEIGHT=35>
+<SCRIPT>
+var flag_strClear=true;
+function strClear(arg){if(flag_strClear){arg.value="";flag_strClear=false;}}
+</SCRIPT>
+<center>
+<FORM ACTION="http://www.bashlachev.net/cgi-bin/search/search.pl" METHOD="GET">
+<INPUT TYPE="Text" NAME="query" SIZE="30" 
+class=se1 
+onmouseover="this.className = 'se2';" 
+onmouseout="this.className = 'se2';" 
+VALUE="-= поиск =-" onClick="strClear(this)">
+<INPUT TYPE="Hidden" NAME="stpos" VALUE="0">
+<INPUT TYPE="Submit" VALUE=" >> "  style="font-size=11px;"  title="-= Искать =-"
+class=se1 
+onmouseover="this.className = 'se2';" 
+onmouseout="this.className = 'se2';" >
+</center>
+</TD>
+</FORM>
+		<TD COLSPAN=2>
+			<IMG SRC="images/ramka1_05.gif" WIDTH=87 HEIGHT=35></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=1 HEIGHT=35></TD>
+	</TR>
+	<TR>
+		<TD ROWSPAN=2 background="images/l_f.gif">
+			<IMG SRC="images/spacer.gif"></TD>
+		<TD COLSPAN=5 BGcolor="white">
+			<IMG SRC="images/spacer.gif" WIDTH=698 HEIGHT=48></TD>
+		<TD>
+			<IMG SRC="images/ramka1_08.gif" WIDTH=30 HEIGHT=48></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=1 HEIGHT=48></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=5 bgcolor="white">
+<table border=0 cellPadding=0 cellSpacing=0 width=695>	
+ <TR>
+   <TD Width=100% valign=top>
+  <TABLE>
+ <TR>
+  <TD> 
+     <img src="img/st.gif" width=10 height=10>&nbsp;&nbsp;<a href="#s1" class="links">Интервью в "РИО". КОРНИ ВСЕГДА ОСТАёТСя В ЗЕМЛЕ</a>
+     </TD>
+  </TR> 
+  <TR>
+  <TD> 
+   <img src="img/st.gif" width=10 height=10>&nbsp;&nbsp;<a href="#s2" class="links">Интервью с Дж.Стингрей: 1986</a> <br>
+   </TD>
+  </TR>
+ </TABLE>  
+   
+   
+<pre><font size=3 color="gray" class="posv">
+<a name="s1">Интервью в "РИО". КОРНИ ВСЕГДА ОСТАёТСя В ЗЕМЛЕ</a>
+</font><font size=3 class="posv2">  
+       Первый  раз по-настоящему обстоятельный разговор с Сашей
+Башлачевым был у редакции РИО весной прошлого года. Потом  наши
+пути   пересекались   довольно   часто,  и  этот  разговор  все
+продолжался   и   трансформировался,   уходя   от   примитивной
+первоначальной  схемы "как ты относишься к...". Однако печатать
+его мы не решались: все думалось, вот,  еще  разок  встретимся,
+уточним  то,  обсудим  это,  разберемся  с  тем-то  и тем-то...
+Разобрались... По-прежнему неясно, как на бумаге  передать  его
+уникальную  речь  с  ее  интонационными  нюансами,  игрой слов,
+вернее, игрой внутри  слова,  с  очень  необычными  метафорами,
+парадоксальными сравнениями и, вообще, всем ее образным строем?
+Впрочем, пусть все останется как  есть,  как  зафиксировал  эти
+беседы карманный плэйерок, бесстрастный хранитель нашей памяти.
+
+АЛЕКСАНДР БАШЛАЧЕВ:
+"КОРНИ ВСЕГДА ОСТАёТСя В ЗЕМЛЕ"
+
+РИО: Саша, насколько я знаю, ты тоже был журналистом - 
+мне попадались в Череповецких газетах твои 
+статьи о РОК-СЕНТяБРЕ...
+АБ:  Да, это моя последняя профессия - 
+перед тем как я, оставив все это дело, пришел за 
+наукой в Питер.
+РИО: Что (или кто) тебя к этому подтолкнуло?
+АБ:  А Троицкий посоветовал.
+РИО: Честно говоря, именно от него я и услышал впервые 
+твое имя - это было весной года три назад...
+АБ:  В общем-то, мы как раз тогда и встретились с ним в Череповце.
+РИО: Кстати, в этом городе раньше была очень 
+мощная рок-сцена. Ты не был с ней связан?
+АБ:  Да, город очень музыкальый, и я был связан с 
+музыкой, но больше как наблюдатель. 
+я не играл ни в одной группе, но общался с ребятами...
+РИО: А ты бы  хотел сейчас играть с группой?
+АБ:  Видишь ли, сейчас у меня гитара составляет группу. 
+Если бы я играл с группой, я бы освободился от 
+гитары, но при одном условии: чтобы группа давала 
+мне такой же драйв, какой дает мне гитара.
+РИО: С кем именно хотел бы ты играть?
+АБ:  Со всеми хотел бы. Например, с Курехиным.
+РИО: Ну, это вполне осуществимо, и, что важно, 
+позволило бы выйти за рамки формы...
+АБ:  Здесь вопрос надо немного не так сформулировать: 
+я хотел бы играть со всеми, но играл бы я. 
+я мог бы войти в состав любой группы (допустим,
+     на концерте), но это совсем другая игра...
+РИО: Кого бы ты мог назвать из тех, кто работает в близком к тебе
+     направлении?
+АБ:  А, собственно, что такое направление? я не знаю 
+своего направления - ведь направление как жизнь - 
+его не выбирают. Вот, в Новосибирске я слышал группу 
+КАЛИНОВ МОСТ, знаешь ее?
+РИО: Ну да.
+АБ:  Так вот, эта группа по формам очень близка мне. 
+Но я бы не сказал, что она близка мне по какому-то 
+направлению... Что-то у нас не сходится.
+РИЩ: А со Славкой Задерием играть не пробовал?
+АБ:  У него своя группа...
+РИО: А тебе кто, вообще, нужен: аккомпаниаторы или личности?
+АБ:  Разумеется, чтобы сами могли работать. т.е. 
+не настолько глупые, чтобы  им все обьяснять на каждом шагу... 
+Видишь ли, есть несколько типов  групп. БИТЛЗ - это 
+определенный тип группы, СТОУНЗ - тоже, но совсем другой. 
+Есть такой тип, как ДОРЗ, я считаю, это идеал группы. Но в
+каждом из них - свои особенные отношения. Как нет двух совершенно
+одинаковых слов... И какой должна быть моя группа, я прекрасно себе
+представляю... Хотя практически никогда не играл на сцене.
+РИО: Так с чего же для тебя начался рок?
+АБ:  Сначала надо определить, что такое рок. "Что такое миф?"
+Некоторые полагают, что слово "рок" - это слияние разных мифов...
+РИО: ...только поданных в современном изложении?
+АБ:  Да, я тоже так считаю. И начинался он... по-разному.
+РИО: Ну, хорошо. Есть, например, теория, согласно которой 
+первым советским рокером был Высоцкий. 
+(Мы тоже такого мнения придерживаемся). 
+Он для нас вовсе не то, что Пресли или Дилан 
+для американцев - единственно, что фигуры одного масштаба,
+но у нас своя музыка. и он всему этому придал новый смысл.
+Человек, которого можно боготворить...
+АБ:  А что, у кого-то есть другая точка зрения?
+РИО: Кого любишь слушать (если слушаешь вообще)?
+АБ:  Как что слушаю?
+РИО: Ну, что нравится, что можешь слушать в любое время?
+АБ:  А-а-а. Люблю АКВАРИУМ. Просто не представляю 
+ситуацию, в которой он может помешать. 
+Когда-то, году в 1981 случилось так (волею судеб, как говорится),
+что я услышал две песни - "Ты дрянь" и "Железнодорожную
+воду". И мне сказали, что это все АКВАРИУМ. Понимаешь? И эти две
+песни не были для меня чем-то разным. я считал, что это одна группа.
+РИО: Пожалуй, с некоторым допущением можно было и у нас
+предполагать в те годы, что эти песни написал один человек.
+АБ:  И с тех пор АКВАРИУМ мне не помешает никогда.
+РИО: Слушай, а был какой-то толчок, первопричина того, 
+что ты начал петь?
+АБ:  я вообще не думаю, что существуют какие-то
+разумные объяснения того как это происходит...
+РИО: Отсчетный пункт? Первая песня? 
+Первое стихотворение? Или это все было
+в глубине себя, не выходило на поверхность...
+АБ:  Скорее всего. я искал для себя более тесного общения. Понимаешь?
+РИО: А как тебе кажется, существует ли русский рок? Именно русский, со
+     своим, идущим из древности, поэтическим словом, со своим языком?
+     Веришь ли ты в него?
+АБ:  Верить в то, что существует, нельзя. И, потом, слово "русский" здесь
+     очень неточно: что именно - российский? Советский? 
+Понимаешь, как трудно определить само слово 
+"рок", так же трудно подобрать правильный эпитет.
+А отсюда нельзя понять, о чем мы говорим...
+РИО: Давай подойдем с другой стороны. Существует ли у нас аналог
+того, что, скажем, в Англии называют роком?
+АБ:  Знаешь, давай оставим всю эту путаницу с терминологией
+и просто договоримся, что мы друг друга понимаем. 
+В Англии и Америке рок-н-ролл это дерзкий удел одиночки,
+а русский рок-н-ролл предполагает партнера...
+Если рок-н-ролл - мужского рода, то партнер должен быть женского.
+Понимаешь? Когда я выступаю, у меня есть некий оппонент - публика,
+кстати, именно женского рода (раз уж мы говорим на уровне лексики
+русского языка). И с этой публикой происходит диалог... Вообще тут
+такая штука: рок-н-ролл американский все равно не мыслим без партнера.
+Если музыкант не воспринимает публику - тогда он играет сам с собой.
+Внутри себя - с собой. На сцене - с публикой... Что интересно: если
+взять западный рок-н-ролл и русский, то тут может подойти такое
+сравнение. Смотри: у них собор венчает шпиль, на котором крест.
+Шпиль, казалось бы, и говорит об игре (между прочим, "spiel"
+по-немецки "игра"! - ред.). А у нас существует купол. Как голова.
+Ёто что означает?  Что люди, которые не уверены в своей победе, т.е.
+в неком шпиле, они магическим образом воздвигают купол, чтобы убедить
+себя, что они победят. Понимаешь, что я хочу сказать? Люди делают шпиль,
+но они пролетают, потому что в действительности оказывается, что они
+верят не в себя. А неуверенные люди (не то, чтобы неуверенные - просто
+они иначе играют) заранее ставят себе цель в виде купола, и это
+означает только одно: они готовы обрести реальность в войне, в игре,
+в работе... Вот в этом и есть большая разница между Россией и Западом.
+РИО: Саша, вопрос с точки зрения филологии: есть ощущение, что у 
+тебя слово существует как бы само по себе, 
+вне контекста, т.е. оно вмещает в себя гораздо больше, 
+чем оно представляет из себя "внешне", как если бы за скромным 
+фасадом прячется огромный дом... У тебя постоянные ссылки на 
+внутреннюю структуру слова.
+АБ:  Видишь ли, мы ведем разговор на разных уровнях - ты на уровне
+синтаксиса, а я на уровне синтаксиса как-то уже перестал мыслить, я
+мыслю (если это можно так назвать) на уровне морфологии: корней,
+уффиксов, приставок. Все происходит из корня. Понимаешь? 
+Вот, недавно одна моя знакомая сдавала зачет по атеизму. 
+Перед ней стоял такой вопрос: "Основная религия". я ей сказал:
+"Ты не мудри. Скажи им, что существует Имя Имен 
+(если помнишь, у меня есть песня по этому поводу).
+Ёто Имя Имен можно представить как некий корень, которым является
+буддизм, суффиксом у него является ислам, окончанием - христианство,
+а приставки - идиш, ересь и современный модерн. Понимаешь? я вот так,
+примерно, мыслю - на уровне морфем, а ты - на уровне синтаксиса
+спрашиваешь. я не могу тебе дать ответ, потому что весь синтаксис в
+твоей голове. У меня тоже, но я не могу.
+РИО: Если дело в этом, то как в таком случае ты относишься к тому, что
+твои тексты "снимают" с пленок и перепечатывают? Есть даже
+самиздатовский сборник.
+АБ:  Понимаешь, тут такая штука. С одной стороны, может, стоит напечатать
+тексты и подсчитать в них... гласные и согласные, а с другой...
+Если бы кто-то отнесся к этому творчески (как человек, участвующий
+в группе, но не музыкант), как некий филолог, он просто совершил бы
+произвольное членение, а любая фиксация так или иначе неточна. я сейчас
+разговариваю на языке твоего плэйера. Возникает дискретность. Понимаешь?
+Можно членить эти слова на кодовые приставки: не просто сплошным рядом
+печатать, а подразделять, разбить каким-то образом. Ёто творческий
+подход.
+РИО: Видимо. автор тоже должен в этом участвовать...
+АБ:  Согласен. Наверное. Но я этим не занимаюсь. И не хотел бы - боюсь.
+РИО: Боишься?
+АБ:  я бы сказал, не стоит. Самому мне не стоит. 
+Может, это позиция эгоиста но я не хотел бы этого делать.
+РИО: Тогда это неизбежно сделает кто-то другой и вольно 
+или невольно даст иное толкование.
+АБ:  Ради Бога. Сразу станет ясно, у кого какой интерес:
+к Слову или так, к общему потоку. 
+Ёто только кажется, что существует контекст слов, на самом
+деле речь идет о контексте корней.
+РИО: Слово как корень?
+АБ:  Да-да-да! Возьми хотя бы название города - Питер. В моей голове оно
+читается П и и т е р. Постоянно. Помнишь: "Пиитер, я - поэт..."
+Но это слово для меня связано не с пиететом, а с корнем "пить".
+Ёто гораздо проще. я, в основном, стараюсь идти к старым корням. я
+глубоко убежден, что любой город хранит в себе свою древнюю географию.
+Люди ее не поминят, но она есть. Ёто очень важно. В одном месте была
+березовая роща, в другом рос столетний дуб, еще в каком-то была топь.
+И они естественным образом связаны с нашим временем. Ёта нить -
+что называется, связь времен - никогда не рвалась. Скажем, где была
+топь, там никогда не построят храм. Через 200 лет на месте березовой
+рощи - спокойный район, а где была топь - наоборот, опасный так или
+иначе. А где был дуб - срубили его и построили храм. Самое главное,
+когда лес рубят, его рубят на корню, т.е. корни всегда остаются в земле.
+Они могут тлеть сотни лет, могут смешаться с землей, но они
+о с т а л и с ь - корни этих деревьев. По моему убеждению, это не может
+не влиять на весь ход последующих событий. Главное - корни. Вот если лес
+вырублен, то все корни выкорчеваны должны быть... А ствол и листья -
+это, собственно, объедки дерева.
+РИО: А как ты пишешь свои песни?
+АБ:  Они возникают из совокупности событий, которые я не могу так 
+вот просто перечислить. 
+Но я знаю их и просто принимаю к сведению. В песне можно
+рассказать самому себе о себе все, как есть на самом деле. По этому
+поводу вот, что могу сказать. Мне приходится много путешествовать
+автостопом. И в любой квартире я обнаруживаю, что человек, который
+так или иначе живет в Своем Доме, занимается искусством интерьера
+по образу и подобию... У человека может быть мания его величества,
+ее величества, чьего угодно... В общем, я хотел сказать, что
+единственное искусство (само по себе это слово я просто ненавижу)
+живо только на кухне. Кухня не терпит лишних предметов. Бывают
+прекрасные кухни, просто удивительные, а зайдешь в комнату, и видишь,
+что она вне хозяина, чужая.
+РИО: Вот, ты говоришь, что видел много городов - 
+как ты относишься к Москве?
+АБ:  Москва... там невозможно просто гулять. Для этого нужно очень хорошо
+знать Москву: проехать три остановки на метро, потом две автобусом и
+только потом можно выйти и сказать: "я начинаю гулять". я в Москве
+исходил пешком очень много. А если говорить о корнях Москвы, то у нее
+корень "кау" (так же, как и в Каунасе, где на гербе бык). Москва -
+корова. Точно так же, как Вологда - от корня "влага", дословно
+обозначает "богатырский водохлеб". Волга - то же самое... О Питере мы
+уже говорили...
+РИО: И поэтому ты перебрался в Ленинград...
+АБ:  Да. Видишь ли, в Москве, может быть, и можно жить, а в Ленинграде
+     с т о и т жить.
+
+</FONT>
+<hr size=1 width=80%>
+
+<font size=3 color="gray" class="posv">
+<a href="#s28"  onMouseOver="window.status='Вверх'; return true;" onMouseOut="window.status='';"><img src="img/st_v.gif" border=0></a>&nbsp;&nbsp;<a name="s2">Интервью с Дж.Стингрей: 1986</a>
+</font><font size=3 class="posv2">  
+
+Вопросы задает Дж.Стингрей (перевод Б.Г.). Лето 1986 года.
+
+- Что  ты делал, когда был моложе?
+- Когда мне было 3 года, я написал первое стихотворение. Вот я с тех пор
+  продолжал писать. Есть вещи, которые можно не писать, а есть вещи,
+  которые нельзя не писать.
+- Каким образом люди знакомятся с твоими вещами, ты из как-то 
+записываешь?
+- Нет. я пою для друзей, там, куда меня позовут. Ну, а другом я считаю
+  любого человека, который меня понимает и, я думаю, что 
+друзей все больше...
+- Ты что-нибудь записываешь?
+- Нет. я никогда ничего не писал.
+- О чем же ты, собственно, поешь?
+- О чем... Ну как?.. Russian soul. (Русская душа) О чем?.. О себе!!!
+  О себе, в основном пою. То, что внутри (то, что хочу, то и могу петь)?
+- У тебя есть влияния русских или западных поэтов, как ты считаешь?
+- Как я считаю?..
+     я думаю, что все что мы есть - это, так или иначе, клубок каких-то
+  влияний. Влияние любви... Там, где есть любовь... Ну, не зря же люди
+  жили... скажем так...
+     Ёто влияет на меня - я (или и) на тысячи и миллионы.
+- Что, ты думаешь, люди будут испытывать, когда будут слушать это дело,
+  не зная языка? Будут ли они чувствовать? 
+(что-то об американском TV)
+- я думаю, что поймут. я хорошо понимаю англоязычную 
+народную музыку.я знаю, о чем там поется и у нас один 
+и тот же корень... я считаю,  что корень один и тот же. 
+Все дело... в корне.
+- У тебя есть какие-либо планы на будущее (надежды)?
+- Конечно. У меня не только надежда, у меня есть еще 
+что играть и буду.
+- Ты женат? Ты никогда не был женат?
+- Нет.
+- А ты любишь?
+- Любил, люблю и буду любить.
+- (что-то о цели)?
+- Но цели у меня нет. Какая может быть цель? 
+Потому что любая конкретная
+  цель, она предполагает, что человек должен ее немедленно достигнуть,
+  поэтому он начинает бежать, не замечая ничего вокруг себя.
+- Ты хотел бы стать официальным поэтом?
+- Нет. Ну, что значит стать официальным поэтом?.. я был бы рад, 
+если бы мои песни, скажем, записала фирма "Мелодия". 
+То, что я делаю... Почему бы и нет. 
+Ёто означало бы какую-то перемену в том,
+что вокруг нас, но я не верю в это, а в той ситуации, 
+которая есть, я не хотел бы стать официальным поэтом.
+
+(что-то о предоставившейся ситуации выступить по американскому TV)
+- Что бы ты хотел сказать?
+- Не знаю... сложно это... Да нет... Мы все живые люди, 
+в общем, не знаю, это сложный вопрос. 
+я знаю, что и там нашлись бы люди, которые меня 
+поняли. Там бы нашлись у меня и друзья.
+Америка - это очень далеко, и я туда никогда не попаду. 
+я рад, что живу в России и дай Бог мне здесь умереть.
+     Здесь очень весело.
+- Тебе нравится, хотелось бы путешествовать?
+- Да. я и путешествую. Конечно, хотелось бы... посмотреть... 
+конечно.
+- Представь здесь сейчас друзей. 
+О чем ты хочешь с ними поговорить в первую очередь?
+- О том, что болит.
+
+
+        * * *
+
+- Глядя на Вас, не скажешь, что ВЫ тяготеете к западной эстраде,
+  увлекаетесь дискотеками и т.д.?
+- Видите ли, наш учитель Козьма Прутков учил нас: "Зри в корень". 
+И вот, если зрить в корень, корень рок-музыки - это корень 
+человеческой души. А мы в свое время не поняли совершенно, 
+что мы запутались в рукавах  чужой формы. 
+я хочу сказать, что просто надо поискать корень своей души. 
+Мы живем на русской земле и поэтому должны искать корень свой,
+русский, и корень, он даст ствол, а ствол даст ветви,
+а к ветвям подойдет музыкант. Он ветвь срежет, из коры сделает
+дудочку и будет на ней играть...  
+... Знаете, есть такая пословица: "Простота хуже воровства". 
+И вот я понимаю эту пословицу так:
+если ты не обрел в себе какой-то корень, то лучше сначала
+попробовать что-то украсть, скажем, так - например, на
+себя чужую форму. Потому что твоя простота будет никому 
+не нужна - ты ничего не скажешь, если ты пуст.
+А в чужой форме ты, по крайней мере, себя почувствуешь.
+А потом уже нужно переодеваться. А когда мы
+переодеваемся, то уже нужно видеть,
+что мы в своей форме, в своих рубахах,
+в своих... в том, в чем есть...
+- Как Вас принимают?
+- Меня принимают? я не играю в залах, я играю тем, 
+кто хочет меня слышать...
+Тот, кто зовет меня к себе домой: например,
+позовет в гости, соберет 20, 30 человек, может,
+и 50, я играю, меня принимают хорошо. Понимаете, самое
+главное, когда человек скажет: "Ты спел, и мне хочется жить".
+ А вот когда человек говорит: "Мне не хочется жить",
+- я бессилен.
+- А как Вас можно назвать? Раньше были барды... Как Вы себя...
+- Как я себя величаю? я человек поющий.
+Есть человек поющий, рисующий, есть
+летающий, плавающий. Вот я - поющий, с гитарой.
+</FONT>
+
+<hr size=1 width=80%>
+
+ </TD>
+</TR>        
+</TABLE>
+
+
+
+
+
+
+			</TD>
+		<TD ROWSPAN=2 background="images/ramka1_10.gif">
+			<IMG SRC="images/spacer.gif"></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=1 HEIGHT=172></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=2 ROWSPAN=2>
+			<IMG SRC="images/ramka1_11.gif" WIDTH=62 HEIGHT=60></TD>
+		<TD COLSPAN=4 ROWSPAN=2 BGcolor="white"WIDTH=651 HEIGHT=60>
+			<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0>
+			 <TR>
+			   <TD width=600>
+			<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 align=right height=20>
+<TR>
+<TD height=20>
+
+</TD>
+ <TD valign=TOP >
+
+<!-- SpyLOG v2 f:1211 --> 
+<script language="javascript"> 
+u="u610.99.spylog.com";d=document;nv=navigator;na=nv.appName;p=1; 
+bv=Math.round(parseFloat(nv.appVersion)*100); 
+n=(na.substring(0,2)=="Mi")?0:1;rn=Math.random(); z="p="+p+"&rn="+rn;y=""; 
+y+="<a href='http://"+u+"/cnt?f=3&p="+p+"&rn="+rn+"' target=_blank>"; 
+y+="<img src='http://"+u+"/cnt?"+z+ 
+"&r1="+escape(d.referrer)+"&r="+escape(parent.document.referrer)+ 
+"&pg="+escape(window.location.href)+"' border=0 width=88 height=31 alt='SpyLOG'>"; 
+y+="</a>"; d.write(y); if(!n) { d.write("<"+"!--"); } //--></script><noscript> 
+<a href="http://u610.99.spylog.com/cnt?f=3&p=1" target=_blank> 
+<img src="http://u610.99.spylog.com/cnt?p=1" alt='SpyLOG' border='0' width=88 height=31 > 
+</a> </noscript><script language="javascript1.2"><!-- 
+if(!n) { d.write("--"+">"); }//--></script> 
+<!-- SpyLOG -->
+
+</TD>
+<TD width=20>
+&nbsp;
+</TD>
+</TABLE>
+			   </TD>
+			<TD align=center>
+			 <a href="#s28"  onMouseOver="window.status='Вверх'; return true;" onMouseOut="window.status='';"><img src="img/up.gif" border=0></a>
+			 </TD>
+			</TR>
+			</TABLE>
+			</TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=1 HEIGHT=44></TD>
+	</TR>
+	<TR>
+		<TD>
+			<IMG SRC="images/ramka1_13.gif" WIDTH=30 HEIGHT=16></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=1 HEIGHT=16></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=7>
+			<IMG SRC="images/niz.gif" WIDTH=743 HEIGHT=21></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=1 HEIGHT=21></TD>
+	</TR>
+</TABLE>
+</center>
+</TD>
+</TR>
+</TABLE>
+<table border=0 cellPadding=0 cellSpacing=0 width=736 align=center>
+<TR>
+  <TD align=right HEIGHT=21 valign=BOTTOM>
+  <img src="img/line.gif">
+</TD>
+</TR>
+<TR>
+ <TD align=right>
+<font color="#" class="diz1">
+<a href="autors.shtml" class="links">Администрация сайта</a><br> 
+Россия. 9 июня 2000<br>
+Ре-Дизайн: 20 сентября 2001<br>
+контактный e-mail:&nbsp;<a href="mailto:contact@bashlachev.net">contact@bashlachev.net</a>
+ </TD>
+</TR>
+</TABLE>
+&nbsp;
+</BODY>
+</HTML>
+ 
+
+ 

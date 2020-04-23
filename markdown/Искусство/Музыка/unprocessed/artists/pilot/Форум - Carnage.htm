@@ -1,0 +1,191 @@
+<HTML>
+<HEAD>
+<link rel=stylesheet type="text/css" href="/c/main.css">
+<link rel=stylesheet type="text/css" href="/c/top.css">
+<meta content="text/html; charset=windows-1251" http-equiv=Content-type>
+<meta http-equiv=cache-control content=no-cache>
+<meta http-equiv=pragma content=no-cache>
+<meta http-equiv=expires content=0>
+<SCRIPT LANGUAGE="JavaScript">
+wins = new Array();
+function wopen(wurl,trgt,h,w)
+{
+  win = wins[trgt];
+  if (!win || win.closed)
+  {
+    wins[trgt] = window.open(wurl,trgt,'height='+h+',width='+w+',resizable=no,scrollbars=yes,menubar=no,status=no,toolbar=no');
+    win = wins[trgt];
+  }
+  win.focus();
+  return false;
+}
+function WinRefresh()
+{
+  self.focus();
+  window.location='forum.pl?t=creation&m=1000940169';
+}
+function SelfClose(stay)
+{
+  if (!stay && window.opener)
+  {
+    setTimeout('if (!window.opener.closed) window.opener.WinRefresh(); self.close();',2000);
+  }
+  else
+  {
+    setTimeout('self.close();',2000);
+  }
+}
+function click()
+{
+  if((event.ctrlKey) && ((event.keyCode==10)||(event.keyCode==13))) { document.F1.add.click() }
+}
+</SCRIPT>
+<TITLE>Форум - Carnage</TITLE>
+</HEAD>
+<BODY bgcolor=c5ced5 leftmargin=0 topmargin=0 marginwidth=0 marginheight=0 rightmargin=0 bottommargin=0 onkeyup="">
+  <TABLE cellspacing=0 cellpadding=0 width=100%>
+  <TR><TD bgcolor="#556775" align=center><img src="http://img.carnage.ru/i/null.gif" height=5><br>
+  <FONT COLOR="#E0E7ED">
+  <a class=topmenu href="http://lutecia.carnage.ru/forum.pl">Форум города Лютеция</a>&nbsp;|&nbsp;
+  <a class=topmenu  href="http://arkaim.carnage.ru/forum.pl">Форум города Ар Каим</a>&nbsp;|&nbsp;
+  <a class=topmenu  href="http://www.carnage.ru/">Главная страница Carnage</a>
+  </FONT>
+  <br><img src="http://img.carnage.ru/i/null.gif" height=5></TD>
+  </TR>
+  <TR><TD bgcolor="#03233C"><img src="http://img.carnage.ru/i/null.gif" height=1></TD></TR>
+  </TABLE>
+<table width=100% height=100% border=0 cellpadding=0 cellspacing=0><tr>
+<td valign="top" width=173>
+<table height=100% border=0 cellpadding=0 cellspacing=0>
+<tr><td><img src="http://img.carnage.ru/i/forum/forum.gif" width=173 height=54></td></tr>
+<tr><td><img src="http://img.carnage.ru/i/null.gif" width=173 height=1></td></tr>
+<tr><td>
+<table width=173 background="http://img.carnage.ru/i/forum/bg_1.gif" border=0 cellpadding=0 cellspacing=0>
+<tr><td><img src="http://img.carnage.ru/i/forum/line_1.gif" width=173 height=1></td></tr>
+<tr><td valign="top" height=8></td></tr>
+<tr><td height=18 valign="top" ><div align="right" style="margin-top:1px; margin-right:25px"><a href="forum.pl?t=main">Главный</a></div></td></tr>
+<tr><td height=18 valign="top" ><div align="right" style="margin-top:1px; margin-right:25px"><a href="forum.pl?t=other">Обо всем</a></div></td></tr>
+<tr><td height=18 valign="top" background="http://img.carnage.ru/i/forum/line_2.gif"><div align="right" style="margin-top:1px; margin-right:25px"><a href="forum.pl?t=creation">Творчество</a></div></td></tr>
+<tr><td height=18 valign="top" ><div align="right" style="margin-top:1px; margin-right:25px"><a href="forum.pl?t=news">Новости</a></div></td></tr>
+<tr><td height=18 valign="top" ><div align="right" style="margin-top:1px; margin-right:25px"><a href="forum.pl?t=bugs">Ошибки</a></div></td></tr>
+<tr><td height=18 valign="top" ><div align="right" style="margin-top:1px; margin-right:25px"><a href="forum.pl?t=motion">Предложения</a></div></td></tr>
+<tr><td height=18 valign="top" ><div align="right" style="margin-top:1px; margin-right:25px"><a href="forum.pl?t=jeremiad">Жалобы</a></div></td></tr>
+<tr><td height=18 valign="top" ><div align="right" style="margin-top:1px; margin-right:25px"><a href="forum.pl?t=notice">Объявления</a></div></td></tr>
+<tr><td height=18 valign="top" ><div align="right" style="margin-top:1px; margin-right:25px"><a href="forum.pl?t=work">Работа</a></div></td></tr>
+<tr><td height=18 valign="top" ><div align="right" style="margin-top:1px; margin-right:25px"><a href="forum.pl?t=publicity">Реклама</a></div></td></tr>
+<tr><td height=18 valign="top" ><div align="right" style="margin-top:1px; margin-right:25px"><a href="forum.pl?t=light">Свет</a></div></td></tr>
+<tr><td height=18 valign="top" ><div align="right" style="margin-top:1px; margin-right:25px"><a href="forum.pl?t=dark">Тьма</a></div></td></tr>
+<tr><td height=18 valign="top" ><div align="right" style="margin-top:1px; margin-right:25px"><a href="forum.pl?t=chaos">Хаос</a></div></td></tr>
+<tr><td height=18 valign="top" ><div align="right" style="margin-top:1px; margin-right:25px"><a href="forum.pl?t=order">Порядок</a></div></td></tr>
+<tr><td height=18 valign="top" ><div align="right" style="margin-top:1px; margin-right:25px"><a href="forum.pl?t=keeper">Инквизиция</a></div></td></tr>
+<tr><td height=18 valign="top" ><div align="right" style="margin-top:1px; margin-right:25px"><a href="forum.pl?t=consul">Консулы</a></div></td></tr>
+<tr><td height=18 valign="top" ><div align="right" style="margin-top:1px; margin-right:25px"><a href="forum.pl?t=klan">Кланы</a></div></td></tr>
+<tr><td height=18 valign="top" ><div align="right" style="margin-top:1px; margin-right:25px"><a href="forum.pl?t=guild">Гильдии</a></div></td></tr>
+<tr><td height=18 valign="top" ><div align="right" style="margin-top:1px; margin-right:25px"><a href="forum.pl?t=prison">Тюрьма</a></div></td></tr>
+<tr><td valign="top" height=8></td></tr>
+<tr><td><img src="http://img.carnage.ru/i/forum/line_1.gif" width=173 height=1></td></tr>
+</table>
+</td></tr>
+<tr><td height=100% align=center valign=bottom style="margin-right:25px">
+<!--Rating@Mail.ru COUNTER-->
+<script language="JavaScript" type="text/javascript"><!--
+d=document;var a='';a+=';r='+escape(d.referrer)
+js=10//--></script>
+<script language="JavaScript1.1" type="text/javascript"><!--
+a+=';j='+navigator.javaEnabled()
+js=11//--></script>
+<script language="JavaScript1.2" type="text/javascript"><!--
+s=screen;a+=';s='+s.width+'*'+s.height
+a+=';d='+(s.colorDepth?s.colorDepth:s.pixelDepth)
+js=12//--></script>
+<script language="JavaScript1.3" type="text/javascript"><!--
+js=13//--></script>
+<script language="JavaScript" type="text/javascript"><!--
+d.write('<a href="http://top.mail.ru/jump?from=712466"'+
+' target=_blank><img src="http://top.list.ru/counter'+
+'?id=712466;t=50;js='+js+a+';rand='+Math.random()+
+'" alt="Рейтинг@Mail.ru"'+' border=0 height=31 width=88/></a>')
+if(11<js)d.write('<'+'!-- ')//--></script>
+<noscript><a target=_blank href="http://top.mail.ru/jump?from=712466"><img src="http://top.list.ru/counter?js=na;id=712466;t=50" border=0 height=31 width=88 alt="Рейтинг@Mail.ru"/></a></noscript>
+<script language="JavaScript" type="text/javascript"><!--
+if(11<js)d.write('--'+'>')//--></script>
+<!--/COUNTER-->
+<!--<a target=_blank href="http://top.mail.ru/jump?from=712466"><img src="http://top.list.ru/counter?id=712466;t=173" border=0 height=15 width=88 alt="Рейтинг@Mail.ru"/></a>-->
+</td></tr>
+</table>
+</td>
+<td valign="top" width=100% height=100%>
+<table width=100% height=100% border=0 cellpadding=0 cellspacing=0>
+<tr><td height=9></td></tr>
+<tr><td valign="top" height=31 background="http://img.carnage.ru/i/forum/bg_2.gif">
+<table height=31 border=0 cellpadding=0 cellspacing=0>
+<tr><td width=100% valign="top">
+<table width=100% border=0 cellpadding=0 cellspacing=0>
+<tr>
+<td width=301><img src="http://img.carnage.ru/i/forum/line_3.gif" width=301 height=31></td>
+<td valign="top" nowrap><div style="margin-top:9px; margin-left:39px; margin-right:39px">ТВОРЧЕСТВО</div></td>
+<td width=141><img src="http://img.carnage.ru/i/forum/line_4.gif" width=141 height=31></td>
+<td width=100%></td>
+</tr>
+</table>
+</td>
+<td width=7 valign="top"><img src="http://img.carnage.ru/i/forum/line_5.gif" width=7 height=31></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td height=30 valign="top"><div style="margin-top:8px; margin-left:11px">Стихи, рассказы, интересные тексты, да и все, что можно отнести к понятию Творчества.</div></td>
+</tr>
+<tr>
+<td height=25 valign="top" background="http://img.carnage.ru/i/forum/bg_3.gif">
+<table height=25 width=100% border=0 cellpadding=0 cellspacing=0>
+<tr>
+<td width=1><img src="http://img.carnage.ru/i/forum/line_6.gif"></td>
+<td width=100% valign="top"><div style="margin-left:11px; margin-top:6px"><b>Тема:</b> Моему любимому человечку</div></td>
+<td width=7><img src="http://img.carnage.ru/i/forum/line_7.gif" width=7 height=25></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td valign="top" height=480>
+<table height=480 width=100% border=0 cellpadding=0 cellspacing=0>
+<tr>
+<td width=1 bgcolor=92A2AF><img src="http://img.carnage.ru/i/forum/spacer.gif" width=1></td>
+<td width=100% valign="top" bgcolor=c5ced5>
+<table width=100% cellspacing=0 cellpadding=1 border=0><tr><td><table cellspacing=0 cellpadding=1 width=100% border=0>
+<tr><td width=100% bgcolor=eff3f8><img src="http://img.carnage.ru/i/align20.gif" width="25" height="16" alt="Воин Света"><img src="http://img.carnage.ru/i/klan/.gif" alt=""><img src="http://img.carnage.ru/i/guild/.gif" alt=""><b>Алена котенок</b> [3] <a href="inf.pl?user=Алена котенок" target="_blank"><img src="http://img.carnage.ru/i/infF.gif" width="12" height="12"></a> (09-11-2006 03:28:42)</td></tr><tr><td bgcolor=eff3f8>За моим глухим окном <br>Розовый встает рассвет, <br>Это мой любимый дом, <br>Но чего-то в доме нет... <br><br>Есть в нем и звучанье струн, <br>И соленый вкус конфет, <br>Есть свеченье древних рун, <br>Но чего-то в доме нет... <br><br>Кошка подошла, легла, <br>Ей сегодня десять лет <br>Даже кошка поняла, <br>Что чего-то в доме нет... <br><br>И приемник огоньком <br>Испускает теплый свет, <br>Но молчит, ведь знает он, <br>Что чего-то в доме нет... <br><br>С кошкой мы вдвоем лежим, <br>И усы ей теребя, <br>Думаю,ну что за жизнь?... <br>Если рядом нет.. ТЕБЯ... <br><br>Малыш, я тебя очень люблю!!! Я не могу без тебя!!! <br><br>Войду тихонько в твои мысли, <br>Наполню нежностью слова, <br>Добавлю в душу счастья брызги, <br>Ладошку приложу к глазам... <br>К губам касаясь поцелуем, <br>Вложу в него свою любовь, <br>И сон волшебный наколдую, <br>Чтоб в нём увидеться нам вновь! <br></td></tr>
+</table>
+</td></tr><tr><td><table cellspacing=0 cellpadding=1 width=100% border=0>
+<tr><td rowspan=2 bgcolor=c5ced5><img src="http://img.carnage.ru/i/null.gif" width="15" height="1"></td><td width=100% bgcolor=eff3f8 nowrap><img src="http://img.carnage.ru/i/align20.gif" width="25" height="16" alt="Воин Света"><img src="http://img.carnage.ru/i/klan/.gif" alt=""><img src="http://img.carnage.ru/i/guild/.gif" alt=""><b>Алена котенок</b> [3] <a href="inf.pl?user=Алена котенок" target="_blank"><img src="http://img.carnage.ru/i/infF.gif" width="12" height="12"></a> (09-11-2006 13:38:36)</td></tr><tr><td bgcolor=eff3f8>енто посвящается dear -- самому замечтательному человечку!!! Самому доброму, честному, верному, нежному, ласковому..... Самому лучшему!!! <br>Димочка, ты супер!!!  <img src="http://img.carnage.ru/i/sm/confused.gif" width="19" height="19"> <br></td></tr>
+</table>
+</td></tr><tr><td><table cellspacing=0 cellpadding=1 width=100% border=0>
+<tr><td rowspan=2 bgcolor=c5ced5><img src="http://img.carnage.ru/i/null.gif" width="15" height="1"></td><td width=100% bgcolor=eff3f8 nowrap><img src="http://img.carnage.ru/i/klan/.gif" alt=""><img src="http://img.carnage.ru/i/guild/.gif" alt=""><b>dear</b> [3] <a href="inf.pl?user=dear" target="_blank"><img src="http://img.carnage.ru/i/infM.gif" width="12" height="12"></a> (13-11-2006 16:27:00)</td></tr><tr><td bgcolor=eff3f8>Солныфко,мну уже неможет без твоего слова...извени за то что был не прав тогда,понимаю.....целую солнфе.... <br></td></tr>
+</table>
+</td></tr><tr><td></td></tr></table></td>
+<td width=7 background="http://img.carnage.ru/i/forum/line_8.gif"><img src="http://img.carnage.ru/i/forum/spacer.gif" width=7></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td height=25 valign="top" background="http://img.carnage.ru/i/forum/bg_3.gif">
+<table height=25 width=100% border=0 cellpadding=0 cellspacing=0>
+<tr>
+<td width=1><img src="http://img.carnage.ru/i/forum/line_6.gif"></td>
+<td width=100% valign="top"></td>
+<td width=7><img src="http://img.carnage.ru/i/forum/line_7.gif" width=7 height=25></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td height=100%></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</BODY>
+</HTML>

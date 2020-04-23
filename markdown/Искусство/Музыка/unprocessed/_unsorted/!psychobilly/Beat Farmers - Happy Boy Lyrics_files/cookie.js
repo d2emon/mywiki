@@ -1,0 +1,1 @@
+_GA_googleCookieHelper.setCookieInfo({"_cookies_":[{"_value_":"ID=6bde27e37de4f320:T=1257322814:S=ALNI_MZSH3GEn72FgOs51l-cr9_XLG7U4g","_expires_":1320394814,"_path_":"/","_domain_":"lyricsmania.com"}]});

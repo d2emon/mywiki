@@ -1,0 +1,30 @@
+body {
+background-color: #000000; 
+font-family: Tahoma,Arial,Helvetica;
+color: #DBE3CA;
+line-height: 14pt;
+margin-top: 1px;
+margin-left: 1px;
+margin-right: 1px;
+margin-bottom: 1px;
+SCROLLBAR-ARROW-COLOR: #ffffff; 
+SCROLLBAR-BASE-COLOR: #252525
+}
+
+h1{color: #DBE3CA; font-size: 22pt;  margin:25px 0px 20px 0px; line-height: 35pt;}
+h3{color: #DBE3CA; font-size: 14pt;  margin:20px 0px 20px 0px; line-height: 20pt;}
+h2{color: #DBE3CA; font-size: 18pt; line-height: 25pt;}
+h4{color: #DBE3CA; font-size: 12pt;  margin:1px 3px 3px 0px;}
+
+td {font-size: 9pt}
+div {font-size: 9pt}
+p {font-size: 9pt}
+
+.dead {color: #A3A3A3;text-decoration: none}
+.dead:hover {color: #A3A3A3;text-decoration: none}
+a:vlink {color: #ffcc00;text-decoration: underline}
+a:alink {color: #ffcc00;text-decoration: underline}
+A {FONT-WEIGHT: 500; FONT-SIZE: 9pt; COLOR: #FFFFFF; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif; TEXT-DECORATION: none}
+A:hover {FONT-WEIGHT: 500; FONT-SIZE: 9pt; COLOR:#FF8000; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif; TEXT-DECORATION: none}
+#center{width:40%; text-align:justify;}
+#center_wide{width:55%; text-align:justify;}

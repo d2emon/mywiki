@@ -1,0 +1,113 @@
+body {
+background-color: #000000; 
+font-family: Tahoma,Arial,Helvetica;
+color: #FFF0B3;
+font-size: 9pt;
+margin-top: 1px;
+margin-left: 1px;
+margin-right: 1px;
+margin-bottom: 1px;
+scrollbar-face-color: #B89300;
+scrollbar-shadow-color: #1A518A;
+scrollbar-highlight-color: #042567;
+scrollbar-3dlight-color: #042567;
+scrollbar-darkshadow-color: #000000;
+scrollbar-track-color: #042567;
+scrollbar-arrow-color: #042567;    	
+}
+
+.page{
+scrollbar-face-color: #B89300;
+scrollbar-shadow-color: #1A518A;
+scrollbar-highlight-color: #042567;
+scrollbar-3dlight-color: #042567;
+scrollbar-darkshadow-color: #000000;
+scrollbar-track-color: #042567;
+scrollbar-arrow-color: #042567;    	
+width:600px;
+height:432px;
+border:#000000 solid 1px;
+margin:3px;
+overflow:auto;
+background-color:#000000;
+}
+
+li.m1{
+color: #ffcc00;
+font-size: 8pt;
+}
+
+td.fs{
+font-size: 7pt;
+font-weight: bold;
+}
+
+td.fss{
+font-size: 7pt;
+background-color: #334334;
+font-weight: bold;
+}
+
+.page-title {
+color: #ffcc00;
+font-size: 14pt;
+font-weight: bold;
+}
+
+.mt3 {
+color: #ffcc00;
+font-size: 8pt;
+font-weight: bold;
+}
+
+td.page-text {font-size: 9pt}
+td.bar-text {font-size: 8pt}
+
+td {font-size: 9pt}
+div {font-size: 9pt}
+p {font-size: 9pt}
+.teh {font-size: 9pt; color: #D0B85A;}
+.teh3 {font-size: 9pt;}
+.wteh {font-size: 8pt;}
+.newmk {font-size: 8pt;color: #ff2000;font-weight: bold;}
+
+.cline { border-left: solid 2px #D0B85A; margin-left: 20px; padding-left: 7px; }
+.cline2 { margin-left: 40px; padding-left: 7px; }
+
+.textmenu a:link {font-size: 14px; text-decoration: none}
+.textmenu a:active {font-size: 14px; text-decoration: none}
+.textmenu a:visited {font-size: 14px; text-decoration: none}
+.textmenu a:hover {font-size: 14px; text-decoration: underline}
+
+
+a {color: #ffcc00;text-decoration: underline}
+a:vlink {color: #ffcc00;text-decoration: underline}
+a:alink {color: #ffcc00;text-decoration: underline}
+a:hover {color: #ffcc00;text-decoration: underline}
+
+a.teh2 {font-size: 9pt;color: #D0B85A;text-decoration: underline}
+a.teh2:vlink {font-size: 9pt;color: #D0B85A;text-decoration: underline}
+a.teh2:alink {font-size: 9pt;color: #D0B85A;text-decoration: underline}
+a.teh2:hover {font-size: 9pt;color: #D0B85A;text-decoration: underline}
+
+a.wteh2 {font-size: 9pt;color: #ffcc00;text-decoration: underline}
+a.wteh2:vlink {font-size: 9pt;color: #ffcc00;text-decoration: underline}
+a.wteh2:alink {font-size: 9pt;color: #ffcc00;text-decoration: underline}
+a.wteh2:hover {font-size: 9pt;color: #ffcc00;text-decoration: underline}
+                                      
+a.bn {font-size: 14pt;color: #ffcc00;font-weight: bold;text-decoration: none}
+a.bn:vlink {font-size: 14pt;color: #ffcc00;font-weight: bold;text-decoration: none}
+a.bn:alink {font-size: 14pt;color: #ffcc00;font-weight: bold;text-decoration: none}
+a.bn:hover {font-size: 14pt;color: #ffcc00;font-weight: bold;text-decoration: none}
+
+a.m2 {font-size: 9pt;font-weight: bold;color: #ffcc00;text-decoration: none}
+a.m2:vlink {font-size: 9pt;font-weight: bold;color: #ffcc00;text-decoration: none}
+a.m2:alink {font-size: 9pt;font-weight: bold;color: #ffcc00;text-decoration: none}
+a.m2:hover {font-size: 9pt;font-weight: bold;color: #ffcc00;text-decoration: none}
+ 
+form {font-size: 9pt;}
+.frm {background-color: #000000; color: #eeeeee; border: 1 solid #ffcc00; font-size: 9pt;}
+.frm2 {background-color: #000000; color: #aaaaaa; border: 1 solid #aaaaaa; font-size: 9pt;}
+.frm3 {background-color: #000000; color: #eeeeee; border: 1 solid #ffcc00; font-size: 11pt;}
+input,select {background-color: #000000; color: #eeeeee; border: 1 solid #ffcc00; font-size: 9pt;}
+textarea {background-color: #000000; color: #eeeeee; border: 1 solid #ffcc00; font-size: 9pt;}

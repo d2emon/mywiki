@@ -1,0 +1,1166 @@
+<HTML>
+ <HEAD>
+ 
+ <META NAME="Title" CONTENT="Александр Башлачев. Время полета...">
+<META NAME="Author" CONTENT="Anoxoon">
+<META NAME="Publisher" CONTENT="Anoxoon & Ezhen">
+<META NAME="Copyright" CONTENT="Anoxoon & Ezhen 2000- 2001">
+<META http-equiv=Reply-to content=contact@bashlachev.net>
+<META NAME="Revisit" CONTENT="After 8 days">
+<META NAME="Expires" CONTENT="30">
+<META NAME="Keywords" CONTENT="Александр Башлачев, Фото, Стихи, Аккорды, Песни, Аккорды к песням, Интервью, Письма, Статьи, Фотографии, Тексты, Биография, Дискография, русский-рок, рок-н-ролл, СашБаш, Саш-Баш, Александр, Башлачев, рок-культура, рок- музыка, музыка, mp3, мп3, Ra, Real- Audio, Баш, баш,Описание, Жизнь, Жизнедеятельность, Творчество, Рисунки, Посвящение, Посвящения, Ссылки, Поиск, Фотоальбом, Новости, Форум, Череповец, Кочегарка, Лихо, Таганский концерт, Чернобыльские Бобыли на краю света, Вечный пост, Третья столица, Первый концерт в Москве,  Легенды Русского Рока, Абсолютный Вахтер, Ванюша, Верка, Надька, Любка, Вишня, Влажный блеск наших глаз, Время колокольчиков, Все от винта, Все будет хорошо, В чистом поле дожди косые, Галактическая комедия, Грибоедовский вальс, Дым коромыслом, Егоркина былина, Зимняя сказка, Имя имен, Как ветра осенние, Когда мы вдвоем, Когда мы вместе, Королева бутербродов, Лихо, Мельница, Минута молчания, Музыкант, Мы льем свое больное семя, На жизнь поэтов, Некому березу заломати, Не позволяй душе лениться, Ничего не случилось, Новый Год, О как ты эффектна, Осень, Палата №6, Перекур, Песенка на лесенке, Петербургская свадьба, Пляши в огне, Подвиг разведчика, Подымите мне веки, Поезд, Посошок, Похороны шута, Прямая дорога, Рашид+Оля, Ржавая вода, Рождественская, Рыбный день, Сегодняшний день ничего не меняет, Слет-симпозиум, Случай в Сибири, Спроси звезда, Старинная песня, Сядем рядом, Тепло беспокойно и сыро, Тесто, Трагикомический роман, Хозяйка, Хороший мужик, Час прилива, Черные дыры ,Альбомы.">
+<META NAME="Description" CONTENT=""Время полета..." Сайт посвященный Российскому поэту Александру Башлачеву. Здесь Вы найдете: Биографию, фото, аккорды, стихи, интервью, статьи, дискографию, mp3, форум и письма. В общем все или почти все что Вам может быть нужно.">
+<META NAME="Robots" CONTENT="INDEX,FOLLOW">
+<META NAME="Language" CONTENT="russian">
+<META NAME=classification CONTENT=Music >
+<META http-equiv=Cache-Control content=public>
+<META NAME="ResourceURL" CONTENT="http://www.bashlachev.net/">
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=windows-1251"> 
+
+ 
+ 
+ 
+ <script language="JavaScript">
+<!--
+
+function MM_showHideLayers() { //v2.0
+  var i, visStr, args, theObj;
+  args = MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) { //with arg triples (objNS,objIE,visStr)
+    visStr   = args[i+2];
+    if (navigator.appName == 'Netscape' && document.layers != null) {
+      theObj = eval(args[i]);
+      if (theObj) theObj.visibility = visStr;
+    } else if (document.all != null) { //IE
+      if (visStr == 'show') visStr = 'visible'; //convert vals
+      if (visStr == 'hide') visStr = 'hidden';
+      theObj = eval(args[i+1]);
+      if (theObj) theObj.style.visibility = visStr;
+  } }
+}
+//-->
+</script>
+
+		 
+
+<SCRIPT>
+<!--
+var step
+var sign=-1
+var move="no"
+
+function menuInit() {
+	if (document.layers) {
+        document.menu.left=-230
+        }
+	if (document.all) {
+        document.all.menu.style.posLeft=-231
+        }
+}
+
+function onchecked() {
+    if (move=="no") {
+	step=21
+        sign=sign*-1
+        move="yes"
+	movemenu()
+    }
+}
+
+function movemenu() {
+	if (document.layers) {
+        if (step>=0) {
+            document.menu.left+=step*sign
+            step--
+            var movetimer=setTimeout("movemenu()",20)
+	    }
+        else {
+            move="no"
+            clearTimeout(movetimer)
+        }
+	}
+	if (document.all) {
+        if (step>=0) {
+            document.all.menu.style.posLeft+=step*sign
+            step--
+            var movetimer=setTimeout("movemenu()",20)
+	    }
+        else {
+            move="no"
+            clearTimeout(movetimer)
+        }
+    }
+}
+onload=menuInit;
+// -->
+</SCRIPT>
+
+
+<SCRIPT language="JavaScript">
+  if (navigator.appName=="Microsoft Internet Explorer") {
+   document.write('<LINK rel="stylesheet" type="text/css" href="bash.css">');
+  }
+  else {
+   document.write('<LINK rel="stylesheet" type="text/css" href="nn.css">');
+  } 
+</script> 
+ </HEAD>
+<TITLE>-= Александр Башлачев- Время полета... =- Статьи часть 1</TITLE>
+<body background="img/bash.gif"  Bgcolor="white" TopMargin="0" LeftMargin="0" MarginWidth="0" MarginHeight="0" vlink=gray link="#015F5D" alink=gray>
+<a name="S28">
+<TABLE BORDER=0 width=100% CELLPADDING=0 CELLSPACING=0>
+<TR>
+ <TD>
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0>
+	<TR>
+		<TD BGcolor="#015F5D"> 
+			<IMG SRC="menush/spacer.gif" WIDTH=48 HEIGHT=1></TD>
+		<TD BGcolor="#015F5D">
+			<IMG SRC="menush/spacer.gif" WIDTH=73 HEIGHT=1></TD>
+		<TD BGcolor="#015F5D"
+			<IMG SRC="menush/spacer.gif" WIDTH=69 HEIGHT=1></TD>
+		<TD BGcolor="#015F5D">
+			<IMG SRC="menush/spacer.gif" WIDTH=81 HEIGHT=1></TD>
+		<TD BGcolor="#015F5D">
+			<IMG SRC="menush/spacer.gif" WIDTH=77 HEIGHT=1></TD>
+		<TD BGcolor="#015F5D">
+			<IMG SRC="menush/spacer.gif" WIDTH=87 HEIGHT=1></TD>
+		<TD BGcolor="#015F5D">
+			<IMG SRC="menush/spacer.gif" WIDTH=12 HEIGHT=1></TD>
+		<TD BGcolor="#015F5D">
+			<IMG SRC="menush/spacer.gif" WIDTH=43 HEIGHT=1></TD>
+		<TD BGcolor="#015F5D">
+			<IMG SRC="menush/spacer.gif" WIDTH=48 HEIGHT=1></TD>
+		<TD BGcolor="#015F5D">
+			<IMG SRC="menush/spacer.gif" WIDTH=34 HEIGHT=1></TD>
+		<TD BGcolor="#015F5D">
+			<IMG SRC="menush/spacer.gif" WIDTH=30 HEIGHT=1></TD>
+		<TD BGcolor="#015F5D">
+			<IMG SRC="menush/spacer.gif" WIDTH=15 HEIGHT=1></TD>
+		<TD BGcolor="#015F5D">
+			<IMG SRC="menush/spacer.gif" WIDTH=8 HEIGHT=1></TD>
+		<TD BGcolor="#015F5D">
+			<IMG SRC="menush/spacer.gif" WIDTH=24 HEIGHT=1></TD>
+		<TD BGcolor="#015F5D">
+			<IMG SRC="menush/spacer.gif" WIDTH=48 HEIGHT=1></TD>
+		<TD>
+			<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 width=37>
+			  <TD WIDTH=6 HEIGHT=1 BGcolor="#015F5D">
+			<IMG SRC="images/spacer.gif"></TD>
+		   </TABLE></TD>
+		<TD></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=11>
+			<IMG SRC="menush/menu_01.gif" WIDTH=602 HEIGHT=21></TD>
+		<TD COLSPAN=2>
+			<A HREF="index.shtml">
+				<IMG SRC="menush/index.gif" WIDTH=23 HEIGHT=21 BORDER=0></A></TD>
+		<TD>
+			<A HREF="mail.shtml">
+				<IMG SRC="menush/mail.gif" WIDTH=24 HEIGHT=21 BORDER=0></A></TD>
+		<TD COLSPAN=2>
+			<IMG SRC="menush/menu_04.gif" WIDTH=95 HEIGHT=21></TD>
+		<TD>
+			<IMG SRC="menush/spacer.gif" WIDTH=1 HEIGHT=21></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=16>
+			<IMG SRC="menush/menu_05.gif" WIDTH=744 HEIGHT=30></TD>
+		<TD>
+			<IMG SRC="menush/spacer.gif" WIDTH=1 HEIGHT=30></TD>
+	</TR>
+	<TR>
+		<TD ROWSPAN=2>
+			<A HREF="glav.shtml">
+				<IMG SRC="menush/glav.gif" WIDTH=48 HEIGHT=18 BORDER=0></A></TD>
+		<TD COLSPAN=15>
+			<IMG SRC="menush/menu_07.gif" WIDTH=696 HEIGHT=9></TD>
+		<TD>
+			<IMG SRC="menush/spacer.gif" WIDTH=1 HEIGHT=9></TD>
+	</TR>
+	<TR>
+		<TD ROWSPAN=3>
+			<A HREF="bio.shtml">
+				<IMG SRC="menush/bio.gif" WIDTH=73 HEIGHT=24 BORDER=0></A></TD>
+		<TD COLSPAN=14>
+			<IMG SRC="menush/menu_09.gif" WIDTH=623 HEIGHT=9></TD>
+		<TD>
+			<IMG SRC="menush/spacer.gif" WIDTH=1 HEIGHT=9></TD>
+	</TR>
+	<TR>
+		<TD ROWSPAN=7>
+			<IMG SRC="menush/menu_10.gif" WIDTH=48 HEIGHT=52></TD>
+		<TD COLSPAN=5>
+			<IMG SRC="menush/menu_11.gif" WIDTH=326 HEIGHT=4></TD>
+		<TD COLSPAN=8>
+			<IMG SRC="menush/menu_12.gif" WIDTH=250 HEIGHT=4></TD>
+		<TD ROWSPAN=7>
+			<IMG SRC="menush/menu_13.gif" WIDTH=47 HEIGHT=52></TD>
+		<TD>
+			<IMG SRC="menush/spacer.gif" WIDTH=1 HEIGHT=4></TD>
+	</TR>
+	<TR>
+		<TD ROWSPAN=3>
+			<A HREF="song.shtml">
+				<IMG SRC="menush/tv.gif" WIDTH=69 HEIGHT=26 BORDER=0></A></TD>
+		<TD COLSPAN=6>
+			<IMG SRC="menush/menu_15.gif" WIDTH=348 HEIGHT=11></TD>
+		<TD ROWSPAN=3>
+			<A HREF="chat.shtml">
+				<IMG SRC="menush/chat.gif" WIDTH=34 HEIGHT=26 BORDER=0></A></TD>
+		<TD COLSPAN=2 ROWSPAN=2>
+			<A HREF="links.shtml">
+				<IMG SRC="menush/links.gif" WIDTH=45 HEIGHT=15 BORDER=0></A></TD>
+		<TD COLSPAN=3 ROWSPAN=6>
+			<IMG SRC="menush/menu_18.gif" WIDTH=80 HEIGHT=48></TD>
+		<TD>
+			<IMG SRC="menush/spacer.gif" WIDTH=1 HEIGHT=11></TD>
+	</TR>
+	<TR>
+		<TD ROWSPAN=5>
+			<IMG SRC="menush/menu_19.gif" WIDTH=73 HEIGHT=37></TD>
+		<TD ROWSPAN=2>
+			<A HREF="foto.shtml">
+				<IMG SRC="menush/foto.gif" WIDTH=81 HEIGHT=15 BORDER=0></A></TD>
+		<TD ROWSPAN=3>
+			<A HREF="posv.shtml">
+				<IMG SRC="menush/posv.gif" WIDTH=77 HEIGHT=21 BORDER=0></A></TD>
+		<TD COLSPAN=3>
+			<IMG SRC="menush/menu_22.gif" WIDTH=142 HEIGHT=4></TD>
+		<TD ROWSPAN=3>
+			<A HREF="forum/">
+				<IMG SRC="menush/forum.gif" WIDTH=48 HEIGHT=21 BORDER=0></A></TD>
+		<TD>
+			<IMG SRC="menush/spacer.gif" WIDTH=1 HEIGHT=4></TD>
+	</TR>
+	<TR>
+		<TD ROWSPAN=3>
+			<A HREF="apistol.shtml">
+				<IMG SRC="menush/apistol.gif" WIDTH=87 HEIGHT=21 BORDER=0></A></TD>
+		<TD COLSPAN=2 ROWSPAN=3>
+			<A HREF="cgi-bin/book/guestbook.pl">
+				<IMG SRC="menush/guest.gif" WIDTH=55 HEIGHT=21 BORDER=0></A></TD>
+		<TD COLSPAN=2 ROWSPAN=4>
+			<IMG SRC="menush/menu_26.gif" WIDTH=45 HEIGHT=33></TD>
+		<TD>
+			<IMG SRC="menush/spacer.gif" WIDTH=1 HEIGHT=11></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=2 ROWSPAN=3>
+			<IMG SRC="menush/menu_27.gif" WIDTH=150 HEIGHT=22></TD>
+		<TD ROWSPAN=3>
+			<IMG SRC="menush/menu_28.gif" WIDTH=34 HEIGHT=22></TD>
+		<TD>
+			<IMG SRC="menush/spacer.gif" WIDTH=1 HEIGHT=6></TD>
+	</TR>
+	<TR>
+		<TD ROWSPAN=2>
+			<IMG SRC="menush/menu_29.gif" WIDTH=77 HEIGHT=16></TD>
+		<TD ROWSPAN=2>
+			<IMG SRC="menush/menu_30.gif" WIDTH=48 HEIGHT=16></TD>
+		<TD>
+			<IMG SRC="menush/spacer.gif" WIDTH=1 HEIGHT=4></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=3>
+			<IMG SRC="menush/menu_31.gif" WIDTH=142 HEIGHT=12></TD>
+		<TD>
+			<IMG SRC="menush/spacer.gif" WIDTH=1 HEIGHT=12></TD>
+	</TR>
+</TABLE>
+<DIV id=menu>
+<TABLE WIDTH=249 BORDER=0 CELLPADDING=0 CELLSPACING=0>
+	<TR>
+		<TD COLSPAN=5>
+			<IMG SRC="menu/i_01.gif" WIDTH=249 HEIGHT=2></TD>
+	</TR>
+	<TR>
+		<TD>
+			<IMG SRC="menu/i_02.gif" WIDTH=2 HEIGHT=170></TD>
+		<TD WIDTH=215 HEIGHT=233 valign="top">
+		<TABLE border=0 cellPadding=0 cellSpacing=0 width=215 valign="top">
+
+  <TR>
+		          <TD bgColor=#cdcdcd><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#f5f3f4><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>	     
+		       
+		        <TR>
+ <TD bgColor=#EEEEEE><IMG src="menu/n.gif" width=0>
+<font class="glav1">-=Статьи=-</a></TD></TR>
+  <TR>
+		          <TD bgColor=#cdcdcd><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#f5f3f4><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		       
+		       <TR>
+		          <TD bgColor=#e4e4e4 onmouseout="bgColor='E4E4E4'"
+		          onmouseover="bgColor='FFFFFF'"><IMG height=12
+		            src="menu/n.gif" width=20><A class=links
+		            href="stats.shtml">Статьи ч.1</A></TD></TR>
+  <TR>
+		          <TD bgColor=#cdcdcd><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#f5f3f4><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR> 
+  
+		       <TR>
+		          <TD bgColor=#e4e4e4 onmouseout="bgColor='E4E4E4'"
+		          onmouseover="bgColor='FFFFFF'"><IMG height=12
+		            src="menu/n.gif" width=20><A class=links
+		            href="stats2.shtml">Статьи ч.2</A></TD></TR>
+  <TR>
+		          <TD bgColor=#cdcdcd><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#f5f3f4><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>		     
+		      
+
+		        <TR>
+		          <TD bgColor=#e4e4e4 onmouseout="bgColor='E4E4E4'"
+		          onmouseover="bgColor='FFFFFF'"><IMG height=12
+		            src="menu/n.gif" width=20><A class=links
+		            href="stats3.shtml">Статьи ч.3</A></TD></TR>
+  <TR>
+		          <TD bgColor=#cdcdcd><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#f5f3f4><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+
+
+		        <TR>
+		          <TD bgColor=#e4e4e4 onmouseout="bgColor='E4E4E4'"
+		          onmouseover="bgColor='FFFFFF'"><IMG height=12
+		            src="menu/n.gif" width=20><A class=links
+		            href="stats4.shtml">Статьи ч.4</A></TD></TR>
+
+	
+	  <TR>
+		          <TD bgColor=#cdcdcd><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#f5f3f4><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#e4e4e4 onmouseout="bgColor='E4E4E4'"
+		          onmouseover="bgColor='FFFFFF'"><IMG height=12
+		            src="menu/n.gif" width=20><A class=links
+		            href="stats5.shtml">Статьи ч.5</A></TD></TR>
+	 
+  <TR>
+		          <TD bgColor=#cdcdcd><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#f5f3f4><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#e4e4e4 onmouseout="bgColor='E4E4E4'"
+		          onmouseover="bgColor='FFFFFF'"><IMG height=12
+		            src="menu/n.gif" width=20><A class=links
+		            href="stats6.shtml">Статьи ч.6</A></TD></TR>
+  <TR>
+		          <TD bgColor=#cdcdcd><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#f5f3f4><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#e4e4e4 onmouseout="bgColor='E4E4E4'"
+		          onmouseover="bgColor='FFFFFF'"><IMG height=12
+		            src="menu/n.gif" width=20><A class=links
+		            href="stat_en.shtml">Статьи ч.7(eng)</A></TD></TR>
+	 <TR>
+		          <TD bgColor=#cdcdcd><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#f5f3f4><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>	     
+		       
+		        <TR>
+ <TD bgColor=#EEEEEE><IMG src="menu/n.gif" width=0>
+<font class="glav1">-=Интервью=-</a></TD></TR>
+  <TR>
+		          <TD bgColor=#cdcdcd><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#f5f3f4><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		       
+		       <TR>
+		          <TD bgColor=#e4e4e4 onmouseout="bgColor='E4E4E4'"
+		          onmouseover="bgColor='FFFFFF'"><IMG height=12
+		            src="menu/n.gif" width=20><A class=links
+		            href="inter1.shtml">Интервью ч.1</A></TD></TR>
+  <TR>
+		          <TD bgColor=#cdcdcd><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#f5f3f4><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR> 
+  
+		       <TR>
+		          <TD bgColor=#e4e4e4 onmouseout="bgColor='E4E4E4'"
+		          onmouseover="bgColor='FFFFFF'"><IMG height=12
+		            src="menu/n.gif" width=20><A class=links
+		            href="inter2.shtml">Интервью ч.2</A></TD></TR>
+		 <TR>
+		          <TD bgColor=#cdcdcd><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#f5f3f4><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>	     
+		       
+		      		        <TR>
+		          <TD bgColor=#e4e4e4 onmouseout="bgColor='E4E4E4'"
+		          onmouseover="bgColor='FFFFFF'"><IMG height=12
+		            src="menu/n.gif" width=20><A class=links
+		            href="inter3.shtml">Интервью ч.3</A></TD></TR>
+		 <TR>
+		          <TD bgColor=#cdcdcd><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#f5f3f4><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>	     
+		       
+		        <TR>
+		          <TD bgColor=#e4e4e4 onmouseout="bgColor='E4E4E4'"
+		          onmouseover="bgColor='FFFFFF'"><IMG height=12
+		            src="menu/n.gif" width=20><A class=links
+		            href="inter4.shtml">Интервью ч.4</A></TD></TR>
+		 <TR>
+		          <TD bgColor=#cdcdcd><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#f5f3f4><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>	     
+		       
+		        <TR>
+ <TD bgColor=#EEEEEE><IMG src="menu/n.gif" width=0>
+<font class="glav1">-=Разное=-</a></TD></TR>
+  <TR>
+		          <TD bgColor=#cdcdcd><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#f5f3f4><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		       
+		       <TR>
+		          <TD bgColor=#e4e4e4 onmouseout="bgColor='E4E4E4'"
+		          onmouseover="bgColor='FFFFFF'"><IMG height=12
+		            src="menu/n.gif" width=20><A class=links
+		            href="pismak.shtml">Письма госпоже "K"</A></TD></TR>
+ <TR>
+		          <TD bgColor=#cdcdcd><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#f5f3f4><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>	     
+		       
+		        <TR>
+		          <TD bgColor=#e4e4e4 onmouseout="bgColor='E4E4E4'"
+		          onmouseover="bgColor='FFFFFF'"><IMG height=12
+		            src="menu/n.gif" width=20><A class=links
+		            href="pisma.shtml">Письма Нелюбиным</A></TD></TR>
+  <TR>
+		          <TD bgColor=#cdcdcd><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        
+        </TABLE>
+		</TD>
+		<TD background="menu/i_04.gif">
+			<IMG SRC="menu/i_04.gif" WIDTH=2 HEIGHT=170></TD>
+		<TD valign=bottom><A href="javascript:onchecked()" onfocus=javascript:this.blur()>
+			<IMG SRC="menu/i_05.gif"  BORDER=0></A></TD>
+		<TD background="menu/i_06.gif" valign=bottom>
+			<IMG SRC="menu/i_06.gif" WIDTH=2 HEIGHT=170></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=5>
+			<IMG SRC="menu/i_07.gif" WIDTH=249 HEIGHT=2></TD>
+	</TR>
+</TABLE>
+
+</DIV>
+</TD>
+</TR>
+<TR>
+  <TD>
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 align=right>
+<TR>
+ <TD>
+<!-- HotLog -->
+<script language="javascript">
+hotlog_js="1.0";hotlog_d=document; hotlog_n=navigator;hotlog_rn=Math.random();
+hotlog_n_n=(hotlog_n.appName.substring(0,3)=="Mic")?0:1
+hotlog_r=""+hotlog_rn+"&s=1154&r="+escape(hotlog_d.referrer)+"&pg="+
+escape(window.location.href)
+hotlog_d.cookie="hotlog=1"; hotlog_r+="&c="+(hotlog_d.cookie?"Y":"N");
+hotlog_d.cookie="hotlog=1; expires=Thu, 01-Jan-70 00:00:01 GMT"</script>
+<script language="javascript1.1">
+hotlog_js="1.1";hotlog_r+="&j="+(navigator.javaEnabled()?"Y":"N")</script>
+<script language="javascript1.2">
+hotlog_js="1.2";hotlog_s=screen;
+hotlog_r+="&wh="+hotlog_s.width+'x'+hotlog_s.height+"&px="+((hotlog_n_n==0)?
+hotlog_s.colorDepth:hotlog_s.pixelDepth)</script>
+<script language="javascript1.3">hotlog_js="1.3"</script>
+<script language="javascript">hotlog_r+="&js="+hotlog_js;
+hotlog_d.write("<img src=\"http://hit.hotlog.ru/cgi-bin/hotlog/count?"+
+hotlog_r+"&\" border=0 width=1 height=1>")</script>
+<noscript><img src="http://hit.hotlog.ru/cgi-bin/hotlog/count?s=1154" border=0 
+width=1 height=1></noscript>
+<!-- /HotLog -->
+<br>
+<!-- BannerBank advertising begin: Too Much Music 468x60 -->
+<script>
+// <!--
+var userid = 2397716;
+var page = 1;
+var rndnum = Math.round(Math.random() * 10000);
+document.write('<center><A HREF="http://ad3.bb.ru/bb.cgi?cmd=go&pubid=' + userid + '&pg=' + page + '&vbn=536&num=1&w=468&h=60&nocache=' + rndnum + '" target="_top">');
+document.write('<IMG SRC="http://ad3.bb.ru/bb.cgi?cmd=ad&pubid=' + userid + '&pg=' + page + '&vbn=536&num=1&w=468&h=60&nocache=' + rndnum + '" width=468 height=60 Alt="Too Much Music" border=0></A><BR></center>');
+document.write(' <center><FONT SIZE=1><A HREF="http://www.tmm.ru/" target = "_blank" >Too Much Music</A></FONT></center>');
+// -->
+</script>
+<!-- BannerBank advertising end: Too Much Music 468x60 -->
+</TD>
+<TD>
+&nbsp;&nbsp;&nbsp;&nbsp;
+</TD>
+</TR>
+</TABLE>
+  </TD>
+</TR>
+<TR>
+<TD align=center>
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 align=center>
+	<TR>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=15 HEIGHT=1></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=47 HEIGHT=1></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=277 HEIGHT=1></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=284 HEIGHT=1></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=33 HEIGHT=1></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=57 HEIGHT=1></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=30 HEIGHT=1></TD>
+		<TD></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=3 ROWSPAN=2>
+			<IMG SRC="img/stats.gif" WIDTH=339 HEIGHT=71></TD>
+		<TD>
+			<IMG SRC="images/ramka1_02.gif" WIDTH=284 HEIGHT=36></TD>
+		<TD COLSPAN=3>
+			<IMG SRC="images/ramka1_03.gif" WIDTH=120 HEIGHT=36></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=1 HEIGHT=36></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=2 BGcolor="white"  WIDTH=317 HEIGHT=35>
+<SCRIPT>
+var flag_strClear=true;
+function strClear(arg){if(flag_strClear){arg.value="";flag_strClear=false;}}
+</SCRIPT>
+<center>
+<FORM ACTION="http://www.bashlachev.net/cgi-bin/search/search.pl" METHOD="GET">
+<INPUT TYPE="Text" NAME="query" SIZE="30" 
+class=se1 
+onmouseover="this.className = 'se2';" 
+onmouseout="this.className = 'se2';" 
+VALUE="-= поиск =-" onClick="strClear(this)">
+<INPUT TYPE="Hidden" NAME="stpos" VALUE="0">
+<INPUT TYPE="Submit" VALUE=" >> "  style="font-size=11px;"  title="-= Искать =-"
+class=se1 
+onmouseover="this.className = 'se2';" 
+onmouseout="this.className = 'se2';" >
+</center>
+</TD>
+</FORM></TD>
+		<TD COLSPAN=2>
+			<IMG SRC="images/ramka1_05.gif" WIDTH=87 HEIGHT=35></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=1 HEIGHT=35></TD>
+	</TR>
+	<TR>
+		<TD ROWSPAN=2 background="images/l_f.gif">
+			<IMG SRC="images/spacer.gif"></TD>
+		<TD COLSPAN=5 BGcolor="white">
+			<IMG SRC="images/spacer.gif" WIDTH=698 HEIGHT=48></TD>
+		<TD>
+			<IMG SRC="images/ramka1_08.gif" WIDTH=30 HEIGHT=48></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=1 HEIGHT=48></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=5 bgcolor="white">
+<table border=0 cellPadding=0 cellSpacing=0 width=695>	
+ <TR>
+   <TD Width=100% valign=top>
+  <TABLE>
+ <TR>
+  <TD> 
+     <img src="img/st.gif" width=10 height=10>&nbsp;&nbsp;<a href="#s1" class="links">Каждую песню нужно прожить... </a>
+     </TD>
+  </TR> 
+  <TR>
+  <TD> 
+   <img src="img/st.gif" width=10 height=10>&nbsp;&nbsp;<a href="#s2" class="links">Семь нот в блокнот; Газета "Речь" г. Череповец </a> <br>
+   </TD>
+  </TR>
+   <TR>
+  <TD> 
+     <img src="img/st.gif" width=10 height=10>&nbsp;&nbsp;<a href="#s3" class="links">Пророк в своем отечестве? газета "Речь" г.Череповец</a>
+     </TD>
+  </TR> 
+   <TR>
+  <TD> 
+     <img src="img/st.gif" width=10 height=10>&nbsp;&nbsp;<a href="#s4" class="links">История одной записи (вспоминая А. Башлачева)газета "Речь"  
+</a>
+     </TD>
+  </TR> 
+ </TABLE>  
+   
+   
+<pre><font size=3 color="gray" class="posv">
+&nbsp;&nbsp;&nbsp;&nbsp;<a name="s1">Каждую песню нужно прожить... </a>
+</font><font size=3 class="posv2">  
+
+	Cложно рассуждать о такой фигуре, как Башлачев.
+	я меняюсь - соответственно меняется мое восприятие этого человека, 
+	его творчества. 
+	
+	Если говорить о каких-то более-менее постоянных вещах, 
+	то это прежде всего мысль, которая преследует меня с момента 
+	знакомства с песнями Башлачева и по сей день: он был свободен в 
+	творчестве.  На первый взгляд это утверждение выглядит буднично,
+	даже банально (невольно требует альтернативы: а кто это у нас тут 
+	несвободный, а?), но на поверку оказывается, что по-настоящему 
+	свободных художников, забывших "дорогу назад" и плотно 
+	закрепившихся на опасной, но для них неизбежной тропинке между 
+	Богом и бесом (а, допустим, не между столом и издателем/редактором 
+	и/или публикой), можно по пальцам пересчитать. Приоритеты сдвигаются. 
+	
+	А. Житинский в свое время вздохнул: 
+	Башлачев не успел стать "поэтом Александром Башлачевым". 
+	Так вот, для меня еще вопрос (причем весьма спорный), 
+	согласился бы Башлачев тащить груз официального признания 
+	со всеми вытекающими из этого последствиями? 
+	Мне кажется, вряд ли, потому что плясать под чью-то дудку, 
+	восторженную ли, бичующую ли, тем паче хозяйскую 
+	(а коллектив всегда диктует единице, урезает ее свободу) 
+	он бы не смог. У Башлачева в песнях очень часто встречаются понятия 
+	"воля" и "любовь". 
+	
+	Поэзия Башлачева мне нравится не в плане доставленного удовлетворения, 
+	а по неизбежности - "куда же я без нея"? 
+	Мне безумно интересно вслушиваться или вчитываться в его тексты, 
+	ибо Башлачев, на мой взгляд, использует слово не как сочетание 
+	звуков или набор значений (точнее, набор условных земных значений), 
+	а как элемент единого божественного Логоса. 
+	(я понимаю, что в контексте сегодняшнего дня эти мысли 
+	воспринимаются как бред больной собаки, но тем не менее: 
+	русская азбука обладает таким же мощным духовным потенциалом, 
+	как, к примеру, китайские иероглифы. Говоря по-гребенщиковски, 
+	Серебро Господа - выше звезд, выше слов, вровень с нашей тоской). 
+	
+	я полностью согласна с ё. Наумовым, который назвал Башлачева 
+	"изощренным гигантским художником". Ёти параметры я понимаю 
+	как достижение некой вершины поэтического мастерства, 
+	до которой удается дойти единицам, имеющим вдобавок мистический опыт. 
+	Допустим, никто не будет утверждать - хоть сегодня 
+	мне трудно за что-либо поручиться, что "Имя Имен" - это набор слов, 
+	не подкрепленных связующей идеей. Однако мало кто может это 
+	стихотворение до конца понять, объяснить все его нюансы, 
+	грубо говоря, на ином языке, нежели которым мы пользуемся 
+	в "спешной повседневности", - не строго линейном, 
+	а ворошащем огромные исторические пласты, нам, возможно, 
+	в момент восприятия недоступные. 
+	
+	Для меня существуют два Башлачева - поэт (в стихах, в песнях) 
+	и философ (в малочисленных интервью). Многие считают, 
+	что он основал русский рок-н-ролл. 
+	я не совсем понимаю этот термин, потому что рок-н-ролл, 
+	мне кажется, это стихия. Имеет ли она национальный оттенок? 
+	Сомневаюсь. Похоже, это просто иллюзия нашего сознания. 
+	Башлачев - мастер от Бога, ему многие условности удалось преодолеть. 
+	Единственное, что на него как на поэта оказывало прямое влияние, - 
+	это образ жизни. Его цена: каждую песню надо оправдывать жизнью,
+	каждую песню надо обязательно прожить. 
+	Он родился в России, варился в русскоязычной среде, 
+	проживал завязанную на отечественных реалиях жизнь, 
+	отсюда "русскость" песен. Рок-н-ролл ли все это? Не знаю. 
+	
+	Как философ Башлачев для меня - создатель кодекса честного 
+	творчества (сказала бы "христианского", да понятие до того извратили, 
+	что на язык нейдет). 
+	
+	Если толковать о личных переживаниях, то сейчас меня напрягает 
+	ажиотаж вокруг имени Башлачева, граничащий с крайним фанатизмом 
+	и непорядочностью. Публикуются мемуары, в которых пропагандируется установка: 
+	Башлачев - не Бог, он был так же мерзок, как и мы. Естественно не Бог, 
+	но, ребята, если он и был низок и распущен 
+	(в чем я все же усомнюсь - обалдую "Ванюшу" не написать), 
+	то он был низок как Башлачев, а уж не как мы с вами. 
+	
+	Некогда в газете я прочитала объявление: дескать, 
+	у кого есть письма Башлачева к такой-то девушке, 
+	пришлите мне ксерокопии, а то помру!!! По радио, говорят, 
+	тоже читали отрывки из его переписки. По ТВ делаются какие-то 
+	абсолютно дикие передачи с кислотной молодежью, литературными критиками, 
+	балаганом из сотен друзей-музыкантов (из киркоровской танц-массовки 
+	откопали, что ли, - по количеству схожи). 
+	Мне это очень странно наблюдать, иногда стыдно, 
+	особенно перед живущими родственниками и вдовой. 
+	
+	После вереницы праздничных дат, то бишь юбилеев не менее 
+	замечательных людей, я держу кулаки за то, чтобы не услышать однажды 
+	"Время колокольчиков" в исполнении Натальи Сенчуковой 
+	или кого-нибудь из той же эстрадно-развлекательной тусовки. 
+	Но даже если это и случится, то я перенесу - хотя бы потому, 
+	что у меня есть "Верка, Надька да Любка", 
+	подаренные мне когда-то Башлачевым, Царство ему Небесное. 
+
+
+	&copy; В.Калачева
+
+        
+</font>
+<hr size=1 width=80%>
+
+<font size=3 color="gray" class="posv">
+<a href="#s28"  onMouseOver="window.status='Вверх'; return true;" onMouseOut="window.status='';"><img src="img/st_v.gif" border=0></a>&nbsp;&nbsp;<a name="s2">Семь нот в блокнот; Газета "Речь" г. Череповец</a>
+</font><font size=3 class="posv2"> 
+        За окнами тихо кружится снег. День пронзительно
+        солнечный и морозный. 17 февраля. Очередная
+        годовщина со дня смерти Александра Башлачева.
+        Мы разговариваем с Нелли Николаевной, Сашиной
+        мамой, о ее недавней поездке в Петербург, на
+        Ковалевское кладбище. К Сашиной могиле
+        протоптана твердая тропка, у надгробья
+        по-прежнему лежат живые цветы, и бисерные
+        &quot;фенечки» на березовых тоненьких ветвях
+        по-прежнему раскачивает ветер. Значит, не забыли,
+        и такая память дороже официальных торжеств...
+        Саша когда-то работал в нашей газете. Поэтому
+        чуть-чуть, самую малость Ч о журналисте-Башлачеве.<br>
+        Ч Сколько раз я пыталась его уговорить поступать
+        в технический вуз Ч ни в какую не захотел! Ч
+        вспоминает Нелли  Николаевна. Ч Сам решил, 
+        что будет получать только гуманитарное образование. Или
+        журналистика, или языки. И к тому, и к другому
+        способности были. Сашины школьные сочинения
+        всегда были среди лучших, о чем бы он ни писал..
+        язык изучал немецкий, но каким-то образом
+        переводил тексты и с английского, которого почти
+        не знал. После десятого класса за компанию с
+        приятелем поехал в Ленинград поступать на
+        факультет журналистики. Отлично прошел два тура
+        творческого конкурса, а на третий его не
+        допустили, потому что у него не было публикаций.<br>
+        Ч Но ведь в свердловский университет он поступил
+        без проблем?
+        -Да. Когда он вернулся из Ленинграда, стал учиться
+        в школе юнкоров при «Коммунисте». Захватил,
+        правда, самый конец курса. И печатать его заметки
+        стали тогда же... Мне кажется, он просто побоялся
+        второй раз поступать в Ленинград. И выбрал
+        Свердловск Ч там по тем временам была очень
+        сильная школа.
+        ... После окончания университета Саша вернулся в
+        родной &quot;Коммунист». И сразу же попал в
+        партийный отдел.
+        Ч Мучился ужасно, Ч продолжает свой рассказ
+        Нелли Николаевна. Ч Не лежала у него душа к этим
+        комсомольским  ударным стройкам и 
+        молодежным бригадам. Видимо,
+        существовало четкое разделение на темы, потому
+        что ни шагу в сторону не давали ступить. А Саша
+        хотел работать в отделе культуры или в отделе
+        писем, которым заведовала тогда Людмила
+        Мамченко. У них были отличные отношения, он там и
+        практику проходил...
+        Наряду с идейно выдержанными статьями Саша начал
+        вести свою рубрику на молодежной странице
+        «Горизонт». «Семь нот в блокнот» по тем временам
+        была очень авангардной рубрикой. Вынести на
+        страницы газеты конфликт, сложившийся вокруг
+        «Рок-Сентября» (большая, очень умная
+        аналитическая статья), по горячим следам
+        написать об участниках второго фестиваля
+        ленинградского рокклуба, ратовать за создание
+        собственного музыкального центра (естественно,
+        слово «рок» было заменено благопристойным и
+        привычным «ВИА»). Ёти статьи Ч умные, честные Ч и
+        по сей день «зацепят» за живое любого знатока
+        отечественной рок-музыки. В наше время за право
+        публиковать статьи такого журналиста наверняка
+        сражались бы ведущие рок-н-ролльные издания...<br>
+        ... А тогда, в 1984, Сашадо двольно быстро ушел из
+        «Коммуниста». И «Семь нот в блокнот» исчезли со
+        страниц газеты. Впереди у Башлачева была Москва,
+        гитара, песни...<br>
+        
+         ёлия Лаврушина.<br>
+      </font>   
+<hr size=1 width=80%>
+
+<font size=3 color="gray" class="posv">
+<a href="#s28"  onMouseOver="window.status='Вверх'; return true;" onMouseOut="window.status='';"><img src="img/st_v.gif" border=0></a>&nbsp;&nbsp;<a name="s3">Пророк в своем отечестве?&quot; газета &quot;Речь&quot; г.Череповец</a>
+</font><font size=3 class="posv2"> 
+        Название этой экспозиции Ч «Пророк в своем
+        Отечестве» Ч впервые прозвучало с экранов ЦТ 17
+        февраля 1990 года, когда все, кто знал и помнил,
+        отмечали вторую годовщину смерти рок-поэта и
+        музыканта Александра Башлачева. Ведущий
+        «Программы «А» Артем Троицкий сообщил
+        телезрителям о создающемся в нашем городе музее
+        А. Башлачева и просил всех, кто имеет какие-либо
+        материалы в нем сообщить в Череповец Елене
+        Веселовой по телефону 7Ч71Ч50.
+        Теперь небольшое отступление. В нашем городе так
+        мало знают об А. Башлачеве, так слабо чтут его
+        память, словно он провел здесь не почти всю жизнь,
+        а считанные годы. И очень многие все еще
+        продолжают считать Башлачева знаменитым
+        ленинградским рок-музыкантом, родившимся в
+        Череповце, хотя истина в том, что Александр Ч
+        сверхталантливый череповецкий рок- музыкант и
+        поэт, погибший в Ленинграде. Двадцать четыре года
+        из двадцати семи, отпущенных судьбой, Александр
+        жил в нашем городе, учился в школе, влюблялся,
+        писал стихи, тексты для «Рок-Сентября», работал
+        (окончив университет) корреспондентом
+        «Коммуниста» и был, по сути, одним из 300 тысяч
+        горожан, пока его песни совершенно случайно не
+        услышал музыкальный критик, знаток рока Артем
+        Троицкий. Через несколько недель концерты в
+        Москве и Ленинграде сделали паренька из
+        провинции ведущим, но не признанным официально
+        рок-певцом страны.
+        А в Череповце он вроде бы так и остался одним из 300
+        тысяч жителей. Нет пророка в своем отечестве...
+        я позвонила по указанному телефону Елене
+        Веселовой, заведующей архивом Череповецкого
+        музейного объединения, и договорилась о встрече.
+        Уже нет сомнений, что в музей Александра
+        Башлачева, пусть даже самый маленький, будут
+        стекаться "паломники" со всех концов Союза.
+        Когда же он, наконец, появится в нашем городе,
+        этот музей, какие экспонаты уже собраны, что
+        нового поступило после сообщения по ЦТ, какие
+        возникают трудности? Ёти и другие вопросы я и
+        задала Елене Веселовой и Наталье Налитухиной Ч
+        заведующей отделом истории советского общества
+        Череповецкого музейного объединения. Именно у
+        них концентрируется вся информация, касающаяся я
+        самого Александра Башлачева, и того времени (70-е
+        Ч начало 80-х годов), в которое он сформировался
+        как самобытный рок-поэт.
+        Ответы работников музейного объединеиия, правду
+        сказать, огорчили. О каких-то сроках открытия
+        музея говорить вообще преждевременно. Да и о
+        самом музее речи сейчас не «идет Ч только о
+        выставке, которую можно было бы оформить в зале
+        основного здания музейного объединения Ч на
+        Советском проспекте, 3Оа. Но даже и для выставки
+        материалов пока крайне мало. Основу того, что
+        удалось собрать, составляют публикации Ч в
+        центральных газетах и журналах, местных
+        изданиях, самиздатовской прессе, независимых
+        рок-журналах («Рокада», «Урлайт»), ксерокопии
+        газет из других городов. И, конечно же, статьи,
+        написанные корреспондентом Александром
+        Башлачевым для городской газеты.
+        Материалы собирались буквально по крупицам. В
+        киосках, скупающих старые журналы, Е. Веселова и
+        Н. Налитухина оставляли списки необходимых
+        изданий и постоянно наведывались: но появилось
+        ли что-нибудь? Обратились в «Вологодский
+        комсомолец» Ч оттуда стали поступать публикации
+        стихотворений. Городской рок-клуб передал музею
+        плакаты-портреты, ксерокопии некоторых изданий и
+        другие материалы. Помогли и библиотекари, в
+        частности Н. Тарыничева из филиала № 1 ЦБ.<br>
+        Что еще есть для экспозиции? Одна книга («Молодая
+        поэзияЧ89», издательство «Советская Россия» Ч в
+        ней два стихотворения Башлачева). Одна пластинка
+        («Время колокольчиков» Ч зато в восьми
+        экземплярах).
+        Одна магнитофонная лента с записью концерта
+        (импортные кассеты недешевы, да и дефицитны, и
+        приобрести их через музей непросто).
+        Есть негативы переснятых фотографий, которые еще
+        предстоят отпечатать.
+        Но, пожалуй, самое бесценное на сегодняшний день
+        Ч это воспоминания родных, друзей, знакомых,
+        сослуживцев. Ведь так важно Елене Веселовой и
+        Наталье Налитухиной попытаться понять душу рок-
+        музыканта, узнать как можно больше о его жизни,
+        характере, пристрастиях  Взглянуть на поэта
+        «глазами современников» и уже через их
+        восприятие, через то, что окружало поэта, чем жили
+        его сверстники, создать узнаваемый образ
+        времени. Времени, в которое он жил и писал. Вот
+        только как, какими художественными средствами
+        воссоздать в экспозиции этот образ времени Ч над
+        этим еще придется поломать голову создателям
+        выставки «Пророк в своем Отечестве».
+        Такая выставка не может, не имеет права быть
+        ординарной Ч убеждены работники музея.
+        Необходим какой-то особый дизайн, проект
+        оформления, необычное художественное решение
+        (как важно, чтобы художники прониклись духом
+        творчества А. Башяачева!). Нужны идеи,
+        оборудование и, в конце концов, деньги. У самого
+        музейного объединения недостает средств для
+        такой экспозиции. По самым скромным подсчетам,
+        для выставки потребуется 5Ч6 тысяч рублей. А то
+        больше. Необходимы спонсоры.
+        Обращались Е. Веселова и Н. Налитухина в горком
+        комсомола за помощью. Первый секретарь
+        переправил их ко второму, второй Ч в молодежный
+        центр. На этом пока остановились, надо перевести
+        дыхание.<br>
+        После выхода в эфир февральской «Программы «А»
+        звонки к Лене Веселовой, конечно, были. Стали
+        приходить и публикации из региональной прессы.
+        Марина Коротаева из Москвы подарила семь
+        экземпляров пластинки «Время колокольчиков».
+        Женя Барановская, тоже из столицы, прислала
+        журнал "Рокада". Откликнулся молодежный центр
+        "Федерация" из Горького, послав музею
+        "Нижегородские рок-н-рольные ведомости", 
+        плакаты Ч портреты. Поступили афиши и буклеты с
+        последнего концерта и некоторые другие
+        материалы.
+        Но... я слушаю я думаю: все, что удалось собрать
+        почти за два года, Ч это капля из моря сведений о
+        человеке, который 24 года ходил по нашим улицам,
+        дышал нашим воздухом, втискивался рядом с нами в
+        переполненный транспорт.
+        Не десяткиЧ сотни людей знали Башлачева.
+        Остались, не могли не остаться, какие-то школьные
+        тетради, университетские сочинения и конспекты,
+        письма, странички в дневниках влюбленных
+        девочек, фотографии, автографы текстов песен,
+        любимые книги, памятные предметы, записки в
+        альбомах, служебные «заявления», да мало ли что...
+        Любой автограф, любой клочок бумаги, любое
+        воспоминание бесценно для музея.
+        Нет времени на мемуары? Но можно просто прийти и
+        рассказать, что помнишь. Жаль расставаться с
+        письмом, фотографией, автографом? Но Елена
+        Веселова совершенно официально заверяла, что у
+        музея есть возможность сделать очень
+        качественные ксерокопии документов, писем,
+        записок, фотографий, рукописей и сделать это
+        быстро, за один-два дня, максимум Ч неделю. После
+        чего в целости и сохранности вернуть все
+        владельцу.
+        Видимо, череповчане просто не знают об этом, не
+        знают, как нужны, как важны для музейных
+        работников, для истории, их, казалось бы, скромные
+        свидетельства и документы. Не задумываются, что
+        есть люди, их тысячи, для которых Череповец
+        известен только как родина Александра Башлачеяа.
+        И с этим необходимо считаться.
+        Так, может быть, все-таки, будет «Пророк» своем
+        Отечестве»?
+       
+
+ В. Колосовская.
+
+</font>   
+<hr size=1 width=80%>
+
+<font size=3 color="gray" class="posv">
+<a href="#s28"  onMouseOver="window.status='Вверх'; return true;" onMouseOut="window.status='';"><img src="img/st_v.gif" border=0></a>&nbsp;&nbsp;<a name="s4">История одной записи (вспоминая А. Башлачева)газета &quot;Речь&quot;</a>
+</font><font size=3 class="posv2">
+        Наш корреспондент встротилсл с одним из близких
+        друзей Александра Башлачева Ч Сергеем Смирновым
+        и попросил поделиться воспоминаниями о первой
+        магнитной записи Сашиных песен.
+        Рассказывает С. Смирнов:
+        Ч Есть в городе Череповце улица, которая
+        заканчивается на кольце. Дом голубой. Средний
+        подъезд. Третий этаж. Балкон. я с моим другом
+        Андреем Хариным иду слушать Сашу Башлачева.
+        Потому что Андрей пришел и сказал:
+        Ч Знаешь, есть такой парень в Череповце, который
+        хочет, чтобы его кто-то послушал.
+        Поднимаемся. Открывает дверь Саша. Комната почти
+        пустая. Два низких кресла, какой-то диван.
+        Обстановка нейтральная. Тусклый свет лампы,
+        которая стоит на полу в углу.
+        Саша сказал:
+        Ч Знаешь, я написал песни... Ты просто их
+        послушай...
+        Ёто была песня «Время колокочьчиков». Она
+        звенела... и текла речь. я сидел и просто
+        обалдевал. В чем-то здесь была аналогия с
+        Гумилевым.
+        Песня закончилась. Потом были другие.,
+        Ч Сергей, а почему Саша обратился именно к тебе?
+        Ч Может быть, потому, что он знал, что я учился в
+        пединституте, на филологическом факультете. И
+        что увлекался стихами.
+        Ч Какой это был год?
+        Ч я могу сказать определенно. Ёто был 1983 год. Ёто
+        было время, когда мы не ощущали ни оттепели, ни
+        того, что сейчас происходит. Здорово, что Сашку
+        можно сейчас так просто послушать. А тогда у меня
+        возникла идея. я сказал: «Саша, это должно как-то
+        остаться. Давай запишемся». На что он мне ответил:
+        «Ну, конечно, запишемся.., 
+        ведь главное, чтоб люди слушали».
+        Потом уже я постарался собрать друзей, для того
+        чтобы просто послушать песни. Саша готовился к
+        этому. Ёто была первая запись. И были песни
+        «Палата № б», «Черные дыры», «Прямая дорога»,
+        «Трагикомический роман»... Ёто было как-то
+        непривычно и очень напряженно для всех, но всех
+        занимало. Многие смеялись. В то время от поэзии
+        мало кто плакал. Ёто было позже... Когда был
+        «Грибоедовский вальс» в «Огоньке»...
+        Ёто был ритм. Ёто был какой-то азарт. Многие
+        говорили: «Саша, не спеши». Но он куда-то спешил.
+        Было «Время колокольчиков», а после, как
+        остановка, песня «Осень»,..
+        я хорошо очень помню, как первый раз услышал
+        песню «Подвиг разведчика». я зашел утром. Он
+        только встал с постели. Оя встретил меня и сказал:
+        «Ты знаешь, я написал песню...» И спел. Он пел ее с
+        листа. Лист был недописанный...
+        У Саши был очень оригинальный способ письма. Он
+        начинает с одной строки. Потом пишет вторую,
+        третью, четвертую... Ёто все на разных листах
+        тетрадных. Здесь он пел с листа, и я не успел ему
+        перевернуть. И есть заминка в песне... Ёто был
+        такой темп. Мы все время говорили: "Саша,
+        помедленнее..." Шла музыка. И потом были "Минута
+        молчания" и "Час прилива"... Они просто
+        потрясали, они отделялись от других и остались
+        отдельно. Потом я убедился, когда собрали
+        последние его вещи, что эти песни никому ранее не
+        показывались,
+        я всегда завидую тем людям, которые слушают
+        первый раз то, что слушаешь очень много раз.
+        Мы сейчас остановились только на одной пленке, а
+        этих пленок был целый поток...
+
+        Разговаривал В. МИРОНОВ.
+</FONT>
+<hr size=1 width=80%>
+
+ </TD>
+</TR>        
+</TABLE>
+
+
+
+
+
+
+			</TD>
+		<TD ROWSPAN=2 background="images/ramka1_10.gif">
+			<IMG SRC="images/spacer.gif"></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=1 HEIGHT=172></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=2 ROWSPAN=2>
+			<IMG SRC="images/ramka1_11.gif" WIDTH=62 HEIGHT=60></TD>
+		<TD COLSPAN=4 ROWSPAN=2 BGcolor="white"WIDTH=651 HEIGHT=60>
+			<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0>
+			 <TR>
+			   <TD width=600>
+			  <TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 align=right height=20>
+<TR>
+<TD height=20>
+
+</TD>
+ <TD valign=TOP >
+
+<!-- SpyLOG v2 f:1211 --> 
+<script language="javascript"> 
+u="u610.99.spylog.com";d=document;nv=navigator;na=nv.appName;p=1; 
+bv=Math.round(parseFloat(nv.appVersion)*100); 
+n=(na.substring(0,2)=="Mi")?0:1;rn=Math.random(); z="p="+p+"&rn="+rn;y=""; 
+y+="<a href='http://"+u+"/cnt?f=3&p="+p+"&rn="+rn+"' target=_blank>"; 
+y+="<img src='http://"+u+"/cnt?"+z+ 
+"&r1="+escape(d.referrer)+"&r="+escape(parent.document.referrer)+ 
+"&pg="+escape(window.location.href)+"' border=0 width=88 height=31 alt='SpyLOG'>"; 
+y+="</a>"; d.write(y); if(!n) { d.write("<"+"!--"); } //--></script><noscript> 
+<a href="http://u610.99.spylog.com/cnt?f=3&p=1" target=_blank> 
+<img src="http://u610.99.spylog.com/cnt?p=1" alt='SpyLOG' border='0' width=88 height=31 > 
+</a> </noscript><script language="javascript1.2"><!-- 
+if(!n) { d.write("--"+">"); }//--></script> 
+<!-- SpyLOG -->
+
+</TD>
+<TD width=20>
+&nbsp;
+</TD>
+</TABLE>
+			   </TD>
+			<TD align=center>
+			 <a href="#s28"  onMouseOver="window.status='Вверх'; return true;" onMouseOut="window.status='';"><img src="img/up.gif" border=0></a>
+			 </TD>
+			</TR>
+			</TABLE>
+			</TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=1 HEIGHT=44></TD>
+	</TR>
+	<TR>
+		<TD>
+			<IMG SRC="images/ramka1_13.gif" WIDTH=30 HEIGHT=16></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=1 HEIGHT=16></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=7>
+			<IMG SRC="images/niz.gif" WIDTH=743 HEIGHT=21></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=1 HEIGHT=21></TD>
+	</TR>
+</TABLE>
+</center>
+</TD>
+</TR>
+</TABLE>
+<table border=0 cellPadding=0 cellSpacing=0 width=736 align=center>
+<TR>
+  <TD align=right HEIGHT=21 valign=BOTTOM>
+  <img src="img/line.gif">
+</TD>
+</TR>
+<TR>
+ <TD align=right>
+<font color="#" class="diz1">
+<a href="autors.shtml" class="links">Администрация сайта</a><br> 
+Россия. 9 июня 2000<br>
+Ре-Дизайн: 20 сентября 2001<br>
+контактный e-mail:&nbsp;<a href="mailto:contact@bashlachev.net">contact@bashlachev.net</a>
+ </TD>
+</TR>
+</TABLE>
+&nbsp;
+</BODY>
+</HTML>
+ 
+
+ 

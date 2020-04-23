@@ -1,0 +1,42 @@
+A:link {
+	COLOR: #663366; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #666666; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #ff6633; TEXT-DECORATION: underline
+}
+SELECT {
+	COLOR: #666666; FONT-SIZE: 10pt
+}
+INPUT {
+	COLOR: #666666; FONT-SIZE: 9pt
+}
+A.lnk:link {
+	COLOR: #ccccff; TEXT-DECORATION: none
+}
+A.lnk:visited {
+	COLOR: #cccccc; TEXT-DECORATION: none
+}
+A.lnk:hover {
+	COLOR: #ffffff; TEXT-DECORATION: underline
+}
+A.poplnk:link {
+	COLOR: #ccccff; FONT-SIZE: 10pt; TEXT-DECORATION: none
+}
+A.poplnk:visited {
+	COLOR: #ccccff; FONT-SIZE: 10pt; TEXT-DECORATION: none
+}
+A.poplnk:hover {
+	COLOR: #cc9933; FONT-SIZE: 10pt; TEXT-DECORATION: none
+}
+A.ttl:link {
+	COLOR: #333333; TEXT-DECORATION: none
+}
+A.ttl:visited {
+	COLOR: #333333; TEXT-DECORATION: none
+}
+A.ttl:hover {
+	COLOR: #ff6633; TEXT-DECORATION: underline
+}

@@ -1,0 +1,4 @@
+var swfRandom='829453166';
+	if((window.self!=window.parent)&&(parent.document.getElementById('adnet'+swfRandom))){
+		parent.setTimeout("eval('document.adnet_loaded_"+swfRandom+"=1;');var doc;if(document.all&&!window.opera){doc=window.frames['adnet"+swfRandom+"'].document;}else{if(window.opera){while(!document.getElementById('adnet"+swfRandom+"').contentDocument){};};doc=document.getElementById('adnet"+swfRandom+"').contentDocument;}if(doc){doc.close();}",1);
+	}

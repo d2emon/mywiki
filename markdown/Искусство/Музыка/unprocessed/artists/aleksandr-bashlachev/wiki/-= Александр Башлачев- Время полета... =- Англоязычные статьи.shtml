@@ -1,0 +1,997 @@
+<HTML>
+ <HEAD>
+ 
+ <META NAME="Title" CONTENT="јлександр Ѕашлачев. ¬рем€ полета...">
+<META NAME="Author" CONTENT="Anoxoon">
+<META NAME="Publisher" CONTENT="Anoxoon & Ezhen">
+<META NAME="Copyright" CONTENT="Anoxoon & Ezhen 2000- 2001">
+<META http-equiv=Reply-to content=contact@bashlachev.net>
+<META NAME="Revisit" CONTENT="After 8 days">
+<META NAME="Expires" CONTENT="30">
+<META NAME="Keywords" CONTENT="јлександр Ѕашлачев, ‘ото, —тихи, јккорды, ѕесни, јккорды к песн€м, »нтервью, ѕисьма, —татьи, ‘отографии, “ексты, Ѕиографи€, ƒискографи€, русский-рок, рок-н-ролл, —ашЅаш, —аш-Ѕаш, јлександр, Ѕашлачев, рок-культура, рок- музыка, музыка, mp3, мп3, Ra, Real- Audio, Ѕаш, баш,ќписание, ∆изнь, ∆изнеде€тельность, “ворчество, –исунки, ѕосв€щение, ѕосв€щени€, —сылки, ѕоиск, ‘отоальбом, Ќовости, ‘орум, „ереповец,  очегарка, Ћихо, “аганский концерт, „ернобыльские Ѕобыли на краю света, ¬ечный пост, “реть€ столица, ѕервый концерт в ћоскве,  Ћегенды –усского –ока, јбсолютный ¬ахтер, ¬анюша, ¬ерка, Ќадька, Ћюбка, ¬ишн€, ¬лажный блеск наших глаз, ¬рем€ колокольчиков, ¬се от винта, ¬се будет хорошо, ¬ чистом поле дожди косые, √алактическа€ комеди€, √рибоедовский вальс, ƒым коромыслом, ≈горкина былина, «имн€€ сказка, »м€ имен,  ак ветра осенние,  огда мы вдвоем,  огда мы вместе,  оролева бутербродов, Ћихо, ћельница, ћинута молчани€, ћузыкант, ћы льем свое больное сем€, Ќа жизнь поэтов, Ќекому березу заломати, Ќе позвол€й душе ленитьс€, Ќичего не случилось, Ќовый √од, ќ как ты эффектна, ќсень, ѕалата є6, ѕерекур, ѕесенка на лесенке, ѕетербургска€ свадьба, ѕл€ши в огне, ѕодвиг разведчика, ѕодымите мне веки, ѕоезд, ѕосошок, ѕохороны шута, ѕр€ма€ дорога, –ашид+ќл€, –жава€ вода, –ождественска€, –ыбный день, —егодн€шний день ничего не мен€ет, —лет-симпозиум, —лучай в —ибири, —проси звезда, —таринна€ песн€, —€дем р€дом, “епло беспокойно и сыро, “есто, “рагикомический роман, ’оз€йка, ’ороший мужик, „ас прилива, „ерные дыры ,јльбомы.">
+<META NAME="Description" CONTENT=""¬рем€ полета..." —айт посв€щенный –оссийскому поэту јлександру Ѕашлачеву. «десь ¬ы найдете: Ѕиографию, фото, аккорды, стихи, интервью, статьи, дискографию, mp3, форум и письма. ¬ общем все или почти все что ¬ам может быть нужно.">
+<META NAME="Robots" CONTENT="INDEX,FOLLOW">
+<META NAME="Language" CONTENT="russian">
+<META NAME=classification CONTENT=Music >
+<META http-equiv=Cache-Control content=public>
+<META NAME="ResourceURL" CONTENT="http://www.bashlachev.net/">
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=windows-1251"> 
+
+ 
+ 
+ 
+ <script language="JavaScript">
+<!--
+
+function MM_showHideLayers() { //v2.0
+  var i, visStr, args, theObj;
+  args = MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) { //with arg triples (objNS,objIE,visStr)
+    visStr   = args[i+2];
+    if (navigator.appName == 'Netscape' && document.layers != null) {
+      theObj = eval(args[i]);
+      if (theObj) theObj.visibility = visStr;
+    } else if (document.all != null) { //IE
+      if (visStr == 'show') visStr = 'visible'; //convert vals
+      if (visStr == 'hide') visStr = 'hidden';
+      theObj = eval(args[i+1]);
+      if (theObj) theObj.style.visibility = visStr;
+  } }
+}
+//-->
+</script>
+
+<SCRIPT>
+<!--
+var step
+var sign=-1
+var move="no"
+
+function menuInit() {
+	if (document.layers) {
+        document.menu.left=-230
+        }
+	if (document.all) {
+        document.all.menu.style.posLeft=-231
+        }
+}
+
+function onchecked() {
+    if (move=="no") {
+	step=21
+        sign=sign*-1
+        move="yes"
+	movemenu()
+    }
+}
+
+function movemenu() {
+	if (document.layers) {
+        if (step>=0) {
+            document.menu.left+=step*sign
+            step--
+            var movetimer=setTimeout("movemenu()",20)
+	    }
+        else {
+            move="no"
+            clearTimeout(movetimer)
+        }
+	}
+	if (document.all) {
+        if (step>=0) {
+            document.all.menu.style.posLeft+=step*sign
+            step--
+            var movetimer=setTimeout("movemenu()",20)
+	    }
+        else {
+            move="no"
+            clearTimeout(movetimer)
+        }
+    }
+}
+onload=menuInit;
+// -->
+</SCRIPT>
+
+
+<SCRIPT language="JavaScript">
+  if (navigator.appName=="Microsoft Internet Explorer") {
+   document.write('<LINK rel="stylesheet" type="text/css" href="bash.css">');
+  }
+  else {
+   document.write('<LINK rel="stylesheet" type="text/css" href="nn.css">');
+  } 
+</script> 
+ </HEAD>
+<TITLE>-= јлександр Ѕашлачев- ¬рем€ полета... =- јнгло€зычные статьи </TITLE>
+<body background="img/bash.gif"  Bgcolor="white" TopMargin="0" LeftMargin="0" MarginWidth="0" MarginHeight="0" vlink=gray link="#015F5D" alink=gray>
+<a name="S28">
+
+<TABLE BORDER=0 width=100% CELLPADDING=0 CELLSPACING=0>
+<TR>
+ <TD>
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0>
+	<TR>
+		<TD BGcolor="#015F5D"> 
+			<IMG SRC="menush/spacer.gif" WIDTH=48 HEIGHT=1></TD>
+		<TD BGcolor="#015F5D">
+			<IMG SRC="menush/spacer.gif" WIDTH=73 HEIGHT=1></TD>
+		<TD BGcolor="#015F5D"
+			<IMG SRC="menush/spacer.gif" WIDTH=69 HEIGHT=1></TD>
+		<TD BGcolor="#015F5D">
+			<IMG SRC="menush/spacer.gif" WIDTH=81 HEIGHT=1></TD>
+		<TD BGcolor="#015F5D">
+			<IMG SRC="menush/spacer.gif" WIDTH=77 HEIGHT=1></TD>
+		<TD BGcolor="#015F5D">
+			<IMG SRC="menush/spacer.gif" WIDTH=87 HEIGHT=1></TD>
+		<TD BGcolor="#015F5D">
+			<IMG SRC="menush/spacer.gif" WIDTH=12 HEIGHT=1></TD>
+		<TD BGcolor="#015F5D">
+			<IMG SRC="menush/spacer.gif" WIDTH=43 HEIGHT=1></TD>
+		<TD BGcolor="#015F5D">
+			<IMG SRC="menush/spacer.gif" WIDTH=48 HEIGHT=1></TD>
+		<TD BGcolor="#015F5D">
+			<IMG SRC="menush/spacer.gif" WIDTH=34 HEIGHT=1></TD>
+		<TD BGcolor="#015F5D">
+			<IMG SRC="menush/spacer.gif" WIDTH=30 HEIGHT=1></TD>
+		<TD BGcolor="#015F5D">
+			<IMG SRC="menush/spacer.gif" WIDTH=15 HEIGHT=1></TD>
+		<TD BGcolor="#015F5D">
+			<IMG SRC="menush/spacer.gif" WIDTH=8 HEIGHT=1></TD>
+		<TD BGcolor="#015F5D">
+			<IMG SRC="menush/spacer.gif" WIDTH=24 HEIGHT=1></TD>
+		<TD BGcolor="#015F5D">
+			<IMG SRC="menush/spacer.gif" WIDTH=48 HEIGHT=1></TD>
+		<TD>
+			<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 width=37>
+			  <TD WIDTH=6 HEIGHT=1 BGcolor="#015F5D">
+			<IMG SRC="images/spacer.gif"></TD>
+		   </TABLE></TD>
+		<TD></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=11>
+			<IMG SRC="menush/menu_01.gif" WIDTH=602 HEIGHT=21></TD>
+		<TD COLSPAN=2>
+			<A HREF="index.shtml">
+				<IMG SRC="menush/index.gif" WIDTH=23 HEIGHT=21 BORDER=0></A></TD>
+		<TD>
+			<A HREF="mail.shtml">
+				<IMG SRC="menush/mail.gif" WIDTH=24 HEIGHT=21 BORDER=0></A></TD>
+		<TD COLSPAN=2>
+			<IMG SRC="menush/menu_04.gif" WIDTH=95 HEIGHT=21></TD>
+		<TD>
+			<IMG SRC="menush/spacer.gif" WIDTH=1 HEIGHT=21></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=16>
+			<IMG SRC="menush/menu_05.gif" WIDTH=744 HEIGHT=30></TD>
+		<TD>
+			<IMG SRC="menush/spacer.gif" WIDTH=1 HEIGHT=30></TD>
+	</TR>
+	<TR>
+		<TD ROWSPAN=2>
+			<A HREF="glav.shtml">
+				<IMG SRC="menush/glav.gif" WIDTH=48 HEIGHT=18 BORDER=0></A></TD>
+		<TD COLSPAN=15>
+			<IMG SRC="menush/menu_07.gif" WIDTH=696 HEIGHT=9></TD>
+		<TD>
+			<IMG SRC="menush/spacer.gif" WIDTH=1 HEIGHT=9></TD>
+	</TR>
+	<TR>
+		<TD ROWSPAN=3>
+			<A HREF="bio.shtml">
+				<IMG SRC="menush/bio.gif" WIDTH=73 HEIGHT=24 BORDER=0></A></TD>
+		<TD COLSPAN=14>
+			<IMG SRC="menush/menu_09.gif" WIDTH=623 HEIGHT=9></TD>
+		<TD>
+			<IMG SRC="menush/spacer.gif" WIDTH=1 HEIGHT=9></TD>
+	</TR>
+	<TR>
+		<TD ROWSPAN=7>
+			<IMG SRC="menush/menu_10.gif" WIDTH=48 HEIGHT=52></TD>
+		<TD COLSPAN=5>
+			<IMG SRC="menush/menu_11.gif" WIDTH=326 HEIGHT=4></TD>
+		<TD COLSPAN=8>
+			<IMG SRC="menush/menu_12.gif" WIDTH=250 HEIGHT=4></TD>
+		<TD ROWSPAN=7>
+			<IMG SRC="menush/menu_13.gif" WIDTH=47 HEIGHT=52></TD>
+		<TD>
+			<IMG SRC="menush/spacer.gif" WIDTH=1 HEIGHT=4></TD>
+	</TR>
+	<TR>
+		<TD ROWSPAN=3>
+			<A HREF="song.shtml">
+				<IMG SRC="menush/tv.gif" WIDTH=69 HEIGHT=26 BORDER=0></A></TD>
+		<TD COLSPAN=6>
+			<IMG SRC="menush/menu_15.gif" WIDTH=348 HEIGHT=11></TD>
+		<TD ROWSPAN=3>
+			<A HREF="chat.shtml">
+				<IMG SRC="menush/chat.gif" WIDTH=34 HEIGHT=26 BORDER=0></A></TD>
+		<TD COLSPAN=2 ROWSPAN=2>
+			<A HREF="links.shtml">
+				<IMG SRC="menush/links.gif" WIDTH=45 HEIGHT=15 BORDER=0></A></TD>
+		<TD COLSPAN=3 ROWSPAN=6>
+			<IMG SRC="menush/menu_18.gif" WIDTH=80 HEIGHT=48></TD>
+		<TD>
+			<IMG SRC="menush/spacer.gif" WIDTH=1 HEIGHT=11></TD>
+	</TR>
+	<TR>
+		<TD ROWSPAN=5>
+			<IMG SRC="menush/menu_19.gif" WIDTH=73 HEIGHT=37></TD>
+		<TD ROWSPAN=2>
+			<A HREF="foto.shtml">
+				<IMG SRC="menush/foto.gif" WIDTH=81 HEIGHT=15 BORDER=0></A></TD>
+		<TD ROWSPAN=3>
+			<A HREF="posv.shtml">
+				<IMG SRC="menush/posv.gif" WIDTH=77 HEIGHT=21 BORDER=0></A></TD>
+		<TD COLSPAN=3>
+			<IMG SRC="menush/menu_22.gif" WIDTH=142 HEIGHT=4></TD>
+		<TD ROWSPAN=3>
+			<A HREF="forum/">
+				<IMG SRC="menush/forum.gif" WIDTH=48 HEIGHT=21 BORDER=0></A></TD>
+		<TD>
+			<IMG SRC="menush/spacer.gif" WIDTH=1 HEIGHT=4></TD>
+	</TR>
+	<TR>
+		<TD ROWSPAN=3>
+			<A HREF="apistol.shtml">
+				<IMG SRC="menush/apistol.gif" WIDTH=87 HEIGHT=21 BORDER=0></A></TD>
+		<TD COLSPAN=2 ROWSPAN=3>
+			<A HREF="cgi-bin/book/guestbook.pl">
+				<IMG SRC="menush/guest.gif" WIDTH=55 HEIGHT=21 BORDER=0></A></TD>
+		<TD COLSPAN=2 ROWSPAN=4>
+			<IMG SRC="menush/menu_26.gif" WIDTH=45 HEIGHT=33></TD>
+		<TD>
+			<IMG SRC="menush/spacer.gif" WIDTH=1 HEIGHT=11></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=2 ROWSPAN=3>
+			<IMG SRC="menush/menu_27.gif" WIDTH=150 HEIGHT=22></TD>
+		<TD ROWSPAN=3>
+			<IMG SRC="menush/menu_28.gif" WIDTH=34 HEIGHT=22></TD>
+		<TD>
+			<IMG SRC="menush/spacer.gif" WIDTH=1 HEIGHT=6></TD>
+	</TR>
+	<TR>
+		<TD ROWSPAN=2>
+			<IMG SRC="menush/menu_29.gif" WIDTH=77 HEIGHT=16></TD>
+		<TD ROWSPAN=2>
+			<IMG SRC="menush/menu_30.gif" WIDTH=48 HEIGHT=16></TD>
+		<TD>
+			<IMG SRC="menush/spacer.gif" WIDTH=1 HEIGHT=4></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=3>
+			<IMG SRC="menush/menu_31.gif" WIDTH=142 HEIGHT=12></TD>
+		<TD>
+			<IMG SRC="menush/spacer.gif" WIDTH=1 HEIGHT=12></TD>
+	</TR>
+</TABLE>
+<DIV id=menu>
+<TABLE WIDTH=249 BORDER=0 CELLPADDING=0 CELLSPACING=0>
+	<TR>
+		<TD COLSPAN=5>
+			<IMG SRC="menu/i_01.gif" WIDTH=249 HEIGHT=2></TD>
+	</TR>
+	<TR>
+		<TD>
+			<IMG SRC="menu/i_02.gif" WIDTH=2 HEIGHT=170></TD>
+		<TD WIDTH=215 HEIGHT=233 valign="top">
+		<TABLE border=0 cellPadding=0 cellSpacing=0 width=215 valign="top">
+
+  <TR>
+		          <TD bgColor=#cdcdcd><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#f5f3f4><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>	     
+		       
+		        <TR>
+ <TD bgColor=#EEEEEE><IMG src="menu/n.gif" width=0>
+<font class="glav1">-=—татьи=-</a></TD></TR>
+  <TR>
+		          <TD bgColor=#cdcdcd><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#f5f3f4><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		       
+		       <TR>
+		          <TD bgColor=#e4e4e4 onmouseout="bgColor='E4E4E4'"
+		          onmouseover="bgColor='FFFFFF'"><IMG height=12
+		            src="menu/n.gif" width=20><A class=links
+		            href="stats.shtml">—татьи ч.1</A></TD></TR>
+  <TR>
+		          <TD bgColor=#cdcdcd><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#f5f3f4><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR> 
+  
+		       <TR>
+		          <TD bgColor=#e4e4e4 onmouseout="bgColor='E4E4E4'"
+		          onmouseover="bgColor='FFFFFF'"><IMG height=12
+		            src="menu/n.gif" width=20><A class=links
+		            href="stats2.shtml">—татьи ч.2</A></TD></TR>
+  <TR>
+		          <TD bgColor=#cdcdcd><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#f5f3f4><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>		     
+		      
+
+		        <TR>
+		          <TD bgColor=#e4e4e4 onmouseout="bgColor='E4E4E4'"
+		          onmouseover="bgColor='FFFFFF'"><IMG height=12
+		            src="menu/n.gif" width=20><A class=links
+		            href="stats3.shtml">—татьи ч.3</A></TD></TR>
+  <TR>
+		          <TD bgColor=#cdcdcd><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#f5f3f4><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+
+
+		        <TR>
+		          <TD bgColor=#e4e4e4 onmouseout="bgColor='E4E4E4'"
+		          onmouseover="bgColor='FFFFFF'"><IMG height=12
+		            src="menu/n.gif" width=20><A class=links
+		            href="stats4.shtml">—татьи ч.4</A></TD></TR>
+
+	
+	  <TR>
+		          <TD bgColor=#cdcdcd><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#f5f3f4><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#e4e4e4 onmouseout="bgColor='E4E4E4'"
+		          onmouseover="bgColor='FFFFFF'"><IMG height=12
+		            src="menu/n.gif" width=20><A class=links
+		            href="stats5.shtml">—татьи ч.5</A></TD></TR>
+	 
+  <TR>
+		          <TD bgColor=#cdcdcd><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#f5f3f4><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#e4e4e4 onmouseout="bgColor='E4E4E4'"
+		          onmouseover="bgColor='FFFFFF'"><IMG height=12
+		            src="menu/n.gif" width=20><A class=links
+		            href="stats6.shtml">—татьи ч.6</A></TD></TR>
+  <TR>
+		          <TD bgColor=#cdcdcd><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#f5f3f4><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#e4e4e4 onmouseout="bgColor='E4E4E4'"
+		          onmouseover="bgColor='FFFFFF'"><IMG height=12
+		            src="menu/n.gif" width=20><A class=links
+		            href="stat_en.shtml">—татьи ч.7(eng)</A></TD></TR>
+	 <TR>
+		          <TD bgColor=#cdcdcd><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#f5f3f4><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>	     
+		       
+		        <TR>
+ <TD bgColor=#EEEEEE><IMG src="menu/n.gif" width=0>
+<font class="glav1">-=»нтервью=-</a></TD></TR>
+  <TR>
+		          <TD bgColor=#cdcdcd><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#f5f3f4><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		       
+		       <TR>
+		          <TD bgColor=#e4e4e4 onmouseout="bgColor='E4E4E4'"
+		          onmouseover="bgColor='FFFFFF'"><IMG height=12
+		            src="menu/n.gif" width=20><A class=links
+		            href="inter1.shtml">»нтервью ч.1</A></TD></TR>
+  <TR>
+		          <TD bgColor=#cdcdcd><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#f5f3f4><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR> 
+  
+		       <TR>
+		          <TD bgColor=#e4e4e4 onmouseout="bgColor='E4E4E4'"
+		          onmouseover="bgColor='FFFFFF'"><IMG height=12
+		            src="menu/n.gif" width=20><A class=links
+		            href="inter2.shtml">»нтервью ч.2</A></TD></TR>
+		 <TR>
+		          <TD bgColor=#cdcdcd><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#f5f3f4><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>	     
+		       
+		      		        <TR>
+		          <TD bgColor=#e4e4e4 onmouseout="bgColor='E4E4E4'"
+		          onmouseover="bgColor='FFFFFF'"><IMG height=12
+		            src="menu/n.gif" width=20><A class=links
+		            href="inter3.shtml">»нтервью ч.3</A></TD></TR>
+		 <TR>
+		          <TD bgColor=#cdcdcd><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#f5f3f4><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>	     
+		       
+		        <TR>
+		          <TD bgColor=#e4e4e4 onmouseout="bgColor='E4E4E4'"
+		          onmouseover="bgColor='FFFFFF'"><IMG height=12
+		            src="menu/n.gif" width=20><A class=links
+		            href="inter4.shtml">»нтервью ч.4</A></TD></TR>
+		 <TR>
+		          <TD bgColor=#cdcdcd><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#f5f3f4><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>	     
+		       
+		        <TR>
+ <TD bgColor=#EEEEEE><IMG src="menu/n.gif" width=0>
+<font class="glav1">-=–азное=-</a></TD></TR>
+  <TR>
+		          <TD bgColor=#cdcdcd><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#f5f3f4><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		       
+		       <TR>
+		          <TD bgColor=#e4e4e4 onmouseout="bgColor='E4E4E4'"
+		          onmouseover="bgColor='FFFFFF'"><IMG height=12
+		            src="menu/n.gif" width=20><A class=links
+		            href="pismak.shtml">ѕисьма госпоже "K"</A></TD></TR>
+ <TR>
+		          <TD bgColor=#cdcdcd><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        <TR>
+		          <TD bgColor=#f5f3f4><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>	     
+		       
+		        <TR>
+		          <TD bgColor=#e4e4e4 onmouseout="bgColor='E4E4E4'"
+		          onmouseover="bgColor='FFFFFF'"><IMG height=12
+		            src="menu/n.gif" width=20><A class=links
+		            href="pisma.shtml">ѕисьма Ќелюбиным</A></TD></TR>
+  <TR>
+		          <TD bgColor=#cdcdcd><IMG height=1
+		            src="menu/n.gif" width=20></TD></TR>
+		        
+        </TABLE>
+		</TD>
+		<TD background="menu/i_04.gif">
+			<IMG SRC="menu/i_04.gif" WIDTH=2 HEIGHT=170></TD>
+		<TD valign=bottom><A href="javascript:onchecked()" onfocus=javascript:this.blur()>
+			<IMG SRC="menu/i_05.gif"  BORDER=0></A></TD>
+		<TD background="menu/i_06.gif" valign=bottom>
+			<IMG SRC="menu/i_06.gif" WIDTH=2 HEIGHT=170></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=5>
+			<IMG SRC="menu/i_07.gif" WIDTH=249 HEIGHT=2></TD>
+	</TR>
+</TABLE>
+
+</DIV>
+</TD>
+</TR>
+<TR>
+  <TD>
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 align=right>
+<TR>
+ <TD>
+<!-- HotLog -->
+<script language="javascript">
+hotlog_js="1.0";hotlog_d=document; hotlog_n=navigator;hotlog_rn=Math.random();
+hotlog_n_n=(hotlog_n.appName.substring(0,3)=="Mic")?0:1
+hotlog_r=""+hotlog_rn+"&s=1154&r="+escape(hotlog_d.referrer)+"&pg="+
+escape(window.location.href)
+hotlog_d.cookie="hotlog=1"; hotlog_r+="&c="+(hotlog_d.cookie?"Y":"N");
+hotlog_d.cookie="hotlog=1; expires=Thu, 01-Jan-70 00:00:01 GMT"</script>
+<script language="javascript1.1">
+hotlog_js="1.1";hotlog_r+="&j="+(navigator.javaEnabled()?"Y":"N")</script>
+<script language="javascript1.2">
+hotlog_js="1.2";hotlog_s=screen;
+hotlog_r+="&wh="+hotlog_s.width+'x'+hotlog_s.height+"&px="+((hotlog_n_n==0)?
+hotlog_s.colorDepth:hotlog_s.pixelDepth)</script>
+<script language="javascript1.3">hotlog_js="1.3"</script>
+<script language="javascript">hotlog_r+="&js="+hotlog_js;
+hotlog_d.write("<img src=\"http://hit.hotlog.ru/cgi-bin/hotlog/count?"+
+hotlog_r+"&\" border=0 width=1 height=1>")</script>
+<noscript><img src="http://hit.hotlog.ru/cgi-bin/hotlog/count?s=1154" border=0 
+width=1 height=1></noscript>
+<!-- /HotLog -->
+<br>
+<!-- BannerBank advertising begin: Too Much Music 468x60 -->
+<script>
+// <!--
+var userid = 2397716;
+var page = 1;
+var rndnum = Math.round(Math.random() * 10000);
+document.write('<center><A HREF="http://ad3.bb.ru/bb.cgi?cmd=go&pubid=' + userid + '&pg=' + page + '&vbn=536&num=1&w=468&h=60&nocache=' + rndnum + '" target="_top">');
+document.write('<IMG SRC="http://ad3.bb.ru/bb.cgi?cmd=ad&pubid=' + userid + '&pg=' + page + '&vbn=536&num=1&w=468&h=60&nocache=' + rndnum + '" width=468 height=60 Alt="Too Much Music" border=0></A><BR></center>');
+document.write(' <center><FONT SIZE=1><A HREF="http://www.tmm.ru/" target = "_blank" >Too Much Music</A></FONT></center>');
+// -->
+</script>
+<!-- BannerBank advertising end: Too Much Music 468x60 -->
+</TD>
+<TD>
+&nbsp;&nbsp;&nbsp;&nbsp;
+</TD>
+</TR>
+</TABLE>
+  </TD>
+</TR>
+<TR>
+<TD align=center>
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 align=center>
+	<TR>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=15 HEIGHT=1></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=47 HEIGHT=1></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=277 HEIGHT=1></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=284 HEIGHT=1></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=33 HEIGHT=1></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=57 HEIGHT=1></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=30 HEIGHT=1></TD>
+		<TD></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=3 ROWSPAN=2>
+			<IMG SRC="img/an.gif" WIDTH=339 HEIGHT=71></TD>
+		<TD>
+			<IMG SRC="images/ramka1_02.gif" WIDTH=284 HEIGHT=36></TD>
+		<TD COLSPAN=3>
+			<IMG SRC="images/ramka1_03.gif" WIDTH=120 HEIGHT=36></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=1 HEIGHT=36></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=2 BGcolor="white"  WIDTH=317 HEIGHT=35>
+<SCRIPT>
+var flag_strClear=true;
+function strClear(arg){if(flag_strClear){arg.value="";flag_strClear=false;}}
+</SCRIPT>
+<center>
+<FORM ACTION="http://www.bashlachev.net/cgi-bin/search/search.pl" METHOD="GET">
+<INPUT TYPE="Text" NAME="query" SIZE="30" 
+class=se1 
+onmouseover="this.className = 'se2';" 
+onmouseout="this.className = 'se2';" 
+VALUE="-= поиск =-" onClick="strClear(this)">
+<INPUT TYPE="Hidden" NAME="stpos" VALUE="0">
+<INPUT TYPE="Submit" VALUE=" >> "  style="font-size=11px;"  title="-= »скать =-"
+class=se1 
+onmouseover="this.className = 'se2';" 
+onmouseout="this.className = 'se2';" >
+</center>
+</TD>
+</FORM>
+		<TD COLSPAN=2>
+			<IMG SRC="images/ramka1_05.gif" WIDTH=87 HEIGHT=35></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=1 HEIGHT=35></TD>
+	</TR>
+	<TR>
+		<TD ROWSPAN=2 background="images/l_f.gif">
+			<IMG SRC="images/spacer.gif"></TD>
+		<TD COLSPAN=5 BGcolor="white">
+			<IMG SRC="images/spacer.gif" WIDTH=698 HEIGHT=48></TD>
+		<TD>
+			<IMG SRC="images/ramka1_08.gif" WIDTH=30 HEIGHT=48></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=1 HEIGHT=48></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=5 bgcolor="white">
+<table border=0 cellPadding=0 cellSpacing=0 width=695>	
+ <TR>
+   <TD Width=100% valign=top>
+
+   
+   
+<pre><font size=3 class="posv">
+<a name="s1"> Chapter 5. Julia P. Friedman and Adam Weiner
+Between a Rock and a Hard Place: Holy RusТ and its Alternatives in Russian</a>
+</font><font size=3 class="posv2"> 
+Rock Music
+        In Hole in Our Soul: the Loss of Beauty and Meaning in American Popular 
+Music, Martha Bayles argues that the УperverseФ modernist cult of novelty 
+with its persistent impulse to break with past values, has had harmful 
+effects on Western Rock. Russian Rock had been involved in a different 
+dynamics, for while it initially found its inspiration in Western bands, it 
+has been gradually shifting eastward, homeward, in terms of lyrics and 
+music. Instead of rejecting native, traditional influences, Russian rock 
+artists have sought to transcend aesthetic models they perceive as foreign 
+and inorganic - a situation that T. S. EliotТs admonition that original art 
+is created only from a thorough knowledge of oneТs origins and traditions. 
+By the mid-1980Тs many of the most original Russian rock musicians were 
+clearly leaving the shadow of Western rockТnТroll in search of more УnativeФ 
+traditions on a quest for authenticity that has lead to a body of song texts 
+of great artistic and cultural interest. For some of the best songwriters, 
+authentic Russian Rock has had much to do with Russianness, and, sometimes, 
+Russophilism. Others have used their music to challenge Russofile tendency 
+in their compatriots. The result is a kind of rock polemic about the meaning 
+of Russian culture. More than merely parroting the motives and devices of 
+Russian folk music, Russianness in rock involves a complex negotiation  of 
+traditional and innovative interpretations of RussianТs eternal Уaccursed 
+questionsФ (prokliatye voprosy) concerning national identity and destiny.  
+Tradition, as Eliot said, Уcannot be inherited and if you want it, you must 
+obtain it by great labor.Ф
+        The image and idea of the homeland acted fatefully on rock and to a great 
+extent was the musics rok, or УfateФ - a pun that begs to be made in 
+discussions of Russian rock. Russianness is at onece the rockТs saving grace 
+and itТs deadliest temptation: the first because it it a force that can 
+deepen rock into a meaningful expression of the songwriterТs worldview, and 
+the second because this force can grade imperceptibly into either 
+trivialized, matreshka-style folksiness or, worse yet, ugly nationalism, 
+both of which are capable of delimiting whatever beauty the music 
+constitutes. IlТya Smirnov made this point well when he wrote that Уany 
+avowal of an idea - especially when we are talking about the СRussian IdeaТ 
+- renders it linear and flat. True Russianness [narodnostТ] threatens to 
+turn into a tasteless imitation [lubok]; the word СRussianТ threatens to 
+become not a name of an ethnic group, but a call to action. When spiritual 
+sufferings give birth to gloomy intolerance, good will perhaps suffer its 
+first defeat in a clash on the СKalinov Bridge.Т Ф
+        In this chapter we argue that such leading Russian rockers as Aleksand 
+Bashlachev, Iurii Shevchuk (DDT), Konstantin Kinchev (Alisa), Iurii Naumov, 
+Iana Diagileva (Ianka), and Boris Grebenshchikov (Akvarium) have all created 
+evocative visions of their homeland in their quest for an original rock 
+aesthetic. By limiting our purview to these groups and artists, we do not 
+intend to suggest that other rock musicians have not contributed to this 
+debate (for they have), nor that there are no groups that have chosen not to 
+enter into it at all (for there are). Neither do we present our conclusions 
+as a comprehensive overview of Russian rock or as a review of the Russian 
+rock in the 1990s. Rather, we discuss those artists whose music most vividly 
+depicts their native land, whether as an ideal to achieve or a trap to 
+avoid. It was during the second half  of the 1980s, concurrently with the 
+arrival in the capital cities of Bashlachev, that this theme arose and 
+asserted itself in Russian rock, and we follow its subsequent development 
+into the mid-1990s.
+        Critics and musicians generally recognize Bashlachev (d. 1988) as the firs 
+rocker to compose authentic poetry for his songs and my no mere coincidence 
+it was also Bashlachev whose songs pose the question of RussiaТs origin and 
+destiny for the first time in Russian rock. It is fitting, then, to begin 
+the current discussion with a poet who lead the rock out of the dead-end of 
+self-indulgent romantic posing, anti-Soviet satires, and so-called stiob 
+into which it had wandered by the mid-1980s. A distinctive feature of 
+Russian rock music - recognized by its practitioners, followers, and critics 
+alike, and first applied to great effect by Bashlachev - is its privileging 
+of the world, as contrasted with Western rockТs relatively musical 
+orientation. Yet, the СRussificationТ of rock is not merely the discovery of 
+a verbally rich poetic; it is also the engagement of an endemic and 
+venerable polemic about RussiaТs destiny. The genius of Russian poetry, 
+which is present in the best rock music, is a deeply national, and thus 
+enigmatic, phenomenon. Here we pause on the brink of the perceived gulfs 
+that lie between so-called high art and popular art, and also between 
+national art and universal art. Dostoevsky probably simplified the matter 
+when he wrote that all of RussiaТs great artistic talents Уinevitably ended 
+up by turning to the national sentiment, becoming one with the people, 
+Slavophile. Thus, the frivolous Pushkin suddenly, before all the kireevskiis 
+and khomiakovs creates the Chronicler of the Chudovyi Monastery.Ф The 
+УChronicler of the Chudovyi MonasteryФ is the monk Pimen (from PushkinТs 
+great historical drama, Boris Godunov), who was for Dostoevsky an icon of 
+Russian spiritual wisdom, gained through deep insight into the national 
+character. It is perhaps such insight, rather than Slavophile sentiments per 
+se, that is often a wellspring of Russian artistic genius, so that while 
+Bashlachev was hardly a Slavophile in the matter of Kireevkii and Khomiakov 
+(to say nothing of Pimen), he followed DostoevskyТs axiom by turning his art 
+to the mysteries of the national character.
+        The rock poetry of Bashlachev is a ringing affirmation of Russia and her 
+people, despite all the misery, degradation, and darkness it recognizes 
+there. BashlachevТs arrival in the capitals, after the celebrated liberal 
+Soviet rock critic Artemy Troitsky had УdiscoveredФ him in his native 
+Cherepovets, signaled a sea change in rock poetry. In the course of the few 
+years separating bashlachevТs emerging on the rock scene in 1984 and his 
+suicide, he composed sixty or so remarkable lyrics. As his texts testify, 
+Bashlachev sang of RussiaТs hidden moral life, which the Western style 
+bureaucratism imported into Russian by Peter I and passed down to Soviet 
+times had not - so affirm BashlachevТs poems - managed to trample down. УThe 
+Time of Little BellsФ (УVremia KolokolТchikovФ) is a paean to the Russian 
+moral past, which the song views against a complex web of native Russian 
+emblems brought into meaningful play with each other: kasha, birches, bells, 
+laments, feasts, cupolas, troikas, and vodka. Although this is a poem that 
+rewards rereading, we are not allowed to forget that it is also a song: its 
+central conceit is to hear echoes of the great bells of the Russian 
+spiritual past in the guitars and loudspeakers of Russian rock, while its 
+verses resonate with external and internal rhyme, alliteration, assonance, 
+and other rich sound orchestration.
+        The song presents a double vision of time that plays the recent Soviet past 
+against a distant, mythic past discovering behind the obvious contrasts an 
+essential unity between the two times. The poet traces the path from a great 
+past to a dwarfish present , beginning with the first stanza:
+                        
+                        ƒолго шли зноем и морозами,
+                        ¬се снесли и остались вольными,
+                        ∆рали снего с кашею березовой
+                        » росли вровень с колокольн€ми.
+
+                        We journeyed long in heat and frost.
+                        Endured it all and remained free.
+                        Devoured snow with birchy porridge
+                        And grew to the height of belfries.
+
+During the first phase of their journey through history, Russians were made 
+free by their ability to suffer hardship (berezovaia kasha, Уbirchy 
+porridge,Ф is a euphemism for a whipping). By feeding on privation and pain, 
+they became spiritual giants among men. This lead to a time of ideal 
+communion (or sobornostТ) among people and between people and God, whose 
+voice was heard in the tolling of the bells. The Russians of the remote past 
+were indeed united by the bell, in worship, sorrow, celebration, and danger: 
+the bell protected them against enemies and fires, resonated with their 
+emotions and uplifted them.
+
+                        ≈сли плачь - не жалели соли мы,
+                        ≈сли пир - сахарного пр€ника,
+                        «вонари черными мозол€ми
+                        –вали нерв медного динамика.
+
+                        When lamenting - we spared no salt.
+                        When feasting - sugar-coated spicecakes.
+                        The bell-tollers, with their black blisters,
+                        Tore all the nerve of the copper loudspeaker.
+
+BashlachevТs point is that, whether in grieving or rejoicing, Russians know 
+no measure. the bell-tollers of old, ringing the enormous bells of medieval 
+Russia until their hands were reduced to black calluses, become an icon of 
+this ancient strenuous emotional and spiritual  life. By calling the bell a 
+Уloudspeaker,Ф the poet foreshadows the profane present from within the 
+pious past in a surprising metaphor; rockers, it will later emerge, are the 
+modern day analogue for the bell ringers of yore, tearing painfully at their 
+guitar strings, seeking to reestablish the lost communion of the past, the 
+spiritual harmony that makes giants of men.
+
+                        Ќо с каждым днем времена мен€ютс€.
+                         упола растер€ли золото.
+                        «вонари по миру слон€ютс€.
+                         олокола сбиты и расколоты.
+
+                        But with every day the times change.
+                        Over time cupolas lost their gilding.
+                        The bell-tollers stumble about the land,
+                        The bells are knocked down and cracked.
+
+The fateful crack in the bells is also the schism of time: it divides 
+present from past and spiritual life from profane. This slit evokes the many 
+schisms, heresies, and wrenching Westward reforms imposed on Russia from the 
+reign of Peter the Great until modern times. In this quatrain, Bashlachev 
+vaults into the recent past and present, a time of disharmony (УWe donТt 
+sing any more, weТve forgotten how to singФ), of stasis and stagnation (УNot 
+a single wheel is greased./The whip is gone. The saddles have been stolen 
+over timeФ), of dissipation (УWe sleep and drink. Whole days and litersФ), 
+of profanity (УWeТve been chewing for ages: a blue streak with prayersФ), of 
+darkness (УWeТve been living for ages - in pitch black darknessФ). But most 
+important, the present is a bell-less age, a time of dislocation and 
+solitude, of a vain search of a lost secret of harmonious living:
+
+                        „тож теперь ходим круг да около
+                        Ќа своем поле как подпольщики?
+                        ≈сли нам не отлили колокол, 
+                        «начит, здесь врем€ колокольчиков.
+                        
+                        Why do we beat around the bush
+                        In our field - like underground men?
+                        If no bell has been cast for us,
+                        It means here - is the time of little bells.
+
+Without a great bell, without the unifying idea of the native communal 
+spirit life, Russians have become uprooted and lost; they drift about the 
+field of time with only their Уlittle bellsФ to guide them. But in Russian 
+the Уlittle bellsФ are also the УbluebellsФ growing in the thawing field 
+after a long winter: they evoke a postcivilization, postindustrial return to 
+the more natural pagan life, that preceded the entire cycle of Russian 
+history just detailed. Through the pun УpodpolТshchikiФ Bashlachev evokes 
+both underground solipsists of the nineteenth century, personified by 
+DostoevskyТs Underground Man and members of unofficial organizations in the 
+twentieth century - that is, Soviet dissenters, including, of course, the 
+unofficial underground culture that produced Russian rock and from which 
+Bashlachev emerged. With the decay of  the shared cultural values of the 
+past, Russians have been forced into the more Western modes of isolation, 
+individualism, and egoism, which have lead to the misery the poem depicts.
+        The destruction of the great bell of past harmony tolls the coming of the 
+age of small bells, assurely a more fragmented and crueler epoch, but by no 
+means a hopeless one.
+                        
+                        ј звени, сердце, под рубашкою
+                        ¬тороп€х- врассыпную вороны.
+                        Ёй! ¬ыводи коренных с прист€жкою
+                        » рванем на четыре стороны.
+                        
+
+                        You ring out, heart, under my shirt
+                        Hurriedly - the crows fly off pell-mell.
+                        Hey, lead out the shaft horses,
+                        And weТll tear off in all four directions.
+
+The Russian who can still make out the tolling of his own heart has found a 
+secret, internal echo of the great past. And even without knowing where to 
+search for that lost harmony, if one races in all direction with famous 
+Russian abandon, it is just possible, that one will prevail. Here Bashlachev 
+rigs up, bell and all, the troika of the final paragraph of Dead Souls, 
+GogolТs emblem of RussiaТs potential for leading the world into entire 
+perdition or salvation. the troika has been reduced to a state of dreadful 
+disrepair,
+                        
+                        ј на дожде - все дороги радугой!
+                        Ѕыть беде. Ќынче нам до смеха ли?
+                        Ќо если есть колокольчик под дугой,
+                        “ак значит, все. «ар€жай, поехали!
+
+                        But in the rain all roads lead off in a rainbow!
+                        ThereТs hell to pay. Is this a laughing matter?
+                        But if thereТs a bell under the shaft-bow,
+                        Then letТs go, charge it up, weТre off!
+
+The passage suggests that so long as Russians hear the soul, the spiritual 
+bell, in their bodies - and so long as artists (be it Gogol or Bashlachev) - 
+can make it resonate - there is a hope for Russia.
+
+                        WeТre so long waiting. All wandered about dirty.
+                        Because of this we began to look alike,
+                        But under the rain we turned out to be different,
+                        The majority is honest, good.
+
+The Soviet brand of communion attempted forcibly to reestablish the lost 
+harmony of the great Russian past, but it failed because its method was to 
+reduce all to the lowest common denominator of humanity: instead of 
+rerooting Russians in the soil of their spiritual past, in a free 
+brotherhood of mutual faith and love, Soviet life simply trampled them into 
+the mud. The song notes on the singerТs faith in his peopleТs miraculous 
+capacity for moral regeneration.
+
+                        » пусть разбит батюшка ÷арь-колокол -
+                        ћы пришли с черными гитарами.
+                        . . .
+                        –ок-н-ролл - славное €зычество.
+                        я люблю врем€ колокольчиков.
+
+                        And though Father King Bell may be crushed -
+                        We have come with our black guitars.
+                        . . .
+                        RockТnТroll - splendid paganism.
+                        I love the time of little bells.
+
+Here the circle closes. Bashlachev envisages the spirit of contemporary 
+culture, ideally rendered by the art of rock poetry, as a return to RussiaТs 
+primordial pre-Christian state, described in the first lines of the poem. 
+After the smallness of Bolshevism, Russians have once again begun to 
+discover goodness in their suffering and to grow spiritually as a result. 
+They have rediscovered a sense of direction, have renewed their search for 
+metaphysical change. In the beginning, the artistic medium best suited to 
+convey this spiritual quest was the bell, a direct means of communication 
+with God in a newly Christened Rus; later, in the age of schisms, this 
+musical expression was lost and the harmony itself destroyed; then 
+literature, like GogolТs lyrical prose, became the oblique medium through 
+which Russians best conveyed their sorrowful yearning for the cracked bell 
+of past unity; but even literature was enslaved to foreign (Marxist) ideals 
+under socialist realism. Rock poetry is the medium for a new age: combining 
+music and poetry, direct and indirect intimations of harmony, the new bell - 
+the Уcopper loudspeakerФ - overpowers the lies of the recent past with its 
+loud affirmation of an ancient, eternal truth. Bashlachev holds up the past 
+as a sacred time against which he measures the profane present, although he 
+also finds a redemptive value in the suffering of those who have strayed 
+from past ideal into present misery.
+
+
+<hr size=1 width=80%>
+
+ </TD>
+</TR>        
+</TABLE>
+
+
+
+
+
+
+			</TD>
+		<TD ROWSPAN=2 background="images/ramka1_10.gif">
+			<IMG SRC="images/spacer.gif"></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=1 HEIGHT=172></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=2 ROWSPAN=2>
+			<IMG SRC="images/ramka1_11.gif" WIDTH=62 HEIGHT=60></TD>
+		<TD COLSPAN=4 ROWSPAN=2 BGcolor="white"WIDTH=651 HEIGHT=60>
+			<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0>
+			 <TR>
+			   <TD width=600>
+			 <TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 align=right height=20>
+<TR>
+<TD height=20>
+
+</TD>
+ <TD valign=TOP >
+
+<!-- SpyLOG v2 f:1211 --> 
+<script language="javascript"> 
+u="u610.99.spylog.com";d=document;nv=navigator;na=nv.appName;p=1; 
+bv=Math.round(parseFloat(nv.appVersion)*100); 
+n=(na.substring(0,2)=="Mi")?0:1;rn=Math.random(); z="p="+p+"&rn="+rn;y=""; 
+y+="<a href='http://"+u+"/cnt?f=3&p="+p+"&rn="+rn+"' target=_blank>"; 
+y+="<img src='http://"+u+"/cnt?"+z+ 
+"&r1="+escape(d.referrer)+"&r="+escape(parent.document.referrer)+ 
+"&pg="+escape(window.location.href)+"' border=0 width=88 height=31 alt='SpyLOG'>"; 
+y+="</a>"; d.write(y); if(!n) { d.write("<"+"!--"); } //--></script><noscript> 
+<a href="http://u610.99.spylog.com/cnt?f=3&p=1" target=_blank> 
+<img src="http://u610.99.spylog.com/cnt?p=1" alt='SpyLOG' border='0' width=88 height=31 > 
+</a> </noscript><script language="javascript1.2"><!-- 
+if(!n) { d.write("--"+">"); }//--></script> 
+<!-- SpyLOG -->
+
+</TD>
+<TD width=20>
+&nbsp;
+</TD>
+</TABLE>
+			   </TD>
+			<TD align=center>
+			 <a href="#s28"  onMouseOver="window.status='¬верх'; return true;" onMouseOut="window.status='';"><img src="img/up.gif" border=0></a>
+			 </TD>
+			</TR>
+			</TABLE>
+			</TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=1 HEIGHT=44></TD>
+	</TR>
+	<TR>
+		<TD>
+			<IMG SRC="images/ramka1_13.gif" WIDTH=30 HEIGHT=16></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=1 HEIGHT=16></TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=7>
+			<IMG SRC="images/niz.gif" WIDTH=743 HEIGHT=21></TD>
+		<TD>
+			<IMG SRC="images/spacer.gif" WIDTH=1 HEIGHT=21></TD>
+	</TR>
+</TABLE>
+</center>
+</TD>
+</TR>
+</TABLE>
+<table border=0 cellPadding=0 cellSpacing=0 width=736 align=center>
+<TR>
+  <TD align=right HEIGHT=21 valign=BOTTOM>
+  <img src="img/line.gif">
+</TD>
+</TR>
+<TR>
+ <TD align=right>
+<font color="#" class="diz1">
+<a href="autors.shtml" class="links">јдминистраци€ сайта</a><br> 
+–осси€. 9 июн€ 2000<br>
+–е-ƒизайн: 20 сент€бр€ 2001<br>
+контактный e-mail:&nbsp;<a href="mailto:contact@bashlachev.net">contact@bashlachev.net</a>
+ </TD>
+</TR>
+</TABLE>
+&nbsp;
+</BODY>
+</HTML>
+ 
+
+ 

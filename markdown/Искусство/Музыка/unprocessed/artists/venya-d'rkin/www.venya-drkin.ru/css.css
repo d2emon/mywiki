@@ -1,0 +1,126 @@
+
+a.menu:link{
+	font-family: verdana;
+	font-size: 14px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+a.menu:visited{
+	font-family: verdana;
+	font-size: 14px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+a.menu:active{
+	font-family: verdana;
+	font-size: 14px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+a.menu:hover{
+	font-family: verdana;
+	font-size: 14px;
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+
+.say{
+	font-family: verdana;
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;
+}
+
+a.bottom_link:link{
+	font-family: verdana;
+	font-size: 12px;
+	color: #000000;
+	text-decoration: underline;
+}
+
+a.bottom_link:visited{
+	font-family: verdana;
+	font-size: 12px;
+	color: #000000;
+	text-decoration: underline;
+}
+
+a.bottom_link:active{
+	font-family: verdana;
+	font-size: 12px;
+	color: #000000;
+	text-decoration: underline;
+}
+
+a.bottom_link:hover{
+	font-family: verdana;
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;
+}
+
+.bottom{
+	font-family: verdana;
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;
+}
+
+h1{
+	font-family: times;
+	font-size: 24px;
+	color: #000000;
+	text-decoration: none;
+}
+
+h2{
+	font-family: times;
+	font-size: 18px;
+	color: #000000;
+	text-decoration: none;
+}
+
+p{
+	font-family: verdana, arial, times;
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;
+}
+
+a:link{
+	font-family: verdana;
+	font-size: 12px;
+	color: #0000EE;
+	text-decoration: underline;
+}
+
+a:visited{
+	font-family: verdana;
+	font-size: 12px;
+	color: #0000EE;
+	text-decoration: underline;
+}
+
+a:active{
+	font-family: verdana;
+	font-size: 12px;
+	color: #0000EE;
+	text-decoration: underline;
+}
+
+a:hover{
+	font-family: verdana;
+	font-size: 12px;
+	color: #0000EE;
+	text-decoration: none;
+}
+
+.normal{
+	font-family: verdana;
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;
+}

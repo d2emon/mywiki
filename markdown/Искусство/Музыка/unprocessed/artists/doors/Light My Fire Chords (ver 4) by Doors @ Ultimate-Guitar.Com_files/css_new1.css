@@ -1,0 +1,270 @@
+A {color:#FFC600; text-decoration:none; font:bold 8pt Arial}
+A:hover {color:#FFC600; text-decoration: underline; font:bold 8pt Arial}
+
+.my {color:#FFC600; text-decoration: underline; font:bold 12px Arial; text-transform: uppercase}
+A:hover.my {color:#FFC600; text-decoration: none; font:bold 12px Arial; text-transform: uppercase}
+
+.ys {color:#FFC600; text-decoration:none}
+A:hover.ys {color:#ffffff; text-decoration:none}
+
+.bl {color:#AADDFF; text-decoration:none}
+A:hover.bl {color:#ffffff; text-decoration:none}
+
+.ws {color:#999; text-decoration:none;font-size:11px}
+A:hover.ws {color:#ffffff; text-decoration:none;font-size:11px}
+
+.ws1 {color: #999; text-decoration: none; font-size:10px;font-family:verdana}
+A:hover.ws1 {color: #585858; text-decoration: none; font-size:10px;font-family:verdana}
+
+.w {color:#FFFFFF; text-decoration:none}
+A:hover.w {color:#FFFFFF; text-decoration:none}
+
+.m {color:#FFFFFF; text-decoration: none; font:bold 12px Arial; text-transform: uppercase;letter-spacing:0px}
+A:hover.m {color:#FFFFFF; text-decoration: underline; font:bold 12px Arial; text-transform: uppercase;letter-spacing:0px}
+
+.m1 {color:#000; text-decoration: none; font:bold 12px Arial; text-transform: uppercase;letter-spacing:0px;padding:2px 3px 1px 3px;background:#FFC600}
+A:hover.m1 {color:#FFFFFF; text-decoration: none; font:bold 12px Arial; text-transform: uppercase;letter-spacing:0px;padding:2px 3px 1px 3px;background:#CC3300}
+
+.yb {color:#FFC600; text-decoration:none;font:bold 13px Trebuchet MS}
+A:hover.yb {color:#FFC600; text-decoration:underline;font:bold 13px Trebuchet MS}
+
+.wb {color:#ffffff; text-decoration:none;font:bold 13px Trebuchet MS}
+A:hover.wb {color:#ffffff; text-decoration:underline;font:bold 13px Trebuchet MS}
+
+.midl {color:#FFC600; text-decoration:none; font-size:12px; font-weight:normal}
+A:hover.midl {color:#585858; text-decoration:none; font-size:12px; font-weight:normal}
+
+.midl1 { FONT-WEIGHT: bold; FONT-SIZE: 13px; COLOR: #ffc600; TEXT-DECORATION: underline}
+A.midl1:hover {FONT-WEIGHT: bold; FONT-SIZE: 13px; COLOR: #FFFFFF; TEXT-DECORATION: none}
+
+.ms {color:#C3C3C3; text-decoration:none; font-size:12px}
+A:hover.ms {color:#FFFFFF; text-decoration:none; font-size:12px}
+
+A.posted {color:#888888; text-decoration:none; font-size:10px; font-weight:normal}
+A:hover.posted {color:#FFFFFF; text-decoration:none; font-size:10px; font-weight:normal}
+
+.b {border:solid 1px #737373; border-top:0px; width:970px; background:#00rgb(242,242,242)0; margin: 0px auto}
+.b1 {border-left:solid 1px #737373; border-right:solid 1px #737373;padding:8px}
+.b2 {border:solid 1px #737373;font-size: 13px;font-weight:bold}
+.b3 {border:solid 1px #4F4C46}
+.b4 {border:solid 1px #202020}
+.b5 {border:solid 1px #282828}
+.b6 {border-left:solid 1px #737373;border-right:solid 1px #000;padding:0px 4px 2px 4px}
+
+.tdpad {padding:3px; border-top:dashed 1px #4F4C46; color:#DDDDCC}
+.tdpad1 {padding:2px 0px 2px 4px; border-top:dashed 1px #444444}
+.p2 {margin:2px 0px}
+
+DIV.com {padding:5px 0x 7px 0px;border-bottom:solid 1px #484848}
+DIV.div {padding:5px 0px 5px 0px;border-bottom:dashed 1px #383838}
+
+DIV.out {padding:2px;border:solid 1px #585858; border-bottom:0px; margin:14px 4px 0px 0px; float:right}
+DIV.out_s {padding:2px;border:solid 1px #585858; border-bottom:0px; margin:8px 4px 0px 0px; float:right}
+DIV.in {background-image: URL('http://img.ultimate-guitar.com/img/bt_bgd.gif');padding:6px 10px}
+DIV.in_s {background-image: URL('http://img.ultimate-guitar.com/img/bt_bgd.gif');padding:9px 10px;font:bold 12px Arial; color:#808080; text-transform:uppercase}
+
+.descr {color:#DDDDCC}
+.upc {color:#DDDDCC; text-transform:uppercase; font-size:10px; font-weight:bold}
+.s {color:#888; font-size:12px; font-family: Arial; font-weight:bold}
+.s1 {color:#999; font-variant:small-caps; font-size:11px; font-family:Verdana; font-weight:bold}
+.mid {color:#DDDDCC; font-size:13px; font-family:Verdana, Arial; font-weight:normal}
+.posted {text-decoration:none; font-size:10px; font-weight:normal}
+
+input{font:bold 11px Verdana}
+input.submit{font:bold 11px Tahoma; height:20px}
+select {font:bold 11px Verdana}
+
+.fdefault	{cursor:pointer; border:solid 1px #585A59;color:#888}
+.fon		{cursor:pointer; border:solid 1px #FFC600;color:#FFFFFF}
+.ffdefault {border: #4F4C46 1px solid; background:#000; height:21px;cursor:pointer}
+.ffon {border: #4F4C46 1px solid; background:#282828; height:24px;cursor:pointer}
+
+
+#di {border-top:solid 1px #000000}
+
+#bt P {margin:6px 0px}
+#bt A {color:#ddddcc;font:bold 10px verdana;border-bottom:solid 1px #555;text-decoration:none;padding-bottom:2px}
+#bt A:hover {color:#ffc600}
+
+
+.scr {color:#7dabab;font:normal 10px Verdana}
+.scrb {border:solid 1px #bcd5d5}
+.tab {text-decoration:underline; color:#000; font:bold 11px Verdana}
+A:hover.tab {text-decoration:none; color:#000; font:bold 11px Verdana}
+.crd {font:11px Courier New;color:black;padding:5px}
+.ch {font:12px Courier New; color: #0000FF; text-decoration: none}
+A:hover.ch {font:12px Courier New; color: #000; text-decoration: none}
+#t_comm {margin-top:5px}
+
+.ftc  {line-height:120%; font-family:Courier New; font-size:12px;color:#000;}
+
+.ad_fk  {position:relative}
+.ad_fkt {position:absolute;top:16px;right:25px;width:150px;overflow:hidden;white-space:nowrap;text-align:left}
+.ad_fkl {font:11px Tahoma; color:#000; text-decoration:none}
+.ad_fkl:hover {font:11px Tahoma; color:#000; text-decoration:none}
+
+#sug {font:bold 10px verdana}
+#sug a {text-decoration:underline;  color:#000; font:bold 10px verdana}
+#sug A:hover {text-decoration:none;  color:#000; font:bold 10px verdana}
+
+
+H1 {font:bold 22px Trebuchet MS; color:#555;display:inline;}
+TD {font-size:12px; font-family:Verdana,Arial,Tahoma; color:#888}
+BODY {margin:0px;font-size:11px; font-family:Verdana,Arial,Tahoma; color:#585858; scrollbar-arrow-color: #c0c0c0; scrollbar-3dlight-color: #111111; scrollbar-highlight-color: #666666; scrollbar-face-color: #383838; scrollbar-shadow-color: #202020; scrollbar-track-color: #111111; scrollbar-darkshadow-color: #191919}
+
+.savprisen {background:#f2f2f2}
+.savprisen td {border-bottom:2px solid #e2e2e2; padding:5px 0px}
+.icosps {padding-left:20px!important}
+.icosps img {width:12px; height:12px; background-image:url(http://img.ultimate-guitar.com/img/sprite.gif); vertical-align:middle}
+.vers {padding-left:15px}
+.vers b {color:#555; font:bold 11px Verdana; text-decoration:none; border-bottom:1px solid #bbb; white-space:nowrap}
+.verl {width:100px; padding-left:50px; vertical-align:top}
+.verll {width:100px;padding-right:40px; vertical-align:top;}
+.verl span {display:block; margin:10px 0px}
+.verll span {display:block; margin:10px 0px}
+.alph a, alph a:hover {font:bold 13px Trebuchet MS!important; color:#bbb; letter-spacing:1px}
+
+.fs-10, .fs-10:hover {font-size:10px}
+.fs-11, .fs-11:hover {font-size:11px}
+.fs-13, .fs-13:hover {font-size:13px}
+.bold {font-weight:bold}
+.verd, .verd:hover {font-family:Verdana!important}
+.aria, .aria:hover {font-family:Arial}
+.gray, .gray:hover {color:#888}
+.gray2, .gray2:hover {color:#b1b1b1}
+.gray3, .gray3:hover {color:#aaa}
+.green, .green:hover {color:#4a9224}
+.salat, .salat:hover {color:#72a7a7}
+.blue, .blue:hover {color:#007fbf}
+.red {color:#c04949}
+.bunl {border-bottom:1px solid #ccc; text-decoration:none}
+.bunl:hover {border-bottom:none; text-decoration:none}
+.undl {text-decoration:underline}
+.undl:hover {text-decoration:none}
+.w10verd, .w10verd:hover {font:bold 10px verdana; color:#ddddcc; padding:1px; border-bottom:solid 1px #555; text-decoration:none}
+.w10verd:hover {border:none}
+
+.chordw {cursor: pointer}
+
+.chordw span {color:#007fbf;}
+
+.cinfo div {width:14px; height:10px; background-image:url(http://img.ultimate-guitar.com/img/sprite.gif); font-size:1px; line-height:1px; margin-top:1px}
+.cinfo td {font:bold 11px Verdana; padding:2px 0px}
+
+.voting {overflow:hidden; zoom:1; float:left}
+.voting a {background:url(http://img.ultimate-guitar.com/img/stars.gif) no-repeat; margin-right:2px; line-height:1px; float:left; height:20px; width:22px; text-indent:-9999px}
+.voting a:hover, .voting a.cur {background-position:0px -20px}
+.voted {float:right; margin-top:1px; //margin-top:3px}
+.voted, .votes {width:59px; height:10px; background:url(http://img.ultimate-guitar.com/img/voted.png); line-height:1px; font-size:1px}
+.votes {background-position:0px -10px}
+
+.pmpp {cursor: pointer; width:22px; height:22px; background:#83bdba url(http://img.ultimate-guitar.com/img/pmpp.gif); display:block}
+.pmpp:hover {background-color:#72a6a3}
+.ascr {position:absolute; left:2px; top:43px; padding:15px 0px; width:75px; text-align:center; }
+.corcom {float:left; background:url(http://img.ultimate-guitar.com/img/comsprite.png); margin-top:7px; font-size:1px; height:10px; font-size:1px; line-height:1px}
+.comm {width:11px}
+.cor {width:10px; background-position:-11px 0px}
+.comh {padding:5px 0px; font:bold 10px Verdana; margin-left:16px}
+.comwr {padding:15px 0px; border-bottom:2px solid #e2e2e2}
+.comtxt {padding:7px 0px 0px 16px; font:12px "Courier New"; color:#333}
+.vup, .vdn {width:10px; height:12px; float:right; background-image:url(http://img.ultimate-guitar.com/img/comsprite.png); font-size:1px}
+.vup {background-position:-21px 0px; margin-right:5px}
+.vdn:hover {text-decoration: none}
+.vup:hover {text-decoration: none}
+.vdn {background-position:-31px 0px}
+.vup.votedd {background-position:-41px 0px}
+.vdn.votted {background-position:-51px 0px}
+.f-right {float:right}
+.nounl {text-decoration:none!important}
+
+.chtit {text-align:center; font-size:14px; line-height:22px; color:#888; padding:5px 0px}
+.chfret {background:url(http://img.ultimate-guitar.com/img/fret.png) no-repeat 50% 4px; position:relative; padding:1px 5px 0px 5px; height:64px; width:96px; z-index:10}
+.diagwrap {background:#f9f9f9; border:1px solid #ddd; float:left}
+.chname {font-size:8px; line-height:6px; width:10px; margin-bottom:5px}
+.fingbg {background:url(http://img.ultimate-guitar.com/img/diag_sprite.gif) 0px -45px; width:9px; height:9px; position:absolute; font-size:1px}
+.f-1, .f-2, .f-3, .f-4, .f-t {width:9px; height:9px; background:url(http://img.ultimate-guitar.com/img/diag_sprite.gif)}
+.f-2 {background-position:0px -9px}
+.f-3 {background-position:0px -18px}
+.f-4 {background-position:0px -27px}
+.f-t {background-position:0px -36px}
+.barre {width:3px; background:#424242 url(http://img.ultimate-guitar.com/img/barre.gif) no-repeat; position:absolute}
+.var-l, .var-r {background:#f9f9f9; display:block; text-align:center; padding:2px 0px; position:absolute; width:18px; top:4px}
+.var-l {left:11px; _left:-16px; width:16px;}
+.var-r {right:11px; _right:12px;}
+.var-l img, .var-r img {width:8px; height:7px; background:#888 url(http://img.ultimate-guitar.com/img/diag_sprite.gif); border:none}
+.var-l img {background-position:0px -54px}
+.var-r img {background-position:0px -61px}
+.var-l:hover img, .var-r:hover img {background-color:#ff4200}
+.strings {position:absolute; right:8px; top:2px}
+.x-str, .o-str, .oo-str {background:url(http://img.ultimate-guitar.com/img/diag_sprite.gif); width:5px; height:5px; margin-bottom:6px; font-size:1px}
+.x-str {background-position:-9px -10px}
+.o-str {background-position:-9px 0px}
+.oo-str {background-position:-9px -5px}
+.diag_head {background:#d9e8e8; padding:3px 3px 2px 3px; width:102px; cursor:move}
+.diag_head a {width:5px; height:5px; background:url(http://img.ultimate-guitar.com/img/diag_sprite.gif) -9px -15px; float:right; font-size:1px!important}
+.tabcomp:hover {text-decoration:none!important}
+
+.searchsel2 {border:1px solid #777; background:#000; padding:1px; zoom:1; position:relative; width:120px}
+.selwin2 {position:absolute; background:#262626; top:26px; width:120px; //width:116px; border:solid #000; border-width:0px 1px 1px 1px; left:0px; z-index:10000; padding:0px; margin:0px}
+.selwin2 li {font:bold 11px Arial; display:block; padding:5px; text-transform:uppercase; color:#888; margin:0px}
+.selwin2 li:hover {text-decoration:none; background:#333; color:#ccc; cursor:pointer}
+.selwin2 b {display:block; font-size:1px; line-height:1px; background:#4d4d4d}
+.varctrl {position:relative; text-align:center; padding:3px 0px 7px 0px; font-size:10px; color:#888}
+.fretnum {padding:3px 0px 0px 15px; color:#c0c0c0;}
+
+.searchsel {border:1px solid #777; background:#000; padding:1px; zoom:1; position:relative; width:120px; z-index: 250000; }
+.selcurr {background:url(http://img.ultimate-guitar.com/img/sbg.png); padding:3px 5px; font:bold 13px Trebuchet MS; cursor: pointer;}
+.selcurr img {float:right; margin-top:4px; border:none}
+.selwin {display:none; z-index: 250000; position:absolute; background:#262626; top:26px; width:122px; //width:122px; border:#777 solid; border-width:0px 1px 1px 1px; left:-1px; top:25px; z-index:1000000}
+.selwin a {font:bold 11px Arial; display:block; padding:5px; text-transform:uppercase; color:#888}
+.selwin a:hover {text-decoration:none; background:#333; color:#ccc}
+.selwin b {display:block; font-size:1px; line-height:1px; background:#4d4d4d}
+.searchinp {border:solid #777; border-width:1px 1px 1px 0px; background:#000; padding:4px; //padding:3px 4px; width:352px; //width:330px}
+.searchinp input {background:#000; border:none; margin:0px; padding:0px; font:bold 13px Trebuchet MS; color:#ddddcc; width:100%}
+.searchbut {border:solid #777; border-width:1px 1px 1px 0px; background:#000; padding:1px}
+.searchbut input {background:url(http://img.ultimate-guitar.com/img/sbg.png) repeat-x; border:none; color:#888; font:bold 13px Trebuchet MS; height:24px; width:70px}
+
+.scrollhint {color: #999!important; font-weight: normal; text-align: left; position:absolute; background:#fff; border:1px solid #ccc; padding:10px; width:150px; left:-180px; font-size:11px; bottom:-20px; display: none}
+.scropac {width:75px; height:180px; position:absolute; left:1px; top:41px; background:#c9e2e2; opacity:0.6; filter:alpha(opacity=60)}
+.helptrig:hover .scrollhint{display: block;}
+.helptrig {position: relative; color:#82adac; display: block; text-align: center;}
+
+
+#staticTipLayer {position: absolute; z-index: 10000; visibility: hidden;}
+.main_div {margin:0px auto; border-left: 3px solid #000; border-right: 3px solid #000; width: 970px;}
+#transparent_area_for_scroll {background:#fff; padding:6px; zoom:1;}
+.cnt_rate {float: left; padding-left: 5px; margin-top: 3px; font-size: 11px}
+#mv b{border-bottom:dashed 1px #b5b5b5; padding:2px; cursor:pointer}
+#more_ver {width: 100%; background:#f5f5f5; display: none;}
+#pos_relative {z-index: 200000; position: relative; background:#dcdcdc url(http://img.ultimate-guitar.com/img/bgd_2.gif) repeat-x; margin-top:2px;margin-bottom:2px}
+.divpos {width: 950px; border:1px solid #d9d9d9; position:absolute; top:33px;}
+.crdtbl {width:100%; background:url(http://img.ultimate-guitar.com/img/bgd_1.gif) repeat-x; margin-top:4px}
+#drop {position: absolute; width: 150px; height: 100px;}
+#whole_scroll {position:relative; z-index: 100000}
+#speed {background:url(http://img.ultimate-guitar.com/img/speed.png); width:22px; height:71px; cursor:pointer}
+#speed_d {background:url(http://img.ultimate-guitar.com/img/speed.png) -22px 0px; height: 0px; line-height: 0px;}
+#arr_scroll {width:20px; height:37px; background:url(http://img.ultimate-guitar.com/img/arr.gif) 0px -40px; display:block; cursor:pointer}
+.leftrowtbl {width:100%; background:#fff; margin-top:4px;}
+#d1 {border:1px solid #ddd; background:#f9f9f9; padding:8px; color:#555}
+#chords_list {display: none; margin-bottom: 10px; overflow: auto}
+.links {border:1px solid #ddd; background:#f9f9f9; padding:8px; margin-top:12px; color:#a7ca94}
+.tabinfo {border-bottom:solid 2px #e2e2e2; padding-bottom:10px; line-height:18px}
+#cont pre {color:black; font:12px Courier New, Courier, monospace}
+.headtbl {width:970px; background:#000; margin:0px auto;}
+.mp0 {margin:0px; padding:0px;}
+.searchadv {padding:0px 30px 0px 10px; vertical-align:top; padding-top:14px}
+.headstr {border-top:4px solid #0D2332;font-size:10px;font-weight:bold;padding:4px;color:#608EB0;//padding: 0px 4px;height: 24px;}
+.alpha_b13, .alpha_b13:hover {color:#ffc600; font:bold 13px Trebuchet MS}
+.tdsubmit {font:bold 9px Verdana; color:#666; padding-left:30px; line-height:18px}
+.notebox {border:1px solid #ddd; background:#f9f9f9; padding:8px; color:#555; width:318px; margin:10px 0px 10px 0px}
+.textversbox {padding:8px 8px 9px 8px; border:1px solid #ccc; margin-top:10px; text-align:center; width:318px}
+.textvervideobox {padding:10px; border:1px solid #ccc; margin-top:10px; text-align:center; width:405px}
+.mnu {font:bold 12px Trebuchet MS;padding:5px}
+.alphadiv {clear:both; padding-top:5px}
+.loadmsg {width:100%;text-align:center;padding-top:10px; color:#555}
+.padwid {padding-left:10px!important; width:400px;}
+.headh {font:bold 22px Trebuchet MS; color:#555;}
+.tdsug { width:216px; vertical-align:top}
+.foot {width:970px; background:#2D2D2D; margin:0px auto}
+.bord_lr_3 {border-left: 3px solid #000;border-right: 3px solid #000;}
+.com_area{border: 1px solid red; padding: 0px 3px;}

@@ -1,0 +1,115 @@
+#----------------------------------PLEASE NOTE---------------------------------#
+#This file is the author's own work and represents their interpretation of the #
+#song. You may only use this file for private study, scholarship, or research. #
+#------------------------------------------------------------------------------#
+#
+Date: Sat, 27 Jan 1996 18:38:38 -0600
+From: gregh@baraboo.com (Greg Halvorson)
+Subject: TAB: Phantom Lord by Metallica (update)
+
+                                  Phantom Lord
+                                  By Metallica
+
+
+    I've included as much of this song as I know. This is the second posting of
+this (the 1st update). In this update I've added the intro, the part after the
+acoustic (non-distorted) part, and a lot of comments and and stuff on how to
+make what isa tabbed sound better. And as always...have fun.
+
+Tabbed by Paul Halvorson
+
+Intro after fading in Bass.                                                    
+||-----------------------------------------------------------------------------
+||-----------------------------------------------------------------------------
+||-2-----2--2-----2--2--2-----2--2-----2-----4-----4--4-----4--4--4-----4--4---
+||-2-----2--2-----2--2--2-----2--2-----2-----4-----4--4-----4--4--4-----4--4---
+||-0-----0--0-----0--0--0-----0--0-----0-----2-----2--2-----2--2--2-----2--2---
+||-----------------------------------------------------------------------------
+                                                                               
+
+ Main Riff. This is played all throughout the song, including right after the
+ intro and between verses.
+||------------------------|---------------------||
+||------------------------|---------------------||
+||*-----------------7--9--|--------------------*||
+||*--7--9--9--9--9--5--7--|--7--9--9--9--9--7--*||
+||---5--7--7--7--7--------|--5--7--7--7--7--5---||
+||------------------------|---------------------||
+                                                                               
+
+   This part is played after the non-distorted part in the middle
+||-----------------------------------------------------------------||
+||-----------------------------------------------------------------||
+||*---------------------------------------------------------------*||
+||*---2-----2--2--2-----5--5--5--5-----4--4--4--4-----3--3--3--3--*||
+||----2-----2--2--2-----5--5--5--5-----4--4--4--4-----3--3--3--3---||
+||----0-----0--0--0-----3--3--3--3-----2--2--2--2-----1--1--1--1---||
+            \___________Extremely_Heavy_Palm_Muting!___________/
+
+  This is played after repeating the above line the 4th time.
+||------------------||
+||------------------||
+||------------------||
+||---2--2--2--2--2--||
+||---2--2--2--2--2--||
+||---0--0--0--0--0--||
+                                                                               
+
+
+
+Other works I've done include:
+
+    The Shortest Straw  ---\
+    Eye of the Beholder     \
+    Hit the Lights           \
+    Damage, Inc.              >  Metallica
+    Metal Militia            /
+    Sucking My Love         /
+    Green Hell          ---/
+    Death or Glory      - Holocost
+    Witchfinder General - Witchfinder General
+    Sucking my Love     - Diamond Head (same tab as the Metallica one)
+
+  ...And there will be more on the way.
+
+
+                                          --- Paul
+
+===============================================================================
+==                           TABLATURE EXPLANATION                           ==
+===============================================================================
+
+----------                            ----------
+----5h8--- Hammeron                   ----(8)--- Ghost Note
+----------                            ----------
+----5p8--- Pulloff                    ----------
+
+----------                            ----------
+----5/8--- Slide Up                   -----x---- Dead Note
+----------                            ----------
+----5\8--- Slide Down                 ----------
+
+----------                            ||------|| Repeat Start & End
+----5~~~-- Vibrato                    ||*----*||
+----------                            ||*----*||
+----------                            ||------||
+
+Rhythm:
+  w = whole note            W = dotted whole
+  h = half note             H = dotted half
+  q = quarter note          Q = dotted quarter
+  e = eighth note           E = dotted eighth
+  s = sixteenth note        S = dotted sixteenth
+  ^ = triplet
+
+===============================================================================
+==           Created with a shareware version of the BUCKET 'O TAB           ==
+==                  tablature creation software for Windows                  ==
+==                           For more information:                           ==
+==                         email: gse@ocsystems.com                          ==
+==     US Mail: The Bucket, 3176-B5 Summit Square Dr., Oakton, VA 22124      ==
+===============================================================================
+   
+
+
+

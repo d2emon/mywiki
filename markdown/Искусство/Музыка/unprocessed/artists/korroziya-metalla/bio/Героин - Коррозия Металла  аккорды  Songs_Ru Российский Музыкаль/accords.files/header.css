@@ -1,0 +1,60 @@
+.left {
+	PADDING-LEFT: 20px; FLOAT: left
+}
+.right {
+	PADDING-RIGHT: 20px; FLOAT: right
+}
+#header {
+	BORDER-TOP: #454444 1px solid; FONT-WEIGHT: bold; FONT-SIZE: 7pt; BORDER-LEFT-COLOR: #454444; LEFT: 0px; WORD-SPACING: 6px; WIDTH: 100%; COLOR: white; PADDING-TOP: 2px; BORDER-BOTTOM: #454444 1px solid; FONT-FAMILY: "Tahoma"; POSITION: absolute; TOP: 0px; HEIGHT: 15px; BACKGROUND-COLOR: #f6a500; BORDER-RIGHT-COLOR: #454444; min-width: 790px
+}
+#logo {
+	BORDER-TOP: #888888 4px solid; FONT-WEIGHT: bold; FONT-SIZE: 7pt; BORDER-LEFT-COLOR: #888888; LEFT: 0px; PADDING-BOTTOM: 4px; OVERFLOW: hidden; WIDTH: 100%; PADDING-TOP: 4px; BORDER-BOTTOM: #888888 4px solid; FONT-FAMILY: "Tahoma"; POSITION: absolute; TOP: 19px; HEIGHT: 82px; BORDER-RIGHT-COLOR: #888888; min-width: 790px
+}
+#banner {
+	PADDING-RIGHT: 5%; PADDING-TOP: 15px
+}
+#alph {
+	PADDING-RIGHT: 0px; BORDER-TOP: #454444 1px solid; PADDING-LEFT: 0px; FONT-WEIGHT: bold; BORDER-LEFT-COLOR: #454444; LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 1px 1px 0px 0px; WIDTH: 100%; COLOR: white; PADDING-TOP: 2px; BORDER-BOTTOM: #454444 1px solid; POSITION: absolute; TOP: 117px; HEIGHT: 17px; BACKGROUND-COLOR: #f6a500; BORDER-RIGHT-COLOR: #454444; min-width: 790px
+}
+#alph A {
+	COLOR: white
+}
+#search {
+	BORDER-TOP: #a6a6a6 1px solid; MARGIN-TOP: 1px; FONT-WEIGHT: bold; BORDER-LEFT-COLOR: #a6a6a6; LEFT: 0px; MARGIN-BOTTOM: 1px; WIDTH: 100%; COLOR: #404040; BORDER-BOTTOM: #a6a6a6 1px solid; POSITION: absolute; TOP: 139px; HEIGHT: 38px; BACKGROUND-COLOR: #eeeeee; BORDER-RIGHT-COLOR: #a6a6a6; min-width: 790px
+}
+.sminput {
+	FONT-SIZE: 8pt; MARGIN-RIGHT: 5px; FONT-FAMILY: "Tahoma"; BACKGROUND-COLOR: white
+}
+UNKNOWN {
+	FLOAT: left; TEXT-ALIGN: left
+}
+#searchs {
+	PADDING-TOP: 8px
+}
+#authorize {
+	PADDING-RIGHT: 20px; DISPLAY: inline; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 4px
+}
+.button {
+	BORDER-RIGHT: 0px; PADDING-RIGHT: 1px; BORDER-TOP: 0px; PADDING-LEFT: 1px; FONT-WEIGHT: bold; FONT-SIZE: 8pt; MARGIN-BOTTOM: 1px; MARGIN-LEFT: 4px; BORDER-LEFT: 0px; COLOR: white; BORDER-BOTTOM: 0px; FONT-FAMILY: "Tahoma"; HEIGHT: 12pt; BACKGROUND-COLOR: #f6a500
+}
+.smtext {
+	FONT-WEIGHT: 100; FONT-SIZE: 7pt; COLOR: #f6a500; FONT-FAMILY: "Tahoma"; TEXT-DECORATION: none
+}
+A {
+	TEXT-DECORATION: none
+}
+A {
+	WORD-SPACING: normal
+}
+A {
+	COLOR: #f6a500
+}
+#header A {
+	COLOR: white
+}
+A:hover {
+	TEXT-DECORATION: underline
+}
+#main {
+	POSITION: absolute; TOP: 183px
+}

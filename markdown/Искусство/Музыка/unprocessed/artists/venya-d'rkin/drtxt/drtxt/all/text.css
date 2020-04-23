@@ -1,0 +1,27 @@
+@import url("index.css");
+body {background-color: #fffff0;
+	font-family: Verdana, Arial, Helvetica, sans-serif;	font-size: x-small;line-height: 20px; color: #333333;
+	width: 90%;	margin-left: 80px;	margin-right: 80px;}
+.A {COLOR: #003399;	TEXT-DECORATION: none;	font-size: 11px;}
+A {	COLOR: #003366;	TEXT-DECORATION: none;	font-size: 12px;}
+A:hover {
+	COLOR: #0066ff;
+	TEXT-DECORATION: underline;
+	font-size: 12px;
+}
+.pripev {background-color: #fffff0;
+	font-family: Verdana, Arial, Helvetica, sans-serif;font-size: x-small;line-height: 20px; color: #333333;
+	width: 90%; margin-left: 21px;}
+.date {COLOR: #666666;	FONT-FAMILY: Arial, Helvetica, sans-serif;	FONT-SIZE: 11px;
+	text-align: right;	letter-spacing: 2px;}
+.songtitle {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 22px;
+	color: #666666;
+	background-color: #E7EEE3;
+	line-height: 24px;
+}
+.epigraph {text-align:right; font-family:tahoma}
+.foot {
+	background-color: #E7EEE3;
+}

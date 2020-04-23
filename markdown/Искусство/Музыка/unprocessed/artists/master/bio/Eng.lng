@@ -1,0 +1,229 @@
+[Main]
+Version=1
+MinRMGVersion=1.0.0.2
+Language=English
+LanguageRus=Английский
+Russian=Russian
+Charset=238
+
+[MainMsg]
+Cancel=&Cancel
+Warning=Warning
+Error=Error
+
+[MainButtons]	
+PlayAll=Play all (CTRL + 1)
+PlayFolder=Play album/group (CTRL + 2)
+PlayChecked=Play checked (CTRL + 3)
+PlayFavorit=Play favorites (CTRL + 4)
+PlayDemo=On/Off demomode
+ExpandTree=Expand/collapse all (CTRL+ ARROW DOWN / CTRL + ARROW UP)
+Find=Find
+OnlyWinamp=Close everything except Winamp
+ShowWA=Show/Hide Winamp
+ShowInfo=Show/Hide information 
+SetMode=Show/Hide favorites
+AddFav=Add to favorites (CTRL+ARROW RIGHT)
+RemoveFav=Remove from favorites (DEL / CTRL+ARROW LEFT)
+ClearFav=Clear favorites (CTRL+DEL)
+MyFavorites=Favorites
+
+[MainMenu]
+Start=&Start
+All=&All
+Disk=&Disk
+Checked=&Checked
+Favorit=&Favorites
+Demo=De&mo mode
+View=&View
+OnlyWinamp=&Close everything except Winamp
+ExpTree=&Expand/collapse all
+Show=&Show
+ShowWinamp=&Winamp
+ShowInfo=&Information
+MyFavorit=My &favorites
+ControlPanel=&Control panel
+Service=&Tools
+Find=&Find
+Help=&Help
+PlayAll=Play &all
+PlayFolder=Play album/&group
+PlayChecked=Play &checked
+PlayFavorit=Play &favorites
+Info=&Information
+PlayWithCurPos=Play from &current position
+SelectLanguage=Select &language
+SelectVP=Select &video player
+SelectFont=Select &font
+PrintListDisk=&Print CD content
+SaveAs=&Save as ...
+Update=&Update RMG
+Texts=Texts
+
+[Other]
+SystemMenuAbout=About
+SelectFoldersWithRMGMusic=Select directory with musical MP3 disk
+NoText=No text
+
+[Messages]
+Delete=Delete
+Rename=Rename
+WinampNotInstalled=Winamp is not installed!
+InstallWinamp=Install Winamp
+DoYouInstallWinamp=Winamp will install now
+WinampInstallerDontRun=Winamp installer doesn't run! 
+WinampNotDetected=WinAmp wanted! (For example it can be installed from our disk folder Player)
+QDeleteSelectFiles=Do you really want to delete selected files? 
+ErrorDeleteFile=Error in file deletion!
+QDeleteFavorites=Do you really want to clear "My favorites"?
+LowDiskSpaceForCopyFile=Not enough space on disk for coping file!
+ErrorCopyFile=Error in file copying
+QuestionDelete=Do you really want to delete this?
+InFutureYouWorkOnlyWinamp=Further you will work with WinAmp only!
+ErrorLoadDisk=Error in disk loading
+YourVersionIsOld=Your AMP version is probably obsolete. Run install.exe file from this disk to update AMP.
+HelpNotFound=Help file is not found! You are advised to reinstall RMG Musical Player
+UpdAMPForLngSup=Please, update your version RMG Musical Player
+MWaitWhileInstWA=Winamp is installing. Please wait...
+Yes=Yes
+No=No
+Retry=Retry
+Ignore=Ignore
+Abort=Abort
+DiskNotFound=Musical disk is not found!
+Browse=Browse
+LoadingRMG=RMG Player is loading. Please wait...
+DntAVIPlayer=AVI player is not found!
+UseDefault=Use by default
+FileNotFound=File not found
+
+[Pages]
+TextPage=&Texts
+SlidePage=&Slides
+VideoPage=&Videos
+Caption=Information
+
+[ExtPages]
+Помощь=&Help
+Анонс=&Announcement
+Биография=&Biography
+Дискография=&Discography
+Информация=&Information
+Хронология=&Chronicle
+Интервью=&Interview
+Статьи=&Articles
+
+[SlidePage]
+PreviousBtn=Previous picture (Page Up)
+NextBtn=Next Picture (Page Down)
+OnOffSlideModeBtn=Switch on/off auto mode (PAUSE)
+EnableRandomMode=Switch on random mode (ALT-R)
+StepByStepMode=Switch on step-by-step mode (ALP-P)
+PressDblClickForSelBGColor=Double click for change background color
+DelayBetweenPicture=Delay (ALT-D)
+RandomBtn=Random
+SequentiallyBtn=Sequentially
+AutoBtn=Auto
+DelayBtn=Delay
+
+[VideoPage]
+PreviousBtn=Previous movie
+PlayBtn=Play
+PauseBtn=Pause
+StopBtn=Stop
+NextBtn=Next movie
+FullScreenBtn=Maximize/minimize size
+MenuBtn=Menu
+
+[HTMLBtn]
+BackBtn=B A C K W A R D
+NextBtn=F O R W A R D
+ViewInBrowserBtn=View in browser
+
+[PrintList]
+Left=Left
+Right=Right
+Top=Top
+Bottom=Bottom
+Offsets=Offsets
+ColOnPage=Columns on page
+ColOnPageOneCol=One column
+ColOnPageCurCol=Exactly
+ColInPageMaxCol=Max columns
+IntervalBetweenColumns=Interval between columns
+FontSelect=Font selection
+Automatic=Automatic
+Extended=Extended
+Numeration=Numeration
+NumerationThrough=Fly-by numeration
+NumerationStep=Stair-step numeration
+ToPrint=To print
+All=All
+Select=Select
+ExtendedOption=Extra options
+SortAlpha=Dictionary sort
+AddNameAlbum=Add names of albums
+AlbumCaption=Albums
+ToFileBtn=Print to file
+PrintBtn=Print
+FontBtn=Font
+Caption=Print content
+Header=Header
+CompositionBtn=Composition
+Close=Close
+MVMCol1=Impossible to place the text on the page into
+MVMCol2=columns! Change indents, fonts or the number of columns.
+MVCapt=Print error
+
+
+[Find]
+ToFind=Find
+Find=Find
+InList=in the list
+InTexts=in texts
+InNameFolder=Find in folders' names
+Frag=Find fragment
+Cel=Find everything
+Next=Find next
+Cancel=Close
+Caption=Find
+NotSearch=Search string not found
+OnlyOne=More string not found 
+
+[SelectCD]
+SelectCD=Choose CD ROM you need
+Caption=CD choice
+
+[Info]
+Caption=Information
+Title=Title
+Artist=Artist
+Album=Album
+Year=Year
+Comment=Comment
+Genre=Genre
+Composer=Composers
+Close=&Close
+
+[About]
+Memory=Physical memory available to Windows
+FreeMem=Free physycal memory
+Caption=About
+       
+[Update]
+Update=Update
+PlWBUF=Please wait until updates are found.
+DYWDSFile=Do you really refuse to save this file?
+GetError=Error in recieving the file!
+UNF=You have the latest RMG Musical Player version. No need to update.
+LnkNF=Requested file is absent or not available!
+DDBIns=Delete the distributiv after installation
+Recvd=Received
+LeftTime=Left
+Time=Passed
+NI=No internet connection!
+AQ=Do you really want to interrupt updating?
+UA=Updating was interrupted!
+OS=Do you want to visit our site?
+UC=Update is completed!
+YHLU=Last version of RMG Musical Player is already on your drive! No need to update.

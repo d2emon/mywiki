@@ -1,0 +1,152 @@
+body {
+	background-color: #e5e5e5;
+}
+font { font-family: Arial, Verdana, Helvetica, sans-serif;font-size:80%;}
+font.qle {font-family: Arial, Verdana, Helvetica, sans-serif;font-size:50%;}
+b {font-family: Arial,Verdana,Times New Roman;font-size:95%;}
+strong {font-family: Verdana,Times New Roman;font-size:150%;}
+h1 {font-family: Verdana,Times New Roman;font-size:110%;padding:0px;}
+h2 {font-family: Arial,Verdana,Times New Roman;font-size:90%;}
+a:hover {color:#000000;text-decoration:none;}
+a {color:#000000;}
+.stext { COLOR: #909090; FONT-FAMILY: Arial, Verdana, Helvetica, sans-serif; FONT-SIZE: 9px; MARGIN-LEFT: 0.2em; MARGIN-RIGHT: 0.2em }
+.l {font-family: Arial,Verdana,Times New Roman;font-size:75%;}
+.l2 {font-family: Arial,Verdana,Times New Roman;font-size:95%;}
+.blue {
+	color: blue;
+}
+.clyrics {
+	color: #6495ED;
+}
+.cchords {
+	color: #ED7965;
+}
+.ctabs {
+	color: #7865ED;
+}
+.ctxt {
+	color: #6495ED;
+}
+.ccrd {
+	color: #ED7965;
+}
+.ctab {
+	color: #7865ED;
+}
+.chatMsg {
+	font-family: Arial, Verdana, Helvetica, sans-serif;font-size:80%;
+	color: #7865ED;
+}
+.chatDate {
+	font-family: Arial, Verdana, Helvetica, sans-serif;font-size:80%;
+}
+input.search {
+	height:20px;
+	color:black;
+	background-color:#eeeeee;
+	border:1px solid #000000;
+	vertical-align : bottom;
+}
+select.search {
+	height:18px;
+	color:black;
+	background-color:#eeeeee;
+	border:1px solid #000000;
+	vertical-align : bottom;
+}
+div {
+	background-color: #d5d5d5;
+	padding:1px;
+	border: 1px solid #98AAB1;
+}
+div.null {
+	padding:0px;
+}
+div.text {
+	background-color: #e5e5e5;
+	padding:4px;
+	border: 1px solid #98AAB1;
+	margin: 2px 0px 2px 0px;
+	vertical-align: top;
+	height: auto;
+	text-align: left;
+}
+div.zag {
+	background-color: #d5d5d5;
+	padding-left:10px;
+	border:0px;
+	text-align: left;
+}
+div.wzag {
+	background-color: #ffffff;
+	padding-left: 20px;
+	border:0px;
+	display: block;
+	text-align: right;
+}
+div.instSMS {
+	font-family: Arial, Verdana, Helvetica, sans-serif;font-size:80%;
+}
+
+tr.main {
+	font-size: 9pt;
+}
+td.m1 {
+	padding-left:10px;
+}
+td.m2 {
+	text-align: center;
+}
+td.m3 {
+	text-align: center;
+}
+tr.top1 {
+	background-color:#e5e5e5;
+}
+tr.top2 {
+	background-color:#e0e0e0;
+}
+td.top01 {
+	text-align:center;
+	width: 5%;
+	font: bold 90% Arial, Verdana, Helvetica, sans-serif;
+}
+td.top02 {
+	text-align:center;
+	width: 5%;
+	font: bold 90% Arial, Verdana, Helvetica, sans-serif;
+	color: Green;
+}
+td.top03 {
+	text-align:center;
+	width: 5%;
+	font: bold 90% Arial, Verdana, Helvetica, sans-serif;
+	color: Blue;
+}
+td.top04 {
+	text-align:center;
+	width: 5%;
+	font: bold 90% Arial, Verdana, Helvetica, sans-serif;
+	color: Red;
+}
+td.top1 {
+	text-align:right;
+	padding-right: 10px;
+	width: 35%;
+	font: bold 75% Arial, Verdana, Helvetica, sans-serif;
+}
+td.top2 {
+	text-align:left;
+	padding-left: 10px;
+	width: 60%;
+	font: bold 75% Arial, Verdana, Helvetica, sans-serif;
+}
+textarea.add {
+	color:black;
+	background-color:#eeeeee;
+	border:1px solid #000000;
+}
+pre { white-space: -pre-wrap;
+    /* Расширение CSS для браузера Opera */
+      white-space: pre-wrap;
+    /* Дополнение для CSS 2.1 */}

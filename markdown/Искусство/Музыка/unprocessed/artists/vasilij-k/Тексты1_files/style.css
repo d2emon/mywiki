@@ -1,0 +1,176 @@
+td {
+font-family: Verdana, GENEVA, ARIAL, HELVETICA, SANS-SERIF;
+font-weight: bold;
+font-size: 10pt;
+color: #ffffff;  
+}
+
+BODY {
+padding-top: 0px;
+margin: 0px;
+font-family: Verdana, GENEVA, ARIAL, HELVETICA, SANS-SERIF;
+font-weight: bold;
+font-size: 10pt;
+color: #ffffff;
+BackGround-color: #000000;
+scrollbar-base-color: #000000; scrollbar-arrow-color: #FFFFFF;
+}
+.L {
+Margin-right: 3%;
+margin-top: 2%;
+margin-bottom: 1%;
+Float: left;
+BORDER: 0PX;
+
+}
+.R {
+Margin-left: 3%;
+margin-top: 2%;
+margin-bottom: 1%;
+Float: right;
+BORDER: 0PX;
+
+}
+A {
+Font-Family: Verdana, GENEVA, ARIAL, HELVETICA, SANS-SERIF;
+Font-weight: bold; Font-size: 10pt;
+Text-decoration: none;
+color: #9D9DFF;
+}
+A:Hover {
+Font-Family: Verdana, GENEVA, ARIAL, HELVETICA, SANS-SERIF;
+Font-weight: bold; Font-size: 10pt;
+Text-decoration: underline;
+color: #9D9DFF;
+}
+a.side {
+   color: #9D9DFF;
+   text-decoration: none;
+   font-size: 10px;
+   font-weight: bold;
+}
+a:hover.side {
+   color: #9D9DFF;
+   text-decoration: none;
+   font-size: 10px;
+   font-weight: bold;
+}
+H1 {
+Font-Family: Verdana, GENEVA, ARIAL, HELVETICA, SANS-SERIF;
+Font-weight: bold; Font-size: 12pt;
+Letter-spacing: 0.2em;
+color: WHITE;
+}
+h2 {
+Font-Family: Verdana, GENEVA, ARIAL, HELVETICA, SANS-SERIF;
+font-size: 10px;
+Text-align: center;
+BACKGROUND:#191970;
+
+}
+h3 {
+Font-Family: Verdana, GENEVA, ARIAL, HELVETICA, SANS-SERIF;
+Font-size: 20px;
+Text-align: center;
+}
+h4 {
+Font-Family: Verdana, GENEVA, ARIAL, HELVETICA, SANS-SERIF;
+Font-weight: bold; Font-size: 14px;
+color: #AE0000;
+}
+hr {
+Text-align: center;
+color: #9D9DFF;
+Height: 1px; Width: 100%;
+}
+#level0 {
+background: #00014C;
+width: 90%;
+padding: 20px;
+Font-Family: Verdana, GENEVA, ARIAL, HELVETICA, SANS-SERIF;
+Font-weight: bold; Font-size: 10pt;
+Word-spacing: 2px;
+Text-align: justify;
+color: WHITE;
+}
+a.sub {
+   color: #FFFFFF;
+   text-decoration: underline;
+   font-size: 12px;
+   font-weight: bold;
+}
+a:hover.sub {
+   color: #FFFFFF;
+   text-decoration: none;
+   font-size: 12px;
+   font-weight: bold;
+}
+#level1 {
+background: #00014C;
+width: 90%;
+padding: 5px;
+Font-Family: Verdana, GENEVA, ARIAL, HELVETICA, SANS-SERIF;
+Font-weight: bold; Font-size: 10pt;
+Word-spacing: 2px;
+Text-align: justify;
+color: WHITE;
+}
+#level2 {
+background: #00014C;
+width: 465px;
+padding: 5px;
+Font-Family: Verdana, GENEVA, ARIAL, HELVETICA, SANS-SERIF;
+Font-weight: bold; Font-size: 10pt;
+Word-spacing: 2px;
+Text-align: justify;
+color: WHITE;
+}
+.extro {
+Font-Family: Verdana, GENEVA, ARIAL, HELVETICA, SANS-SERIF;
+color: Red;
+
+}
+.turbo {
+     background-color: #191970;
+     padding-left: 15px;
+     color: White;
+     background-image: url(goto.gif);
+     background-repeat: no-repeat;
+     background-position: left;
+}
+.podpis {
+text-align: right;
+
+}
+
+table.news {
+Font-Family: Verdana, GENEVA, ARIAL, HELVETICA, SANS-SERIF;
+Font-weight: bold; Font-size: 10pt;
+Text-align: justify;
+color: WHITE;
+Width: 60%;
+}
+table.textnews {
+width: 65%;
+Font-Family: Verdana, GENEVA, ARIAL, HELVETICA, SANS-SERIF;
+text-align: justify;
+color: #ffffff;
+font-size: 10pt;
+
+}
+table.txt {
+Font-Family: Verdana, GENEVA, ARIAL, HELVETICA, SANS-SERIF;
+Font-weight: bold; Font-size: 10pt;
+Word-spacing: 2px;
+Text-align: justify;
+color: WHITE;
+Width: 97%;
+}
+table.txt2 {
+Font-Family: Verdana, GENEVA, ARIAL, HELVETICA, SANS-SERIF;
+Font-weight: bold; Font-size: 10pt;
+Word-spacing: 2px;
+Text-align: justify;
+color: WHITE;
+Width: 90%;
+}

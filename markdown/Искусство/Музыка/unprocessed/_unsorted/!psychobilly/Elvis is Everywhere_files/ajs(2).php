@@ -1,0 +1,3 @@
+var MAX_8a845f83 = '';
+MAX_8a845f83 += "<"+"script type=\"text/javascript\" language=\"javascript\" src=\"http://www.kqzyfj.com/placeholder-2393434?target=_top&mouseover=N\"><"+"/script><"+"div id=\'beacon_352\' style=\'position: absolute; left: 0px; top: 0px; visibility: hidden;\'><"+"img src=\'http://lists.loadout.com/Openads/www/delivery/lg.php?bannerid=352&amp;campaignid=69&amp;zoneid=24&amp;loc=http%3A%2F%2Fwww.mojonixon.com%2Flyrics%2Felvisiseverywhere.html&amp;referer=http%3A%2F%2Fwww.mojonixon.com%2Flyrics%2Findex.html&amp;cb=7a076e196d\' width=\'0\' height=\'0\' alt=\'\' style=\'width: 0px; height: 0px;\' /><"+"/div><"+"script type=\'text/javascript\'>document.context=\'YTowOnt9\'; <"+"/script>\n";
+document.write(MAX_8a845f83);

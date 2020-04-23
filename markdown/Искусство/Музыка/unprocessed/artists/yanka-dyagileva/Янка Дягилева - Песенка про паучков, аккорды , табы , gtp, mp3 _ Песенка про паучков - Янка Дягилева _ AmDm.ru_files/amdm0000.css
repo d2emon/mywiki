@@ -1,0 +1,67 @@
+BODY {margin: 0px;padding: 0px;FONT-FAMILY: Tahoma, Verdana, Geneva, sans-serif;COLOR: #333333;FONT-SIZE: 9pt;
+
+
+scrollbar-3dlight-color : #cccccc; scrollbar-arrow-color : #000000; scrollbar-base-color : #cccccc; scrollbar-darkshadow-color : #2f4f4f; scrollbar-face-color : #cccccc; scrollbar-highlight-color : #cccccc; scrollbar-shadow-color : #cccccc; scrollbar-track-color : #ededed;
+} 
+
+
+TD {FONT-SIZE: 8pt;}
+
+A {COLOR: #333333; TEXT-DECORATION: none}
+A:hover {color: #045084;TEXT-DECORATION: underline}
+
+
+.text, .text TD {font-size: 8pt; line-height: 150%;font-family: Tahoma,verdana,arial,times;color='000000'; text-decoration: none;font-style: normal}
+
+.text A {COLOR: #269D0E; TEXT-DECORATION: underline}
+.text A:hover {color: #333333;TEXT-DECORATION: none}
+
+
+.link1 {COLOR: #1D699D}
+.link1 A {COLOR: #1D699D; TEXT-DECORATION: underline}
+.link1 A:hover {color: #333333;TEXT-DECORATION: none}
+
+
+.link2 {COLOR: #333333}
+.link2 A {COLOR: #1D699D; TEXT-DECORATION: none}
+.link2 A:hover {color: #333333;TEXT-DECORATION: underline}
+
+
+
+
+.link3 {font-size: 8pt;COLOR: #434951}
+.link3 A {COLOR: #1E1E1E; TEXT-DECORATION: none}
+.link3 A:hover {color: #333333;TEXT-DECORATION: underline}
+
+
+.forma1{font-size: 7pt;border: 1px solid #CCCCCC;white-space:normal; font-family: Courier, Courier New, Verdana, Arial; } 
+.forma2{font-size: 8pt;border: 1px solid #5D6773;}
+.searchsubmit{font-size: 8pt;BORDER:  1px inset #5D6773;BACKGROUND-COLOR: #7C8CA2}
+
+.light {BACKGROUND-COLOR: #FFFFFF}
+.dark {BACKGROUND-COLOR: #F3F3F3}
+
+.next {text-align: center;BACKGROUND-COLOR: #F1F1F1;COLOR: #B8B8B8;border-bottom: 1px solid #DBDBDB;border-left: 1px solid #DBDBDB;border-right: 1px solid #DBDBDB; }
+
+.chords {FONT-SIZE: 7pt;}
+.chords A:link, .chords A:visited{COLOR: #333333;}
+.chords A:hover {COLOR: #ffffff;TEXT-DECORATION: underline;}
+
+.top {text-align: center;BACKGROUND-COLOR: #EDEDED;COLOR: #1D699D;font-weight:bold;border-bottom: 1px solid #DBDBDB};
+.top A {COLOR: #1D699D; TEXT-DECORATION: none}
+.top A:hover {color: #333333;TEXT-DECORATION: underline}
+
+
+.top2 {border: 1px solid #DBDBDB}
+.top2 A {COLOR: #1D699D; TEXT-DECORATION: none}
+.top2 A:hover {color: #333333;TEXT-DECORATION: underline}
+
+h1 {font-size:16pt};
+h5 {color:#2676AC}
+.blue {COLOR: #1D699D;};
+
+
+
+.tableborder { border:1px solid #C9D2E1;background-color:#FFF; padding:0; margin:0 }
+.tableborder2 { font-size: 7pt; border:1px solid #C9D2E1;background-color:#FFF; padding:0; margin:0 }
+.border {border: 1px solid #DBDBDB}

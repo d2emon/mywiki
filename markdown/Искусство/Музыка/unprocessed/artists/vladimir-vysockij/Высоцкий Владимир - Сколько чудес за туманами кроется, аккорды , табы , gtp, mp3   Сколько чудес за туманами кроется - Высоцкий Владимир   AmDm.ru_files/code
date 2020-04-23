@@ -1,0 +1,12 @@
+window.onerror=function(){return true;} 
+var ml_pid='6304';
+var mlnc = 0; 
+var mlpd  = parent.document;
+if (mlpd != document) {
+var mlph = mlpd.getElementById('mlph' + ml_pid);
+var mlnc = mlph?1:0;
+}
+
+if (mlnc) {
+setTimeout('document.close();',1000);
+}

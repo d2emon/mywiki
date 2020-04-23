@@ -1,0 +1,286 @@
+/*
+<pre>
+*/
+
+/* Don't display some stuff on the main page */
+body.page-Заглавная_страница #t-cite,
+body.page-Заглавная_страница #lastmod, 
+body.page-Заглавная_страница #siteSub, 
+body.page-Заглавная_страница #contentSub, 
+body.page-Заглавная_страница h1.firstHeading {
+  display: none !important;
+}
+
+
+/* Donations link to be uncommented during fundraising drives  */
+#siteNotice {
+    margin-top:5px;
+    padding-left: 4px;
+    font-style: italic;
+    text-align: center;
+}
+
+/* #fundraising {
+ text-align: center;
+ border: 1px solid gray;
+ padding: 5px;
+}
+*/
+
+h1.firstHeading {
+  padding-top: .7em;
+}
+
+#p-cactions { width: 80%; }
+    /* patch to prevent vertical stacking of tabs
+    at top of page in IE6 at resolutions of 800x600;
+    this stacking occured in main namespace pages only
+    for sysops, as they have the additional "protect"
+    and "delete" tabs at the top of the page;
+    original width before patch was 76%;
+    this patch prevents stacking in main namespace pages
+    but not in certain special pages,
+    which have tabs that are of greater width --Lowellian */
+
+/****************************/
+/* BEGIN LIGHT BLUE SECTION */
+/****************************/
+/* Make all non-namespace pages have a light blue content area. This is done by
+   setting the background color for all #content areas to light blue and then
+   overriding it for any #content enclosed in a .ns-0 (main namespace). I then
+   do the same for the "tab" background colors. --Lupo */
+
+#content {
+    background: #F8FCFF; /* a light blue */
+}
+
+#content div.thumb {
+    border-color: #F8FCFF;
+}
+
+.ns-0 * #content {
+    background: white;
+}
+
+.ns-100 * #content {
+    background: white;
+}
+
+#mytabs li {
+    background: #F8FCFF;
+}
+
+.ns-0 * #mytabs li {
+    background: white;
+}
+
+.ns-100 * #mytabs li {
+    background: white;
+}
+
+#mytabs li a {
+    background-color: #F8FCFF;
+}
+
+.ns-0 * #mytabs li a {
+    background-color: white;
+}
+
+.ns-100 * #mytabs li a {
+    background-color: white;
+}
+
+#p-cactions li {
+    background: #F8FCFF;
+}
+
+.ns-0 * #p-cactions li {
+    background: white;
+}
+
+.ns-100 * #p-cactions li {
+    background: white;
+}
+
+#p-cactions li a {
+    background-color: #F8FCFF;
+}
+
+.ns-0 * #p-cactions li a {
+    background-color: white;
+}
+
+.ns-100 * #p-cactions li a {
+    background-color: white;
+}
+
+.ns-0 * #content div.thumb {
+    border-color: white;
+}
+
+.ns-100 * #content div.thumb {
+    border-color: white;
+}
+
+/**************************/
+/* END LIGHT BLUE SECTION */
+/**************************/
+
+/* Display "From Wikipedia, the free encyclopedia" */
+#siteSub {
+    display: inline;
+    font-size: 92%;
+    font-weight: normal;
+}
+
+#bodyContent #siteSub a {
+    color: #000;
+    text-decoration: none;
+    background-color: transparent;
+    background-image: none;
+    padding-right: 0;
+}
+
+/* Bold 'edit this page' link to encourage newcomers */
+#ca-edit a { font-weight: bold !important; }
+
+/* Display "User $1, you are already logged in!"
+   ([[MediaWiki:Alreadyloggedin]]) in red and bold */
+div.alreadyloggedin { color: red; font-weight: bold; }
+
+@media print {
+    /* Do not print edit link in templates using Template:Ed
+       Do not print certain classes that shouldn't appear on paper */
+    .editlink, .noprint, .metadata, .dablink { display: none }
+}
+
+/* Style for "notices" */
+.notice {
+    text-align: justify;
+    margin: 1em 0.5em;
+    padding: 0.5em;
+}
+
+#disambig {
+    border-top: 3px double #cccccc; 
+    border-bottom: 3px double #cccccc;
+}
+
+
+/* Accessibility experiment: make diff changes not just colour-based */ 
+
+.diffchange {
+    font-weight: bold;
+    background-color: inherit;
+}
+
+td.diff-addedline, td.diff-deletedline, td.diff-context {
+    font-size: 85%;
+    color: inherit;
+}
+
+/* extra buttons for edit dialog (from bg:)*/
+
+ #my-buttons {
+   padding: 0.5em;
+ }
+ #my-buttons a {
+   color: black;
+   background-color: #ccddee;
+   font-weight: bold;
+   font-size: 0.9em;
+   text-decoration: none;
+   border: thin #006699 outset;
+   padding: 0 0.1em 0.1em 0.1em;
+ }
+ #my-buttons a:hover, #my-buttons a:active {
+   background-color: #bbccdd;
+   border-style: inset;
+ }
+
+/*
+Это нужно чтобы в окошке поиска кнопки не разбивались на 2 строки
+к сожалению в main.css для кнопки Go прописаны паддинги .5em.
+Что хорошо для "Go" плохо для "Перейти" --st0rm
+*/
+#searchGoButton {
+    padding-left: 0em;
+    padding-right: 0em;
+    font-weight: bold;
+}
+
+/* by SergV */
+
+@media print {
+   /* Bug 1583 */
+   .tright {clear: right;}
+   /* рамка вокруг навигационных шаблонов */
+   .toccolours {border: 1px solid #aaa;}
+   /* линия над списком категорий */
+   #catlinks {
+       border-top: 1px solid black;
+       margin-top: 1em;
+       clear: both;
+   }
+}
+
+/* В меню навигация делаем подчеркивания, только при
+наведении мыши, как в английском разделе */
+
+.portlet a {
+   text-decoration: none;
+}
+
+.portlet a:hover {
+   text-decoration: underline;
+}
+
+/* Скруглённые углы, для Gecko браузеров, из итальянского раздела */
+.pBody {
+   padding: 0.1em 0.1em;
+   -moz-border-radius-topright: 0.5em;
+}
+#p-cactions ul li, #p-cactions ul li a {  
+  -moz-border-radius-topright: 0.5em;
+  -moz-border-radius-topleft: 0.5em;
+}
+#content {
+  -moz-border-radius-topleft: 0.5em;
+}
+
+/* для редактирования нулевой секции */
+.editsection { float: right; margin-left: 5px; }
+
+/* для вставки кратких описаний изменений, из польской Вики*/
+/* powyższe tylko dla zgodności wstecznej */
+#userSummaryButtonsA a {
+ background: #cfc;
+ border: 1px dotted #090;
+ padding: 0px 2px;
+ margin: 2px;
+ cursor: pointer;
+ font-size: 80%;
+ line-height: 17px;
+ color: black;
+}
+
+#userSummaryButtonsA a:hover {
+ background: #bfb;
+ border: 1px solid #9c9;
+ text-decoration:none;
+}
+
+/* Избранные интервики как в английской Википедии */
+
+.portlet li {
+  list-style-image: url("Веня Д’ркин — Википедия_files/Monobook.png");
+}
+
+li.FA {
+  list-style-image: url("Веня Д’ркин — Википедия_files/Monobook.png");
+}
+
+/*
+</pre>
+{{Interwiki-all}}
+*/

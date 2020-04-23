@@ -1,0 +1,480 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0035)http://amdm.ru/generator/index.html -->
+<HTML><HEAD><TITLE>AmDm.ru: Генератор Аккордов</TITLE>
+<META content="text/html; charset=Windows-1251" http-equiv=Content-Type>
+<META content=ru http-equiv=Content-Language>
+<META 
+content="Аккорды, генератор аккордов, аккорды, тексты песен, тексты,  рассылка, пародии на песни," 
+name=keywords>
+<META 
+content="Amdm.Ru - в базе содержится более 15 000 аккордов, генератор аккордов." 
+name=description>
+<SCRIPT language=JavaScript 
+src="AmDm_ru Генератор Аккордов_files/rus.js"></SCRIPT>
+
+<SCRIPT language=JavaScript 
+src="AmDm_ru Генератор Аккордов_files/navig_2.js"></SCRIPT>
+
+<SCRIPT language=JavaScript 
+src="AmDm_ru Генератор Аккордов_files/global.js"></SCRIPT>
+
+<SCRIPT language=JavaScript type=text/javascript>
+<!--
+var agent = navigator.userAgent.toLowerCase();
+var MAC = agent.indexOf("mac") != -1;
+
+var noteFlag = false;
+
+var topOffset = 440;		// IE win & mac
+var leftOffset = 433;
+
+	if (isNav4) {
+		topOffset = 485;		// Netscape win
+		leftOffset = 433;
+	}
+	if (NS && MAC) {
+		topOffset = 445;		// Netscape mac
+		leftOffset = 425;
+	}
+
+
+var s6=new Array("E","F","G","A","B","C","D");
+var s5=new Array("A","B","C","D","E","F","G");
+var s4=new Array("D","E","F","G","A","B","C");
+var s3=new Array("G","A","B","C","D","E","F");
+var s2=new Array("B","C","D","E","F","G","A");
+var s1=new Array("E","F","G","A","B","C","D");
+
+var lin6 = 0; var lin5 = 0; var lin2 = 0; var lin1 = 0;
+
+
+function clearNotes() {
+	for (var i=1; i < 7; i++) {
+		eval(dRef + '"note" + i' + sRef + '.visibility = "hidden"');
+		eval(dRef + '"sharp" + i' + sRef + '.visibility = "hidden"');
+		eval(dRef + '"flat" + i' + sRef + '.visibility = "hidden"');
+	}
+	for (var i=1; i < 4; i++) {
+		eval(dRef + '"line6-" + i' + sRef + '.visibility = "hidden"');
+	}
+	for (var i=1; i < 3; i++) {
+		eval(dRef + '"line5-" + i' + sRef + '.visibility = "hidden"');
+		eval(dRef + '"line1-" + i' + sRef + '.visibility = "hidden"');
+	}
+	eval(dRef + '"line2-1"' + sRef + '.visibility = "hidden"');
+	
+	lin6 = 0; lin5 = 0; lin2 = 0; lin1 = 0;
+}
+
+function hideNotes() {
+	clearNotes();
+	eval(dRef + '"stan"' + sRef + '.visibility = "hidden"');
+	eval(dRef + '"hideN"' + sRef + '.visibility = "hidden"');
+	eval(dRef + '"hideN"' + sRef + '.zIndex = "1"');
+	eval(dRef + '"showN"' + sRef + '.visibility = "visible"');
+	eval(dRef + '"showN"' + sRef + '.zIndex = "100"');
+	noteFlag = false;
+}
+
+function initNotes() {
+	eval(dRef + '"stan"' + sRef + '.top =' + topOffset);
+	eval(dRef + '"stan"' + sRef + '.left =' + leftOffset);
+	eval(dRef + '"hideN"' + sRef + '.top = 4+' + topOffset);
+	eval(dRef + '"hideN"' + sRef + '.left = ' + leftOffset);
+	eval(dRef + '"showN"' + sRef + '.top = 4+' + topOffset);
+	eval(dRef + '"showN"' + sRef + '.left = ' + leftOffset);
+	eval(dRef + '"showN"' + sRef + '.visibility = "visible"');
+	
+	for (var i=1; i < 7; i++) {
+		eval(dRef + '"note" + (7-i)' + sRef + '.left = 28+20*' + i +'+' + leftOffset);
+		eval(dRef + '"sharp" + (7-i)' + sRef + '.left = 20+20*' + i +'+' + leftOffset);
+		eval(dRef + '"flat" + (7-i)' + sRef + '.left = 20+20*' + i +'+' + leftOffset);
+	}
+	for (var i=1; i < 4; i++) {
+		eval(dRef + '"line6-" + i' + sRef + '.left = 48+' + leftOffset);
+		eval(dRef + '"line6-" + i' + sRef + '.top = 54+6*' + i +'+' + topOffset);
+	}
+	for (var i=1; i < 3; i++) {
+		eval(dRef + '"line5-" + i' + sRef + '.left = 68+' + leftOffset);
+		eval(dRef + '"line5-" + i' + sRef + '.top = 54+6*' + i +'+' + topOffset);
+		eval(dRef + '"line1-" + i' + sRef + '.left = 148+' + leftOffset);
+		eval(dRef + '"line1-" + i' + sRef + '.top = 30-6*' + i +'+' + topOffset);
+	}
+	eval(dRef + '"line2-1"' + sRef + '.left = 128+' + leftOffset);
+	eval(dRef + '"line2-1"' + sRef + '.top = 24+' + topOffset);
+}
+
+
+function showNotes() {
+
+	noteFlag = true;
+
+	eval(dRef + '"hideN"' + sRef + '.visibility = "visible"');
+	eval(dRef + '"hideN"' + sRef + '.zIndex = "100"');
+	eval(dRef + '"showN"' + sRef + '.visibility = "hidden"');
+	eval(dRef + '"showN"' + sRef + '.zIndex = "1"');
+	eval(dRef + '"stan"' + sRef + '.visibility = "visible"');
+
+	clearNotes();
+
+	for (var i=0; i < s6.length; i++) {
+		if (s6[i].indexOf(E1.substring(0,1)) != -1) {
+			pos6 = 75 - i*3 + topOffset;
+			lin6 = Math.ceil((6-i)/2);
+			eval(dRef + '"note6"' + sRef + '.top =' + pos6);
+			eval(dRef + '"note6"' + sRef + '.visibility = "visible"');
+			break;
+		}
+	}
+	if (E1.indexOf("#") != -1) {
+		eval(dRef + '"sharp6"' + sRef + '.top =' + pos6 + '-9');
+		eval(dRef + '"sharp6"' + sRef + '.visibility = "visible"');
+	}
+	if (E1.indexOf("b") != -1) {
+		eval(dRef + '"flat6"' + sRef + '.top =' + pos6 + '-9');
+		eval(dRef + '"flat6"' + sRef + '.visibility = "visible"');
+	}
+	for (var l=1; l <= lin6; l++) {
+		eval(dRef + '"line6-" + l' + sRef + '.visibility = "visible"');
+	}
+
+
+	for (var i=0; i < s5.length; i++) {
+		if (s5[i].indexOf(AA.substring(0,1)) != -1) {
+			pos5 = 66 - i*3 + topOffset;
+			lin5 = Math.ceil((3-i)/2);
+			eval(dRef + '"note5"' + sRef + '.top =' + pos5);
+			eval(dRef + '"note5"' + sRef + '.visibility = "visible"');
+			break;
+		}
+	}
+	if (AA.indexOf("#") != -1) {
+		eval(dRef + '"sharp5"' + sRef + '.top =' + pos5 + '-9');
+		eval(dRef + '"sharp5"' + sRef + '.visibility = "visible"');
+	}
+	if (AA.indexOf("b") != -1) {
+		eval(dRef + '"flat5"' + sRef + '.top =' + pos5 + '-9');
+		eval(dRef + '"flat5"' + sRef + '.visibility = "visible"');
+	}
+	for (var l=1; l <= lin5; l++) {
+		eval(dRef + '"line5-" + l' + sRef + '.visibility = "visible"');
+	}
+
+
+	for (var i=0; i < s4.length; i++) {
+		if (s4[i].indexOf(DD.substring(0,1)) != -1) {
+			pos4 = 57 - i*3 + topOffset;
+			eval(dRef + '"note4"' + sRef + '.top =' + pos4);
+			eval(dRef + '"note4"' + sRef + '.visibility = "visible"');
+			break;
+		}
+	}
+	if (DD.indexOf("#") != -1) {
+		eval(dRef + '"sharp4"' + sRef + '.top =' + pos4 + '-9');
+		eval(dRef + '"sharp4"' + sRef + '.visibility = "visible"');
+	}
+
+	if (DD.indexOf("b") != -1) {
+		eval(dRef + '"flat4"' + sRef + '.top =' + pos4 + '-9');
+		eval(dRef + '"flat4"' + sRef + '.visibility = "visible"');
+	}
+
+
+	for (var i=0; i < s3.length; i++) {
+		if (s3[i].indexOf(GG.substring(0,1)) != -1) {
+			pos3 = 48 - i*3 + topOffset;
+			eval(dRef + '"note3"' + sRef + '.top =' + pos3);
+			eval(dRef + '"note3"' + sRef + '.visibility = "visible"');
+			break;
+		}
+	}
+	if (GG.indexOf("#") != -1) {
+		eval(dRef + '"sharp3"' + sRef + '.top =' + pos3 + '-9');
+		eval(dRef + '"sharp3"' + sRef + '.visibility = "visible"');
+	}
+
+	if (GG.indexOf("b") != -1) {
+		eval(dRef + '"flat3"' + sRef + '.top =' + pos3 + '-9');
+		eval(dRef + '"flat3"' + sRef + '.visibility = "visible"');
+	}
+
+
+	for (var i=0; i < s2.length; i++) {
+		if (s2[i].indexOf(BB.substring(0,1)) != -1) {
+			pos2 = 42 - i*3 + topOffset;
+			lin2 = Math.ceil((i-5)/2);
+			eval(dRef + '"note2"' + sRef + '.top =' + pos2);
+			eval(dRef + '"note2"' + sRef + '.visibility = "visible"');
+			break;
+		}
+	}
+	if (BB.indexOf("#") != -1) {
+		eval(dRef + '"sharp2"' + sRef + '.top =' + pos2 + '-9');
+		eval(dRef + '"sharp2"' + sRef + '.visibility = "visible"');
+	}
+	if (BB.indexOf("b") != -1) {
+		eval(dRef + '"flat2"' + sRef + '.top =' + pos2 + '-9');
+		eval(dRef + '"flat2"' + sRef + '.visibility = "visible"');
+	}
+	for (var l=1; l <= lin2; l++) {
+		eval(dRef + '"line2-" + l' + sRef + '.visibility = "visible"');
+	}
+
+
+	for (var i=0; i < s1.length; i++) {
+		if (s1[i].indexOf(E2.substring(0,1)) != -1) {
+			pos1 = 33 - i*3 + topOffset;
+			lin1 = Math.ceil((i-2)/2);
+			eval(dRef + '"note1"' + sRef + '.top =' + pos1);
+			eval(dRef + '"note1"' + sRef + '.visibility = "visible"');
+			break;
+		}
+	}
+	if (E2.indexOf("#") != -1) {
+		eval(dRef + '"sharp1"' + sRef + '.top =' + pos1 + '-9');
+		eval(dRef + '"sharp1"' + sRef + '.visibility = "visible"');
+	}
+	if (E2.indexOf("b") != -1) {
+		eval(dRef + '"flat1"' + sRef + '.top =' + pos1 + '-9');
+		eval(dRef + '"flat1"' + sRef + '.visibility = "visible"');
+	}
+	for (var l=1; l <= lin1; l++) {
+		eval(dRef + '"line1-" + l' + sRef + '.visibility = "visible"');
+	}
+
+}
+
+// -->
+</SCRIPT>
+<LINK href="AmDm_ru Генератор Аккордов_files/main.css" rel=STYLESHEET 
+type=text/css>
+<META content="MSHTML 5.00.2919.6307" name=GENERATOR></HEAD>
+<BODY bgColor=#edf4f9 leftMargin=0 onload=GUITAR();initNotes() text=#003399 
+topMargin=0><BR><BR>
+<CENTER>
+<TABLE border=0 cellPadding=1 cellSpacing=1 width="80%">
+  <TBODY>
+  <TR vAlign=baseline>
+    <TD height="100%">
+      <DIV align=center><FONT face=arial size=+2><B>Генератор Аккордов Для 
+      Гитары</B></FONT> <BR><BR><BR><BR></DIV>
+      <CENTER>
+      <TABLE border=0 cellPadding=0 cellSpacing=0>
+        <TBODY>
+        <TR vAlign=top>
+          <TD>
+            <TABLE align=center bgColor=#884433 border=0 cellPadding=9 
+            cellSpacing=0 id=a3>
+              <TBODY>
+              <TR>
+                <TD>
+                  <TABLE align=center bgColor=#000000 border=0 cellPadding=0 
+                  cellSpacing=2>
+                    <FORM name=prima>
+                    <TBODY>
+                    <TR>
+                      <TD align=middle><INPUT name=result size=18 
+                        style="BACKGROUND: #eeffee; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT-FAMILY: monospace,courier; FONT-SIZE: 10pt"></TD></FORM>
+                      <FORM name=duece></TR>
+                    <TR>
+                      <TD align=middle><FONT face=courier,verdana 
+                        size=-1><INPUT name=result2 size=18 
+                        style="BACKGROUND: #eeffee; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT-FAMILY: monospace,courier; FONT-SIZE: 10pt"></FONT></TD></FORM></TR>
+                    <TR>
+                      <TD align=middle bgColor=#ffbb77><IMG height=168 
+                        name=six src="AmDm_ru Генератор Аккордов_files/xxx.gif" 
+                        width=22><IMG height=168 name=five 
+                        src="AmDm_ru Генератор Аккордов_files/xxx.gif" 
+                        width=22><IMG height=168 name=four 
+                        src="AmDm_ru Генератор Аккордов_files/xxx.gif" 
+                        width=22><IMG height=168 name=three 
+                        src="AmDm_ru Генератор Аккордов_files/xxx.gif" 
+                        width=22><IMG height=168 name=two 
+                        src="AmDm_ru Генератор Аккордов_files/xxx.gif" 
+                        width=22><IMG height=168 name=one 
+                        src="AmDm_ru Генератор Аккордов_files/xxx.gif" 
+                      width=22></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE><BR>
+            <TABLE border=0 cellPadding=0 cellSpacing=2 width="100%">
+              <TBODY>
+              <TR>
+                <TD align=middle><FONT size=-1><A 
+                  href="http://amdm.ru/generator/help.html" 
+                  target=_blank>Инструкция</A></FONT></TD></TR></TBODY></TABLE></TD>
+          <TD>
+            <TABLE align=center bgColor=#333366 border=0 cellPadding=9 
+            cellSpacing=0 id=a1>
+              <TBODY>
+              <TR>
+                <TD>
+                  <TABLE bgColor=#444477 border=0 cellPadding=2 cellSpacing=0 
+                  id=a2>
+                    <TBODY>
+                    <TR>
+                      <TD><FONT color=#ffffff size=-1 
+                        style="FONT-FAMILY: arial,verdana">&nbsp; Ключ &nbsp; 
+                        &nbsp; &nbsp;Аккорд &nbsp; &nbsp; &nbsp; 
+                      &nbsp;Лад</FONT></TD></TR>
+                    <TR>
+                      <FORM name=dym>
+                      <TD><FONT face="courier,verdana,OCR A Extended" 
+                        size=-1><SELECT name=notes onchange=GUITAR(this) size=13 
+                        style="BACKGROUND: #eeeeee; FONT-FAMILY: verdana; FONT-SIZE: 9pt"> 
+                          <OPTION>C<OPTION>C#<OPTION>D<OPTION>Eb<OPTION>E<OPTION>F<OPTION>F#<OPTION>G<OPTION>G#<OPTION 
+                          selected>A<OPTION>Bb<OPTION>B<OPTION>C</OPTION></SELECT><SELECT 
+                        name=chords onchange=GUITAR(this) size=13 
+                        style="BACKGROUND: #eeeeee; FONT-FAMILY: verdana; FONT-SIZE: 9pt"> 
+                          <OPTION 
+                          selected>maj<OPTION>min<OPTION>7th<OPTION>m7<OPTION>maj7<OPTION>m 
+                          maj7<OPTION>6th<OPTION>m6th<OPTION>aug<OPTION>flat5<OPTION>dim7<OPTION>sus4<OPTION>7sus4<OPTION>9th<OPTION>m9th<OPTION>add9<OPTION>maj9<OPTION>m 
+                          maj9<OPTION>7#5<OPTION>m7#5<OPTION>7b5<OPTION>m7b5<OPTION>sus2<OPTION>7sus2<OPTION>6/9<OPTION>7#9<OPTION>dim<OPTION>%7<OPTION>5<OPTION>11th<OPTION>m11th<OPTION>11xt<OPTION>m11xt<OPTION>13th<OPTION>m13th<OPTION>maj13<OPTION>m 
+                          maj13<OPTION>7b9<OPTION>7#11<OPTION>7b9b13<OPTION>7b9/13<OPTION>7#9#11</OPTION></SELECT><SELECT 
+                        name=frets onchange=GUITAR(this) size=13 
+                        style="BACKGROUND: #eeeeee; FONT-FAMILY: verdana; FONT-SIZE: 9pt"> 
+                          <OPTION 
+                          selected>откр<OPTION>1-й<OPTION>2-й<OPTION>3-й<OPTION>4-й<OPTION>5-й<OPTION>6-й<OPTION>7-й<OPTION>8-й<OPTION>9-й<OPTION>10-й<OPTION>11-й<OPTION>12-й<OPTION>13-й<OPTION>14-й<OPTION>15-й<OPTION>16-й</OPTION></SELECT><BR><INPUT 
+                        name=openit onclick=GUITAR(this) type=checkbox 
+                        unchecked><SPAN 
+                        style="COLOR: #ffffff; FONT-FAMILY: arial,helvetica,verdana">Откр.</SPAN> 
+                        &nbsp; <SELECT name=varyQ onchange=GUITAR(this) 
+                        style="FONT-FAMILY: verdana; FONT-SIZE: 9pt"> 
+                          <OPTION>Q2<OPTION 
+                          selected>Q3<OPTION>Q4<OPTION>Q5<OPTION>Q6</OPTION></SELECT> 
+                        <SPAN 
+                        style="COLOR: #ffffff; FONT-FAMILY: arial,helvetica,verdana">Протяж.</SPAN> 
+                        <BR><SELECT name=varyL onchange=GUITAR(this) 
+                        style="FONT-FAMILY: verdana; FONT-SIZE: 9pt"> 
+                          <OPTION>V1<OPTION>V2<OPTION>V3<OPTION>V4<OPTION>V5<OPTION>V6<OPTION 
+                          selected>V7<OPTION>V8<OPTION>V9<OPTION>V10<OPTION>V11<OPTION>V12<OPTION>V13<OPTION>V14<OPTION>V15<OPTION>V16<OPTION>V17<OPTION>V18<OPTION>V19<OPTION>V20<OPTION>V21<OPTION>V22<OPTION>V23<OPTION>V24</OPTION></SELECT> 
+                        <A href="javascript:varyit(V)" 
+                        style="COLOR: #ccccff; TEXT-DECORATION: underline">Вариации</A><!-- | <a href="javascript:rand(leftOffset)">Random</a> --> 
+                        <BR><SELECT name=hand onchange=GUITAR(this) 
+                        style="FONT-FAMILY: verdana; FONT-SIZE: 9pt"> <OPTION 
+                          selected>Правша<OPTION>Левша</OPTION></SELECT><SPAN 
+                        style="COLOR: #ffffff"> | </SPAN><SELECT name=tuning 
+                        onchange=tunit(this) 
+                        style="FONT-FAMILY: verdana; FONT-SIZE: 9pt"> <OPTION 
+                          selected>EADGBE<OPTION>EBEG#BE<OPTION>EAEAC#E<OPTION>EADF#BE<OPTION>EADGCF<OPTION>DADGAD<OPTION>DGCGCD<OPTION>DADF#AD<OPTION>DADGBE<OPTION>DGDGBD<OPTION>DADACD<OPTION>CGCGAE<OPTION>CGDAEG<OPTION>FADGBE<OPTION>Gminor<OPTION>Capo1<OPTION>Capo2<OPTION>Capo3<OPTION>Capo4<OPTION>Capo5<OPTION>Capo7<OPTION>Drop1<OPTION>Drop2</OPTION></SELECT> 
+                        </FONT></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+      <DIV id=stan 
+      style="LEFT: 0px; POSITION: absolute; TOP: 0px; VISIBILITY: hidden"><IMG 
+      border=0 height=88 src="AmDm_ru Генератор Аккордов_files/stan.gif" 
+      width=202><BR><NOBR><FONT size=-1>&nbsp;Струны: &nbsp;6 &nbsp; &nbsp; 5 
+      &nbsp; &nbsp; 4 &nbsp; &nbsp; 3 &nbsp; &nbsp; 2 &nbsp; &nbsp; 
+      1</FONT></NOBR></DIV>
+      <DIV id=hideN 
+      style="LEFT: 0px; POSITION: absolute; TOP: 4px; VISIBILITY: hidden"><A 
+      href="javascript:void%20hideNotes();"><IMG align=middle border=0 height=22 
+      src="AmDm_ru Генератор Аккордов_files/sm8oparrow.gif" width=16> <FONT 
+      size=-1>спрятать&nbsp;ноты</FONT></A></DIV>
+      <DIV id=showN 
+      style="LEFT: 0px; POSITION: absolute; TOP: 4px; VISIBILITY: hidden"><A 
+      href="javascript:void%20showNotes();"><IMG align=middle border=0 height=22 
+      src="AmDm_ru Генератор Аккордов_files/sm8clarrow.gif" width=16> <FONT 
+      size=-1>показать&nbsp;ноты</FONT></A></DIV>
+      <DIV id=sharp6 
+      style="LEFT: 40px; POSITION: absolute; TOP: 0px; VISIBILITY: hidden"><IMG 
+      border=0 height=21 src="AmDm_ru Генератор Аккордов_files/sharp-9.gif" 
+      width=8></DIV>
+      <DIV id=flat6 
+      style="LEFT: 40px; POSITION: absolute; TOP: 0px; VISIBILITY: hidden"><IMG 
+      border=0 height=17 src="AmDm_ru Генератор Аккордов_files/flat-9.gif" 
+      width=8></DIV>
+      <DIV id=note6 
+      style="LEFT: 48px; POSITION: absolute; TOP: 0px; VISIBILITY: hidden"><IMG 
+      border=0 height=6 src="AmDm_ru Генератор Аккордов_files/note.gif" 
+      width=12></DIV>
+      <DIV id=line6-1 
+      style="LEFT: 48px; POSITION: absolute; TOP: 60px; VISIBILITY: hidden"><IMG 
+      border=0 height=6 src="AmDm_ru Генератор Аккордов_files/line.gif" 
+      width=12></DIV>
+      <DIV id=line6-2 
+      style="LEFT: 48px; POSITION: absolute; TOP: 66px; VISIBILITY: hidden"><IMG 
+      border=0 height=6 src="AmDm_ru Генератор Аккордов_files/line.gif" 
+      width=12></DIV>
+      <DIV id=line6-3 
+      style="LEFT: 48px; POSITION: absolute; TOP: 72px; VISIBILITY: hidden"><IMG 
+      border=0 height=6 src="AmDm_ru Генератор Аккордов_files/line.gif" 
+      width=12></DIV>
+      <DIV id=sharp5 
+      style="LEFT: 60px; POSITION: absolute; TOP: 0px; VISIBILITY: hidden"><IMG 
+      border=0 height=21 src="AmDm_ru Генератор Аккордов_files/sharp-9.gif" 
+      width=8></DIV>
+      <DIV id=flat5 
+      style="LEFT: 60px; POSITION: absolute; TOP: 0px; VISIBILITY: hidden"><IMG 
+      border=0 height=17 src="AmDm_ru Генератор Аккордов_files/flat-9.gif" 
+      width=8></DIV>
+      <DIV id=note5 
+      style="LEFT: 68px; POSITION: absolute; TOP: 0px; VISIBILITY: hidden"><IMG 
+      border=0 height=6 src="AmDm_ru Генератор Аккордов_files/note.gif" 
+      width=12></DIV>
+      <DIV id=line5-1 
+      style="LEFT: 68px; POSITION: absolute; TOP: 60px; VISIBILITY: hidden"><IMG 
+      border=0 height=6 src="AmDm_ru Генератор Аккордов_files/line.gif" 
+      width=12></DIV>
+      <DIV id=line5-2 
+      style="LEFT: 68px; POSITION: absolute; TOP: 66px; VISIBILITY: hidden"><IMG 
+      border=0 height=6 src="AmDm_ru Генератор Аккордов_files/line.gif" 
+      width=12></DIV>
+      <DIV id=sharp4 
+      style="LEFT: 80px; POSITION: absolute; TOP: 0px; VISIBILITY: hidden"><IMG 
+      border=0 height=21 src="AmDm_ru Генератор Аккордов_files/sharp-9.gif" 
+      width=8></DIV>
+      <DIV id=flat4 
+      style="LEFT: 80px; POSITION: absolute; TOP: 0px; VISIBILITY: hidden"><IMG 
+      border=0 height=17 src="AmDm_ru Генератор Аккордов_files/flat-9.gif" 
+      width=8></DIV>
+      <DIV id=note4 
+      style="LEFT: 88px; POSITION: absolute; TOP: 0px; VISIBILITY: hidden"><IMG 
+      border=0 height=6 src="AmDm_ru Генератор Аккордов_files/note.gif" 
+      width=12></DIV>
+      <DIV id=sharp3 
+      style="LEFT: 100px; POSITION: absolute; TOP: 0px; VISIBILITY: hidden"><IMG 
+      border=0 height=21 src="AmDm_ru Генератор Аккордов_files/sharp-9.gif" 
+      width=8></DIV>
+      <DIV id=flat3 
+      style="LEFT: 100px; POSITION: absolute; TOP: 0px; VISIBILITY: hidden"><IMG 
+      border=0 height=17 src="AmDm_ru Генератор Аккордов_files/flat-9.gif" 
+      width=8></DIV>
+      <DIV id=note3 
+      style="LEFT: 108px; POSITION: absolute; TOP: 0px; VISIBILITY: hidden"><IMG 
+      border=0 height=6 src="AmDm_ru Генератор Аккордов_files/note.gif" 
+      width=12></DIV>
+      <DIV id=sharp2 
+      style="LEFT: 120px; POSITION: absolute; TOP: 0px; VISIBILITY: hidden"><IMG 
+      border=0 height=21 src="AmDm_ru Генератор Аккордов_files/sharp-9.gif" 
+      width=8></DIV>
+      <DIV id=flat2 
+      style="LEFT: 120px; POSITION: absolute; TOP: 0px; VISIBILITY: hidden"><IMG 
+      border=0 height=17 src="AmDm_ru Генератор Аккордов_files/flat-9.gif" 
+      width=8></DIV>
+      <DIV id=note2 
+      style="LEFT: 128px; POSITION: absolute; TOP: 0px; VISIBILITY: hidden"><IMG 
+      border=0 height=6 src="AmDm_ru Генератор Аккордов_files/note.gif" 
+      width=12></DIV>
+      <DIV id=line2-1 
+      style="LEFT: 128px; POSITION: absolute; TOP: 24px; VISIBILITY: hidden"><IMG 
+      border=0 height=6 src="AmDm_ru Генератор Аккордов_files/line.gif" 
+      width=12></DIV>
+      <DIV id=sharp1 
+      style="LEFT: 140px; POSITION: absolute; TOP: 0px; VISIBILITY: hidden"><IMG 
+      border=0 height=21 src="AmDm_ru Генератор Аккордов_files/sharp-9.gif" 
+      width=8></DIV>
+      <DIV id=flat1 
+      style="LEFT: 140px; POSITION: absolute; TOP: 0px; VISIBILITY: hidden"><IMG 
+      border=0 height=17 src="AmDm_ru Генератор Аккордов_files/flat-9.gif" 
+      width=8></DIV>
+      <DIV id=note1 
+      style="LEFT: 148px; POSITION: absolute; TOP: 0px; VISIBILITY: hidden"><IMG 
+      border=0 height=6 src="AmDm_ru Генератор Аккордов_files/note.gif" 
+      width=12></DIV>
+      <DIV id=line1-1 
+      style="LEFT: 148px; POSITION: absolute; TOP: 24px; VISIBILITY: hidden"><IMG 
+      border=0 height=6 src="AmDm_ru Генератор Аккордов_files/line.gif" 
+      width=12></DIV>
+      <DIV id=line1-2 
+      style="LEFT: 148px; POSITION: absolute; TOP: 18px; VISIBILITY: hidden"><IMG 
+      border=0 height=6 src="AmDm_ru Генератор Аккордов_files/line.gif" 
+      width=12></DIV><BR><BR><BR><BR><BR><BR>
+      <CENTER><A href="http://www.amdm.ru/"><FONT color=blue face=arial 
+      size=2><B>www.AmDm.ru</A> 
+</B></FONT></CENTER></FORM></CENTER></TR></TBODY></TABLE></CENTER></BODY></HTML>
