@@ -6,7 +6,7 @@
 *   [Misheard Lyrics](Misheard%20Lyrics/index.md)
 *   [Инструменты](Инструменты/index.md)
 *   [Исполнители](Исполнители/index.md)
-*   [Каверы](Каверы/index.md)
+*   [Каверы](Альбомы/index.md)
 *   [Песенник](Песенник/index.md)
 *   [Списки](Списки/index.md)
 *   [Стили](Стили/index.md)
