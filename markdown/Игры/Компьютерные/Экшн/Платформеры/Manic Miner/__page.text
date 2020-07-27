@@ -1,0 +1,335 @@
+!! Manic Miner
+
+(:childlist:)
+
+THE SPECTRUM GAMES DATABSE
+
+MANIC MINER
+
+PUBLISHER
+Bug Byte and Software Projects
+
+AUTHOR
+Matthew Smith
+
+YEAR
+1983
+
+CATEGORIES
+Plaform
+
+CONTROLS
+Alternating keys on Q to P row = left/right.
+A-G = Pause.
+H-Enter = Tune on/off.
+Bottom row = Jump.
+
+
+INSTRUCTIONS
+Using the keys, the idea of all the levels is to collect all the
+flashing objects and then make your way to the flashing potato
+waffle.
+
+Since this game was released by two publishers, there are two
+different sets of inlay card text.  Below is both of them
+starting off with the Bug Byte version, and then the Software
+Projects version.
+
+ORIGINAL INLAY CARD TEXT
+
+INSTRUCTIONS
+
+The program "MANIC MINER" its documentation and artwork are
+strictly the copyright of Bug-Byte. It is illegal to make a copy
+of MANIC MINER without authorisation from Bug-Byte and legal
+action will be taken against anyone found doing so. It is also
+illegal, and expressly forbidden, to lend or hire out the program
+by way of trade.
+
+MANIC MINER will run on any 48K Spectrum
+To load MANIC MINER, simply enter:
+LOAD ""
+- then hit the ENTER key and follow the computer's prompts. Leave
+the tape running until the game starts up automatically.
+
+THE GAME
+Miner Willy, while prospecting down Surbiton way, stumbles upon
+an ancient, long forgotten mine-shaft. On further exploration,
+he finds evidence of a lost civilisation far superior to our own,
+which used automatons to dig beep into the Earth's core to supply
+the essential raw materials for their advanced industry. After
+centuries of peace and prosperity, the civilisation was torn
+apart by war, and lapsed into a long dark age, abandoning their
+industry and machines. Nobody, however, thought to tell the mine
+robots to stop working, and through countless aeons they had
+steadily accumulated a hugh stockpile of valuable metals
+and minerals, and Miner Willy realises that he now has the
+opportunity to make his fortune by finding the underground store.
+Can YOU take the challenge and guide Willy through the
+undergraound caverns to the surface and riches. In order to move
+to the next chamber, you must collect all the flashing keys in
+the room while avoiding nasties like POISONOUS PANSIES and
+SPIDERS and SLIME and worst of all, MANIC MINING ROBOTS. When you
+have all the keys, you can enter the portal which will now be
+flashing. The game ends when you have been 'got' or fallen
+heavily three times.
+
+GAME CONTROL
+Three keys are used to control the game:
+Q,E,T,U or O          - Move left
+W,R,Y,I or P          - Move right
+Shift to space        - Jump
+
+--------------------------------------------------------------
+
+SPECTRUM MANIC MINER (SECOND EDITION)
+
+LOADING INSTRUCTIONS
+1. Connect lead to ear socket of Spectrum
+   from ear socket on recorder.
+2. Rewind tape to beginning.
+3. Set Volume Control to the required level.
+4. Type LOAD "" or LOAD "MANICMINER".
+5. Press key marked enter on your Spectrum.
+6. Press play on your cassette recorder.
+7. Your Program will now load.
+
+If the program does not load first time, repeat instructions but
+try a different volume setting.
+
+
+TO MOVE USE KEYS:
+
+Q, E, T, U, or O   = MOVE LEFT
+W, R, Y, I or P    = MOVE RIGHT
+SHIFT TO SPACE     = JUMP
+
+MANIC MINER CAN ALSO BE USED WITH KEMPSTON, AGF AND PROTEK
+JOTSTICK INTERFACES AND IS ALSO COMPATIBLE WITH INTERFACE II
+
+Author: MATTHEW SMITH
+
+MANIC MINER
+
+Miner Willy, while prospecting down Surbiton way, stumbles upon
+an ancient, long forgotten mine-shaft. On further exploration,
+he finds evidence of a lost civilisation far superior to our own,
+which used automatons to dig deep into the Earth's core to supply
+the essential raw materials for their advanced industry.  After
+centuries of peace and prosperity, the civilisation was torn
+apart by war, and lapsed into a long dark age, abandoning their
+industry and machines.  Nobody, however, thought to tell the mine
+robots to stop working, and through countless aeons they had
+steadily accumulated a huge stockpile of valuable metals and
+minerals, and Miner Willy realises that he now has the
+opportunity to make his fortune byfinding the underground store.
+
+In order to move to the next chamber, you must collect all the
+flashing keys in the room while avoiding nasties like POISONOUS
+PANSIES and SPIDERS and SLIME and worst of all, MANIC MINING
+ROBOTS. When you have all the keys, you can enter the portal
+which will now be flashing. The game ends when you have been
+'got' or fallen heavily three times.
+
+Software Projects are always looking for new and original games.
+If you have written one then why not send it into us for free
+evaluation with no obligation by either party.  We pay good
+royalties or you have the option of an outright payment,
+whichever suits you.  Interested? Send a sample of your game
+or 'phone.
+
+Software Projects
+Bear Brand Complex
+Allerton Road
+Woolton
+Liverpool L25 7SF       051-428 7990
+
+
+SEQUELS/PREQUELS
+The main follow up to Manic Miner was Jet Set Willy.  A prequel
+came in the form of Miner 2049'er, on the TRS-80.  This was by
+a different author.  However, at the top end of the code in the 
+original Manic Miner game, is a command set for the TRS-DOS,
+which Matthew Smith used to develop JSW on.
+
+SCORES RECEIVED:
+Unknown by me, but probably nowhere near as high as they should
+have been.
+
+CHEATS:
+The Bug-Byte version - Type in 6031769.
+The Software Projects version - Type in WRITETYPER.
+
+Both of these allow you to flick between rooms by holding down
+various combinations of numbers.  Use key 9 (for the SP version)
+or 6 (for the BB version) + combinations of 1 to 5, which 
+actually correspond to the binary code of the room number.  
+00001 [1] = The Central Cavern, 10010 [17] = The Warehouse 
+etc...  Be careful though as this gives more combinations than 
+there is actual rooms, so if you use a combination that does not 
+exist then it crashes the game.
+
+Note that when the cheat is enabled, a boot appears next to
+the lives at the bottom of the screen, and The Final Barrier 
+does not revel its secret so that people couldn't cheat at the
+competition.
+
+You can also POKE 35136,0 for infinite lives.
+
+
+COMPLETING THE GAME
+When you jump into the exit of The Final Barrier (and you haven't
+used the 6031769 cheat) the door changes from an omega sign to
+a fish and dagger, one above the other, the answer being
+Swordfish.  You were supposed to quote this in the competition
+(i.e. the first person to quote what happened at the end
+correctly must have won, though I don't remember ever seeing who
+did it, if anyone).  Then the game then starts again from the
+beginning - in the true tradition of Spectrum Games.
+
+
+GENERAL FACTS:
+This was the first game with in-game music, namely In the Hall
+of the Mountain King from the play Peer Gynt by Edvard Grieg.
+The music that plays during the title screen is "The Waltz of
+The Blue Danube" by Strauss
+
+This game was originally released by Bug-Byte, and then
+re-released by Software Projects.  The reason for this is that
+Bug-Byte originally only had a contract to sell Manic Miner, they
+did not actually own it.  So when Matthew Smith moved across to
+Software Projects, he took Manic Miner with him.
+
+There are some differences between the two versions.  Obviously
+the scroll-text at the start changes slightly to reflect the
+different copyright in the Software Projects version.  However,
+there are two subtle but interesting changes.
+
+1. In Amoebatrons' Revenge, the amoebatrons look different
+between the two versions. The originals look like Octopuses, with
+tentacles hanging down, whereas the Software Projects ones look
+like sort of beetles, with little legs up their sides.
+
+2. In The Warehouse, the original game has threshers travelling
+up and down the vertical slots, rotating about the screens
+X-axis.  The Software Projects version has 'impossible triangle'
+sprites (i.e. the Software Projects logo) instead, which rotate
+about the screen's Z-axis.
+
+It used flashing attributes to provide an animated "Manic Miner"
+logo while loading. Although there was nothing clever about this
+as such, it was nevertheless the first game ever to have an
+animated loading screen.
+
+For those who are interested (everybody!) the names of the rooms
+are as follows:
+
+
+1. Central Cavern
+2. The Cold Room
+3. The Menagerie
+4. Abandoned Uranium Workings
+5. Eugene's Lair
+6. Processing Plant
+7. The Vat
+8. Miner Willy meets the Kong Beast
+9. Wacky Amoebatrons
+10.The Endorian Forest
+11.Attack of the Mutant Telephones
+12.Return of the Alien Kong Beast
+13.Ore Refinery
+14.Skylab Landing Bay
+15.The Bank
+16.The Sixteenth Cavern
+17.The Warehouse
+18.Amoebatrons' Revenge
+19.Solar Power Generator
+20.The Final Barrier
+
+
+Eugenes Lair is a jibe at one of Matthew Smith's fellow
+programmers (Eugene Jarvis?).  Miner Willy meets the Kong Beast
+is a parody of the old Donkey Kong games.  Presumably The
+Endorian Forest is from Star Wars.
+
+This is how to complete what is generally regarded as the most
+difficult screen in Manic Miner, The Warehouse:  As soon as the
+level starts, walk right, until you're past the blue killer. 
+Fall through quicksand until you can walk under the plant.  Turn
+around and face the blue cat-track, falling through the sand as
+you go.  Once you've fallen through the seventh quicksand, jump
+straight up twice, (which brings you into time with the
+cat-track,) then jump left, collecting the object, and go back
+up through the quicksand to the start platform.  (This is a bit
+close, but you should make it!)  Stand on the very edge of the
+start platform.  Wait until both yellow and white cat-tracks have
+reached the top of the screen, and are moving down again - let
+the yellow one touch the bush.  (This happens almost straight
+away.  If you're not quick enough on the keys, wait a revolution
+before the cat-tracks align again.)  Jump right, and fall through
+five blocks of quicksand.  Jump right again, which should place
+you on the level so that you can either walk through the
+travelator, or on it.  (If you do jump onto the travelator. 
+Panic not.  Keep on truckin'.)  *Without pausing!* Walk right,
+collect the object as you go and fall into the pit that the white
+cat-track uses.  Fall through one section, collecting the object. 
+Jump right again, which will place you underneath the next
+object, and wait until you fall through a section of quicksand
+before jumping to collect the object.  (Otherwise you clout
+yourself on the bush...  Not nice!)  Now just fall through the
+quicksand, collecting the final object as you go, until you land
+on the floor, go right, and jump up through the quicksand, until
+you reach the portal.  Easy when you know how!
+
+Regarding different version across different computers, the 
+following may be interesting:
+
+1. The original Bug-Byte release on the Spectrum featured 'threshers'
+   in the Warehouse.
+
+2. The second Software Projects release on the Spectrum replaced the
+   threshers with rotating Sofware Projects logos ('impossible'
+   triangles), and there were other minor changes: the deadly bush
+   in the Processing Plant became a ghost, the Amoebatrons in
+   Amoebatrons' Revenge were different sprites, and I think some
+   sprites changed in the Sixteenth Cavern too.
+
+3. The BBC Micro version doesn't have the Solar Power Generator!
+   Instead, it's got a completely different room called "The Meteor
+   Shower". This has the "reflecting machines" from the Solar Power
+   Generator but there's no beam of light; instead, it has meteors
+   which descend from the top of the screen and disintegrate when
+   they hit platforms, like the Skylabs in Skylab Landing Bay. It
+   also has forcefields which turn on and off, and the layout is
+   completely different. Then, the last screen (which is still
+   called The Final Barrier) is very tricky (unlike the Spectrum
+   version which was easy) and has a completely different layout.
+   It also features the blinking forcefields.
+
+4. The Amstrad version is effectively the same as the Spectrum
+   version by Software Projects, except that (a) Eugene's Lair has
+   been renamed "Eugene Was Here" for some reason, and the layout
+   of The Final Barrier is again completely different (but it's
+   more similar to the Spectrum version than the BBC version, which
+   has nothing in common with the Spectrum version at all).
+
+5. The Acorn RISC OS version of Manic Miner has a couple of extra
+   screens after The Final Barrier, but that's not an official
+   release by Software Projects (just something someone created as
+   a public domain release) so it doesn't really count.
+
+6. I heard that the Dragon 32 version had a couple of extra rooms at
+   the end (i.e. 22 altogether), but I don't know if that's true.
+   I believe, though, that the two extra rooms in the RISC OS version
+   are copied from it (though I can't now find evidence of this).
+
+The significance of the number in the "6031769" cheat is that it was
+Matthew Smith's number at the time he wrote the game.  Please do not
+phone it any mopre however, since the owners of this number are fed
+up of people phoning them.
+
+
+NOTES:
+Probably the most legendary Spectrum game ever.  Even today
+programmers have trouble matching the devious design and
+incredible variety of imagination in the levels. 

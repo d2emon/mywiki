@@ -1,0 +1,172 @@
+!! Fuzion
+
+||
+||Designer(s)		||Fuzion Lab Groups						||
+||Publisher(s)		||Fuzion Lab Groups / Hero Games	||
+||Publication date	||1998											||
+||Genre(s)			||Universal									||
+||System				||Custom										||
+
+Fuzion is a generic role-playing game system system created by the collaboration of R. Talsorian Games and Hero Games. Fuzion is a combination of the Interlock System, (used in games like Mekton and Cyberpunk 2020), and the HERO system (used in Champions, Justice, Inc., Star Hero, etc.). Fuzion is an adaptable system which can be played in any genre and setting imaginable.
+
+Fuzion is noted for its anime-genre support, customizable rules flexibility, and being one of the first generic game systems to be released for free over the internet. It is one of the first games to readily allow licensing, albeit not the "hands-off" licensing offered by the Open Gaming License (OGL) that came about some years later. A modified OGL set of rules based on Fuzion is published by Gold Rush Games as the Action! System.
+
+There are two versions of Fuzion that have been published: the simplified Instant Fuzion, and more detailed Total Fuzion (also known as Primary Fuzion). A third, Maximum Fuzion, was hinted at in Fuzion-based Bubblegum Crisis RPG, but has never been published.
+
+!!! Making Fuzion characters
+
+Fuzion uses a point-based creation method for building characters. This system is similar to both of the parent systems as well as other generic games like GURPS.
+
+!!!! Character Points
+
+Fuzion characters are built with Character Points (CPs), also known as Stat Points. Depending on the "power level" of the game, the Referee (or Game Master), assigns players a number of CPs to buy Attribute Stats. Usually, 40 to 50 points are enough for an heroic "action-adventure" setting. Fewer points would be given for low-power games set in a more realistic, "mundane" world. A hundred (or more) points are given for high-powered, superheroic adventures. CPs are used to buy levels in Primary Stats which are the basic attribute abilities of the character.
+
+!!!! Option Points and Power Points
+
+Option Points (OPs), or Campaign Points, are given to characters to buy Character Options. OPs are assigned by the Referee and are usually kept separate from the Character Point pool. The Referee usually gives a pool of as many OPs as he gives CPs. At the player's choice, any leftover CPs not used to buy Stats can be traded for OPs at a ratio of 1:5, (1 CP = 5 OP) and vice versa. OPs can also be converted into money to buy Equipment at a ratio of 1:100; (1 OP = 100 units of currency). The actual type of currency is dependent upon the genre being played, (for instance a fantasy medieval-era game may use gold pieces, a modern action game set in the United States would use dollars, a sci-fi future setting may use galactic credits).
+
+Certain campaigns using the Fuzion system can have Power Points (PPs), which are assigned to the players by the Referee just like CPs and OPs. PPs are optional and are used with Magic, Psionics, and Super Powers. CPs can be traded for PPs at a ratio of 1:1, (1 CP = 1 PP), and OPs can be traded as well, at a ratio of 5:1, (5 OP = 1 PP). Using PPs helps the Referee keep superpowers under control by restricting how often a character can use them.
+
+!!!! Primary Stats
+
+In Total Fuzion, a character usually has ten Stats, (or Characteristics), organized in four groups as follows:
+
+Physical Group:
+
+* Constitution (CON)
+* Strength (STR)
+* Body (BODY)
+
+Mental Group:
+
+* Intelligence (INT)
+* Willpower (WILL)
+* Presence (PRE) (or Personality (PER))
+
+Combat Group:
+
+* Technique (TECH)
+* Reflexes (REF)
+* Dexterity (DEX)
+
+Movement Group:
+
+* Movement (MOVE)
+
+In the slimmed down Instant Fuzion rules, the character has only four main Stats based on each of the four Stat groups: Physical, Mental, Combat, and Movement.
+
+Character Points are used to buy levels in a Stat at a ratio of 1:1; 1 CP buys 1 level of a Stat. For the average "competent" human, each Stat has a level of 3 or 4, while 1 and 2 represent mundane abilities. Stats of 5 and 6 are considered "heroic"; 7 and 8, are "legendary"; 9 and above are "superhuman".
+
+Fuzion is a flexible and easily modifiable system, so more Stats can be added to any category by the Referee as they see fit. For instance, in a magical world, the Referee could add a Mana Stat for the casting and control magic spells, or add a Comeliness Stat, which rates the physical attractiveness of a character. Likewise, Stats can be removed without too much difficulty. If the Referee feels there is no real difference between Dexterity and Reflexes, they could remove one or the other, and use a single Stat for both.
+
+!!!! Derived Stats
+
+Fuzion characters have numerous Derived Stats, which get their values based on the level of a primary Stat and performing a mathematical formula to calculate a number. For instance, a character gets Hit Points (called Hits), and Stun Points (called Stun), by taking their Body Stat and multiplying it by 5. Therefore, a character with a Body Stat of 5 would have 25 Hits and 25 Stun. Derived Stats do not cost points to purchase. Depending on the genre, the Referee can choose what Derived Stats he wants in his campaign. Some are required, like Hits, Stun, and Recovery, but others, like Luck and Humanity, are optional. Characters can also trade up to 1/2 of their Stun points for more Hits if they so desire.
+
+In Instant Fuzion, a character has two Derived Stats: Hits and Defense.
+
+!!!! Skills
+
+Fuzion characters have Skills that represent specific areas of knowledge that are useful in the game. Skills are purchased with Option Points at a ratio of 1:1, (1 OP = 1 level of a Skill). Fuzion has a large array of Skills to choose from. Referees and players can also make up their own skills as needed. Skills are organized by type:
+
+* Fighting Skills are used mainly in combat situations for evading attacks and using hand held weapons. They may also be used for Martial Arts and unarmed combat. Usually a character focuses on a particular type of weapon, such as Sword, Mace, Dagger and Hand-to-Hand.
+* Ranged Fighting Skills are used for handling ranged weapons such as guns and bows. Usually they are focused on a particular type of ranged weapon, such as Crossbow, Shotgun and Rocket Launcher.
+* Awareness Skills are such skills as Perception, Search, Tracking and Lip Reading
+* Control Skills are used for operating vehicles and handling animals. Usually they are focused on a type of vehicle, such as Automobile driving or Helicopter piloting.
+* Physical or Body Skills are such skills as Acrobatics, Climbing, and Stealth.
+* Social Skills are such skills as Bribery, Interrogation and Ettiquite.
+* Technical or Technique Skills are complex skills such as Surgery, First Aid, Demolitions and Lockpicking.
+* Performance Skills are such as Acting, Singing, Painting and playing a specific kind of musical instrument.
+* Knowledge Skills represent complex areas of specialized education, such as Criminal Law, Forensics, Chemistry, Engineering, and Foreign Language.
+
+For free, a starting character gets a set of Everyman Skills that are picked by the Referee as appropriate to the campaign. Everyman Skills include 2 points each in such Skills as General Education (which includes all basic knowledge a character learns through years of schooling like basic math and reading for example), and other skills, like Evasion, Hand-to-Hand, Local Area Knowledge and Perception. For a modern or futuristic campaign, Driving and Computer Use may also be common Everyman skills.
+
+!!!! Character options
+
+Character options come in the form of Talents, Complications, Perks, Lifepaths, and Templates.
+
+Talents represent special innate abilities of a character that cannot be taken away from them, or used by another character. They represent certain areas of special training, or inherited abilities that are not covered by Skills. In a way, they are similar to Advantages in GURPS, or Feats in a d20 System game, and offer benefits to the character. Talents cost 3 Option Points each. Some Talents include: Combat Sense, Lightning Calculator, Photographic Memory, Light Sleeper, Speed Reading, and Ambidexterity.
+
+Complications represent special hindrances to the character. They are similar to Disadvantages in GURPS, or Flaws in d20 System games. Complications are a way to gain back OPs to spend elsewhere. Each Complication returns a number of points based on the hindrance they give the character, and how often they crop up in the game. A permanent Complication, such as Missing Limb, is always a problem for a character and returns many points. Others, like Enemy or Dependent, may crop up occasionally during a game and offer less points back. Some other Complications include: Bad Tempered, Sense of Duty, Stubbornness, Dependents, Phobias, Bad Reputation, Poverty, and Addiction.
+
+Perks are similar to Talents, but are not innate to the character. They can be lost or taken away by actions in the game. They usually include Special Equipment, Security Clearances, Licenses, Permits, and Contacts (who a character can use to gain information or call in favors from).
+
+Lifepaths are an optional way to randomly generate character backgrounds and personalities through a series of tables. A character rolls on a list of options, or they can pick and chose them as they see fit. Some Lifepath choices could give a character a special Talent, Complication, or Perk for free.
+
+Templates are featured in certain Fuzion campaigns, which can be chosen by players to help design a well rounded character suited for a specific career, (such as police officer, soldier, doctor, etc). Templates explain things about the character's job, and give a listing of particular Skills, Talents, Complications, Perks and starting equipment.
+
+!!! Fuzion game mechanics
+
+Whenever a character does some kind of critical action in Fuzion that needs to be resolved, a character makes a die roll to see if they succeed or fail at the task. There are two kinds of resolution tests in Fuzion; those rolled against a Difficulty Value (DV) determined by the Referee, and those rolled against what another character does. DVs range from "very easy", such as hefting a bag of garbage to the street (DV 2), to "cosmic", like hefting a mountain and throwing it into an ocean (DV 100+). When resolving a contest between characters, the DV of the check is the result of the roll the opposing force makes or, to save time, the Referee could add a set number, "+X", to an NPC's abilities, which typically is +10 when using 3d6 or +5 using 1d10.
+
+!!!! Resolving actions
+
+Under standard rules, Fuzion offers two ways to resolve actions with dice. A Referee can pick either using three six-sided dice (3d6), like the HERO System rules of Champions, or one ten-sided die (d10), like the Interlock System used in Cyberpunk and Mekton. Using 3d6 for checks subjects it to the more predictable "bell curve" and has a higher probability of success. Using a d10 is more unpredictable and adds a level of uncertainty and suspense. When using d10, the DV values are set lower than when using 3d6.
+
+Another aspect of Fuzion's flexibility is the easy adaptation to the use of d12 or d20 dice for making checks. Consult the table below for variations of the Difficulty Values by die type:
+
+||
+||Difficulty Value		||1d10	||Resolution (+5)	||3d6 or 1d20 	||Resolution (+10)	+1d6-1d6 or +1d10-1d10 (+0)	+1d12 (6)	||
+||Challenged (DV 0)	||5		||10						||0					||6																					||
+||Everyday (DV 4)		||9		||14						||4					||10																					||
+||Competent (DV 8)	||13		||18						||8					||14																					||
+||Heroic (DV 12)		||17		||22						||12					||18																					||
+||Incredible (DV 16)	||21		||26						||16					||22																					||
+||Legendary (DV 20)	||25		||30						||20					||26																					||
+
+
+The resolution formula is: Stat + Skill + Die Roll vs. Difficulty Value (DV). When an action is opposed by another character or two characters are competing to complete the same action, the formula becomes Stat + Skill + Die Roll vs. Stat + Skill + (Die Roll or +X). Combat resolution is similar to an opposed skill check. If a character's Stat + Skill already meets or exceeds the DV, it is usually considered an automatic success without making a die roll.
+
+There is also the optional rule of Critical Successes and Critical Failures. If using a d10, rolling a 10 is a Critical Success, and allows a second roll. The result of the second roll is added to the first to calculate the result. Further 10's may be rerolled. A roll of 1 is an automatic failure. When using 3d6; a roll of all sixes, (an 18), is a Critical Success, and two additional dice can be rolled and added to the result. A roll of three ones, (a 3), is a Critical Failure, (even if all you only needed to roll was a 3 to succeed the check). A Critical Failure may represent something more disastrous happening to the character as the Referee sees fit. A Critical Failure on a Lockpicking task, for example, could trigger a silent alarm the character wasn't aware of.
+
+!!!! Combat actions
+
+Fuzion uses rounds, (called Phases), to time actions taken in combat. A typical Phase in Fuzion represents 3 seconds of real time, and 20 Phases = 1 minute.
+
+During a Phase, a character can perform one of several Basic Actions, such as Attack, Block (Parry), or Move.
+
+Advanced Actions usually take more time and additional phases to perform, like casting a spell, or performing another complex task.
+
+Free Actions take such little time that can be performed immediately and do not use up time, such as dropping an item, standing up, or calling to an ally. The character in a party with the highest Reflexes stat acts first, or they can hold the action and wait to see what someone else is doing. There are no Initiative checks unless the Referee decides to randomly see who goes first. In such a case, the Reflexes Stat can be added to the 3d6 die roll. Usually a party of several NPC's act on one Initiative. Initiative is rolled again for each combat Phase, or to save time, the GM can opt to use the same initiative for the rest of the combat scene.
+
+When making an opposed roll against another character, (or NPC), the resolution is handled differently and attempt to counteract what the opposition does.
+
+The typical opposed check formula is: Attack Value (AV) + Die Roll vs. Defense Value (DV) + Die Roll, or Defense Value + Flat X
+
+To make things easier, a player should calculate their character's AVs and DVs ahead of time before beginning play. Another option for the defender to choose Flat X, (or Flat 10), where the Difficulty is always 10 + the defender's DV. The attacker only rolls dice during the combat Phase, which helps speed a combat scene along. The Flat X can be further modified by armor, cover and range penalties.
+
+!!!! Resolving damage
+
+Living characters in Fuzion can take two kinds of damage; Lethal Damage, (that subtracts Hits), or Stun Damage, that subtracts Stun points. When Hits fall to zero, a character is unconscious and may be dying. Losing further Hits can kill a character if it should fall twice below their Body Stat, that is, a character with Body 5, (and 25 Hits), dies when his Hits fall to -10. When Stun falls to zero, a character is out cold. At this point, any further damage becomes Stun Rollover at 1/5 the Stun damage and begin deducting from their Hits. When a character loses 1/2 of their Hits, all their stats drop by 2. If 3/4 Hits are lost, all stats drop by 4.
+
+Inanimate objects, have Structural Damage Points or SDPs. When an object loses all its SDPs, it is rendered useless; (a vehicle shuts down and grinds to a halt, a weapon will no longer fire, etc). It is destroyed when it reaches twice its SDPs in damage. To keep things simple, (and avoid rolling lots of dice), large scale weapons inflict points of damage called Kills, which represent destruction on a much larger scale. Kills are used for such things as giant mecha robots and spaceships. Weapons that inflict Kill damage are not usually small enough to be carried around by characters.
+
+Character sized weapons in Fuzion have Damage Classes, or (DCs). Each point of DC represents a six-sided die that is rolled to see how much damage the weapon can cause. Six-sided dice are always used for damage rolls, regardless of using a d10 (or other die types) for checks. For instance, a light weight handgun typically has a DC of 3; meaning 3d6 is rolled to determine the damage it causes when it hits something. Some weapons also have a Weapon Accuracy (WA) value. This number is further added to the Attack roll and raise the chances of getting a successful hit.
+
+Melee weapon sometimes have a Minimum Strength value. This is an optional rule to add more realism. A character must possess the listed minimum level of STR to fully inflict the weapon's damage. For every point of STR under the minimum, the weapon does one less die of damage. For example: A Battleaxe has a DC 5 and a Minimum STR of 5. A character with an STR 3, that uses the Battleaxe, suffers a -2 penalty to his Attack roll. It will also only inflict DC 3 of damage because the character's STR is 2 less than the minimum of 5. The character also suffers a -2 penalty to any Reflex checks and Reflex-based Skill checks when wielding the weapon.
+
+For unarmed physical damage, a character deals 1 DC of punching damage per level of STR Stat, that is, a character with STR 3 does 3 DC of damage. Kicking adds an additional DC, that is, with a STR of 3, a character deals 4 DC of damage with a kick.
+
+Some Fuzion campaigns offer an optional Hit Location Chart where 3d6 is rolled to determine what specific part of the body is hit by an attack. Depending on the location, the damage may be modified. For instance, if damage is applied to the head, the damage taken is doubled. If a hand is struck, the damage is halved. Using Hit Locations allows Called Shots with a -4 penalty to an attack roll to strike a specific area.
+
+!!!! Rewards
+
+After a good game of Fuzion, Referees can reward characters with more Option Points, (or Award Points), which they can use to improve skills, and convert to money to buy more equipment. Enough OPs that are saved up can later allow a player to raise a Stat or two, and maybe buy a Talent or Perk, however the price for future ability upgrades becomes costly and keeps characters from becoming too powerful, too quickly. For example, to raise a skill from 4 to 5 costs a number of Option Points per point of the skill's next level. In this case, 5 option points. To raise it again to 6, costs 6 more points. To raise a primary stat costs 5 option points per level starting with the first. For example, to raise a stat from 4 to 5 costs 25 option points (5X5). Again to 6 would cost 30 more points (5X6).
+
+!!! Games that use Fuzion
+
+* '''Atomik Fuzion:''' The Atomik family of Fuzion products (Alienz, Cyberware, Magick, Motorwarz, Psioniks, Vigilantian and WAR) were exhaustively researched by Mark Chase and published freely under the Atomik Vortex Studio [1] imprint. Due to a disagreement over licensing restrictions, the Atomik Fuzion line has been converted to generic role playing aids tied to no one gaming system and are no longer free.
+* '''Artesia:''' Adventures in the Known World (Archaia Studios Press): A fantasy game based on the Artesia series of comic books. (ISBN 1-932386-10-6)
+* '''Bubblegum Crisis RPG (R. Talsorian):''' A high-powered cyberpunk game based on the anime of the same name, with two support books. (ISBN 0-937279-80-3)
+* '''Champions: The New Millennium (Hero Games):''' An update of the setting of the classic Champions superhero role playing game, with two support books. (ISBN 0-937279-88-9)
+* '''Cyberpunk v3.0 RPG (R. Talsorian):''' The canon sequel to Cyberpunk 2020, it takes place sometime in the 2030's. (ISBN 1-891933-03-5)
+* '''Dragonball Z (R. Talsorian):''' A role-playing game using Instant Fuzion, based on the anime of the same name. (ISBN 1-891933-00-0)
+* '''Guardian Universe (Dilly Green Been Games):''' Superhero Fuzion superhero RPG with one support book. (ISBN 0-9744698-0-7)
+* '''Lightspeed:''' High-fantasy space opera, inspired by Star Trek and Star Wars, as well as a dozen other sci-fi settings, with two support books. (The company and the product have the same name, as Lightspeed is the only product Lightspeed makes.) (RPGnow purchase link)
+* '''Sengoku (Gold Rush Games):''' Historic Japanese roleplaying in Japan's warring states period. (Hardcover ISBN 1-890305-41-3, Softcover ISBN 1-890305-50-2) (RPGNow Purchase Link)
+* '''Shards of the Stone:''' an electronic-only fantasy RPG.
+* '''Teenagers from Outer Space (R. Talsorian):''' A wild animé high school comedy game.
+* '''Usagi Yojimbo Roleplaying Game:''' Anthropomorphic animal roleplaying in feudal Japan, based on the Usagi Yojimbo comic book series by Stan Sakai. Uses Instant Fuzion. (ISBN 1-890305-02-2)
+* '''Victoriana (Heresy Gaming):''' Victorian era fantasy roleplaying with a strong scientific romance flavor. (ISBN 1-904649-00-9)
+* '''Xandoria (Dilly Green Bean Games):''' Sci-Fi/Fantasy game with a strong Phantasy Star theme. (RPGnow purchase link)
+* '''Zorro (Gold Rush Games):''' Roleplaying in Spanish colonial California, based on the Zorro novels by Johnston McCulley. Instant Fuzion (ISBN 1-890305-26-X) and Total Fuzion editions are available.

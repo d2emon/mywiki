@@ -1,0 +1,164 @@
+!! Biosys Walkthrough
+
+!!! The story
+
+You play professor Alan Russell. You awaken in Biosphere 4, large complex holding artificial ecosystems. Each ecosystem is held in a `biome'. There are four biomes: the rainforest (rf) biome, the savannah (sav) biome, the ocean (oc) biome and the accelerated evolution (evo) biome. Your goal is to survive within Biosphere 4 and find a way out.
+
+Russell was a very well known eco-acivist, until some years ago a company called Subtech offered him the chance to help design and build Biosphere 4. Sam Devlin is the Subtech-manager in charge of the Biosphere 4 project.
+
+Russell's ambition is to experiment with plantlife in the hope of developing a plant that can transform CO2 in O2 on a large scale. These plants are called synthetic life forms (`synths'). The experiments took place in the accelerated evolution biome (AEB). In order to conduct the experiments Russell has asked his old friend Sarah Parish for assistance.
+
+The last generation synths are mobile. They do not need to be in contact with the ground in order to survive. The synths are also lethal; they attack people in order to suck the CO2 from their lungs. This seriously injures the victims and some times even kills them.
+
+Subtech has decided to make a hotel resort in the AEB. Subtech workers have begun the construction of `Club Eden'. The working conditions are bad: there is only a limited amount of oxygen in the biome, so that breathlessness occurs regularly.
+
+Russell is opposed to `Club Eden' because the biome will probably not be able to produce enough oxygen to hold a large number of tourists and because there are synths on the loose. When three Subtech workers disappear, the entire working crew get very restless. In order to appease them Mike Abell, Subtech's Club Eden site manager, organises a Christmas party. During the Christmas party fire breaks out, burning the biome and killing all the workers.
+
+!!! Walkthrough
+
+!!!! 1. Finding your bearings in the rainforest
+
+You are in the rain forest by sensor rf/04. It is raining. One of the paths is inaccessible because of waterlogging. You need to find shelter and a way to control the Biosphere.
+
+Follow the long arrow to the left towards sensor rf/01. Turn off the rain tap and drink some water from the stream. The path upward is blocked. Go back to sensor rf/04.
+
+Follow the long arrow to the right towards sensor rf/05. Find the compass. The path upward is blocked. Go back to sensor rf/04.
+
+By now the water will have drained away allowing you to proceed SW to sensor rf/02. There you will find the infrared wand. Follow the path W to the stream. Push down the tree and cross to sensor rf/01. Go NE to the lift. Go to the rainforest basement. You cannot use the pod because you need a password. Go back to the biome floor. Go back W to sensor rf/01 and SE to sensor rf/04.
+
+You only have the infrared wand to help you further. In the player manual it says that you remember that you used it on the air seals.
+
+!!!! 2. Command centre codes in the AEB
+
+From sensor rf/04 follow the short arrow to the SE. Open the access hatch and enter the air tunnel. Half way the air tunnel will be closed. Use the infrared wand to open the access hatch. Follow the air tunnel towards the AEB.
+
+Close the access hatch. Follow the path to the W towards sensor evo/01. There you will find a weird fruit in the tree. Follow the path N towards cfan evo/01. Find the body of Mike Abell. Take the key from his pocket. Read and replace the note in his pocket. The note gives you the password `house' to the command centre. Take the canteen (you can use it for coffee or water). Go back to the access hatch (SE and SE).
+
+Explore further. Follow the path S to the Club Eden entrance. The entrance is closed.
+
+Return E towards the access hatch. Open the access hatch and follow the air tunnel back to the rainforest. From the clearing with the access hatch, go back NW to sensor rf/04. Continue NW to sensor rf/01 and NE towards sensor rf/03. Two paths northward are blocked.
+
+Take the lift to the rainforest basement. As you enter several fuses will blow. You can replace the blown out fuses with the light fuse, the sensor fuse and the pod fuse (swapping the lift fuse and the pod fuse makes sense since you hardly need both of them at the same time). There is a rainforest map next to the computer. On the other side are some press clippings with `Russell' highlighted. That is the password to the system.
+
+Take the pod to the command centre. The password is `house'.
+
+!!!! 3. Finding out who you are and what's happening
+
+From the command centre basement take the stairs to the living quarters and go to sleep. In your dream you'll hear a poem. The poem will either give you the password to the rainforest `landlady' or tell you to `check the mirror'.
+
+Find your way around the command centre. You can visit the kitchen, the living room, the bedroom, the bathroom, the study, the analytics laboratory and the control room. The door to the hydroponic growth chamber is padlocked. Abell's key doesn't fit. You will need to find another way to open it.
+
+Do the medical check in the analysis lab. You will need the bronchial inhaler in the bathroom to cure your. Check the microscope to see where in the rainforest the water is drinkable.
+
+View all the video tapes you can find: one in the bedroom, three in the living room and one in the study.
+
+In the study view the videophone messages. Read the messages on the board: there is a machete on the beach, the password for the messages is `cybercyles'. The cabinet in the study is locked. Abell's key doesn't fit.
+
+In the control room listen to the `oxygen' speech on the sound tape. Use the computer, password `Russell'. Turn on all the systems. The AEB-systems will not respond. Read the messages, password `cybercycles'.
+
+Look into the mirror in the bathroom. Use the statue in the bedroom to break the mirror. There you'll find part of the poem you hear in your sleep. It will give you the password to the savannah biome, `visitor'.
+
+Your goal is to get out of the Biosphere. For that you need key to the study cabinet, a machete to explore the blocked paths in the rainforest, a way to open the growth chamber and a way to open the Club Eden gate. All you can do is visit the savannah and ocean biomes.
+
+!!!! 4. Exploring the savannah and ocean biomes and finding the machete
+
+Go down to the control centre basement. Take the light fuse. Go to the rainforest basement and use the control centre fuse on the reverse osmosis. Go back to the pod and go to the savannah biome, password `visitor'. Take the lift in the savannah biome. Follow the path N to sensor sav/02.
+
+Go W to sensor sav/09, SW to sensor sav/08, S to sensor sav/07 and E to sensor sav/06.
+
+Open the access hatch and go to the ocean biome. Pick up the machete. Go NW to sensor oc/01. You do not have the password to the lift. Go back to the savannah biome and close the hatch.
+
+Go E towards sensor sav/05, NE to sensor sav/04 and go into the hollow tree. There you'll find a map of the savannah biome, the key to the study cabinet, a sleeping bag and a latex extractor (you could take the latex extractor to the lombriguera in the rainforest across the stream from sensor rf/01). Take these items and come out of the hollow tree.
+
+Follow the path NW to sensor sav/03, N to sensor sav/02 and S to the lift. Take the light fuse and go to the rainforest. Use the fuse for the sensors.
+
+By now you will have heard the fourth verse in the dream giving you the password to the ocean biome `reside'. In the ocean basement there is an oxygen reserve tank. Take the lift to the subsea platform and walk round. Go to the biome floor and close the access hatch. Go back to the command centre.
+
+!!!! 5. Using the key to the cabinet
+
+The key found in the hollow tree is for the study cabinet. Open the drawer and take the card. Look at the press clippings. They'll give you the password to the synth experiments `Greenking'.
+
+Watch the new telephone message.
+
+Take the card to the medicine dispenser in the analytics lab.
+
+Take the videotape and watch it.
+
+Go back to the basement and take the pod to the rainforest.
+
+Your goal is still to get out of the Biosphere. For that you need to open the blocked paths in the rainforest, a way to open the growth chamber and a way to open the Club Eden gate. All you can do is go back to the rainforest.
+
+!!!! 6. Opening up the rainforest and meeting the synths
+
+When coming out of the rainforest lift go W to the stream. Use the machete to go N to sensor rf/07. There you'll find a weird plant. If you pick it up it will escape. It can be killed by pressing the space bar when holding it.
+
+Take the `white angel's trumpet'. In the hut you'll find a fruit picker, a blow pipe and a fishing rod.
+
+Continue N to sensor rf/09. There you'll find another synth. Take the path SE to sensor rf/08. There's another synth there too. Open the paths W and S, but continue to the SE to sensor rf/06. Open the path to the W and return to the lift.
+
+It is possible that by now you've been attacked by a larger synth. If so, and your lungs are damaged, go back to the command centre and use the bronchial inhaler. Not all synth attacks are lethal. It depends on your health and the size of the synth.
+
+The visit to the rainforest has not helped you finding a way out of the Biosphere. Nor has it helped you finding a way to open the growth chamber and the Club Eden gate. Perhaps there's another way to open the Club Eden gate.
+
+!!!! 7. Getting into Club Eden
+
+Go to the rainforest access hatch and walk toward the AEB. Follow the path S to the Club Eden gate. Eat the white angel's trumpet and follow the path to the apples. Take one of the apples. This is the key to the Club Eden gate.
+
+Follow the path W to the Club Eden fountain. To the NE there are some workers' shacks burning.
+
+Go W into the Club Eden lobby. There you'll find a leaflet with a map to Club Eden. Go up the stairs to the balcony. Take the fire extinguisher.
+
+Go back outside and go NE towards the burning shacks. Extinguish the fires. Find the oxygen mask and use it. Damaged lungs can be treated with the bronchial inhaler. There is a locked. There is also a welder without oxygen canister.
+
+Go back to the fountain, to the lobby and follow NW to the plaza. Enter the site manager's shack. View the videophone messages. Use the key you found in the AEB on the cabinet. The map will tell you the Biosphere exit is behind the cave.
+
+Use the floppy disk on the portable computer and read Abell's logs. Read Abell's messages on the board: missing are an oxygen mask, a thermal poncho and a crowbar.
+
+Explore the rest of the AEB. Go back to the plaza. Go N to the Adam's Rib terrace and N again to Adam's Rib.
+
+Go back to the plaza. Go NW to the bar. There is a body under a part of a statue. You're not strong enough to move the stone. Exit the bar NW to the terrace and follow the stairs W to rain tap evo/01. There you'll find a body wearing a thermal poncho. Go N to sensor evo/06. Look up to the cave. You can't climb the cliff.
+
+Go SE to the AEB lift. Go E to rain tap evo/01.
+
+In order to get out you need to climb the cliff. But you also have to find a way to open the growth chamber door. The only place you haven't looked is beneath the stone. Now you have to find a way to move it. If you're not strong enough to lift something try and find a way to boost your strength.
+
+!!!! 8. Finding the crowbar and restoring the AEB
+
+Go back to the command centre. Get some adrenaline from the dispensary in the analytics lab. But it's also possible to pick the coca plant in the rainforest (sensor rf/08).
+
+Return to the AEB via the rainforest access hatch (you can refill your mask at the ocean basement).
+
+Go to the bar. Use the adrenaline or eat the coca. You now have enough strength to lift the stone. Under the stone you'll find the crowbar.
+
+Return to the command centre and force the growth chamber door. There you'll find the second part of the poem. The password to the AEB is `hidden'. You'll also find a dead big synth, three sound tapes and an empty oxygen canister.
+
+Listen to the sound tapes in the control room.
+
+Take the canister to the ocean basement and refill with oxygen. Take the canister to the workers' shacks in the AEB via the rainforest access hatch. Use the oxygen to weld the door open. You can now enter the AEB basement, passing through a small storage and the tunnel. In the storage pick up the two fuses.
+
+In the AEB basement you notice Club Eden power cable plugged into the power station. Remove the fuses from the fuse board. Remove the cable and replace the AEB power cable. The system will short circuit. Put out the fire using the CO2 extinguisher. Replace as many fuses as you can. The other vital fuses should be replaced with sensor fuses from the other biomes.
+
+Turn on all the AEB systems you can. It is necessary to turn on the soilbed fans to get rid of the pollution in biome. It helps if you fill the air tanks with air from the other biomes. Push air into the AEB as often as you can. Turn on the rain machines and check the water level in the reverse osmosis. Refill the reverse osmosis with water from the utility tank. Turn on the heater.
+
+You'll need several days to rejuvenate the AEB.
+
+During rejuvenation about six small synths and two big ones will come to life in the AEB.
+
+When the AEB is rejuvenating you'll hear a helicopter pass over. You'll then receive a message from Devlin announcing the continuation of Club Eden.
+
+If the AEB level reaches about 40% several fuses will blow out. Use the light and sensor fuses from the other biomes to keep the system going.
+
+Check the other biomes as well. At a certain point the ocean will heat up. Bring the maximum temperature down to 25o on the heater in the ocean biome. When the ocean biome health drops, turn on the alg scrubbers.
+
+Devlin has made it clear that you'll be in trouble when Subtech reaches the Biosphere. It is therefore necessary to get out of Biosphere 4.
+
+!!!! 9. Leaving Biospshere 4
+
+Either by continuously checking or by using the peyote (sensor sav/09) you'll notice a plant growing under the cave. When the AEB health reaches 80% the plant will be high enough to climb.
+
+Climb up to the cave. In the cave you'll find 3 big synths and the hatch to the outside. If you stay too long you'll be attacked by the synths killing you instantly.
+
+Go back to the burnt shacks and pick up the oxygen canister. Carry it to the cliff. Open the canister and climb into the cave. Press the four levers beneath the hatch and get out of the cave fast. The hatch will explode open. Climb back up into the cave and leave Biosphere 4.
+
+!!! The End
+Thanks to Kelshandra, Ralf, Pelari, Polar Bear and Bestbest at the spoiler centre chat area.
