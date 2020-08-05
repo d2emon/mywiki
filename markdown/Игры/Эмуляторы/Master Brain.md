@@ -2,7 +2,7 @@
 *   Cookie
 *   Pssst
 *   Sabrewulf
-*   ?   Pacman
+*   Mad Mix
 *   Jack the Nipper
 *   ?   Firelord
 *   ?   Viking
