@@ -90,3 +90,20 @@ They Got a Hell of a Band).
 * Walk Hard: Dewey Cox story. Фильм представляет собой стеб над рок-культурой 
 в целом. Несмотря на сюрреалистичность, вполне смотрибелен. На пару секунд 
 засветились Джек Блэк и Саймон Хелберг (Воловитц из ТБВ).
+
+## Музыканты
+
+* [Champs](../../artists/Champs)
+* [Chuck Berry](../../artists/Chuck%20Berry)
+* [Coasters](../../artists/Coasters)
+* [Fireballs](../../artists/Fireballs)
+* [Shadows](../../artists/Shadows)
+* [Tornados](../../artists/Tornados)
+* [Бадди Холли](../../artists/Buddy%20Holly)
+* [Билл Хэйли](../../artists/Bill%20Haley)
+* [Бо Диддли](../../artists/Bo%20Diddley)
+* [Джерри Ли Льюис](../../artists/Jerry%20Lee%20Lewis)
+* [Карл Перкинс](../../artists/Carl%20Perkins)
+* [Литтл Ричард](../../artists/Little%20Richard)
+* [Эдди Кокран](../../artists/Eddie%20Cochran)
+* [Элвис Пресли](../../artists/Elvis%20Presley)
