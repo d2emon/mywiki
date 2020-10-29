@@ -1,0 +1,122 @@
+[
+  {
+    "slug": "faerunian",
+    "title": "Faerûnian"
+  },
+  {
+    "slug": "imaskari",
+    "title": "Imaskari"
+  },
+  {
+    "slug": "rauric",
+    "title": "Rauric"
+  },
+  {
+    "slug": "chultan",
+    "title": "Chultan"
+  },
+
+  {
+    "slug": "amaese",
+    "title": "Amaese"
+  },
+  {
+    "slug": "Han",
+    "title": "han"
+  },
+  {
+    "slug": "shou-chiang",
+    "title": "Shou Chiang"
+  },
+  {
+    "slug": "kuong",
+    "title": "Kuong"
+  },
+  {
+    "slug": "laothan",
+    "title": "Laothan"
+  },
+  {
+    "slug": "lidahan",
+    "title": "Lidahan"
+  },
+  {
+    "slug": "purang",
+    "title": "Purang"
+  },
+  {
+    "slug": "tabotan",
+    "title": "Tabotan"
+  },
+  {
+    "slug": "trade",
+    "title": "Trade"
+  },
+
+  {
+    "slug": "azuposi",
+    "title": "Азупосский"
+  },
+  {
+    "slug": "nexalan",
+    "title": "Нецальские"
+  },
+  {
+    "slug": "payit",
+    "title": "Пайские"
+  },
+
+  {
+    "slug": "dethek",
+    "title": "Детек (Цвержские)"
+  },
+  {
+    "slug": "espruar",
+    "title": "Эспруар (Альвийский)"
+  },
+  {
+    "slug": "gnim",
+    "title": "Гним (Номий)"
+  },
+  {
+    "slug": "luiric",
+    "title": "Луйрский (Хобский)"
+  },
+  {
+    "slug": "faerie",
+    "title": "Сильванский"
+  },
+  {
+    "slug": "kentaur",
+    "title": "Кентаврический"
+  },
+  {
+    "slug": "jotun",
+    "title": "Йотун (Жихантийские)"
+  },
+  {
+    "slug": "daraktan",
+    "title": "Дарактан (Урчий)"
+  },
+  {
+    "slug": "ghukliak",
+    "title": "Гукляк (Гоблинский)"
+  },
+  {
+    "slug": "sphinx",
+    "title": "Свинкс"
+  },
+  {
+    "slug": "yipyak",
+    "title": "Йипьяк (Кобольский)"
+  },
+
+  {
+    "slug": "primordial",
+    "title": "Примордические"
+  },
+  {
+    "slug": "supernal",
+    "title": "Супернальные"
+  }
+]

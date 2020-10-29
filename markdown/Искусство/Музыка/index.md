@@ -3,7 +3,7 @@
 Я люблю музыку. Почему бы не хранить здесь то, что каким-то образом касается
 этого искусства.
 
-*   [Misheard Lyrics](Misheard%20Lyrics/index.md)
+*   [Misheard Lyrics](./Misheard%20Lyrics.md)
 *   [Инструменты](Инструменты/index.md)
 *   [Исполнители](Исполнители/index.md)
 *   [Каверы](Альбомы/index.md)

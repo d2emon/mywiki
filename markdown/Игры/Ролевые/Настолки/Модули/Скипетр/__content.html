@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge' />
+	<meta http-equiv='content-type' content='text/html; charset=utf-8'/>
+	<title>Скипетр</title>
+
+	<style type='text/css'>
+		body, div, p, table {
+			font-size:10pt;
+			font-family:Verdana;
+		}
+
+		img{border:none}
+		
+	</style>
+	<style>
+.codehilite .hll { background-color: #ffffcc }
+.codehilite  { background: #f8f8f8; }
+.codehilite .c { color: #408080; font-style: italic } /* Comment */
+.codehilite .err { border: 1px solid #FF0000 } /* Error */
+.codehilite .k { color: #008000; font-weight: bold } /* Keyword */
+.codehilite .o { color: #666666 } /* Operator */
+.codehilite .ch { color: #408080; font-style: italic } /* Comment.Hashbang */
+.codehilite .cm { color: #408080; font-style: italic } /* Comment.Multiline */
+.codehilite .cp { color: #BC7A00 } /* Comment.Preproc */
+.codehilite .cpf { color: #408080; font-style: italic } /* Comment.PreprocFile */
+.codehilite .c1 { color: #408080; font-style: italic } /* Comment.Single */
+.codehilite .cs { color: #408080; font-style: italic } /* Comment.Special */
+.codehilite .gd { color: #A00000 } /* Generic.Deleted */
+.codehilite .ge { font-style: italic } /* Generic.Emph */
+.codehilite .gr { color: #FF0000 } /* Generic.Error */
+.codehilite .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.codehilite .gi { color: #00A000 } /* Generic.Inserted */
+.codehilite .go { color: #888888 } /* Generic.Output */
+.codehilite .gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+.codehilite .gs { font-weight: bold } /* Generic.Strong */
+.codehilite .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.codehilite .gt { color: #0044DD } /* Generic.Traceback */
+.codehilite .kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+.codehilite .kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+.codehilite .kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
+.codehilite .kp { color: #008000 } /* Keyword.Pseudo */
+.codehilite .kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+.codehilite .kt { color: #B00040 } /* Keyword.Type */
+.codehilite .m { color: #666666 } /* Literal.Number */
+.codehilite .s { color: #BA2121 } /* Literal.String */
+.codehilite .na { color: #7D9029 } /* Name.Attribute */
+.codehilite .nb { color: #008000 } /* Name.Builtin */
+.codehilite .nc { color: #0000FF; font-weight: bold } /* Name.Class */
+.codehilite .no { color: #880000 } /* Name.Constant */
+.codehilite .nd { color: #AA22FF } /* Name.Decorator */
+.codehilite .ni { color: #999999; font-weight: bold } /* Name.Entity */
+.codehilite .ne { color: #D2413A; font-weight: bold } /* Name.Exception */
+.codehilite .nf { color: #0000FF } /* Name.Function */
+.codehilite .nl { color: #A0A000 } /* Name.Label */
+.codehilite .nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
+.codehilite .nt { color: #008000; font-weight: bold } /* Name.Tag */
+.codehilite .nv { color: #19177C } /* Name.Variable */
+.codehilite .ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
+.codehilite .w { color: #bbbbbb } /* Text.Whitespace */
+.codehilite .mb { color: #666666 } /* Literal.Number.Bin */
+.codehilite .mf { color: #666666 } /* Literal.Number.Float */
+.codehilite .mh { color: #666666 } /* Literal.Number.Hex */
+.codehilite .mi { color: #666666 } /* Literal.Number.Integer */
+.codehilite .mo { color: #666666 } /* Literal.Number.Oct */
+.codehilite .sa { color: #BA2121 } /* Literal.String.Affix */
+.codehilite .sb { color: #BA2121 } /* Literal.String.Backtick */
+.codehilite .sc { color: #BA2121 } /* Literal.String.Char */
+.codehilite .dl { color: #BA2121 } /* Literal.String.Delimiter */
+.codehilite .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
+.codehilite .s2 { color: #BA2121 } /* Literal.String.Double */
+.codehilite .se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
+.codehilite .sh { color: #BA2121 } /* Literal.String.Heredoc */
+.codehilite .si { color: #BB6688; font-weight: bold } /* Literal.String.Interpol */
+.codehilite .sx { color: #008000 } /* Literal.String.Other */
+.codehilite .sr { color: #BB6688 } /* Literal.String.Regex */
+.codehilite .s1 { color: #BA2121 } /* Literal.String.Single */
+.codehilite .ss { color: #19177C } /* Literal.String.Symbol */
+.codehilite .bp { color: #008000 } /* Name.Builtin.Pseudo */
+.codehilite .fm { color: #0000FF } /* Name.Function.Magic */
+.codehilite .vc { color: #19177C } /* Name.Variable.Class */
+.codehilite .vg { color: #19177C } /* Name.Variable.Global */
+.codehilite .vi { color: #19177C } /* Name.Variable.Instance */
+.codehilite .vm { color: #19177C } /* Name.Variable.Magic */
+.codehilite .il { color: #666666 } /* Literal.Number.Integer.Long */
+div.codehilite {border-style: solid; border-color: gray; border-width: 1px; padding: 0.5em;}
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 0.2em 0.5em;
+    border: 1px solid gray;
+   }
+
+div.codehilite > pre {
+    white-space: pre-wrap;       /* css-3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+</style>
+</head>
+
+<body>
+<h1>Скипетр</h1>
+<h2>Подземелье</h2>
+<p>Тайник    - Катапульта    - Подземелье</p>
+<h2>Подвал</h2>
+<p>Подземелье    - Темница   - Медуза    - Оружейная     - Подвал    - Чулан</p>
+<h2>1 этаж</h2>
+<div class="codehilite"><pre><span></span>                                <span class="err">Гнездо</span>                                          
+                                    <span class="o">+</span>
+<span class="p">....</span>          <span class="o">-</span> <span class="err">Ковер</span>         <span class="o">-</span> <span class="err">Выход</span>     <span class="o">-</span> <span class="err">Колонны</span>           <span class="o">-</span> <span class="err">Лестница</span>     <span class="o">-</span> <span class="err">Бассейн</span>    <span class="o">-</span> <span class="err">Библиотека</span>    <span class="o">-</span> <span class="err">Кабинет</span>   <span class="o">-</span> <span class="err">Балкон</span>
+                                                                                                <span class="o">+</span>
+                                                                                            <span class="err">Подвал</span>
+
+
+                <span class="err">Оазис</span>         <span class="o">-</span> <span class="err">Яма</span>         <span class="err">Сапожная</span> <span class="err">лавка</span>      <span class="err">Оружейник</span>
+                    <span class="o">+</span>                           <span class="o">+</span>                   <span class="o">+</span>
+<span class="err">Лестница</span><span class="mi">2</span>     <span class="o">-</span> <span class="err">Черный</span> <span class="err">ход</span>    <span class="o">-</span> <span class="err">Стена</span>     <span class="o">-</span> <span class="err">Рынок</span><span class="mi">1</span>            <span class="o">-</span> <span class="err">Рынок</span><span class="mi">2</span>       <span class="o">-</span> <span class="err">Конюшни</span>
+</pre></div>
+
+
+<h2>2 этаж</h2>
+<div class="codehilite"><pre><span></span><span class="err">Лестница</span>                                    <span class="err">Лестница</span><span class="mi">2</span>
+    <span class="o">+</span>                                           <span class="o">+</span>
+<span class="err">Гостиная</span>      <span class="o">-</span> <span class="err">Спальня</span><span class="mi">1</span>      <span class="o">-</span> <span class="err">Коридор</span>   <span class="o">-</span> <span class="err">Спальня</span><span class="mi">2</span>
+</pre></div>
+
+
+<h2>За озером</h2>
+<div class="codehilite"><pre><span></span>                            <span class="err">Башня</span>
+                                <span class="o">+</span>
+<span class="err">Пустыня</span>       <span class="o">-</span> <span class="err">Статуя</span>    <span class="o">-</span> <span class="err">Пальма</span>        <span class="o">-</span> <span class="p">....</span>        <span class="err">Остров</span>
+    <span class="o">|</span>               <span class="o">+</span>                                 <span class="o">/</span>
+<span class="err">За</span> <span class="err">водопадом</span>    <span class="err">Фонтан</span>      <span class="err">Механизм</span>      <span class="o">-</span> <span class="err">Туннель</span>    
+              <span class="err">\</span>     <span class="o">+</span>     <span class="o">/</span>
+<span class="err">За</span> <span class="err">водопадом</span>  <span class="o">-</span> <span class="err">Водопад</span>   <span class="o">-</span> <span class="err">Механизм</span>      <span class="o">-</span> <span class="err">Туннель</span>
+    <span class="o">+</span>
+<span class="err">В</span> <span class="err">люке</span>        <span class="o">-</span> <span class="err">Пещера</span>
+</pre></div>
+
+
+<h2>Чердак</h2>
+<div class="codehilite"><pre><span></span><span class="err">Смотровая</span>
+    <span class="o">+</span>
+<span class="err">Чердак</span>
+</pre></div>
+
+
+<h2>Порядок</h2>
+<ul>
+<li>Вначале у вас есть каска и тряпка</li>
+<li>Поменяйте тряпку на флейту<ul>
+<li>Каска, Флейта </li>
+</ul>
+</li>
+<li>Идите на запад до лестницы, поднимайтесь наверх и идите на восток в гостиную</li>
+<li>Поменяйте каску на сачок<ul>
+<li>Сачок, Флейта </li>
+</ul>
+</li>
+<li>Идите на запад до лестницы, спускайтесь вниз и идите на запад до ковра</li>
+<li>Летите на ковре</li>
+<li>Заходите в башню</li>
+<li>Поднимайтесь по веревке на чердак</li>
+<li>Поменяйте флейту на перо<ul>
+<li>Сачок, Перо</li>
+</ul>
+</li>
+<li>Идите на восток до смотровой и запрыгивайте на птицу</li>
+<li>Летите на птице</li>
+<li>Поменяйте перо на крылья<ul>
+<li>Сачок, Крылья</li>
+</ul>
+</li>
+<li>Вылазьте из гнезда</li>
+<li>Когда будете проходить над осиным гнездом - оно упадет и оттуда вылетит оса</li>
+<li>Поймайте осу в сачок<ul>
+<li>Сачок с осой, Крылья</li>
+</ul>
+</li>
+<li>Идите на запад до ковра</li>
+<li>Летите на ковре</li>
+<li>Идите на запад до статуи</li>
+<li>Статуя улетит</li>
+<li>Идите на восток до пальмы</li>
+<li>Летите на ковре</li>
+<li>Идите на восток до выхода</li>
+<li>Поменяйте крылья на ключи<ul>
+<li>Сачок с осой, Ключи</li>
+</ul>
+</li>
+<li>Идите на восток до лестницы</li>
+<li>Поменяйте сачок с осой на веер<ul>
+<li>Веер, Ключи</li>
+</ul>
+</li>
+<li>Поднимайтесь наверх и идите на восток в гостиную</li>
+<li>Поменяйте веер на каску<ul>
+<li>Каска, Ключи</li>
+</ul>
+</li>
+<li>Идите на восток в спальню 2</li>
+<li>Проходите в шкаф</li>
+<li>Спускайтесь по лестнице</li>
+<li>Поменяйте ключи на книгу<ul>
+<li>Каска, Книга</li>
+</ul>
+</li>
+<li>Идите на восток к черному ходу и сверните к оазису</li>
+<li>Залезьте на фонтан и поменяйте каску на пращу<ul>
+<li>Праща, Книга</li>
+</ul>
+</li>
+<li>Идите на восток к черному ходу, снова на восток к лестнице2, поднимайтесь и выходите из шкафа</li>
+<li>Поменяйте книгу на кошелек<ul>
+<li>Праща, Кошелек</li>
+</ul>
+</li>
+<li>Идите на запад в спальню1</li>
+<li>Поменяйте кошелек на кольцо огня<ul>
+<li>Праща, Кольцо огня</li>
+</ul>
+</li>
+<li>Идите на запад до лестницы, спускайтесь вниз и идите на восток в бассейн</li>
+<li>Поменяйте пращу на трезубец<ul>
+<li>Трезубец, Кольцо огня</li>
+</ul>
+</li>
+<li>Идите на запад до ковра</li>
+<li>Летите на ковре</li>
+<li>Идите на запад до статуи</li>
+<li>Спускайтесь в фонтан</li>
+<li>Спускайтесь еще ниже - к водопаду</li>
+<li>Спускайтесь на дно и поменяйте трезубец на жемчужину<ul>
+<li>Жемчужина, Кольцо огня</li>
+</ul>
+</li>
+<li>Поднимайтесь к статуе и идите на восток до пальмы</li>
+<li>Летите на ковре</li>
+<li>Идите на восток к бассейну</li>
+<li>Поменяйте кольцо огня на пращу<ul>
+<li>Жемчужина, Праща</li>
+</ul>
+</li>
+<li>Зарядите жемчужину в пращу<ul>
+<li>Жемчужина, Заряженная праща</li>
+</ul>
+</li>
+<li>Идите на запад к выходу</li>
+<li>Поменяйте пращу с камнем на крылья<ul>
+<li>Жемчужина, Крылья</li>
+</ul>
+</li>
+<li>Идите на восток к лестнице, поднимайтесь и снова идите на восток в спальню1</li>
+<li>Поменяйте крылья на кошелек<ul>
+<li>Жемчужина, Кошелек</li>
+</ul>
+</li>
+<li>Идите на восток в спальню2</li>
+<li>Поменяйте жемчужину на книгу<ul>
+<li>Книга, Кошелек</li>
+</ul>
+</li>
+<li>Идите на запад к лестнице, спускайтесь и снова на запад до ковра</li>
+<li>Летите на ковре</li>
+<li>Идите на запад до статуи</li>
+<li>Спускайтесь в фонтан</li>
+<li>Спускайтесь еще ниже - к водопаду</li>
+<li>Спускайтесь на дно и идите на запад за водопад</li>
+<li>Спускайтесь в люк и идите в пещеру</li>
+<li>Наполните кошелек золотом<ul>
+<li>Книга, Кошелек с золотом</li>
+</ul>
+</li>
+<li>Идите на восток в тупик</li>
+<li>Поменяйте книгу на рыбу-шлем<ul>
+<li>Рыба-шлем, Кошелек с золотом</li>
+</ul>
+</li>
+<li>Идите на запад к водопаду</li>
+<li>Поднимайтесь к статуе и идите на восток до пальмы</li>
+<li>Летите на ковре</li>
+<li>Идите на восток к выходу</li>
+<li>Поменяйте кошелек с золотом на пращу с камнем<ul>
+<li>Рыба-шлем, Заряженная праща</li>
+</ul>
+</li>
+<li>Идите на запад до ковра</li>
+<li>Летите на ковре</li>
+<li>Сбейте пращой кокос<ul>
+<li>Рыба-шлем, Кокос</li>
+</ul>
+</li>
+<li>Заходите в башню</li>
+<li>Поменяйте рыбу-шлем на песочные часы<ul>
+<li>Песочные часы, Кокос</li>
+</ul>
+</li>
+<li>Выходите из башни и идите на запад в пустыню</li>
+<li>Поменяйте песочные часы на бревно<ul>
+<li>Бревно, Кокос</li>
+</ul>
+</li>
+<li>Возвращайтесь на восток к пальме и заходите в башню</li>
+<li>Поменяйте бревно на рыбу-шлем<ul>
+<li>Рыба-шлем, Кокос</li>
+</ul>
+</li>
+<li>Выходите из башни и идите на запад в пустыню</li>
+<li>Ныряйте в оазис</li>
+<li>Окажетесь на верхнем ярусе за водопадом, вас понесет поток на восток к водопаду</li>
+<li>По пути поменяйте кокос на зеркало<ul>
+<li>Рыба-шлем, Зеркало</li>
+</ul>
+</li>
+<li>Поднимайтесь к статуе и идите на восток до пальмы</li>
+<li>Летите на ковре</li>
+<li>Идите на восток к выходу</li>
+<li>Поменяйте зеркало на кошелек с золотом<ul>
+<li>Рыба-шлем, Кошелек с золотом</li>
+</ul>
+</li>
+<li>Идите на восток к лестнице и поднимайтесь в гостиную</li>
+<li>Поменяйте рыбу-шлем на веер<ul>
+<li>Веер, Кошелек с золотом</li>
+</ul>
+</li>
+<li>Идите на восток в спальню 2</li>
+<li>Проходите в шкаф</li>
+<li>Спускайтесь по лестнице</li>
+<li>Идите на восток к черному ходу и сверните к оазису</li>
+<li>Залезьте на фонтан и поменяйте кошелек с золотом на каску<ul>
+<li>Веер, Каска</li>
+</ul>
+</li>
+<li>Спускайтесь в яму</li>
+<li>Поменяйте каску на лампу<ul>
+<li>Веер, лампа</li>
+</ul>
+</li>
+<li>Залезьте на фонтан и поменяйте лампу на кошелек с золотом<ul>
+<li>Веер, Кошелек с золотом</li>
+</ul>
+</li>
+<li>Возвращайтесь к черному ходу и идите на восток к рынку1</li>
+<li>Заходите в сапожную лавку</li>
+<li>Поменяйте веер на тапочки<ul>
+<li>Тапочки, Кошелек с золотом</li>
+</ul>
+</li>
+<li>Выходите из сапожной лавки</li>
+<li>Идите на восток к рынку2</li>
+<li>Заходите к оружейнику</li>
+<li>Поменяйте кошелек с золотом на топор<ul>
+<li>Тапочки, Топор</li>
+</ul>
+</li>
+<li>Выходите от оружейника</li>
+<li>Идите на запад к лестнице2, поднимайтесь, идите на запад к лестнице, спускайтесь и идите на запад до ковра</li>
+<li>Летите на ковре</li>
+<li>Заходите в башню</li>
+<li>Заточите топором бревно</li>
+<li>Поменяйте тапочки на кол<ul>
+<li>Кол, Топор</li>
+</ul>
+</li>
+<li>Выходите из башни</li>
+<li>Летите на ковре</li>
+<li>Идите на восток к выходу</li>
+<li>Поменяйте топор на зеркало<ul>
+<li>Кол, Зеркало</li>
+</ul>
+</li>
+<li>Идите на восток в библиотеку</li>
+<li>Заходите в дверь и спускайтесь в подвал</li>
+<li>Идите на запад к медузе</li>
+<li>Покажите медузе зеркало</li>
+<li>Идите на запад в темницу</li>
+<li>Ослепите циклопа колом</li>
+<li>Идите на восток к лестнице из подвала, поднимайтесь и идите на восток к балкону</li>
+<li>Поменяйте зеркало на кнут<ul>
+<li>Кол, Кнут</li>
+</ul>
+</li>
+<li>Идите на запад к лестнице, поднимайтесь и идите на восток</li>
+<li>Проходите в шкаф</li>
+<li>Спускайтесь по лестнице</li>
+<li>Идите на восток к конюшням</li>
+<li>Поменяйте кнут на ось<ul>
+<li>Кол, Ось от телеги</li>
+</ul>
+</li>
+<li>Идите на запад к лестнице2, поднимайтесь, снова на запад к лестнице, спускайтесь и опять идите на запад к ковру</li>
+<li>Летите на ковре</li>
+<li>Заходите в башню</li>
+<li>Поменяйте кол на тапочки<ul>
+<li>Тапочки, Ось от телеги</li>
+</ul>
+</li>
+<li>Выходите из башни</li>
+<li>Идите на запад до статуи</li>
+<li>Спускайтесь в фонтан</li>
+<li>Спускайтесь еще ниже - к водопаду</li>
+<li>Спускайтесь на дно и идите на восток к механизму</li>
+<li>Поменяйте ось от телеги на сломанную ось<ul>
+<li>Тапочки, Сломанная ось</li>
+</ul>
+</li>
+<li>Возвращайтесь на запад к водопаду</li>
+<li>Поднимайтесь на верхний ярус и идите на восток через отремонтированный подъемный мост и угли</li>
+<li>Вы выйдете в домике на острове</li>
+<li>Поменяйте сломанную ось на лук<ul>
+<li>Тапочки, Лук</li>
+</ul>
+</li>
+<li>Заходите в домик и идите на запад к водопаду</li>
+<li>Поднимайтесь в фонтан</li>
+<li>Поменяйте тапочки на колчан<ul>
+<li>Колчан, Лук</li>
+</ul>
+</li>
+<li>Поднимайтесь к статуе и идите на восток до пальмы</li>
+<li>Летите на ковре</li>
+<li>Идите на восток к лестнице</li>
+<li>Поменяйте лук на сачок с осой<ul>
+<li>Колчан, Сачок с осой</li>
+</ul>
+</li>
+<li>Идите на восток в библиотеку</li>
+<li>Поменяйте колчан на меч<ul>
+<li>Меч, Сачок с осой</li>
+</ul>
+</li>
+<li>Спускайтесь в подвал и идите на восток в чулан</li>
+<li>Отрежьте мечом паутину<ul>
+<li>Паутина, Сачок с осой</li>
+</ul>
+</li>
+<li>Идите на запад к лестнице из подвала и поднимайтесь в библиотеку</li>
+<li>Поменяйте сачок с осой на колчан<ul>
+<li>Паутина, Колчан</li>
+</ul>
+</li>
+<li>Идите на запад к лестнице</li>
+<li>Натяните паутину на лук</li>
+<li>Поменяйте остатки паутины на лук<ul>
+<li>Заряженный лук, Колчан</li>
+</ul>
+</li>
+<li>Поднимайтесь на 2 этаж и идите на восток</li>
+<li>Идите на восток в спальню 2</li>
+<li>Проходите в шкаф</li>
+<li>Спускайтесь по лестнице</li>
+<li>Идите на восток к черному ходу и сверните к оазису</li>
+<li>Залезьте на фонтан и поменяйте колчан на лампу<ul>
+<li>Заряженный лук, Лампа</li>
+</ul>
+</li>
+<li>Возвращайтесь к черному ходу, идите на запад к лестнице2, поднимайтесь, идите на запад к лестнице, спускайтесь и идите на восток до библиотеки</li>
+<li>Заходите в дверь и спускайтесь в подвал</li>
+<li>Идите на запад к спуску в подземелье</li>
+<li>Спускайтесь вниз и идите на запад к катапульте</li>
+<li>Выстрелите в груз - катапульта забросит вас в тайник</li>
+<li>Поменяйте лук на скипетр и прыгайте в вихрь<ul>
+<li>Скипетр, Лампа</li>
+</ul>
+</li>
+<li>Окажетесь возле колонн</li>
+<li>Идите на восток в библиотеку</li>
+<li>Поменяйте лампу на сачок с осой<ul>
+<li>Скипетр, Сачок с осой</li>
+</ul>
+</li>
+<li>Выходите на балкон и покажите скипетр</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Каска</td>
+<td>С собой</td>
+<td>Чтобы исчезла хозяйка спальни1</td>
+</tr>
+<tr>
+<td>Тряпка</td>
+<td>С собой</td>
+<td>Чтобы джинн дал совет</td>
+</tr>
+<tr>
+<td>Флейта</td>
+<td>Кабинет</td>
+<td>Чтобы залезть по веревке на чердак</td>
+</tr>
+<tr>
+<td>Меч</td>
+<td>Библиотека</td>
+<td>Чтобы отрезать паутину</td>
+</tr>
+<tr>
+<td>Трезубец</td>
+<td>Бассейн</td>
+<td>Чтобы открыть раковину</td>
+</tr>
+<tr>
+<td>Веер</td>
+<td>Лестница</td>
+<td>Чтобы развеять колдовской дым</td>
+</tr>
+<tr>
+<td>Сачок</td>
+<td>Гостиная</td>
+<td>Чтобы поймать осу</td>
+</tr>
+<tr>
+<td>- Сачок с осой</td>
+<td>...</td>
+<td>Чтобы убить паука</td>
+</tr>
+<tr>
+<td>Ключи</td>
+<td>Выход</td>
+<td>Чтобы открыть шкаф</td>
+</tr>
+<tr>
+<td>Кокос</td>
+<td>Пальма</td>
+<td>Чтобы пройти через пустыню</td>
+</tr>
+<tr>
+<td>Песочные часы</td>
+<td>Башня</td>
+<td></td>
+</tr>
+<tr>
+<td>Перо</td>
+<td>Чердак</td>
+<td>Чтобы птица унесла в свое гнездо</td>
+</tr>
+<tr>
+<td>Крылья</td>
+<td>Гнездо</td>
+<td>Чтобы отдать статуе</td>
+</tr>
+<tr>
+<td>Кольцо огня</td>
+<td>Спальня1</td>
+<td>Чтобы открыть люк</td>
+</tr>
+<tr>
+<td>Кошелек</td>
+<td>Спальня2</td>
+<td>Чтобы наполнить золотом в пещере</td>
+</tr>
+<tr>
+<td>- Кошелек с золотом</td>
+<td>...</td>
+<td>Чтобы купить топор</td>
+</tr>
+<tr>
+<td>Книга</td>
+<td>Лестница2</td>
+<td>Чтобы отодвинуть камень</td>
+</tr>
+<tr>
+<td>Праща</td>
+<td>Оазис</td>
+<td>Чтобы зарядить жемчужиной</td>
+</tr>
+<tr>
+<td>- Праща с камнем</td>
+<td>...</td>
+<td>Чтобы сбить кокос</td>
+</tr>
+<tr>
+<td>Колчан</td>
+<td>Фонтан</td>
+<td>Чтобы зарядить лук</td>
+</tr>
+<tr>
+<td>Жемчужина</td>
+<td>Водопад</td>
+<td>Чтобы зарядить пращу</td>
+</tr>
+<tr>
+<td>Рыба-шлем</td>
+<td>Тупик</td>
+<td>Чтобы не утонуть в потоке воды</td>
+</tr>
+<tr>
+<td>Бревно</td>
+<td>Пустыня</td>
+<td>Чтобы заточить топором</td>
+</tr>
+<tr>
+<td>- Кол</td>
+<td>...</td>
+<td>Чтобы ослепить циклопа</td>
+</tr>
+<tr>
+<td>Зеркало</td>
+<td>За водопадом</td>
+<td>Чтобы убить медузу</td>
+</tr>
+<tr>
+<td>Лампа</td>
+<td>Яма</td>
+<td></td>
+</tr>
+<tr>
+<td>Тапочки</td>
+<td>Сапожная лавка</td>
+<td>Чтобы пройти по углям</td>
+</tr>
+<tr>
+<td>Топор</td>
+<td>Оружейник</td>
+<td>Чтобы заточить кол</td>
+</tr>
+<tr>
+<td>Ковер</td>
+<td>Подвал</td>
+<td></td>
+</tr>
+<tr>
+<td>Шлем</td>
+<td>Оружейная</td>
+<td></td>
+</tr>
+<tr>
+<td>Кнут</td>
+<td>Балкон</td>
+<td>Чтобы забрать у быка ось от телеги</td>
+</tr>
+<tr>
+<td>Ось от телеги</td>
+<td>Конюшни</td>
+<td>Чтобы починить механизм</td>
+</tr>
+<tr>
+<td>Сломанная ось</td>
+<td>Конюшни</td>
+<td></td>
+</tr>
+<tr>
+<td>Лук</td>
+<td>Остров</td>
+<td>Чтобы натянуть паутину</td>
+</tr>
+<tr>
+<td>- Натянутый лук</td>
+<td>...</td>
+<td>Чтобы зарядить стрелой</td>
+</tr>
+<tr>
+<td>- Заряженный лук</td>
+<td>...</td>
+<td>Чтобы сработала катапульта</td>
+</tr>
+<tr>
+<td>Паутина</td>
+<td>Чулан</td>
+<td>Чтобы натянуть лук</td>
+</tr>
+<tr>
+<td>Скипетр</td>
+<td>Тайник</td>
+<td>Цель приключения</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Кабинет - лампа с джинном</li>
+<li>Библиотека - рыцари</li>
+<li>Бассейн - пиранья</li>
+<li>Лестница - шары</li>
+<li>Гостиная - рыцари</li>
+<li>Колонны</li>
+<li>Выход<ul>
+<li>Птичье гнездо - на крыше </li>
+<li>Осиное гнездо - чтобы сбить нужно пройтись по крыше</li>
+</ul>
+</li>
+<li>Ковер - ковер переносит за озеро к пальме</li>
+<li>Пальма<ul>
+<li>Ковер переносит за озеро к ковру</li>
+<li>Кокос висит на пальме, его стережет обезьяна. Чтобы его сбить нужна заряженная праща</li>
+</ul>
+</li>
+<li>Башня - при наличии флейты веревка поднимается как канат</li>
+<li>Чердак - летучие мыши</li>
+<li>Смотровая - при наличии пера птица перенесет в гнездо</li>
+<li>Гнездо<ul>
+<li>Мухи</li>
+<li>Выход на крышу над входом</li>
+</ul>
+</li>
+<li>Статуя<ul>
+<li>Нужно принести крылья - тогда статуя улетит открыв фонтан и починится фонтан в оазисе</li>
+</ul>
+</li>
+<li>Спальня 1<ul>
+<li>Рыцари</li>
+<li>Если у вас нет каски - хозяйка не пропускает вас.</li>
+</ul>
+</li>
+<li>Коридор</li>
+<li>Спальня 2<ul>
+<li>Рыцари</li>
+<li>Чтобы открыть потайную дверь в шкафу нужен ключ</li>
+</ul>
+</li>
+<li>Лестница 2 - шары</li>
+<li>Черный ход - горшок</li>
+<li>Оазис - фонтан исправиться если принести статуе крылья</li>
+<li>Фонтан - раковина с жемчужиной откроется при наличии трезубца</li>
+<li>Водопад</li>
+<li>За водопадом<ul>
+<li>Люк откроется только если у вас собой кольцо огня</li>
+<li>Чтобы не утонуть на верхнем ярусе вам понадобится рыба-шлем</li>
+</ul>
+</li>
+<li>В люке<ul>
+<li>Летучие мыши</li>
+<li>Пещера закрыта камнем, чтобы отодвинуть его нужна книга</li>
+</ul>
+</li>
+<li>Пещера<ul>
+<li>Монеты</li>
+<li>Куча золота, которым можно наполнить кошелек</li>
+</ul>
+</li>
+<li>Механизм<ul>
+<li>Акула</li>
+<li>Проход на верхнем ярусе перекрыт поднятым мостом, чтобы опустить мост нужно починить механизм</li>
+<li>Чтобы механизм заработал нужно заменить ось</li>
+</ul>
+</li>
+<li>Туннель<ul>
+<li>Акула</li>
+<li>На верхнем ярусе рассыпаны угли, чтобы пройти нужны тапочки</li>
+</ul>
+</li>
+<li>Пустыня - чтобы не умереть от жары вам понадобится кокос</li>
+<li>Яма - колдун, чтобы развеять дым нужен веер</li>
+<li>Стена</li>
+<li>Рынок1</li>
+<li>Рынок2</li>
+<li>Сапожная лавка - сапоги</li>
+<li>Оружейник - кинжалы</li>
+<li>Подвал - змеи</li>
+<li>Оружейная - рыцари</li>
+<li>Медуза - чтобы убить нужно зеркало</li>
+<li>Темница<ul>
+<li>Циклоп - чтобы ослепить нужен кол </li>
+</ul>
+</li>
+<li>Балкон - горшок</li>
+<li>Конюшни - бык не дает взять ось от телеги, пока не отстегать его кнутом</li>
+<li>Чулан<ul>
+<li>Чтобы убить паука нужно принести осу</li>
+<li>Чтобы отрезать паутину нужен меч</li>
+</ul>
+</li>
+<li>Подземелье - змеи</li>
+<li>Катапульта - чтобы попасть в тайник нужно стать на катапульту и стрелой перебить веревку с грузом</li>
+<li>Тайник - если запрыгнуть в вихрь, то попадете к колоннам</li>
+</ul>
+</body>
+</html>

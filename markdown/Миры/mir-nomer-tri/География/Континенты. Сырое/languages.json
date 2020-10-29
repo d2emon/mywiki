@@ -1,0 +1,351 @@
+[
+  {
+    "slug": "azuposi",
+    "group": "azuposi",
+    "title": "Азупосский",
+    "areas": [
+      "pasocada"
+    ],
+    "folks": [
+      "azuposi"
+    ]
+  },
+  {
+    "slug": "nexalan",
+    "group": "nexalan",
+    "title": "Нецальский",
+    "areas": [
+      "nexal",
+      "pecelac",
+      "huacli",
+      "kultaka",
+      "itzkala"
+    ],
+    "folks": [
+      "nexalan"
+    ]
+  },
+  {
+    "slug": "kolan",
+    "group": "nexalan",
+    "title": "Кольский",
+    "areas": [
+      "kolan"
+    ],
+    "folks": [
+      "green-folk",
+      "kolan"
+    ]
+  },
+  {
+    "slug": "payit",
+    "group": "payit",
+    "title": "Пайский",
+    "areas": [
+      "payit",
+      "far-payit"
+    ],
+    "folks": [
+      "payit",
+      "itza"
+    ]
+  },
+
+  {
+    "slug": "midani",
+    "group": "utheric",
+    "title": "Миданский",
+    "areas": [
+      "zakhara",
+      "anauroch"
+    ],
+    "folks": [
+      "zakaharans",
+      "bedine"
+    ]
+  },
+
+  {
+    "slug": "kurit",
+    "group": "dethek",
+    "title": "Курит",
+    "areas": [
+      "great-glacier"
+    ],
+    "folks": [
+      "dwarfs"
+    ]
+  },
+  {
+    "slug": "riftspeak",
+    "group": "dethek",
+    "title": "Язык Разлома",
+    "areas": [
+      "great-rift"
+    ],
+    "folks": [
+      "dwarfs"
+    ]
+  },
+  {
+    "slug": "duergan",
+    "group": "dethek",
+    "title": "Дуэргский",
+    "areas": [
+      "underdark"
+    ],
+    "folks": [
+      "dwarfs"
+    ]
+  },
+  {
+    "slug": "shanatan",
+    "group": "dethek",
+    "title": "Шанатский",
+    "areas": [
+      "amn",
+      "tethyr",
+      "calimshan",
+      "lake-of-steam"
+    ],
+    "folks": [
+      "dwarfs"
+    ]
+  },
+  {
+    "slug": "galenan",
+    "group": "dethek",
+    "title": "Галенский",
+    "areas": [
+      "damara"
+    ],
+    "folks": [
+      "dwarfs"
+    ]
+  },
+  {
+    "slug": "authalan",
+    "group": "dethek",
+    "title": "Автальский",
+    "areas": [
+      "chult"
+    ],
+    "folks": [
+      "dwarfs"
+    ]
+  },
+  {
+    "slug": "urdinnir",
+    "group": "dethek",
+    "title": "Урдуннийский",
+    "areas": [
+      "underdark"
+    ],
+    "folks": [
+      "dwarfs"
+    ]
+  },
+
+  {
+    "slug": "espruar",
+    "group": "espruar",
+    "title": "Эспруар",
+    "areas": [
+      "evereska",
+      "evermeet",
+      "myth-drannor",
+      "northwest",
+      "western-heartlands",
+
+      "dalelands",
+      "high-forest",
+
+      "yuirwood",
+
+      "chessenta",
+      "chondalwood",
+      "chult",
+      "amthar",
+      "methwood",
+      "shaar",
+      "shilmista"
+    ],
+    "folks": [
+      "elves"
+    ]
+  },
+  {
+    "slug": "gnim",
+    "group": "gnim",
+    "title": "Гним",
+    "areas": [
+      "aglarond",
+      "great-dale",
+
+      "lantan",
+      "dalelands",
+      "thesk",
+      "western-heartlands",
+
+      "underdark"
+    ],
+    "folks": [
+      "gnomes"
+    ]
+  },
+  {
+    "slug": "luiric",
+    "group": "luiric",
+    "title": "Луйрский",
+    "areas": [
+      "luiren"
+    ],
+    "folks": [
+      "halflings"
+    ]
+  },
+  {
+    "slug": "faerie",
+    "group": "faerie",
+    "title": "Сильванский",
+    "folks": [
+      "fey"
+    ]
+  },
+  {
+    "slug": "kentaur",
+    "group": "kentaur",
+    "title": "Кентаврический",
+    "areas": [
+      "cormanthor",
+      "evermeet",
+      "high-forest",
+      "chondalwood"
+    ],
+    "folks": [
+      "centaurs"
+    ]
+  },
+
+  {
+    "slug": "jotun",
+    "group": "jotun",
+    "title": "Йотун",
+    "folks": [
+      "giants"
+    ]
+  },
+  {
+    "slug": "jogishk",
+    "group": "jotun",
+    "title": "Йогишский",
+    "folks": [
+      "ogres"
+    ]
+  },
+
+  {
+    "slug": "daraktan",
+    "group": "daraktan",
+    "title": "Дарактан",
+    "areas": [
+      "moonsea",
+      "hordelands",
+      "underdark",
+      "tortured-land",
+      "thay"
+    ],
+    "folks": [
+      "orcs"
+    ]
+  },
+  {
+    "slug": "ghukliak",
+    "group": "ghukliak",
+    "title": "Гукляк",
+    "areas": [
+      "kara-tur",
+      "chult"
+    ],
+    "folks": [
+      "goblins"
+    ]
+  },
+  {
+    "slug": "sphinx",
+    "group": "sphinx",
+    "title": "Свинкс",
+    "areas": [
+      "shaar"
+    ],
+    "folks": [
+      "sphinx"
+    ]
+  },
+  {
+    "slug": "yipyak",
+    "group": "yipyak",
+    "title": "Йипьяк (Кобольский)",
+    "areas": [
+      "moonsea"
+    ],
+    "folks": [
+      "kobolds"
+    ]
+  },
+
+  {
+    "slug": "aquan",
+    "group": "primordial",
+    "title": "Акванский"
+  },
+  {
+    "slug": "auran",
+    "group": "primordial",
+    "title": "Ауранский",
+    "ancestors": [
+      "alzhedo",
+      "midani"
+    ],
+    "folks": [
+      "djinn"
+    ]
+  },
+  {
+    "slug": "ignan",
+    "group": "primordial",
+    "title": "Игнанский",
+    "folks": [
+      "efreeti"
+    ]
+  },
+  {
+    "slug": "terran",
+    "group": "primordial",
+    "title": "Террский"
+  },
+
+  {
+    "slug": "jannti",
+    "title": "Яннти",
+    "folks": [
+      "djinn",
+      "efreeti"
+    ],
+    "ancestors": [
+      "alzhedo",
+      "midani"
+    ]
+  },
+
+  {
+    "slug": "celestial",
+    "group": "supernal",
+    "title": "Селестический"
+  },
+  {
+    "slug": "infernal",
+    "group": "supernal",
+    "title": "Инфернальный"
+  }
+]
