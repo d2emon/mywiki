@@ -1,0 +1,56 @@
+A {
+	text-decoration: none;
+}
+
+P, LI {
+	font-family: tahoma;
+	font-size: x-small;
+	color: #303030;
+	text-align: justify;
+}
+TD, I {
+	font-family: arial;
+	font-size: x-small;
+	color: #303030;
+}
+
+PRE, KBD {
+	font-size: x-small;
+	color: #303030;
+}
+
+.emp {
+	font-weight: bold;
+	color: #BD8D45;
+}
+
+.em2 {
+	font-weight: bold;
+	font-size: xx-small;
+}
+
+DT {
+	font-size: small;
+	font-weight: bold;
+}
+
+DD {
+	font-family: tahoma;
+	font-size: x-small;
+	margin-top: 1ex;
+	margin-bottom: 1ex;
+	text-align: justify;
+	color: black;
+}
+
+.sxm {
+	font-size: xx-small;
+}
+
+.ch {
+	color: #607900;
+}
+
+.ib {
+	border: 1px solid black;
+}
