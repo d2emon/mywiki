@@ -20,7 +20,7 @@
   "name": "lk",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "slug_to_name.js",
   "scripts": {
     "flow": "flow",
     "flow:check": "flow check ./src/",

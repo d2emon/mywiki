@@ -16,7 +16,7 @@ FlatActions.js
 GibddActions.js
 GibddFinesActions.js
 GuisActions.js
-index.js
+slug_to_name.js
 ISPPActions.js
 MGTSActions.js
 ModalActions.js

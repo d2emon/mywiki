@@ -79,7 +79,7 @@ User
 ./src/frontend/components/Pages/Dashboard:
 .
 ..
-index.js
+slug_to_name.js
 
 ./src/frontend/components/Pages/Login:
 .
@@ -94,7 +94,7 @@ index.jsx
 ./src/frontend/components/Pages/Settings:
 .
 ..
-index.js
+slug_to_name.js
 
 ./src/frontend/components/Pages/User:
 .
@@ -167,30 +167,30 @@ Dashboard.js
 .
 ..
 Calendar.css
-index.js
+slug_to_name.js
 
 ./src/frontend/components/Widgets/Dashboard/Car:
 .
 ..
-index.js
+slug_to_name.js
 logic.js
 
 ./src/frontend/components/Widgets/Dashboard/Children:
 .
 ..
-index.js
+slug_to_name.js
 
 ./src/frontend/components/Widgets/Dashboard/ChildrenEzhd:
 .
 ..
-index.js
+slug_to_name.js
 
 ./src/frontend/components/Widgets/Dashboard/Flat:
 .
 ..
 Counters.js
 Flat.scss
-index.js
+slug_to_name.js
 MgtsPaymentComponent.js
 MosenergoPaymentComponent.js
 Pay.js
@@ -198,19 +198,19 @@ Pay.js
 ./src/frontend/components/Widgets/Dashboard/Mgts:
 .
 ..
-index.js
+slug_to_name.js
 logic.js
 
 ./src/frontend/components/Widgets/Dashboard/News:
 .
 ..
-index.js
+slug_to_name.js
 logic.js
 
 ./src/frontend/components/Widgets/Dashboard/NewsSmall:
 .
 ..
-index.js
+slug_to_name.js
 
 ./src/frontend/components/Widgets/Dashboard/_old:
 .
@@ -229,24 +229,24 @@ Widget.scss
 ./src/frontend/components/Widgets/Dashboard/Recommendation:
 .
 ..
-index.js
+slug_to_name.js
 logic.js
 
 ./src/frontend/components/Widgets/Dashboard/Services:
 .
 ..
-index.js
+slug_to_name.js
 
 ./src/frontend/components/Widgets/Dashboard/Zkhu:
 .
 ..
-index.js
+slug_to_name.js
 Zkhu.scss
 
 ./src/frontend/components/Widgets/Main:
 .
 ..
-index.js
+slug_to_name.js
 Settings
 
 ./src/frontend/components/Widgets/Main/Settings:
@@ -275,43 +275,43 @@ messages.js
 .
 ..
 edit.js
-index.js
+slug_to_name.js
 
 ./src/frontend/components/Widgets/Main/Settings/Documents:
 .
 ..
-index.js
+slug_to_name.js
 
 ./src/frontend/components/Widgets/Main/Settings/Education:
 .
 ..
 edit.js
-index.js
+slug_to_name.js
 
 ./src/frontend/components/Widgets/Main/Settings/Family:
 .
 ..
 edit.js
-index.js
+slug_to_name.js
 
 ./src/frontend/components/Widgets/Main/Settings/Flat:
 .
 ..
 edit.js
-index.js
+slug_to_name.js
 
 ./src/frontend/components/Widgets/Main/Settings/Notifications:
 .
 ..
 education.js
 gibdd.js
-index.js
+slug_to_name.js
 zhku.js
 
 ./src/frontend/components/Widgets/Main/Settings/Profile:
 .
 ..
-index.js
+slug_to_name.js
 
 ./src/frontend/components/Widgets/Sidebar:
 .

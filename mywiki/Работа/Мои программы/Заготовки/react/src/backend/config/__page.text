@@ -3,7 +3,7 @@
 ..
 application_config.js
 handlers.config.js
-index.js
+slug_to_name.js
 index.local.js
 mobile.js
 widget.config.js

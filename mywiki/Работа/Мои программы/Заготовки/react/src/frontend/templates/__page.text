@@ -66,7 +66,7 @@ Car
 action.js
 default.js
 empty.js
-index.js
+slug_to_name.js
 notfound.js
 reload.js
 topay.js

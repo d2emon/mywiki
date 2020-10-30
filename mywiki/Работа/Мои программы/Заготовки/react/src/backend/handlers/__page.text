@@ -7,7 +7,7 @@ request.js
 ./src/backend/handlers/endpoints:
 .
 ..
-index.js
+slug_to_name.js
 v1
 
 ./src/backend/handlers/endpoints/v1:

@@ -18,7 +18,7 @@ FlatReducer.js
 GibddFinesReducer.js
 GibddReducer.js
 GuisReducer.js
-index.js
+slug_to_name.js
 ISPPReducer.js
 MGTSReducer.js
 ModalReducer.js
