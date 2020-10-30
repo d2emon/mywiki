@@ -8,13 +8,13 @@
 * 13th Age
 * 1PG
 * 7th Sea
-* Alternity
+* [Alternity](./Alternity)
 * Amazing Engine
 * Amber
 * Apocalypse Prevention, Inc.
 * Apocalypse World
 * Arcanum
-* **Basic Role-Playing**
+* [**Basic Role-Playing**](./Basic%20Role-Playing)
 * Beast Hunters
 * Big Eyes, Small Mouth
 * Black Crusade
@@ -22,11 +22,14 @@
 * Bones
 * Boot Hill
 * Bulldogs!
-* **Call of Cthulhu**
+*   [Bunnies & Burrows](./Bunnies%20&%20Burrows)
+*   [**Call of Cthulhu**](./Call%20of%20Cthulhu)
 * Chill
 * Cold City
 * Conan Role-Playing Game
-* **Cyberpunk 2020**
+*   [Council of Wyrms](./Council%20of%20Wyrms)
+*   [Creature Crucible](./Creature%20Crucible)
+*   [**Cyberpunk 2020**](./Cyberpunk%202020)
 * Cyborg Commando
 * **D20 Modern**
 * Dangerous Journeys
@@ -38,28 +41,30 @@
 * Dogs in the Vineyard
 * Don't Rest Your Head
 * Dragon Age
+*   [Dragon Fist](./Dragon%20Fist)
 * Dresden Files
 * Dungeon World
+*   [Dungeons & Dragons](./Dungeons%20&%20Dragons)
 * Edge of the Empire
 * Eldritch Role-Playing
 * Fallout
 * Familiars
 * Fantasy Craft
 * FATAL
-*   **FATE**
+*   [**FATE**](./FATE)
     *   Fate Accelerated Edition
 * Fireball
 * FUBAR
-* **FUDGE**
-* **Fuzion**
-* **Gamma World**
+*   [**FUDGE**](./FUDGE)
+*   [**Fuzion**](./Fuzion)
+*   [**Gamma World**](./Gamma%20World)
 * Gangbusters
 * Ghostbusters
 * GNS
 * Grey Ranks
 * Grimm
 * GUMSHOE
-* **GURPS**
+*   [**GURPS**](./GURPS)
 * HeroQuest
 * HoL
 * Houses of the Blooded
@@ -79,6 +84,7 @@
 * Microcosm
 * Middle-earth Role Playing
 * Monster of the Week
+*   [Munchkin](./Munchkin)
 * My Life With Master
 * Mythender
 * Mythic Role Playing
@@ -91,10 +97,10 @@
 * Original Edition Delta
 * Over the Edge
 * Panty Explosion Perfect
-* **Paranoia**
-* **Pathfinder**
+*   [**Paranoia**](./Paranoia)
+*   [**Pathfinder**](./Pathfinder)
 * PDQ
-* **Pendragon**
+*   [**Pendragon**](./Pendragon)
 * Pirates and Plunder
 * Planets of Peril
 * Polyhedral Dungeon
@@ -108,9 +114,9 @@
 * S.P.E.C.I.A.L.
 * S/Lay w/Me
 * SAGA System
-* **Savage Worlds**
+*   [**Savage Worlds**](./Savage%20Worlds)
 * Sellsword
-* **Shadowrun**
+*   [**Shadowrun**](./Shadowrun)
 * Sherpa
 * Shonen Final Burst
 * SLURPS
@@ -146,28 +152,29 @@
 * Weird Fantasy Role-Playing
 * Winnie-the-Owl-Pooh
 * Woof Meow
+*   [World of Darkness](./World%20of%20Darkness)
 * World of Warcraft RPG
 * Worlds of Wonder
-* **АРРРГХЪ!**
+*   [**АРРРГХЪ!**](./АРРРГХЪ!)
 * Альшард
 * Арианрод
 * Ведьмак: Игра воображения
 * Воспоминания о будущем
 * Горная ведьма
 * Дзайбацу
-* **Заколдованная страна**
+*   [**Заколдованная страна**](./Заколдованная%20страна)
 * Замок Фалькенштайн
 * Иномирье
-* **Искусство волшебства**
+*   [**Искусство волшебства**](./Искусство%20волшебства)
 * Колония
 * Лавикандия
-* Лексикон
+*   [Лексикон](./Лексикон)
 * Лорды
 * Марс: Новый воздух
 * Мир Великого Дракона
 * Монстробой
 * Муршамбала
-* **Неизвестные армии**
+*   [**Неизвестные армии**](./Неизвестные%20армии)
 * Паладин (игра)
 * Перекрёсток миров
 * Ризус
@@ -176,15 +183,16 @@
 * ТриМ
 * Триплет
 * Универсалис
-* **Уникум**
+*   [**Уникум**](./Уникум)
 * Уроборос
 * Фен Шуй
 * Фиаско
 * Фронт
+*   [Хентаи](./Хентаи)
 * Хиккори Диккори Док!
 * Чики-чики-ща
 * Штамм 33
-* **Эра Водолея**
+*   [**Эра Водолея**](./Эра%20Водолея)
 
 ----
 
