@@ -114,7 +114,7 @@
 * S.P.E.C.I.A.L.
 * S/Lay w/Me
 * SAGA System
-*   [**Savage Worlds**](./Savage%20Worlds)
+*   [**Savage Worlds**](./Savage%20Worlds/index.md)
 * Sellsword
 *   [**Shadowrun**](./Shadowrun)
 * Sherpa
@@ -198,30 +198,30 @@
 
 ## ranker.com
 
-1.  Dungeons & Dragons
-1.  Shadowrun
-1.  Call of Cthulhu
+1.  [Dungeons & Dragons](./Dungeons%20&%20Dragons)
+1.  [Shadowrun](./Shadowrun)
+1.  [Call of Cthulhu](./Call%20of%20Cthulhu)
 1.  Vampire: The Masquerade
 1.  Star Wars The Roleplaying Game
-1.  Pathfinder Roleplaying Game
-1.  GURPS
+1.  [Pathfinder](./Pathfinder)
+1.  [GURPS](./GURPS)
 1.  Advanced Dungeons & Dragons First Edition
 1.  Advanced Dungeons & Dragons Second Edition
 1.  Werewolf: The Apocalypse
 1.  Mage: The Ascension
-1.  Savage Worlds
-1.  Paranoia
+1.  [Savage Worlds](./Savage%20Worlds/index.md)
+1.  [Paranoia](./Paranoia)
 1.  Dungeons & Dragons (3rd Edition)
 1.  Dungeons & Dragons 3.5
 1.  Deadlands
-1.  Cyberpunk 2020
-1.  World of Darkness
+1.  [Cyberpunk 2020](./Cyberpunk%202020)
+1.  [World of Darkness](./World%20of%20Darkness)
 1.  Dungeons and Dragons (5th Edition)
 1.  Traveller
 1.  Legend of the Five Rings
 1.  Warhammer RPG
-1.  Gamma World
-1.  Fate Core
+1.  [Gamma World](./Gamma%20World)
+1.  [FATE](./FATE)
 1.  Rifts
 1.  Ars Magica
 1.  RuneQuest
@@ -240,7 +240,7 @@
 1.  Dark Heresy
 1.  Vampire: the Dark Ages
 1.  Robotech
-1.  Pendragon
+1.  [Pendragon](./Pendragon)
 1.  B/X Dungeons & Dragons
 1.  Earthdawn
 1.  Changeling: The Lost
@@ -255,7 +255,7 @@
 1.  Toon the Cartoon Roleplaying Game
 1.  Stormbringer
 1.  Palladium Fantasy Role-Playing Game
-1.  Munchkin
+1.  [Munchkin](./Munchkin)
 1.  Top Secret
 1.  GURPS Cyberpunk
 1.  HeroQuest
