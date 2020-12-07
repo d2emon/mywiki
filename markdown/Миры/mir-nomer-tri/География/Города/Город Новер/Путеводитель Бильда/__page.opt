@@ -1,0 +1,17 @@
+[General]
+type = wiki
+tags = достопримечательности, город
+order = 5
+creationdatetime = 2016-08-23 16:38:07.079640
+datetime = 2016-08-23 16:38:21.742049
+cursorposition = 37
+
+[wiki]
+md5_hash = 129aa3a3672918c7c635eaf2296ed1be
+
+[Misc]
+pageindex = 1
+
+[Tree]
+expand = False
+
