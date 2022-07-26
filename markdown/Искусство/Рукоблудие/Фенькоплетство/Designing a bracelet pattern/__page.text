@@ -1,0 +1,49 @@
+!! Designing a bracelet pattern,
+
+The method I use can be simplified into these steps:
+
+# Draw the pattern on a square-grid paper.
+# Split up the pattern in small equivalent pieces, as small as possible.
+# Take one of the pieces and use this to colour the knots in a "pattern-map".
+# "Solve" this pattern-map by colouring the threads between the knots. Beware: far from all pattern-maps can be solved.
+# Determine what type of knots your map contain.
+
+When you are ready, you can input your pattern in my Pattern generator and get a similar instruction as the ones I have on this homepage.
+
+!!! Step 1: Draw the pattern
+
+%thumb%Attach:rutpappe.gif%%
+
+This is the best part. Take a square-gridded paper and put it so the squares are diagonal. Draw outer lines for your bracelet on the left and the right side of the place where you are going to draw it. This will determine the width of your bracelet. Now colour the space within the outer lines until you got a cool pattern.
+
+!!! Step 2: Split it up
+
+ %thumb%Attach:rutpappf.gif%%
+
+Look at the pattern and see how it repeats. Split it up in equal parts that are as small as possible.
+
+!!! Step 3: Colour the knots in a "pattern-map"
+ 
+%thumb%Attach:monsterk.gif%% %thumb%Attach:monsterl.gif%%
+
+Draw a "pattern-map", with the same size as one of your pieces in the previous step. Colour the knots in this map in the same way. Here, you can create an own "pattern-map" directly on the homepage. 
+
+!!! Step 4: "Solve" the pattern-map
+
+%thumb%Attach:monsterm.gif%%
+
+This is the trickiest part. The thing is to coulour the "threads" between the knots in the map so
+
+* the "threads" between the knots are continous, that is, if one of the threads above a knot has any colour, then one of the threads below must have the same colour.
+* above and below every knot, one of the threads has the same colour as the knot.
+* the thread at the top has the same colour as the corresponding thread at the bottom.
+
+The last condition is only necessary when designing repeated patterns.
+
+Beware - this step cannot be made for all patterns.
+
+!!! Step 5: Determine knots
+
+ %thumb%Attach:monstern.gif%%
+
+Now determine what knots that should be used. Mark the knots with arrows as I have done in my other patterns. The simplest way of doing this is by looking at the thread with the same colour as the knot and look what way it goes.
