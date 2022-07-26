@@ -1,0 +1,33 @@
+!! Только кодинг и ничего кроме кодинга
+
+На втором месте среди популярных хобби оказалось программирование. Невольно вспоминается высказывание: «Выбери себе работу по душе, и тебе не придётся работать ни одного дня в своей жизни». В этом разделе мы собрали популярные курсы Microsoft Virtual Academy разных уровней сложности и по разным направлениям разработки.
+
+!!! Windows 10
+
+* [[GitHub для Windows-разработчиков (Beginner). -> https://aka.ms/habr_322284_18]]
+* [[Начало работы с Template 10 (набор шаблонов проектов Visual Studio) (Intermediate). -> https://aka.ms/habr_322284_19]]
+* [[Разработка универсальных приложений с XAML и C# (Intermediate). -> https://aka.ms/habr_322284_20]]
+
+!!! Web-разработка
+
+* [[Введение в ASP.NET Core 1.0 (Beginner). -> https://aka.ms/habr_322284_21]]
+* [[Погружение в ASP.NET Core 1.0 (Intermediate). -> https://aka.ms/habr_322284_22]]
+* [[Разработка приложений ASP.NET Core 1.0 на Mac и Linux (Advanced). -> https://aka.ms/habr_322284_23]]
+
+!!! Разработка на C# / XAML
+
+* [[Основы C# (Beginner). -> https://aka.ms/habr_322284_24]]
+* [[XAML для Windows 10: компоновка Layout (Intermediate). -> https://aka.ms/habr_322284_25]]
+* [[Работа с JSON в C# (Advanced). -> https://aka.ms/habr_322284_26]]
+
+!!! Облачная разработка
+
+* [[Развёртывание веб-приложения в Azure App Service (Beginner). -> https://aka.ms/habr_322284_27]]
+* [[Создание первого приложения Azure Service Fabric (Intermediate). -> https://aka.ms/habr_322284_28]]
+* [[Погружение в Mastering Azure App Service в 4 частях (Advanced). -> https://aka.ms/habr_322284_29]]
+
+!!! Мобильная разработка
+
+* [[Введение в Xamarin (Beginner). -> https://aka.ms/habr_322284_30]]
+* [[Топ 10 шпаргалок и инструментов для управления мобильными устройствами (Intermediate). -> https://aka.ms/habr_322284_31]]
+* [[Введение в Xamarin.Forms (Advanced). -> https://aka.ms/habr_322284_32]]
