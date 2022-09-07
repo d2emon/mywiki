@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg48481"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="бухта.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview48483"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="true"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-center="true"
+     inkscape:zoom="0.26814675"
+     inkscape:cx="878.25045"
+     inkscape:cy="1501.0438"
+     inkscape:window-width="1542"
+     inkscape:window-height="836"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer8">
+    <inkscape:grid
+       type="xygrid"
+       id="grid48485"
+       empspacing="4"
+       spacingx="6.6145834"
+       spacingy="6.6145834" />
+  </sodipodi:namedview>
+  <defs
+     id="defs48478" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer9"
+     inkscape:label="Вода">
+    <path
+       style="fill:none;stroke:#0000ff;stroke-width:5.29167;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 66.145832,251.35417 26.458334,13.22916 13.229164,6.61458 13.22917,13.22917 26.45833,46.30209 13.22917,13.22917 66.14584,0"
+       id="path58761"
+       sodipodi:nodetypes="ccccccc" />
+    <path
+       style="fill:none;stroke:#0000ff;stroke-width:2.64583333;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 132.29167,357.1875 158.75,343.95833"
+       id="path59646" />
+    <path
+       style="fill:none;stroke:#0000ff;stroke-width:5.29166667;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 158.75,99.218749 13.22917,26.458331 13.22916,26.45834"
+       id="path59681" />
+    <path
+       style="fill:#0000ff;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 171.97917,125.67708 0,6.61459 L 158.75,158.75 l -13.22917,26.45833 13.22917,26.45834 26.45833,13.22916 6.61459,6.61459 13.22917,26.45833 6.61458,13.22917 6.61458,13.22917 -6.61458,13.22916 6.61458,13.22917 -6.61458,13.22917 6.61458,13.22916 -6.61458,6.61458 6.61458,13.22917 -6.61458,13.22917 6.61458,13.22917 h 6.61459 6.61458 l 13.22917,-6.61459 13.22917,6.61459 -10e-6,6.61458 -6.61458,13.22916 -13.22917,6.61459 h -52.91666 l -39.68751,-19.84375 -13.22916,6.61458 -13.22917,26.45834 -13.22917,26.45833 185.20833,-1e-5 1e-5,-211.66666 -105.83333,-105.83333 z"
+       id="path59996"
+       sodipodi:nodetypes="cccccccccccccccccccccccccccccccccc" />
+  </g>
+  <g
+     inkscape:label="Дороги"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:inline">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 185.20834,119.0625 -13.22917,6.61459 -13.22917,6.61458 -39.6875,19.84375 -13.22917,6.61458 -26.458331,13.22917 -26.458333,13.22916"
+       id="path48520"
+       sodipodi:nodetypes="ccccccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 158.75,132.29167 -19.84375,39.6875 -6.61458,13.22916 -13.22917,26.45834 -39.687499,79.375"
+       id="path48522"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 145.52083,138.90625 v 6.61458 h 6.61459"
+       id="path48524" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 138.90625,171.97917 132.29167,158.75 119.0625,152.13542"
+       id="path48526" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 105.83333,158.75 -6.614581,13.22917 6.614581,13.22916 13.22917,6.61459 13.22917,-6.61459"
+       id="path48528" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 79.374999,171.97917 h 19.84375"
+       id="path48530" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 119.0625,211.66667 V 191.82292"
+       id="path48532" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 105.83333,158.75 79.374999,132.29167 26.458333,105.83333"
+       id="path48534" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 119.0625,152.13542 V 119.0625 L 105.83333,92.604166"
+       id="path48536" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 79.374999,291.04166 39.687501,79.375 52.91667,26.45834 h 52.91666"
+       id="path58756" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 92.604166,423.33333 119.0625,370.41666"
+       id="path58758" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer8"
+     inkscape:label="Здания">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.52777px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="111.43163"
+       y="170.83971"
+       id="text49465"><tspan
+         sodipodi:role="line"
+         id="tspan49463"
+         style="stroke-width:0.264583"
+         x="111.43163"
+         y="170.83971">Золотое</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="111.43163"
+         y="175.24942"
+         id="tspan49467">Кольцо</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 79.374999,138.90625 92.604166,152.13542 79.374999,165.36458 66.145832,152.13542 Z"
+       id="path53258" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.52777px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="69.175819"
+       y="153.39632"
+       id="text54604"><tspan
+         sodipodi:role="line"
+         id="tspan54602"
+         style="stroke-width:0.264583"
+         x="69.175819"
+         y="153.39632">Континент</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.52777px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="49.007355"
+       y="113.7338"
+       id="text56206"><tspan
+         sodipodi:role="line"
+         id="tspan56204"
+         style="stroke-width:0.264583"
+         x="49.007355"
+         y="113.7338">Ямы</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.52777px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="99.96463"
+       y="146.78174"
+       id="text57046"><tspan
+         sodipodi:role="line"
+         id="tspan57044"
+         style="stroke-width:0.264583"
+         x="99.96463"
+         y="146.78174">Рынок</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.52777px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="120.43539"
+       y="139.94839"
+       id="text57930"><tspan
+         sodipodi:role="line"
+         id="tspan57928"
+         style="stroke-width:0.264583"
+         x="120.43539"
+         y="139.94839">Автостанция</tspan></text>
+    <circle
+       style="fill:none;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path68878"
+       cx="244.73958"
+       cy="390.26041"
+       r="6.614583" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 165.36458,350.57291 v 39.6875 h 39.6875 v -39.6875 z"
+       id="path69037" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 165.36458,337.34375 1e-5,-26.45833 h 39.6875 l -1e-5,26.45833 z"
+       id="path69039"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 165.36458,297.65625 26.45834,10e-6 v -26.45834 l -26.45834,-1e-5 z"
+       id="path69321"
+       sodipodi:nodetypes="ccccc" />
+  </g>
+</svg>
