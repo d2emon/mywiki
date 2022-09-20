@@ -25,19 +25,19 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.0645188"
-     inkscape:cx="5046.8813"
-     inkscape:cy="4178.8835"
+     inkscape:zoom="0.37636423"
+     inkscape:cx="5097.4558"
+     inkscape:cy="4530.1861"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer7"
+     inkscape:current-layer="layer3"
      showgrid="true"
      units="px"
      scale-x="0.8"
-     inkscape:window-width="1542"
-     inkscape:window-height="836"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:window-maximized="1"
+     inkscape:window-width="944"
+     inkscape:window-height="445"
+     inkscape:window-x="26"
+     inkscape:window-y="23"
+     inkscape:window-maximized="0"
      inkscape:snap-object-midpoints="true"
      inkscape:snap-center="true"
      showguides="false"
@@ -156,6 +156,88 @@
        cx="486.83331"
        cy="1116.5416"
        r="5.2916665" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer8"
+     inkscape:label="Земля"
+     style="display:none;opacity:0.758456">
+    <path
+       style="fill:#ff0000;stroke:none;stroke-width:0.211667px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 1164.1666,931.3333 5.2917,-10.58331 h 15.875 v 10.58331 z"
+       id="path1389"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       style="fill:#808000;stroke:none;stroke-width:0.211667px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 1169.4583,920.74999 -5.2917,10.58331 -42.3333,-21.16666 5.2917,-10.58332 z"
+       id="path1727"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       style="fill:#ff0000;stroke:none;stroke-width:0.211667px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 1095.375,899.58332 5.2916,10.58332 h 21.1667 l 5.2917,-10.58332 z"
+       id="path1795"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       style="fill:#ffff00;stroke:none;stroke-width:0.211667px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 1100.6666,910.16664 v 10.58335 h 21.1667 v -10.58335 z"
+       id="path1863"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       style="fill:#808000;stroke:none;stroke-width:0.211667px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 1164.1666,931.3333 -42.3333,-21.16666 v 10.58335 l 31.75,15.875 z"
+       id="path1931"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       style="fill:#ff00ff;stroke:none;stroke-width:0.211667px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 1100.6667,920.74999 -10e-5,-10.58335 -42.3333,21.16666 5.2917,10.58335 31.75,-15.87499 z"
+       id="path2032"
+       sodipodi:nodetypes="cccccc" />
+    <path
+       style="fill:#808000;stroke:none;stroke-width:0.211667px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 1058.3333,931.3333 42.3333,-21.16666 -5.2916,-10.58332 -42.3333,21.16667 z"
+       id="path2100"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       style="fill:#00ffff;stroke:none;stroke-width:0.211667px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 1016,952.49997 21.1667,-10.58332 -5.2917,-10.58333 -21.1667,10.58333 z"
+       id="path2202"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       style="fill:#00ffff;stroke:none;stroke-width:0.211667px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 1016,952.49997 42.3333,-21.16665 21.1666,42.33334 -42.3332,21.16666 z"
+       id="path2270"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       style="fill:#00ffff;stroke:none;stroke-width:0.211667px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 1005.4166,957.79164 -5.2916,-10.58334 10.5833,-5.29166 5.2917,10.58333 z"
+       id="path2338" />
+    <path
+       style="fill:#00ff00;stroke:none;stroke-width:0.211667px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 994.8333,963.0833 -5.29166,-10.58333 10.58336,-5.29167 5.2916,10.58334 z"
+       id="path2406" />
+    <path
+       style="fill:#00ffff;stroke:none;stroke-width:0.211667px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 994.8333,963.0833 21.1668,42.3334 21.1666,-10.58338 L 1016,952.49997 Z"
+       id="path2474"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       style="fill:#ff0000;stroke:none;stroke-width:0.211667px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 1037.1666,941.91664 21.1667,-10.58334 -5.2917,-10.58333 -21.1666,10.58333 z"
+       id="path2893" />
+    <path
+       style="fill:#008080;stroke:none;stroke-width:0.211667px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 1074.2083,963.0833 5.2917,10.58334 74.0833,-37.04165 -10.5833,-5.29169 -5.2917,2e-5 z"
+       id="path4469"
+       sodipodi:nodetypes="cccccc" />
+    <path
+       style="fill:#008080;stroke:none;stroke-width:0.211667px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 1016,1005.4166 148.1666,-74.0833 10.5834,21.16669 -10.5833,21.16666 L 1143,994.83332 1100.6667,1016 1090.0833,994.83332 1079.5,1016 h -31.75 -26.4584 z"
+       id="path4931"
+       sodipodi:nodetypes="ccccccccccc" />
+    <path
+       style="fill:#00ff00;stroke:none;stroke-width:0.211667px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 1143,846.66664 v 21.16667 l 42.3333,21.16666 v 42.33333 l 21.1667,-21.16666 -21.1667,-42.33333 z"
+       id="path6395" />
   </g>
   <g
      inkscape:groupmode="layer"
@@ -4064,18 +4146,6 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:2.82222px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.211667"
-       x="1430.4382"
-       y="312.69485"
-       id="text9626"
-       transform="rotate(26.770467)"><tspan
-         sodipodi:role="line"
-         id="tspan9624"
-         style="stroke-width:0.211667"
-         x="1430.4382"
-         y="312.69485">Янки</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:2.82222px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.211667"
        x="1271.9457"
        y="-590.4068"
        id="text11492"
@@ -4100,15 +4170,15 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:2.82222px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.211667"
-       x="501.64569"
-       y="1376.1725"
+       x="563.94916"
+       y="1351.2126"
        id="text13860"
-       transform="rotate(-29.333674)"><tspan
+       transform="rotate(-26.711851)"><tspan
          sodipodi:role="line"
          id="tspan13858"
          style="stroke-width:0.211667"
-         x="501.64569"
-         y="1376.1725">Адмиралтейская</tspan></text>
+         x="563.94916"
+         y="1351.2126">Гардемаринская</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:2.82222px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.211667"
@@ -4159,15 +4229,26 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:2.82222px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.211667"
-       x="377.29022"
-       y="1352.076"
+       x="1145.2349"
+       y="866.66907"
        id="text25069"
-       transform="rotate(-31.748959)"><tspan
+       transform="rotate(2.5226244)"><tspan
          sodipodi:role="line"
          id="tspan25067"
          style="stroke-width:0.211667"
-         x="377.29022"
-         y="1352.076">Летова</tspan></text>
+         x="1145.2349"
+         y="866.66907">Летова</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:2.82222px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.211667"
+       x="925.08392"
+       y="937.36017"
+       id="text3014"><tspan
+         sodipodi:role="line"
+         id="tspan3012"
+         style="stroke-width:0.211667"
+         x="925.08392"
+         y="937.36017">Научная</tspan></text>
   </g>
   <g
      inkscape:groupmode="layer"
@@ -5254,6 +5335,115 @@
          x="1134.1257"
          y="889.29407"
          style="stroke-width:0.211667">ул. Леппика</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:1.12889px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.211667"
+       x="-931.94757"
+       y="1173.8369"
+       id="text9871"
+       transform="rotate(-90.075085)"><tspan
+         sodipodi:role="line"
+         id="tspan9869"
+         x="-931.94757"
+         y="1173.8369"
+         style="stroke-width:0.211667">Пл. Смотровая</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:1.12889px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.211667"
+       x="1123.5424"
+       y="910.46075"
+       id="text10197"><tspan
+         sodipodi:role="line"
+         id="tspan10195"
+         x="1123.5424"
+         y="910.46075"
+         style="stroke-width:0.211667">ул. Институтская</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:2.82222px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.211667"
+       x="1079.5"
+       y="910.16663"
+       id="text14213"><tspan
+         sodipodi:role="line"
+         id="tspan14211"
+         style="stroke-width:0.211667"></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:1.12889px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.211667"
+       x="1090.8115"
+       y="910.47809"
+       id="text14473"><tspan
+         sodipodi:role="line"
+         id="tspan14471"
+         x="1090.8115"
+         y="910.47809"
+         style="stroke-width:0.211667">ул. Строителей</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:1.12889px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.211667"
+       x="1038.9163"
+       y="942.34717"
+       id="text17585"><tspan
+         sodipodi:role="line"
+         id="tspan17583"
+         x="1038.9163"
+         y="942.34717"
+         style="stroke-width:0.211667">Библиотека</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:1.12889px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.211667"
+       x="996.27917"
+       y="963.37738"
+       id="text19061"><tspan
+         sodipodi:role="line"
+         id="tspan19059"
+         x="996.27917"
+         y="963.37738"
+         style="stroke-width:0.211667">Пл. Пушкина</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:1.12889px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.211667"
+       x="1060.4478"
+       y="984.54407"
+       id="text19167"><tspan
+         sodipodi:role="line"
+         id="tspan19165"
+         x="1060.4478"
+         y="984.54407"
+         style="stroke-width:0.211667">Гастроном</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:1.12889px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.211667"
+       x="1029.8744"
+       y="974.07013"
+       id="text19735"><tspan
+         sodipodi:role="line"
+         id="tspan19733"
+         x="1029.8744"
+         y="974.07013"
+         style="stroke-width:0.211667">Школа</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:1.12889px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.211667"
+       x="1092.1978"
+       y="995.12738"
+       id="text23063"><tspan
+         sodipodi:role="line"
+         id="tspan23061"
+         x="1092.1978"
+         y="995.12738"
+         style="stroke-width:0.211667">УГипермаркет</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:1.12889px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.211667"
+       x="1155.7118"
+       y="973.96472"
+       id="text28171"><tspan
+         sodipodi:role="line"
+         id="tspan28169"
+         x="1155.7118"
+         y="973.96472"
+         style="stroke-width:0.211667">Универсам</tspan></text>
   </g>
   <g
      inkscape:groupmode="layer"
