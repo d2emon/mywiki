@@ -25,8 +25,8 @@
      inkscape:document-units="mm"
      showgrid="true"
      inkscape:zoom="0.26814674"
-     inkscape:cx="4342.7714"
-     inkscape:cy="12084.801"
+     inkscape:cx="2450.151"
+     inkscape:cy="11495.571"
      inkscape:window-width="1546"
      inkscape:window-height="836"
      inkscape:window-x="0"
@@ -987,7 +987,7 @@
      id="layer2"
      inkscape:label="Маршруты 4"
      transform="translate(1454.4391,460.00932)"
-     style="display:inline">
+     style="display:none">
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:6.35px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
@@ -3674,7 +3674,7 @@
      id="g19107"
      inkscape:label="Маршруты 3"
      transform="translate(1454.4391,460.00932)"
-     style="display:none">
+     style="display:inline">
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:6.35px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
