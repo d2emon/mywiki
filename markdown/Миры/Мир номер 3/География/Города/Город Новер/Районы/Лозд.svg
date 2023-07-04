@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="400"
+   width="500"
    height="500.2236"
-   viewBox="0 0 105.83333 132.35083"
+   viewBox="0 0 132.29166 132.35083"
    version="1.1"
    id="svg66209"
    inkscape:version="1.2.2 (732a01da63, 2022-12-09, custom)"
@@ -27,10 +27,10 @@
      inkscape:snap-object-midpoints="true"
      inkscape:snap-center="true"
      inkscape:zoom="1.1794893"
-     inkscape:cx="384.06452"
-     inkscape:cy="353.11892"
-     inkscape:window-width="1546"
-     inkscape:window-height="836"
+     inkscape:cx="384.91235"
+     inkscape:cy="352.69502"
+     inkscape:window-width="1920"
+     inkscape:window-height="1043"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -43,8 +43,8 @@
        spacingx="6.6145834"
        spacingy="6.6145834"
        empspacing="4"
-       originx="26.458333"
-       originy="0.059156353" />
+       originx="26.458332"
+       originy="0.059156356" />
   </sodipodi:namedview>
   <defs
      id="defs66206" />
@@ -60,9 +60,9 @@
        sodipodi:nodetypes="ccccc" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 79.375001,79.375001 -39.687502,2e-6 H 13.229166"
+       d="M 105.83333,79.375001 H 79.375 l -39.687501,2e-6 H 13.229166"
        id="path66307"
-       sodipodi:nodetypes="ccc" />
+       sodipodi:nodetypes="cccc" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 39.687499,79.375003 26.458333,105.83333 v 26.45834"
@@ -84,6 +84,12 @@
        cx="0"
        cy="105.83333"
        r="6.614583" />
+    <circle
+       style="fill:none;stroke:#000000;stroke-width:0.264999;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.264583, 0.264583"
+       id="path386"
+       cx="79.375"
+       cy="79.374992"
+       r="6.614583" />
   </g>
   <g
      inkscape:groupmode="layer"
@@ -93,33 +99,28 @@
     <text
        xml:space="preserve"
        style="font-size:2.64583px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
-       x="57.740028"
-       y="60.253437"
+       x="44.483082"
+       y="62.148022"
        id="text70887"><tspan
          sodipodi:role="line"
-         id="tspan70885"
          style="stroke-width:0.264583"
-         x="57.740028"
-         y="60.253437">qa</tspan><tspan
-         sodipodi:role="line"
-         style="stroke-width:0.264583"
-         x="57.740028"
-         y="63.560726"
+         x="44.483082"
+         y="62.148022"
          id="tspan20600">327</tspan><tspan
          sodipodi:role="line"
          style="stroke-width:0.264583"
-         x="57.740028"
-         y="66.868011"
-         id="tspan20598">M-ja</tspan><tspan
+         x="44.483082"
+         y="65.455307"
+         id="tspan630">M-ja M-qa</tspan><tspan
          sodipodi:role="line"
          style="stroke-width:0.264583"
-         x="57.740028"
-         y="70.175301"
+         x="44.483082"
+         y="68.762596"
          id="tspan75661">540 544</tspan><tspan
          sodipodi:role="line"
          style="stroke-width:0.264583"
-         x="57.740028"
-         y="73.48259"
+         x="44.483082"
+         y="72.069885"
          id="tspan313772">710 794 796</tspan></text>
     <text
        xml:space="preserve"
@@ -128,29 +129,24 @@
        y="90.038437"
        id="text71107"><tspan
          sodipodi:role="line"
-         id="tspan71103"
          style="stroke-width:0.264583"
          x="36.823982"
-         y="90.038437">qa</tspan><tspan
+         y="90.038437"
+         id="tspan71105">M-ja M-qa</tspan><tspan
          sodipodi:role="line"
          style="stroke-width:0.264583"
          x="36.823982"
          y="93.345726"
-         id="tspan20604">M-ja</tspan><tspan
+         id="tspan626">540 544</tspan><tspan
          sodipodi:role="line"
          style="stroke-width:0.264583"
          x="36.823982"
          y="96.653015"
-         id="tspan71105">540 544</tspan><tspan
-         sodipodi:role="line"
-         style="stroke-width:0.264583"
-         x="36.823982"
-         y="99.960297"
          id="tspan18240">710 794</tspan><tspan
          sodipodi:role="line"
          style="stroke-width:0.264583"
          x="36.823982"
-         y="103.26759"
+         y="99.960297"
          id="tspan20608">796</tspan></text>
     <text
        xml:space="preserve"
@@ -217,7 +213,7 @@
          id="tspan80935"
          style="stroke-width:0.264583"
          x="10.723509"
-         y="98.286636">qa</tspan><tspan
+         y="98.286636">M-qa</tspan><tspan
          sodipodi:role="line"
          style="stroke-width:0.264583"
          x="10.723509"
@@ -247,7 +243,7 @@
          sodipodi:role="line"
          style="stroke-width:0.264583"
          x="14.354428"
-         y="121.70252"
+         y="121.70251"
          id="tspan6516">710 772</tspan><tspan
          sodipodi:role="line"
          style="stroke-width:0.264583"
@@ -264,7 +260,7 @@
          id="tspan82399"
          style="stroke-width:0.264583"
          x="-2.5056579"
-         y="91.672058">qa</tspan><tspan
+         y="91.672058">M-qa</tspan><tspan
          sodipodi:role="line"
          style="stroke-width:0.264583"
          x="-2.5056579"
@@ -275,5 +271,62 @@
          x="-2.5056579"
          y="98.286636"
          id="tspan6520">772</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.64583px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="83.257851"
+       y="88.606354"
+       id="text501"><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="83.257851"
+         y="88.606354"
+         id="tspan493">327</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="83.257851"
+         y="91.913643"
+         id="tspan495">M-ja M-q M-qa</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="83.257851"
+         y="95.220932"
+         id="tspan497">501 540 544</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="83.257851"
+         y="98.528214"
+         id="tspan499">710 749 794</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="83.257851"
+         y="101.8355"
+         id="tspan2499">796 799</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.64583px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="76.840919"
+       y="62.130581"
+       id="text513"><tspan
+         sodipodi:role="line"
+         id="tspan503"
+         style="stroke-width:0.264583"
+         x="76.840919"
+         y="62.130581">M-q</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="76.840919"
+         y="65.437866"
+         id="tspan511">501</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="76.840919"
+         y="68.745155"
+         id="tspan2501">749</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="76.840919"
+         y="72.052437"
+         id="tspan2710">799</tspan></text>
   </g>
 </svg>
