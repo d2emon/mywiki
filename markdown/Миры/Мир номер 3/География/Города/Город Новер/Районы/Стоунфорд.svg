@@ -27,14 +27,14 @@
      inkscape:snap-object-midpoints="true"
      inkscape:snap-center="true"
      inkscape:zoom="1.6680498"
-     inkscape:cx="363.89802"
-     inkscape:cy="599.5025"
+     inkscape:cx="364.49751"
+     inkscape:cy="456.22139"
      inkscape:window-width="1920"
      inkscape:window-height="1043"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="layer2"
      inkscape:showpageshadow="2"
      inkscape:deskcolor="#d1d1d1">
     <inkscape:grid
@@ -420,17 +420,17 @@
          style="stroke-width:0.264583"
          x="94.158997"
          y="25.554634"
-         id="tspan2133">743&lt; 749&lt; 778&gt;</tspan><tspan
+         id="tspan2133">743&lt; 744 749&lt;</tspan><tspan
          sodipodi:role="line"
          style="stroke-width:0.264583"
          x="94.158997"
          y="28.861923"
-         id="tspan2561">783&lt; 794&lt; 796&lt;</tspan><tspan
+         id="tspan2561">778&gt; 783&lt; 794&lt;</tspan><tspan
          sodipodi:role="line"
          style="stroke-width:0.264583"
          x="94.158997"
          y="32.169209"
-         id="tspan2999">799&lt;</tspan></text>
+         id="tspan2999">796&lt; 799&lt;</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:2.64583px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
@@ -508,12 +508,12 @@
          style="stroke-width:0.264583"
          x="65.116188"
          y="-25.495216"
-         id="tspan2969">778&gt; 783&lt;</tspan><tspan
+         id="tspan2969">744 778&gt;</tspan><tspan
          sodipodi:role="line"
          style="stroke-width:0.264583"
          x="65.116188"
          y="-22.187929"
-         id="tspan1147">794&gt;</tspan><tspan
+         id="tspan1147">783&lt; 794&gt;</tspan><tspan
          sodipodi:role="line"
          style="stroke-width:0.264583"
          x="65.116188"
@@ -534,12 +534,12 @@
          style="stroke-width:0.264583"
          x="47.086288"
          y="-51.953548"
-         id="tspan1151">713 718 778&lt; 781</tspan><tspan
+         id="tspan1151">713 718 744 778&lt;</tspan><tspan
          sodipodi:role="line"
          style="stroke-width:0.264583"
          x="47.086288"
          y="-48.646263"
-         id="tspan2965">783&gt; 794&lt; 796&gt;</tspan></text>
+         id="tspan2965">781 783&gt; 794&lt; 796&gt;</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:2.64583px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
@@ -571,12 +571,12 @@
          style="stroke-width:0.264583"
          x="51.887024"
          y="0.96311843"
-         id="tspan2973">778&gt; 783&lt;</tspan><tspan
+         id="tspan2973">744 778&gt;</tspan><tspan
          sodipodi:role="line"
          style="stroke-width:0.264583"
          x="51.887024"
          y="4.2704058"
-         id="tspan1143">794&gt;</tspan><tspan
+         id="tspan1143">783&lt; 794&gt;</tspan><tspan
          sodipodi:role="line"
          style="stroke-width:0.264583"
          x="51.887024"
@@ -691,12 +691,12 @@
          style="stroke-width:0.264583"
          x="68.86467"
          y="71.776619"
-         id="tspan2286">743_ 749_ 778_</tspan><tspan
+         id="tspan2286">743_ 744_ 749_</tspan><tspan
          sodipodi:role="line"
          style="stroke-width:0.264583"
          x="68.86467"
          y="75.083908"
-         id="tspan2797">794_ 799_</tspan></text>
+         id="tspan2797">778_ 794_ 799_</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:2.64583px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
@@ -733,7 +733,12 @@
          style="stroke-width:0.264583"
          x="96.684044"
          y="64.802238"
-         id="tspan2288">749&lt; 783&lt; 796&lt; 799&lt;</tspan></text>
+         id="tspan2288">744&lt; 749&lt; 783&lt; 796&lt;</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="96.684044"
+         y="68.109528"
+         id="tspan5920">799&lt;</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:2.64583px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
@@ -749,22 +754,17 @@
          style="stroke-width:0.264583"
          x="92.653267"
          y="-68.489998"
-         id="tspan2989">778&lt; 781</tspan><tspan
+         id="tspan2989">744 778&lt;</tspan><tspan
          sodipodi:role="line"
          style="stroke-width:0.264583"
          x="92.653267"
          y="-65.182709"
-         id="tspan3007">783&gt;</tspan><tspan
+         id="tspan3007">781 783&gt;</tspan><tspan
          sodipodi:role="line"
          style="stroke-width:0.264583"
          x="92.653267"
          y="-61.875423"
-         id="tspan2771">794&lt;</tspan><tspan
-         sodipodi:role="line"
-         style="stroke-width:0.264583"
-         x="92.653267"
-         y="-58.568138"
-         id="tspan1161">796&gt;</tspan></text>
+         id="tspan1161">794&lt; 796&gt;</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:2.64583px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
@@ -775,11 +775,11 @@
          style="stroke-width:0.264583"
          x="93.376747"
          y="-99.909279"
-         id="tspan1165">713 718 778&lt; 781</tspan><tspan
+         id="tspan1165">713 718 744 778&lt;</tspan><tspan
          sodipodi:role="line"
          style="stroke-width:0.264583"
          x="93.376747"
          y="-96.60199"
-         id="tspan2961">783&gt; 794&lt; 796&gt;</tspan></text>
+         id="tspan2961">781 783&gt; 794&lt; 796&gt;</tspan></text>
   </g>
 </svg>
