@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="500.44724"
+   height="300.89441"
+   viewBox="0 0 132.40999 79.611648"
+   version="1.1"
+   id="svg66209"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09, custom)"
+   sodipodi:docname="Береговой.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview66211"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="true"
+     units="px"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-center="true"
+     inkscape:zoom="1.6680498"
+     inkscape:cx="339.61816"
+     inkscape:cy="148.67662"
+     inkscape:window-width="1920"
+     inkscape:window-height="1043"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer2"
+     inkscape:showpageshadow="2"
+     inkscape:deskcolor="#d1d1d1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid66270"
+       spacingx="6.6145834"
+       spacingy="6.6145834"
+       empspacing="4"
+       originx="-79.315834"
+       originy="-26.34001" />
+  </sodipodi:namedview>
+  <defs
+     id="defs66206" />
+  <g
+     inkscape:label="Дороги"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-79.315788,-26.340009)">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 132.29162,79.375001 79.374951,105.83333"
+       id="path2913"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 79.374951,26.458334 132.29165,52.916667"
+       id="path3305"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 145.52078,26.458334 -13.22916,26.458332 v 26.458333 l 13.22917,26.458331"
+       id="path2482"
+       sodipodi:nodetypes="cccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 198.43745,79.375001 145.52079,105.83333"
+       id="path2484"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 132.29162,52.916665 26.45833,13.229169"
+       id="path2486"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 211.66662,39.6875 158.74996,66.145832"
+       id="path2488"
+       sodipodi:nodetypes="cc" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Маршруты"
+     transform="translate(-79.315788,-26.340009)">
+    <text
+       xml:space="preserve"
+       style="font-size:2.64583px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="96.176262"
+       y="86.953995"
+       id="text3878"><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="96.176262"
+         y="86.953995"
+         id="tspan3876">LI LIII LIV LXVII</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.64583px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+       x="90.701149"
+       y="48.942108"
+       id="text4060"><tspan
+         sodipodi:role="line"
+         id="tspan4058"
+         style="stroke-width:0.264583"
+         x="90.701149"
+         y="48.942108">M-a M-b M-i M-o</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="90.701149"
+         y="52.249397"
+         id="tspan4088">507 512 533</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="90.701149"
+         y="55.556683"
+         id="tspan4171">703 703a 707 767 770</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="90.701149"
+         y="58.863972"
+         id="tspan7074">780 788</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.64583px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+       x="170.07616"
+       y="35.71294"
+       id="text2498"><tspan
+         sodipodi:role="line"
+         id="tspan2490"
+         style="stroke-width:0.264583"
+         x="170.07616"
+         y="35.71294">M-a M-b M-i M-o</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="170.07616"
+         y="39.020229"
+         id="tspan2492">507 512 533</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="170.07616"
+         y="42.327515"
+         id="tspan2494">703 703a 707 724 755&gt;</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="170.07616"
+         y="45.634804"
+         id="tspan2496">767 770 780 781 788</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="170.07616"
+         y="48.942089"
+         id="tspan3177">798</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.64583px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="168.52391"
+       y="86.953995"
+       id="text2526"><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="168.52391"
+         y="86.953995"
+         id="tspan2524">LI LIII</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="168.52391"
+         y="90.261284"
+         id="tspan5794">755&lt;</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.64583px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="135.57759"
+       y="65.456604"
+       id="text3123"><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="135.57759"
+         y="65.456604"
+         id="tspan3121">LIV</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="135.57759"
+         y="68.763893"
+         id="tspan3125">LXVII</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="135.57759"
+         y="72.071182"
+         id="tspan5796">755^</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.64583px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="126.53164"
+       y="30.711308"
+       id="text3131"><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="126.53164"
+         y="30.711308"
+         id="tspan3129">LIV LXVII</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="126.53164"
+         y="34.018597"
+         id="tspan3171">724 755</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="126.53164"
+         y="37.325882"
+         id="tspan3169">781 798</tspan></text>
+  </g>
+</svg>

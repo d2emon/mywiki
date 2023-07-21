@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="400.57721"
+   height="300.67081"
+   viewBox="0 0 105.98604 79.552486"
+   version="1.1"
+   id="svg66209"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09, custom)"
+   sodipodi:docname="Синтер.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview66211"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="true"
+     units="px"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-center="true"
+     inkscape:zoom="1.6680498"
+     inkscape:cx="99.817166"
+     inkscape:cy="140.28358"
+     inkscape:window-width="1920"
+     inkscape:window-height="1043"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer2"
+     inkscape:showpageshadow="2"
+     inkscape:deskcolor="#d1d1d1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid66270"
+       spacingx="6.6145834"
+       spacingy="6.6145834"
+       empspacing="4"
+       originx="-211.60746"
+       originy="-132.23251" />
+  </sodipodi:namedview>
+  <defs
+     id="defs66206" />
+  <g
+     inkscape:label="Дороги"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-211.6075,-132.23251)">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 224.89582,145.40251 26.45833,13.28833 26.45834,13.25875"
+       id="path1736"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 211.66666,171.97916 26.45833,13.22917 13.22917,6.61458 13.22916,6.61459 13.22917,6.61458 13.22917,6.61459"
+       id="path2517"
+       sodipodi:nodetypes="cccccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 238.12499,185.20833 251.35416,158.75 264.58335,132.29167"
+       id="path6380"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 257.96874,211.66667 6.61458,-13.22917 13.22917,-26.45833 h 26.45836 L 317.50001,158.75"
+       id="path6455"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 304.27085,171.97917 13.22916,13.22917"
+       id="path7759"
+       sodipodi:nodetypes="cc" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Маршруты"
+     transform="translate(-211.6075,-132.23251)">
+    <text
+       xml:space="preserve"
+       style="font-size:2.64583px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="226.7704"
+       y="138.86879"
+       id="text1119"><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="226.7704"
+         y="138.86879"
+         id="tspan1113">M-e</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="226.7704"
+         y="142.17607"
+         id="tspan1115">724 729 740 755</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="226.7704"
+         y="145.48337"
+         id="tspan1117">767a 782 798</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.64583px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+       x="218.77347"
+       y="186.17274"
+       id="text1149"><tspan
+         sodipodi:role="line"
+         id="tspan1147"
+         style="stroke-width:0.264583"
+         x="218.77347"
+         y="186.17274">LII LIV LX</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.64583px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="235.84799"
+       y="171.28993"
+       id="text5927"><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="235.84799"
+         y="171.28993"
+         id="tspan5925">LIV</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="235.84799"
+         y="174.59721"
+         id="tspan5931">LVII</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.64583px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="245.59418"
+       y="202.69048"
+       id="text3131"><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="245.59418"
+         y="202.69048"
+         id="tspan3129">LIV LXVII</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="245.59418"
+         y="205.99776"
+         id="tspan3171">724 755</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="245.59418"
+         y="209.30505"
+         id="tspan3169">781 798</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.64583px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="275.25323"
+       y="182.86417"
+       id="text6716"><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="275.25323"
+         y="182.86417"
+         id="tspan6712">724</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="275.25323"
+         y="186.17145"
+         id="tspan7310">755</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="275.25323"
+         y="189.47874"
+         id="tspan6714">781</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.64583px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="308.35782"
+       y="158.05948"
+       id="text5917"><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="308.35782"
+         y="158.05948"
+         id="tspan5915">781</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="308.35782"
+         y="161.36676"
+         id="tspan6211">793</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.64583px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="295.05566"
+       y="182.84673"
+       id="text138213"><tspan
+         sodipodi:role="line"
+         id="tspan138211"
+         style="stroke-width:0.264583"
+         x="295.05566"
+         y="182.84673">M-e</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="295.05566"
+         y="186.15401"
+         id="tspan10234">729 740 767a</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="295.05566"
+         y="189.4613"
+         id="tspan12149">782 793</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.64583px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="267.52823"
+       y="206.01649"
+       id="text13672"><tspan
+         sodipodi:role="line"
+         id="tspan13670"
+         style="stroke-width:0.264583"
+         x="267.52823"
+         y="206.01649">LII LX</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.64583px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+       x="241.57117"
+       y="186.17274"
+       id="text7290"><tspan
+         sodipodi:role="line"
+         id="tspan7288"
+         style="stroke-width:0.264583"
+         x="241.57117"
+         y="186.17274">LII LIV LX LXVII</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.64583px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="262.30634"
+       y="144.8316"
+       id="text7296"><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="262.30634"
+         y="144.8316"
+         id="tspan7292">LIV</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="262.30634"
+         y="148.13889"
+         id="tspan7294">LVII</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.64583px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="255.38043"
+       y="167.96391"
+       id="text7304"><tspan
+         sodipodi:role="line"
+         id="tspan7298"
+         style="stroke-width:0.264583"
+         x="255.38043"
+         y="167.96391">M-e</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="255.38043"
+         y="171.27119"
+         id="tspan7300">724 729 740</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="255.38043"
+         y="174.57849"
+         id="tspan7302">755 767a 782</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="255.38043"
+         y="177.88577"
+         id="tspan7314">793</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.64583px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="284.77399"
+       y="161.34933"
+       id="text7767"><tspan
+         sodipodi:role="line"
+         id="tspan7761"
+         style="stroke-width:0.264583"
+         x="284.77399"
+         y="161.34933">M-e</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="284.77399"
+         y="164.65662"
+         id="tspan7763">729 740</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="284.77399"
+         y="167.96391"
+         id="tspan7769">767a 781</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="284.77399"
+         y="171.27119"
+         id="tspan7765">782</tspan></text>
+  </g>
+</svg>

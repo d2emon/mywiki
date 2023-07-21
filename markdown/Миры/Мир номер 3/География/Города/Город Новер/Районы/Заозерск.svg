@@ -27,8 +27,8 @@
      inkscape:snap-object-midpoints="true"
      inkscape:snap-center="true"
      inkscape:zoom="1.1794893"
-     inkscape:cx="281.05384"
-     inkscape:cy="838.49849"
+     inkscape:cx="281.90167"
+     inkscape:cy="839.34632"
      inkscape:window-width="1920"
      inkscape:window-height="1043"
      inkscape:window-x="0"
@@ -103,12 +103,28 @@
        id="path4096" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 105.83333,158.75003 H 158.75 211.66667"
-       id="path777" />
+       d="M 105.83333,158.75003 H 158.75 l 52.91667,1e-5 H 238.125"
+       id="path777"
+       sodipodi:nodetypes="cccc" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 105.83333,185.20836 H 158.75"
        id="path779" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 211.66667,211.66669 V 158.75004"
+       id="path5834" />
+    <circle
+       style="fill:none;stroke:#000000;stroke-width:0.264999;stroke-linecap:round;stroke-linejoin:round"
+       id="path5888"
+       cx="211.66667"
+       cy="158.75003"
+       r="6.614583" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 264.58333,211.66669 238.125,158.75003 211.66667,105.83337"
+       id="path5890"
+       sodipodi:nodetypes="ccc" />
   </g>
   <g
      inkscape:groupmode="layer"
@@ -731,22 +747,22 @@
        xml:space="preserve"
        style="font-size:2.64583px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
        x="182.18979"
-       y="164.65666"
+       y="163.00301"
        id="text3409"><tspan
          sodipodi:role="line"
          style="stroke-width:0.264583"
          x="182.18979"
-         y="164.65666"
+         y="163.00301"
          id="tspan3403">XXXI</tspan><tspan
          sodipodi:role="line"
          style="stroke-width:0.264583"
          x="182.18979"
-         y="167.96394"
+         y="166.31029"
          id="tspan3407">540</tspan><tspan
          sodipodi:role="line"
          style="stroke-width:0.264583"
          x="182.18979"
-         y="171.27124"
+         y="169.61758"
          id="tspan2233">793</tspan></text>
     <text
        xml:space="preserve"
@@ -789,5 +805,80 @@
          x="160.69823"
          y="209.30507"
          id="tspan2247">792 792a</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.64583px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="222.36821"
+       y="152.09799"
+       id="text5898"><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="222.36821"
+         y="152.09799"
+         id="tspan5896">793</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.64583px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="200.41284"
+       y="169.6176"
+       id="text5906"><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="200.41284"
+         y="169.6176"
+         id="tspan5900">XXXI</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="200.41284"
+         y="172.92488"
+         id="tspan5919">LIV LVII</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="200.41284"
+         y="176.23218"
+         id="tspan5904">540</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.64583px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="242.21196"
+       y="185.1709"
+       id="text5917"><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="242.21196"
+         y="185.1709"
+         id="tspan5915">781</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="242.21196"
+         y="188.47818"
+         id="tspan6211">793</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.64583px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="216.00426"
+       y="184.51913"
+       id="text5927"><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="216.00426"
+         y="184.51913"
+         id="tspan5925">LIV</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="216.00426"
+         y="187.82642"
+         id="tspan5931">LVII</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.64583px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="228.99895"
+       y="133.25482"
+       id="text6209"><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="228.99895"
+         y="133.25482"
+         id="tspan6207">781</tspan></text>
   </g>
 </svg>
