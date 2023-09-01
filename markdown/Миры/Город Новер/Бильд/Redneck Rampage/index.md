@@ -1,5 +1,5 @@
 # Redneck Rampage
 
-* [Blood](./Blood)
-* [Plasma Pak](./Plasma%20Pak)
-* [Cryptic Passage](./Cryptic%20Passage)
+* [Redneck Rampage](./Redneck%20Rampage/index.md)
+* [Route 66](./Route%2066/index.md)
+* [Road Again](./Road%20Again/index.md)
