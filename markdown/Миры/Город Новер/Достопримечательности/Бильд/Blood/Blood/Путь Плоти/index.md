@@ -1,10 +1,16 @@
 # Путь Плоти
 
-1. Cradle to Grave
-2. Wrong Side of the Tracks
-3. Phantom Express
-4. Dark Carnival
-5. Hallowed Grounds
-6. The Greate Temple
-7. Altar of Stone
-8. House of Horrors
+|№  |Название                   |Перевод                    |Враги  |Секреты    |
+|---|---------------------------|---------------------------|-------|-----------|
+|1  |Cradle to Grave            |От колыбели до могилы      |10     |11         |
+|2  |Wrong Side of the Tracks   |Изнанка пути               |39     |8          |
+|3  |Phantom Express            |Экспресс-Призрак           |31     |6          |
+|4  |Dark Carnival              |Темный карнавал            |10     |11         |
+|5  |Hallowed Grounds           |Священные земли            |10     |11         |
+|6  |The Greate Temple          |Великий Храм               |10     |11         |
+|7  |Altar of Stone             |Каменный алтарь            |10     |11         |
+|8  |House of Horrors           |Дом ужасов                 |10     |11         |
+
+Кладбище с часовенкой. Путь лежит через часовню на задний двор.
+
+От заднего двора часовни вдоль железной дороги на вокзал. Через вокзал и сесть на поезд.
