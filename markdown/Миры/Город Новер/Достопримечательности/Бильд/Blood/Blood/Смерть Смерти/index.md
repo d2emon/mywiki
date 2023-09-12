@@ -1,11 +1,13 @@
 # Смерть Смерти
 
-1. Shipwrecked
-2. The Lumber Mill
-3. Rest of the Wicked
-4. The Overlooked Hotel
-5. The Haunting
-6. The Cold Rush
-7. Bowels of the Earth
-8. The Lair of Shial
-9. Thin Ice
+|№  |Название                   |Перевод                    |Враги  |Секреты    |
+|---|---------------------------|---------------------------|-------|-----------|
+|1  |Shipwrecked                |Потерпев кораблекрушение   |26     |5          |
+|2  |The Lumber Mill            |Лесопилка                  |47     |2          |
+|3  |Rest of the Wicked         |Остаток нечестивых         |43     |5          |
+|4  |The Overlooked Hotel       |Заброшенный отель          |       |           |
+|5  |The Haunting               |Призраки дома на холме     |       |           |
+|6  |The Cold Rush              |Холодная лихорадка         |       |           |
+|7  |Bowels of the Earth        |Недра Земли                |       |           |
+|8  |The Lair of Shial          |Логово Шиал                |       |           |
+|9  |Thin Ice                   |Тонкий лед                 |       |           |
