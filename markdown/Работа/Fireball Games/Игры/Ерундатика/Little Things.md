@@ -17,31 +17,85 @@ Estimated time to 100%: 2h~
 
 ## Christmas Eve In Metropolis
 
+|                           |
+|---------------------------|
+|                           |
+|Парень работает ртом       |
+|Парень уткнулся в ноутбук  |
+|Девушка работает ртом      |
+|Танцы на вечеринке         |
+
+Парень с букетом в ожидании
+
+|                           |                               |                   |
+|---------------------------|-------------------------------|-------------------------------|
+|                           |Олени                          |Олень жует куклу               |
+|Девушка в ванной           |Парочка не стесняется младенца |Парень снимает окно напротив   |
+|Девушка смотрит на экране  |Мальчишка подслушивает девушку |Парочка в процессе             |
+|Шумное застолье                                        |   |Мужчина на унитазе             |
+|Женщина кричит в окно      |Съемки фильма                                              |   |
+|                           |Дверь                          |Женщина на кухне               |
+
+Собака
+
+Парень пишет баллончиком
+
+|                               |                       |                   |                           |
+|-------------------------------|-----------------------|-------------------|---------------------------|
+|                               |                       |                   |Тарелка похищает девушку   |
+|Девушка вышла из душа          |Мужчина ждет в постели                 |   |Хлам                       |
+|Мальчишка                      |Мужчина ждет на диване |Парочка на кухне   |Эльф залезает в окно       |
+|Тень Фредди Крюгера            |Эльфы и девушка. Мужчина связан        |   |Киллер с пистолетом        |
+|Мужчина увлеченно наблюдает    |Грудь                  |Муж застал жену с любовником               |   |
+|Тени танцуют                   |Дверь                  |Фотосессия                                 |   |
+
+Неудачливый любовник на подоконнике
+
+Девушка
+
+|                           |
+|---------------------------|
+|Снеговик                   |
+|Ведьмы на шабаше           |
+|Романтический ужин         |
+|Эльфы и холодильник        |
+|Женщина с курицей          |
+|Эльф и девушка на столе    |
+
 ### Finding Items
 
-Carrot – On the snowman, top right corner.
-Inflated sex doll – Top of the house near santa and his deers.
-Pink d.ildo – A bit on the left side, to the right of the christmas tree, scene where they film a porn movie.
-Collar – Scene of the girl riding a colored man, collar is on her neck.
-Flowers – Scene of the girl riding a colored man on her neck, man on the left is holding it.
-Cake – On the left, at the party scene.
-Whip – Top right corner, girl chained to the wall scene. its on the wall.
-Bottle – On the right, man and woman having a romantic evening, on the table.
-Thongs – Scene on the left, guy having sex with a girl and a toddler crying, in the christmas tree.
-Magic wand – On the bottom above the guy putting graffiti.
+* Carrot – On the snowman, top right corner.
+* Inflated sex doll – Top of the house near santa and his deers.
+* Pink d.ildo – A bit on the left side, to the right of the christmas tree, scene where they film a porn movie.
+* Collar – Scene of the girl riding a colored man, collar is on her neck.
+* Flowers – Scene of the girl riding a colored man on her neck, man on the left is holding it.
+* Cake – On the left, at the party scene.
+* Whip – Top right corner, girl chained to the wall scene. its on the wall.
+* Bottle – On the right, man and woman having a romantic evening, on the table.
+* Thongs – Scene on the left, guy having sex with a girl and a toddler crying, in the christmas tree.
+* Magic wand – On the bottom above the guy putting graffiti.
 
 ### Using Items
 
-Carrot – Put it in the mouth of the Elfs having sex.
-Inflated sex doll – Give it to the man sitting on the couch in the brown room.
-Pink d.ildo – Use it on the girl in the bathtub.
-Collar – Give it to the dog on the bottom.
-Flowers – Give it to Santa’s deers on the top of the roof.
-Cake – Give it to the boy in the room next to the girl masturbating in front of her pc.
-Whip – Give it to the man lying in bed in a brown room.
-Bottle – Give it to the man with the flowers.
-Thongs – Use it on the man hanging outside the window on the right.
-Magic wand – Use it on the girl masturbating in front of pc.
+* Carrot – Put it in the mouth of the Elfs having sex.
+* Inflated sex doll – Give it to the man sitting on the couch in the brown room.
+  * Мужчина воспользуется
+* Pink d.ildo – Use it on the girl in the bathtub.
+  * Девушка воспользуется
+* Collar – Give it to the dog on the bottom.
+  * Собака пометит дом
+* Flowers – Give it to Santa’s deers on the top of the roof.
+  * Олень станет есть букет
+* Cake – Give it to the boy in the room next to the girl masturbating in front of her pc.
+  * Мальчишка примется за торт
+* Whip – Give it to the man lying in bed in a brown room.
+  * Мужчина подаст его похищаемой девушке
+* Bottle – Give it to the man with the flowers.
+  * Мужчина напьется
+* Thongs – Use it on the man hanging outside the window on the right.
+  * Спустится к девушке
+* Magic wand – Use it on the girl masturbating in front of pc.
+  * Девушка воспользуется
 
 Christmas Eve
 
@@ -49,37 +103,114 @@ Christmas Eve
 
 ## Black Magic Academy
 
+Погоня за девушкой на метлах
+
+|                                   |
+|-----------------------------------|
+|Маг и девушка в процессе у котла   |
+|Маг за пюпитром. Девушка под ним   |
+|Шкаф (Внутри парень в одиночку)    |
+
+Женщина поливает хищный цветок
+
+|                                   |
+|-----------------------------------|
+|Девушки работают ртом              |
+|Девушки готовятся к экзамену       |
+|Парень, и девушка сидят у котла    |
+|Яйцо в подвале (Вылупится дракон)  |
+
+Плакат
+
+|                           |
+|---------------------------|
+|Старик с фонарем           |
+|Рыжий в плаще с девушками  |
+
+|                                   |
+|-----------------------------------|
+|Маг смотрит на девушку в зеркале   |
+|Маг насылает ветер против юбки     |
+|Девушка из портала работает ртом   |
+|Уборщица и гоблин с деньгами       |
+|Дверь и девушка                    |
+
+Сухое дерево
+
+|                                                                           |   |
+|---------------------------------------------------------------------------|---|
+|Маг и девушка в процессе на алтаре                                         |   |
+|Библиотека. Сейф, ведьма, библиотекарь и школьники за книгами              |   |
+|Молоток                                    |Дуэль магов на арене               |
+|   |Музей. Девушка изучает статую. Маг у двери (Девушки в процессе с вошедшим) |
+|   |Лазарет. Медсестра с пациентом в процессе                                  |
+
+|                                   |
+|-----------------------------------|
+|Обсерватория. Парень и девушка     |
+|Душ. Девушки и парень под призрака |
+|Девушка и портал                   |
+|Кресло и рама                      |
+|Музыкальный класс                  |
+
+Кентавры одеваются
+
+|                                       |
+|---------------------------------------|
+|Кот на крыше                           |
+|Камин. Эльфы в процеесе с девушкой     |
+|Кухня. Колдун против девушки в майке   |
+|Кладовая. Толстый маг объедается       |
+
+|Хижина великана            |
+|---------------------------|
+|Великан и девушки          |
+
 ### Finding Items
 
-Cat – Sitting on the roof, top right corner of the map.
-Fertilizer – Bottom right corner of the map near the half horse people.
-Keg of alcohol – The xxx bucket in the room of a magician and girl laying on an altar.
-Picture – Middle of the map, with 3 students and 2 teachers. Pink picture.
-Hammer- Middle of the map, in a hole on the wall.
-Screw driver – In the middle left of the map, guy with 3 girls scene, in the cup.
-Pillow with hearts – In the room above the gate with goblin knockers. bottom left corner of map.
-Magic hat – Bottom middle of the map close to the pillow, on the tree.
+* Cat – Sitting on the roof, top right corner of the map.
+* Fertilizer – Bottom right corner of the map near the half horse people.
+* Keg of alcohol – The xxx bucket in the room of a magician and girl laying on an altar.
+* Picture – Middle of the map, with 3 students and 2 teachers. Pink picture.
+* Hammer- Middle of the map, in a hole on the wall.
+* Screw driver – In the middle left of the map, guy with 3 girls scene, in the cup.
+* Pillow with hearts – In the room above the gate with goblin knockers. bottom left corner of map.
+* Magic hat – Bottom middle of the map close to the pillow, on the tree.
+
 Refer to Using Items section below to continue
-Watering can – Can only pickup after using Fertillizer on plant, and it should drop.
-Rusty key – Inside the tree, can only pickup after watering the tree.
-Abra cadabra – Inside the safe, can only be picked up after using the key.
-Looking glass – Can only be picked up after using the abra cadabra on the wizard.
+
+* Watering can – Can only pickup after using Fertillizer on plant, and it should drop.
+* Rusty key – Inside the tree, can only pickup after watering the tree.
+* Abra cadabra – Inside the safe, can only be picked up after using the key.
+* Looking glass – Can only be picked up after using the abra cadabra on the wizard.
 Keg of alcohol – In the room of a magician and girl laying on an altar
 
 ### Using Items
 
-Cat – Room with the guy and girl and a cauldrom in between them. on the left bottom of the map.
-Fertilizer – Plant at the bottom left corner of the map (this will drop the Watering Can).
-Keg of alcohol – Hut in the bottom right corner, older guy with 2 girls.
-Picture – In the room with a picture, one frame should be missing, middle right of the map.
-Hammer- On the mirror with the old wizard in red, upper left corner of the map.
-Screw driver – Boy playing on the drums right of the map. below the pictures.
-Pillow with hearts – Same room you found it in, above the gate bottom left corner.
-Magic hat – Magic battle room, guy using a fireball, and girl using a shield.
-Watering can – On the tree near the big gate, middle bottom of the map. It should reveal a rusty key.
-Rusty key – On the room with the save, where the picture we picked up used to hang. With the 3 students and 2 teachers. Should reveal the Abra Cadabra
-Abra cadabra – On the room with the wizard wearing a green robe, on the right. Should reveal the Looking Glass.
-Looking glass – On the upmost room with the broken telescope.
+* Cat – Room with the guy and girl and a cauldrom in between them. on the left bottom of the map.
+  * Парень займется девушкой
+* Fertilizer – Plant at the bottom left corner of the map (this will drop the Watering Can).
+  * Цветок схватит женщину
+* Keg of alcohol – Hut in the bottom right corner, older guy with 2 girls.
+  * Великан займется девушками
+* Picture – In the room with a picture, one frame should be missing, middle right of the map.
+  * Откроется специфическая картина
+* Hammer- On the mirror with the old wizard in red, upper left corner of the map.
+  * Маг разобьет зеркало и освободит девушку
+* Screw driver – Boy playing on the drums right of the map. below the pictures.
+  * Музыкант упадет в барабаны. Девушка займется собой
+* Pillow with hearts – Same room you found it in, above the gate bottom left corner.
+  * Девушка будет с гоблином
+* Magic hat – Magic battle room, guy using a fireball, and girl using a shield.
+  * Make love not war
+* Watering can – On the tree near the big gate, middle bottom of the map. It should reveal a rusty key.
+  * Девушка прийдет к дереву и оно отдаст ключ
+* Rusty key – On the room with the save, where the picture we picked up used to hang. With the 3 students and 2 teachers. Should reveal the Abra Cadabra
+  * Откроется сейф
+* Abra cadabra – On the room with the wizard wearing a green robe, on the right. Should reveal the Looking Glass.
+  * Колдун исчезнет
+* Looking glass – On the upmost room with the broken telescope.
+  * Девушка смотреть в телескоп, парень смотреть под девушку
 
 Black Magic
 
@@ -87,42 +218,100 @@ Black Magic
 
 ## Pirates of the Southern Seas
 
+Каннибалы уносят девушку
+
+Камень Х. За ним в пещере скелет и девушка
+
+Одноглазый однорукий одноногий
+
+Рыбак
+
+Подземелье. Скелеты играют черепами
+
+|                                                           |                       |                       |
+|-----------------------------------------------------------|-----------------------|-----------------------|
+|Дозорные с трубами                                         |                       |                       |
+|Девушка и капитан (Если уронить вазу, девушка наклонится)  |Сабля против бревна    |Девушка и стрелки      |
+|Крюк и белье                                               |Одноногий и отлающий   |Муж, жена и любовники  |
+|Пират и портрет                                            |Пираты и фитиль        |Матрос с девушкой      |
+|                                                           |Кузница                |Прячет золото          |
+
+Шлюпка. Пираты и пленницы
+
+Русалка
+
+Статуя Нептуна на дне
+
+|                   |                               |                           |                   |
+|-------------------|-------------------------------|---------------------------|-------------------|
+|Девушка-стрелок    |                               |Парень с девушкой на бочке |Девушка и спрут    |
+|                   |Пушки                          |Пьяный органист                            |   |
+|Пират и девушка    |Вудуистка (Может упасть в люк) |Пираты ломают сейф                         |   |
+|Девушка в одиночку |Пираты                         |Девушка на кровать                         |   |
+
+Пиратка в шлюпке
+
+Парень на берегу
+
+|                   |                       |                           |                   |
+|-------------------|-----------------------|---------------------------|-------------------|
+|                   |Две девушки и пират    |                           |                   |
+|Пираты в таверне   |Дверь                  |                           |                   |
+
+Кладоискатель
+
 ### Finding Items
 
-Pistol – In the room with the organ on the top right. Under the green sea creature.
-Cutlass – Bottom left corner of the map, in a room with the blacksmith.
-Where all crows go – In the bottom left corner of the map, near rock with X.
-Woodcutter – On the small island leaning on the palm tree, bottom left corner.
-Gunpowder – On the pirate ship, near the cannons.
-T.wat hair brush – Right under the cannons, near the cauldron.
-Trident – In the water, statue holding it, middle of the map.
-Shark bait – On the bottom right corner, on the island. can be found on the table.
-Small hey – On the bottom right corner, on the island below the table.
-Hampen halter – Hanging on the wall of the left ship, below cannons.
-Coconut oil – Small island in the right corner, second floor 2 girls and 1 guy.
+* Pistol – In the room with the organ on the top right. Under the green sea creature.
+* Cutlass – Bottom left corner of the map, in a room with the blacksmith.
+* Where all crows go – In the bottom left corner of the map, near rock with X.
+* Woodcutter – On the small island leaning on the palm tree, bottom left corner.
+* Gunpowder – On the pirate ship, near the cannons.
+* T.wat hair brush – Right under the cannons, near the cauldron.
+* Trident – In the water, statue holding it, middle of the map.
+* Shark bait – On the bottom right corner, on the island. can be found on the table.
+* Small hey – On the bottom right corner, on the island below the table.
+* Hampen halter – Hanging on the wall of the left ship, below cannons.
+* Coconut oil – Small island in the right corner, second floor 2 girls and 1 guy.
+
 Refer to the Using Items section below to continue
-Cursed coin – After using the gunpowder to blow up the door, pick it up from the chest.
-Bucaneer xo – Can be found only after opening the safe using the where all crows go. it will be nearby.
-Hook – Can only be picked up after using the coconut oil on the pirate.
+
+* Cursed coin – After using the gunpowder to blow up the door, pick it up from the chest.
+* Bucaneer xo – Can be found only after opening the safe using the where all crows go. it will be nearby.
+* Hook – Can only be picked up after using the coconut oil on the pirate.
 Spyglass – Can only be found after using the bucaneer xo on the pirates that used the spyglass.
 
 ### Using Items
 
-Pistol – On the back of the ship, one person shooting the rifle and another a pistol
-Cutlass – On deck of ship, pirate and person dueling
-Where all crows go – On the right of the pirate ship, two pirates trying to open a safe.
-Woodcutter -Give it to the pirate with the golden hook standing on the island on the lower left corner.
-Gunpowder – In the left ship, two pirates standing and one is holding a fuse. Middle row. After blowing it up it should reveal the Cursed Coin
-T.wat hair brush – Use it on the pirate with the red shirt on the left, he’s pointing at the wanted poster
-Trident – Use it on the octopus in the top right.
-Shark bait – Give it to the shark trying to eat the pirate in the water on the right.
-Small key – Use it on the birdcage on the left ship, below the cannons. The guy is sitting with a cover over the bird cage.
-Hampen halter – Give it to the man and near the turtle on the right island.
-Coconut oil – Use it on the pirate in the pirate ship, the one that escaped the shark before (bottom right corner) Should reveal the Hook.
-Cursed coin – Use it on the skeleton in the bottom left corner, in the cave with the girl and chest.
-Bucaneer xo – Use it on the pirates looking through the spyglass, on top of the ship on the left. Should reveal the Spyglass.
-Hook – Use it on the mermaid sitting on the rock in the middle of the sea.
-Spyglass – Use it on the girl sitting on the crates, in the bottom left corner of the pirate ship
+* Pistol – On the back of the ship, one person shooting the rifle and another a pistol
+  * Стрелки выстрелят в девушку-стрелка
+* Cutlass – On deck of ship, pirate and person dueling
+  * Пират победит взяв вместо бревна тесак
+* Where all crows go – On the right of the pirate ship, two pirates trying to open a safe.
+  * В сейяе парень и девушка
+* Woodcutter -Give it to the pirate with the golden hook standing on the island on the lower left corner.
+  * Пират срубит пальму, соберет плот и попытается уплыть, но столкнется с акулой
+* Gunpowder – In the left ship, two pirates standing and one is holding a fuse. Middle row. After blowing it up it should reveal the Cursed Coin
+  * За взорванной дверью девушка
+* T.wat hair brush – Use it on the pirate with the red shirt on the left, he’s pointing at the wanted poster
+  * Пират дорисует усы на портрете. Появится усач
+* Trident – Use it on the octopus in the top right.
+  * Девушка отобьется
+* Shark bait – Give it to the shark trying to eat the pirate in the water on the right.
+  * Одноглазый, однорукий, одноногий отгонит акулу и залезт в трюм к девушке
+* Small key – Use it on the birdcage on the left ship, below the cannons. The guy is sitting with a cover over the bird cage.
+  * Вылетит попугай
+* Hampen halter – Give it to the man and near the turtle on the right island.
+  * Парень убежит на черепаха украв одежду пиратки
+* Coconut oil – Use it on the pirate in the pirate ship, the one that escaped the shark before (bottom right corner) Should reveal the Hook.
+  * Одноглазый, однорукий, одноногий воспользуется девушкой сняв крюк
+* Cursed coin – Use it on the skeleton in the bottom left corner, in the cave with the girl and chest.
+  * Скелет превратится в парня
+* Bucaneer xo – Use it on the pirates looking through the spyglass, on top of the ship on the left. Should reveal the Spyglass.
+  * Смотрящие напьются
+* Hook – Use it on the mermaid sitting on the rock in the middle of the sea.
+  * Рыбак поймает русалку
+* Spyglass – Use it on the girl sitting on the crates, in the bottom left corner of the pirate ship
 
 Treasure Island
 
