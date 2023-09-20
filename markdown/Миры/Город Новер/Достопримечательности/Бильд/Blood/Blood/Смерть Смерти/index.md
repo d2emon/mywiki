@@ -5,7 +5,7 @@
 |1  |Shipwrecked                |Потерпев кораблекрушение   |26     |5          |
 |2  |The Lumber Mill            |Лесопилка                  |47     |2          |
 |3  |Rest of the Wicked         |Остаток нечестивых         |43     |5          |
-|4  |The Overlooked Hotel       |Заброшенный отель          |       |           |
+|4  |The Overlooked Hotel       |Заброшенный отель          |91     |17         |
 |5  |The Haunting               |Призраки дома на холме     |       |           |
 |6  |The Cold Rush              |Холодная лихорадка         |       |           |
 |7  |Bowels of the Earth        |Недра Земли                |       |           |
