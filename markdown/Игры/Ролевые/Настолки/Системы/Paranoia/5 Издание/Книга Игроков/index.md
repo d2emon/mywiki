@@ -1,22 +1,8 @@
 # Книга Игроков
 
-## Chapter One: This is a Life?
+Красный УД… Допускается применение любыми гражданми с красным УД.
 
-Глава первая: Как здесь живут?	7
-Все славят Компьютер… А не то!	7
-Большой ой бл...	7
-Коммунисты	7
-Уровни Допуска (УДо)	7
-Красный УДо	9
-Вам может быть интересно	11
-Мутации	12
-Клоны	12
-Тайные общества	13
-Технологии	13
-Измены и проблемы… То, что подлежит устранению	13
-Еще что-нибудь?	14
-
-8
+* [Глава Первая: Вы называете это жизнь?](./1.md)
 
 ## Chapter Two: What's in a Game?
 
@@ -96,15 +82,6 @@
 Заставь их смеяться	82
 
 ----
-
-only loyal, trustworthy citizens who have received the proper training and preparation will be able to go certain places and do certain things.
-There are nine levels ofsecurity clearance: Infrared, Red, Orange, Yellow, Green, Blue, Indigo, Violet, and Ultraviolet. Infrared is the lowest clearance, while Ultraviolet is the highest. In Alpha Complex, things that are colored black — or clones who wear black clothing—are security clearance Infrared. Ultraviolet clearance is white. There are some who say that there are clearance levels higher than Ultraviolet, but those people are usually hauled away and shot right after they say such things. You see, rumors are treason, and rumormongers are treason-mongers.
-What's a monger? I'm sorry, Citizen, that answer is above your security clearance.
-VSWG SeCVRfTV CUARAA/CeS
-You begin life as a lowly Infrared. You are the scum of the vat, and you know it. You know very little else, since anything worth knowing is above your security clearance. You live in a crowded creche with many other clones of Infrared clearance. You eat nutritional FoodLyke Substance and Hot Fun, and you do whatever you are told—by the Computer, by clones of higher security clearance, or even by anyone who looks like they might stomp you into a fine, greasy paste.
-Most citizens of Alpha Complex are Infrareds. Citizens of higher clearances look on them as sub-clones, fit only for manual labor and occasional target practice. You are Infrared.
-Вит, И/АГГ, TueRE's Hope/
-Citizen! What are you doing? Y oujust pushed your work-mate into that vat ofboiling Acidiyum-yum! What's that? She was a traitor, and she was getting ready to poison the Acidiyum-yum with a powerful toxin — so you pushed her and the poison into the vat?! Congratulations, Citizen! You have served Alpha Complex well today! I'm sure the Computer will reward you — yes, here it is; you've been promoted to Red clearance and transferred ±o the Troubleshooters, where you will get to serve the Computer by eliminating more traitors. Don't worry about the vat; we'll serve it to the Infrareds in B- sector — I've been meaning to see how poison-resistant they are, anyway.
 Tws ts A Off? 
 
  
@@ -5035,4 +5012,13 @@ Copyright © 1995 West End Games Ltd. Permission granted to photocopy for person
 
 
 
+----
 
+* **Компьютер**
+* **Рой-G-BIV**
+* **Вотта-U-KNO**
+* **Трей-TOR**
+* **Иихс-MAN**
+* **Ник Фур-I-OUS**
+* **Джеймс-B-OND**
+* **Эва-R-EDY**
