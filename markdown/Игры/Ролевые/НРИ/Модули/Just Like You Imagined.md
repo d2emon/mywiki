@@ -1,55 +1,56 @@
-!! Just Like You Imagined
+# Just Like You Imagined
 
 By the Strange One
 
-!!! Mission Briefing
+## Mission Briefing
 
-You have just come in from a lengthy walk on the outside of the ship, checking for damage sustained while escaping the station before it was over run by the Denzins of hell. 
+You have just come in from a lengthy walk on the outside of the ship, checking for damage sustained while escaping the station before it was over run by the Denzins of hell.
 
 You hear static on your coms about 3 Marines stuck on the base in a Lounge before taking off your helmets to cool off, About that time is when it happens.
 
 At first its a small jolt, but it increases more and more until it feels like the very essence of the ship will fall apart, you have to get to the bridge and find out whats going on and if possible a way out.
 
-!!! Scenario Goals
+## Scenario Goals
 
 Get out of the Cargo level of the ship ASAP! (everyone must escape!)
 
-!!! SPECIAL RULES:
+## SPECIAL RULES
 
 The Invader Player draws one less card (except when there is only one marine player)
+
 At the end of every Invader turn the Invader player will flip over a card, move every living marine model the indicated # of spaces in the direction it shows.
 
-!!! Start
+## Start
 
 Its Cramped and the shuttle bay door is barely open, you know the weapons locker is on the other end of the hallway.. but those skittering sounds...
 
-!!! Area 1
+## Area 1
 
 you see some of the stable quarters where some of your friends used to live.. the demonic creatures at the end of the hallway probably know what happened to them.
 
-!!! Area 2
+## Area 2
 
 This is the Officers Room, now torn apart you hear noises from behind the walls of his walk-in closets...
 
-!!! Area 3
+## Area 3
 
 Well at least you found his stash of old Johnny cash albums he'd taken from you, but the webs covering everything tell a different story.
 
-!!! Area 4
+## Area 4
 
 His dress collection looked nice , but contrasted by the sight of the Archvile, it was lacking taste.
 
-!!! Area 5
+## Area 5
 
 This would've been a way up directly to the Bridge, but as it is in these stories, a big fat demon blocks your way.
 
-!!! Area 6
+## Area 6
 
 Looks like a good route to get out, some spilled chemicals from the coolants leak out, the air smells of oil and vinegar, you must be near the mess hall.
 
 From what you know there should be an armor locker at the end of the hallway.
 
-!!! Area 7
+## Area 7
 
 This is the guidance center for bringing in cargo and other elements, unfortunatly it seems to be the "in" place to be for Demons of high society.
 
@@ -67,7 +68,7 @@ When activated roll one green die.
 
 After a Marine player rolls a 3 discard the Event token from play, the computer will take no more commands.
 
-!!! Area 8
+## Area 8
 
 Its the mess hall, and its aptly named as well, the Cyberdemon in the corner is tearing the place apart, thankfully for you, he's torn enough of it apart to block some shots.
 
@@ -78,7 +79,7 @@ The Event marker is another computer terminal, Roll a Red and Yellow die, as lon
 The computer says this
 "Access Granted, Portal 31666 Activated for Spacial Level use."
 
-!!! Area 9
+## Area 9
 
 This explains it.. why didnt anyone tell you about this? Of course having a portable teleporter on board a ship would bring about the demise of everyone on board, but would they listen to you? Well... it doesnt matter, they're all dead probably, time to get out.... hopefully..
 
