@@ -9,6 +9,10 @@
 
 ## 8.2
 
-1. Monolith Building                                       - Магазин
-2. Power!                                                  - Завод
+1. Monolith Building
+    * Район: ???
+    * Магазин
+2. Power!
+    * Район: ???
+    * Завод
 3. Area 15                                                 - Больница
