@@ -1,10 +1,10 @@
 # 7
 
-1. The Stronghold
-2. Winter Wonderland
-3. Bodies
-4. The Tower
-5. Click!
-6. Twin Fortress
-7. Midgard
-8. Fun with Heads
+1. The Stronghold                                          - Руины
+2. Winter Wonderland                                       - Парк
+3. Bodies                                                  - Больница
+4. The Tower                                               - Руины
+5. Click!                                                  - Руины
+6. Twin Fortress                                           - Руины
+7. Midgard                                                 - Спорт
+8. Fun with Heads                                          - Спорт
