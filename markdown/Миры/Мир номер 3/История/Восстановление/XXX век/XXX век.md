@@ -1,12 +1,25 @@
-## XXX
+# XXX
 
-### Events
+До начала века:
 
-*   2954
-    *   A neutron star in a binary star system in the Kavis Alpha sector explodes. (TNG: "Evolution")
-*   2975
-    *   Information on something commissioned in this year and labeled "Hull Design C4-00" was part of Daniels' temporal database. (ENT: "Future Tense")
-*   2991
-    *   Daniels' temporal database contains info on a Series 24 Craft, Body Style A and a 3391 Series 69, Hull Design C which are commissioned in this year. (ENT: "Future Tense")
+* Visa и American Express не существуют 500 и 600 лет. Discover все еще существует.
+* Все анчоусы выловлены на еду декаподианцами
+* Коровы вымирают (не известно почему).
+* Произошло глобальное потепление но оно было нейтрализовано ядерной войной
+* Сосны вымерли 800 лет назад
+* Пудели вымерли
+* В 2801 Компания Дружественный Робот создает Робо-Санту
+* Хлопья Кабум не существуют
+* Senator Chris Travers uses the time travel code from Bender's Big Score to come back to 3012 and stop Richard Nixon's Head from getting reelected because of a robot uprising in 3028 lead by Bender Bending Rodriguez. Travers wins, but fades away because if Richard Nixon never won the election, then Travers never came back to stop him.
+* Epcot Center, which in the 21st century contained a futuristic themed land, is a work farm for the weak, but it's not as crowded as the slave-labor camps at Universal Studios. [2]
+* Motherly love was outlawed.
+* Each year's Super Bowl losers are shot into space.
 
-        Going by Data's statement that the energy ribbon from Star Trek Generations passes through the Milky Way Galaxy every 39.1 years, it can be expected to return in 2917, 2956, and 2995.
+## 2???
+
+* The vast migration of Star Wars fans. Also known as the Star Wars trek.
+* Начала транслироваться популярная комедия ["Все Любят Гипножабу"](), хотя большинство критиков сходятся во мнении, что ей не хватало качСЛАВА ГИПНОЖАБЕ.
+
+## Events
+
+* Going by Data's statement that the energy ribbon from Star Trek Generations passes through the Milky Way Galaxy every 39.1 years, it can be expected to return in 2917, 2956, and 2995.
