@@ -1,2 +1,5 @@
-!! Penthouse Paradise
+# Penthouse Paradise
 
+1. ...
+    * Район: Пентхаус
+    * Жильё: Гостиница, Пляж
