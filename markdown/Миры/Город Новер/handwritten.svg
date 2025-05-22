@@ -23,9 +23,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      showgrid="true"
-     inkscape:zoom="3.3"
-     inkscape:cx="182.87879"
-     inkscape:cy="694.39393"
+     inkscape:zoom="2.3334524"
+     inkscape:cx="213.63196"
+     inkscape:cy="175.0625"
      inkscape:window-width="1920"
      inkscape:window-height="1027"
      inkscape:window-x="-8"
@@ -82,7 +82,7 @@
      style="display:inline">
     <path
        style="fill:#ff2a2a;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
-       d="m 100,540 v -20 h 40 l 20,20 v 120 h 10 l 10,-10 v -50 h 20 v 60 H 180 V 780 L 170,770 V 750 L 140,720 V 540 Z"
+       d="m 100,540 v -20 h 40 l 20,20 v 120 h 10 l 10,-10 v -50 h 30 v 60 H 180 V 780 L 170,770 V 750 L 140,720 V 540 Z"
        id="path52"
        sodipodi:nodetypes="ccccccccccccccccc" />
     <path
@@ -127,9 +127,9 @@
        sodipodi:nodetypes="ccccc" />
     <path
        style="fill:#008080;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
-       d="M 100,940 V 840 h 70 v -60 h 10 v 60 h 20 v 40 l -20,-20 z"
+       d="M 100,940 V 840 h 70 v -60 h 10 v 60 h 210 v 60 h -60 v 60 H 280 L 180,860 Z"
        id="path89"
-       sodipodi:nodetypes="cccccccccc" />
+       sodipodi:nodetypes="ccccccccccccc" />
     <path
        style="fill:#222b00;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
        d="m 110,540 v -30 l 30,-30 30,30 v 20 l 10,10 z"
@@ -143,11 +143,12 @@
        sodipodi:nodetypes="ccccc" />
     <path
        style="fill:#008000;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
-       d="m 180,660 v 60 h 20 v -60 z"
-       id="path105" />
+       d="m 180,660 v 60 h 120 v -60 z"
+       id="path105"
+       sodipodi:nodetypes="ccccc" />
     <path
        style="fill:#808080;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
-       d="m 180,720 h 20 v 120 h -20 z"
+       d="m 180,720 h 60 v 120 h -60 z"
        id="path106"
        sodipodi:nodetypes="ccccc" />
     <path
@@ -156,9 +157,9 @@
        id="path113" />
     <path
        style="fill:#abc837;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
-       d="m 165,600 v -30 h 35 v 30 z"
+       d="M 165,600 V 480 h 15 v 60 h 60 v 60 z"
        id="path114"
-       sodipodi:nodetypes="ccccc" />
+       sodipodi:nodetypes="ccccccc" />
     <path
        style="fill:#008000;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
        d="m 160,660 10,-10 v -50 h -5 v -30 h -5 z"
@@ -168,6 +169,74 @@
        style="fill:#222b00;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
        d="m 160,660 h 10 l 10,-10 v -20 h -10 v 20 z"
        id="path116" />
+    <path
+       style="fill:#008000;stroke:none;stroke-linecap:round;stroke-linejoin:round"
+       d="m 240,720 v 60 h 60 v -60 z"
+       id="path13"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       style="fill:#d45500;stroke:none;stroke-linecap:round;stroke-linejoin:round"
+       d="m 240,840 v -60 h 60 v 62 z"
+       id="path100"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       style="fill:#d45500;stroke:none;stroke-linecap:round;stroke-linejoin:round"
+       d="m 210,600 v 60 h 30 v -60 z"
+       id="path130" />
+    <path
+       style="fill:#ff2a2a;stroke:none;stroke-linecap:round;stroke-linejoin:round"
+       d="m 240,480 v 180 h 60 V 630 H 270 V 600 H 390 V 270 l -30,-30 h -60 v 60 l 60,60 -60,60 -30,-30 v 60 z"
+       id="path131"
+       sodipodi:nodetypes="cccccccccccccccc" />
+    <path
+       style="fill:#008000;stroke:none;stroke-linecap:round;stroke-linejoin:round"
+       d="m 240,540 h -60 v -90 -30 l 120,-120 60,60 -60,60 -30,-30 v 60 l -30,30 z"
+       id="path135"
+       sodipodi:nodetypes="ccccccccccc" />
+    <path
+       style="fill:#222b00;stroke:none;stroke-linecap:round;stroke-linejoin:round"
+       d="m 180,480 h -10 v -60 h 10 z"
+       id="path139"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       style="fill:#d45500;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+       d="m 300,630 h -30 v -30 h 120 v 60 h -90 z"
+       id="path142"
+       sodipodi:nodetypes="ccccccc" />
+    <path
+       style="fill:#ff2a2a;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+       d="m 300,660 v 120 h 80 v -20 l -20,-21 v -19 h 30 v -60 z"
+       id="path143"
+       sodipodi:nodetypes="ccccccccc" />
+    <path
+       style="fill:#808080;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+       d="m 300,840 v -60 h 80 v -19 l -20,-21 v -20 h 30 v 120 z"
+       id="path145"
+       sodipodi:nodetypes="ccccccccc" />
+    <path
+       style="fill:#ff2a2a;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+       d="M 180,420 300,300 180.85863,179.78726 60,300 Z"
+       id="path159"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       style="fill:#808080;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+       d="m 360,240 60,60 30,-30 -60,-60 z"
+       id="path171"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       style="fill:#008000;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+       d="m 300,240 h 60 L 300,180 180.85863,179.78726 240,240 l 60,60 z"
+       id="path172"
+       sodipodi:nodetypes="ccccccc" />
+    <path
+       style="fill:#d45500;stroke:none;stroke-linecap:round;stroke-linejoin:round"
+       d="m 330,960 v -60 h 30 v 62 z"
+       id="path177"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       style="fill:#222b00;stroke:none;stroke-linecap:round;stroke-linejoin:round"
+       d="m 390,900 h -30 v 60 h 30 z"
+       id="path178" />
   </g>
   <g
      inkscape:groupmode="layer"
@@ -176,19 +245,19 @@
      style="display:inline">
     <path
        style="fill:none;stroke:#0000ff;stroke-width:50;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
-       d="m 10,1150 30,-30 50,-50 v -80 l 30,-30 30,-30 30,-30 30,30 60,60 60,60 v 60"
+       d="m 10,1150 30,-30 50,-50 v -80 l 30,-30 30,-30 30,-30 30,30 60,60 h 120 v 120"
        id="path75"
        sodipodi:nodetypes="ccccccccccc" />
     <path
        style="fill:none;stroke:#0000ff;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
-       d="M 840,60 570,330 v 90 150 l -60,60 h -10 -20 l -30,30 v 30"
+       d="M 840,60 570,330 v 90 150 l -60,60 h -10 -20 l -30,30 v 90 H 240"
        id="path77"
-       sodipodi:nodetypes="ccccccccc" />
+       sodipodi:nodetypes="cccccccccc" />
     <path
        style="fill:none;stroke:#0000ff;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
-       d="m 90,480 20,20 40,40 v 150 h 30 120 150 v 30 30"
+       d="m 90,480 20,20 40,40 v 150 h 30 60 v 60 200"
        id="path76"
-       sodipodi:nodetypes="ccccccccc" />
+       sodipodi:nodetypes="cccccccc" />
     <path
        style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#0000ff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate;stop-color:#000000;stop-opacity:1"
        d="m 0,845 h 25 c 5,0 10,5 10,10 v 146 c 0,10 -15,29 -25,39 l -10,10 z"
@@ -232,29 +301,8 @@
        sodipodi:nodetypes="ccc" />
     <path
        style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
-       d="m 240,360 v 60"
-       id="path16" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
-       d="M 180,60 300,180"
-       id="path17" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
-       d="m 300,180 v 240 60"
-       id="path18"
-       sodipodi:nodetypes="ccc" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
-       d="m 240,780 60,-60"
-       id="path19" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
        d="m 210,870 30,30"
        id="path20" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
-       d="m 360,600 v -40 l 20,-20"
-       id="path21" />
     <path
        style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
        d="m 420,600 v 60 60 120 60"
@@ -272,14 +320,6 @@
        style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
        d="M 420,840 H 540"
        id="path25" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
-       d="M 300,720 H 420 540"
-       id="path26" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
-       d="M 420,660 H 600"
-       id="path27" />
     <path
        style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
        d="m 660,420 -60,60"
@@ -365,29 +405,183 @@
        id="path70"
        sodipodi:nodetypes="ccc" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
-       d="M 300,720 V 600 540"
-       id="path71" />
-    <path
-       style="fill:none;stroke:#808080;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
-       d="m 300,480 v 60"
-       id="path72" />
-    <path
        style="fill:none;stroke:#808080;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
        d="M 600,180 H 540"
        id="path79" />
+    <g
+       inkscape:groupmode="layer"
+       id="layer20"
+       inkscape:label="Боткина"
+       transform="translate(0,-240)">
+      <path
+         style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round"
+         d="M 360,960 V 900 840"
+         id="path158" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+         d="m 360,600 v -40 l 20,-20"
+         id="path21"
+         inkscape:label="Боткина"
+         transform="translate(0,240)" />
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+       d="M 390,150 360,120 300,60 240,0"
+       id="path167"
+       inkscape:label="Камышная"
+       sodipodi:nodetypes="cccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+       d="M 390,180 H 360"
+       id="path166"
+       inkscape:label="Хмелева" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+       d="m 360,420 30,-30"
+       id="path165"
+       transform="translate(0,-240)" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+       d="M 360,480 V 420 360 300 240 180 120"
+       id="path163"
+       inkscape:label="Химическая"
+       sodipodi:nodetypes="ccccccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+       d="M 360,0 H 300 240"
+       id="path170"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+       d="M 390,30 360,0 330,-30"
+       id="path169"
+       inkscape:label="Тополевая"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+       d="m 360,240 30,-30"
+       id="path168"
+       inkscape:label="Герасимова"
+       transform="translate(0,-240)"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+       d="M 240,-30 V 0"
+       id="path174" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+       d="M 300,60 V 0 -30"
+       id="path173" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+       d="m 300,720 h 60 60 120"
+       id="path26"
+       inkscape:label="Набережная"
+       sodipodi:nodetypes="cccc" />
+    <g
+       inkscape:groupmode="layer"
+       id="layer17"
+       inkscape:label="Коперника"
+       transform="translate(0,-240)">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         d="m 300,660 h 60 60"
+         id="path147"
+         transform="translate(0,240)"
+         sodipodi:nodetypes="ccc" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+         d="M 420,660 H 600"
+         id="path27"
+         transform="translate(0,240)" />
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+       d="M 300,720 V 660 600"
+       id="path146"
+       inkscape:label="Мудрого"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+       d="M 300,720 H 420"
+       id="path162"
+       inkscape:label="Счастливая"
+       transform="translate(0,-240)" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
+       d="M 300,600 V 540 480 420"
+       id="path71"
+       sodipodi:nodetypes="cccc"
+       inkscape:label="Швейка" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+       d="m 300,420 h 60 30"
+       id="path144"
+       inkscape:label="Казачья"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+       d="M 390,240 H 360 300"
+       id="path141"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:5;stroke-dasharray:none"
+       d="M 300,660 V 600 540 480 420"
+       id="path140"
+       inkscape:label="Валуйская"
+       transform="translate(0,-240)" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+       d="m 300,180 60,-60 30,-30"
+       id="path157"
+       inkscape:label="Каретная"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+       d="m 240,0 -60,60 -60,60"
+       id="path175"
+       inkscape:label="Ильина"
+       sodipodi:nodetypes="ccc" />
+    <g
+       inkscape:groupmode="layer"
+       id="layer19"
+       inkscape:label="Рогозина"
+       transform="translate(0,-240)">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         d="m 120,240 60,60"
+         id="path176"
+         sodipodi:nodetypes="cc" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+         d="M 180,60 300,180"
+         id="path17"
+         inkscape:label="Рогозина"
+         transform="translate(0,240)" />
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="layer16"
+       inkscape:label="Пер Швейка"
+       transform="translate(0,-240)">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+         d="m 240,360 v 60"
+         id="path16"
+         inkscape:label="Пер Швейка"
+         transform="translate(0,240)" />
+      <path
+         style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round"
+         d="M 240,600 V 540 480"
+         id="path132"
+         sodipodi:nodetypes="ccc" />
+    </g>
     <path
        style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
        d="M 180,620 V 600 540 480"
        id="path73"
        sodipodi:nodetypes="cccc"
        inkscape:label="Светлая" />
-    <path
-       style="fill:none;stroke:#808080;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
-       d="M 180,480 V 420"
-       id="path74"
-       sodipodi:nodetypes="cc"
-       inkscape:label="Мост Светлый" />
     <path
        style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
        d="m 180,420 h 60 60"
@@ -409,12 +603,41 @@
          d="M 240,360 H 180"
          id="path33"
          transform="translate(0,240)" />
+      <path
+         style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round"
+         d="m 240,600 h 60 60 30"
+         id="path133"
+         sodipodi:nodetypes="cccc" />
     </g>
     <path
+       style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round"
+       d="m 170,300 h 10 60 60 60 30"
+       id="path134"
+       inkscape:label="Беловодская"
+       sodipodi:nodetypes="cccccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round"
+       d="m 240,240 30,-30"
+       id="path136"
+       inkscape:label="Просечный" />
+    <path
+       style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round"
+       d="M 300,480 H 240 180 170"
+       id="path137"
+       inkscape:label="Коттеджная"
+       transform="translate(0,-240)"
+       sodipodi:nodetypes="cccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round"
+       d="M 240,480 180,420 120,360 60,300"
+       id="path138"
+       transform="translate(0,-240)"
+       sodipodi:nodetypes="cccc" />
+    <path
        style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
-       d="m 180,120 v 240 60"
+       d="m 180,180 v 120 60 60"
        id="path15"
-       sodipodi:nodetypes="ccc"
+       sodipodi:nodetypes="cccc"
        inkscape:label="Низинная" />
     <g
        inkscape:groupmode="layer"
@@ -457,6 +680,12 @@
          sodipodi:nodetypes="cc" />
     </g>
     <path
+       style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+       d="m 100,600 h 60 20 120 60 60 240 180 60"
+       id="path28"
+       inkscape:label="Первомайская"
+       sodipodi:nodetypes="ccccccccc" />
+    <path
        style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
        d="m 140,480 30,30 v 20 l 10,10"
        id="path93"
@@ -470,13 +699,6 @@
        transform="translate(0,-240)"
        inkscape:label="Ковчежский" />
     <path
-       style="fill:none;stroke:#808080;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
-       d="m 140,720 20,-20 v -40"
-       id="path92"
-       transform="translate(0,-240)"
-       inkscape:label="Мост через Ковчежку"
-       sodipodi:nodetypes="ccc" />
-    <path
        style="display:inline;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
        d="m 160,660 10,-10 v -50 -30"
        id="path115"
@@ -485,16 +707,10 @@
        sodipodi:nodetypes="cccc" />
     <path
        style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
-       d="m 140,480 h 40 120 120"
+       d="m 140,480 h 40 120"
        id="path30"
-       sodipodi:nodetypes="cccc"
+       sodipodi:nodetypes="ccc"
        inkscape:label="Кирова" />
-    <path
-       style="fill:none;stroke:#808080;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
-       d="m 100,700 50,50"
-       id="path10"
-       sodipodi:nodetypes="cc"
-       inkscape:label="Юрский Мост" />
     <path
        style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
        d="M 100,700 V 620"
@@ -506,12 +722,6 @@
        id="path90"
        inkscape:label="Трубная"
        sodipodi:nodetypes="cc" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
-       d="m 100,600 h 60 20 120 60 60 240 180 60"
-       id="path28"
-       inkscape:label="Первомайская"
-       sodipodi:nodetypes="ccccccccc" />
     <g
        inkscape:groupmode="layer"
        id="layer12"
@@ -679,10 +889,58 @@
        id="path120"
        inkscape:label="Тропа" />
     <path
-       style="fill:none;stroke:#808080;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
-       d="M 180,620 V 720"
-       id="path123"
-       inkscape:label="Терешковский Мост" />
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+       d="m 180,180 60,-60 60,-60"
+       id="path160"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+       d="m 170,180 h 10"
+       id="path161" />
+    <g
+       inkscape:groupmode="layer"
+       id="layer18"
+       inkscape:label="Мосты"
+       transform="translate(0,-240)">
+      <path
+         style="fill:none;stroke:#808080;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+         d="m 240,780 60,-60"
+         id="path19"
+         inkscape:label="Мост Мудрого"
+         transform="translate(0,240)" />
+      <path
+         style="fill:none;stroke:#808080;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
+         d="M 180,480 V 420"
+         id="path74"
+         sodipodi:nodetypes="cc"
+         inkscape:label="Мост Светлый"
+         transform="translate(0,240)" />
+      <path
+         style="fill:none;stroke:#808080;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         d="M 180,620 V 720"
+         id="path123"
+         inkscape:label="Терешковский Мост"
+         transform="translate(0,240)" />
+      <path
+         style="fill:none;stroke:#808080;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         d="m 140,720 20,-20 v -40"
+         id="path92"
+         inkscape:label="Мост через Ковчежку"
+         sodipodi:nodetypes="ccc" />
+      <path
+         style="fill:none;stroke:#808080;stroke-width:5;stroke-linecap:round;stroke-linejoin:round"
+         d="m 100,700 50,50"
+         id="path10"
+         sodipodi:nodetypes="cc"
+         inkscape:label="Юрский Мост"
+         transform="translate(0,240)" />
+      <path
+         style="fill:none;stroke:#808080;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         d="M 380,778 V 760 L 360,740 V 722"
+         id="path164"
+         inkscape:label="Казачий мост"
+         sodipodi:nodetypes="cccc" />
+    </g>
   </g>
   <g
      inkscape:groupmode="layer"
@@ -694,7 +952,7 @@
        inkscape:label="tram">
       <path
          style="fill:none;stroke:#ff0000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
-         d="m 100,542 h 38 v 178 l 2,2 h 40 20"
+         d="m 100,542 h 38 v 178 l 2,2 h 40 120"
          id="path56"
          sodipodi:nodetypes="cccccc" />
       <path
@@ -712,8 +970,9 @@
          id="path110" />
       <path
          style="fill:none;stroke:#ff0000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
-         d="M 250,660 H 240"
-         id="path111" />
+         d="M 300,660 H 240"
+         id="path111"
+         sodipodi:nodetypes="cc" />
       <path
          style="fill:none;stroke:#ff0000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
          d="M 180,960 V 840"
@@ -721,8 +980,36 @@
          sodipodi:nodetypes="cc" />
       <path
          style="fill:none;stroke:#ff0000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
-         d="M 220,840 H 180"
-         id="path122" />
+         d="M 300,840 H 180"
+         id="path122"
+         sodipodi:nodetypes="cc" />
+      <path
+         style="fill:none;stroke:#ff0000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         d="M 420,960 H 300 V 840"
+         id="path148"
+         sodipodi:nodetypes="ccc" />
+      <path
+         style="fill:none;stroke:#ff0000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         d="M 180,300 300,420 V 660"
+         id="path149" />
+      <path
+         style="fill:none;stroke:#ff0000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         d="m 300,660 v 62"
+         id="path150" />
+      <path
+         style="fill:none;stroke:#ff0000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         d="M 300,722 V 840"
+         id="path151" />
+      <path
+         style="fill:none;stroke:#ff0000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         d="M 300,722 H 420"
+         id="path152"
+         sodipodi:nodetypes="cc" />
+      <path
+         style="fill:none;stroke:#ff0000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         d="M 300,840 H 420"
+         id="path153"
+         sodipodi:nodetypes="cc" />
     </g>
     <g
        inkscape:groupmode="layer"
@@ -730,7 +1017,7 @@
        inkscape:label="trolley">
       <path
          style="fill:none;stroke:#00ff00;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
-         d="m 82,538 v 240 h 98 40"
+         d="m 82,538 v 240 h 98 240"
          id="path57"
          sodipodi:nodetypes="cccc" />
       <path
@@ -749,14 +1036,19 @@
          id="path103" />
       <path
          style="fill:none;stroke:#00ff00;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
-         d="m 158,838 h 24 38"
+         d="m 158,838 h 24 238"
          id="path104"
          sodipodi:nodetypes="ccc" />
       <path
          style="fill:none;stroke:#00ff00;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
-         d="M 182,838 V 778 720 660 600 360"
+         d="M 182,838 V 778 720 660 600 420"
          id="path112"
          sodipodi:nodetypes="cccccc" />
+      <path
+         style="fill:none;stroke:#00ff00;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         d="M 418,962 H 300 l -58,58"
+         id="path156"
+         sodipodi:nodetypes="ccc" />
     </g>
     <g
        inkscape:groupmode="layer"
@@ -773,8 +1065,9 @@
          id="path125" />
       <path
          style="fill:none;stroke:#ffff00;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
-         d="m 242,662 h 60"
-         id="path126" />
+         d="m 242,662 h 60 v 180"
+         id="path126"
+         sodipodi:nodetypes="ccc" />
       <path
          style="fill:none;stroke:#ffff00;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
          d="M 178,662 V 842"
@@ -785,8 +1078,27 @@
          id="path128" />
       <path
          style="fill:none;stroke:#ffff00;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
-         d="m 178,842 h 42"
-         id="path129" />
+         d="M 178,842 H 302"
+         id="path129"
+         sodipodi:nodetypes="cc" />
+      <path
+         style="fill:none;stroke:#ffff00;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         d="m 302,842 h 60"
+         id="path154"
+         sodipodi:nodetypes="cc" />
+      <path
+         style="fill:none;stroke:#ffff00;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         d="M 302,842 V 958 H 422"
+         id="path155"
+         sodipodi:nodetypes="ccc" />
+      <path
+         style="fill:none;stroke:#ffff00;stroke-linecap:round;stroke-linejoin:round"
+         d="m 420,782 h -40 l -18,18 v 42"
+         id="path18" />
+      <path
+         style="fill:none;stroke:#ffff00;stroke-linecap:round;stroke-linejoin:round"
+         d="M 420,842 H 362"
+         id="path72" />
     </g>
   </g>
 </svg>
