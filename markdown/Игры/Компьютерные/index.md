@@ -32,3 +32,75 @@
 * Стимпанк
 * Современные
 * Фэнтези
+
+----
+
+* (?) Application
+  * Game creation
+  * Operating System
+  * Other application
+  * Screen saver
+* Action (1278)
+  * 3D action
+  * Arcade (3239)
+  * Beat em-up
+    * Fighting (183)
+  * Breakout variant
+  * Driving
+  * FPS
+  * Freeform shooter
+  * Giant robot action
+  * Horizontal shooter
+  * Hybrid
+  * Military shooter
+  * Multi-type action
+  * Multiplayer shooter
+  * Other action
+  * Pinball
+  * Platformer
+  * Space combat
+  * Vertical shooter
+* Adventure (517)
+  * Experimental
+  * Multi-genre adventure
+  * Multimedia novel
+  * Myst-style
+  * Space exploration
+  * Traditional first-person
+  * Traditional third-person
+  * (-) Quest (917)
+* Edutainment (1419)
+  * Advanced education
+  * Arts or Literature
+  * Early childhood
+  * General knowledge
+  * Language
+  * Math or logic
+  * Music
+  * Problem solving
+  * Science
+  * Social studies
+  * Typing or writing
+  * Various subjects
+* Interactive Fiction (219)
+  * Choose Your Own Adventure
+  * Conventional
+  * Cross-genre IF
+  * Graphical IF
+  * Monumental
+  * Multiple endings
+  * Other IF
+  * Real-time IF
+  * Short and sweet
+  * Story-driven
+* (-) Other (144)
+* Puzzle (1287)
+* (-) Racing (728)
+* RPG (646)
+* Simulation (639)
+* (?) Special
+* Sports (543)
+* Strategy (1419)
+* (?) War
+* (-) Tabletop (623)
+
