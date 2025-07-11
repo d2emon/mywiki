@@ -1,19 +1,20 @@
-!! Call of Cthulhu
+# Call of Cthulhu
 
-||
-||Designer(s)		||Sandy Petersen	||
-||Publisher(s)		||Chaosium			||
-||Publication date	||1981					||
-||Genre(s)			||Horror				||
-||System				||Basic Role-Playing (BRP)[[<<]](d20 system version also available)	||
+|                   |               |
+|-------------------|---------------|
+|Designer(s)        |Sandy Petersen |
+|Publisher(s)       |Chaosium       |
+|Publication date   |1981           |
+|Genre(s)           |Horror         |
+|System             |[Basic Role-Playing (BRP)](../Basic%20Role-Playing/index.md) (d20 system version also available)	|
 
 Call of Cthulhu — ролевая игра в жанре невообразимого ужаса, основанная на мифологии из произведений Говарда Филлипса Лавкрафта. Изданием Call of Cthulhu занимается компания Chaosium.
 
-!!! Игромеханика
+## Игромеханика
 
 В качестве механики во всех редакциях Call of Cthulhu используются правила BRP. Basic Role-Playing — это безклассовая механика, основанная на навыках, развивающихся по мере применения их персонажи. Для CoC механика BRP была дополнена правилами по безумию, а её летальность была несколько увеличена.
 
-!!! Лицензированные дополнения
+## Лицензированные дополнения
 
 Chaosium была одной из первых компаний, позволивших сторонним разработчикам выпускать свои дополнения к играм издательства. Этой возможностью воспользовался ряд компаний, включающий Pagan Publishing, Miskatonic River Press, Theater of the Mind Enterprises, Triad Entertainment, Games Workshop, Fantasy Flight Games, RAFM, Grenadier Models и Yog-Sothoth.com. Действие многих сторонних дополнений разворачивалось в другие периоды истории, отличающиеся от 20-30-х годов Лавкрафта, а иногда и полностью в оригинальных сеттингах.
 
@@ -28,11 +29,11 @@ Chaosium была одной из первых компаний, позволи�
 
 Call of Cthulhu is a horror fiction role-playing game based on H.P. Lovecraft's story of the same name and the associated Cthulhu Mythos. The game, often abbreviated as CoC, is published by Chaosium. It has won several major awards.
 
-!!! Setting
+## Setting
 
 The setting of Call of Cthulhu is a darker version of our world, based on H.P. Lovecraft's observation (from his short essay, Supernatural Horror in Literature) that, "The oldest and strongest emotion of mankind is fear, and the strongest kind of fear is fear of the unknown." There are three primary eras of the original (BRP) game: the 1920s, the setting of many of Lovecraft's stories; the 1890s Gaslight supplements, a blend of occult and Holmesian mystery and mostly set in England; and modern conspiracy (Cthulhu Now). Recent additions include 1000 AD (Cthulhu: Dark Ages), 23rd Century (Cthulhu Rising) and Roman times (Cthulhu Invictus). The protagonists may also travel to places that are not of this earth, represented in the Dreamlands (which can be accessed through dreams as well as being physically connected to the earth), as well as travel to other planets or the voids of space.
 
-!!!! Gameplay experience
+### Gameplay experience
 
 The players take the roles of ordinary people, drawn into the realm of the mysterious: detectives, criminals, scholars, artists, war veterans, etc. Often, happenings begin innocently enough, until more and more of the workings behind the scenes are revealed. As the characters learn more of the true horrors of the world and the irrelevance of humanity, their sanity inevitably withers away (the game actually includes a mechanism for determining how damaged a character's sanity is at any given point). To access the tools they need to defeat the horrors – mystic knowledge and magic – the characters must be willing to give up some of their sanity.
 
@@ -40,13 +41,13 @@ Call of Cthulhu has a reputation as a game in which it is quite common for a pla
 
 For as long as they stay healthy (or at least functional), characters may be developed. Call of Cthulhu does not use levels, but is completely skill-based, with player characters getting better with their skills by succeeding at them.
 
-!!! History
+## History
 
-!!!! Origins
+### Origins
 
 The original conception of Call of Cthulhu was Dark Worlds, a game commissioned by the publisher Chaosium but never published. Sandy Petersen, now best known for his work on the Doom computer game, contacted them regarding writing a supplement for their popular fantasy game RuneQuest set in Lovecraft's Dreamlands. He took over the writing of Call of Cthulhu, and the game was released in 1981, using a simplified version of the Basic Role-Playing system used in RuneQuest. The game won three major awards in the following year.
 
-!!!! Editions
+### Editions
 
 Since Petersen's departure, continuing development of Call of Cthulhu has passed to Lynn Willis, who since the fifth edition has been credited as co-author. The game is now in its sixth edition, but the rules have changed little over the years. In 2002, the Call of Cthulhu 20th Anniversary Edition won the Origins Award for Best Graphic Presentation of a Book Product 2001.
 
@@ -63,7 +64,7 @@ Since Petersen's departure, continuing development of Call of Cthulhu has passed
 * Call of Cthulhu, 6th Edition (2004)
 * Call of Cthulhu 25th anniversary edition (2006)
 
-!!!! Early releases
+### Early releases
 
 Given its roots in the RPG tradition, many of the early releases for Call of Cthulhu were still based in the framework set down by Dungeons & Dragons. They often involved the characters wandering through caves and fighting different types of horrible monsters. Nonetheless, the emphasis on real-life settings, character research, and thinking one's way around trouble gave it a wide audience.
 
@@ -75,19 +76,19 @@ The standard of the included 'clue' material varies from scenario to scenario, b
 
 Additional milieux were provided by Chaosium with the release of Dreamlands, a boxed supplement containing additional rules needed for playing within the Lovecraft Dreamlands, a large map and a scenario booklet, and Cthulhu By Gaslight, another boxed set which moved the action from the 1920s to the 1890s.
 
-!!!! Cthulhu Now
+### Cthulhu Now
 
 In 1987 Chaosium issued the supplement titled Cthulhu Now, a collection of rules, supplemental source materials and scenarios for playing Call of Cthulhu in the present day. This proved to be a very popular alternative milieu, so much so that much of the supplemental material is now included in the core rule book. The supplement is long out of print today; however, Pagan Publishing has released a series of supplements in a similar vein, by the name Delta Green, that is also set in the present day.
 
-!!!! Lovecraft Country
+### Lovecraft Country
 
 Lovecraft Country was a line of supplements for Call of Cthulhu released in 1990. These supplements were overseen by Keith Herber and provided backgrounds and adventures set in Lovecraft's fictional towns of Arkham, Kingsport, Innsmouth, Dunwich, and their environs. The intent was to give investigators a common base, as well as to center the action on well-drawn characters with clear motivations. With the departure of Herber, Chaosium's line ended.
 
-!!!! Mythos
+### Mythos
 
 Mythos was a collectible card game based on the Cthulhu Mythos that Chaosium produced and marketed during the mid-Nineties. While generally praised for its fast gameplay and unique mechanics, it ultimately failed to gain a very large market presence. It bears mention because its eventual failure brought the company to hard times that affected its ability to produce material for Call of Cthulhu. A second Call of Cthulhu collectible card game is currently being produced by Fantasy Flight Games.
 
-!!!! Recent history
+### Recent history
 
 In the last eight years, since the collapse of the Mythos CCG, the release of CoC books has been very sporadic with up to a year between releases. Chaosium struggled with near bankruptcy for many years before finally starting their upward climb again. 2005 was their best year for many years with ten releases for the game and many more scheduled for release in the near future.
 
@@ -95,12 +96,16 @@ Chaosium has recently taken to marketing "monographs"—short books by individua
 
 The range of times and places in which the horrors of the Mythos can be encountered was also expanded in late 2005 onwards with the addition of Cthulhu Dark Ages by Stéphane Gesbert, which gives a framework for playing games set in eleventh-century Europe, Secrets of Japan by Michael Dziesinski for gaming in modern day Japan, and Secrets of Kenya by David Conyers for gaming in interwar period Africa.
 
-!!! Licenses
+## Licenses
 
 Chaosium has licensed other publishers to create supplements, including Delta Green by Pagan Publishing. Other licensees have included Theater of the Mind Enterprises, Triad Entertainment, Games Workshop, Fantasy Flight Games, RAFM, and Grenadier Models. Pelgrane Press will publish Trail of Cthulhu, created by Kenneth Hite using a system developed by Robin Laws, in december 2007.
 
-!!! d20 Call of Cthulhu
+## d20 Call of Cthulhu
 
 In 2001, a stand-alone version of Call of Cthulhu was released by Wizards of the Coast, for the d20 system. Intended to preserve the feeling of the original game, the d20 conversion of the game rules were supposed to make the game more accessible to the large D&D player base. The d20 system also made it possible to use Dungeons & Dragons characters in Call of Cthulhu, as well as to introduce the Cthulhu Mythos into Dungeons & Dragons games.
 
 The d20 version of the game is no longer supported by Wizards as per their contract with Chaosium. Chaosium included d20 stats as an appendix in three releases (see Lovecraft Country), but have since dropped the "dual stat" idea.
+
+## Ссылки
+
+* <https://vk.com/call_of_cthulhu_rpg> - сообщество
