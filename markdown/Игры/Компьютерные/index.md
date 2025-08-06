@@ -32,3 +32,134 @@
 * Стимпанк
 * Современные
 * Фэнтези
+
+----
+
+* (?) Application
+  * Game creation
+  * Operating System
+  * Other application
+  * Screen saver
+* Action (1278)
+  * 3D action
+  * Arcade (3239)
+  * Beat em-up
+    * Fighting (183)
+  * Breakout variant
+  * Driving
+  * FPS
+  * Freeform shooter
+  * Giant robot action
+  * Horizontal shooter
+  * Hybrid
+  * Military shooter
+  * Multi-type action
+  * Multiplayer shooter
+  * Other action
+  * Pinball
+  * Platformer
+  * Space combat
+  * Vertical shooter
+* Adventure (517)
+  * Experimental
+  * Multi-genre adventure
+  * Multimedia novel
+  * Myst-style
+  * Space exploration
+  * Traditional first-person
+  * Traditional third-person
+  * (-) Quest (917)
+* Edutainment (1419)
+  * Advanced education
+  * Arts or Literature
+  * Early childhood
+  * General knowledge
+  * Language
+  * Math or logic
+  * Music
+  * Problem solving
+  * Science
+  * Social studies
+  * Typing or writing
+  * Various subjects
+* Interactive Fiction (219)
+  * Choose Your Own Adventure
+  * Conventional
+  * Cross-genre IF
+  * Graphical IF
+  * Monumental
+  * Multiple endings
+  * Other IF
+  * Real-time IF
+  * Short and sweet
+  * Story-driven
+* (-) Other (144)
+* Puzzle (1287)
+  * Brainteaser
+  * Building
+  * Collection
+  * Game show
+  * Lemmings variant
+  * Reflex-oriented
+  * Tetris variant
+  * Third person
+  * Word or Trivia
+* RPG (646)
+  * Console-style
+  * First-person
+  * Isometric
+  * Roguelike
+  * Top-down
+* Simulation (639)
+  * Fleet
+  * Flight - Civil
+  * Flight - Military
+  * Ground combat
+  * Hypothetical
+  * Life
+  * Other sim
+  * Politics
+  * Space sim
+  * Stock market
+  * Submarine
+  * Trade or management
+* Sports (543)
+  * Baseball
+  * Basketball
+  * Fighting
+  * Fishing
+  * Football (American)
+  * Football (Soccer)
+  * Futuristic
+  * Golf
+  * Hockey
+  * Other sport
+  * Pool or Snooker
+  * Racing (728)
+  * Racket
+  * Rugby
+  * Summer
+  * Wacky
+  * Winter
+* Strategy (1419)
+  * 4X in space
+  * 4X on Earth
+  * Board - Eastern
+  * Board - Western
+  * Business
+  * Card
+  * Casino
+  * Empire management
+  * God game or micromanagement
+  * Multi-genre strategy
+  * Programming
+  * Real-time strategy
+  * Squad-level
+  * Tabletop (623)
+* (?) War
+  * Hex or tile-based
+  * Miniature or squad
+  * Multi-level war
+  * Real-time or real terrain
+  * Strategic scope
+  * Tabletop war
