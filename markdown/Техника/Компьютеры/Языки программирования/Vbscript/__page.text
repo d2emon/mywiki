@@ -1,0 +1,4 @@
+!! Vbscript
+[>[@
+Msgbox "Hello world!"
+@]<]

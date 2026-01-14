@@ -1,0 +1,8 @@
+!! MIDlet Pascal
+[>[@
+Program Hello;
+Begin
+  DrawText('Hello, world!', 5, 5);
+  Repaint; Delay(5000);
+End.
+@]<]

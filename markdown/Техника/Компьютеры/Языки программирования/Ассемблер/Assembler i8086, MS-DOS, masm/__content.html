@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge' />
+	<meta http-equiv='content-type' content='text/html; charset=utf-8'/>
+	<title>Assembler i8086, MS-DOS, masm</title>
+
+	<style type='text/css'>
+		body, div, p, table {
+			font-size:10pt;
+			font-family:Verdana;
+		}
+
+		img{border:none}
+		
+	</style>
+	
+</head>
+
+<body>
+<h1>Assembler i8086, MS-DOS, masm</h1>
+<blockquote>
+<pre>
+.model tiny
+.code
+org 100h
+ 
+Start:
+mov ah, 9
+mov dx, offset msg
+int 21h
+ 
+mov ax, 4C00H
+int 21h
+ 
+msg db 'Hello, world$'
+end Start
+</pre>
+</blockquote><br/>
+</body>
+</html>

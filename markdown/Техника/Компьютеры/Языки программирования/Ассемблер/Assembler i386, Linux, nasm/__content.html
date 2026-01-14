@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge' />
+	<meta http-equiv='content-type' content='text/html; charset=utf-8'/>
+	<title>Assembler i386, Linux, nasm</title>
+
+	<style type='text/css'>
+		body, div, p, table {
+			font-size:10pt;
+			font-family:Verdana;
+		}
+
+		img{border:none}
+		
+	</style>
+	
+</head>
+
+<body>
+<h1>Assembler i386, Linux, nasm</h1>
+<blockquote>
+<pre>
+SECTION .data
+msg: db "Hello, world",10
+len: equ $-msg
+ 
+SECTION .text
+global main
+main:
+mov edx, len
+mov ecx, msg
+mov ebx, 1
+mov eax, 4
+int 0x80
+ 
+mov ebx, 0
+mov eax, 1
+int 0x80
+</pre>
+</blockquote><br/>
+</body>
+</html>

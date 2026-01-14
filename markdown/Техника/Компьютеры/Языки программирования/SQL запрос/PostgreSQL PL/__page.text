@@ -1,0 +1,9 @@
+!! PostgreSQL PL/pgSQL
+[>[@
+DO $$
+BEGIN
+   RAISE NOTICE 'Hello world!';
+END;
+$$;
+/
+@]<]

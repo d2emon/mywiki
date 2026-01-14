@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge' />
+	<meta http-equiv='content-type' content='text/html; charset=utf-8'/>
+	<title>Assembler i386, Linux, GAS</title>
+
+	<style type='text/css'>
+		body, div, p, table {
+			font-size:10pt;
+			font-family:Verdana;
+		}
+
+		img{border:none}
+		
+	</style>
+	
+</head>
+
+<body>
+<h1>Assembler i386, Linux, GAS</h1>
+<br/>
+<blockquote>
+<pre>
+.data
+msg: .ascii "Hello,world!\n"
+len = . - msg
+ 
+.text
+.globl _start
+_start:
+movl $4,%eax
+movl $1,%ebx
+movl $msg,%ecx
+movl $len,%edx
+int $0x80
+ 
+xorl %ebx,%ebx
+movl $1,%eax
+int $0x80
+</pre>
+</blockquote><br/>
+</body>
+</html>
