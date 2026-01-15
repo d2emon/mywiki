@@ -1,2 +1,2 @@
-!! Hero Quest
+# Hero Quest
 

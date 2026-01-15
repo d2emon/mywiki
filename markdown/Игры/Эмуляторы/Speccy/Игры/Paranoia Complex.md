@@ -1,3 +1,3 @@
-!! Paranoia Complex
+# Paranoia Complex
 
 Игра во вселенной паранойи
