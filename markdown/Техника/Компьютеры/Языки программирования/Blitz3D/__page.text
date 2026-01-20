@@ -1,0 +1,51 @@
+!! Blitz3D, язык для новичков
+
+Способ 1:
+
+[>[@
+Text 0,0,"Hello, world!"
+@]<]
+
+Способ 2:
+
+[>[@
+Print "Hello, world!"
+WaitKey ;Или Delay 5000
+@]<]
+
+Способ 3, с выебонами:
+
+[>[@
+Const HWtxt$ = "Hello, world!"
+ 
+Graphics 800,600,32,2
+SetBuffer BackBuffer()
+ 
+ Type TCharacter
+  Field c$
+ End Type
+ 
+GenerateHelloWorld
+ 
+While Not KeyDown(1)
+ Cls
+ DrawHelloWorld
+ Flip
+Wend
+ 
+End
+ 
+Function GenerateHelloWorld()
+ For i = 1 To Len(HWtxt)
+  Local char.TCharacter = New TCharacter
+   char\c = Mid(HWtxt,i,1)
+ Next
+End Function
+ 
+Function DrawHelloWorld()
+ For char.TCharacter = Each TCharacter
+   i = i + 1
+  Text i*10,10,char\c
+ Next
+End Function
+@]<]

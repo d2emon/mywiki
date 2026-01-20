@@ -1,0 +1,18 @@
+!! AMD64 Linux, GAS
+[>[@
+.text
+prefix: .ascii "Hello, World\n"
+.set prefix_size, . - prefix
+.global _start
+_start:
+xorq %rax, %rax
+incb %al
+xorl %edi, %edi
+incl %edi
+movq $prefix, %rsi
+mov $prefix_size, %edx
+syscall
+movl $60, %eax
+xorl %edi, %edi
+syscall
+@]<]

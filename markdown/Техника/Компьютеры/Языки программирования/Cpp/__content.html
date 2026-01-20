@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge' />
+	<meta http-equiv='content-type' content='text/html; charset=utf-8'/>
+	<title>Cpp</title>
+
+	<style type='text/css'>
+		body, div, p, table {
+			font-size:10pt;
+			font-family:Verdana;
+		}
+
+		img{border:none}
+		
+	</style>
+	
+</head>
+
+<body>
+<h1>C++</h1>
+<br/>
+<a href="Cpp COM">Cpp COM</a><br/>
+<a href="Cpp ООП">Cpp ООП</a><br/>
+<br/>
+<blockquote>
+<pre>
+#include &lt;iostream&gt; 
+int main()
+{
+    std::cout &lt;&lt; "Hello, World!" &lt;&lt; std::endl;
+    return 0;
+}
+</pre>
+</blockquote><br/>
+<br/>
+Чуть более извращённый вариант:<br/>
+<br/>
+<blockquote>
+<pre>
+#include &lt;iostream&gt;
+using namespace std; 
+int main()
+{
+    cout &lt;&lt; "Hello, World!" &lt;&lt; endl;
+ 
+    return 0;
+}
+</pre>
+</blockquote><br/>
+<br/>
+Win32 API<br/>
+<br/>
+<blockquote>
+<pre>
+#include &lt;windows.h&gt;
+int WINAPI WinMain (HINSTANCE,HINSTANCE,PSTR,int){
+MessageBox(0,"Hello, World","F*ck",0);
+return 0;
+}
+</pre>
+</blockquote><br/>
+</body>
+</html>

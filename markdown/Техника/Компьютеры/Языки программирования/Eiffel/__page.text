@@ -1,0 +1,11 @@
+!! Eiffel
+[>[@
+class HELLO_WORLD 
+feature
+  print_hello is
+      -- Print "Hello, World!"
+    do
+      print ("Hello, World!")
+    end
+end
+@]<]

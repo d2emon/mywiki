@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge' />
+	<meta http-equiv='content-type' content='text/html; charset=utf-8'/>
+	<title>Assembler микроконтроллер ATMega16, AVR Studio</title>
+
+	<style type='text/css'>
+		body, div, p, table {
+			font-size:10pt;
+			font-family:Verdana;
+		}
+
+		img{border:none}
+		
+	</style>
+	
+</head>
+
+<body>
+<h1>Assembler микроконтроллер ATMega16, AVR Studio</h1>
+<blockquote>
+<pre>
+.include "m16def.inc"
+.cseg
+.org $0000
+rjmp  start      ;Reset handler
+.org $0030
+start:
+ldi   r24,  25  ; ~= 9600 @ 4Mhz clock
+out   UBRRL,  r24
+out   UBRRH,  r2
+ldi   r24,  1 &lt;&lt; TXEN
+out   UCSRB,  r24
+ldi   r24,  1 &lt;&lt; URSEL | 1 &lt;&lt; UCSZ0 | 1 &lt;&lt; UCSZ1 ; 8-n-1
+out   UCSRC,  r24
+ 
+; send msg
+ldi   ZL, msg &lt;&lt; 1
+loop:
+lpm   r0, Z+ ; next char
+tst   r0   ; terminated?
+stop: breq  stop
+ 
+while_busy:
+sbis  UCSRA,  UDRE
+rjmp  while_busy
+out   UDR,  r0
+rjmp  loop
+msg:  .db  "Hello, world!", 13, 10, 0
+</pre>
+</blockquote><br/>
+</body>
+</html>

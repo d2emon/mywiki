@@ -1,0 +1,16 @@
+!! Boo
+[>[@
+print("Hello, World!")
+@]<]
+
+Или:
+
+[>[@
+print "Hello, World!"
+@]<]
+
+Или даже так:
+
+[>[@
+System.Console.WriteLine("Hello, World!")
+@]<]

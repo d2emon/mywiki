@@ -1,0 +1,4 @@
+!! SQL-92
+[>[@
+SELECT 'Hello, World!'
+@]<]

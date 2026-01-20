@@ -1,0 +1,26 @@
+!! ABAP
+[>[@
+REPORT  zhello.
+WRITE / 'Hello, World!'.
+@]<]
+
+или так
+
+[>[@
+REPORT  zhello.
+MESSAGE 'Hello, World!' TYPE 'I'.
+@]<]
+
+или так
+
+[>[@
+REPORT  zhello.
+ 
+CALL FUNCTION 'POPUP_TO_DISPLAY_TEXT'
+  EXPORTING
+    titel        = 'Helloworld'
+    textline1    = 'Hello'
+    textline2    = 'World!'
+    start_column = 25
+    start_row    = 6.
+@]<]

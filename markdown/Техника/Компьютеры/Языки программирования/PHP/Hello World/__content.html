@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge' />
+	<meta http-equiv='content-type' content='text/html; charset=utf-8'/>
+	<title>PHP</title>
+
+	<style type='text/css'>
+		body, div, p, table {
+			font-size:10pt;
+			font-family:Verdana;
+		}
+
+		img{border:none}
+		
+	</style>
+	
+</head>
+
+<body>
+<h1>PHP</h1>
+<blockquote>
+<pre>
+echo "Hello, world!";
+</pre>
+</blockquote><br/>
+<br/>
+Или так (при вставке кода в HTML):<br/>
+<br/>
+<blockquote>
+<pre>
+&lt;?="Hello, world!"?&gt;
+</pre>
+</blockquote><br/>
+<br/>
+Или с использованием ОО-паттернов программирования:<br/>
+<br/>
+<blockquote>
+<pre>
+/********************************************************************
+Model-View-Controller implementation according to POSA
+(Pattern-Oriented Software Architecture
+  http://www.hillside.net/patterns/books/Siemens/book.html)
+********************************************************************/
+ 
+class HelloWorldController {
+    private $model;
+    function __construct($model) {
+        $this-&gt;model = $model;
+    }
+ 
+    function handleEvent($args) {
+        $this-&gt;model-&gt;setStrategy($args[2]);
+        $this-&gt;model-&gt;addText($args[1]);
+    }
+}
+ 
+ 
+class HelloWorldModel {
+    private $text;
+    private $observers = array();
+    private $strategy;
+ 
+    function attach($observer) {
+        $this-&gt;observers[] = $observer;
+    }
+ 
+    function getData() {
+        $facade = new HelloWorldFacade($this-&gt;strategy);
+        return $facade-&gt;getHelloWorld().$this-&gt;text."\n";
+    }
+ 
+    function addText($text='') {
+        $this-&gt;text = $text;
+        $this-&gt;notify();
+    }
+ 
+    function setStrategy($strategy) {
+        $this-&gt;strategy = $strategy;
+    }
+ 
+    function notify() {
+        foreach ($this-&gt;observers as $observer) {
+            $observer-&gt;update();
+        }
+    }
+}
+ 
+class HelloWorldView {
+    private $model;
+ 
+    function initialize($model) {
+        $this-&gt;model = $model;
+        $model-&gt;attach($this);
+        return $this-&gt;makeController();
+    }
+ 
+    function makeController() {
+        return new HelloWorldController($this-&gt;model);
+    }
+ 
+    function update() {
+        $this-&gt;display();
+    }
+ 
+    function display() {
+        echo $this-&gt;model-&gt;getData();
+    }
+}
+ 
+ 
+/*********************************************************************
+"Business logic"
+********************************************************************/
+ 
+class HelloWorld {
+   function execute() {
+       return "Hello world";
+   }
+}
+ 
+class HelloWorldDecorator {
+   private $helloworld;
+   function __construct($helloworld) {
+       $this-&gt;helloworld = $helloworld;
+   }
+ 
+   function execute() {
+       return $this-&gt;helloworld-&gt;execute();
+   }
+}
+ 
+abstract class HelloWorldEmphasisStrategy {
+    abstract function emphasize($string);
+}
+ 
+class HelloWorldBangEmphasisStrategy extends HelloWorldEmphasisStrategy {
+    function emphasize($string) {
+       return $string."!";
+    }
+}
+ 
+class HelloWorldRepetitionEmphasisStrategy extends HelloWorldEmphasisStrategy {
+    function emphasize($string) {
+       return $string." and ".$string." again";
+    }
+}
+ 
+class HelloWorldEmphasizer extends HelloWorldDecorator {
+   private $strategy;
+   function HelloWorldEmphasizer($helloworld,$strategy) {
+       $this-&gt;strategy = $strategy;
+       parent::__construct($helloworld);
+   }
+ 
+   function execute() {
+       $string = parent::execute();
+       return $this-&gt;strategy-&gt;emphasize($string);
+   }
+}
+ 
+class HelloWorldStrategyFactory {
+    static function make($type) {
+        if ($type == 'repetition') return self::makeRepetitionStrategy();
+        return self::makeBangStrategy();
+    }
+ 
+    static function makeBangStrategy() {
+        return new HelloWorldBangEmphasisStrategy;
+    }
+    static function makeRepetitionStrategy() {
+        return new HelloWorldRepetitionEmphasisStrategy;
+    }
+}
+ 
+class HelloWorldFormatter extends HelloWorldDecorator {
+   function execute() {
+       $string = parent::execute();
+       return $string."\n";
+   }
+}
+ 
+class HelloWorldFacade {
+    private $strategy;
+    function __construct($strategyType) {
+        $this-&gt;strategy = HelloWorldStrategyFactory::make($strategyType);
+    }
+ 
+    function getHelloWorld() {
+        $formatter = new HelloWorldFormatter(
+                new HelloWorldEmphasizer(
+                    new HelloWorld,$this-&gt;strategy));
+        return $formatter-&gt;execute();
+    }
+}
+ 
+$model = new HelloWorldModel;
+$view = new HelloWorldView;
+$controller = $view-&gt;initialize($model);
+$controller-&gt;handleEvent($_SERVER['argv']);
+</pre>
+</blockquote><br/>
+</body>
+</html>

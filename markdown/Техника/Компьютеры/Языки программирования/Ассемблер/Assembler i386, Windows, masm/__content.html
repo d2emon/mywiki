@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge' />
+	<meta http-equiv='content-type' content='text/html; charset=utf-8'/>
+	<title>Assembler i386, Windows, masm</title>
+
+	<style type='text/css'>
+		body, div, p, table {
+			font-size:10pt;
+			font-family:Verdana;
+		}
+
+		img{border:none}
+		
+	</style>
+	
+</head>
+
+<body>
+<h1>Assembler i386, Windows, masm</h1>
+<blockquote>
+<pre>
+.386
+.model flat, stdcall
+option casemap:none
+include \masm32\include\windows.inc
+include \masm32\include\kernel32.inc
+includelib \masm32\lib\kernel32.lib
+ 
+.data
+msg db "Hello, world!", 13, 10
+len equ $-msg
+ 
+.data?
+written dd ?
+ 
+.code
+start:
+push -11
+call GetStdHandle
+ 
+push 0
+push offset written
+push len
+push offset msg
+push eax
+call WriteFile
+ 
+push 0
+call ExitProcess
+end start
+</pre>
+</blockquote><br/>
+<br/>
+Или так:<br/>
+<br/>
+<blockquote>
+<pre>
+.386
+.model flat, STDCALL
+includelib kernel32.lib
+GetStdHandle PROTO:DWORD
+WriteConsoleA PROTO:DWORD,:DWORD,:DWORD,:DWORD,:DWORD
+ExitProcess PROTO:DWORD
+.const
+message db "Hello, world!"
+.code
+Main PROC
+LOCAL hStdOut :DWORD
+push -11
+call GetStdHandle
+mov hStdOut,EAX
+push 0
+push 0
+push 16d
+push offset message
+push hStdOut
+call WriteConsoleA
+push 0
+call ExitProcess
+Main ENDP
+End Main
+</pre>
+</blockquote><br/>
+</body>
+</html>

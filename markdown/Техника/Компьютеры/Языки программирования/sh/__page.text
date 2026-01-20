@@ -1,0 +1,20 @@
+!! sh
+[>[@
+echo Hello, world!
+@]<]
+
+Или так
+
+[>[@
+cat <<EOF
+Hello world!
+EOF
+@]<]
+
+Индусский вариант
+
+[>[@
+for i in 'H' 'e' 'l' 'l' 'o' ' ' 'w' 'o' 'r' 'l' 'd' '!' '\n'; do
+        echo -ne "$i"
+done
+@]<]
