@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge' />
+	<meta http-equiv='content-type' content='text/html; charset=utf-8'/>
+	<title>Haskell</title>
+
+	<style type='text/css'>
+		body, div, p, table {
+			font-size:10pt;
+			font-family:Verdana;
+		}
+
+		img{border:none}
+		
+	</style>
+	
+</head>
+
+<body>
+<h1>Haskell</h1>
+Так — в весьма простом и довольно красивом, но малопопулярном языке Haskell (обратите внимание на прекрасную читаемость и простоту кода):<br/>
+<br/>
+<blockquote>
+<pre>
+{-# LANGUAGE NoImplicitPrelude #-}
+ 
+import qualified Data.ByteString as BS -- бесполезный импорт. Помог бы автору, но мне тоже лень.
+import Data.Foldable (foldl1)
+import Data.Function ((.))
+import Text.Show (show)
+import Data.List ((++))
+import Data.Char (Char)
+import Control.Monad ((&gt;&gt;=))
+import System.IO
+ 
+main :: IO ()
+       -- а тут автор был настолько ленив, что использовал один приём 2 раза. Подряд.
+main = hSetBuffering stdout NoBuffering &gt;&gt;= \ _ -&gt; hSetBuffering stdin LineBuffering &gt;&gt;= \ _ -&gt; putHelloWorld (message1)
+  where 
+    message :: [[Char]]
+    message = [ 'H':'e':'l':'l':'o':',':[], 'w':'o':'r':'l':'d':'!':[] ]
+ 
+    putHelloWorld :: [Char] -&gt; IO () -- putHelloWorld = putStrLn
+    putHelloWorld []     = System.IO.hPutStr stdout ('\n':[])
+    putHelloWorld (x:xs) = System.IO.hPutStr stdout (x:[]) &gt;&gt;= \ _ -&gt; putHelloWorld xs
+ 
+    message1 = let f = (++) . (++ " "); f1 = foldl1 f
+               in  f1 message
+</pre>
+</blockquote><br/>
+<br/>
+Чуть менее полный <strike>матана</strike> говнокода вариант на Haskell:<br/>
+<br/>
+<blockquote>
+<pre>
+main = putStrLn "Hello, world!"
+</pre>
+</blockquote><br/>
+</body>
+</html>

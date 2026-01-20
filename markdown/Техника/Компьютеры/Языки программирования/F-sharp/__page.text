@@ -1,0 +1,4 @@
+!! F#
+[>[@
+printfn "Hello, World!"
+@]<]

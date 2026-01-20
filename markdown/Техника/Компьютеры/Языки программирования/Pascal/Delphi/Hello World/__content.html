@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge' />
+	<meta http-equiv='content-type' content='text/html; charset=utf-8'/>
+	<title>Delphi</title>
+
+	<style type='text/css'>
+		body, div, p, table {
+			font-size:10pt;
+			font-family:Verdana;
+		}
+
+		img{border:none}
+		
+	</style>
+	
+</head>
+
+<body>
+<h1>Delphi</h1>
+<blockquote>
+<pre>
+{$apptype console}
+begin
+  Writeln('Hello, World!');
+end.
+</pre>
+</blockquote><br/>
+<br/>
+На WinAPI:<br/>
+<br/>
+<blockquote>
+<pre>
+uses windows;
+begin
+  MessageBox(0,'Hello, World!','Заголовок',0);
+end.
+</pre>
+</blockquote><br/>
+<br/>
+На ООП:<br/>
+<br/>
+<blockquote>
+<pre>
+uses windows;
+{$apptype console}
+Type
+  THelloWorld = class
+  procedure ShowMsg();
+  procedure PrintMsg();
+  end;
+Procedure THelloWord.ShowMsg();
+begin
+  MessageBox(0,'Hello, World!','Заголовок',0);
+end;
+ 
+Procedure THelloWord.PrintMsg();
+begin
+  WriteLn('Hello, World!');
+end;
+ 
+var
+ H : THelloWorld;
+begin
+ H := THelloWorld.Create;
+ H.ShowMsg;
+ H.PrintMsg;
+end.
+</pre>
+</blockquote><br/>
+</body>
+</html>

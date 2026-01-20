@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge' />
+	<meta http-equiv='content-type' content='text/html; charset=utf-8'/>
+	<title>Cpp ООП</title>
+
+	<style type='text/css'>
+		body, div, p, table {
+			font-size:10pt;
+			font-family:Verdana;
+		}
+
+		img{border:none}
+		
+	</style>
+	
+</head>
+
+<body>
+<h1>С++ ООП</h1>
+<blockquote>
+<pre>
+#include &lt;iostream&gt;
+ 
+class World
+{
+    public:
+        static int Hello()
+        {
+     	    std::cout &lt;&lt; "Hello, world!" &lt;&lt; std::endl;
+            return 0;
+        }
+};
+ 
+int main()
+{
+    return World::Hello();
+}
+</pre>
+</blockquote><br/>
+<br/>
+С шаблонами:<br/>
+<br/>
+<blockquote>
+<pre>
+class World{};
+ 
+template &lt;typename T&gt;
+void Hello(T hello)
+{
+    std::cout &lt;&lt; "Hello, " &lt;&lt; hello &lt;&lt; std::endl;
+}
+ 
+template &lt;class World&gt;
+void Hello()
+{
+    std::cout &lt;&lt; "Hello, world!" &lt;&lt; std::endl;
+}
+ 
+int main()
+{
+    Hello&lt;World&gt;();	
+}
+</pre>
+</blockquote><br/>
+<br/>
+Чудеса КЗ грамматики:<br/>
+<br/>
+<blockquote>
+<pre>
+template &lt;typename T&gt;
+class Hello
+{
+    public: 
+        Hello(T hello)
+        {
+            std::cout &lt;&lt; "Hello, " &lt;&lt; hello &lt;&lt; std::endl;
+        }
+};
+ 
+template &lt;&gt;
+class Hello&lt;class World&gt;
+{
+    public:
+        Hello()
+        {
+            std::cout &lt;&lt; "Hello, world!" &lt;&lt; std::endl;
+        }
+};
+ 
+int main()
+{
+    Hello&lt;World&gt;();
+}
+</pre>
+</blockquote><br/>
+<br/>
+С наследование<br/>
+<br/>
+<blockquote>
+<pre>
+#include &lt;iostream&gt;
+ 
+class AbstractHello
+{
+    public:
+        virtual ~AbstractHello(){std::cout &lt;&lt; " World!";}
+        void Prnt(){std::cout &lt;&lt; "Hello";}
+ 
+ 
+};
+ 
+class ChildHello: public AbstractHello
+{
+    public:
+        ~ChildHello(){Prnt();}
+};
+ 
+int main()
+{
+    ChildHello *Obj;
+    Obj = new ChildHello;
+    delete Obj;
+}
+</pre>
+</blockquote><br/>
+<br/>
+Просто, чтобы повыёбываться (паттерны)<br/>
+<br/>
+<blockquote>
+<pre>
+/*!
+ * Hello world! application
+ * 
+ * \file hello.cpp
+ */
+ 
+#include &lt;iostream&gt;
+#include &lt;vector&gt;
+#include &lt;algorithm&gt;
+#include &lt;functional&gt;
+#include &lt;cassert&gt;
+ 
+/*!
+ * Dispay message.
+ */
+void displayMessage();
+ 
+/*!
+ * Sentence type
+ *
+ * Type of sentence, used to decide how to terminate sentence.
+ */
+enum ESentenceType {
+    eStatement,
+    eExclamation,
+    sQuestion,
+    eCommand
+};
+ 
+/*!
+ * Utility class to prevent unintended copying of class instances.
+ */
+class nonCopyable {
+protected:
+    nonCopyable() {
+    }
+ 
+    ~nonCopyable() {
+    }
+ 
+private:
+    nonCopyable(const nonCopyable&amp;);
+    const nonCopyable&amp; operator=(const nonCopyable&amp;);
+};
+ 
+/*!
+ * Utility function to obtain punctuation mark to end sentence
+ * of specified type.
+ */
+inline char getPunctionMark(ESentenceType sentenceType) {
+    char puncMark = '.';
+    switch(sentenceType) {
+        case eStatement  : puncMark = '.'; break;
+        case eExclamation: puncMark = '!'; break;
+        case sQuestion   : puncMark = '?'; break;
+        case eCommand    : puncMark = '.'; break;
+        default: {
+            // should never get here
+            assert(false);
+        }
+    }
+    return puncMark;
+}
+ 
+/*!
+ * Utility class for creation of instances.
+ */
+template&lt;typename TElem&gt;
+class Creatable {
+protected:
+    Creatable() {
+    }
+ 
+    virtual ~Creatable() {
+        clear();
+    }
+ 
+public:
+    static TElem* create() {
+        TElem* e = new TElem;
+        return e;
+    }
+ 
+    void free() {
+        delete this;
+    }
+ 
+    virtual void clear() {
+    }
+};
+ 
+template&lt;typename TElem, typename TParam&gt;
+class CreatableParam {
+protected:
+    CreatableParam() {
+    }
+ 
+    virtual ~CreatableParam() {
+    }
+ 
+public:
+    static TElem* create(TParam p) {
+        TElem* e = new TElem;
+        e-&gt;initialize(p);
+        return e;
+    }
+ 
+    void free() {
+        finalize();
+        delete this;
+    }
+ 
+    virtual void initialize(TParam /*p*/) {
+    }
+ 
+    virtual void finalize() {
+        clear();
+    }
+ 
+    virtual void clear() {
+    }
+};
+ 
+/*!
+ * Base class for displayable content
+ */
+class DisplayElem
+: public nonCopyable {
+protected:
+    DisplayElem() {
+    }
+ 
+    virtual ~DisplayElem() {
+    }
+ 
+public:
+    virtual void display(std::ostream&amp; os) const = 0;
+};
+ 
+/*!
+ * STL algorithm for displaying elements
+ */
+class Displayer
+: public std::unary_function&lt;void, const DisplayElem*&gt; {
+private:
+    std::ostream&amp; m_os;
+    char   m_sep;
+    size_t m_count;
+ 
+public:
+    Displayer(std::ostream&amp; os, char sep = '\0')
+    : m_os(os)
+    , m_sep(sep)
+    , m_count(0) {
+    }
+ 
+    ~Displayer() {
+    }
+ 
+    void operator()(const DisplayElem* e) {
+        if(('\0' != m_sep) &amp;&amp; (0 &lt; m_count)) {
+            m_os &lt;&lt; m_sep;
+        }
+        e-&gt;display(m_os);
+        ++m_count;
+    }
+};
+ 
+/*!
+ * STL algorithm for freeing display elements
+ */
+template &lt;typename TElem&gt;
+class Freer
+: public std::unary_function&lt;void, TElem*&gt; {
+public:
+    void operator()(TElem* e) {
+        e-&gt;free();
+    }
+};
+ 
+/*!
+ * Display element for letter.
+ *
+ * The letter is the fundamental element: it has no substructure.
+ */
+class Letter
+: public DisplayElem
+, public CreatableParam&lt;Letter, char&gt; {
+private:
+    char m_ch;
+ 
+protected:
+    /*virtual*/ ~Letter() {
+    }
+ 
+public:
+    Letter() : m_ch('\0') {
+    }
+ 
+    void initialize(char ch) {
+        m_ch = ch;
+    }
+ 
+    void finalize() {
+        m_ch = '\0';
+    }
+ 
+    void display(std::ostream&amp; os) const {
+        os &lt;&lt; m_ch;
+        // no endLetter()
+    }
+};
+ 
+/*!
+ * Display element for word.
+ *
+ * A word is a sequence of letters.
+ */
+class Word
+: public DisplayElem
+, public Creatable&lt;Word&gt; {
+private:
+    std::vector&lt;Letter*&gt; m_letters;
+ 
+protected:
+    /*virtual*/ ~Word() {
+        clear();
+    }
+ 
+public:
+    Word() {
+    }
+ 
+    void clear() {
+        std::for_each(m_letters.begin(), m_letters.end(), Freer&lt;Letter&gt;());
+        m_letters.clear();
+    }
+ 
+    void addLetter(Letter* s) {
+        m_letters.push_back(s);
+    }
+ 
+    /*virtual*/ void display(std::ostream&amp; os) const {
+        std::for_each(m_letters.begin(), m_letters.end(), Displayer(os));
+        // no endLetter()
+    }
+};
+ 
+/*!
+ * Display element for sentence.
+ *
+ * A sentence is a sequence of words.
+ */
+class Sentence
+: public DisplayElem
+, public CreatableParam&lt;Sentence, ESentenceType&gt; {
+private:
+    std::vector&lt;Word*&gt; m_words;
+ 
+    ESentenceType m_sentenceType;
+ 
+protected:
+    /*virtual*/ ~Sentence() {
+        clear();
+    }
+ 
+    void endSentence(std::ostream&amp; os) const {
+        const char puncMark = getPunctionMark(m_sentenceType);
+        os &lt;&lt; puncMark;
+    }
+ 
+public:
+    Sentence()
+    : m_sentenceType(eStatement) {
+    }
+ 
+    void initialize(ESentenceType sentenceType) {
+        m_sentenceType = sentenceType;
+    }
+ 
+    void finalize() {
+        m_sentenceType = eStatement;
+    }
+ 
+    void clear() {
+        std::for_each(m_words.begin(), m_words.end(), Freer&lt;Word&gt;());
+        m_words.clear();
+    }
+ 
+    void addWord(Word* w) {
+        m_words.push_back(w);
+    }
+ 
+    void display(std::ostream&amp; os) const {
+        std::for_each(m_words.begin(), m_words.end(), Displayer(os, ' '));
+        endSentence(os);
+    }
+};
+ 
+/*!
+ * Display element for message.
+ *
+ * A message is a sequence of sentences.
+ */
+class Message
+: public DisplayElem
+, public Creatable&lt;Message&gt; {
+private:
+    std::vector&lt;Sentence*&gt; m_sentences;
+ 
+protected:
+    /*virtual*/ ~Message() {
+        clear();
+    }
+ 
+    void endMessage(std::ostream&amp; os) const {
+        os &lt;&lt; std::endl;
+    }
+ 
+public:
+    Message() {
+    }
+ 
+    void clear() {
+        std::for_each(m_sentences.begin(), m_sentences.end(), Freer&lt;Sentence&gt;());
+        m_sentences.clear();
+    }
+ 
+    void addSentence(Sentence* s) {
+        m_sentences.push_back(s);
+    }
+ 
+    void display(std::ostream&amp; os) const {
+        std::for_each(m_sentences.begin(), m_sentences.end(), Displayer(os, ' '));
+        endMessage(os);
+    }
+};
+ 
+/*!
+ * Main entrance point.
+ */
+int main() {
+    displayMessage();
+    return 0;
+}
+ 
+/*!
+ * Display message.
+ */
+void displayMessage() {
+    Word* first_word = Word::create();
+    first_word-&gt;addLetter(Letter::create('H'));
+    first_word-&gt;addLetter(Letter::create('e'));
+    first_word-&gt;addLetter(Letter::create('l'));
+    first_word-&gt;addLetter(Letter::create('l'));
+    first_word-&gt;addLetter(Letter::create('o'));
+ 
+    Word* second_word = Word::create();
+    second_word-&gt;addLetter(Letter::create('w'));
+    second_word-&gt;addLetter(Letter::create('o'));
+    second_word-&gt;addLetter(Letter::create('r'));
+    second_word-&gt;addLetter(Letter::create('l'));
+    second_word-&gt;addLetter(Letter::create('d'));
+ 
+    Sentence* sentence = Sentence::create(eExclamation);
+    sentence-&gt;addWord(first_word);
+    sentence-&gt;addWord(second_word);
+ 
+    Message* message = Message::create();
+    message-&gt;addSentence(sentence);
+ 
+    message-&gt;display(std::cout);
+ 
+    message-&gt;free();
+    // sentences, etc freed by parent
+}
+</pre>
+</blockquote><br/>
+</body>
+</html>

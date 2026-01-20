@@ -1,0 +1,149 @@
+!! C++ с использованием Component Object Model
+
+На мелкомягком быдлоподелии:
+
+[>[@
+[
+    uuid(2573F8F4-CFEE-101A-9A9F-00AA00342820)
+]
+library LHello
+{
+    importlib("actimp.tlb");
+    importlib("actexp.tlb");
+#include "pshlo.idl"
+    [
+        uuid(2573F8F5-CFEE-101A-9A9F-00AA00342820)
+    ]
+    cotype THello
+    {
+        interface IHello;
+        interface IPersistFile;
+    };
+};
+[
+    exe,
+    uuid(2573F890-CFEE-101A-9A9F-00AA00342820)
+]
+module CHelloLib
+{
+    importheader();
+    importheader();
+    importheader();
+    importheader("pshlo.h");
+    importheader("shlo.hxx");
+    importheader("mycls.hxx");
+    importlib("actimp.tlb");
+    importlib("actexp.tlb");
+    importlib("thlo.tlb");
+    [
+        uuid(2573F891-CFEE-101A-9A9F-00AA00342820),
+        aggregatable
+    ]
+    coclass CHello
+    {
+        cotype THello;
+    };
+};
+@]
+----
+[@
+#include "ipfix.hxx"
+extern HANDLE hEvent;
+class CHello : public CHelloBase
+{
+public:
+	IPFIX(CLSID_CHello);
+	CHello(IUnknown *pUnk);
+	~CHello();
+	HRESULT __stdcall PrintSz(LPWSTR pwszString);
+private:
+	static int cObjRef;
+};
+#include "thlo.h"
+#include "pshlo.h"
+#include "shlo.hxx"
+#include "mycls.hxx"
+int CHello:cObjRef = 0;
+CHello::CHello(IUnknown *pUnk) : CHelloBase(pUnk)
+{
+    cObjRef++;
+    return;
+}
+HRESULT __stdcall CHello::PrintSz(LPWSTR pwszString)
+{
+    printf("%ws\n", pwszString);
+    return(ResultFromScode(S_OK));
+}
+CHello::~CHello(void)
+{
+    cObjRef--;
+    if( cObjRef == 0 )
+        PulseEvent(hEvent);
+    return;
+}
+#include "pshlo.h"
+#include "shlo.hxx"
+#include "mycls.hxx"
+HANDLE hEvent;
+int _cdecl main(int argc, char * argv[]) {
+    ULONG ulRef;
+    DWORD dwRegistration;
+    CHelloCF *pCF = new CHelloCF();
+    hEvent = CreateEvent(NULL, FALSE, FALSE, NULL);
+    CoInitiali, NULL);
+    CoInitializeEx(NULL, COINIT_MULTITHREADED);
+    CoRegisterClassObject(CLSID_CHello, pCF, CLSCTX_LOCAL_SERVER,
+        REGCLS_MULTIPLEUSE, &dwRegistration);
+    WaitForSingleObject(hEvent, INFINITE);
+    CoRevokeClassObject(dwRegistration);
+    ulRef = pCF->Release();
+    CoUninitialize();
+    return(0); 
+}
+extern CLSID CLSID_CHello;
+extern UUID LIBID_CHelloLib;
+CLSID CLSID_CHello = { 0x2573F891, 0xCFEE, 0x101A, { 0x9A, 0x9F, 0x00, 0xAA, 0x00, 0x34, 0x28, 0x20 } };
+UUID LIBID_CHelloLib = { 0x2573F890, 0xCFEE, 0x101A, { 0x9A, 0x9F, 0x00, 0xAA, 0x00, 0x34, 0x28, 0x20 } };
+#include "pshlo.h"
+#include "shlo.hxx"
+#include "clsid.h"
+int _cdecl main( int argc, char * argv[]) {
+    HRESULT hRslt;
+    IHello *pHello;
+    ULONG ulCnt;
+    IMoniker * pmk;
+    WCHAR wcsT[_MAX_PATH];
+    WCHAR wcsPath[2 * _MAX_PATH];
+    wcsPath[0] = '\0';
+    wcsT[0] = '\0';
+    if( argc 1) {
+        mbstowcs(wcsPath, argv[1], strlen(argv[1]) + 1);
+        wcsupr(wcsPath);
+    }
+    else {
+        fprintf(stderr, "Object path must be specified\n");
+        return(1);
+    }
+    if(argc 2)
+        mbstowcs(wcsT, argv[2], strlen(argv[2]) + 1);
+    else
+        wcscpy(wcsT, L"Hello World");
+    printf("Linking to object %ws\n", wcsPath);
+    printf("Text String %ws\n", wcsT);
+    hRslt = CoInitializeEx(NULL, COINIT_MULTITHREADED);
+    if(SUCCEEDED(hRslt)) {
+        hRslt = CreateFileMoniker(wcsPath, &pmk);
+        if(SUCCEEDED(hRslt))
+            hRslt = BindMoniker(pmk, 0, IID_IHello, (void **)&pHello);
+        if(SUCCEEDED(hRslt)) {
+            pHello->PrintSz(wcsT);
+            Sleep(2000);
+            ulCnt = pHello->Release();
+        }
+        else
+            printf("Failure to connect, status: %lx", hRslt);
+        CoUninitialize();
+    }
+    return(0);
+}
+@]<]

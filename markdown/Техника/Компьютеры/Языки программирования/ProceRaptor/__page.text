@@ -1,0 +1,9 @@
+!! ProceRaptor
+[>[@
+application ($console,$void);
+  var ("st",$string);
+  "Hello World!">>st;
+  write (st,$line);
+  read ($void,$line);
+exit();
+@]<]

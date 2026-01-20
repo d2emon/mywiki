@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge' />
+	<meta http-equiv='content-type' content='text/html; charset=utf-8'/>
+	<title>Forth</title>
+
+	<style type='text/css'>
+		body, div, p, table {
+			font-size:10pt;
+			font-family:Verdana;
+		}
+
+		img{border:none}
+		
+	</style>
+	
+</head>
+
+<body>
+<h1>Forth</h1>
+<br/>
+<blockquote>
+<pre>
+: HELLO 72 EMIT 101 EMIT 2 0 DO 108 EMIT LOOP 111 EMIT ;
+: WORLD 119 EMIT 111 EMIT 114 EMIT 108 EMIT 100 EMIT ;
+: HELLO_WORLD HELLO 44 EMIT SPACE WORLD 33 EMIT ;
+HELLO_WORLD
+</pre>
+</blockquote><br/>
+<br/>
+Тот же Forth без выебоновЪ:<br/>
+<br/>
+<blockquote>
+<pre>
+: HelloWorld ." Hello, world!" ;
+</pre>
+</blockquote><br/>
+</body>
+</html>

@@ -1,0 +1,5 @@
+!! AutoIT
+
+[>[@
+  MsgBox(0, "AutoIT Window", "Hello, world!", 0.75)
+@]<]

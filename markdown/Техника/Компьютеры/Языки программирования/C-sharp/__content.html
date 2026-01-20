@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge' />
+	<meta http-equiv='content-type' content='text/html; charset=utf-8'/>
+	<title>C-sharp</title>
+
+	<style type='text/css'>
+		body, div, p, table {
+			font-size:10pt;
+			font-family:Verdana;
+		}
+
+		img{border:none}
+		
+	</style>
+	
+</head>
+
+<body>
+<h1>C#</h1>
+<blockquote>
+<pre>
+using System;
+ 
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Hello, World!");
+    }
+}
+</pre>
+</blockquote><br/>
+<br/>
+или так<br/>
+<br/>
+<blockquote>
+<pre>
+class Program
+{
+    static void Main()
+    {
+        System.Windows.Forms.MessageBox.Show("Hello, World!");
+    }
+}
+</pre>
+</blockquote><br/>
+<br/>
+Или с использованием DI-контейнеров<br/>
+<br/>
+<blockquote>
+<pre>
+using System;
+using Microsoft.Practices.Unity;
+ 
+class Program
+{
+    static void Main(string[] args)
+    {
+        var writer = new ConsoleMessageWriter();
+        UnityContainer uc = new UnityContainer();
+        uc.RegisterType&lt;IMessageWriter, ConsoleMessageWriter&gt;(new ContainerControlledLifetimeManager());
+        var salutation = uc.Resolve&lt;Salutation&gt;();
+ 
+        salutation.Exclaim();
+    }
+}
+ 
+public interface IMessageWriter
+{
+    void Write(string message);
+}
+ 
+public class ConsoleMessageWriter : IMessageWriter
+{
+    public void Write(string message)
+    {
+        Console.WriteLine(message);
+    }
+}
+ 
+public class Salutation
+{
+    [Dependency]
+    public IMessageWriter Writer { get; set; }
+ 
+    public Salutation() {}
+ 
+    public void Exclaim()
+    {
+        Writer.Write("Hello world");
+    }
+}
+</pre>
+</blockquote><br/>
+</body>
+</html>

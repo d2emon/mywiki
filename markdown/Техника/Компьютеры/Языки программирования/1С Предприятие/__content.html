@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge' />
+	<meta http-equiv='content-type' content='text/html; charset=utf-8'/>
+	<title>1С Предприятие</title>
+
+	<style type='text/css'>
+		body, div, p, table {
+			font-size:10pt;
+			font-family:Verdana;
+		}
+
+		img{border:none}
+		
+	</style>
+	
+</head>
+
+<body>
+<h1>1С:Предприятие 7.7/8/8.1/8.2</h1>
+<br/>
+Так решается эта задача во встроеном языке отечественного производителя 1С:<br/>
+<br/>
+<blockquote>
+<pre>
+Предупреждение("Hello, world");
+</pre>
+</blockquote><br/>
+<br/>
+Как вариант:<br/>
+<br/>
+<blockquote>
+<pre>
+DoMessageBox("Hello, world",,"Attention");
+</pre>
+</blockquote><br/>
+<br/>
+Или так:<br/>
+<br/>
+<blockquote>
+<pre>
+Сообщить("Привет, Мир!");
+</pre>
+</blockquote><br/>
+<br/>
+Или так:<br/>
+<br/>
+<blockquote>
+<pre>
+Message("Привет, Мир!", MessageStatus.Attention);
+</pre>
+</blockquote><br/>
+<br/>
+А на 8.2 еще и так можно:<br/>
+<br/>
+<blockquote>
+<pre>
+Сообщение = Новый СообщениеПользователю;
+Сообщение.Текст = "Хелло, Ворлд";
+Сообщение.Сообщить();
+</pre>
+</blockquote><br/>
+<br/>
+И вот так тоже можно:<br/>
+<br/>
+<blockquote>
+<pre>
+Message = New User Message;
+Message.Text = "Хелло, Ворлд";
+Message.Message();
+</pre>
+</blockquote><br/>
+<br/>
+ну и вот так еще<br/>
+<br/>
+<blockquote>
+<pre>
+Вопрос("Хелло, Ворлд!", РежимДиалогаВопрос.ОК);
+</pre>
+</blockquote><br/>
+</body>
+</html>
