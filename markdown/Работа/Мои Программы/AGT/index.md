@@ -46,7 +46,7 @@
 * ins
 * intro
 
-## ROOM
+## [ROOM](./Room.md)
 
 * ROOM _n_
 * name
@@ -93,7 +93,7 @@
 * game_win
 * player_dead
 
-## ITEM
+## [ITEM](./Item.md)
 
 * name
 * short
@@ -136,7 +136,7 @@
 * num_inside
 * win
 
-## CREATURE
+## [CREATURE](./Creature.md)
 
 * name
 * short
@@ -161,7 +161,7 @@
 * timecounter
 * gender
 
-## COMMAND
+## [COMMAND](./Command.md)
 
 * COMMAND
 * TEXT
@@ -174,11 +174,11 @@
 * OCMD
 * data[...]
 
-## INSTRUCTIONS
+## [INSTRUCTIONS](./int.md)
 
 * TEXT
 
-## MESSAGES
+## [MESSAGES](./msg.md)
 
 * NUM
 * TEXT
@@ -186,3 +186,13 @@
 ## TITLE
 
 * TEXT
+
+----
+
+- Treasure
+- Ressurect
+- MaxLives
+- MaxScore
+- Carried (?)
+- Worn (?)
+- Intro
