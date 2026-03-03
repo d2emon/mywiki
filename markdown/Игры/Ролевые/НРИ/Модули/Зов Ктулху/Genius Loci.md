@@ -282,15 +282,13 @@ I have found Hathorne's disk. It is, as I suspected, an ancient sign from elder 
   
 December 3rd, 1890
 
-If is Hone. The sigil has been placed upon the earth; -Forcing doion that ojhich lairs upon the hill into an uneasy torpor The taxpayers question the expense oF having such a rruseless decorative piece;j installed at the asylum; but they pose no serious threat to its removal and are merciFully unaware oF its true purpose. Suf to those ouho fnobJ; the sign shall serve as a uuard -For поы and the -Future. Already I see signs oF recovery in the patients and Sta-FF; as iF they are SurFacing From a long; loatmg nightmare.
+If is done. The sigil has been placed upon the earth, forcing down that which lairs upon the hill into an uneasy torpor. The taxpayers question the expense of having such a "useless decorative piece" installed at the asylum, but they pose no serious threat to its removal and are mercifully unaware of its true purpose. But to those who know, the sign shall serve as a ward for now and the future. Already I see signs of recovery in the patients and staff, as if they are surfacing from a long, waking nightmare.
 
 ----
 
-7thj YWS
+May 7th, 1915
 
-I have met ooith my successor Dr Tames Berger seems a cheerFul and capable young Felloua A/oting his active character I have admonished the young doctor to never to remove the dist that lies at the edge oF the reservoir upon the hill. Will he heed my oJords? It oJas impossible to impart to him m'g true reason For planting the disf all those long 'gears ago. I had to Fabricate reasons oF sentimentality to impress upon him the importance oF leaving the disk. unmolested. I pray that he bill remember his promise to leave the disk. undisturbed.
-
-----
+I have met with my successor Dr. James Berger seems a cheerful and capable young fellow. Noting his active character I have admonished the young doctor to never to remove the disk that lies at the edge of the reservoir upon the hill. Will he heed my words? It was impossible to impart to him my true reason for planting the disk all those long years ago. I had to fabricate reasons of sentimentality to impress upon him the importance of leaving the disk unmolested. I pray that he will remember his promise to leave the disk undisturbed.
 
 -----
 
@@ -313,110 +311,17 @@ Dr. Berger allows for the “escape” of asylum patient Andrew MacBride. Berger
 
 *“You listen to me. I’m Andy MacBride. They know I’m out and about. They want me to fix it so you won’t come around the hospital no more. But instead, I’m telling you what I shouldn’t. So you listen good! There’s something terrible living at the hospital. It’s always been there. It’s a power that lives in the walls and the halls and the gardens. Dr. Berger is going to sacrifice your friend Larry to the thing at the next dark of the moon. Larry don’t have much time!”*
 
-His warning given, MacBride slips away into the night. Within a day of his visit, investigators see a Danvers Herald article[—Handout: Genius 6.](#bookmark48 "Current Document")
+His warning given, MacBride slips away into the night. Within a day of his visit, investigators see a Danvers Herald article — [Handout: Genius 6.](#bookmark48 "Current Document")
 
 Investigators checking with the Danvers Police or the newspaper editorial office can, with a successful Law, Persuade, Charm, or Fast Talk roll, learn more details. Reportedly, MacBride slit his own wrists, expiring from massive blood loss. With no known relatives, MacBride will be buried in the potter’s field atop Hathorne Hill. In truth, MacBride was murdered by the asylum staff for revealing secrets to investigators.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-**genius uoo**
-
-  
-
-  
-
-|   |   |   |   |
-|---|---|---|---|
-|||||
-|||   |![Надпись: 45](file:///C:/Users/Shrek/AppData/Local/Temp/msohtmlclip1/01/clip_image052.gif)|
-||![](file:///C:/Users/Shrek/AppData/Local/Temp/msohtmlclip1/01/clip_image053.jpg)|
-||
-
-  
-![](file:///C:/Users/Shrek/AppData/Local/Temp/msohtmlclip1/01/clip_image055.jpg)![Надпись: ](file:///C:/Users/Shrek/AppData/Local/Temp/msohtmlclip1/01/clip_image056.gif)![](file:///C:/Users/Shrek/AppData/Local/Temp/msohtmlclip1/01/clip_image058.jpg)
-
-  
-
-![](file:///C:/Users/Shrek/AppData/Local/Temp/msohtmlclip1/01/clip_image060.jpg)
-
-|   |
-|---|
-||
-||![](file:///C:/Users/Shrek/AppData/Local/Temp/msohtmlclip1/01/clip_image061.gif)|
-
-  
-  
-
-|   |   |   |   |
-|---|---|---|---|
-|||||
-||\|   \|<br>\|---\|<br>\|Qirnrn uoo\||
-|||\|   \|<br>\|---\|<br>\|Handout: Genius 5\||
-|| ![](file:///C:/Users/Shrek/AppData/Local/Temp/msohtmlclip1/01/clip_image063.jpg)
-
-  
-
-  
-  
-
-December 3rd; 1340
-
-![Надпись: —f-](file:///C:/Users/Shrek/AppData/Local/Temp/msohtmlclip1/01/clip_image064.gif)  
-If is Hone. The sigil has been placed upon the earth; -Forcing doion that ojhich lairs upon the hill into an uneasy torpor The taxpayers question the expense oF having such a rruseless decorative piece;j installed at the asylum; but they pose no serious threat to its removal and are merciFully unaware oF its true purpose. Suf to those ouho fnobJ; the sign shall serve as a uuard -For поы and the -Future. Already I see signs oF recovery in the patients and Sta-FF; as iF they are SurFacing From a long; loatmg nightmare.
-
-I have met ooith my successor Dr Tames Berger seems a cheerFul and capable young Felloua A/oting his active character I have admonished the young doctor to never to remove the dist that lies at the edge oF the reservoir upon the hill. Will he heed my oJords? It oJas impossible to impart to him m'g true reason For planting the disf all those long 'gears ago. I had to Fabricate reasons oF sentimentality to impress upon him the importance oF leaving the disk. unmolested. I pray that he bill remember his promise to leave the disk. undisturbed.
-
-  
-
-
-BUSTING OUT LARRY CROSWELL
+## BUSTING OUT LARRY CROSWELL
 
 Investigators who are action orientated may decide to cut through the fog of weird menace and simply break into the Danvers asylum, spiriting their friend to safety. Even as the scenario-as-written shepherds investigators toward the final climactic scene, if the investigators execute cunning and selfless plans to rescue their friend Croswell before the dark of the moon ritual, the Keeper is well within rights to go with the flow and let it happen. There is no point in railroading investigators to the final scene just for the sake of presenting the final scene if the players are having a great time plotting and deploying a tense incursion into the asylum to liberate a friend.
 
 A raid to bust out Croswell can be made as difficult and dangerous the Keeper desires for the scenario to be suspenseful and fraught with peril. A raid to this effect is no mean feat. However, the Keeper should suitably adjust the odds to match the investigators’ capabilities, making events challenging but not impossible. An investigator group consisting mainly of brainy librarians and elderly antiquarians may encounter far less physical resistance than a group mainly consisting of hardened private detectives and gun-slinging adventurers. Tension is the key to a memorable sequence.
 
-A ten-foot high spiked wall, patrolled by pairs of burly orderlies, encloses the asylum’s grounds. Though there are a few exceptions, the orderlies are hired mostly for their brawn than for any mental acuity or strength of character. Fearful of crossing Dr. Berger and in thrall to the lloigor, some of these small-minded men may yet be susceptible to bribes, coercion, or false promises. Asylum doors are typically stout and locked (a Hard STR roll to break down, or Locksmith roll to pick the lock), though some orderlies and nurses have
-
-  
-
-![Надпись: GENIUS LIOO](file:///C:/Users/Shrek/AppData/Local/Temp/msohtmlclip1/01/clip_image065.gif)Handout: Genius 6
-
-  
-
-  
-
-![](file:///C:/Users/Shrek/AppData/Local/Temp/msohtmlclip1/01/clip_image067.jpg)![](file:///C:/Users/Shrek/AppData/Local/Temp/msohtmlclip1/01/clip_image069.jpg)![Надпись: Danvers State Hospital reports the death of patient Andrew MacBride, age unknown. MacBride was found unresponsive in his cell early this morning. Cause of death is declared a suicide, reports Superintendent James Berger. “It is a tragedy when these things happen,” says Dr. Berger, “yet we cannot reach every soul that comes into our care. He is in a better place now.” MacBride leaves no known relatives.](file:///C:/Users/Shrek/AppData/Local/Temp/msohtmlclip1/01/clip_image070.gif)
-
-key rings jangling on their belts or tucked in apron pockets. Tool sheds and medical cabinets throughout the facility may provide all manner of implements useful to skullduggery in the service of virtue.
+A ten-foot high spiked wall, patrolled by pairs of burly orderlies, encloses the asylum’s grounds. Though there are a few exceptions, the orderlies are hired mostly for their brawn than for any mental acuity or strength of character. Fearful of crossing Dr. Berger and in thrall to the lloigor, some of these small-minded men may yet be susceptible to bribes, coercion, or false promises. Asylum doors are typically stout and locked (a Hard STR roll to break down, or Locksmith roll to pick the lock), though some orderlies and nurses have key rings jangling on their belts or tucked in apron pockets. Tool sheds and medical cabinets throughout the facility may provide all manner of implements useful to skullduggery in the service of virtue.
 
 Those caught by patrolling orderlies are bludgeoned into submission and taken directly to Dr. Berger. The superintendent imprisons captives, filing no reports. Torture and sacrifice to the lloigor at the dark of the moon can be expected. The lloigor, however, may appreciate this game of cat-and-mouse played by the humans on its hill, allowing the captured investigators to experience mysteriously unlocked cell doors or other uncannily fortuitous developments (see following for more on this).
 
@@ -424,146 +329,92 @@ The lloigor: a malign, utterly alien, ever-aware presence on Hathorne Hill. How 
 
 Beyond the insanity of the lloigor-dominated asylum, those who go in guns blazing may also find themselves at odds with law enforcement and the press for their efforts. These uninformed outsiders are more likely to accept Berger’s account of a brazen patient abduction by criminals than anything the investigators are likely to come up with in their defense.
 
-THE DARK OF THE MOON
+## Death at Danvers lunatic asylum
 
-I live in the weak and the wounded.
+Danvers State Hospital reports the death of patient Andrew MacBride, age unknown. MacBride was found unresponsive in his cell early this morning. Cause of death is declared a suicide, reports Superintendent James Berger. “It is a tragedy when these things happen,” says Dr. Berger, “yet we cannot reach every soul that comes into our care. He is in a better place now.” MacBride leaves no known relatives.
 
-—Session 9
+## THE DARK OF THE MOON
+
+![](Pasted%20image%2020260303223318.png)
+
+> I live in the weak and the wounded.
+> 
+> Session 9
 
 It is the dark of the moon and Superintendent Berger plans to sacrifice Larry Croswell to the lloigor. Yard patrols by orderlies are recalled that evening by Dr. Berger so that the staff may participate in the debased ritual. At that time, discreet investigators may make their way to the ritual area without interference—the Keeper should not relate this fact to players, but rather keep them in suspense by asking for Stealth rolls.
 
-At midnight on the appointed evening, a torch-lit procession shuffles from J Ward to the amphitheater at the edge of the reservoir. The torches cast an eerie blue-green glare (seemingly supernatural, a successful Chemistry roll suggests
-
-  
-
-that torches have been treated with copper sulfate and copper chloride, which would turn the flames a blue-green color).
+At midnight on the appointed evening, a torch-lit procession shuffles from J Ward to the amphitheater at the edge of the reservoir. The torches cast an eerie blue-green glare (seemingly supernatural, a successful Chemistry roll suggests that torches have been treated with copper sulfate and copper chloride, which would turn the flames a blue-green color).
 
 Allow the investigators to determine a plan of action. Probably they will attempt to sneak onto the grounds and find a suitable hiding place to watch the proceedings before diving in to save their friend. While they watch and wait, call for Spot Hidden rolls to notice the following (investigators who have come prepared with binoculars are not required to make a roll):
 
-•    The celebrants are all from the asylum: patients, doctors, nurses, and orderlies.
-
-•    Larry Croswell is brought out, strapped to a wheeled gurney. He is rolled into the center of the amphitheater.
-
-•    Dr. Berger leading the throng, his face a mask of unholy zeal.
+- The celebrants are all from the asylum: patients, doctors, nurses, and orderlies.
+- Larry Croswell is brought out, strapped to a wheeled gurney. He is rolled into the center of the amphitheater.
+- Dr. Berger leading the throng, his face a mask of unholy zeal.
 
 The figures gather at the amphitheater in a semi-circle, facing the central space and the reservoir beyond. Dr. Berger stands before them, over the gurney restraining Croswell. The doctor shouts a long invocation in a strange (unknown) language. At his signal, the assembly falls upon itself in a bestial orgy of violence. Flesh is bitten, torn, and gouged. Participants screech in an ecstasy of delight and pain. Dr. Berger does not participate in the violence, instead clapping his hands and laughing maniacally at the spectacle. Witnessing this sickening celebration calls for a Sanity roll (1/1D4 Sanity points loss).
 
-The following text describes the events that take place— unless the investigators step in and take action. Modify the following as appropriate based on the investigators’ actions. As noted earlier, investigations attempting to capture the  
-
-![](file:///C:/Users/Shrek/AppData/Local/Temp/msohtmlclip1/01/clip_image072.jpg)ceremony on camera film will find the resultant images are blackened and without any clear details.
+The following text describes the events that take place— unless the investigators step in and take action. Modify the following as appropriate based on the investigators’ actions. As noted earlier, investigations attempting to capture the  ceremony on camera film will find the resultant images are blackened and without any clear details.
 
 The celebrants descend upon the shrieking, helpless Croswell time and again, punching, kicking, and biting. Each round, Croswell loses 1D2 hit points until unconsciousness or death. The investigators have only a few rounds to get to Croswell and pull him from the chaos.
 
 Intervening investigators are attacked. Celebrants have no regard for their own safety, overcome with a crazed bloodlust. Ask those in the melee to make Hard Spot Hidden rolls notice something very odd occurring in the water of the reservoir, near the edge of the amphitheater. While those hanging back from the melee need make no roll to observe an unearthly blue-grey glow emanating from the depths of the reservoir. After several rounds, a huge, dragon-like form breaks the surface of the water, its saucer-sized reptilian eyes impassively observing the carnage done in its honor. Call for Sanity rolls (0/1D8 Sanity points loss to see the lloigor). Although formidable, the lloigor does not attack, instead it basks in the pain offered up to it, soaking up huge amounts of magic points.
 
-Interruptions notwithstanding, the violent orgy finally ends. Bloodied and exhausted, the participants straggle back up to the asylum (in the following days, those who suffered major
-
-  
-
-injuries are reported as having “an accident” or as “having been attacked by a patient,” and so on). The lloigor sinks back into the reservoir, glutted on magic points.
+Interruptions notwithstanding, the violent orgy finally ends. Bloodied and exhausted, the participants straggle back up to the asylum (in the following days, those who suffered major injuries are reported as having “an accident” or as “having been attacked by a patient,” and so on). The lloigor sinks back into the reservoir, glutted on magic points.
 
 Should the investigators attack the lloigor, they confront it in its reptilian form (see statistics in [Appendix A: Characters](#bookmark57 "Current Document") [and Monsters)](#bookmark57 "Current Document"). The investigators are very unlikely to be able to cause any serious damage to the monster (its 8-point armor making most weapons near enough ineffectual). Let the investigators know that the monster appears to be unaffected by the damage they cause, so they get the idea that their key task should be rescuing Croswell and escaping—not killing the monster, which will surely end in their deaths. After several rounds (when the Keeper judges appropriate) the creature grows bored of combat—or has taken a significant amount of injury—and dematerializes, leaving only a sheen of strange, unearthly blue-grey color upon the water.
 
-The lloigor is not finished. Dissatisfied at the disruption of the rite, and marking Dr. Berger as weak for letting it happen, the lloigor gathers its energies to strike. Brimming with magic points, the lloigor unleashes its devastating area attack. The air in a ten-meter radius (focused on the center of the amphitheater) shimmers with unearthly bands of energy. A deep thrumming vibration pervades all, felt more than heard. If the investigators’ attention is elsewhere, allow for Listen or
-
-  
-
-  
-
-![](file:///C:/Users/Shrek/AppData/Local/Temp/msohtmlclip1/01/clip_image074.jpg)![](file:///C:/Users/Shrek/AppData/Local/Temp/msohtmlclip1/01/clip_image076.jpg)Map 2: Hathome Hill Amphitheater
-
-Gurney with  
-Groswell
-
-  
-
-  
-
-|   |   |   |   |   |   |   |   |   |   |
-|---|---|---|---|---|---|---|---|---|---|
-|||||||||||
-||![Надпись: Opposite: The Bestial Orgy by Pat Loboyko](file:///C:/Users/Shrek/AppData/Local/Temp/msohtmlclip1/01/clip_image077.gif)|
-|||   |   |   |![](file:///C:/Users/Shrek/AppData/Local/Temp/msohtmlclip1/01/clip_image078.gif)|
-||
-|||   |   |   |   |   |   |![](file:///C:/Users/Shrek/AppData/Local/Temp/msohtmlclip1/01/clip_image079.gif)|
-|||   |   |![](file:///C:/Users/Shrek/AppData/Local/Temp/msohtmlclip1/01/clip_image080.gif)|   |   |
-||
-|||![](file:///C:/Users/Shrek/AppData/Local/Temp/msohtmlclip1/01/clip_image081.gif)|
-||
-||
-
- 
-
-  
-
-|   |   |   |
-|---|---|---|
-||5cTj‘ Mi|1 ^1 t Iw|
-|1 .Ж||‘Ж.1/ JIBx|
-
-|   |
-|---|
-||
-
-  
-
-![](file:///C:/Users/Shrek/AppData/Local/Temp/msohtmlclip1/01/clip_image083.jpg)
-
-  
-
-POW rolls for them to detect the unnatural vibration—they have 4 rounds to leave the area or be caught in the lloigor’s magical vortex. Each round, investigators must succeed in a Luck roll: failure indicates that a frenzied celebrant engages them in combat that round, preventing egress. Reward investigators with a bonus die to skill rolls if they come up with clever ways to evade such manic celebrants.
+The lloigor is not finished. Dissatisfied at the disruption of the rite, and marking Dr. Berger as weak for letting it happen, the lloigor gathers its energies to strike. Brimming with magic points, the lloigor unleashes its devastating area attack. The air in a ten-meter radius (focused on the center of the amphitheater) shimmers with unearthly bands of energy. A deep thrumming vibration pervades all, felt more than heard. If the investigators’ attention is elsewhere, allow for Listen or POW rolls for them to detect the unnatural vibration — they have 4 rounds to leave the area or be caught in the lloigor’s magical vortex. Each round, investigators must succeed in a Luck roll: failure indicates that a frenzied celebrant engages them in combat that round, preventing egress. Reward investigators with a bonus die to skill rolls if they come up with clever ways to evade such manic celebrants.
 
 Finally, the amphitheater erupts in a blast of kinetic energy, causing 1D100 damage points to everything within ten yards. Many asylum celebrants are rent apart on the molecular level, as is the amphitheater itself. The massive implosion creates a huge sinkhole that rapidly fills with water from the reservoir. All present must make a DEX roll or be knocked off their feet. In nearby Danvers, those up late hear the sound of distant, rolling thunder. It is the Keeper’s choice whether or not Dr. Berger survives the mayhem.
 
-CONCLUSION
+### CONCLUSION
 
-Should investigators fail to rescue Croswell by the dark of the moon, the writer is sacrificed to the lloigor. The following day, an earthquake is reported in the local newspapers. The lloigor lives on under the hill, awaiting the time to stir once again. If Dr. Berger is alive, he continues his work at the asylum unless the investigators are somehow able to unmask his evil deeds—in this event he will try to flee and may return at a later time to exact vengeance on the investigators. Of course, the authorities will not believe wild tales of violent hillside rites and water dragons; the investigators will have to bring more compelling (and believable) evidence to bear if they wish to focus the authorities on Dr. Berger. Indeed, those making outlandish claims with talk of monsters and magical rites are more likely to be sent to the Danvers asylum for treatment!
+Should investigators fail to rescue Croswell by the dark of the moon, the writer is sacrificed to the lloigor. The following day, an earthquake is reported in the local newspapers. The lloigor lives on under the hill, awaiting the time to stir once again. If Dr. Berger is alive, he continues his work at the asylum unless the investigators are somehow able to unmask his evil deeds — in this event he will try to flee and may return at a later time to exact vengeance on the investigators. Of course, the authorities will not believe wild tales of violent hillside rites and water dragons; the investigators will have to bring more compelling (and believable) evidence to bear if they wish to focus the authorities on Dr. Berger. Indeed, those making outlandish claims with talk of monsters and magical rites are more likely to be sent to the Danvers asylum for treatment!
 
-Some investigators may feel that they need to return to somehow deal with the “water dragon” once and for all. Such a task will be near impossible to accomplish without being better prepared. The Keeper might wish to remind investigators that further research would be beneficial to combat such a creature and that, for the present, it doesn’t appear to be going anywhere—perhaps in time, once they have gained a greater knowledge of such monsters and their magic, they might return in a few years better equipped. The task of tracking down information about the creature and how it might be dispelled or killed could form the basis of an on-going campaign.
+Some investigators may feel that they need to return to somehow deal with the “water dragon” once and for all. Such a task will be near impossible to accomplish without being better prepared. The Keeper might wish to remind investigators that further research would be beneficial to combat such a creature and that, for the present, it doesn’t appear to be going anywhere — perhaps in time, once they have gained a greater knowledge of such monsters and their magic, they might return in a few years better equipped. The task of tracking down information about the creature and how it might be dispelled or killed could form the basis of an on-going campaign.
 
-Rewards
+#### Rewards
 
 Depending on the outcome of the scenario and the investigators’ actions, apply the following rewards to the surviving investigators:
 
-•     Letting Croswell be sacrificed to the lloigor, -1D8 Sanity points.
+- Letting Croswell be sacrificed to the lloigor, -1D8 Sanity points.
+- Awareness that the foul monthly rites continue haunts investigators for a further -1D6 Sanity points.
+- Rescuing Larry Croswell, +1D8 Sanity points.
+- Killing Dr. Berger, +1D4 Sanity points.
+- Having Dr. Berger’s practices at the asylum exposed so he is arrested, +1D8 Sanity points.
+- Investigators who believe that they have stopped the threat of the lloigor (whether or not this is actually the case— perception is reality), gain an additional +1D6 sanity points.
 
-•     Awareness that the foul monthly rites continue haunts investigators for a further -1D6 Sanity points.
+## APPENDIX A: CHARACTERS AND MONSTERS
 
-•     Rescuing Larry Croswell, +1D8 Sanity points.
+### LAWRENCE “LARRY” CROSWELL,
 
-•     Killing Dr. Berger, +1D4 Sanity points.
-
-•     Having Dr. Berger’s practices at the asylum exposed so he is arrested, +1D8 Sanity points.
-
-•     Investigators who believe that they have stopped the threat of the lloigor (whether or not this is actually the case— perception is reality), gain an additional +1D6 sanity points.
-
-APPENDIX A: CHARACTERS AND MONSTERS
-
-LAWRENCE “LARRY” CROSWELL,
-
-age 52, writer and asylum captive
+**age 52, writer and asylum captive**
 
 A friendly “bard of the bizarre,” Larry is a respected chronicler of New England superstition and folklore. His book signings at libraries and bookshops draw small crowds of avid readers who share his interests in ghosts and the supernatural. Croswell has lately seen too much of the otherworldly and it has left him shaken. Admitting himself to the State Hospital at Danvers was an unfortunate decision.
 
-STR 50 CON 40             SIZ 55         DEX 45      INT 75
+|     |     |     |      |     |     |     |     |     |     |
+| --- | --- | --- | ---- | --- | --- | --- | --- | --- | --- |
+| STR | 50  | CON | 40   | SIZ | 55  | DEX | 45  | INT | 75  |
+| APP | 45  | POW | 35   | EDU | 70  | SAN | 33  | HP  | 9   |
 
-APP 45 POW 35             EDU 70       SAN 33       HP 9
+|               |     |        |     |       |     |     |     |
+| ------------- | --- | ------ | --- | ----- | --- | --- | --- |
+| Damage Bonus: | 0   | Build: | 0   | Move: | 8   | MP: | 7   |
 
-Damage Bonus: 0           Build: 0       Move: 8      MP: 7
+#### Combat
 
-Combat
+|       |                         |
+| ----- | ----------------------- |
+| Brawl | 50% (25/10), damage 1D3 |
+| Dodge | 22% (11/4)              |
 
-Brawl          50% (25/10), damage 1D3
-
-Dodge         22% (11/4)
-
-Skills
+#### Skills
 
 Art/Craft (Writing) 60%, Credit Rating 40%, Fast Talk 45%, History 60%, Library Use 60%, Occult 60%, Persuade 55%, Psychology 65%, Stealth 40%.
 
-DR. JAMES BERGER, age 39,
+### DR. JAMES BERGER, age 39,
 
-possessed asylum superintendent
+**possessed asylum superintendent**
 
 Once a kindly and dedicated alienist, James Berger’s mind has been warped by the lloigor so that he is now its willing servitor. Through the lloigor, Berger devises unspeakable cruelties to inflict upon his wards. Thin, with piercing green eyes, and straw­like blond hair. If he survives the scenario, Berger may become a recurring foe of the investigators, depending on their actions.
 
@@ -573,15 +424,15 @@ APP 55 POW 50             EDU 90       SAN 00       HP 1
 
 Damage Bonus: 0           Build: 0       Move: 8      MP: 10
 
-Combat
+#### Combat
 
 Brawl 50% (25/10), damage 1D3 .32 Auto 25% (12/5), damage 1D8 Dodge 30% (15/6)
 
-Skills
+#### Skills
 
 Credit Rating 60%, Cthulhu Mythos 10%, Intimidate 45%, Language (Latin) 55%, Library Use 50%, Medicine 65%, Persuade 50%, Psychoanalysis 75%, Psychology 75%, Sciences (Biology 70%, Pharmacy 70%), Stealth 40%.
 
-ANDREW MACBRIDE, age 56, asylum patient
+### ANDREW MACBRIDE, age 56, asylum patient
 
 STR 80      CON 70       SIZ 80         DEX 55       INT 45
 
@@ -589,17 +440,17 @@ APP 40      POW 25       EDU 35       SAN 05       HP 15
 
 Damage Bonus: +1D4 Build: 1 Move: 8 MP: 5
 
-Combat
+#### Combat
 
 Brawl             60% (30/12), damage 1D3+1D4
 
 Kitchen Knife 60% (30/12), damage 1D4+1D4 Dodge            27% (13/5)
 
-Skills
+#### Skills
 
 Climb 60%, Fast Talk 45%, Jump 45%, Listen 35%, Stealth 60%, Spot Hidden 35%.
 
-STAFF NURSE, thrall to lloigor
+### STAFF NURSE, thrall to lloigor
 
 Use these statistics for a typical asylum nurse.
 
@@ -609,17 +460,17 @@ APP 70      POW 45       EDU 70       SAN 10       HP 11
 
 Damage Bonus: 0           Build: 0       Move: 8      MP: 9
 
-Combat
+#### Combat
 
 Brawl            40% (20/8), damage 1D3
 
 Dodge          32% (16/6)
 
-Skills
+#### Skills
 
 Charm 40%, Credit Rating 20%, First Aid 65%, Medicine 30%, Persuade 60%, Psychoanalysis 25%, Psychology 60%, Sciences (Biology 40%, Pharmacy 40%).
 
-STAFF PHYSICIAN, thrall to lloigor
+### STAFF PHYSICIAN, thrall to lloigor
 
 Use these statistics for a typical asylum doctor.
 
@@ -629,19 +480,19 @@ APP 50 POW 45             EDU 80      SAN 10        HP 1
 
 Damage Bonus: 0           Build: 0      Move: 8        MP: 9
 
-Combat
+#### Combat
 
 Brawl          30% (15/6), damage 1D3
 
 Dodge         32% (16/6)
 
-Skills
+#### Skills
 
 Credit Rating 40%, Fast Talk 35%, First Aid 70%,
 
 Medicine 70%, Language (Latin) 30%, Persuade 50%, Psychoanalysis 35%, Psychology 50%, Sciences (Biology 65%, Pharmacy 60%).
 
-ASYLUM ORDERLIES, thralls to lloigor
+### ASYLUM ORDERLIES, thralls to lloigor
 
 Use these statistics for a typical asylum orderly.
 
@@ -651,7 +502,7 @@ APP 40      POW 35       EDU 35      SAN 15        HP 14
 
 Damage Bonus: +1D4 Build: 1 Move: 8 MP: 9
 
-Combat
+#### Combat
 
 Brawl             60% (30/12), damage 1D3+1D4
 
@@ -659,11 +510,11 @@ Baton             60% (30/12), damage 1D4+1D4
 
 Dodge          27% (13/5)
 
-Skills
+#### Skills
 
 Credit Rating 15%, First Aid 30%, Intimidate 45%, Listen 40%, Psychology 40%, Smile Menacingly 70%, Spot Hidden 35%, Throw 40%.
 
-ASYLUM PATIENTS
+### ASYLUM PATIENTS
 
 Use these statistics for a typical asylum patient.
 
@@ -673,37 +524,17 @@ APP 30      POW 30       EDU 40      SAN 05        HP 9
 
 Damage Bonus: 0           Build: 0      Move: 9        MP: 6
 
-Combat
+#### Combat
 
 Brawl            40% (20/8), damage 1D3
 
 Dodge          25% (12/5)
 
-Skills
+#### Skills
 
 Charm 40%, Intimidate 50%, Jump 50%, Spot Hidden 50%, Throw 50%.
 
-  
-
-  
-
- |   |   |   |
-|---|---|---|
-||||
-||![](file:///C:/Users/Shrek/AppData/Local/Temp/msohtmlclip1/01/clip_image084.gif)|
-||
-|||\|   \|<br>\|---\|<br>\|\\|   \\|   \\|   \\|   \\|   \\|   \\|<br>\\|---\\|---\\|---\\|---\\|---\\|---\\|<br>\\|Ш" 4‘\\|1Г - . . - - ___________________ ___________________\\|■\\|<br>\\|v /\\|ШНШ^ъ' . {Ж:А:ШШ<\\||    ![](file:///C:/Users/Shrek/AppData/Local/Temp/msohtmlclip1/01/clip_image086.jpg)
-
-  
-  
-
-![](file:///C:/Users/Shrek/AppData/Local/Temp/msohtmlclip1/01/clip_image088.jpg)
-
-  
-
-![Надпись: Opposite: The Lloigor Rises by Pat Loboyk](file:///C:/Users/Shrek/AppData/Local/Temp/msohtmlclip1/01/clip_image089.gif)
-
-THE LLOIGOR, the feaster under the water
+### THE LLOIGOR, the feaster under the water
 
 Vortices of power in their natural form and completely invisible to human eyes. On rare occasions they can create tangible, visible bodies for themselves. Such bodies are monstrous and bear some resemblance to enormous dragon­like reptiles. Lloigor have an outlook of absolute pessimism that results in a pervading atmosphere of gloom that makes lloigor minds and actions incomprehensible to humans.
 
@@ -717,7 +548,7 @@ APP —         POW 70 EDU —          SAN —        (
 
 *This is the amount of magic points the lloigor possesses at the start of the scenario. This is an arbitrary number as it has been feeding on the humans at the asylum for many years, so essentially as an unlimited supply of magic points stored.
 
-Combat
+#### Combat
 
 Attacks per round: 1 (2 while in reptilian form)
 
@@ -727,15 +558,11 @@ Fighting 40% (20/8), damage 1D6 + DB (+5D6 in reptilian form)
 
 Dodge 20% (10/4)
 
-Special Powers
+#### Special Powers
 
 Vortex Attack: The lloigor’s most fearsome weapon is a type of implosion (sounding like the roll of distant thunder). Things in the blast area are torn to pieces and the ground is ruptured. At least 100 magic points are needed for an area 10 yards (10 meters) in diameter. Everything within the circle loses 1D100 hit points. Alert investigators (POW or Listen roll) may notice the tell tale effects of swirling lines appearing in the air and a half-unheard throbbing noise penetrating their bodies.
 
-Drain Magic Points from Humans: Typically their human servants come from families with histories of mental instability, the lloigor need humans to survive as these immaterial entities
-
-  
-
-must draw energy from intelligent beings to perform necessary tasks. By expending one of its own magic points a lloigor may drain 1D6 magic points (per night) from a sleeping human to use in performing some magical action. A lloigor can drain energy from several sleeping humans at once, from up to several miles away despite intervening obstacles.
+Drain Magic Points from Humans: Typically their human servants come from families with histories of mental instability, the lloigor need humans to survive as these immaterial entities must draw energy from intelligent beings to perform necessary tasks. By expending one of its own magic points a lloigor may drain 1D6 magic points (per night) from a sleeping human to use in performing some magical action. A lloigor can drain energy from several sleeping humans at once, from up to several miles away despite intervening obstacles.
 
 The victims wake complaining of headaches and bad sleep. With continued draining, such individuals become physically and spiritually weak, leading to sickness and possibly death. Whenever a victim is drained of any magic points in this way, a CON roll must be made before any magic points can be recovered. If the CON roll succeeds, the victim regains 1 magic point and wakes. If the roll is failed no magic points are recovered and the victim continues to sleep, whereupon the lloigor may drain another 1D6 magic points from the victim over the next hour, after which another CON roll is attempted and so on.
 
