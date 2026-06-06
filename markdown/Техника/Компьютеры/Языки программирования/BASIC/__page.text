@@ -1,0 +1,43 @@
+!! BASIC
+
+[>[@
+10 PRINT "Hello, World!"
+@]<]
+
+!!!! Quick/Turbo BASIC:
+
+[>[@
+? "Hello, World!"
+@]<]
+
+!!!! InfoBASIC:
+
+[<[@
+CRT 'Hello, World!'
+@]<]
+
+!!!! PureBasic
+
+Консоль:
+
+[>[@
+OpenConsole()
+PrintN("Hello, World!")
+Input()
+@]<]
+
+Диалоговое окно:
+
+[>[@
+MessageRequester("Заголовок", "Hello, World!")
+@]<]
+
+Окно:
+
+[>[@
+OpenWindow(0, 0, 0, 200, 50, "Заголовок", #PB_Window_MinimizeGadget|#PB_Window_ScreenCentered) 
+TextGadget(0, 10, 16, 180, 16,"Hello, World!", #PB_Text_Center)
+Repeat
+  Event = WaitWindowEvent() 
+Until Event = #PB_Event_CloseWindow
+@]<]

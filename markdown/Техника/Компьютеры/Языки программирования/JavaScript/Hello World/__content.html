@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge' />
+	<meta http-equiv='content-type' content='text/html; charset=utf-8'/>
+	<title>Javascript</title>
+
+	<style type='text/css'>
+		body, div, p, table {
+			font-size:10pt;
+			font-family:Verdana;
+		}
+
+		img{border:none}
+		
+	</style>
+	
+</head>
+
+<body>
+<h1>Javascript</h1>
+<br/>
+<blockquote>
+<pre>
+$=~[];$={___:++$,$$$$:(![]+"")[$],__$:++$,$_$_:(![]+"")[$],_$_:++$,$_$$:({}+"")[$],$$_$:($[$]+"")[$],_$$:++$,$$$_:(!""+"")[$],$__:++$,$_$:++$,$$__:({}+"")[$],$$_:++$,$$$:++$,$___:++$,$__$:++$};$.$_=($.$_=$+"")[$.$_$]+($._$=$.$_[$.__$])+($.$$=($.$+"")[$.__$])+((!$)+"")[$._$$]+($.__=$.$_[$.$$_])+($.$=(!""+"")[$.__$])+($._=(!""+"")[$._$_])+$.$_[$.$_$]+$.__+$._$+$.$;$.$$=$.$+(!""+"")[$._$$]+$.__+$._+$.$+$.$$;$.$=($.___)[$.$_][$.$_];$.$($.$($.$$+"\""+$.$$_$+$._$+$.$$__+$._+"\\"+$.__$+$.$_$+$.$_$+$.$$$_+"\\"+$.__$+$.$_$+$.$$_+$.__+".\\"+$.__$+$.$$_+$.$$$+"\\"+$.__$+$.$$_+$._$_+"\\"+$.__$+$.$_$+$.__$+$.__+$.$$$_+"(\\\"\\"+$.__$+$.__$+$.___+$.$$$_+(![]+"")[$._$_]+(![]+"")[$._$_]+$._$+", \\"+$.__$+$.$$_+$.$$$+$._$+"\\"+$.__$+$.$$_+$._$_+(![]+"")[$._$_]+$.$$_$+"!\\\")\\"+$.$$$+$._$$+"\"")())();
+</pre>
+</blockquote><br/>
+<br/>
+Или вот так (не работает, когда броузер парсит страницу как XHTML, то есть в далеком будущем, когда сервера начнут отдавать страницы с MIME-типом application/xhtml+xml)<br/>
+<br/>
+<blockquote>
+<pre>
+document.write("Hello, world!");
+</pre>
+</blockquote><br/>
+<br/>
+Или так ("классы")<br/>
+<br/>
+<blockquote>
+<pre>
+(function() {
+   function Chatterbox(msg) {
+      this.msg = msg || 'Hello, world!';
+   }
+       
+   Chatterbox.prototype.greet = function() {
+      alert(this.msg);
+   }
+       
+   var chatter = new Chatterbox();
+   chatter.greet();
+})();
+</pre>
+</blockquote><br/>
+<br/>
+Или вот так (окно с сообщением)<br/>
+
+<pre>[&gt;
+alert("Hello, world!");
+</pre>
+<]<br/>
+<br/>
+В NodeJS (распечатает в командную строку) а в браузере(в отладчик в консоль):<br/>
+<br/>
+<blockquote>
+<pre>
+console.log("Hello, world!");
+</pre>
+</blockquote><br/>
+<br/>
+Или вот так на Action script 3.0 (флэшовая реализация стандарта ECMAScript):<br/>
+<br/>
+<blockquote>
+<pre>
+trace('Hello World!');
+ 
+//Или, если непременно надо вывести прямо на экран, а не в консоль, так:
+var tf:TextField = new TextField;
+tf.text = "Hello World!";
+addChild(tf);
+</pre>
+</blockquote><br/>
+<br/>
+Или если ООП:<br/>
+<br/>
+<blockquote>
+<pre>
+package {
+  import flash.display.Sprite;
+ 
+  public class HelloWorld extends Sprite {
+    public function HelloWorld() {
+      trace ("Hello, world!");
+    }
+  }
+}
+</pre>
+</blockquote><br/>
+<br/>
+Теперь оно и сервер-сайд!<br/>
+<br/>
+<blockquote>
+<pre>
+#!/usr/bin/env node
+var http = require('http');
+http.createServer(function (req, res) {
+  res.writeHead(200, {'Content-Type': 'text/plain'});
+  res.end('Hello World\n');
+}).listen(1337, '127.0.0.1');
+console.log('Server running at http://127.0.0.1:1337/');
+</pre>
+</blockquote><br/>
+</body>
+</html>

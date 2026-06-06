@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge' />
+	<meta http-equiv='content-type' content='text/html; charset=utf-8'/>
+	<title>AMD64 Linux, GAS</title>
+
+	<style type='text/css'>
+		body, div, p, table {
+			font-size:10pt;
+			font-family:Verdana;
+		}
+
+		img{border:none}
+		
+	</style>
+	
+</head>
+
+<body>
+<h1>AMD64 Linux, GAS</h1>
+<blockquote>
+<pre>
+.text
+prefix: .ascii "Hello, World\n"
+.set prefix_size, . - prefix
+.global _start
+_start:
+xorq %rax, %rax
+incb %al
+xorl %edi, %edi
+incl %edi
+movq $prefix, %rsi
+mov $prefix_size, %edx
+syscall
+movl $60, %eax
+xorl %edi, %edi
+syscall
+</pre>
+</blockquote><br/>
+</body>
+</html>

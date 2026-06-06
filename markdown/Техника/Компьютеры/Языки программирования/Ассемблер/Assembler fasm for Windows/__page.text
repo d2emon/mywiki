@@ -1,0 +1,7 @@
+!! Assembler fasm for Windows
+[>[@
+include 'win32ax.inc'
+s:
+invoke MessageBox,0,'Хэловорлд','  ',0
+.end s
+@]<]

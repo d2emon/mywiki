@@ -1,0 +1,70 @@
+!! C#
+[>[@
+using System;
+ 
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Hello, World!");
+    }
+}
+@]<]
+
+или так
+
+[>[@
+class Program
+{
+    static void Main()
+    {
+        System.Windows.Forms.MessageBox.Show("Hello, World!");
+    }
+}
+@]<]
+
+Или с использованием DI-контейнеров
+
+[>[@
+using System;
+using Microsoft.Practices.Unity;
+ 
+class Program
+{
+    static void Main(string[] args)
+    {
+        var writer = new ConsoleMessageWriter();
+        UnityContainer uc = new UnityContainer();
+        uc.RegisterType<IMessageWriter, ConsoleMessageWriter>(new ContainerControlledLifetimeManager());
+        var salutation = uc.Resolve<Salutation>();
+ 
+        salutation.Exclaim();
+    }
+}
+ 
+public interface IMessageWriter
+{
+    void Write(string message);
+}
+ 
+public class ConsoleMessageWriter : IMessageWriter
+{
+    public void Write(string message)
+    {
+        Console.WriteLine(message);
+    }
+}
+ 
+public class Salutation
+{
+    [Dependency]
+    public IMessageWriter Writer { get; set; }
+ 
+    public Salutation() {}
+ 
+    public void Exclaim()
+    {
+        Writer.Write("Hello world");
+    }
+}
+@]<]

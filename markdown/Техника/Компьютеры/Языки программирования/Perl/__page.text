@@ -1,0 +1,17 @@
+!! Perl
+[>[@
+#!/usr/bin/perl
+print "Hello, World!\n";
+@]<]
+
+или так:
+
+[>[@
+perl -le "print 'Hello, World!';"
+@]<]
+
+или вообще так:
+
+[>[@
+perl -e 'use feature q/say/; say "Hello, World!"'
+@]<]

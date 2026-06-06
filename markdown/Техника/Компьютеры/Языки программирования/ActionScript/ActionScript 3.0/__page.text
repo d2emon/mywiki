@@ -1,0 +1,12 @@
+!! ActionScript 3.0
+[>[@
+traсe ("hello world!");
+@]<]
+
+Или так:
+
+[>[@
+var field:TextField=new TextField();
+field.text="hello world!";
+addChild(field);
+@]<]

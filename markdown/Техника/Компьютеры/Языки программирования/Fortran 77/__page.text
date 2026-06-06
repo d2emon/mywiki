@@ -1,0 +1,9 @@
+!! Fortran 77
+
+На культовом:
+
+[>[@
+      PROGRAM HELLOW
+      WRITE(UNIT=*, FMT=*) 'Hello World'
+      END
+@]<]

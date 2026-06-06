@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge' />
+	<meta http-equiv='content-type' content='text/html; charset=utf-8'/>
+	<title>LISP</title>
+
+	<style type='text/css'>
+		body, div, p, table {
+			font-size:10pt;
+			font-family:Verdana;
+		}
+
+		img{border:none}
+		
+	</style>
+	
+</head>
+
+<body>
+<h1>LISP</h1>
+<br/>
+Вообще-то будет так:<br/>
+<br/>
+<blockquote>
+<pre>
+(eval (cons (quote mapcar) 
+            (cons (cons (quote function)
+                        (cons (quote princ) ()))
+                  (cons (cons (quote quote)
+                              (cons (cons #\H (cons #\e (cons #\l (cons #\l (cons #\o 
+                                     (cons #\, (cons #\Space 
+                                      (cons #\w (cons #\o (cons #\r (cons #\l (cons #\d (cons #\! 
+                                       ()))))))))))))) ())) ()))))
+</pre>
+</blockquote><br/>
+<br/>
+Но можно и так:<br/>
+<br/>
+<blockquote>
+<pre>
+(mapcar #'princ '(#\H #\e #\l #\l #\o #\, #\Space #\w #\o #\r #\l #\d #\!))
+</pre>
+</blockquote><br/>
+<br/>
+Или так:<br/>
+<br/>
+<blockquote>
+<pre>
+(princ "Hello, world!")
+</pre>
+</blockquote><br/>
+<br/>
+Алсо в Common Lisp:<br/>
+<br/>
+<blockquote>
+<pre>
+(format t "hello world~%")
+</pre>
+</blockquote><br/>
+<br/>
+Или даже так (в REPL):<br/>
+<br/>
+<blockquote>
+<pre>
+"Hello, world!"
+</pre>
+</blockquote><br/>
+</body>
+</html>

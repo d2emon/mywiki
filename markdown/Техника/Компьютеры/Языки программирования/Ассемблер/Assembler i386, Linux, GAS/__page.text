@@ -1,0 +1,20 @@
+!! Assembler i386, Linux, GAS
+
+[>[@
+.data
+msg: .ascii "Hello,world!\n"
+len = . - msg
+ 
+.text
+.globl _start
+_start:
+movl $4,%eax
+movl $1,%ebx
+movl $msg,%ecx
+movl $len,%edx
+int $0x80
+ 
+xorl %ebx,%ebx
+movl $1,%eax
+int $0x80
+@]<]

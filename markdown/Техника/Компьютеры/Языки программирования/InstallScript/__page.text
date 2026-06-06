@@ -1,0 +1,5 @@
+!! InstallScript
+
+[>[@
+  Messagebox("Hello, World!", MB_OK);
+@]<]

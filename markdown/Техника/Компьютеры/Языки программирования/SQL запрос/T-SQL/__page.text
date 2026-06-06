@@ -1,0 +1,4 @@
+!! T-SQL (Microsoft SQL Server)
+[>[@
+PRINT 'Hello, world';
+@]<]

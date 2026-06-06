@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge' />
+	<meta http-equiv='content-type' content='text/html; charset=utf-8'/>
+	<title>MSIL</title>
+
+	<style type='text/css'>
+		body, div, p, table {
+			font-size:10pt;
+			font-family:Verdana;
+		}
+
+		img{border:none}
+		
+	</style>
+	
+</head>
+
+<body>
+<h1>MSIL</h1>
+<blockquote>
+<pre>
+.assembly HelloWorld
+{
+}
+ 
+.method static void Main()
+{
+    .entrypoint
+    ldstr "Hello World!"
+    call  void [mscorlib]System.Console::WriteLine(string)
+    ret
+}
+</pre>
+</blockquote><br/>
+</body>
+</html>
