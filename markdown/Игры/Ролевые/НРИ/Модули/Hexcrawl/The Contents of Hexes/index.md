@@ -1,12 +1,11 @@
-!! The Contents of Hexes
+# The Contents of Hexes
 
 A few days ago I posted a selection of grabs from google maps, indicating how large a 1-mile hex actually is, and the kind of things that you might find in one. Then Chris responded, to the effect that (and I'm putting words into his mouth here) 1-mile hexes are all very well, but they are perhaps too granular - it's a heck of a lot of work to map out a setting at the 1-mile level. He posits an "emergent exploring rule" for 6-mile hexes, wherein you simply discover more things in a 6-mile hex the more time you spend exploring it and the more guidance/information you have about it.
 
 The commenters immediately provide solutions, which are pretty good. Myrystyr's one seems like the best:
 
-[>
-A generalised X-in-dY check per Z-time-period, mayhap? Default 2/1d6 per day - 1/ for stumbling-about blind luck, 3/ or 4/ for guides, clues, or character types with better search capability - and up to 3 or 4 times per day for potentially feature-rich locales... And, roll two different-coloured d6 at the same time, 1 the feature check and 1 the encounter check.
-<]
+> A generalised X-in-dY check per Z-time-period, mayhap? Default 2/1d6 per day - 1/ for stumbling-about blind luck, 3/ or 4/ for guides, clues, or character types with better search capability - and up to 3 or 4 times per day for potentially feature-rich locales... And, roll two different-coloured d6 at the same time, 1 the feature check and 1 the encounter check.
+
 
 I like the elegant simplicity of this, and I think you can add some other modifiers: the chance would increase or decrease depending on terrain (lower for a forest, higher for plains), demographics (lower for empty wilderness, higher for settled), and so on.
 
@@ -31,17 +30,17 @@ This would allow the players to discover stuff just by looking, but would also r
 
 The answer is: no. To illustrate, I'll use two of the 1-mile examples I put up a few days ago, zoomed out to 6-miles (ish; they're a bit smaller and probably more like 8 kilometres):
 
-%thumb%Attach:Image32.png%%
+![](Image32.png)
 
 This is Canterbury. As you can see, there is not only the city itself, but two other large villages or small towns (Bridge and Sturry) plus a shitload of other hamlets, and plenty of woods as well as farmlands. In a densely settled area like this (probably much more densely settled than in medieval times, admittedly) you would need at the very least 3 adventuring locales not even mentioning Canterbury itself.
 
-%thumb%Attach:Image33.png%%
+![](Image33.png)
 
 This is Tiree -a good chunk of the island. Note that there are 5 large bays to be found here, along with several smaller ones and a lot of little sheltered coves in the centre-right. There are four scattered farming villages, an airport, and 3 lochs. There are also some tiny islets here and there in the sea, too. Again, at least 3 adventuring locales needed.
 
 But 3 is a default, and can be reduced. For example:
 
- %thumb%Attach:Image34.png%%
+ ![](Image34.png)
 
 The mountains of Assynt. It's empty and devoid of settlement, though there is still plenty to interact with - 6 named lochs, plus lots of smaller ones, and a folded, rugged landscape concealing God Knows What. 3 adventuring locales might be inappropriate in such a landscape, because you don't want to be silly - not every lake has to have a Water in the Waters; not every mountain has to sit atop an ancient dwarven citadel. But perhaps it's also unrealistic to just say "it's an empty hex".
 

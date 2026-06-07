@@ -1,6 +1,6 @@
-!! Encounter Tables
+# Encounter Tables
 
-!!! AQUILONIA
+## AQUILONIA
 D12		Notes
 1			Bossonian Archers
 2			Gunderman Spearmen
@@ -17,7 +17,7 @@ D12		Notes
 Notes: Includes the Provinces of Gunderland, Poitan,
 Bossonian Marches, Westermark, Tauran
 
-!!! ARGOS
+## ARGOS
 D12		Notes
 1			Peltasts
 2			Marines	
@@ -30,7 +30,7 @@ D12		Notes
 10		Sea Trade
 11-12	Ghoul-haunted Forests
 
-!!! ASGARD
+## ASGARD
 D12		Notes
 1-3		Hunters
 4-6		Blonde Haired Fighters
@@ -38,7 +38,7 @@ D12		Notes
 8			Ice Witch
 9-12		Winter Wasteland
 
-!!! BARACHA ISLANDS
+## BARACHA ISLANDS
 D12		Notes
 1-2		Pirates
 3			Buccaneers
@@ -50,7 +50,7 @@ D12		Notes
 
 Notes: Also Lemuria
 
-!!! BLACK KINGDOMS
+## BLACK KINGDOMS
 D12		Notes
 1-4		Savages
 5-6		Noble Savages
@@ -63,7 +63,7 @@ D12		Notes
 Notes: Also the Land of no Return, including Suba,
 Atlata, Amazon, Kordafa, Wadai, Komara
 
-!!! BORDER KINGDOM
+## BORDER KINGDOM
 D12		Notes
 1-2		Nemedian Tribes
 3-4		Virunian Tribes
@@ -72,7 +72,7 @@ D12		Notes
 8			Warlock
 9-12		Bogs & Marshes
 
-!!! BRYTHUNIA
+## BRYTHUNIA
 D12		Notes
 1-6		Levied Troops
 7			Heavy Cavalry
@@ -81,7 +81,7 @@ D12		Notes
 10		Slave Girls
 11-12	Open Plains
 
-!!! CIMMERIA
+## CIMMERIA
 D12		Notes
 1-3		Raiders
 4-5		War Party
@@ -89,7 +89,7 @@ D12		Notes
 8			Shaman of Crom
 9-12		Mountains
 
-!!! CORINTHIA
+## CORINTHIA
 D12		Notes
 1-3		City Watch
 4			City Guard
@@ -100,7 +100,7 @@ D12		Notes
 9			Trade & Craftsmen
 10-12	Rugged & Mountainous
 
-!!! DARFAR
+## DARFAR
 D12		Notes
 1-5		Cannibals
 6-7		Demon Worshipers
@@ -108,7 +108,7 @@ D12		Notes
 9			Diabolist
 10-12	Primitive
 
-!!! HIMELIAN MOUNTAINS
+## HIMELIAN MOUNTAINS
 D12		Notes
 1-2		Monks
 3-4		Afghulis Rebels
@@ -118,7 +118,7 @@ D12		Notes
 
 Notes: Also Talakma Mountains (Meru Peoples)
 
-!!! HYPERBOREA
+## HYPERBOREA
 D12		Notes
 1-3		Guards
 4-5		Slave Raiders
@@ -128,7 +128,7 @@ D12		Notes
 9			Slavery 
 10-12	Cold Tundra	
 
-!!! HYRKANIA
+## HYRKANIA
 D12		Notes
 1-4		Kuagir Nomads
 5-6		Horse Warriors
@@ -139,7 +139,7 @@ D12		Notes
 
 Notes: Also the Great Desert & the Eastern Desert
 
-!!! IRANISTAN
+## IRANISTAN
 D12		Notes
 1-4		Foot Soldiers
 5-6		Camel Riders
@@ -151,7 +151,7 @@ D12		Notes
 
 Notes: Also Kosala
 
-!!! KESHAN
+## KESHAN
 D12		Notes
 1-5		Lesser Caste
 6			Servants of Bit-Yakin
@@ -159,7 +159,7 @@ D12		Notes
 8			Priest of the Oracle
 9-12		Primitive			
 
-!!! KHAURAN
+## KHAURAN
 D12		Notes
 1-4		Aboriginal Militia
 5			Nobles
@@ -168,7 +168,7 @@ D12		Notes
 8			Prosperous Agriculture
 9-12		Small Country	
 
-!!! KHORAJA
+## KHORAJA
 D12		Notes
 1-4		Standing Army
 5			Zaheemi Tribe
@@ -177,7 +177,7 @@ D12		Notes
 8			Taxation of Caravans
 9-12		Small Country
 
-!!! KHITAI
+## KHITAI
 D12		Notes
 1-3		Archers
 4			Junks
@@ -188,7 +188,7 @@ D12		Notes
 10		Great Wall
 11-12	Isolationist
 
-!!! KOTH
+## KOTH
 D12		Notes
 1-4		Infantry
 5-6		Cavalry
@@ -198,7 +198,7 @@ D12		Notes
 10		Central Location
 11-12	Active Volcanoes
 
-!!! KOZAKI
+## KOZAKI
 D12		Notes
 1-4		Rogue Horsemen
 5-6		Raider Band
@@ -206,7 +206,7 @@ D12		Notes
 8			Pirates of the Vilayet Sea
 9-12		Turanian Steppes Outlaws
 
-!!! KAMBUJA
+## KAMBUJA
 D12		Notes
 1-4		Spearmen
 5-6		Armored Warriors
@@ -218,7 +218,7 @@ D12		Notes
 
 Notes: Also Uttara Kuru
 
-!!! KUSH
+## KUSH
 D12		Notes
 1-4		Regiments
 5-6		Black Spearmen
@@ -228,7 +228,7 @@ D12		Notes
 10		Craftsmen & Trademen
 11-12	Dry Grasslands
 
-!!! NEMEDIA
+## NEMEDIA
 D12		Notes
 1-4		Feudal Troops
 5-6		Free Companies
@@ -238,7 +238,7 @@ D12		Notes
 10		Treasure Houses
 11-12	Harsh Laws
 
-!!! OPHIR
+## OPHIR
 D12		Notes
 1-3		Bows & Pikes
 4-5		Shock Troops
@@ -248,7 +248,7 @@ D12		Notes
 9-10		Mines of Gold & Gemstones
 11-12	Many Wars
 
-!!! PICTLAND
+## PICTLAND
 D12		Notes
 1-3		Naked Warriors
 4-6		Warband
@@ -258,7 +258,7 @@ D12		Notes
 10-11	Untracked Wilderness
 12		Kill Strangers
 
-!!! PUNT
+## PUNT
 D12		Notes
 1-3		Arms Bearers
 4-5		Emperors Guard
@@ -267,7 +267,7 @@ D12		Notes
 8-9		River Gold
 10-12	Deserts
 
-!!! SHEM
+## SHEM
 D12		Notes
 1			Zuagir Nomads
 2			Bandits
@@ -280,7 +280,7 @@ D12		Notes
 9			Caravans
 10-12	Independent Areas
 
-!!! STYGIA
+## STYGIA
 D12		Notes
 1-3		Heavy Infantry
 4-5		Scythed Chariots
@@ -291,7 +291,7 @@ D12		Notes
 10		Gray Lotus
 11-12	Great Evil & Decadence
 
-!!! TURAN
+## TURAN
 D12		Notes
 1-4		Soldiers
 5-6		Imperial Guards
@@ -301,7 +301,7 @@ D12		Notes
 10		Great Kingdom
 11-12	Internal Intrigues
 
-!!! VANAHEIM
+## VANAHEIM
 D12		Notes
 1-3		Hunters
 4-5		Red Bearded Warriors
@@ -310,7 +310,7 @@ D12		Notes
 8			Slavers
 9-12		Tundra
 
-!!! VENDHYA
+## VENDHYA
 D12		Notes
 1-4		War Host
 5-6		War Elephants
@@ -320,7 +320,7 @@ D12		Notes
 10		Skiffs
 11-12	Bureaucracy
 
-!!! ZAMORA
+## ZAMORA
 D12		Notes
 1-4		Cut-Throats
 5-6		Fanatics
@@ -329,7 +329,7 @@ D12		Notes
 9			Crime & Vices
 10-12	Intrigue & Despotism
 
-!!! ZEMBABWEI
+## ZEMBABWEI
 D12		Notes
 1-5		Tribesmen
 6-7		Veterans
@@ -337,7 +337,7 @@ D12		Notes
 9			Priest of Dagon
 10-12	Primitive
 
-!!! ZINGARA
+## ZINGARA
 D12		Notes
 1-3		Soldiers
 4-5		Swordsmen
