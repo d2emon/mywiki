@@ -1,4 +1,4 @@
-!! 10 Weirdest Trading Card Sets
+# 10 Weirdest Trading Card Sets
 
 Trading cards are an institution that dates back over a century. In addition to making baseball cards, companies like Topps and Fleer made cards for other sports including football and hockey. They also got into the business of making non-sports cards. Usually, these cards were produced to coincide with the success of popular entertainment – for example, Kiss cards were the staple of a generation and you were nobody unless you had some Star Wars cards to trade on the playground.
 
@@ -6,9 +6,9 @@ Card companies also produced card series like the ever-popular Wacky Packages wh
 
 With that said, check out these 10 truly mind boggling trading cards.
 
-!!! Faces of Death Trading Cards
+## Faces of Death Trading Cards
 
-%thumb%Attach:a98929_FOD.JPG%% 
+![](a98929_FOD.JPG)
 
 Hey kids! Get your images of death, rotting flesh, deteriorating corpses and beaten bodies! Collect them all! Inspired by the 1978 mondo film Faces of Death, this set of 40 trading cards was produced in the mid-1990s by Mother Productions, fine makers of specialty card sets. Mother Productions also produced Bettie Page cards, Animal Freaks, Nazi Cards and Bizarre Boobs!
 
@@ -16,7 +16,7 @@ These are as far away from your grandfather's baseball card collection as you ca
 
 !!! The Gong Show Trading Cards
 
-%thumb%Attach:a98929_1977_Fleer_Gong_Show_Trading_card_box_36_packs.jpg%%
+![](a98929_1977_Fleer_Gong_Show_Trading_card_box_36_packs.jpg)
 
 Years before America's Got Talent, a whole generation of people watched one of the wackiest talent competition shows in the history of the medium. Originally running from 1976 to 1978, The Gong Show was THE show to see acts of all varieties, shapes and sizes displaying their “talents” in order to win the big prize of $516.32.
 
@@ -24,9 +24,9 @@ With legendary producer Chuck Barris (The Dating Game, The Newlywed Game) hostin
 
 In 1977, Fleer issued a set of The Gong Show trading cards consisting of 66 cards and 10 stickers. Yes, that's right, the set includes a Chuck Barris sticker, perfect for putting on a lunchbox!
 
-!!! Gulf War Trading Cards
+## Gulf War Trading Cards
 
-%thumb%Attach:a98929_newpo_desert_storm_trio.jpg%%
+![](a98929_newpo_desert_storm_trio.jpg)
 
 In 1991, with the Gulf War in full effect, several different companies issued sets of Desert Storm trading cards. You heard me right – there were several sets of Desert Storm cards produced by at least three different companies with Topps producing 3 different series of cards alone!
 
@@ -38,9 +38,9 @@ The cards were wildly popular during the war and proceeds from their sale benefi
 
 I'll tell you what, I'll trade you my Lieutenant John J. Yeosock card for your Lieutenant Charles Horner. Deal?
 
-!!! Three's Company Trading Cards
+## Three's Company Trading Cards
 
-%thumb%Attach:a98929_threes-company.jpg%%
+![](a98929_threes-company.jpg)
 
 I could make a whole list of trading cards based off of TV shows from the 70s and 80s, but we'll focus on just a few. Those two decades certainly produced some of the most classic sitcoms of all time. If you were to ask which show would be on the top of that list, I might have to say Three's Company.
 
@@ -50,9 +50,9 @@ The show was a hit upon first airing in 1977. A year later, Topps issued a set o
 
 If you ever come across a set, I want card/sticker #27: “Norman Fell is Mr. Roper.” It doesn't get cooler than a Mr. Roper sticker card, does it?
 
-!!! Laffs Trading Cards
+## Laffs Trading Cards
 
-%thumb%Attach:a98929_tgif-trading-cards.jpg%%
+![](a98929_tgif-trading-cards.jpg)
 
 Onto the 1990s – I can see the television network board meeting, “How can we promote TV shows that are part of our TGIF (Thank God It's Friday) lineup?”
 
@@ -60,9 +60,9 @@ Onto the 1990s – I can see the television network board meeting, “How can we
 
 Three TV shows were featured in the card set – Family Matters, Full House and Perfect Strangers. The cards were advertised with, “Why wait until next week to see your favorite shows? Now you can watch your favorite shows one frame at a time, every day of the week!” Sure, just stare at that Urkel card and imagine you're watching Family Matters. That'll work.
 
-!!! Menudo Trading Cards
+## Menudo Trading Cards
 
-%thumb%Attach:a98929_il_fullxfull.515571452_62nq.jpg%% 
+![](a98929_il_fullxfull.515571452_62nq.jpg)
 
 We have to include at least one boy band in this list, right? Boy bands from the Bay City Rollers to New Kids on the Block to One Direction have all had sets of trading cards in their honor. The Puerto Rican boy band Menudo is no exception.
 
@@ -70,9 +70,9 @@ Issued by Topps in 1983 during the height of Menudomania, each card is perfectly
 
 Honorable mention goes to breakout star Ricky Martin who was also the star of his own series of trading cards in 1999.
 
-!!! Iraqi Most-Wanted Playing Cards
+## Iraqi Most-Wanted Playing Cards
 
-%thumb%Attach:a98929_image 3.jpg%% 
+![](a98929_image%203.jpg)
 
 In 2003, during the invasion of Iraq by the United States and its allies, the U.S. military produced a series of playing cards to help troops identify the most-wanted members of Iraqi leader Saddam Hussein's government. Though technically not trading cards, these cards were made for collecting in the spirit of trading cards.
 
@@ -80,25 +80,25 @@ Each card displayed a photo of Hussein's henchmen and information on their dutie
 
 Two Joker cards were also in this set. One listed military ranks and the other Joker had Arab titles. All of the cards were encased in a camouflage box. Neat-o!
 
-!!! Here's Bo! Trading Cards
+## Here's Bo! Trading Cards
 
-%thumb%Attach:a98929_Johnbo.jpg%% 
+![](a98929_Johnbo.jpg)
 
 In the late 70s, Bo Derek was the object of many men's fantasies thanks to her breakout role in the film 10. With success comes merchandise and one of the more – shall we say – unusual pieces of Bo Derek memorabilia – the Here's Bo! series of trading cards.
 
 The series was both weird and kind of disturbing. Bo's husband, film director John Derek, took photos for the images on the cards. Jon Derek, 30 years Bo's senior, started courting Bo when she was just 16 years old. One of the cards pictures a teenage Bo with the caption, “Sweet 16 & falling in love!” Other cards pictured just John Derek. Yeah, that's exactly what a prepubescent boy with a crush wants to see.
 
-!!! Perlorian Cats Trading Cards
+## Perlorian Cats Trading Cards
 
-%thumb%Attach:a98929_bikerkitties3.jpg%% 
+![](a98929_bikerkitties3.jpg)
 
 How about a series of cards that shows felines in human outfits? Well then, how about Topps' Perlorian Cats cards? Bases on a series of Japanese photographs, the cards also came with an offer to buy three different cat posters, one of which was a cat playing lead guitar!
 
 So, if photos of leather clad cats with a mini motorcycles are up your alley, these cards are just for you!
 
-!!! Pachimon Playing/Trading Cards
+## Pachimon Playing/Trading Cards
 
-%thumb%Attach:a98929_Pachimon-Kaiju-Cards-930x1002-1.jpg%%
+![](a98929_Pachimon-Kaiju-Cards-930x1002-1.jpg)
 
 Japan has always been the source of all things weird and wonderful and the Pachimon playing cards are a fine example of this.
 
