@@ -1,4 +1,5 @@
 # TOWN DIRECTORY
+
 Of Matters Entered in the "Guide to Arkham", Excluding the University
 
 ## Directory Entries
@@ -737,3 +738,719 @@ Of Matters Entered in the "Guide to Arkham", Excluding the University
 - Snake's Den Cave              1002
 - Unnamable House               403
 - Witch House                   711
+
+
+
+
+
+
+
+
+
+
+----
+
+# IOWA/ IDI тсс^отм
+
+Of Matters Entered in the "(fnide tv EArlkcnn, ” EpuUdins^ tke Kniv^sity. 
+
+## Directory Entries
+
+- Churches
+- Clubs, Organizations
+- Food, Drink, Entertainment
+- Funeral Homes, Cemeteries
+- Horrible Creatures
+- Hotels, Apartments, etc.
+- Industries, Commercial Services
+- Jobs and Professions
+- Medical Institutions
+- Miscellaneous Entries
+- Mylhos Tomes, etc.
+- Newspapers
+- Private Homes
+- Public Buildings
+- Schools, Exhibits
+- Services (Financial)
+- Services (Personal)
+- Shops, Stores
+- Statistics (Individuals in the Guide)
+- Transport, Communication
+- Utilities
+- Weird Places
+
+## Churches
+
+Arkham Reserved Congregational	817
+Asburv M.E	208
+Bayfnar's Church (abandoned)....707 Christchurch Episcopal	-139
+East Church (non-denominational chapel)	506
+First Baptist	711
+first Presbyterian	813
+First Unitarian	303
+Sacred Heart (Catholic)	907
+St.Michael’s (Catholic)	7U
+St.Stanislaus (Catholic) 		904
+Temple Baptist	307
+Wist Church (abandoned)			409
+
+----
+
+## Clubs and Organizations
+
+Arkham Amateur Theatre Company	109
+Arkham Gun Club	......414-B
+Arkham Historical Society	901
+Arkham S.P.C.A....	627
+Chamber of Commerce	126
+The’Club’(Unione Italiano)	911
+Daughters of the American Revolution		810
+Eye of Amara	909
+Masonic Lodge	  105
+Rotary Club	206
+Miskatonic Athletic Association...604
+Miskalonic Club			803
+
+## Food, Drink, Entertainment
+
+Amherst Theatre	225
+Anton’s Restaurant	912	.
+Arley's Boat 8t Bait		.....501
+Arthur Murray School of Dance ..416
+Art's Billiards	 220
+Aunt Lucy’s	134
+Bee’s Diner			210
+Bell Cafe	437-B
+Church Street Cafeteria	440
+Commercial House	133
+Crawford’s Restaurant	219
+Dennison’s ice Cream Emp	226
+Desolate Highway Cafe	131
+Fleetwood Diner	202
+Fenner’s Roadhouse	1015
+Grafton Diner	„	138
+Manley Theatre	109
+Miss Andrew’s Social Parlor	903
+Penny Arcade			  240
+Sander's Wax Museum			137
+Speakeasy			  113
+Telenews Cinema		 213
+University Spa	  708
+
+----
+
+## Funeral Homes, Cemeteries
+
+Christchurch Cemetery	917
+Eleazar’s Funeral Home	908
+Mehler’s Funeral Parlor	704
+Old Arkham Graveyard	705
+Old Wooded Graveyard	405
+Potter’s Field	102
+Whitechapel Mortuary	606
+
+## Horrible Creatures
+
+Brown Jcnkin		719
+Colou r Out of Space	1010
+Goody Fowler’s Ghost	404
+Lurker at the Threshold	1001
+The Unnamable	402
+
+## Hotels, Apartments, Boarding Houses
+
+Beacon of Hope Settlement House	505
+Borden Arms Hotel	129
+Chelsea House Apts	450
+Clarks Residential Accomodations	811
+Eleanor Peabody Charity Home 507
+The Franklin Place	801
+Guardian Apartments	107
+Harding House	116
+Harriet Botsford Hotel for Women	628
+Hotel Miskatonic	626
+Lewiston House	710
+Simpson Apartments	910
+Smith's Boarding House	713
+Szvmanski’s Boarding House	905
+Tenement	913
+Terrace Building	112
+Tilde» Arms Hotel	135
+Timbleton Arms Apartments	805
+Y.M.C.A			  720
+Witch House	719
+
+ ----
+ 
+## Industries, Commercial Services
+
+Adams’ Lumber Yard	242
+Anderson's Chemical Supply	308
+Arkham Baler Co			127
+Arkham Dairy	403
+Arkham Worsted Mills	309
+Bunden's Bindery	237
+Icehouse	310
+Lucky Clover Cartage Co	412
+Sheehan Contractor Supply	239
+Slaughterhouse	243
+
+## Jobs, Professions, Hobbies
+
+### Accountant
+
+ledediah Marsh	110
+
+### Actress (amateur)
+
+Elizabeth Peabody....„„.„	109
+
+### Architect
+
+Daniel Upton	807
+
+### Art Appraisal & Restoration
+
+Andreas ver llovcn	413
+
+### Artist (painter)	
+
+Hagan Wilson	913
+
+### Astrologer
+
+Madame Dulagi	910
+
+### Attorncys-at-Law
+
+Edwin Cassidy	  118
+Bertrand Chambers	215-Л
+Lee E. Craig	212
+E E. Saltonstall	124
+
+### Barber
+
+Aldo Petrucci	916
+
+### Bibliophile
+
+Stewart Portman	804
+
+### Blacksmith
+
+lacob Asker	510 
+
+----
+ 
+### Booksellers
+
+Herbert Harden	444
+Malvina Jaywil	430-В
+Edwin Tillinghast	125
+
+### Botanist
+
+Dr. Homer Winsidc	703-A
+### Broker
+
+James Gedney	118
+
+### Cab Dispatcher
+
+Gregory Dahlberg	236
+
+### Bicycle Messenger
+
+Bobby Ashbourne	132
+
+### Civil Servants
+
+Benijah Adams (Fire Chief)	230
+Eldon Jenkin (Principal)	508
+Janet Larkin (City Clerk)	217
+Joel Manton (Supt. of Schools) ....407
+Joseph Peabody (Mayor)	217
+Anita Pierce (Principal)	603
+Judge Keezar Randall	„212
+Darrell Slocum (Town Manager) .217
+Eli Whittaker (Postmaster)	229
+
+### Criminals & Lawbreakers
+
+Barlholemew Appley IV‘.	103
+Lou Benito			911
+Dan the Bartender		—113
+Larry Freen	  113
+Meyer Golditz		412
+Greg the Monster	513
+Alex Hearne	129
+Eddie Leary	412
+Danny O'Bannion	412
+Guiseppe Potrello	911
+Sam the Doorman	113
+Jonathan Shear	814
+Bobby Sills	412
+Melissa Thorne	  30-1
+Tough Muggs, Five	412
+
+----
+
+Typical Street Punk	512,716
+Randle Wade	209
+
+### Cultists (the Evil Coven)
+
+Abigail LaRue (Tama)	1007
+Joe Ambrose (lergat)	1007
+Harold Beemis (Balazar)	1007
+Robert Czycnck (Regneh)	1007
+William D. Johnston (Ahmala)... 1007
+Keziah Mason (Nahab)	719,1007
+Edwin W. Perkins III (Jabal)	1007
+Marla Slocum (Shana)	1007
+Daniel Swain (Sugga)	1007
+Jennifer Tilslrom (Yula)	1007
+Sheila Torsten (Belag)	441 - В, 1007
+Ellen Whipplesmith (Camlas)....1007
+James Allen White (Ratal)	1007
+
+### Dentist
+
+G.R. Feldman. D.D.S					118
+
+### Driving Instructor
+
+Harvey Ballard	232
+
+### Electronics
+
+Robert Valencia	420-В
+
+### Fight Trainer
+
+Luca Maruzzo			716
+
+### Financier
+
+Robert Beckworth	...-	803
+
+### Glassblower
+
+Gregor Weildcr	504
+
+### Glazier
+
+Gunther Schmidt	509
+
+### Goldsmith
+
+Elisha Waite	423
+
+### Gunsmith
+
+Edward Parrlngton	...414-B
+
+### Historians
+
+E. Lapham Peabody	901
+Edwin Tillinghast	„.125
+George Tillinghast	.......418
+
+### Hypnotist
+
+Alain Couzon	713
+
+### Jewejer
+
+Lazio Caselius	424-B
+
+### Journalists
+
+Michael Crane {Gazelle)	108
+Harvey Gedney (Advertiser)	130
+Roberta Henry (Advertiser)	130
+Willard Peck (Gazette)	108
+Howard Penobscott ((/. Crier)	625
+
+### Junkman
+
+Hiram Cahoimc	511
+
+### Landlords
+
+Miss Elizabeth Clark	811
+Mr. 8c Mrs. Dombrowski...	719
+Mr. 8c Mrs. Franklin			801
+Mr.8c Mrs. Harding	116
+Mr. 8c Mrs. Smith™	713
+Widow Szymanski	905
+
+### Lens Grinders	
+
+Bernard Evans	419
+Timothy Walters	421 -B
+
+### 1 ibrarian
+
+Ellen Whitmarsh	211
+
+### Locksmith
+
+Richard Henry Ace	414-Л
+(ialeb Markham			443
+
+### Mechanics	
+
+Bucky Heingrapper	1013
+Abel Sykes	235
+
+### Mortician
+
+Jaspar Eleazar	908
+
+### News Vendor
+
+Ernie Trout	136
+
+### Night Watchman
+
+Sawyer Lyman	118
+
+### Pastors and Priests
+
+Rev. Wharton Armbruster (Congregational)	817
+
+----
+
+Father Archibald Bihop (Episcopal)	439
+Father Casimir lwanicki (Catholic)	904
+Father Anthony Morency (Catholic)	   907
+Rev. Charles Noyes (Baptist)	711
+l ather Paul Sheene (Catholic)	714
+Dr. Willett Spencer (Unitarian) ....303 Dr. F.ben Sutton (Presbyterian)....813 Dr. Ezekiel Wallace (Methodist) ...208
+Pets and Birds
+Albert Cunningham	417-A
+Pharmacist
+Mather Bryant	441-A
+Photographer
+Timothy Walters	421 -B
+Physicians
+Dr. Morton Hartwell	815
+Dr. Stanley Malkowski	905
+Dr. Ephraim Sprague	118
+Dr. Horton Wilson	809
+Pilot/Flying Instructor
+Stanley Harrington	1013
+Plastic Surgeon
+Dr. Garrison Sinderwald	207
+Police
+Mickey Harrigan (Lieut.)	228
+Luther Harden
+(Chief of Detectives)	228
+William Keats (Captain)	228
+Asa Nichols (Chief)	228
+Ray Stuckey (Lieut.)	228
+Typical Sergeant	228
+Typical Patrolman	228
+Private Investigator
+Kenneth Heath	205
+Psychiatrists
+Dr. Eric Hardstrom	201
+Dr. Parker Larkin	902 
+low JV iDi rectors 
+Psychoanalysts
+Dr. Heinrich T. Muelhig	204
+Dr. Allen Turner	118
+Scholars	_____
+lason Gaspard	9(19
+Dante Hclcimer	801
+Pin Liou	238
+Sculptor 	
+Pete Sander	137
+Shop Owners
+Jenny Aberstrom
+(beauty parlor)	428
+Rider Adams (general store)	502
+Bert Arley (boat rentals)	501
+lasper Benson (market)			446
+Clell Flint (trains & toys)	449
+B.F. Jones (hardware)	445
+Dean Marlelle (trains & toys)	449
+Hattie O'Brian (boutique)	424-A
+Gerald Stewart (camping, hiking)448 Edith Winkler (gifts & notions)...442
+Singing Coach
+Alberto Manelli			417-B
+Stonecutter
+Elijah Potts	  406
+Strange People
+Beatrice Allen (madwoman)	301
+Eunice Babson			1012
+Ellen Crawford
+(madwoman's sister)	301
+Edward Derby	1012
+Ed Dunlap (mi-go agent)	134
+Frank Elwood		  719
+Walter Gilman	„			719
+Ammi Pierce	....1011
+Abigail Sargent	1012
+|oe Sargent		  203
+Moses Sargent		  1012
+Asenath Waite			1012
+Spirtualist
+Gerrhardt Wvinch			112
+ 
+Surveyor
+George l.illibridge	  116
+Veterinarian
+William “Doc” Pinter			914
+Watch Repair
+John Malloy		 420-A
+Zoologist
+Albert Cunningham	417-Л
+Medical Institutions
+Arkham Sanitarium		201
+Larkin Institute	  902
+Miskatonic Valley
+Veterans' Home	 601
+St. Mary’s Teaching Hospital	623
+Whitechapel Nursing Home	808
+Miscellaneous
+Construction Site	115
+Demolition Site	 221
+Docks		-					.410
+Dunham's Brickyard
+(abandoned)	I			512
+Ome’s Gangway	721
+R.R. Property			139,241
+Tower Professional Building	118
+Town Dump			1005
+The Old Warehouses	411
+Mythos Tomes, etc.
+Al-Azif-Ye Hooke of ye Arab	1001
+Myth Patterns	104,211,620
+Azat both and Olliers		620.1012
+Book of Dzyan	.....303,801.1012
+Hook of Eibon	620
+Celeano Fragments		104,620
+Clltaat Aquadingen			707
+Clhuuiu in
+the Necronomicon	104,211.620
+Cubes des (Soules..125.620,801.1001
+ 
+Eli Davenport ms	620
+Elldown Shards	104,620,909
+"Gardner Farm Meteorite”	620
+I СЪагпе Fragments	801
+The Golden Hough	620,909
+Goody Fowler's Grimoire	1009
+Herbert West papers		 621
+Hoadlev sermon	620
+liber Ivonis	620,909,1001
+Nameless Cubs (Bridewell) 		1012
+j Necronomicon	620
+Necronomicon (Dee)			  620
+Of EvilI Sorceries		 1001
+J People of the Monolith	620,1012
+! Pnakotic Manuscripts	620
+I’onape Scripture	909
+Revelations of Glaaki	804
+R'lyeh Text	104
+Sussex Manuscipt...»	  104,909
+Tliaumaturgical
+Prodigies	211,620,711,901.1001
+, Unaussprechlichcn Kulten	620
+De Vcrmiis Mysteriis	1001,1012
+i Whatcley Diary				620
+Witch-Cubs in
+Western Europe			620,909
+Z.anthu Tablets			104,112
+Zekerhoni.,	804
+Newspapers
+Arkham Advertiser	130
+Arkham Gazette	„.108
+I Miskatonic University Crier	625
+Private Homes
+i Dr. Henry Artnitage home	816
+Dr. Laban Shrewsbury home..,	104
+! Nathaniel W. and
+: Wingate Peaslce home	605
+Albert N.Wiiraartb home	812
+Public Buildings
+Armory			  216
+ 
+Courthouse	212
+Fire Department	230
+Police Station	228
+Post Office	229
+Public Library		211
+Public Schools	
+.106,306,408.508,603,715,802,915
+Public Schools Building	407
+Town Hall	217
+Independence Square	218
+Schools, Exhibits
+Arkham Historical Society	901
+Arkham East Public H.S	508
+Arthur Murray School of Dance ..416
+Daniel Shay Public School	802
+School of Positive Thinking	712
+Arkham Public High School	603
+Halsey Public School	915
+Hubbard Public School			408
+lenkin Public School			106
+Eben S. Draper Public School	715
+Martin Public School	306
+Miss Christian's
+School for Women	119
+New England
+School of Bookkeeping	718
+Pickering House	302
+Services (Financial)
+Arkham First Bank		„....214
+Arkham Loan Agency			111
+Brokers, GedneySt Brown	118
+Diamond Credit Agency			209
+Federal Bond Agency			215-B
+Jedediah Marsh 8c Assoc	110
+Manton & Manton. Real Estate ....118 Miskatonic Valley Savings Bank..,234 Stieglilz & Son, Insurance	118 
+I OWN 4Di reefor-v 
+
+ 
+
+Services (Personal)
+Arkham Priming	503
+Ace Alarms 8c Lock-Safes...	414-A
+College Barbershop	703-B
+Esso Service Station	434
+Keenan’s Laundry	717
+May Ladies Beauty Salon	806
+Melissa Thorne, Courtesan	304
+Miss Jenny’s Beauty Parlor	428
+Petmcci’s Barbershop			916
+Phillips 66 Service Station	235
+Southside Bathhouse	706
+Uptown Laundry			123
+Worldwide Clipping Service	122
+Shops, Stores
+Antiques (George Tillinghast)	418
+Apothecary (Bryant’s)	„.441-A
+Art Gallery (ver lloven’s)	413
+Bakery (Taranowski’s North) —117 Bakery (Taranowski’s South) ...441-B
+Bicycles (Campus)	702
+Books, New (Jaywjl’s)	430-Л
+Books. Rare (Tillinghast)	125
+Books,Used (Hardens)	444
+Camping 8t Hiking (Stewart’s)	448
+Candy (Marsh's Confectionery) ...431 Clocks (Malloy’s Timepieces)...420-A,
+Clothes. Men’s (Pike’s,
+University Shop)	425,430-11
+Clothes, Used (Bargain House) ....447
+Clothes, Women's (Hattie's)	424-A
+Eyeglasses (Bernard Evans)	.419
+Flowers (Almen’s)		703-Л
+Furniture (Anderson’s)	415
+General Store (Arkham)	502
+Gift Shop (Arkham)	442
+Goldsmith (E. Waite)	423
+Gun Shop (E. Farrington)	414-B
+Hardware (B.F. Jones)	445
+Jewelry (Lazio Caselius)	424-B
+Locks (Caleb Markham)	443
+Market (Benson's)			„..446
+ 
+Market (First Na. Grocery)	-231
+Market (Kroger’s)		 422
+Market (Korthside)	227
+Music (Manelli's)	417-14
+Newsstand (North)	136
+Newsstand (South)	437-A
+Notions (Woolworth’s)	433
+Pets (Albert Cunningham)	417-A
+Pharmacy
+(Bryant, Walgreens)..	„44 l-A, 701
+Radios (Robert Valencia)	420-B
+Shoes (University)	429
+Souvenirs (University Shop) ...,430-B Stamps & Coins (Hardwicke’s)..,„)20
+Stationery (Gilman’s
+Office Supplies)	427
+Tattoos (Pin Liou)			238
+Taxidermist (J. J. Abbott)		121
+Telescopes (Walters’ Optics)	421 -B
+Theatrical Supplies (Markwil’s)...438 Tobacconist (Fenner Avery)	421-A
+ 
+Harrington, Stanley	1013
+Hearne.Alex	129
+Heath, Kenneth	205
+Helcimer, Dante	801
+Henry, Roberta	130
+lenkin, Brown	719
+Leery, Eddie	412
+Mason, Keziah			......719
+Morgan, Francis	611
+; Muggs, Five Tough,	412
+O’Bannion, Danny	412
+Peabody, E. Lapham			901
+Peaslee, Wingate			609
+Peck, Willard	108
+Pin Liou	238
+Police Patrolman, Typical	228
+Police Sergeant, Typical	228
+Potrello.Joc			911
+Sam the Doorman 		113
+Sargent. Abigail	1012
+Sargent, Moses	1012
+Shalad, Dr. Moantar	611
+Shear. Jonathan	814
+Shrewsbury, Dr. Laban			104
+Sills, Bobby ...„	412
+Street Punk, Typical	512,716
+Stuckey, Lt. Ray	228
+Thorne. Melissa	304
+Threshold, I.urkcr at			100!
+Waite, Ascnath	1012
+Wilmarth, Albert N	611
+Wilson, Hagan	913
+Transport,
+Communication
+Aircraft	  1013
+Arkham Advertiser	130
+Arkham Gazette	108
+Autos 		  232
+Buses north/soulh	128
+Bus to Innsmouth			203
+: Bicycles	702
+Boats/Canoes	-	501
+ 
+Horses	510
+Miskatonic U. Crier	625
+Post Office	—.229
+Taxis	.236
+Telephones	223
+Trains	—.132
+Trolleys	i24
+Trucks	  412
+Wagons	310,511
+Western Union	—132
+Utilities
+Arkham Bell Telephone	223
+Arkham Edison	233
+Arkham Fuel 8t Coal	114
+Arkham Gas	222
+French Hill Transformer Station . 722 Northside Transformer Station—305 Southwest Transformer Station....602 Water Pumphouse & Tower.—	101
+Weird Places
+Attic Prison	.,	301
+Billington’s Woods	1001
+Blasted Heath	  1010
+Carter Mansion	1003
+Chapman Farmhouse	1006
+Clark's Corners	1008
+Crowninshield Manor			1012
+Goody Fowler’s Cottage	1009
+Hangman's Hill	404
+The Unvisited Island	401
+Kingsport Head			1014
+Meadow Hill	  1007
+Snake’s Den Cave	1002
+Unnamable House	402
+Witch House	  711
+
