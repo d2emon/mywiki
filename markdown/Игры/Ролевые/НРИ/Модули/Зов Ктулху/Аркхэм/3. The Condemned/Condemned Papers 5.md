@@ -1,0 +1,3 @@
+# A History of the Arkham Township, excerpt
+
+. . . Another such individual was the hunch­back Sermon Bishop who, like earlier relatives, was accused of witchcraft. Titis man lived on the western outskirts of town, on Hill Street (then called Bad Water Road), and was thought a pow­erful wizard. Rumors of his activities gave rise to grave suspicions, and crop failures and dry cows were often blamed on him. Bishop disappeared one night while returning home from a visit to Dunwich and was never seen again. Rumors flew that the Devil had finally come and taken him away. The sheriff conducted what all agreed was a thorough investigation but no suspects were ever brought to trial. Though he likely was the victim of foul play. Bishop’s body was never found.
