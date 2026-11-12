@@ -1,5 +1,3 @@
-!! Freelance
+# Freelance
 
 Игры без сюжета в которых можно все (почти)
-
-(:childlist:)

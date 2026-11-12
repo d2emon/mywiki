@@ -1,8 +1,10 @@
-!! Pirates!
-%center%Being a complete and comprehensive account of the Great Age of Buccaneering in the West Indies between the years 1560 and 1700.%center%
+# Pirates!
+Being a complete and comprehensive account of the Great Age of Buccaneering in the West Indies between the years 1560 and 1700.
 
-!!!! INTRODUCTION
-[@
+### INTRODUCTION
+
+
+
 It was an era of new kings and empires, of new tests of strength and power.  It
 was a day when a man could rise from humble beginnings and be knighted for
 brave and daring service to the Crown.  Now you can be such a man in PIRATES!,
@@ -39,10 +41,11 @@ simple fantasy and touches the reality of an exciting page in history.
    If you prefer to learn PIRATES! while playing, consult your "Captain's
 Broadsheet". If you like to understand the concepts before you begin playing,
 turn to "In the Beginning" and read all of Book I.
-@]
-!!!! Book I Instructions to Captains
-!!!!! In the beginning...
-[@
+
+### Book I Instructions to Captains
+
+#### In the beginning...
+
 The stars of new Kings and Emperors are rising in Europe. New opportunities
 abound for the ambitious man. There are reputations to be made, fortunes to be
 won, beautiful women to wed, and with royal favor you may even gain a patent of
@@ -55,9 +58,9 @@ trouble loading). To make a choice, move the pointer on the screen (using your
 joystick, mouse, or keyboard cursor keys, as appropriate) to highlight the
 option you prefer. To select the highlighted option, press the joystick
 trigger. You need not wait for the "Press to Continue" message.
-@]
-!!!!! A word about your goals -
-[@
+
+#### A word about your goals -
+
    From a humble start, you are seeking to make your fortune in the West Indies
 so that you can retire to a life of wealth, ease, and high status. The quality
 of your retirement is a sum of your personal fortune, your rank, your lands,
@@ -75,9 +78,9 @@ properly formatted save-game disk for this. Use the save-game routine
 (available at any port under check information) to format a disk. See your
 "Captain's Broadsheet" for more information on saving games.
 
-@]
-!!!!! Initial opportunities -
-[@   A new player should select START A NEW CAREER.
+#### Initial opportunities -
+
+A new player should select START A NEW CAREER.
 
    Start a New Career begins a complete adventure, from your first arrival in
 the New World to your well-earned retirement. This is the "standard" game, and
@@ -92,9 +95,8 @@ expedition. These expeditions are usually large, but end whenever you divide
 the plunder. Famous expeditions are not for a novice - doing as well as the
 historical model can be a very challenging task.
 
-@]
-!!!!! Famous expeditions -
-[@
+#### Famous expeditions -
+
         Battle of San Juan de Ulua              The Silver Train Ambush
         (John Hawkins, 1569)                    (Francis Drake, 1573)
 
@@ -147,9 +149,9 @@ Spanish are at their lowest militarily. Duplicating de Pointis' capture and
 sack of Cartagena isn't too difficult. See Famous Expeditions for additional
 background information.
 
-@]
-!!!!! Selecting an historical time period -
-[@
+
+#### Selecting an historical time period -
+
         The Silver Empire (1560)                Merchants and Smugglers (1600)
         The New Colonists (1620)                War for Profit (1640)
         The Buccaneer Heroes (1660)             Pirates' Sunset (1680)
@@ -208,9 +210,8 @@ you can, for it is the end of an age. This period is somewhat tough for novices
 but interesting and challenging for all others. See PIRATES' SUNSET (1680 -
 1700) for more information.
 
-@]
-!!!!! Selecting a nationality -
-[@
+#### Selecting a nationality -
+
                 English Buccaneer               French Buccaneer
                 Dutch Adventurer                Spanish Renegade
 
@@ -248,9 +249,8 @@ Your Name -
    Type in any name you wish, but you are limited to nine characters. Press the
 'Return' key to finish your entry.
 
-@]
-!!!!! Difficulty level -
-[@
+#### Difficulty level -
+
                         Apprentice              Journeyman
                         Adventurer              Swashbuckler
 
@@ -271,9 +271,9 @@ share of the loot is very good.
 swine' of precious little value. Of course, your share of the loot is the
 largest possible.
 
-@]
-!!!!! Special abilities -
-[@
+
+#### Special abilities -
+
                 Skill at Fencing                Skill at Navigation
                 Skill at Gunnery                Wit and Charm
                 Skill at Medicine
@@ -313,9 +313,9 @@ the Caribbean, but in Peru, loading silver and gold there. In both cases it is
 inaccessible to you. You'll have to wait until it reappears in the Caribbean
 area.
 
-@]
-!!!!! HISTORICAL FOOTNOTES -
-[@
+
+#### HISTORICAL FOOTNOTES -
+
    From the 1530s onward, Spanish ships suffered from privateers and outright
 piracy, not only in the West Indies, but also in the Atlantic. Spain's solution
 adopted informally in the 1560s, was to "convoy" ships together in one powerful
@@ -411,17 +411,17 @@ destined to be loaded aboard the treasure fleet.
         Havana - Early March                    Puerto Bello - Early October
         Florida Channel - Late April
 
-@]
-!!!!! FENCING & SWORDPLAY
-[@
+
+#### FENCING & SWORDPLAY
+
 Early Modern Europe was a willful and violent age. You discouraged thieves,
 righted injustice, protected your family, and maintained your honor with a
 sword.  Whether challenged to a duel, or fighting your way through a tavern
 brawl, skill with cold steel was simple survival.
 
-@]
-!!!!! BASICS OF CONTROL -
-[@
+
+#### BASICS OF CONTROL -
+
    The descriptions here assume you are using a joystick (stick). If not, see
 the "Captains Broadsheet" for your equivalent controls.
 
@@ -474,9 +474,8 @@ it a popular weapon among untutored fighters.
 shorter than a rapier). Its attacks do more than a rapier, but less than a
 cutlass.
 
-@]
-!!!!! THE PRINCIPLES OF FENCING -
-[@
+#### THE PRINCIPLES OF FENCING -
+
 Combinations:
    Like all active men of your time, you are a trained swordsman. Attacking and
 defensive movements, including wrist, arm, body, and footwork are as automatic
@@ -507,9 +506,11 @@ and middle, relying on the large damage done with each hit. However, if you'd
 like to defend yourself with some parry combinations, a weapon with more reach,
 such as a longsword or rapier, is recommended.
 
-@]
-!!!!! COMBINATIONS -
-[@
+
+
+#### COMBINATIONS -
+
+
 
    Each combination is different swordfighting maneuver in combat. As a fencer,
 you select a combination and your body automatically makes the appropriate
@@ -563,9 +564,9 @@ backpedal foot movements that move you away from your opponent.
    Low Parry & Retreat combines the standard low parry with backpedal foot
 movements that move you away from your opponent.
 
-@]
-!!!!! LEADERSHIP IN BATTLE -
-[@
+
+#### LEADERSHIP IN BATTLE -
+
     Only a few of your battles are man-to-man duels. Most of the time you are
 leading your stalwart crew against the enemy. As you duel the enemy leader,
 your crewmen are also fighting.
@@ -589,9 +590,9 @@ Surrender occurs when you inflict sufficient hits on an enemy leader in "panic"
 or when you've reduced the enemy to just one remaining man and then hit the
 leader (regardless of morale). Of course, the same could happen to you.
 
-@]
-!!!!! THE MEMOIRS OF CAPT'N SYDNEY -
-[@
+
+#### THE MEMOIRS OF CAPT'N SYDNEY -
+
    Many a buccaneer captain is nothin' but a big bully. Unschooled in fencing,
 he'd carry a sharp cutlass and swing away, knowing that a spine-splittin slash
 do'd more than a half dozen rapier thrusts. I hear Blackbeard himself, who
@@ -619,9 +620,11 @@ shrugged off a couple rapier pricks and got right in eye-to-eye, slashin' at
 'is legs. That took some stuffin' out of him right quick! With them papists all
 shaken and panicy like, it didna' take long to polish 'em off.
 
-@]
-!!!!! HISTORICAL FOOTNOTES -
-[@
+
+
+#### HISTORICAL FOOTNOTES -
+
+
 The Common Man as Warrior:
    In this turbulent time there were more clergymen than sheriffs! A man
 protected his own property and person against thieves and banditry, since the
@@ -658,9 +661,11 @@ lush jungled shores contain in its steady currents. Stretching over three
 thousand miles, the water is a broad highway between mainland ports, island
 towns and hidden anchorages.
 
-@]
-!!!!! INFORMATION -
-[@
+
+
+#### INFORMATION -
+
+
                 Continue Travels                Party Status
                 Personal Status                 Ship's Log
                 Maps                            Cities
@@ -711,9 +716,11 @@ town.
    Save Game allows you to save the game in progress. This option is available
 only if you are in a town.
 
-@]
-!!!!! GETTING AROUND TOWN -
-[@
+
+
+#### GETTING AROUND TOWN -
+
+
                 Visit the Governor              Visit a Tavern
                 Trade with a Merchant           Divide up the Plunder
                 Check Information               Leave Town
@@ -752,9 +759,11 @@ Leave Town:
    Your party departs from the town, ready to either set sail or march away
 overland, as you prefer.
 
-@]
-!!!!! TRADING WITH MERCHANTS -
-[@
+
+
+#### TRADING WITH MERCHANTS -
+
+
    The merchants in a town can buy and sell food, European goods, and the
 current export crop (hides, tobacco, or sugar, depending on the era). They can
 repair or buy ships and cannon, but almost never have any for sale.
@@ -772,9 +781,11 @@ ships, you may start trading with negative space in your hold (more cargo than
 room). In this case you must sell at least enough items to bring the space up
 to zero.
 
-@]
-!!!!! TRAVEL BY SEA -
-[@
+
+
+#### TRAVEL BY SEA -
+
+
    When travelling your party moves over the land and seas of the Caribbean.
 See your "Captain's Broadsheet" for a detailed description of the controls.
 
@@ -827,9 +838,11 @@ Minimum Crew:
    It takes at least eight (8) men to sail a ship. If you have fewer than
 eight men per ship, your men will abandon one.
 
-@]
-!!!!! OVERLAND TRAVEL -
-[@
+
+
+#### OVERLAND TRAVEL -
+
+
    When your party is on land, you can move in eight directions. See your
 "Captain's Broadsheet" for details on controls. Of course, the land is mostly
 trackless jungle, swamps and mountains, making overland movement very slow.
@@ -837,9 +850,11 @@ trackless jungle, swamps and mountains, making overland movement very slow.
    When moving on land your party can carry only as much as you can fit into
 your ships.
 
-@]
-!!!!! ARRIVING AT A TOWN -
-[@
+
+
+#### ARRIVING AT A TOWN -
+
+
                 Sail into Harbor                Attack Town
                 Sneak into Town                 Leave Town
 
@@ -881,9 +896,11 @@ in the ship, preventing you from dividing the plunder.
 
    Leave Town returns you to travelling about the Caribbean.
 
-@]
-!!!!! TAKE A SUN SIGHT & FIND YOUR POSITION -
-[@
+
+
+#### TAKE A SUN SIGHT & FIND YOUR POSITION -
+
+
    "Shooting the sun" with an astrolabe is a technique for finding your
 latitude. A latitude scale appears on the side of your map of the Caribbean for
 easy reference.
@@ -907,9 +924,11 @@ you're an apprentice captian, your expert sailing master provides a dead-
 reckoning estimate. Otherwise, you must make your own guess, based on how fast
 you've been travelling east or west.
 
-@]
-!!!!! THE MEMOIRS OF CAPT'N SYDNEY -
-[@
+
+
+#### THE MEMOIRS OF CAPT'N SYDNEY -
+
+
    On me first voyage, sailing as a 'prentice, al seemd easy. I'd just order
 the course and we'd sail there. If'n I was uncertain about our position, we'd
 take a sun sight, d'ye see, and the sailing master'd reckon out Longitude nice
@@ -945,9 +964,11 @@ too well known. If the gov'ner took a dislike ta' me face, one step into town
 and guards'd be swarming. Price of success, mate, took half the pleasure out of
 life.
 
-@]
-!!!!! GEOGRAPHICAL FOOTNOTES -
-[@
+
+
+#### GEOGRAPHICAL FOOTNOTES -
+
+
 Weather Patterns:
    The Caribbean is a warm ocean. The water surrounding the islands stays a
 constant 77 degrees F. This steady sea temperature maintains a pleasant climate
@@ -968,11 +989,13 @@ route the Florida Channel was the point of maximum danger. Unwary captains
 could be driven upon the Florida coast, or tack too far upwind and become lost
 in the treacherous Bahama shoals.
 
-@]
-!!!! BROADSIDES: THE TACTICS OF SEA BATTLE
 
-!!!!! ENCOUNTERS AT SEA -
-[@
+
+### BROADSIDES: THE TACTICS OF SEA BATTLE
+
+#### ENCOUNTERS AT SEA -
+
+
    Sail Ho! Your first sighting of an enemy ship is its sails and masts coming
 over the horizon. Continuing your voyage is a nearly foolproof way to evade any
 encounter. Investigating the sail means you automatically close on the other
@@ -1012,9 +1035,11 @@ available.
 
    The ship you select remains your flagship until the next battle.
 
-@]
-!!!!! BATTLE AT SEA -
-[@
+
+
+#### BATTLE AT SEA -
+
+
    When an encounter leads to battle, the scene changes to a ship-against-ship
 duel. The color of a ship's hull matches the color of it's name below. See the
 "Captain's Broadsheet" for specific control information.
@@ -1061,9 +1086,11 @@ Grapple & Board:
 grapple for a boarding battle. You must lead your men into the fight. See
 FENCING & SWORDPLAY, for more information.
 
-@]
-!!!!! PRIZES & PLUNDER -
-[@
+
+
+#### PRIZES & PLUNDER -
+
+
 Prizes:
    When you win a battle at sea, you can either take the enemy ship for your
 own (send a prize crew), or you can just take its cargo, while burning and
@@ -1096,9 +1123,11 @@ like trading with merchants. To transfer items to your ship, move the pointer
 up or down until it is on the correct line, then flick it to the left to move
 things to your ship, or to the right to leave things behind.
 
-@]
-!!!!! AMPHIBIOUS ASSAULTS ON TOWNS -
-[@
+
+
+#### AMPHIBIOUS ASSAULTS ON TOWNS -
+
+
    If you sail into a town and select Attack Town, you begin an amphibious
 assault on that town. In an assault, your flagship must sail up to the fort
 guarding the town, touching land as close to the fort as possible. If you land
@@ -1142,9 +1171,11 @@ to hand within their fort. After all, fort stormin' 'twas a right chancy
 business; belike 'cause the men insisted that I take my place at the head of
 the stormin' party!
 
-[@
-!!!!! HISTORICAL FOOTNOTES -
-@]
+
+
+#### HISTORICAL FOOTNOTES -
+
+
 Pike & Shot Warfare:
    Land warfare in the 16th and 17th Century saw the supremacy of infantry
 restored after the long reign of the mounted knight. In Europe the Spanish
@@ -1212,13 +1243,15 @@ the native Spaniards were the first to flee (many of them departed before
 the battle started) while the free Blacks were among the most stalwart
 defenders of the city.
 
-@]
-!!!! BOOK II LIFE IN THE WEST INDIES
 
-!!!!! YOUR CAREER ON THE HIGH SEAS
 
-!!!!!! A MERRY CREW "ON ACCOUNT" -
-[@
+### BOOK II LIFE IN THE WEST INDIES
+
+#### YOUR CAREER ON THE HIGH SEAS
+
+##### A MERRY CREW "ON ACCOUNT" -
+
+
    Buccaneers and pirates are unique: they were a democratic group, governed
 by voting, in an age of absolute kings and imperious aristocrats. Among
 pirates, spoils are divided fairly and equally. The Captain gets extra shares,
@@ -3483,5 +3516,3 @@ to the famous sea hawks and buccaneers that preceded them.
 you'll find it enjoyable. We also hope you'll find it an enlightening window
 to life in another age.
                         - Sid Meier & Arnold Hendrick, April, 1987
-
-@]
