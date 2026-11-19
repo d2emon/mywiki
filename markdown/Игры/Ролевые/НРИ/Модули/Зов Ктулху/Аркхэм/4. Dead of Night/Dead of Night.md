@@ -1,36 +1,14 @@
 # Dead of Night
 
+*With apologies to Brian Lumley and David Drake, curious and*  
+*tragic finds are made at the Checkley mansion, leading the*  
+*investigators to trace the skeins of a long-hidden wrong.*
 
-
-|   |
-|---|
-||
-
-  
-
-  
-
-|   |
-|---|
-||
-||![](file:///C:/Users/MIKHAL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image099.jpg)|
-
-  
-![](file:///C:/Users/MIKHAL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image100.gif)
-
-|   |
-|---|
-||
-||![](file:///C:/Users/MIKHAL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image102.gif)|
-
-  
-![](file:///C:/Users/MIKHAL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image103.gif)![](file:///C:/Users/MIKHAL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image103.gif)![](file:///C:/Users/MIKHAL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image104.gif)![](file:///C:/Users/MIKHAL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image103.gif)![](file:///C:/Users/MIKHAL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image103.gif)![](file:///C:/Users/MIKHAL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image103.gif)
-
-his scenario is designed for three to four investigators of moderate experience. Sharp eyes are of more use than good weapons skills; cog­itating upon the evidence will be the most useful.
+This scenario is designed for three to four investigators of moderate experience. Sharp eyes are of more use than good weapons skills; cog­itating upon the evidence will be the most useful.
 
 Playing times vary, but most keepers should not expect “Dead Of Night” to
 
-Keeper Information
+## Keeper Information
 
 Newspapers tell of the discovery of a human skeleton, bricked up in a basement wall of a partially demolished mansion. The investigators are hired by a local law firm of the keeper’s choice, acting on behalf of a distant (unnamed) Checkley heir.
 
@@ -40,16 +18,10 @@ A mysterious black man, a Dr. Marquis from New Orleans, hovers around the scene.
 
 The Checkley mansion is located at 633 Noyes in East-town.
 
-BACKGROUND TO THE TALE: in 1905, Jason Checkley lost his three chil­dren in the span of four short days when the terrible cholera epidemic struck Arkham. Already a widower, he was the last to carry the once-influential fami­ly name. The loss of his offspring left him devastated.
+**BACKGROUND TO THE TALE:** in 1905, Jason Checkley lost his three chil­dren in the span of four short days when the terrible cholera epidemic struck Arkham. Already a widower, he was the last to carry the once-influential fami­ly name. The loss of his offspring left him devastated.
 
 In desperation he contacted Marsella, the aged housekeeper of a friend, who reputedly could work magic. Marsella was originally from Haiti, and she prom­ised bring his children back from the dead ... for a fee.
-
   
-
-![](file:///C:/Users/MIKHAL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image106.jpg)![](file:///C:/Users/MIKHAL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image108.jpg)
-
-  
-
 Paying the money, Checkley borrowed the domestic from his friend and, after dismissing his own staff, had Marsella perform the terrible rites.
 
 As promised, the children again lived — Rosemary, 15 and already womanly; Adam, a robust boy nearly 13; and blonde Jessica, 9. But the shambling, vacant-eyed things Marsella evoked were only the forms of his chil­dren. The things were speechless, though cunning, and hungering with huge and awful appetites.
@@ -68,81 +40,39 @@ At his death, he was near impoverishment and had already sold the family estate 
 
 Before the secret room could be found, the children- things, starved and maddened, clawed through the rotted brick of the basement wall and tunneled their way to free­dom. Wandering in different directions, each managed to find a separate dark, silent lair. Existing on garbage and small animals, each now craves richer fare.
 
-  
+## Investigator Information
 
-Investigator Information
+The investigators already know of the skeleton’s discov­ery; relevant data is adequately summarized in the nearby _Advertiser_ article ([[Раздатка 1]]). Within a day or two, a local attorney of the keeper’s choice contacts the investi­gators, on behalf of a distant, unnamed Checkley heir who fantasizes that a hidden fortune or other treasure may exist. The keeper’s choice of reputable or sleazy attorney merely reveals how quickly or how likely the investigators are to gain the offered fee of fifty dollars per day, for the group.
 
-The investigators already know of the skeleton’s discov­ery; relevant data is adequately summarized in the nearby _Advertiser_ article (_Dead Papers 1)._ Within a day or two, a local attorney of the keeper’s choice contacts the investi­gators, on behalf of a distant, unnamed Checkley heir who fantasizes that a hidden fortune or other treasure
+All Arkhamites recognize the Checkleys as once among the local aristocracy, and know that Jason was the last of the line. A successful Know roll \[Knowledge (Local), DC 5\], or casual conversation establishes that he was an eccentric man, a student of the occult, whose personal life concluded with the tragic loss of wife and children.
 
-Skeleton Found in  
-Checkley Manor
+A second successful Know roll \[Knowledge (Local), DC 10\], identifies Crossman as a local financier of con­siderable means, now retired.
 
-**Police Suspect Foul Play**
+Information on both men can be found in back issues of the local newspapers, starting with Checkley's obituary last week.
 
-By Roberta Henry
+## Getting Started
 
-Demolition of the Checkley mansion was halted yesterday by the discovery of a skeleton hidden behind a brick wall in the basement.
-
-The house, at 633 Noyes, once an Easttown land­mark, had been nearly leveled when workmen broke through a basement wall and discovered the remains beyond.
-
-Police removed a single skeleton and some person­al effects, under the direction of Arkham Medical Examiner, Dr. Ephraim Sprague. Dr. Sprague has stat­ed that he believes the skeleton to be that of an elder­ly woman, but no identification has been made.
-
-Cloth fragments and Jewelry were also found.
-
-Additional bone fragments are rumored to have been located in the basement, stories which the police will neither confirm nor deny. A spokesman for Beckworth Development Co., which ordered the dem­olition, indicated that the company has suspended demolition pending completion of the official investi­gation.
-
-The previous owner of die home, Jason Checkley, last descendant of the Arkham Checkleys, died last week at St. Mary’s Hospital following a heart attack.
-
-This reporter has learned that the Checkley for­tune had dwindled, and that the mansion had been sold to Beckworth Development two years ago, for an undisclosed sum. According to Beck worth, the agree­ment allowed Checkley to live out his remaining years in the manor.
-
-Ralice have questioned Willard Crossman, friend of and now executor of Jason Checkley s effects, in connection with the find. Crossman himself is present­ly hospitalized at St. Mary's Hospital, recuperating from a stroke. Doctors have refused requests for an interview.
-
-— Arkham Advertiser
-
-Dead Papers 1
-
-  
-
-![](file:///C:/Users/MIKHAL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image110.jpg)
-
-|   |   |   |   |
-|---|---|---|---|
-|||||
-||![Надпись: DEMOLITION AT THE CHECKLEV MANOR](file:///C:/Users/MIKHAL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image111.gif)||![Надпись: 191](file:///C:/Users/MIKHAL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image091.gif)|
-
-  
-
-may exist. The keeper’s choice of reputable or sleazy attorney merely reveals how quickly or how likely the investigators are to gain the offered fee of fifty dollars per day, for the group.
-
-All Arkhamites recognize the Checkleys as once among the local aristocracy, and know that )ason was the last of the line. A successful Know roll (Knowledge (Local), DC 5|, or casual conversation establishes that he was an eccentric man, a student of the occult, whose personal life concluded with the tragic loss of wife and children.
-
-A second successful Know roll (Knowledge (Local), DC 10}, identifies Crossman as a local financier of con­siderable means, now retired.
-
-Information on both men can be found in back issues of the local newspapers, starting with Checkleys obituary last week.
-
-![](file:///C:/Users/MIKHAL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image113.jpg)
-
-The investigators Wve been assigned to find out if per­sonal property of Jason Checkley still exists in the rub­ble of Checkley Manor and, if it does, to learn whether or not it has cash value.
+The investigators have been assigned to find out if per­sonal property of Jason Checkley still exists in the rub­ble of Checkley Manor and, if it does, to learn whether or not it has cash value.
 
 Willard Crossman, as executor, has already disposed of Jason Checkley’s personal estate, as provided in Checkleys will. The investigators are to learn if any new discoveries could be legitimately claimed as unlisted portions of that estate, and hence subject to recovery by his heirs.
 
 The investigators have a number of avenues to explore. They will certainly visit the remnants of tire mansion, with or without the permission of the police and the Beckworth Development Co. The jewelry dis­covered in the basement may be of value, and may be claimed as personal property. Willard Crossman may have information of use to the heirs. Newspaper files may contain germane information. Each line of evi­dence occupies its own section, and each can be approached in any order.
 
-[AJVOT
+### Checkley Manor
 
-The manor is1 nV more; the Beck worth crews knocked down and hauled away the roof, floors, and walls of the crumbling building in a few days. Only the foundations are left, and those have been partially flattened; a por­tion of the basement area already has been filled. The basement is merely a long rectangle, filled with rubble at one end and with a roped-off alcove at the other end.
+![](Pasted%20image%2020261118233727.png)
 
-It is common knowledge that Beckworth plans to build a small apartment building. This never
+The manor is no more; the Beck worth crews knocked down and hauled away the roof, floors, and walls of the crumbling building in a few days. Only the foundations are left, and those have been partially flattened; a por­tion of the basement area already has been filled. The basement is merely a long rectangle, filled with rubble at one end and with a roped-off alcove at the other end.
 
-![](file:///C:/Users/MIKHAL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image115.gif)happens — Beckworth runs into financial troubles in the spring of 1929, and then dissolves a few months after the Crash.
+It is common knowledge that Beckworth plans to build a small apartment building. This never happens — Beckworth runs into financial troubles in the spring of 1929, and then dissolves a few months after the Crash.
 
 Since discovery of the skeleton, a police officer has guarded the scene and will do so until the authorities decide nothing more can be learned there. The consta­ble watches only during daylight hours, though; investi­gators who come early or later see only a few stakes and symbolic rope fence surrounding the alcove area. A tag on the rope requests politely that no one take anything from or interfere with police study of the site.
 
 The constable amiably agrees that the investigators can wander the entire area, except for the roped-off alcove. There are no further clues in the alcove where the skeleton was found.
 
-If the investigators decide to study any area apart from the alcove, call for a Spot Hidden roll {Spot check, DC 15}. With a success, they find in the dirt a claw or long, horny fingernail. A successful Biology roll (Knowledge (Biology) or Knowledge (Anatomy) check, DC 10} positively identifies the item as freshly from a human foot. Physicians can attempt a Know roll to make this identification (Doctors can attempt an Intelligence check, DC 12}.
+If the investigators decide to study any area apart from the alcove, call for a Spot Hidden roll {Spot check, DC 15}. With a success, they find in the dirt a claw or long, horny fingernail. A successful Biology roll \[Knowledge (Biology) or Knowledge (Anatomy) check, DC 10\] positively identifies the item as freshly from a human foot. Physicians can attempt a Know roll to make this identification \[Doctors can attempt an Intelligence check, DC 12\].
 
-A successful Track roll (Wilderness Lore check, DC 10} for this area identifies human footprints, unusual in that they are small (child-sized), barefoot, and that the heels of the feet have been planted first. Indentations seem to associate more of the same long, claw-like toe­nails with these tracks, but the evidence is uncertain. The tracks are relatively fresh.
+A successful Track roll \[Wilderness Lore check, DC 10\] for this area identifies human footprints, unusual in that they are small (child-sized), barefoot, and that the heels of the feet have been planted first. Indentations seem to associate more of the same long, claw-like toe­nails with these tracks, but the evidence is uncertain. The tracks are relatively fresh.
 
 Following the footprints’ direction of travel leads away from the basement area into rubble left by the demolition crew, and there vanishes. Followed back­ward, the tracks lead to a point near the end of the base­ment opposite to the alcove. The tracks suddenly end in a clump of earth.
 
@@ -152,28 +82,15 @@ If they agree, and not all will given such a bald proposition, allow them to pok
 
 If the investigators decide to excavate the tunnel, only investigators of SIZ 11 or less (Medium size or less} can negotiate it without spending several hours widening it.
 
-Excavated or negotiated, the claustrophobic tunnel leads to a small, stomach-turning room as yet undiscov­ered beneath the rubble. A strong metal door opens to the basement from this room, but it is locked and the rubble beyond blocks it as well. If cleared, the investiga-
-
-  
-
-|   |
-|---|
-||
-||![](file:///C:/Users/MIKHAL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image117.jpg)|
-
-  
-
-tors see that on the basement side a removable wooden panel hid the door from view.
+Excavated or negotiated, the claustrophobic tunnel leads to a small, stomach-turning room as yet undiscov­ered beneath the rubble. A strong metal door opens to the basement from this room, but it is locked and the rubble beyond blocks it as well. If cleared, the investigators see that on the basement side a removable wooden panel hid the door from view.
 
 The floor of the secret room is covered with human waste. Deep gashes and claw marks mar the door and walls. Whatever was kept inside finally tore its way through the brick foundations and dug its way to the surface and freedom.
 
-Faint traces of a large design in white enamel paint can also be seen on the floor. A successful Occult roll {Knowledge (Occult) or Spellcraft, DC 15| identifies it as a voodoo symbol related to necromancy. A successful Spot Hidden {Spot check, DC 10|, exposes a small patch of blue gingham fabric, filthy and rotting, torn from some piece of clothing.
+Faint traces of a large design in white enamel paint can also be seen on the floor. A successful Occult roll \[Knowledge (Occult) or Spellcraft, DC 15\] identifies it as a voodoo symbol related to necromancy. A successful Spot Hidden \[Spot check, DC 10\], exposes a small patch of blue gingham fabric, filthy and rotting, torn from some piece of clothing.
 
 If the investigators fail to find the secret room, the authorities allow the demolition work to go forward two days later, and workmen almost immediately find it upon their return. The police are called in again, and the newspapers have the whole story (except for the matter of the long toe-claws) the next day. After the investiga­tors first come to the site, visits after dark risk a 25% chance of encountering one of the undead children.
 
-  
-
-/нс police
+### The Police
 
 Arkham’s finest have assigned 32-year-old Detective Mickey Harrigan to the case. He’s also liaison with the County Coroner. Harrigan is a jaunty, friendly man with dark curly hair. He loves the game of rugby.
 
@@ -183,81 +100,39 @@ The deceased was a female of advanced age, judging by the worn teeth and calcium
 
 Possible suspects have long ago scattered or are dead. An interview with Willard Crossman yielded no informa­tion, and Mrs. Estheridge (benefactress of record to the short-lived Checkley Institute) professed absolutely no knowledge of who could have committed such a deed.
 
-  
-
-  
-
 Lacking new information, Harrigan is at a dead end, and already believes that this file will never be marked SOLVED,
 
 If the investigators do not have good relations with the police, Harrigan discloses nothing, telling them to wait the few days until the inquest.
 
 If the investigators think to ask about it, Harrigan quickly shows them the jewelry found with the skeleton, hoping that they may recognize it. If they stupidly ignore the jewelry clue, a picture of the finds appears in tomor­row’s paper, as Harrigan tries for a lead.
 
-A successful Occult roll |Knowledge (Occult), DC 15| indicates that the silver necklace is of a sort often worn by those connected with Haitian voodoo.
+A successful Occult roll \[Knowledge (Occult), DC 15\] indicates that the silver necklace is of a sort often worn by those connected with Haitian voodoo.
 
-Though the newspaper photo does not include them, there also are two silver bracelets. Each is a band of silver links from which are suspended matching halves of a large silver medallion. The assembled medal­lion depicts a three-lobed eye wreathed by flames. Around the edge of the medallion humans and beasts commit various unnatural acts — the reason that the newspaper photos do not show the bracelets. A success­ful Anthropology roll [Knowledge (Anthropology), DC 14| reveals the medallion to have connection with the African god Ahtu. A successful Cthulhu Mythos roll |DC 10} indicates that Ahtu is one of the many forms of Nyarlathotep.
+Though the newspaper photo does not include them, there also are two silver bracelets. Each is a band of silver links from which are suspended matching halves of a large silver medallion. The assembled medal­lion depicts a three-lobed eye wreathed by flames. Around the edge of the medallion humans and beasts commit various unnatural acts — the reason that the newspaper photos do not show the bracelets. A success­ful Anthropology roll \[Knowledge (Anthropology), DC 14\] reveals the medallion to have connection with the African god Ahtu. A successful Cthulhu Mythos roll \[DC 10\] indicates that Ahtu is one of the many forms of Nyarlathotep.
 
 Harrigan cannot imagine that Checkley ever owned this sort of jewelry.
 
-Неи/урлрет -pi lev
+### Newspaper Files
 
-Keepers'should require at least one hour per Library Use roll (Research check, DC 15} to find the following items. The local papers have a number of stories (including those in _Dead Papers 2)_ and obituaries relat­ing to the Checkleys.
+Keepers should require at least one hour per Library Use roll \[Research check, DC 15\] to find the following items. The local papers have a number of stories (including those in [[Раздатка 2]]) and obituaries relat­ing to the Checkleys.
 
-On April 19,1903, Mrs. Jason (Rose) Checkley died of a wasting illness.
+**On April 19,1903,** Mrs. Jason (Rose) Checkley died of a wasting illness.
 
-On August 4-5, 1905, Adam (age 13), Rosemary (age 15), and Jessica Checkley (age 9) died. The year 1905 was a plague year and the obituaries then are numerous and brief — the large numbers of dead are obvious: a suc­cessful Know or Idea roll (Knowledge (Local) or Intelligence check, DC 10} recalls the cholera plague which devastated the town.
+**On August 4-5, 1905,** Adam (age 13), Rosemary (age 15), and Jessica Checkley (age 9) died. The year 1905 was a plague year and the obituaries then are numerous and brief — the large numbers of dead are obvious: a suc­cessful Know or Idea roll \[Knowledge (Local) or Intelligence check, DC 10\] recalls the cholera plague which devastated the town.
 
 There is a recent obituary for Jason Checkley, dated a week ago. Il is of no interest.
 
 All obituaries indicate interment in the Checkley family mausoleum in Christchurch Cemetery.
 
-By the way, the Brown Street address of the Institute for Psychic Research is now occupied by a firm attempt-
+By the way, the Brown Street address of the Institute for Psychic Research is now occupied by a firm attempting to perfect the new science of mass-mail advertising. There are no clues at that address.
 
-  
+### Beckworth Development Company
 
-**A New School In Arkham**
-
-Director Jason Checkley today announced the opening of an institute dedicated to the study of spiritualist phenomena, the Checkley Institute for Psychic Research.
-
-Housed on the second floor of 623 Brown Street, the center contains an 5000-volume library, study space, and a small lecture hall.
-
-Guest rooms, as yet uncompleted, offer living quarters for visiting students and lec­turers.
-
-_— Arkham Advertiser,_ Aug. 28, 1917
-
-**Psychic Institute Closes**
-
-The Checkley Institute for Psychic Research today closed its doors at 623 Brown Street.
-
-Со-Directress Mrs. Andrew Estheridge castigated the increasingly atheistic temper of the times while announcing that some furnishings would be auctioned to pay pend­ing Institute debts.
-
-The founder of the Institute, Director Jason Checkley, will retain certain portions of the Institute library.
-
-_— Arkham Advertiser,_ Nov. 23, 1920
-
-Dead Papers 2
-
-ing to perfect the new science of mass-mail advertising. There are no clues at that address.
-
-Ьес къиотТ^ l5cv^ (^отрАЛ/м Headquartered in the Tower Professional Building,'the Beckworth offices are lushly prosperous, with fine rugs, elegant furniture, and wood-panelled offices.
+Headquartered in the Tower Professional Building, the Beckworth offices are lushly prosperous, with fine rugs, elegant furniture, and wood-panelled offices.
 
 Bob Beckworth, Jr. (“Little Bob”) is in charge of the project. He’s a slick haired, chubby man in his early 30s; he wears excellent Boston-tailored suits which diminish his standing to Arkhamites, since “that sort of swank doesn’t go among decent, hard-working people.”
 
-If the investigators have already found the second secret room, he’ll be interested in knowing about it, because police examination of it will further delay dem­olition. If the police do not know of the second room,
-
-  
-
-![Надпись: 193](file:///C:/Users/MIKHAL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image091.gif)
-
-Investigating background
-
-  
-
-![](file:///C:/Users/MIKHAL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image119.jpg)|   |
-|---|
-|\|   \|<br>\|---\|<br>\|Willard Crossman\|| 
-
-he’ll smoothly offer a bribe to the investigators, to pre­vent further interference.
+If the investigators have already found the second secret room, he’ll be interested in knowing about it, because police examination of it will further delay dem­olition. If the police do not know of the second room, he’ll smoothly offer a bribe to the investigators, to pre­vent further interference.
 
 If the investigators ask permission to examine the site, he brusquely refuses, declaring that the executor of Checkley’s personal property has already declared him­self satisfied, that the police must be considered, and that possession of property as a consequence of murder is a matter to be adjudicated in court with any potential heirs. However, Beckworth Jr. can also be bribed: an offer of $50.00 gains the investigators full access to the site, provided the police allow it.
 
@@ -267,7 +142,7 @@ Billinger's, on the 500 block of Garrison, ran the estate auction, and are handl
 
 He swears that Beckworth Development bought only the furniture, house, and grounds.
 
-Gwi т/Qrojynyv w, (Executor
+### Willard Crossman, Executor
 
 Crossman, now nearly seventy, was for most of their
 
@@ -275,59 +150,35 @@ lives Jason Checkley’s best friend. While his friend was born to money, Crossm
 
 Over the years, he’s smoothed his ways and become socially adept, but rough demeanor and combativeness can show up any time. Nonetheless, the two were close.
 
-Grayed and portly, Crossman is presently in St. Mary’s Hospital, suf­fering a variety of seri­ous complaints. Weak,
-
-[aware that he is probably dying, Crossman still displays | an active mind and an assertive nature. Against doctor’s orders he continues to smoke eight to ten Havana cigars
-
-daily.
+Grayed and portly, Crossman is presently in St. Mary’s Hospital, suf­fering a variety of seri­ous complaints. Weak, aware that he is probably dying, Crossman still displays | an active mind and an assertive nature. Against doctor’s orders he continues to smoke eight to ten Havana cigars daily.
 
 Crossman says that Checkley left to him a fine ebony and ivory letter opener as a token of friendship, but that the rest of his property not previously sold to Beckworth was disposed of to Billinger’s (the auction house) or Tillinghast’s (the bookseller), and that nothing else existed.
 
 Asked about the body and the jewelry in the base­ment, his expression does not change. He knows noth­ing of it, he declares; Checkley was not the sort of man to commit murder. Very likely a servant performed the evil deed. It is unlikely that Crossman will ever sully his dead friend’s reputation by revealing this secret.
 
-He knows nothing of the second secret room. If told of it, a successful Psychology roll (Psychoanalysis check, DC 15| registers unusual surprise in his reaction: he imagined he knew everything about the situation, and now suddenly understands that he didn’t. If the investi­gators can offer firm evidence of what actually was in that room, such as a drawing or photograph of one of its inhabitants, Crossman recognizes the child in horror, and tells them everything he knows.
+He knows nothing of the second secret room. If told of it, a successful Psychology roll \[Psychoanalysis check, DC 15\] registers unusual surprise in his reaction: he imagined he knew everything about the situation, and now suddenly understands that he didn’t. If the investi­gators can offer firm evidence of what actually was in that room, such as a drawing or photograph of one of its inhabitants, Crossman recognizes the child in horror, and tells them everything he knows.
 
 If asked, he declares that he believes Mrs. Andrew (Mildred) Estheridge a charlatan, who used Checkley’s personal tragedies as a way to get her hands on his money. Crossman is a complete materialist and holds no belief in the occult or an afterlife. Checkley had a natu­ral interest in these matters after the death of his family; he and Checkley debated the issue a number of times.
 
 With a successful Credit Rating roll (opposed Diplomacy check) Crossman says that Jason had money troubles for many years, though he was a proud man who refused aid even from his closest friends.
 
-О^пк/^оллс "СУллиетзтАм Тмктлтм
+### Miskatonic University Library
 
-The investigators may wish to research voodoo' in the Library. Four hours search combined with a successful Library Use roll (Research check, DC 12) turns up a book, Voodoo _Rites unit Religions,_ by A.M. Asher, pub­lished in 1902. It takes eight hours to read this book. It concerns zombies, voodoo rituals, possessions, and related topics. With a successful English skill roll to understand the awkward, densely written prose, the reader may add 1D3 points to his or her Occult skill at the end of the adventure (Intelligence check, DC 18, gains a temporary +1 bonus to Knowledge (Occult)].
+The investigators may wish to research voodoo in the Library. Four hours search combined with a successful Library Use roll \[Research check, DC 12\] turns up a book, Voodoo _Rites unit Religions,_ by A.M. Asher, pub­lished in 1902. It takes eight hours to read this book. It concerns zombies, voodoo rituals, possessions, and related topics. With a successful English skill roll to understand the awkward, densely written prose, the reader may add 1D3 points to his or her Occult skill at the end of the adventure \[Intelligence check, DC 18, gains a temporary +1 bonus to Knowledge (Occult)\].
 
 In a chapter titled “The Practitioners,” investigators find a drawing labeled _voodoo necklace_ that is amazing­ly similar to the one discovered beside the skeleton. A few pages further is a photo, dated 1892, showing New Orleans policemen with three heavily chained prison­ers. The prisoners are black — two male, one female, arrested the caption notes, for murder and blasphe­mous ceremony.
 
-The female prisoner is short, of advanced middle age. A successful Spot Hidden (Spot check, DC 10] shows that she wears the same bracelets and necklace found with the unidentified skeleton in Checkley’s basement.
+The female prisoner is short, of advanced middle age. A successful Spot Hidden \[Spot check, DC 10\] shows that she wears the same bracelets and necklace found with the unidentified skeleton in Checkley’s basement.
 
-A paragraph in the facing text identifies the woman only as Marcella. Before the trio could be tried, Marcella
+A paragraph in the facing text identifies the woman only as Marcella. Before the trio could be tried, Marcella mysteriously escaped and was not recaptured. Her accomplices were found dead in their cells, of undeter­mined causes.
 
-  
-
-194 A SURPRISE FOR THE EXECUTOR OF THE ESTATE
-
-  
-
-D е л сГ о N _t_
-
-  
-
-  
-
-![](file:///C:/Users/MIKHAL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image121.jpg)|   |
-|---|
-|\|   \|<br>\|---\|<br>\|. Estheridge\|| ![](file:///C:/Users/MIKHAL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image103.gif)![](file:///C:/Users/MIKHAL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image103.gif)
-
-mysteriously escaped and was not recaptured. Her accomplices were found dead in their cells, of undeter­mined causes.
-
-![](file:///C:/Users/MIKHAL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image123.jpg)
+### Mrs. Estheridge
 
 Sixty-three, a widow and heiress to a mill-owner, she lives in the spacious family mansion at 288 W High St.
 
 She was a friend to Jason Checkley as well as a benefactress and the co­directress of the Institute. She strongly believes in spiritualism, and has a vigorous mind and a strong tongue.
 
-She will answer politely a limited num­ber of investigator ques­tions, but the investiga­tors must make clear the direction of their inquiries; she answers
-
-nothing beyond their purview unless one or more receive successful Credit Rating rolls (opposed Diplomacy check}, or know her, or have mutual acquaintances or family in town.
+She will answer politely a limited num­ber of investigator ques­tions, but the investiga­tors must make clear the direction of their inquiries; she answers nothing beyond their purview unless one or more receive successful Credit Rating rolls (opposed Diplomacy check}, or know her, or have mutual acquaintances or family in town.
 
 Asked about additional items perhaps pertaining to his personal estate, Mrs. Estheridge states that several years ago Jason Checkley gave her a key to a safe-deposit box at the Arkham First National Bank (150 E Hyde). She also has a letter from Checkley permitting her or her agent to open the box upon his death. At first grieving for her dead friend and then learning that his executor was hospitalized, she has left the box unexamined. “We have always found Mr. Crossman,”she says,“to be a man of callow mind, dulled by intransigent digestion of red meat.” She knows not if Crossman is aware of this deposit box (he is not).
 
@@ -343,62 +194,20 @@ She knows nothing of the secrets in the manor base­ment. She thought it odd tha
 
 Mrs. Mildred Estheridge
 
-STR 10        CON 10          SIZ9             INT 17          POW 14
+|               |                    |                  |                 |        |
+| ------------- | ------------------ | ---------------- | --------------- | ------ |
+| STR 10        | CON 10             | SIZ9             | INT 17          | POW 14 |
+| DEX 10        | APP 11             | EDU 19           | SAN 45          | HP 10  |
 
-DEX 10        APPll             EDU 19         SAN 45         HP 10
+**Damage Bonus** +0
 
-Damage Bonus +0
+**Skills:** Anthropology 25%, Archaeology 10%, German 55%, Library Use 35%, Occult 75%.
 
-Skills: Anthropology 25%, Archaeology 10%, German 55%, Library Use 35%, Occult 75%.
+### The Safe Deposit Box
 
-| <120 STATS: page 223}
+Within the box are pages from Checkley‘s diary, and a testament. Combined, they form [[Раздатка 3]].
 
-The S^k^poyif box
-
-Within the box'are pages from Checkley‘s diary, and a testament. Combined, they form _Dead Papers 3._
-
-Dead Pacers ЗА  
-(Checkley1s Testament)
-
-_. famwry_ _/. /7(//>_
-
-_• У. .Уагкп_ _/Arr__/гАу,_ _/aAt /a// rt'fmmti/kA'/y ft‘r /Ar t/m/A_ _/■/_ _//if_ _тут -аггап/_ _ntA/rr/ . Mtr-k/Ar. ' hc/tmiyrr/ Ay Arr in it /err/AAr may. • 7 A-k ran/re/ aw/krawy/rt/Arr m//A my fa’n Aww/i._
-
-_■ 7a my_ _Аачгтгн/_ _■ 7 /arr Aft /Area /Ainy,,. t/an -_ _уетаЛ /А/шу-, /Аа/_ _■i__/таА/__Ar i/rkrnyri/. • ////AmryA /Ary AmA Amman. /Ary are w/. ■ /a/-r wfk/y_ _>■/__/Arm. -TAr ktn*k may i/ tA>/rry/ny /Arm ran Ar/ram/ rar ftayr 7<'/-i r/a/mrft ra//m//Ar '■ \uAarar_ _/■_ _m/r.r . . 7/m>_
-
-_Ач-А /■>_ _rrai/aiwr/in my AArary._
-
-_. //ay_ _(!'/<■</__Aarr marry an_ _ту -г-н/._
-
-_. ^ark'/t ( AreAAy_
-
-  
-
-  
-
-![Надпись: 195](file:///C:/Users/MIKHAL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image091.gif)
-
-Well, there is a safe-deposit box
-
-  
-
-![](file:///C:/Users/MIKHAL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image125.jpg)|   |
-|---|
-|\|   \|<br>\|---\|<br>\|_МП ГГПП/ ГП_\|| |   |
-|---|
-|\|   \|<br>\|---\|<br>\|_• TAy 7._ /^Лл- .<•_er^mj mrrr tn/rrrn/ /rr__/ау_ _in_ _гиг_ _/mm- vn/rnm. ■ 7rr many t/rrt/A; /Ari>' t/ay-i__/гГ^7/''_ _/r Ar t'/t/r__го/п/. У_ _mmii/iyarr rtt/ rrArt/_ _/г-_ _rA. mi/A /Art/f._\|| |   |
-|---|
-|\|   \|<br>\|---\|<br>\|_•_ _7иу /. /7//7_ _.yl/amr/At Ami (tyrerv/. . 7 errrA/ i// ryfrrr/ /Ar_\|| |   |
-|---|
-|\|   \|<br>\|---\|<br>\|, S'< _3/ /_ _i-Ar ./fir/ Ar tfrrrAr/ (XAr r/rarmi /r- A term Arm /r Ariny ary ArArrn/rAri/r/rrn /ntrAc tn mr. ■ 7Ar -/a^Am, Arrn_ _г/'-штпег//г_ _r //r irr.r/ /rm r/ay.i a nr/ - 7 Armr/mt/carer/ /Ar Amiemrn/ rrr nr mi .Ar in./rtmK._\|| |   |
-|---|
-|\|   \|<br>\|---\|<br>\|_wyahtn/ my irmim._\|| |   |
-|---|
-|\|   \|<br>\|---\|<br>\|_C/h/Arrt/'s/rA/c._\|| |   |
-|---|
-|\|   \|<br>\|---\|<br>\|_■ /Ary 7._ _/7/A3:_ _■ /A-/ AnArm, r/r/ayi.' 1_ _)//ги_ _- 7 mtAyrr/ mArt/ Ar Aar/ r/rnr ■_ _А Ач>/_ _my mint/ mi/A rayr. . 7 r/r.,rr/ my Aam/i_ _аггши/__Are nnA_ _пт/__mrttny i/ AAr mr r/ Arr rAmArmi. ' ///rn -7_\|| |   |
-|---|
-|\|   \|<br>\|---\|<br>\|Dead Papers 30 (Checkley’s diary)\|| ![Надпись: ■ Tiny //A /7(A5.- ■ AAnr n/^rr/i/rti rw /rrmrnr/rmi. . 7 /rrr/ /Arm tryuArr/y Art/ /Ary .Arm nr i/ym, r-/ fry hr у /г rmnmrnma/r mi/A mr. . 7/Arn //rr/ . A ran /rm/ /Arm.](file:///C:/Users/MIKHAL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image126.gif)![Надпись: ■/Try / /. /V/>7: / Aarr e/m/rr/ /Аг -ч гг'гпг/; nttr/ Aar/ /Arm rrmrrr /Arir АгА-ту/нуи. 1 )//iA- /Ar-ч /Ат- rAmr//in /Аг Атутги/. . 7 .шт/ Ата a/tr/r/r^rir'ary. ■ А a/.ir in/mr/ /г-/шаг/ /Ат/ та// г/ /Аг /тггтги/ /гг гп/rr /г Air/r /Ar rn/rann- /г. /Artr гАатАгс.](file:///C:/Users/MIKHAL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image127.gif)![Надпись: ■ X/tу /02. /7(Aff /•)иг'П//асА'п/тг/гг/ау. ■ 7/ft'm, ■ /AAnn. ■ - 7 /cif/crr/ ft/ П /rrr/ Aft/'/. Af ГтАиг/ ft/ тг/гг/П At Ann/. -T/mmi Г,](file:///C:/Users/MIKHAL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image128.gif)![Надпись: ■Ап// Ar/пгггг/ tn /ггп/ /Arm Ам- mi/г/ anima/i.](file:///C:/Users/MIKHAL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image129.gif)![Надпись: /г. /Arif rrerrrry may Ar Air A An ft/ A/tnt/. ■ 7 mi// r/rrr/r /Ar rat/ у](file:///C:/Users/MIKHAL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image130.gif)er
+### The Bookseller
 
 The investigators may find here Jason Checkley’s diary or more arcane tomes. Checkley’s books, purchased as a single lot from executor Willard Crossman, still rest in packing crates in the basement of Edwin Tillinghast, Bookseller.
 
@@ -416,49 +225,18 @@ After the missing pages, Checkley often refers to “the problem” or “my pro
 
 Later references regarding new events include the opening and closing of the Psychic Institute. He frequently mentions Mrs. Estheridge, always with respect.
 
-The _Codex_ and the _Chants_ are in Tillinghast’s basement, their spines and boards untitled. If the investigators have been looking for Checkley’s diary, they’ve seen the books and passed them by already. A single investigator now only needs four
+The _Codex_ and the _Chants_ are in Tillinghast’s basement, their spines and boards untitled. If the investigators have been looking for Checkley’s diary, they’ve seen the books and passed them by already. A single investigator now only needs four hours and two successful Spot Hidden rolls \[two Search Checks, DC 20\] to locate the  volumes in the rubble, in that case. If the search is fresh, it  
+takes one hour to locate the books.  
 
-  
+If the investigators have not yet bought the diary,  Tillinghast wants $45 for The Nyhargo Code and $25 for the  Dhol Chants. Tillinghast greedily doubles the prices if the  investigators make a second trip to the shop.
 
-D с л а о | N Г^ r _t_
+### Christchurch Cemetery
 
-|   |
-|---|
-||
-||![](file:///C:/Users/MIKHAL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image132.jpg)|
+![](Pasted%20image%2020261119000448.png)
 
-  
-|   |
-|---|
-|\|   \|<br>\|---\|<br>\|Edwin Tillinghast\|| 
+Made of fine Vermont marble, the Checkley mausoleum is  found in a secluded section of the cemetery. A heavy chain  and lock bar the double doors.  
 
-|   |   |   |   |
-|---|---|---|---|
-|||||
-||![](file:///C:/Users/MIKHAL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image134.gif)|
-|||![](file:///C:/Users/MIKHAL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image135.jpg)|
-||
-
-  
-|   |
-|---|
-|\|   \|<br>\|---\|<br>\|Dead Papers 4 (Checkley’s Diary)\||  
-
-|   |
-|---|
-||
-||![](file:///C:/Users/MIKHAL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image137.jpg)|
-
-  
-
-  
-  
-
-![Надпись: 197](file:///C:/Users/MIKHAL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image091.gif)
-
-Someone else also visited the с е m e t e r y
-
-  
+If the investigators handle the lock and chain, the lock  falls apart - someone has broken it and then carefully replaced it on the chain. Pulling the chain back, the investigators enter the mausoleum without difficulty.
 
 Inside, interment chambers filled with centuries of Checkley sarcophagi line the walls three high. Each opening is sealed with a flat stone bearing the name of the tenant.
 
@@ -466,30 +244,9 @@ The marble is fixed with mortar. If the characters even glance at Jason Checkley
 
 The other crypts are intact. Opening any other crypt takes twenty minutes of noisy work with hammer and chisel. The coffins of Jason’s three children are filled with sandbags, to approximate each child’s weight.
 
-Outside of the mausoleum, a successful Track roll {Wilderness Lore, DC 15J finds a set of Jessica’s child­sized footprints. If the investigators successfully attempt two successful Track rolls (another Wilderness Lore check, DC 15], the footprints can be followed back to Jessica’s lair on the south side of the cemetery. There, with a successful Luck roll (Spot check, DC 12], the investigator finds a rotten swatch of blue gingham cloth, a piece fallen from Jessica’s rotting dress. This material is identical to that which might have been found in the mansion’s second secret room.
+Outside of the mausoleum, a successful Track roll \[Wilderness Lore, DC 15\] finds a set of Jessica’s child­sized footprints. If the investigators successfully attempt two successful Track rolls \[another Wilderness Lore check, DC 15\], the footprints can be followed back to Jessica’s lair on the south side of the cemetery. There, with a successful Luck roll \[Spot check, DC 12\], the investigator finds a rotten swatch of blue gingham cloth, a piece fallen from Jessica’s rotting dress. This material is identical to that which might have been found in the mansion’s second secret room.
 
-|   |
-|---|
-|![](file:///C:/Users/MIKHAL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image139.jpg)|
-
-  
-
-|   |
-|---|
-||
-||![](file:///C:/Users/MIKHAL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image140.gif)|
-
-  
-
-i parly, with ihe exception of Waite himself, died before the journey I concluded. Waite was later found wandering near the mouth of the I Congo River, suffering from heal stroke, tropical illnesses, and numerous cuts and abrasions.
-
-This book deals with the living dead in various forms, hut * focuses on the control and destruction of such entities. The book 1 men I ions “the Nyhargo code”, a powerful spell that should be writ­ten on a wall in blue and green chalk, but that spell is never fully discussed or detailed.
-
-The reader of this book may exhibit a personal tendency toward | necrophobia, the fear ot dead things. _Sanity loss: Id2/IM; Cthulhu Mythos_ +3 _percentiles, skill check in Occult; average_ 3 _weeks to study land comprehendlb hours to skim._ Spells: Black Binding, Call the I Dead Walkers, Create Bad-Corpse Dust, Nyhargo Dirge. In this par-
-
-Г л T R Г A ny
-
-CEvcwAy
+### Events
 
 Events independent of investigator actions take place during this scenario. They are listed below. They intro­duce new locations and clues. Event I is simply a description, but the rest are in the form of player hand­outs. Although some events must occur in sequence (explained below), most can be used by the keeper when he or she sees fit.
 
@@ -497,27 +254,7 @@ The mysterious man from New Orleans, alias Dr. Marquis, is a voodoo priest come 
 
 The police know of these events before they appear in the newspapers. If the investigators have befriended Detective Harrigan, he telephones the group — they may investigate the sites sooner. Investigating sites involving the zombies can reveal tracks, swatches of cloth, or other clues the keeper wishes to introduce.
 
-If the investigators interview the stricken police offi­cer and receive a successful Psychoanalysis roll
-
-![](file:///C:/Users/MIKHAL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image142.jpg)
-
-tkularcopy of the hook, two spells have been entered as margina­lia in ink, Call Zombie and Destroy Zombie.
-
-лд/Лу
-
-Written by Heinrich Zimmerman. Before the first World War, he
-
-studied the rich rhythmic complexities of West African music, pro­fessing to discover odd similarities to Caribbean music al the lime
-
-of Columbus.
-
-The spells are in the form of musical chants and, because of their micro-tonality, require either a human voice or an unfretted stringed instrument to be properly performed. A successful Art I (Sing or Musical Instrument) roll must be made to sucessfully cast a spell |Performance (Song or String Instrument), DC 10|.
-
-The book is written in German (Speak German, DC 16J. Sanity _loss: 1__1)6/21)6; Cthulhu Mythos_ +7 _percentiles: average 20 weeks to \ study and comprehend/IS hours to skim._ Spells: Call/Dismtss Ahtu, 1 Summon/Bind Veerla. (Sanity Loss: Ш2 initial, and 1D4 upon ' completion; Cthulhu Mythos: +1|.
-
-  
-
-I Psychoanalysis check, DC 20}, he becomes lucid long enough to describe his encounter with the veerla.
+If the investigators interview the stricken police offi­cer and receive a successful Psychoanalysis roll \[Psychoanalysis check, DC 20\], he becomes lucid long enough to describe his encounter with the veerla.
 
 Investigating the hotel room after Dr. Marquis has fled provides little information, though the investigators lose 0/1D2 SAN if the hands are still there. (The medical examiner, Dr. Sprague, removes the hands as soon as the police finish their initial search for clues.)
 
@@ -525,90 +262,17 @@ The keeper should feel free to add more events, sim­ilar to those shown above, 
 
 Other events relate to the activities of the Checkley zombies.
 
-CEvew^ I
+### Event 1
 
 The first event occurs at the police station before or after (keeper’s choice) the investigators’ first visit.
-
-  
-
-  
-
-|   |
-|---|
-||
-||![](file:///C:/Users/MIKHAL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image144.gif)|
-
-  
-
-Calls all zombies within a mile of the caster. The chant costs 2 magic points and ID3 Sanity points.
-
-After sunset, the caster inscribes a circle on the ground, then stands in the center and chants. The circle protects the caster or casters from the undead as long as they remain within. A circle holds no more than four people.
-
-Like moths to a candle, the zombies are drawn to the circle, but then must stop al its edge, staring hungrily at those inside. The zombies must remain al the circle’s edge until dawn, unable to escape from whatever attacks are made.
-
-Learning this spell requires one day of study and a successful DI00 roil of 1NT x5% or less.
-
-Sanity points for each cast, A short chant is punctuated by breaking the neck of a bird, traditionally a white chicken. This causes the instant collapse and rapid decay of the zombie at which the dead bird is thrust. Each zombie requires another bird. The spell can be learned in two hours with a D100 roll of I NT x5% or less, hut the _Codex_ version is translated confusingly, so that the student has a 50% chance of choosing the wrong and ineffectual version.
-
-Qa^/Thynyy? _X^fu_
-
-Ahtu is one of Nyarlathotep’s 999 forms, worshiped mainly in central and southern Africa. Ahtu appears in the form of a black column of viscous matter, fifty feet in diameter, erupting from below ground.
-
-A special amulet depicting a three-lobed eye wreathed by flames is necessary for the Calling. Normally, this amulet would be kept in two pieces so as to not accidentally arouse Ahtu. It is believed that Ahtu can be called only at certain special locations in Africa, though others may exist.
-
-Summow /bi jv<A^t€\
-
-The _veerla_ are thought of as spirits or creatures from somewhere outside earthly reality. They are immaterial, formless, and near-
-
-ly invisible. Viewing one costs 0/1D4 Sanity points. A veerla is immune to all physical weapons and most magical effects. As servants, they are mainly used to retrieve objects or to attack I enemies.
-
-Learning this spell costs 2 POW, 11)6+2 Sanity points, and two ' months of concentrated study to understand the extra-dimension- ’ al concepts at its heart.
-
-The spell causes a single veerla to come before the caster and I agree to perform a particular task. The caster must spend 11)6+3 I magic points and lose 11)6 SAN for each veerla summoned during | the lengthy ceremony.
-
-To Summon/Bind a veerla, the caster must inscribe a complex symbol in while on a dark surface, then crouch upon the symbol, j One or more assistants may hand the caster small animals to be sacrificed and rattles to be shaken — this ritual is difficult to per­form alone. The climax of the ceremony comes when two human I hands, severed from a corpse less than a week old, must be held aloft by the caster. When the veerla appears, it takes hold of the left hand and pulls it out of the casters grip, as though the severed hand could float in air.
-
-The caster must be able to physically see or correctly visualize | the target, and then mentally make his or her command. A veerla | may be held in readiness by the caster up to 24 hours before the ' | summoned veerla is lost.
-
-A veerla attacks by attempting to possess its enemy, pitting its fixed POW of 22 against the POW of its intended victim. If the veerla wins the struggle, its target loses 11)8 Sanity Points, the entity continues to attack until the victim goes temporarily or permanently insane. The veerla takes possession of the tar­get’s body, usually to remain there until the victim's body is somehow destroyed. A veerla who loses a POW vs. POW struggle immediately Hees and must be re-summoned before it makes I another attack.
-
-A corpse can automatically be possessed and animated by a veerla if directed to do so by the summoner.
-
-A possessed victim behaves like a zombie, foraging afield and lacking any rational intelligence. Possession and animation may last for decades or centuries, until the possessed physical body loses all hit points, freeing the veerla.
-
-Summon/Bind Veerla is one of several ways to create zombies.
-
-  
-
-  
-
-![Надпись: 199](file:///C:/Users/MIKHAL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image091.gif)
-
-Other events
-
-  
 
 A tall black many wearing spectacles, appears one night to claim the remains and effects of the corpse found in the mansion basement. He identifies himself as Dr. Marquis, from New Orleans. There is some question about the papers he shows the police; they in any case must refuse his request at least until the inquest. He leaves an address where he can be contacted, but it is false.
 
 The investigators learn of this incident if they are friendly with Detective Harrigan, in charge of the case.
 
-Dead Papers 5 (event 2)
+----
 
-**Ghost Spotted in Harper’s Woods**
-
-Three people have recently reported seeing a ghost prowling Harper's woods, just north of town. All three sightings were made after mid­night by lone drivers.
-
-One, Brian Fosworth, an employee at Benson's Markel, was so startled by the appari­tion that he nearly tumbled the market's deliv­ery truck into Harpers Brook.
-
-Stories have long been told of sacred Indian grounds within the woods.
-
-In the past, “ghosts" often have been report­ed in the area, but usually a young boy with a sheet is discovered to be the culprit and the mat­ter is put to rest.
-
-Really now, young man, it's too early for Halloween pranks.
-
-— Arkham _Gazelle_
-
-![](file:///C:/Users/MIKHAL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image146.jpg)
+## The Zombie Children
 
 day they were brought back from the dead.
 
@@ -632,6 +296,8 @@ Hungry or cornered, the zombies always attack, choosing a single investigator an
 
 Once in a zombie’s clutches, investigator and mon­ster roll and sway, making attacks by other investigators more difficult. If encounters in town demand gunfire, the shots attract a lol of attention. Using magic is the best way to eliminate the things.
 
+### Adam
+
 ХХзт
 
 Highway 1A follows Federal Street north out of town. Harper’s Woods rises less than a mile further on, cover­ing about forty hilly acres with dark, dense growth undisturbed for more than a hundred years.
@@ -642,6 +308,7 @@ Adam is the source of the ghost story that appeared in the newspaper. His pale, 
 
 Harper’s Woods can be thoroughly explored by four investigators in two days. Call for one Track roll |Wilderness Lore check, DC 15} each day of explo­ration; allow the players to choose who gets the roll. A success finds Adam’s footprints: these bear the same exaggerated toenails or claws as the tracks at the Checkley mansion.
 
+----
   
 
 |   |
@@ -779,7 +446,7 @@ The renter is described as a tall, distinguished-looking Negro. The man is said 
 
   
 
-  
+  ----
 
 Additionally, each day of search ask for a Luck roll followed by a Spot Hidden roll (Spot, DC 25}, the first investigator to succeed at both finds the locket, and chain, for each investigator. The first investigator to suc­ceed in the check finds a late Victorian gold locket and broken chain. The outside of the locket is engraved _“A. C.”_ Inside are tiny blurred photos of a man and woman — with a successful Know roll | Intelligence check, DC 10}, an investigator recognizes the man as a much younger Jason Checkley.
 
@@ -821,6 +488,8 @@ A YOUNGER JASON CHECKLEY
 
 his tongue has withered and dried to a stub; maggots and beetles prow! his dead flesh. No clothes are left to him.
 
+### Rosemary
+
 Ттиепултм
 
 Great brick warehouses, built in the early nineteenth century, stand mostly unused in Arkham. Some have not been entered by their owners since before the World War. Trash and abandoned automobiles choke the nar­row alleys as well as River Street beyond. This is where Rosemary keeps herself; preying on rats, stray cats and dogs, drunks, and luckless transients.
@@ -837,6 +506,7 @@ Rosemary, Checkley’s oldest daughter, was once the family beauty, and the deli
 
 She inhabits one of the decaying brick warehouses lining Arkham’s riverfront. As with all the warehouses, the doors are chained and locked. However, the shutter sealing the eastern window on the south wall of this
 
+----
   
 
 ![](file:///C:/Users/MIKHAL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image153.jpg)![](file:///C:/Users/MIKHAL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image155.jpg)
@@ -879,7 +549,7 @@ Notes: When _hit points are brought to zero, the zombie disinte­grates. As appr
 
 |d20STATS: page 223-224}
 
-  
+  ----
 
 ![](file:///C:/Users/MIKHAL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image162.jpg)
 
@@ -890,6 +560,8 @@ Notes: When _hit points are brought to zero, the zombie disinte­grates. As appr
 |\|   \|<br>\|---\|<br>\|Jessica\|| 
 
 рнсл
+
+### Jessica
 
 Tier lair is a overgrown old tomb located near the Old Burial Ground portion of Christchurch Cemetery. Headstones here date back to the late 18th century, long before Christchurch acquired the area. In the Carter family plot a small well-traveled trail leads into the woods. Twenty yards into the forest is a crumbling brick tomb with a cor-
 
@@ -921,7 +593,7 @@ Claw 50%, damage 11)4'
 
 _* having successfully bitten, Jessica holds on with her teeth and uses both hands to Claw,_
 
-  
+----  
 
   
 
@@ -945,7 +617,7 @@ Notes: _When hit points are brought to zero, the zombie disintegrates. As approp
 
 |d20 STATS: page 224}
 
-QojvcIu^iojv
+## Conclusion
 
 The investigators must fail the intention of the assignment — no additional jewelry or treasures exist with which to enrich Chcckley’s heirs.
 
@@ -959,6 +631,4 @@ Though blatant murder of children is not something Arkham wishes to promote, the
 
 Nonetheless, if involved in one or more inquests only through word of mouth, the investigators receive no Credit Rating increases. It’s always better not to be talked about in a small town.
 
-![](file:///C:/Users/MIKHAL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image103.gif)Destroying, (or capturing), one or more of the zombie-children is worth 1D6 Sanity each to those in the fights. Capturing the undead children brings the same reward, with the bonus of no inquest interfering with Credit Rating increases. ♦♦
-
-Having done their “Christian Duty
+![](file:///C:/Users/MIKHAL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image103.gif)Destroying, (or capturing), one or more of the zombie-children is worth 1D6 Sanity each to those in the fights. Capturing the undead children brings the same reward, with the bonus of no inquest interfering with Credit Rating increases. 
