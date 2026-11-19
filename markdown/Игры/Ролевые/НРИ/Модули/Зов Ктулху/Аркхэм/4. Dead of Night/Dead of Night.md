@@ -1,12 +1,10 @@
 # Dead of Night
 
-*With apologies to Brian Lumley and David Drake, curious and*  
-*tragic finds are made at the Checkley mansion, leading the*  
-*investigators to trace the skeins of a long-hidden wrong.*
+*With apologies to Brian Lumley and David Drake, curious and tragic finds are made at the Checkley mansion, leading the investigators to trace the skeins of a long-hidden wrong.*
 
 This scenario is designed for three to four investigators of moderate experience. Sharp eyes are of more use than good weapons skills; cog­itating upon the evidence will be the most useful.
 
-Playing times vary, but most keepers should not expect “Dead Of Night” to
+Playing times vary, but most keepers should not expect “Dead Of Night” to afford more than two limited evenings of play, and may well be finished in one.
 
 ## Keeper Information
 
@@ -62,7 +60,7 @@ The investigators have a number of avenues to explore. They will certainly visit
 
 ![](Pasted%20image%2020261118233727.png)
 
-The manor is no more; the Beck worth crews knocked down and hauled away the roof, floors, and walls of the crumbling building in a few days. Only the foundations are left, and those have been partially flattened; a por­tion of the basement area already has been filled. The basement is merely a long rectangle, filled with rubble at one end and with a roped-off alcove at the other end.
+The manor is no more; the Beckworth crews knocked down and hauled away the roof, floors, and walls of the crumbling building in a few days. Only the foundations are left, and those have been partially flattened; a por­tion of the basement area already has been filled. The basement is merely a long rectangle, filled with rubble at one end and with a roped-off alcove at the other end.
 
 It is common knowledge that Beckworth plans to build a small apartment building. This never happens — Beckworth runs into financial troubles in the spring of 1929, and then dissolves a few months after the Crash.
 
@@ -164,7 +162,7 @@ With a successful Credit Rating roll (opposed Diplomacy check) Crossman says tha
 
 ### Miskatonic University Library
 
-The investigators may wish to research voodoo in the Library. Four hours search combined with a successful Library Use roll \[Research check, DC 12\] turns up a book, Voodoo _Rites unit Religions,_ by A.M. Asher, pub­lished in 1902. It takes eight hours to read this book. It concerns zombies, voodoo rituals, possessions, and related topics. With a successful English skill roll to understand the awkward, densely written prose, the reader may add 1D3 points to his or her Occult skill at the end of the adventure \[Intelligence check, DC 18, gains a temporary +1 bonus to Knowledge (Occult)\].
+The investigators may wish to research voodoo in the Library. Four hours search combined with a successful Library Use roll \[Research check, DC 12\] turns up a book, _Voodoo Rites and Religions,_ by A.M. Asher, pub­lished in 1902. It takes eight hours to read this book. It concerns zombies, voodoo rituals, possessions, and related topics. With a successful English skill roll to understand the awkward, densely written prose, the reader may add 1D3 points to his or her Occult skill at the end of the adventure \[Intelligence check, DC 18, gains a temporary +1 bonus to Knowledge (Occult)\].
 
 In a chapter titled “The Practitioners,” investigators find a drawing labeled _voodoo necklace_ that is amazing­ly similar to the one discovered beside the skeleton. A few pages further is a photo, dated 1892, showing New Orleans policemen with three heavily chained prison­ers. The prisoners are black — two male, one female, arrested the caption notes, for murder and blasphe­mous ceremony.
 
@@ -270,11 +268,9 @@ A tall black many wearing spectacles, appears one night to claim the remains and
 
 The investigators learn of this incident if they are friendly with Detective Harrigan, in charge of the case.
 
-----
-
 ## The Zombie Children
 
-day they were brought back from the dead.
+Jason Checkley's children have not changed since the day they were brought back from the dead.
 
 They have not aged and their skin still holds the pal­lor of death. Adam and Rosemary were dead longer before resurrection; their skin is blotched and discolored and, in Adam’s case, the signs of bloat and decay can be detected. Little Jessica’s skin is smooth and clear.
 
@@ -298,199 +294,53 @@ Once in a zombie’s clutches, investigator and mon­ster roll and sway, making 
 
 ### Adam
 
-ХХзт
-
 Highway 1A follows Federal Street north out of town. Harper’s Woods rises less than a mile further on, cover­ing about forty hilly acres with dark, dense growth undisturbed for more than a hundred years.
 
 In the heart of the woods an old stone bridge cross­es Harper’s Brook. A new two-foot-in-diameter culvert parallels the bridge’s foundations at either end, handling waters which once threatened to undermine the fine old bridge. In daylight, Adam dwells within the north cul­vert; at night he forages through the woods.
 
 Adam is the source of the ghost story that appeared in the newspaper. His pale, dead skin shows up well at night. The encounters were accidental; Adam gets enough food from the birds and animals he catches and eats. He is, however, interested in killing a human should the opportunity appear. Once winter begins, his interest in humans will increase.
 
-Harper’s Woods can be thoroughly explored by four investigators in two days. Call for one Track roll |Wilderness Lore check, DC 15} each day of explo­ration; allow the players to choose who gets the roll. A success finds Adam’s footprints: these bear the same exaggerated toenails or claws as the tracks at the Checkley mansion.
+Harper’s Woods can be thoroughly explored by four investigators in two days. Call for one Track roll \[Wilderness Lore check, DC 15\] each day of explo­ration; allow the players to choose who gets the roll. A success finds Adam’s footprints: these bear the same exaggerated toenails or claws as the tracks at the Checkley mansion.
 
-----
-  
+Additionally, each day of search ask for a Luck roll followed by a Spot Hidden roll \[Spot, DC 25\], the first investigator to succeed at both finds the locket, and chain, for each investigator. The first investigator to suc­ceed in the check finds a late Victorian gold locket and broken chain. The outside of the locket is engraved _“A. C.”_ Inside are tiny blurred photos of a man and woman — with a successful Know roll \[Intelligence check, DC 10\], an investigator recognizes the man as a much younger Jason Checkley.
 
-|   |
-|---|
-|Dead Papers 6|
+If the investigators choose to stake out the woods at night, a 50% chance each night exists that Adam passes a stake-out. Additional observation points get addition­al Spot Hidden or Listen rolls \[Spot or Listen checks, DC 12\] to notice him. Sightings always occur at some distance. Adam may flее, hide, or hide to attack and eat pursuing investigators.
 
-  
-
-|   |
-|---|
-|—|
-
-  
-
-|   |
-|---|
-|Event 4|
-
-  
-
-  
-
-![Надпись: Event 3](file:///C:/Users/MIKHAL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image147.gif)
-
-VANDALS DEFILE CEMETERY
-
-  
-
-Robbery' Attempted at Police Station
-
-An unidentified man last night forced his way past the duty sergeant and attempted to enter the property room at the rear of the Arkham police station.
-
-Another officer entering the building tried to detain the man, but the culprit lied to the street. The malefactor is described as a Negro, slender, bald, and about six feet in height.
-
-Chief Nichols asks citizens who see this man or who know of his whereabouts to contact the police immediately.
-
-— Arkham _Advertiser_
-
-Last night one or more persons unknown entered Christ- church Cemetery and unearthed a recently buried coffin. When discovered this morning, the coffin was fully exposed, the dirt heaped up around the outside of the grave.
-
-The casket seals were damaged in several places but apparently frustrated the attempt to open the coffin.
-
-Groundskeepers assure the public that the beloved in question has been safely and secuffly replaced in peace.
-
-Police have no suspects. They noted that fraternity high jinks traditionally occur in the fall.
-
-— Arkham _Gazette_
-
-  
-
-  
-
-|   |
-|---|
-|Event 5|
-
-  
-
-|   |
-|---|
-|Event 6|
-
-  
-
-  
-
-TRANSIENT INJURED IN ATTACK
-
-Warehouse Murder
-
-  
-
-A man identified only as "Joe" was admitted early this morn­ing to St. Mary's, suffering lacerations of the face and neck. At 3:57 A.M., police found the man running down River Street near Garrison, screaming for help. No pursuer was seen. He was quickly rushed to emergency treatment.
-
-Joe claimed to have been attacked by a pale young girl who first tried to kiss him and then bit him on the throat.
-
-The man could give no address. Police surmise that the indigent, while sleeping it off in an alley, was attacked by a wharf rat or stray dog.
-
-Laborers arriving on the job discovered a man's body near the Lucky Clover Cartage Co. early this morning.
-
-The coroner indicates that the man was a victim of vio­lence, placing probable cause of death either from shock or loss of blood. Though unconfirmed, wounds on the victim's face and throat were rumored to be so severe as to obscure most features.
-
-Police investigation continues.
-
-— Arkham _Advertiser_
-
-  
-
-— Arkham _Advertiser_
-
-Event 8
-
-Atrocity at the Borden Arms
-
-  
-
-Event 7
-
-Mystery’ Incident at Police Station
-
-Constable Robert E. Logan, a constable of exemplary record and of long service to Arkham s police, was found this morn­ing at 5 A.M. in a semi-coherent state at the station.
-
-Police also report that the property room had been entered, but they are unsure if anything is missing.
-
-Constable Logan was on duty at the time. For the moment, police are treating the incident as an internal matter, but no one has anything but praise for Logan. Readers may recall that last year he valiantly rescued two foolish young men from the depths of the Miskatonic.
-
-The stricken officer is presently in St. Marys Hospital undergoing tests.
-
-— Arkham _Gazette_
-
-Police were summoned to the Borden Arms Hotel this morn­ing when housemaid Ruby Rankowitz found vile and blasphe­mous remains in a third-floor room.
-
-Shockingly, officers found a pair of severed human hands wrapped in a piece of cloth. Dr. Sprague indicated that the hands had been severed from an undetermined corpse about a week old.
-
-Investigation was prompted by the remains of a dismem­bered goat strewn about the room; walls and ceiling were painted with undecipherable symbols.
-
-Police believe the renter of the room, a Dr. Marquis, has fled Arkham.
-
-The renter is described as a tall, distinguished-looking Negro. The man is said to speak with a French accent, and is apparently well-educated.
-
-— Arkham _Advertiser_
-
-  
-
-  
-
-|   |
-|---|
-|![](file:///C:/Users/MIKHAL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image149.jpg)|
-
-|   |   |   |   |
-|---|---|---|---|
-|||||
-||![Надпись: 202](file:///C:/Users/MIKHAL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image150.gif)||![Надпись: ADAM](file:///C:/Users/MIKHAL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image151.gif)|
-
-  
-
-  ----
-
-Additionally, each day of search ask for a Luck roll followed by a Spot Hidden roll (Spot, DC 25}, the first investigator to succeed at both finds the locket, and chain, for each investigator. The first investigator to suc­ceed in the check finds a late Victorian gold locket and broken chain. The outside of the locket is engraved _“A. C.”_ Inside are tiny blurred photos of a man and woman — with a successful Know roll | Intelligence check, DC 10}, an investigator recognizes the man as a much younger Jason Checkley.
-
-If the investigators choose to stake out the woods at night, a 50% chance each night exists that Adam passes a stake-out. Additional observation points get addition­al Spot Hidden or Listen rolls (Spot or Listen checks, DC I2| to notice him. Sightings always occur at some distance. Adam may Лее, hide, or hide to attack and eat pursuing investigators.
-
-To pursue Adam, investigators need 1D3 successful Spot Hidden rolls (ld3 Spot checks, DC 10 each} to keep him in sight. If a roll fails, they easily follow Adam’s track the next morning (automatic success). Adam always flees to his culvert.
+To pursue Adam, investigators need 1D3 successful Spot Hidden rolls \[1d3 Spot checks, DC 10 each\] to keep him in sight. If a roll fails, they easily follow Adam’s track the next morning (automatic success). Adam always flees to his culvert.
 
 Should the investigators assault him or enter his lair (on hands and knees, as it is quite narrow) he always attacks.
 
-ADAM, Age 13
+**ADAM, Age 13**
 
-STR 17 CON 18 SIZ 10 DEX 08 POW 01
+|         |        |        |        |        |
+| ------- | ------ | ------ | ------ | ------ |
+| STR 17  | CON 18 | SIZ 10 | DEX 08 | POW 01 |
+| Move 07 | HP 14  |        |        |        |
 
-Move 07 HP 14
+**Damage Bonus** + 1D4
 
-Damage Bonus + 1D4
+**Weapons:**
 
-Weapons: Bite 85%, damage 1D4+1D4
+- Bite 85%, damage 1D4+1D4
+- Claw 75%, damage 1D4+1D4*
 
-Claw 75%, damage 1D4+1D4*
+\* having successfully bitten, Adam holds on with his teeth and uses both hands to Claw._
 
-_'having successfully bitten, Adam holds on with his teeth and uses both hands to Claw._
+**Armor:** none, but physical weapons do half damage; impal­ing physical weapons do only I point of damage to hit points, and all ofthers do half rolled damage.
 
-Armor: none, but physical weapons do half damage; impal­ing physical weapons do only I point of damage to hit points, and all ofthers do half rolled damage.
+**Skills:** Hide 55%, Stalk 60%.
 
-Skills: Hide 55%, Stalk 60%.
+**Sanity Cost:** 1/1D8 Sanity points to see a zombie.
 
-Sanity Cost: 1/1D8 Sanity points to see a zombie.
+**Notes:** _When hit points are brought to zero, the zombie disinte­grates. As the keeper finds appropriate, many spells have no effect. Damage to zombies can be described as exploding heads, severed arms, holes through torsos, and so on, but the undead thing keeps on coming until HP reaches zero. Splattery results smearing investigator faces may call for additional Sanity losses._
 
-Notes: _When hit points are brought to zero, the zombie disinte­grates. As the keeper finds appropriate, many spells have no effect. Damage to zombies can be described as exploding heads, severed arms, holes through torsos, and so on, but the undead thing keeps on coming until HP reaches zero. Splattery results smearing investigator faces may call for additional Sanity losses._
-
-|d20 STATS: page 2231
-
-He is five feet, five inches tall, and very strong. His body is the most decayed of the three; his face is sunken and blackened. During bis existence in the woods, he has torn off two fingers. Some of his ribs can be seen where the flesh has been abraded away. Deep scratches that never bleed mar his body. His eyes show only the whites;
-
-A YOUNGER JASON CHECKLEY
-
-  
-
-his tongue has withered and dried to a stub; maggots and beetles prow! his dead flesh. No clothes are left to him.
+He is five feet, five inches tall, and very strong. His body is the most decayed of the three; his face is sunken and blackened. During bis existence in the woods, he has torn off two fingers. Some of his ribs can be seen where the flesh has been abraded away. Deep scratches that never bleed mar his body. His eyes show only the whites; his tongue has withered and dried to a stub; maggots and beetles prow! his dead flesh. No clothes are left to him.
 
 ### Rosemary
 
-Ттиепултм
+**СЮДА ВСТАВИТЬ КАРТУ ДОКОВ**
+
+**СЮДА ВСТАВИТЬ КАРТУ ЛОГОВА**
 
 Great brick warehouses, built in the early nineteenth century, stand mostly unused in Arkham. Some have not been entered by their owners since before the World War. Trash and abandoned automobiles choke the nar­row alleys as well as River Street beyond. This is where Rosemary keeps herself; preying on rats, stray cats and dogs, drunks, and luckless transients.
 
@@ -504,18 +354,7 @@ Lucky Clover Cartage represents a different prob­lem. One to four employees are
 
 Rosemary, Checkley’s oldest daughter, was once the family beauty, and the delight of her parents. Now her pale sunken face and blank, staring white eyes make her unkempt black hair hideous.
 
-She inhabits one of the decaying brick warehouses lining Arkham’s riverfront. As with all the warehouses, the doors are chained and locked. However, the shutter sealing the eastern window on the south wall of this
-
-----
-  
-
-![](file:///C:/Users/MIKHAL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image153.jpg)![](file:///C:/Users/MIKHAL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image155.jpg)
-
-  
-
-![](file:///C:/Users/MIKHAL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image157.jpg)![](file:///C:/Users/MIKHAL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image159.jpg)![](file:///C:/Users/MIKHAL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image160.gif)
-
-warehouse is not barred and can easily be swung out­ward. This is Rosemary’s entry point.
+She inhabits one of the decaying brick warehouses lining Arkham’s riverfront. As with all the warehouses, the doors are chained and locked. However, the shutter sealing the eastern window on the south wall of this warehouse is not barred and can easily be swung out­ward. This is Rosemary’s entry point.
 
 Tiring of rats, Rosemary now prefers vagrants and hobos. She has committed most of the Checkley zom­bies’ violent crimes.
 
@@ -525,97 +364,65 @@ She is five feet, three it body is somewhat de­cayed, but those ravages cannot 
 
 On her right wrist is a gold bracelet bearing an inscrip­tion: _Rosemary, our beloved daughter._
 
-ROSEMARY, Age 15
+**ROSEMARY, Age 15**
 
-STR 16 CON 18 SIZ10 DEX 06 POW 01
+|         |        |        |        |        |
+| ------- | ------ | ------ | ------ | ------ |
+| STR 16  | CON 18 | SIZ 10 | DEX 06 | POW 01 |
+| Move 07 | HP 14  |        |        |        |
 
-MOV 07 HP 14
+**Damage Bonus** + 1D4
 
-Damage Bonus +1D4
+**Weapons:**
 
-Weapons: Bite 80%, damage 11)4+11)4'
+- Bite 80%, damage 1D4+1D4*
+- Claw 80%, damage ID4+1D4
 
-Claw 80%, damage ID4+1D4
+\* having successfully bitten, Rosemary holds on with her teeth and uses both hands to Claw._
 
-_’ having successfully bitten, Rosemary holds on with her teeth and uses both hands to Claw._
+**Armor:** none, but physical weapons do half damage; impal­ing physical weapons do only I point of damage to hit points.
 
-Armor: none, but physical weapons do half damage; impal­ing physical weapons do only I point of damage to hit points.
+**Skills:** Hide 55%, Stalk 60%.
 
-Skills: Hide 55%, Stalk 60%.
+**Sanity Cost:** 1/1D8 Sanity to see.
 
-Sanity Cost: 1/1D8 Sanity to see.
-
-Notes: When _hit points are brought to zero, the zombie disinte­grates. As appropriate to the keeper, many spells have no effect. Damage to zombies can be described as exploding heads, severed arms, holes through torsos, and so on, but the undead thing keeps on coming until HP reaches zero. Splattery results smearing investigator faces may call for additional Sanity losses._
-
-|d20STATS: page 223-224}
-
-  ----
-
-![](file:///C:/Users/MIKHAL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image162.jpg)
-
-  
-
-![](file:///C:/Users/MIKHAL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image164.jpg)|   |
-|---|
-|\|   \|<br>\|---\|<br>\|Jessica\|| 
-
-рнсл
+**Notes:** _When _hit points are brought to zero, the zombie disinte­grates. As appropriate to the keeper, many spells have no effect. Damage to zombies can be described as exploding heads, severed arms, holes through torsos, and so on, but the undead thing keeps on coming until HP reaches zero. Splattery results smearing investigator faces may call for additional Sanity losses._
 
 ### Jessica
 
-Tier lair is a overgrown old tomb located near the Old Burial Ground portion of Christchurch Cemetery. Headstones here date back to the late 18th century, long before Christchurch acquired the area. In the Carter family plot a small well-traveled trail leads into the woods. Twenty yards into the forest is a crumbling brick tomb with a cor-
-
-roding iron door, built
-
-into the side of the hill. Jessica can be seen entering this tomb early in the morning, and leaving at sunset. During daylight hours, this is her hiding place.
+Her lair is a overgrown old tomb located near the Old Burial Ground portion of Christchurch Cemetery. Headstones here date back to the late 18th century, long before Christchurch acquired the area. In the Carter family plot a small well-traveled trail leads into the woods. Twenty yards into the forest is a crumbling brick tomb with a corroding iron door, built into the side of the hill. Jessica can be seen entering this tomb early in the morning, and leaving at sunset. During daylight hours, this is her hiding place.
 
 Jessica’s appetite is not as large as her brother’s or sis­ter’s; squirrels and other small animals keep her filled. At least once she attempts to unearth a fresh corpse when she fails to catch moving food.
 
-Staking out the graveyard yields a 35% chance to spot Jessica flitting from tombstone to tombstone; she
-
-can easily be pursued back to her lair. There she crouch­es in the dark, waiting to attack. The Jessica-thing often visits the Checkley mausoleum, sensing the relatively fresh corpse within. If an investigator states that he or she is watching that area, Jessica has an 85% chance of appearing.
+Staking out the graveyard yields a 35% chance to spot Jessica flitting from tombstone to tombstone; she can easily be pursued back to her lair. There she crouch­es in the dark, waiting to attack. The Jessica-thing often visits the Checkley mausoleum, sensing the relatively fresh corpse within. If an investigator states that he or she is watching that area, Jessica has an 85% chance of appearing.
 
 A successful Luck roll (Spot check, DC 14} discloses a small swatch of blue gingham cloth in or near the Checkley mausoleum.
 
 Jessica is four feet, eight inches tall, and very strong for her size. Her body is little decayed, not noticeable until face-to-face. Her left big toe is missing. Light scratches cover her back, buttocks, and legs. Her eyes show only the whites; her tongue has withered and dried to a stub; orange earthworms tunnel her flesh, emerging from her nostrils and ears. Rotting fragments of a blue gingham dress cover her neck and shoulders; no other garments clothe her.
 
-JESSICA, Age 9
+**JESSICA, Age 9**
 
-STR 12 CON 14 SIZ08 DEX 06 POW 01
+|         |        |        |        |        |
+| ------- | ------ | ------ | ------ | ------ |
+| STR 12  | CON 14 | SIZ 08 | DEX 06 | POW 01 |
+| Move 07 | HP 11  |        |        |        |
 
-Move 07 HP 11
+**Damage Bonus** none
 
-Damage Bonus: none
+**Weapons:**
 
-Weapons: Bite 60%, damage 1D4
+- Bite 60%, damage 1D4
+- Claw 50%, damage 1D4*
 
-Claw 50%, damage 11)4'
+\* having successfully bitten, Jessica holds on with her teeth and uses both hands to Claw._
 
-_* having successfully bitten, Jessica holds on with her teeth and uses both hands to Claw,_
+**Armor:** none, but physical weapons do half damage; impaling physical weapons do only 1 point of damage to hit points.
 
-----  
+**Skills:** Hide 45%, Stalk 50%.
 
-  
+**Sanity Cost:** 1/1D8 Sanity points to see.
 
-|   |
-|---|
-||
-
-  
-
-  
-
-  
-
-Armor: none, but physical weapons do half damage; impaling physical weapons do only 1 point of damage to hit points.
-
-Skills: Hide 45%, Stalk 50%.
-
-Sanity Cost: 1/1D8 Sanity points to see.
-
-Notes: _When hit points are brought to zero, the zombie disintegrates. As appropriate to the keeper, many spells have no effect. Damage to zombies can be described as explod­ing heads, severed arms, holes through torsos, and so on. but the undead thing keeps on coming until CON reaches zero. Splattered results smearing investigator faces may call for additional Sanity losses._
-
-|d20 STATS: page 224}
+**Notes:** _When hit points are brought to zero, the zombie disintegrates. As appropriate to the keeper, many spells have no effect. Damage to zombies can be described as explod­ing heads, severed arms, holes through torsos, and so on. but the undead thing keeps on coming until CON reaches zero. Splattered results smearing investigator faces may call for additional Sanity losses._
 
 ## Conclusion
 
@@ -631,4 +438,4 @@ Though blatant murder of children is not something Arkham wishes to promote, the
 
 Nonetheless, if involved in one or more inquests only through word of mouth, the investigators receive no Credit Rating increases. It’s always better not to be talked about in a small town.
 
-![](file:///C:/Users/MIKHAL~1/AppData/Local/Temp/msohtmlclip1/01/clip_image103.gif)Destroying, (or capturing), one or more of the zombie-children is worth 1D6 Sanity each to those in the fights. Capturing the undead children brings the same reward, with the bonus of no inquest interfering with Credit Rating increases. 
+Destroying, (or capturing), one or more of the zombie-children is worth 1D6 Sanity each to those in the fights. Capturing the undead children brings the same reward, with the bonus of no inquest interfering with Credit Rating increases. 
