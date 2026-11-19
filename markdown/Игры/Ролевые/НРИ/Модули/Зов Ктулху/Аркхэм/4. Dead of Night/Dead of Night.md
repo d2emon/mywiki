@@ -58,7 +58,7 @@ The investigators have a number of avenues to explore. They will certainly visit
 
 ### Checkley Manor
 
-![](Pasted%20image%2020261118233727.png)
+![](Demolished%20Manor.png)
 
 The manor is no more; the Beckworth crews knocked down and hauled away the roof, floors, and walls of the crumbling building in a few days. Only the foundations are left, and those have been partially flattened; a por­tion of the basement area already has been filled. The basement is merely a long rectangle, filled with rubble at one end and with a roped-off alcove at the other end.
 
@@ -230,7 +230,7 @@ If the investigators have not yet bought the diary,  Tillinghast wants $45 for T
 
 ### Christchurch Cemetery
 
-![](Pasted%20image%2020261119000448.png)
+![](Christchurch%20Cemetery.png)
 
 Made of fine Vermont marble, the Checkley mausoleum is  found in a secluded section of the cemetery. A heavy chain  and lock bar the double doors.  
 
@@ -338,9 +338,9 @@ He is five feet, five inches tall, and very strong. His body is the most decayed
 
 ### Rosemary
 
-**СЮДА ВСТАВИТЬ КАРТУ ДОКОВ**
+![](Rosemary%20Lair.png)
 
-**СЮДА ВСТАВИТЬ КАРТУ ЛОГОВА**
+![](Rosemary%20Hideout.png)
 
 Great brick warehouses, built in the early nineteenth century, stand mostly unused in Arkham. Some have not been entered by their owners since before the World War. Trash and abandoned automobiles choke the nar­row alleys as well as River Street beyond. This is where Rosemary keeps herself; preying on rats, stray cats and dogs, drunks, and luckless transients.
 
